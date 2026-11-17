@@ -980,3 +980,7 @@ body.t-moderno .gp-ribbon, body.t-rebelde .gp-ribbon { display: none; }
   border-top: 1px solid rgba(255, 255, 255, .12);
 }
 .t-moderno .team-hero .team-stats { background: rgba(8, 8, 10, .8); }
+
+/* refuerzo final de legibilidad en la banda de cifras */
+.team-hero .team-stats { background: rgba(6, 7, 9, .93) !important; border-top: 1px solid rgba(255,255,255,.14); }
+.team-hero .team-stats span { color: #98a0aa; }
