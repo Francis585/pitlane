@@ -8,7 +8,7 @@
 {% block content %}
 <header class="driver-hero wrap" style="border:0">
   <div class="dh-img">
-    {% if d.photo %}<img src="{{ root }}{{ d.photo }}" alt="{{ d.full }}">{% endif %}
+    {% if d.photo %}<img src="{{ img_url(d.photo) }}" alt="{{ d.full }}">{% endif %}
   </div>
   <div class="dh-txt">
     <div class="eyebrow"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(d.nationality) }}.png" alt="" width="20" height="15"> {{ d.team.name if d.team else 'Fórmula 1' }} · Temporada {{ site.season }}</div>
@@ -56,7 +56,7 @@
       <a class="dcard" href="{{ root }}pilotos/{{ t.id }}.html">
         <div class="dcard-img">
           <span class="stripe" style="background:var(--brand)"></span>
-          {% if t.photo %}<img src="{{ root }}{{ t.photo }}" alt="{{ t.full }}" loading="lazy">{% endif %}
+          {% if t.photo %}<img src="{{ img_url(t.photo) }}" alt="{{ t.full }}" loading="lazy">{% endif %}
           <span class="dcard-num">{{ t.num }}</span>
         </div>
         <div class="dcard-meta">

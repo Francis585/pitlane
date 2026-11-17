@@ -21,16 +21,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family={{ font_query }}&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ root }}assets/styles.css">
+<link rel="stylesheet" href="{{ root }}assets/styles.css?v={{ asset_css }}">
 <style>
 :root { --gp: {{ gp.brand }}; --gp-2: {{ gp.brand2 }}; }
 {% block vars %}{% endblock %}
 </style>
 </head>
+<a class="skip" href="#main">Saltar al contenido</a>
 <body class="{% block bodyclass %}{% endblock %}{% if gp.active %} race-week{% endif %}"
       data-gp-start="{{ gp.get('start', '') }}" data-gp-end="{{ gp.get('end', '') }}">
 
-<nav class="nav">
+<nav class="nav" aria-label="Navegación principal">
   <div class="wrap nav-in">
     <a class="logo" href="{{ root }}index.html">
       <svg class="logo-mark" width="26" height="18" viewBox="0 0 26 18" aria-hidden="true">
@@ -65,7 +66,9 @@
 </div>
 {% endif %}
 
+<main id="main">
 {% block content %}{% endblock %}
+</main>
 
 <footer class="foot">
   <div class="wrap">
@@ -96,6 +99,6 @@
   </div>
 </footer>
 
-<script src="{{ root }}assets/app.js" defer></script>
+<script src="{{ root }}assets/app.js?v={{ asset_js }}" defer></script>
 </body>
 </html>

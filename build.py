@@ -150,7 +150,7 @@ def build_moments(site: dict) -> list:
     return out[-4:][::-1]
 
 
-def render_all(site: dict) -> int:
+def render_all(site: dict, asset_versions: dict) -> int:
     env = Environment(
         loader=FileSystemLoader(str(SRC / "templates")),
         autoescape=select_autoescape(["html"]),
@@ -165,8 +165,16 @@ def render_all(site: dict) -> int:
         if d.get("team"):
             d["team"]["slug"] = d["team"]["id"].replace("_", "-")
 
+    def asset_url(p):
+        """URL pública del asset, en WebP si está disponible."""
+        rel = str(p).lstrip("/")
+        webp = OUT / rel.replace(".jpg", ".webp")
+        if rel.lower().endswith(".jpg") and webp.exists():
+            rel = rel.replace(".jpg", ".webp")
+        return "/" + rel
+
     env.globals.update(
-        img_url=lambda p: "/" + str(p).lstrip("/"),
+        img_url=asset_url,
         flag_code=lambda c: COUNTRY_CODE.get(str(c), "un"),
     )
 
@@ -238,7 +246,8 @@ def render_all(site: dict) -> int:
             current="/" + rel.replace("index.html", ""),
             generated_human=generated, news_sources=sources,
             font_query=FONTS[ctx.pop("font", "base")],
-            img_url=lambda p: "/" + str(p).lstrip("/"),
+            img_url=asset_url,
+            asset_css=asset_versions["css"], asset_js=asset_versions["js"],
             flag_code=lambda c: COUNTRY_CODE.get(str(c), "un"),
             **ctx,
         )
@@ -290,10 +299,53 @@ def render_all(site: dict) -> int:
     return pages
 
 
-def write_static(site: dict) -> None:
+def optimize_assets() -> dict:
+    """Copia los assets, recomprime las fotos y devuelve versiones para cache-busting."""
+    import hashlib
+    try:
+        from PIL import Image
+    except Exception:
+        Image = None
+
     if (OUT / "assets").exists():
         shutil.rmtree(OUT / "assets")
     shutil.copytree(ASSETS, OUT / "assets")
+
+    limits = {"teams": 1600, "circuits": 1300, "drivers": 800}
+    saved = 0
+    if Image:
+        for img in (OUT / "assets").rglob("*.jpg"):
+            limit = next((v for k, v in limits.items() if k in str(img)), 1400)
+            before = img.stat().st_size
+            try:
+                im = Image.open(img).convert("RGB")
+                if im.width > limit:
+                    im = im.resize((limit, round(im.height * limit / im.width)), Image.LANCZOS)
+                im.save(img, "JPEG", quality=82, optimize=True, progressive=True)
+                saved += before - img.stat().st_size
+            except Exception:
+                continue
+
+    # versión WebP (mucho más ligera) manteniendo el JPG como respaldo
+    if Image:
+        for img in list((OUT / "assets").rglob("*.jpg")):
+            try:
+                Image.open(img).convert("RGB").save(img.with_suffix(".webp"), "WEBP", quality=74, method=4)
+                img.unlink()  # el sitio ya solo sirve WebP
+            except Exception:
+                continue
+
+    def version(path: pathlib.Path) -> str:
+        return hashlib.md5(path.read_bytes()).hexdigest()[:10]
+
+    return {
+        "css": version(OUT / "assets" / "styles.css"),
+        "js": version(OUT / "assets" / "app.js"),
+        "saved_mb": round(saved / 1e6, 2),
+    }
+
+
+def write_static(site: dict) -> None:
     (OUT / "assets" / "favicon.svg").write_text(
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">'
         '<rect width="64" height="64" rx="12" fill="#07080a"/>'
@@ -325,9 +377,11 @@ def main() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
-    n = render_all(site)
+    asset_versions = optimize_assets()
+    n = render_all(site, asset_versions)
     write_static(site)
-    print(f"[build] {n} páginas · {len(site['teams'])} escuderías · {len(site['drivers'])} pilotos")
+    print(f"[build] {n} páginas · {len(site['teams'])} escuderías · "
+          f"{len(site['drivers'])} pilotos · imágenes -{asset_versions['saved_mb']} MB")
 
 
 if __name__ == "__main__":

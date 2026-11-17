@@ -79,7 +79,7 @@
       {% for o in others %}
       <a class="circ-card" href="{{ root }}circuitos/{{ o.id }}.html">
         <span class="badge">R{{ o.round }}</span>
-        {% if o.photo %}<img src="{{ root }}{{ o.photo }}" alt="{{ o.name }}" loading="lazy">{% endif %}
+        {% if o.photo %}<img src="{{ img_url(o.photo) }}" alt="{{ o.name }}" loading="lazy">{% endif %}
         <div class="circ-card-body">
           <h3>{{ o.name }}</h3>
           <div class="cc-meta">{{ o.flag }} {{ o.locality }} · {{ o.date_human }}</div>

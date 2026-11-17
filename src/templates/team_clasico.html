@@ -32,7 +32,7 @@
     <div><b>{{ team.points }}</b><span>Puntos {{ site.season }}</span></div>
     <div><b>{{ team.wins }}</b><span>Victorias {{ site.season }}</span></div>
     <div><b>{{ tm.titles }}</b><span>Títulos de constructores</span></div>
-    <div><b>{{ drivers|length }}</b><span>Pilotos en plantilla</span></div>
+    <div><b>{{ drivers|length }}</b><span>Pilotos en {{ site.season }}</span></div>
   </div>
 </header>
 
@@ -102,7 +102,7 @@
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="eyebrow dim">Plantilla {{ site.season }}</div>
+        <div class="eyebrow dim">Pilotos que han competido en {{ site.season }}</div>
         <h2>Los que se juegan el mundial</h2>
       </div>
       <a class="sec-link" href="{{ root }}pilotos/index.html">Todos los pilotos →</a>

@@ -2,9 +2,9 @@
 <div class="news-grid">
   {% for n in items[:limit] %}
   <a class="ncard" href="{{ n.url }}" target="_blank" rel="noopener nofollow">
-    <div class="ncard-img">
+    <div class="ncard-img{% if not n.image %} ncard-img--empty{% endif %}">
       {% if n.image %}<img src="{{ n.image }}" alt="" loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentNode.innerHTML=''">{% endif %}
+           onerror="this.parentNode.classList.add('ncard-img--empty')">{% else %}<span>PITLANE</span>{% endif %}
     </div>
     <div class="ncard-body">
       <h3>{{ n.title }}</h3>
@@ -34,7 +34,7 @@
   <a class="dcard" href="{{ root }}pilotos/{{ d.id }}.html">
     <div class="dcard-img">
       {% if t %}<span class="stripe" style="background:{{ t.brand }}"></span>{% endif %}
-      {% if d.photo %}<img src="{{ root }}{{ d.photo }}" alt="{{ d.full }}" loading="lazy">
+      {% if d.photo %}<img src="{{ img_url(d.photo) }}" alt="{{ d.full }}" loading="lazy">
       {% else %}<span class="ph">{{ d.code }}</span>{% endif %}
       <span class="dcard-num">{{ d.num }}</span>
     </div>
@@ -87,7 +87,7 @@
   {% for d in rows %}
   <a class="pcard" href="{{ root }}pilotos/{{ d.id }}.html">
     <div class="pcard-photo">
-      {% if d.photo %}<img src="{{ root }}{{ d.photo }}" alt="{{ d.full }}" loading="lazy">
+      {% if d.photo %}<img src="{{ img_url(d.photo) }}" alt="{{ d.full }}" loading="lazy">
       {% else %}<span class="ph">{{ d.code }}</span>{% endif %}
     </div>
     <div class="pcard-body">

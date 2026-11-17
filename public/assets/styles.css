@@ -936,3 +936,47 @@ body.race-week .t-moderno .logo b, body.race-week .t-rebelde .logo b { color: va
 /* la cinta del GP no pisa la identidad de una escudería */
 body.t-clasico .gp-ribbon, body.t-tecnico .gp-ribbon,
 body.t-moderno .gp-ribbon, body.t-rebelde .gp-ribbon { display: none; }
+
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 200; padding: 12px 18px;
+  background: var(--gp); color: #05060a; font-weight: 700; border-radius: 0 0 8px 0;
+}
+.skip:focus { left: 0; }
+
+.ncard-img--empty { display: grid; place-items: center;
+  background: repeating-linear-gradient(115deg, rgba(255,255,255,.05) 0 2px, transparent 2px 22px), #0d1015; }
+.ncard-img--empty span { font-family: var(--font-display); font-size: 1.1rem; letter-spacing: .3em;
+  text-transform: uppercase; color: rgba(255,255,255,.25); }
+
+/* ajustes de la ficha clásica sobre foto */
+.t-clasico .monogram-big { display: none; }
+.t-clasico .team-hero-photo { opacity: 1; filter: saturate(.95) brightness(1.05) contrast(1.02); }
+.t-clasico .team-hero-photo::after {
+  background:
+    linear-gradient(90deg, rgba(9,7,6,.92) 0%, rgba(9,7,6,.72) 34%, rgba(9,7,6,.18) 70%, rgba(9,7,6,.3) 100%),
+    linear-gradient(180deg, rgba(9,7,6,.35) 0%, rgba(9,7,6,0) 30%, rgba(9,7,6,.9) 100%);
+}
+.t-clasico .team-hero .team-facts {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0;
+  max-width: 780px; margin: 26px auto 0; padding: 14px 8px;
+}
+.t-clasico .team-hero .team-facts > div { text-align: center; border-right: 1px solid rgba(255,255,255,.1); }
+.t-clasico .team-hero .team-facts > div:last-child { border-right: 0; }
+/* el resto de fichas: foto algo más presente */
+.team-hero-photo::after {
+  background:
+    linear-gradient(90deg, rgba(7,8,10,.96) 0%, rgba(7,8,10,.8) 32%, rgba(7,8,10,.25) 64%, rgba(7,8,10,.15) 100%),
+    linear-gradient(180deg, rgba(7,8,10,.4) 0%, rgba(7,8,10,0) 32%, rgba(7,8,10,.92) 100%);
+}
+@media (max-width: 720px) {
+  .t-clasico .team-hero .team-facts { grid-template-columns: repeat(2, 1fr); gap: 8px 0; }
+  .t-clasico .team-hero .team-facts > div:nth-child(2) { border-right: 0; }
+}
+
+/* la banda de cifras siempre legible sobre la foto */
+.team-hero .team-stats {
+  background: rgba(8, 8, 10, .88);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, .12);
+}
+.t-moderno .team-hero .team-stats { background: rgba(8, 8, 10, .8); }

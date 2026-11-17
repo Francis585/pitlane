@@ -21,15 +21,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/styles.css?v=6642116eb9">
 <style>
 :root { --gp: #B026FF; --gp-2: #00E5FF; }
 :root{--brand:#ff5a1f;}</style>
 </head>
+<a class="skip" href="#main">Saltar al contenido</a>
 <body class=" race-week"
       data-gp-start="2026-11-16" data-gp-end="2026-11-22">
 
-<nav class="nav">
+<nav class="nav" aria-label="Navegación principal">
   <div class="wrap nav-in">
     <a class="logo" href="index.html">
       <svg class="logo-mark" width="26" height="18" viewBox="0 0 26 18" aria-hidden="true">
@@ -62,19 +63,20 @@
   </div>
 </div>
 
+<main id="main">
 <header class="hero">
   <div class="hero-media" data-hero-slideshow>
-    <img src="/assets/teams/mercedes-car.jpg" alt="Mercedes" class="hero-slide is-on"
+    <img src="/assets/teams/mercedes-car.webp" fetchpriority="high"         alt="Mercedes" class="hero-slide is-on"
          data-label="Mercedes" loading="eager">
-    <img src="/assets/teams/ferrari-car.jpg" alt="Ferrari" class="hero-slide"
+    <img data-src="/assets/teams/ferrari-car.webp"         alt="Ferrari" class="hero-slide"
          data-label="Ferrari" loading="lazy">
-    <img src="/assets/teams/red_bull-car.jpg" alt="Red Bull" class="hero-slide"
+    <img data-src="/assets/teams/red_bull-car.webp"         alt="Red Bull" class="hero-slide"
          data-label="Red Bull" loading="lazy">
-    <img src="/assets/teams/mclaren-car.jpg" alt="McLaren" class="hero-slide"
+    <img data-src="/assets/teams/mclaren-car.webp"         alt="McLaren" class="hero-slide"
          data-label="McLaren" loading="lazy">
-    <img src="/assets/teams/rb-car.jpg" alt="Racing Bulls" class="hero-slide"
+    <img data-src="/assets/teams/rb-car.webp"         alt="Racing Bulls" class="hero-slide"
          data-label="Racing Bulls" loading="lazy">
-    <img src="/assets/teams/alpine-car.jpg" alt="Alpine" class="hero-slide"
+    <img data-src="/assets/teams/alpine-car.webp"         alt="Alpine" class="hero-slide"
          data-label="Alpine" loading="lazy">
   </div>
 
@@ -145,7 +147,7 @@
     </div>
     <div class="moments">
       <a class="moment" href="circuitos/villeneuve.html">
-<img src="assets/circuits/villeneuve.jpg" alt="Circuit Gilles Villeneuve" loading="lazy">        <div class="moment-body">
+<img src="/assets/circuits/villeneuve.webp" alt="Circuit Gilles Villeneuve" loading="lazy">        <div class="moment-body">
           <span class="moment-tag" style="--tag:#00D2BE">GP de Canadá · R5</span>
           <h3>Ganó Antonelli</h3>
           <p>Mercedes · Circuit Gilles Villeneuve</p>
@@ -154,7 +156,7 @@
         </div>
       </a>
       <a class="moment" href="circuitos/miami.html">
-<img src="assets/circuits/miami.jpg" alt="Miami International Autodrome" loading="lazy">        <div class="moment-body">
+<img src="/assets/circuits/miami.webp" alt="Miami International Autodrome" loading="lazy">        <div class="moment-body">
           <span class="moment-tag" style="--tag:#00D2BE">GP de Miami · R4</span>
           <h3>Ganó Antonelli</h3>
           <p>Mercedes · Miami International Autodrome</p>
@@ -163,7 +165,7 @@
         </div>
       </a>
       <a class="moment" href="circuitos/suzuka.html">
-<img src="assets/circuits/suzuka.jpg" alt="Suzuka Circuit" loading="lazy">        <div class="moment-body">
+<img src="/assets/circuits/suzuka.webp" alt="Suzuka Circuit" loading="lazy">        <div class="moment-body">
           <span class="moment-tag" style="--tag:#00D2BE">GP de Japón · R3</span>
           <h3>Ganó Antonelli</h3>
           <p>Mercedes · Suzuka Circuit</p>
@@ -172,7 +174,7 @@
         </div>
       </a>
       <a class="moment" href="circuitos/shanghai.html">
-<img src="assets/circuits/shanghai.jpg" alt="Shanghai International Circuit" loading="lazy">        <div class="moment-body">
+<img src="/assets/circuits/shanghai.webp" alt="Shanghai International Circuit" loading="lazy">        <div class="moment-body">
           <span class="moment-tag" style="--tag:#00D2BE">GP de China · R2</span>
           <h3>Ganó Antonelli</h3>
           <p>Mercedes · Shanghai International Circuit</p>
@@ -387,7 +389,7 @@
     <div class="drivers-grid">
   <a class="dcard" href="pilotos/antonelli.html">
     <div class="dcard-img">
-<span class="stripe" style="background:#00D2BE"></span><img src="assets/drivers/antonelli.jpg" alt="Andrea Kimi Antonelli" loading="lazy">
+<span class="stripe" style="background:#00D2BE"></span><img src="/assets/drivers/antonelli.webp" alt="Andrea Kimi Antonelli" loading="lazy">
       <span class="dcard-num">12</span>
     </div>
     <div class="dcard-meta">
@@ -401,7 +403,7 @@
   </a>
   <a class="dcard" href="pilotos/max_verstappen.html">
     <div class="dcard-img">
-<span class="stripe" style="background:#3671C6"></span><img src="assets/drivers/max_verstappen.jpg" alt="Max Verstappen" loading="lazy">
+<span class="stripe" style="background:#3671C6"></span><img src="/assets/drivers/max_verstappen.webp" alt="Max Verstappen" loading="lazy">
       <span class="dcard-num">3</span>
     </div>
     <div class="dcard-meta">
@@ -415,7 +417,7 @@
   </a>
   <a class="dcard" href="pilotos/russell.html">
     <div class="dcard-img">
-<span class="stripe" style="background:#00D2BE"></span><img src="assets/drivers/russell.jpg" alt="George Russell" loading="lazy">
+<span class="stripe" style="background:#00D2BE"></span><img src="/assets/drivers/russell.webp" alt="George Russell" loading="lazy">
       <span class="dcard-num">63</span>
     </div>
     <div class="dcard-meta">
@@ -429,7 +431,7 @@
   </a>
   <a class="dcard" href="pilotos/hamilton.html">
     <div class="dcard-img">
-<span class="stripe" style="background:#E10600"></span><img src="assets/drivers/hamilton.jpg" alt="Lewis Hamilton" loading="lazy">
+<span class="stripe" style="background:#E10600"></span><img src="/assets/drivers/hamilton.webp" alt="Lewis Hamilton" loading="lazy">
       <span class="dcard-num">44</span>
     </div>
     <div class="dcard-meta">
@@ -443,7 +445,7 @@
   </a>
   <a class="dcard" href="pilotos/leclerc.html">
     <div class="dcard-img">
-<span class="stripe" style="background:#E10600"></span><img src="assets/drivers/leclerc.jpg" alt="Charles Leclerc" loading="lazy">
+<span class="stripe" style="background:#E10600"></span><img src="/assets/drivers/leclerc.webp" alt="Charles Leclerc" loading="lazy">
       <span class="dcard-num">16</span>
     </div>
     <div class="dcard-meta">
@@ -457,7 +459,7 @@
   </a>
   <a class="dcard" href="pilotos/norris.html">
     <div class="dcard-img">
-<span class="stripe" style="background:#FF8000"></span><img src="assets/drivers/norris.jpg" alt="Lando Norris" loading="lazy">
+<span class="stripe" style="background:#FF8000"></span><img src="/assets/drivers/norris.webp" alt="Lando Norris" loading="lazy">
       <span class="dcard-num">1</span>
     </div>
     <div class="dcard-meta">
@@ -471,7 +473,7 @@
   </a>
   <a class="dcard" href="pilotos/piastri.html">
     <div class="dcard-img">
-<span class="stripe" style="background:#FF8000"></span><img src="assets/drivers/piastri.jpg" alt="Oscar Piastri" loading="lazy">
+<span class="stripe" style="background:#FF8000"></span><img src="/assets/drivers/piastri.webp" alt="Oscar Piastri" loading="lazy">
       <span class="dcard-num">81</span>
     </div>
     <div class="dcard-meta">
@@ -485,7 +487,7 @@
   </a>
   <a class="dcard" href="pilotos/hadjar.html">
     <div class="dcard-img">
-<span class="stripe" style="background:#3671C6"></span><img src="assets/drivers/hadjar.jpg" alt="Isack Hadjar" loading="lazy">
+<span class="stripe" style="background:#3671C6"></span><img src="/assets/drivers/hadjar.webp" alt="Isack Hadjar" loading="lazy">
       <span class="dcard-num">6</span>
     </div>
     <div class="dcard-meta">
@@ -499,7 +501,7 @@
   </a>
   <a class="dcard" href="pilotos/lawson.html">
     <div class="dcard-img">
-<span class="stripe" style="background:#6692FF"></span><img src="assets/drivers/lawson.jpg" alt="Liam Lawson" loading="lazy">
+<span class="stripe" style="background:#6692FF"></span><img src="/assets/drivers/lawson.webp" alt="Liam Lawson" loading="lazy">
       <span class="dcard-num">30</span>
     </div>
     <div class="dcard-meta">
@@ -513,7 +515,7 @@
   </a>
   <a class="dcard" href="pilotos/gasly.html">
     <div class="dcard-img">
-<span class="stripe" style="background:#0090FF"></span><img src="assets/drivers/gasly.jpg" alt="Pierre Gasly" loading="lazy">
+<span class="stripe" style="background:#0090FF"></span><img src="/assets/drivers/gasly.webp" alt="Pierre Gasly" loading="lazy">
       <span class="dcard-num">10</span>
     </div>
     <div class="dcard-meta">
@@ -546,31 +548,31 @@
     </div>
     <div class="mosaic">
       <figure class="mosaic-item m1">
-        <img src="/assets/drivers/antonelli.jpg" alt="Andrea Kimi Antonelli" loading="lazy">
+        <img src="/assets/drivers/antonelli.webp" alt="Andrea Kimi Antonelli" loading="lazy">
         <figcaption><b>Andrea Kimi Antonelli</b><span>Mercedes</span></figcaption>
       </figure>
       <figure class="mosaic-item m2">
-        <img src="/assets/drivers/hamilton.jpg" alt="Lewis Hamilton" loading="lazy">
+        <img src="/assets/drivers/hamilton.webp" alt="Lewis Hamilton" loading="lazy">
         <figcaption><b>Lewis Hamilton</b><span>Ferrari</span></figcaption>
       </figure>
       <figure class="mosaic-item m3">
-        <img src="/assets/drivers/max_verstappen.jpg" alt="Max Verstappen" loading="lazy">
+        <img src="/assets/drivers/max_verstappen.webp" alt="Max Verstappen" loading="lazy">
         <figcaption><b>Max Verstappen</b><span>Red Bull</span></figcaption>
       </figure>
       <figure class="mosaic-item m4">
-        <img src="/assets/drivers/norris.jpg" alt="Lando Norris" loading="lazy">
+        <img src="/assets/drivers/norris.webp" alt="Lando Norris" loading="lazy">
         <figcaption><b>Lando Norris</b><span>McLaren</span></figcaption>
       </figure>
       <figure class="mosaic-item m5">
-        <img src="/assets/circuits/silverstone.jpg" alt="Silverstone Circuit" loading="lazy">
+        <img src="/assets/circuits/silverstone.webp" alt="Silverstone Circuit" loading="lazy">
         <figcaption><b>Silverstone Circuit</b><span>Silverstone</span></figcaption>
       </figure>
       <figure class="mosaic-item m6">
-        <img src="/assets/circuits/spa.jpg" alt="Circuit de Spa-Francorchamps" loading="lazy">
+        <img src="/assets/circuits/spa.webp" alt="Circuit de Spa-Francorchamps" loading="lazy">
         <figcaption><b>Circuit de Spa-Francorchamps</b><span>Spa</span></figcaption>
       </figure>
       <figure class="mosaic-item m7">
-        <img src="/assets/circuits/hungaroring.jpg" alt="Hungaroring" loading="lazy">
+        <img src="/assets/circuits/hungaroring.webp" alt="Hungaroring" loading="lazy">
         <figcaption><b>Hungaroring</b><span>Budapest</span></figcaption>
       </figure>
     </div>
@@ -591,8 +593,8 @@
     </div>
     <div class="news-grid">
   <a class="ncard" href="https://www.racefans.net/2026/11/17/social-media-fia-president-indicates-agreement-reached-on-next-power-unit-formula/" target="_blank" rel="noopener nofollow">
-    <div class="ncard-img">
-    </div>
+    <div class="ncard-img ncard-img--empty">
+<span>PITLANE</span>    </div>
     <div class="ncard-body">
       <h3>Social Media: FIA president indicates agreement reached on next power unit formula | Brief</h3>
       <div class="ncard-src"><span>RaceFans</span><span>hace 1 h</span></div>
@@ -601,7 +603,7 @@
   <a class="ncard" href="https://www.motorsportweek.com/2026/11/17/f1-academy-prepares-for-las-vegas-with-special-livery/" target="_blank" rel="noopener nofollow">
     <div class="ncard-img">
 <img src="https://www.motorsportweek.com/wp-content/uploads/2026/11/PHOTO-2026-11-17-17-00-48-300x169.webp" alt="" loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentNode.innerHTML=''">    </div>
+           onerror="this.parentNode.classList.add('ncard-img--empty')">    </div>
     <div class="ncard-body">
       <h3>F1 Academy prepares for Las Vegas with special livery</h3>
       <div class="ncard-src"><span>Motorsport Week</span><span>hace 1 h</span></div>
@@ -610,7 +612,7 @@
   <a class="ncard" href="https://www.motorsportweek.com/2026/11/17/red-bull-departure-of-key-max-verstappen-aide/" target="_blank" rel="noopener nofollow">
     <div class="ncard-img">
 <img src="https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1341857_HiRes-1-300x169.webp" alt="" loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentNode.innerHTML=''">    </div>
+           onerror="this.parentNode.classList.add('ncard-img--empty')">    </div>
     <div class="ncard-body">
       <h3>Red Bull rocked by departure of key Max Verstappen aide</h3>
       <div class="ncard-src"><span>Motorsport Week</span><span>hace 2 h</span></div>
@@ -619,7 +621,7 @@
   <a class="ncard" href="https://www.motorsportweek.com/2026/11/17/bernie-ecclestone-makes-overwhelmed-claim-about-ferrari-fred-vasseur/" target="_blank" rel="noopener nofollow">
     <div class="ncard-img">
 <img src="https://www.motorsportweek.com/wp-content/uploads/2026/11/Bernie-Ecclestone-F1-300x169.webp" alt="" loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentNode.innerHTML=''">    </div>
+           onerror="this.parentNode.classList.add('ncard-img--empty')">    </div>
     <div class="ncard-body">
       <h3>Ferrari boss Fred Vasseur handed ‘overwhelmed’ verdict by Bernie Ecclestone</h3>
       <div class="ncard-src"><span>Motorsport Week</span><span>hace 3 h</span></div>
@@ -628,7 +630,7 @@
   <a class="ncard" href="https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=www" target="_blank" rel="noopener nofollow">
     <div class="ncard-img">
 <img src="https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentNode.innerHTML=''">    </div>
+           onerror="this.parentNode.classList.add('ncard-img--empty')">    </div>
     <div class="ncard-body">
       <h3>“He’s beaten Alpine on his own” - Racing Bulls on why it kept Liam Lawson</h3>
       <div class="ncard-src"><span>Motorsport.com</span><span>hace 3 h</span></div>
@@ -637,7 +639,7 @@
   <a class="ncard" href="https://www.crash.net/f1/news/1110156/1/toto-wolff-offers-blunt-response-kimi-antonelli-ferrari-question" target="_blank" rel="noopener nofollow">
     <div class="ncard-img">
 <img src="https://www.crash.net/sites/default/files/2026-11/xpb_1415432_hires.jpg?width=1200" alt="" loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentNode.innerHTML=''">    </div>
+           onerror="this.parentNode.classList.add('ncard-img--empty')">    </div>
     <div class="ncard-body">
       <h3>Toto Wolff offers blunt response to Kimi Antonelli to Ferrari question</h3>
       <div class="ncard-src"><span>Crash.net</span><span>hace 4 h</span></div>
@@ -646,7 +648,7 @@
   <a class="ncard" href="https://www.crash.net/f1/news/1110155/1/why-george-russell-wont-get-mercedes-f1-engine-upgrade-las-vegas-gp" target="_blank" rel="noopener nofollow">
     <div class="ncard-img">
 <img src="https://www.crash.net/sites/default/files/2026-11/xpb_1453187_hires.jpg?width=1200" alt="" loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentNode.innerHTML=''">    </div>
+           onerror="this.parentNode.classList.add('ncard-img--empty')">    </div>
     <div class="ncard-body">
       <h3>Why George Russell won’t get Mercedes F1 engine upgrade at Las Vegas GP</h3>
       <div class="ncard-src"><span>Crash.net</span><span>hace 6 h</span></div>
@@ -655,7 +657,7 @@
   <a class="ncard" href="https://www.crash.net/f1/news/1110149/1/lewis-hamilton-announces-huge-new-partnership-ahead-las-vegas-gp" target="_blank" rel="noopener nofollow">
     <div class="ncard-img">
 <img src="https://www.crash.net/sites/default/files/2026-11/xpb_1443666_hires.jpg?width=1200" alt="" loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentNode.innerHTML=''">    </div>
+           onerror="this.parentNode.classList.add('ncard-img--empty')">    </div>
     <div class="ncard-body">
       <h3>Lewis Hamilton announces huge new partnership ahead of Las Vegas GP</h3>
       <div class="ncard-src"><span>Crash.net</span><span>hace 6 h</span></div>
@@ -664,7 +666,7 @@
   <a class="ncard" href="https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=www" target="_blank" rel="noopener nofollow">
     <div class="ncard-img">
 <img src="https://cdn-4.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentNode.innerHTML=''">    </div>
+           onerror="this.parentNode.classList.add('ncard-img--empty')">    </div>
     <div class="ncard-body">
       <h3>Toto Wolff is not afraid of losing Kimi Antonelli to Ferrari</h3>
       <div class="ncard-src"><span>Motorsport.com</span><span>hace 8 h</span></div>
@@ -674,6 +676,7 @@
 
   </div>
 </section>
+</main>
 
 <footer class="foot">
   <div class="wrap">
@@ -704,6 +707,6 @@
   </div>
 </footer>
 
-<script src="assets/app.js" defer></script>
+<script src="assets/app.js?v=67f735bccb" defer></script>
 </body>
 </html>

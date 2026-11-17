@@ -85,6 +85,13 @@
     const slides = [...hero.querySelectorAll('.hero-slide')];
     const idxEl = document.querySelector('[data-hero-index]');
     const labEl = document.querySelector('[data-hero-label]');
+    // el resto de imágenes se cargan después, cuando la página ya está lista
+    const hydrate = () => slides.forEach((s) => {
+      if (s.dataset.src && !s.src) { s.src = s.dataset.src; delete s.dataset.src; }
+    });
+    if ('requestIdleCallback' in window) requestIdleCallback(hydrate, { timeout: 2500 });
+    else setTimeout(hydrate, 1800);
+
     if (slides.length > 1) {
       let i = 0;
       setInterval(() => {

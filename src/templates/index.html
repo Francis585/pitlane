@@ -9,7 +9,8 @@
   {% set hero_team = site.teams[0] %}
   <div class="hero-media" data-hero-slideshow>
     {% for sl in hero_slides %}
-    <img src="{{ img_url(sl.src) }}" alt="{{ sl.alt }}" class="hero-slide{% if loop.first %} is-on{% endif %}"
+    <img {% if loop.first %}src="{{ img_url(sl.src) }}" fetchpriority="high"{% else %}data-src="{{ img_url(sl.src) }}"{% endif %}
+         alt="{{ sl.alt }}" class="hero-slide{% if loop.first %} is-on{% endif %}"
          data-label="{{ sl.label }}" loading="{% if loop.first %}eager{% else %}lazy{% endif %}">
     {% endfor %}
   </div>
@@ -70,7 +71,7 @@
       {% for mo in moments %}
       {% set tm = meta.get(mo.team) %}
       <a class="moment" href="{{ root }}circuitos/{{ mo.circuit_id }}.html">
-        {% if mo.photo %}<img src="{{ root }}{{ mo.photo }}" alt="{{ mo.circuit }}" loading="lazy">{% endif %}
+        {% if mo.photo %}<img src="{{ img_url(mo.photo) }}" alt="{{ mo.circuit }}" loading="lazy">{% endif %}
         <div class="moment-body">
           <span class="moment-tag" style="--tag:{{ tm.brand if tm else '#444' }}">{{ mo.gp }} · R{{ mo.round }}</span>
           <h3>Ganó {{ mo.winner }}</h3>
