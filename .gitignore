@@ -1,6 +1,8 @@
+public/
+assets/drivers/
+assets/teams/
+assets/circuits/
 .preview/
 __pycache__/
 *.pyc
 .vercel/
-.vercel
-.env*
