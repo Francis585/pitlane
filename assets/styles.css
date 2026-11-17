@@ -640,3 +640,14 @@ body.race-week .circ-hero-img ~ .circ-hero-in .eyebrow { color: var(--gp); }
     grid-template-columns: 1fr !important;
   }
 }
+
+@media (max-width: 720px) {
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+  .kpis > div { padding: 14px 12px; }
+  .kpis b { font-size: 1.5rem; }
+  .kpis span { font-size: .54rem; letter-spacing: .1em; line-height: 1.4; display: block; margin-top: 4px; }
+  .nav-links a { padding: 6px 9px; font-size: .74rem; }
+  .hero-meta { gap: 14px 22px; }
+  .hero-meta div b { font-size: 1.3rem; }
+  .hero-meta div span { font-size: .56rem; }
+}
