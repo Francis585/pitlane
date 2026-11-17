@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block title %}{{ d.full }} — Fórmula 1 {{ site.season }} | Pitlane{% endblock %}
+{% block desc %}{{ d.full }}, {{ d.team.name if d.team else 'Fórmula 1' }}: {{ d.points }} puntos y P{{ d.pos }} en el mundial {{ site.season }}.{% endblock %}
+{% block vars %}
+:root{--brand:{{ tm.brand if tm else '#ff5a1f' }};}
+{% endblock %}
+
+{% block content %}
+<header class="driver-hero wrap" style="border:0">
+  <div class="dh-img">
+    {% if d.photo %}<img src="{{ root }}{{ d.photo }}" alt="{{ d.full }}">{% endif %}
+  </div>
+  <div class="dh-txt">
+    <div class="eyebrow">{{ d.flag }} {{ d.team.name if d.team else 'Fórmula 1' }} · Temporada {{ site.season }}</div>
+    <div class="driver-num" style="margin-top:6px">{{ d.num or d.code }}</div>
+    <h1>{{ d.first }}<br>{{ d.last }}</h1>
+    <div class="mono" style="display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;color:var(--dim)">
+      <span>P{{ d.pos }} del mundial</span>
+      <span>{{ d.points }} puntos</span>
+      <span>{{ d.wins }} victorias</span>
+      <span>{{ d.age }} años</span>
+    </div>
+    {% if d.bio %}
+    <p class="driver-bio">{{ d.bio }}</p>
+    <p class="src-note" style="margin-top:10px">Resumen biográfico: Wikipedia (CC BY-SA)</p>
+    {% endif %}
+    {% if d.team %}
+    <a class="btn" style="margin-top:22px" href="{{ root }}escuderias/{{ d.team.id }}.html">
+      Ver {{ d.team.name }} →
+    </a>
+    {% endif %}
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="team-stats" style="border-top:1px solid var(--line)">
+      <div><b>{{ d.points }}</b><span>Puntos {{ site.season }}</span></div>
+      <div><b>{{ d.wins }}</b><span>Victorias</span></div>
+      <div><b>P{{ d.pos }}</b><span>Posición</span></div>
+      <div><b>{{ d.num or '—' }}</b><span>Dorsal</span></div>
+      <div><b>{{ d.dob[2:4] }}</b><span>Año de nacimiento</span></div>
+    </div>
+  </div>
+</section>
+
+{% if teammates %}
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">En el mismo garaje</div><h2>Compañero de equipo</h2></div>
+      <a class="sec-link" href="{{ root }}pilotos/index.html">Todos los pilotos →</a>
+    </div>
+    <div class="drivers-grid">
+      {% for t in teammates %}
+      <a class="dcard" href="{{ root }}pilotos/{{ t.id }}.html">
+        <div class="dcard-img">
+          <span class="stripe" style="background:var(--brand)"></span>
+          {% if t.photo %}<img src="{{ root }}{{ t.photo }}" alt="{{ t.full }}" loading="lazy">{% endif %}
+          <span class="dcard-num">{{ t.num }}</span>
+        </div>
+        <div class="dcard-meta">
+          <h3>{{ t.full }}</h3>
+          <div class="team">{{ t.team.name if t.team else '' }}</div>
+          <div class="dcard-foot"><span>P{{ t.pos }}</span><span><b>{{ t.points }}</b> pts</span></div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Sobre él</div><h2>Datos personales</h2></div>
+    </div>
+    <div class="heritage" style="max-width:640px">
+      <div class="mono" style="display:grid;gap:10px;color:var(--dim-2)">
+        <div style="display:flex;justify-content:space-between"><span>Nombre completo</span><span style="color:var(--fg)">{{ d.full }}</span></div>
+        <div style="display:flex;justify-content:space-between"><span>País</span><span style="color:var(--fg)">{{ d.flag }} {{ d.nationality }}</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Nacimiento</span><span style="color:var(--fg)">{{ d.dob }}</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Código FIA</span><span style="color:var(--fg)">{{ d.code }}</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Equipo {{ site.season }}</span><span style="color:var(--fg)">{{ d.team.name if d.team else '—' }}</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Wikipedia</span>
+          <a href="https://en.wikipedia.org/wiki/{{ d.wiki }}" target="_blank" rel="noopener nofollow" style="color:var(--brand)">Ficha</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

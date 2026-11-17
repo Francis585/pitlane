@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datos y método | Pitlane</title>
+<meta name="description" content="De dónde salen los datos de Pitlane: API pública de resultados, fotografías de Wikimedia Commons y titulares de medios especializados.">
+<meta name="theme-color" content="#07080a">
+<meta property="og:title" content="Pitlane — Fórmula 1">
+<meta property="og:description" content="Datos, historia y actualidad de la Fórmula 1.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://pitlane-f1-pied.vercel.app/metodologia.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style>:root{--brand:#ff5a1f;}</style>
+</head>
+<body class="">
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="index.html"><span class="logo-dot"></span>Pit<b>lane</b></a>
+    <div class="nav-links">
+      <a href="escuderias/index.html">Escuderías</a>
+      <a href="pilotos/index.html">Pilotos</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="clasificacion.html">Clasificación</a>
+      <a href="noticias.html">Noticias</a>
+    </div>
+    <div class="nav-round">2026 · R20/23</div>
+  </div>
+</nav>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="eyebrow">Transparencia</div>
+    <h1 style="font-size:clamp(2.4rem,6vw,4.4rem);text-transform:uppercase;margin:12px 0 14px">Datos y método</h1>
+    <p class="dim" style="max-width:64ch">Este sitio no es oficial. Es un proyecto independiente que ordena
+       información pública y la publica sin intermediarios. Todo lo que ves se genera automáticamente
+       desde estas fuentes.</p>
+
+    <div class="split" style="margin-top:44px">
+      <div>
+        <div class="heritage" style="margin-bottom:14px">
+          <h4>Resultados y clasificaciones</h4>
+          <p>Calendario, clasificación de pilotos y constructores, resultados y podios llegan de la
+             <a href="https://api.jolpi.ca/ergast/" style="color:var(--brand)">Jolpica F1 API</a>, la
+             sucesora mantenida de la histórica API Ergast. Se descargan en cada compilación y se sirven
+             como datos estáticos, sin consultas en el navegador.</p>
+        </div>
+        <div class="heritage" style="margin-bottom:14px">
+          <h4>Fotografías</h4>
+          <p>Los retratos de los pilotos proceden de Wikimedia Commons a través de la API pública de
+             Wikipedia, con licencias libres y atribución en la ficha de cada piloto.</p>
+        </div>
+        <div class="heritage">
+          <h4>Titulares</h4>
+          <p>Las noticias se recogen de los canales RSS de The Race, Motorsport.com, Autosport,
+             Crash.net, ESPN F1, RaceFans y Motorsport Week. Solo se muestra titular, medio, fecha y
+             enlace: el texto siempre vive en la web del medio.</p>
+        </div>
+      </div>
+      <aside>
+        <div class="heritage">
+          <h4>Cómo se genera</h4>
+          <p>Cada despliegue ejecuta un pipeline en tres pasos: descarga de datos, generación de páginas
+             estáticas a partir de plantillas y publicación. No hay base de datos ni panel de
+             administración: si un dato está mal en la fuente, se corrige en la siguiente pasada.</p>
+          <hr class="rule" style="margin:16px 0">
+          <div class="mono" style="display:grid;gap:9px;color:var(--dim-2)">
+            <div style="display:flex;justify-content:space-between"><span>Páginas generadas</span><span style="color:var(--fg)">41</span></div>
+            <div style="display:flex;justify-content:space-between"><span>Temporada</span><span style="color:var(--fg)">2026</span></div>
+            <div style="display:flex;justify-content:space-between"><span>Última actualización</span><span style="color:var(--fg)">17 de noviembre de 2026</span></div>
+          </div>
+        </div>
+        <div class="heritage" style="margin-top:14px">
+          <h4>Aviso legal</h4>
+          <p>Pitlane no está afiliado a la FIA, a la Formula One Group ni a ninguna escudería. Las marcas
+             y denominaciones citadas pertenecen a sus titulares y se usan con finalidad informativa.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <h4>Pitlane</h4>
+        <p>Proyecto independiente de datos y divulgación sobre la Fórmula 1. Sin relación con la FIA,
+           la FOM, ninguno de los equipos ni sus patrocinadores.</p>
+      </div>
+      <div class="foot-links">
+        <div>
+          <a href="escuderias/index.html">Escuderías</a>
+          <a href="pilotos/index.html">Pilotos</a>
+          <a href="calendario.html">Calendario</a>
+          <a href="clasificacion.html">Clasificación</a>
+        </div>
+        <div>
+          <a href="noticias.html">Noticias</a>
+          <a href="metodologia.html">Datos y método</a>
+          <a href="sitemap.xml">Mapa del sitio</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>Temporada 2026 · datos actualizados el 17 de noviembre de 2026</span>
+      <span>Datos: Jolpica F1 API · Fotos: Wikimedia Commons · Titulares: Autosport · Crash.net · Motorsport Week · Motorsport.com · RaceFans</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>

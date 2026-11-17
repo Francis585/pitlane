@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}{{ tm.display }} — Fórmula 1 {{ site.season }} | Pitlane{% endblock %}
+{% block desc %}{{ tm.tagline }} Plantilla, historia y noticias de {{ tm.full }}.{% endblock %}
+{% block bodyclass %}t-rebelde{% endblock %}
+{% block vars %}
+:root{
+  --bg: #08090a; --bg-2: #0d0f11; --panel: #14171a;
+  --brand: {{ tm.brand }}; --brand-2: {{ tm.brand2 }}; --dim: #9aa0a6; --dim-2: #6b7178;
+  --font-display: "Anton", "Barlow Condensed", sans-serif;
+}
+{% endblock %}
+
+{% block content %}
+<header class="team-hero">
+  <div class="wrap th-in">
+    <div class="mono" style="color:var(--brand);margin-bottom:14px">{{ tm.full }}</div>
+    <h1>{{ tm.display }}</h1>
+    <p class="team-sub">{{ tm.tagline }}</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:26px">
+      <span class="btn btn-solid" style="border:0">P{{ team.pos }} · {{ team.points }} pts</span>
+      <a class="btn" href="#noticias">Actualidad</a>
+      <a class="btn" href="#historia">Historia</a>
+    </div>
+  </div>
+  <div class="wrap team-stats" style="margin-bottom:-1px">
+    <div><b>{{ team.points }}</b><span>Puntos</span></div>
+    <div><b>{{ team.wins }}</b><span>Victorias</span></div>
+    <div><b>{{ tm.titles }}</b><span>Títulos</span></div>
+    <div><b>{{ drivers|length }}</b><span>Pilotos</span></div>
+    <div><b>P{{ team.pos }}</b><span>Posición</span></div>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,60px);align-items:start">
+      <p style="font-family:var(--font-display);font-size:clamp(1.4rem,2.6vw,2.1rem);line-height:1.16;
+                text-transform:uppercase;margin:0">{{ tm.blurb }}</p>
+      <div class="heritage">
+        <h4 style="font-family:var(--font-display);letter-spacing:.04em">Ficha rápida</h4>
+        <div class="mono" style="display:grid;gap:9px;color:var(--dim-2);margin-top:12px">
+          <div style="display:flex;justify-content:space-between"><span>Sede</span><span style="color:var(--fg)">{{ tm.base }}</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Fundación</span><span style="color:var(--fg)">{{ tm.founded }}</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Motor</span><span style="color:var(--fg)">{{ tm.engine }}</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Jefe de equipo</span><span style="color:var(--fg)">{{ tm.principal }}</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Títulos</span><span style="color:var(--fg)">{{ tm.titles }}</span></div>
+          {% for row in team.prev %}
+          <div style="display:flex;justify-content:space-between"><span>{{ row.season }}</span><span style="color:var(--fg)">P{{ row.pos }} · {{ row.points }}</span></div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Plantilla</div><h2>Los pilotos</h2></div>
+    </div>
+    {{ m.roster(drivers, root) }}
+  </div>
+</section>
+
+<section class="sec" id="historia">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Historia</div><h2>De dónde viene {{ tm.display }}</h2></div>
+      <span class="src-note">{{ tm.timeline|length }} hitos</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,60px)">
+      <div>{{ m.hist(tm.timeline[:3]) }}</div>
+      <div>{{ m.hist(tm.timeline[3:]) }}</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="noticias">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Prensa</div><h2>Lo último</h2></div>
+      <span class="src-note">{{ team.news|length }} titulares</span>
+    </div>
+    <div style="display:grid;gap:1px;background:var(--line);border:2px solid var(--line-2)">
+      {% for n in team.news %}
+      <a href="{{ n.url }}" target="_blank" rel="noopener nofollow"
+         style="display:grid;grid-template-columns:52px 1fr auto;gap:16px;align-items:center;padding:18px;background:var(--bg)">
+        <span style="font-family:var(--font-display);font-size:1.6rem;color:var(--brand-2)">{{ '%02d'|format(loop.index) }}</span>
+        <span style="font-family:var(--font-display);font-size:1.24rem;text-transform:uppercase;line-height:1.12">{{ n.title }}</span>
+        <span class="mono" style="color:var(--dim-2)">{{ n.source }} · {{ n.date_human }}</span>
+      </a>
+      {% else %}
+      <div style="padding:18px;color:var(--dim)">Sin titulares nuevos de esta escudería.</div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="next-team">
+  <a href="{{ root }}escuderias/{{ prev_team.id }}.html"><span class="eyebrow dim">Anterior</span><h4>{{ meta[prev_team.id].display }}</h4></a>
+  <a href="{{ root }}escuderias/{{ next_team.id }}.html"><span class="eyebrow dim">Siguiente</span><h4>{{ meta[next_team.id].display }}</h4></a>
+</div>
+{% endblock %}

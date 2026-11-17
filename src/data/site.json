@@ -1,0 +1,2636 @@
+{
+ "season": 2026,
+ "generated": "2026-11-17T18:08:40+00:00",
+ "round": "20",
+ "total_races": 23,
+ "rounds_done": 20,
+ "calendar": [
+  {
+   "round": 1,
+   "name": "GP de Australia",
+   "official": "Australian Grand Prix",
+   "circuit": "Albert Park Grand Prix Circuit",
+   "locality": "Melbourne",
+   "country": "Australia",
+   "flag": "🇦🇺",
+   "date": "2026-03-08",
+   "date_human": "8 mar 2026",
+   "date_long": "8 de marzo de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": "Russell",
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Russell",
+     "team": "mercedes",
+     "code": "RUS"
+    },
+    {
+     "pos": "2",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "3",
+     "name": "Leclerc",
+     "team": "ferrari",
+     "code": "LEC"
+    }
+   ],
+   "fastest_lap": "1:22.670"
+  },
+  {
+   "round": 2,
+   "name": "GP de China",
+   "official": "Chinese Grand Prix",
+   "circuit": "Shanghai International Circuit",
+   "locality": "Shanghai",
+   "country": "China",
+   "flag": "🇨🇳",
+   "date": "2026-03-15",
+   "date_human": "15 mar 2026",
+   "date_long": "15 de marzo de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": "Antonelli",
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "2",
+     "name": "Russell",
+     "team": "mercedes",
+     "code": "RUS"
+    },
+    {
+     "pos": "3",
+     "name": "Hamilton",
+     "team": "ferrari",
+     "code": "HAM"
+    }
+   ],
+   "fastest_lap": "1:35.275"
+  },
+  {
+   "round": 3,
+   "name": "GP de Japón",
+   "official": "Japanese Grand Prix",
+   "circuit": "Suzuka Circuit",
+   "locality": "Suzuka",
+   "country": "Japan",
+   "flag": "🇯🇵",
+   "date": "2026-03-29",
+   "date_human": "29 mar 2026",
+   "date_long": "29 de marzo de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": "Antonelli",
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "2",
+     "name": "Piastri",
+     "team": "mclaren",
+     "code": "PIA"
+    },
+    {
+     "pos": "3",
+     "name": "Leclerc",
+     "team": "ferrari",
+     "code": "LEC"
+    }
+   ],
+   "fastest_lap": "1:32.432"
+  },
+  {
+   "round": 4,
+   "name": "GP de Miami",
+   "official": "Miami Grand Prix",
+   "circuit": "Miami International Autodrome",
+   "locality": "Miami",
+   "country": "USA",
+   "flag": "🇺🇸",
+   "date": "2026-05-03",
+   "date_human": "3 may 2026",
+   "date_long": "3 de mayo de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": "Antonelli",
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "2",
+     "name": "Norris",
+     "team": "mclaren",
+     "code": "NOR"
+    },
+    {
+     "pos": "3",
+     "name": "Piastri",
+     "team": "mclaren",
+     "code": "PIA"
+    }
+   ],
+   "fastest_lap": "1:31.968"
+  },
+  {
+   "round": 5,
+   "name": "GP de Canadá",
+   "official": "Canadian Grand Prix",
+   "circuit": "Circuit Gilles Villeneuve",
+   "locality": "Montreal",
+   "country": "Canada",
+   "flag": "🇨🇦",
+   "date": "2026-05-24",
+   "date_human": "24 may 2026",
+   "date_long": "24 de mayo de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": "Antonelli",
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "2",
+     "name": "Hamilton",
+     "team": "ferrari",
+     "code": "HAM"
+    },
+    {
+     "pos": "3",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    }
+   ],
+   "fastest_lap": "1:14.210"
+  },
+  {
+   "round": 6,
+   "name": "GP de Mónaco",
+   "official": "Monaco Grand Prix",
+   "circuit": "Circuit de Monaco",
+   "locality": "Monte Carlo",
+   "country": "Monaco",
+   "flag": "🇲🇨",
+   "date": "2026-06-07",
+   "date_human": "7 jun 2026",
+   "date_long": "7 de junio de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 7,
+   "name": "GP de Barcelona",
+   "official": "Barcelona Grand Prix",
+   "circuit": "Circuit de Barcelona-Catalunya",
+   "locality": "Barcelona",
+   "country": "Spain",
+   "flag": "🇪🇸",
+   "date": "2026-06-14",
+   "date_human": "14 jun 2026",
+   "date_long": "14 de junio de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 8,
+   "name": "GP de Austria",
+   "official": "Austrian Grand Prix",
+   "circuit": "Red Bull Ring",
+   "locality": "Spielberg",
+   "country": "Austria",
+   "flag": "🇦🇹",
+   "date": "2026-06-28",
+   "date_human": "28 jun 2026",
+   "date_long": "28 de junio de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 9,
+   "name": "GP de Gran Bretaña",
+   "official": "British Grand Prix",
+   "circuit": "Silverstone Circuit",
+   "locality": "Silverstone",
+   "country": "UK",
+   "flag": "🇬🇧",
+   "date": "2026-07-05",
+   "date_human": "5 jul 2026",
+   "date_long": "5 de julio de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 10,
+   "name": "GP de Bélgica",
+   "official": "Belgian Grand Prix",
+   "circuit": "Circuit de Spa-Francorchamps",
+   "locality": "Spa",
+   "country": "Belgium",
+   "flag": "🇧🇪",
+   "date": "2026-07-19",
+   "date_human": "19 jul 2026",
+   "date_long": "19 de julio de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 11,
+   "name": "GP de Hungría",
+   "official": "Hungarian Grand Prix",
+   "circuit": "Hungaroring",
+   "locality": "Budapest",
+   "country": "Hungary",
+   "flag": "🇭🇺",
+   "date": "2026-07-26",
+   "date_human": "26 jul 2026",
+   "date_long": "26 de julio de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 12,
+   "name": "GP de Países Bajos",
+   "official": "Dutch Grand Prix",
+   "circuit": "Circuit Park Zandvoort",
+   "locality": "Zandvoort",
+   "country": "Netherlands",
+   "flag": "🇳🇱",
+   "date": "2026-08-23",
+   "date_human": "23 ago 2026",
+   "date_long": "23 de agosto de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 13,
+   "name": "GP de Italia",
+   "official": "Italian Grand Prix",
+   "circuit": "Autodromo Nazionale di Monza",
+   "locality": "Monza",
+   "country": "Italy",
+   "flag": "🇮🇹",
+   "date": "2026-09-06",
+   "date_human": "6 sep 2026",
+   "date_long": "6 de septiembre de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 14,
+   "name": "GP de España",
+   "official": "Spanish Grand Prix",
+   "circuit": "Madring",
+   "locality": "Madrid",
+   "country": "Spain",
+   "flag": "🇪🇸",
+   "date": "2026-09-13",
+   "date_human": "13 sep 2026",
+   "date_long": "13 de septiembre de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 15,
+   "name": "GP de Azerbaiyán",
+   "official": "Azerbaijan Grand Prix",
+   "circuit": "Baku City Circuit",
+   "locality": "Baku",
+   "country": "Azerbaijan",
+   "flag": "🇦🇿",
+   "date": "2026-09-26",
+   "date_human": "26 sep 2026",
+   "date_long": "26 de septiembre de 2026",
+   "weekday": "sábado",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 16,
+   "name": "GP de Malasia",
+   "official": "Bahrain Grand Prix in Malaysia",
+   "circuit": "Sepang International Circuit",
+   "locality": "Kuala Lumpur",
+   "country": "Malaysia",
+   "flag": "🇲🇾",
+   "date": "2026-10-04",
+   "date_human": "4 oct 2026",
+   "date_long": "4 de octubre de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 17,
+   "name": "GP de Singapur",
+   "official": "Singapore Grand Prix",
+   "circuit": "Marina Bay Street Circuit",
+   "locality": "Marina Bay",
+   "country": "Singapore",
+   "flag": "🇸🇬",
+   "date": "2026-10-11",
+   "date_human": "11 oct 2026",
+   "date_long": "11 de octubre de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 18,
+   "name": "GP de Estados Unidos",
+   "official": "United States Grand Prix",
+   "circuit": "Circuit of the Americas",
+   "locality": "Austin",
+   "country": "USA",
+   "flag": "🇺🇸",
+   "date": "2026-10-25",
+   "date_human": "25 oct 2026",
+   "date_long": "25 de octubre de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 19,
+   "name": "GP de Ciudad de México",
+   "official": "Mexico City Grand Prix",
+   "circuit": "Autódromo Hermanos Rodríguez",
+   "locality": "Mexico City",
+   "country": "Mexico",
+   "flag": "🇲🇽",
+   "date": "2026-11-01",
+   "date_human": "1 nov 2026",
+   "date_long": "1 de noviembre de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 20,
+   "name": "GP de Brasil",
+   "official": "Brazilian Grand Prix",
+   "circuit": "Autódromo José Carlos Pace",
+   "locality": "São Paulo",
+   "country": "Brazil",
+   "flag": "🇧🇷",
+   "date": "2026-11-08",
+   "date_human": "8 nov 2026",
+   "date_long": "8 de noviembre de 2026",
+   "weekday": "domingo",
+   "done": true,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 21,
+   "name": "GP de Las Vegas",
+   "official": "Las Vegas Grand Prix",
+   "circuit": "Las Vegas Strip Street Circuit",
+   "locality": "Las Vegas",
+   "country": "USA",
+   "flag": "🇺🇸",
+   "date": "2026-11-22",
+   "date_human": "22 nov 2026",
+   "date_long": "22 de noviembre de 2026",
+   "weekday": "domingo",
+   "done": false,
+   "is_next": true,
+   "winner": null,
+   "days_until": 5
+  },
+  {
+   "round": 22,
+   "name": "GP de Catar",
+   "official": "Qatar Grand Prix",
+   "circuit": "Lusail International Circuit",
+   "locality": "Lusail",
+   "country": "Qatar",
+   "flag": "🇶🇦",
+   "date": "2026-11-29",
+   "date_human": "29 nov 2026",
+   "date_long": "29 de noviembre de 2026",
+   "weekday": "domingo",
+   "done": false,
+   "is_next": false,
+   "winner": null
+  },
+  {
+   "round": 23,
+   "name": "GP de Abu Dabi",
+   "official": "Abu Dhabi Grand Prix",
+   "circuit": "Yas Marina Circuit",
+   "locality": "Abu Dhabi",
+   "country": "UAE",
+   "flag": "🇦🇪",
+   "date": "2026-12-06",
+   "date_human": "6 dic 2026",
+   "date_long": "6 de diciembre de 2026",
+   "weekday": "domingo",
+   "done": false,
+   "is_next": false,
+   "winner": null
+  }
+ ],
+ "next_race": {
+  "round": 21,
+  "name": "GP de Las Vegas",
+  "official": "Las Vegas Grand Prix",
+  "circuit": "Las Vegas Strip Street Circuit",
+  "locality": "Las Vegas",
+  "country": "USA",
+  "flag": "🇺🇸",
+  "date": "2026-11-22",
+  "date_human": "22 nov 2026",
+  "date_long": "22 de noviembre de 2026",
+  "weekday": "domingo",
+  "done": false,
+  "is_next": true,
+  "winner": null,
+  "days_until": 5
+ },
+ "last_round": {
+  "round": 20,
+  "name": "GP de Brasil",
+  "official": "Brazilian Grand Prix",
+  "circuit": "Autódromo José Carlos Pace",
+  "locality": "São Paulo",
+  "country": "Brazil",
+  "flag": "🇧🇷",
+  "date": "2026-11-08",
+  "date_human": "8 nov 2026",
+  "date_long": "8 de noviembre de 2026",
+  "weekday": "domingo",
+  "done": true,
+  "is_next": false,
+  "winner": null
+ },
+ "teams": [
+  {
+   "id": "mercedes",
+   "name": "Mercedes",
+   "nationality": "German",
+   "pos": 1,
+   "points": 652,
+   "wins": 12,
+   "drivers": [
+    {
+     "id": "antonelli",
+     "name": "Andrea Kimi Antonelli",
+     "last": "Antonelli",
+     "code": "ANT",
+     "num": "12",
+     "pos": 1,
+     "points": 390,
+     "wins": 9
+    },
+    {
+     "id": "russell",
+     "name": "George Russell",
+     "last": "Russell",
+     "code": "RUS",
+     "num": "63",
+     "pos": 3,
+     "points": 262,
+     "wins": 3
+    }
+   ],
+   "prev": [
+    {
+     "season": 2024,
+     "pos": 4,
+     "points": 468
+    },
+    {
+     "season": 2025,
+     "pos": 2,
+     "points": 469
+    }
+   ],
+   "news": [
+    {
+     "title": "Toto Wolff offers blunt response to Kimi Antonelli to Ferrari question",
+     "url": "https://www.crash.net/f1/news/1110156/1/toto-wolff-offers-blunt-response-kimi-antonelli-ferrari-question",
+     "desc": "Toto Wolff addresses the prospect of Kimi Antonelli moving to Ferrari one day.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1415432_hires.jpg?width=1200",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794930145.0,
+     "teams": [
+      "ferrari",
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Bernie Ecclestone urges Lewis Hamilton ‘to think about quitting’ F1",
+     "url": "https://www.motorsportweek.com/2026/11/17/bernie-ecclestone-urges-lewis-hamilton-to-think-about-quitting-f1/",
+     "desc": "Ex-F1 boss Bernie Ecclestone has delivered a damning verdict on Lewis Hamilton's future in Formula 1, urging the seven-time world champion to consider retirement. The post Bernie Ecclestone urges Lewis Hamilton &#8216;to think abo",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1451195_HiRes-1-300x169.webp",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794927600.0,
+     "teams": [
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Why George Russell won’t get Mercedes F1 engine upgrade at Las Vegas GP",
+     "url": "https://www.crash.net/f1/news/1110155/1/why-george-russell-wont-get-mercedes-f1-engine-upgrade-las-vegas-gp",
+     "desc": "Mercedes will finally introduce its ADUO F1 engine upgrade in Las Vegas.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453187_hires.jpg?width=1200",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794925762.0,
+     "teams": [
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Toto Wolff shuts down speculation of Kimi Antonelli Ferrari defection",
+     "url": "https://www.motorsportweek.com/2026/11/17/toto-wolff-shuts-down-speculation-of-kimi-antonelli-ferrari-defection/",
+     "desc": "Toto Wolff has shut down speculation that Kimi Antonelli could leave Mercedes to join Ferrari in the near future after clinching his maiden F1 driver's title at the Mexico City GP. The post Toto Wolff shuts down speculation of Kim",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/09/Toto-Wolff.webp",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794924029.0,
+     "teams": [
+      "ferrari",
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Lewis Hamilton announces huge new partnership ahead of Las Vegas GP",
+     "url": "https://www.crash.net/f1/news/1110149/1/lewis-hamilton-announces-huge-new-partnership-ahead-las-vegas-gp",
+     "desc": "Lewis Hamilton has become the new global ambassador for AG1.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1443666_hires.jpg?width=1200",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794924000.0,
+     "teams": [
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Toto Wolff is not afraid of losing Kimi Antonelli to Ferrari",
+     "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794915910.0,
+     "teams": [
+      "ferrari",
+      "mercedes"
+     ],
+     "own": true
+    }
+   ]
+  },
+  {
+   "id": "ferrari",
+   "name": "Ferrari",
+   "nationality": "Italian",
+   "pos": 2,
+   "points": 510,
+   "wins": 2,
+   "drivers": [
+    {
+     "id": "hamilton",
+     "name": "Lewis Hamilton",
+     "last": "Hamilton",
+     "code": "HAM",
+     "num": "44",
+     "pos": 4,
+     "points": 261,
+     "wins": 1
+    },
+    {
+     "id": "leclerc",
+     "name": "Charles Leclerc",
+     "last": "Leclerc",
+     "code": "LEC",
+     "num": "16",
+     "pos": 5,
+     "points": 249,
+     "wins": 1
+    }
+   ],
+   "prev": [
+    {
+     "season": 2024,
+     "pos": 2,
+     "points": 652
+    },
+    {
+     "season": 2025,
+     "pos": 4,
+     "points": 398
+    }
+   ],
+   "news": [
+    {
+     "title": "Ferrari boss Fred Vasseur handed ‘overwhelmed’ verdict by Bernie Ecclestone",
+     "url": "https://www.motorsportweek.com/2026/11/17/bernie-ecclestone-makes-overwhelmed-claim-about-ferrari-fred-vasseur/",
+     "desc": "Bernie Ecclestone believes Fred Vasseur is not the right man to lead Ferrari after claiming the Frenchman is \"overwhelmed\" at the F1 team. The post Ferrari boss Fred Vasseur handed &#8216;overwhelmed&#8217; verdict by Bernie Eccle",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Bernie-Ecclestone-F1-300x169.webp",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794936600.0,
+     "teams": [
+      "ferrari"
+     ],
+     "own": true
+    },
+    {
+     "title": "Toto Wolff offers blunt response to Kimi Antonelli to Ferrari question",
+     "url": "https://www.crash.net/f1/news/1110156/1/toto-wolff-offers-blunt-response-kimi-antonelli-ferrari-question",
+     "desc": "Toto Wolff addresses the prospect of Kimi Antonelli moving to Ferrari one day.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1415432_hires.jpg?width=1200",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794930145.0,
+     "teams": [
+      "ferrari",
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Toto Wolff shuts down speculation of Kimi Antonelli Ferrari defection",
+     "url": "https://www.motorsportweek.com/2026/11/17/toto-wolff-shuts-down-speculation-of-kimi-antonelli-ferrari-defection/",
+     "desc": "Toto Wolff has shut down speculation that Kimi Antonelli could leave Mercedes to join Ferrari in the near future after clinching his maiden F1 driver's title at the Mexico City GP. The post Toto Wolff shuts down speculation of Kim",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/09/Toto-Wolff.webp",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794924029.0,
+     "teams": [
+      "ferrari",
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Ferrari boss Fred Vasseur “overwhelmed” by job claims Bernie Ecclestone",
+     "url": "https://www.crash.net/f1/news/1110151/1/ferrari-boss-fred-vasseur-overwhelmed-job-claims-bernie-ecclestone",
+     "desc": "Ex-F1 boss Bernie Ecclestone launches scathing attack on Ferrari and Fred Vasseur.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1450961_hires.jpg?width=1200",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794918610.0,
+     "teams": [
+      "ferrari"
+     ],
+     "own": true
+    },
+    {
+     "title": "Toto Wolff is not afraid of losing Kimi Antonelli to Ferrari",
+     "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794915910.0,
+     "teams": [
+      "ferrari",
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Ferrari reveals special Las Vegas GP look for Lewis Hamilton and Charles Leclerc",
+     "url": "https://www.crash.net/f1/news/1110145/1/ferrari-reveals-special-las-vegas-gp-look-lewis-hamilton-and-charles-leclerc",
+     "desc": "Ferrari has revealed a special-edition race suit for the 2026 F1 Las Vegas Grand Prix.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/1_1.png?width=1200",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794910715.0,
+     "teams": [
+      "ferrari",
+      "mercedes"
+     ],
+     "own": true
+    }
+   ]
+  },
+  {
+   "id": "red_bull",
+   "name": "Red Bull",
+   "nationality": "Austrian",
+   "pos": 3,
+   "points": 415,
+   "wins": 3,
+   "drivers": [
+    {
+     "id": "max_verstappen",
+     "name": "Max Verstappen",
+     "last": "Verstappen",
+     "code": "VER",
+     "num": "3",
+     "pos": 2,
+     "points": 279,
+     "wins": 3
+    },
+    {
+     "id": "hadjar",
+     "name": "Isack Hadjar",
+     "last": "Hadjar",
+     "code": "HAD",
+     "num": "6",
+     "pos": 8,
+     "points": 122,
+     "wins": 0
+    },
+    {
+     "id": "lawson",
+     "name": "Liam Lawson",
+     "last": "Lawson",
+     "code": "LAW",
+     "num": "30",
+     "pos": 9,
+     "points": 89,
+     "wins": 0
+    }
+   ],
+   "prev": [
+    {
+     "season": 2024,
+     "pos": 3,
+     "points": 589
+    },
+    {
+     "season": 2025,
+     "pos": 3,
+     "points": 451
+    }
+   ],
+   "news": [
+    {
+     "title": "Liam Lawson has been a \"revelation\" as he earned 2027 Racing Bulls F1 deal - Alan Permane",
+     "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
+     "source": "Motorsport.com",
+     "image": "https://cdn-5.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794934957.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Max Verstappen delivers hilarious Red Bull engine jibe",
+     "url": "https://www.motorsportweek.com/2026/11/17/max-verstappen-red-bull-engine-jibe/",
+     "desc": "Max Verstappen joked his Red Bull engine \"doesn't speak English\" after incurring a massive grid penalty at the F1 Sao Paulo GP. The post Max Verstappen delivers hilarious Red Bull engine jibe appeared first on Motorsport Week .",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-Red-Bull-300x169.webp",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794933000.0,
+     "teams": [
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Lando Norris's LN4 Fusion signs former Red Bull junior Oliver Goethe as its first F2 driver",
+     "url": "https://www.motorsport.com/f1/news/lando-norriss-ln4-fusion-signs-former-red-bull-junior-oliver-goethe-as-its-first-f2-driver/10874918/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Lando Norris's new junior team LN4 Fusion has signed former Red Bull junior Oliver Goethe as its first driver for the 2027 Formula 2 season. The 22-year-old will make the move from MP Motorsport for his third season in F2, after c",
+     "source": "Motorsport.com",
+     "image": "https://cdn-8.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794851494.0,
+     "teams": [
+      "red_bull",
+      "mclaren"
+     ],
+     "own": true
+    },
+    {
+     "title": "Max Verstappen loses F1 champion mechanic to another racing series",
+     "url": "https://www.crash.net/f1/news/1110130/1/max-verstappen-loses-f1-champion-mechanic-another-racing-series",
+     "desc": "A key Max Verstappen mechanic is leaving Red Bull",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453799_hires_0.jpg?width=1200",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794833291.0,
+     "teams": [
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Christian Horner reveals how Max Verstappen’s management reshaped 2022 Red Bull development",
+     "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794833095.0,
+     "teams": [
+      "red_bull",
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Christian Horner admits Red Bull prospects were thrown in against Max Verstappen too soon",
+     "url": "https://www.motorsport.com/f1/news/horner-admits-red-bull-broken-pierre-gasly-and-promoted-drivers-too-soon/10874627/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "The second seat at Red Bull Racing has long been viewed as one of the most high-pressure environments in Formula 1. While the Milton Keynes operation frequently cycled through highly rated prospects trying to find a match for Max ",
+     "source": "Motorsport.com",
+     "image": "https://cdn-4.motorsport.com/images/amp/YpbAXRj0/s6/motorsport-com-graphics-2026-1-2.jpg",
+     "date": "2026-11-15",
+     "date_human": "15 nov",
+     "ts": 1794785404.0,
+     "teams": [
+      "red_bull"
+     ],
+     "own": true
+    }
+   ]
+  },
+  {
+   "id": "mclaren",
+   "name": "McLaren",
+   "nationality": "British",
+   "pos": 4,
+   "points": 398,
+   "wins": 3,
+   "drivers": [
+    {
+     "id": "norris",
+     "name": "Lando Norris",
+     "last": "Norris",
+     "code": "NOR",
+     "num": "1",
+     "pos": 6,
+     "points": 246,
+     "wins": 3
+    },
+    {
+     "id": "piastri",
+     "name": "Oscar Piastri",
+     "last": "Piastri",
+     "code": "PIA",
+     "num": "81",
+     "pos": 7,
+     "points": 152,
+     "wins": 0
+    }
+   ],
+   "prev": [
+    {
+     "season": 2024,
+     "pos": 1,
+     "points": 666
+    },
+    {
+     "season": 2025,
+     "pos": 1,
+     "points": 833
+    }
+   ],
+   "news": [
+    {
+     "title": "Lando Norris's LN4 Fusion signs former Red Bull junior Oliver Goethe as its first F2 driver",
+     "url": "https://www.motorsport.com/f1/news/lando-norriss-ln4-fusion-signs-former-red-bull-junior-oliver-goethe-as-its-first-f2-driver/10874918/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Lando Norris's new junior team LN4 Fusion has signed former Red Bull junior Oliver Goethe as its first driver for the 2027 Formula 2 season. The 22-year-old will make the move from MP Motorsport for his third season in F2, after c",
+     "source": "Motorsport.com",
+     "image": "https://cdn-8.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794851494.0,
+     "teams": [
+      "red_bull",
+      "mclaren"
+     ],
+     "own": true
+    },
+    {
+     "title": "Lando Norris: F1 needs better rain tyres as wet Las Vegas would be \"scary\"",
+     "url": "https://www.motorsport.com/f1/news/lando-norris-f1-needs-better-rain-tyres-as-wet-las-vegas-would-be-scary/10874689/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "World champion Lando Norris hopes Formula 1 tyre supplier Pirelli will field much-improved rain tyres in 2027 as he expects the current range won't work properly at a low-downforce circuit like Las Vegas. Following partially rain-",
+     "source": "Motorsport.com",
+     "image": "https://cdn-4.motorsport.com/images/amp/27No3ae0/s6/lando-norris-mclaren.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794850242.0,
+     "teams": [
+      "mclaren"
+     ],
+     "own": true
+    },
+    {
+     "title": "Norris: Las Vegas GP would be \"scary\" with current F1 wet tyres",
+     "url": "https://www.autosport.com/f1/news/lando-norris-f1-needs-better-rain-tyres-as-wet-las-vegas-would-be-scary/10874886/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Lando Norris hopes Formula 1 tyre supplier Pirelli will field much-improved rain tyres in 2027 as he expects the current range won't work properly at a low-downforce circuit like Las Vegas. Following partially rain-affected weeken",
+     "source": "Autosport",
+     "image": "https://cdn-1.motorsport.com/images/amp/0o5AVObY/s6/lando-norris-mclaren-george-ru-2.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794850203.0,
+     "teams": [
+      "mclaren"
+     ],
+     "own": true
+    },
+    {
+     "title": "Zak Brown recalls McLaren's \"very toxic environment\" after joining team in 2016",
+     "url": "https://www.motorsport.com/f1/news/zak-brown-recalls-mclarens-very-toxic-environment-after-joining-team-in-2016/10874891/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "McLaren Racing CEO Zak Brown has described the team he joined in 2016 as \"a very toxic environment\", blaming a revolving door of leaders for years of poor results on and off the track. The American arrived at McLaren a decade ago,",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/YXyKXKd6/s6/motorsport-com-graphics-3.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794844465.0,
+     "teams": [
+      "mclaren"
+     ],
+     "own": true
+    },
+    {
+     "title": "Topps reveals Gem Mint 10 Lando Norris card with Coca-Cola suit patch",
+     "url": "https://www.motorsport.com/f1/news/topps-reveals-gem-mint-10-lando-norris-card-with-coca-cola-suit-patch/10874731/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Topps has shared one of its rarest Lando Norris cards: a signed 2024 Dynasty Formula 1 card with two pieces of race suit, one of them cut from the Coca-Cola logo on the sleeve of his McLaren race suit. The Topps Racing account pos",
+     "source": "Motorsport.com",
+     "image": "https://cdn-9.motorsport.com/images/amp/6b8ZMdv2/s6/motorsport-com-graphics-2026-1.jpg",
+     "date": "2026-11-15",
+     "date_human": "15 nov",
+     "ts": 1794782859.0,
+     "teams": [
+      "mclaren"
+     ],
+     "own": true
+    },
+    {
+     "title": "Oscar Piastri: You've got to \"manhandle\" McLaren's F1 car to find its potential",
+     "url": "https://www.motorsport.com/f1/news/oscar-piastri-youve-got-to-manhandle-mclarens-f1-car-to-find-its-potential/10874559/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Oscar Piastri says McLaren's 2026 Formula 1 car has to be \"manhandled\" to be quick, describing the MCL40 as a car that punishes drivers the moment they are not at the limit. The Australian driver has endured a difficult campaign a",
+     "source": "Motorsport.com",
+     "image": "https://cdn-8.motorsport.com/images/amp/6zoD8ea0/s6/motorsport-com-graphics-2026-1.jpg",
+     "date": "2026-11-14",
+     "date_human": "14 nov",
+     "ts": 1794677980.0,
+     "teams": [
+      "mclaren"
+     ],
+     "own": true
+    }
+   ]
+  },
+  {
+   "id": "rb",
+   "name": "RB F1 Team",
+   "nationality": "Italian",
+   "pos": 5,
+   "points": 114,
+   "wins": 0,
+   "drivers": [
+    {
+     "id": "lawson",
+     "name": "Liam Lawson",
+     "last": "Lawson",
+     "code": "LAW",
+     "num": "30",
+     "pos": 9,
+     "points": 89,
+     "wins": 0
+    },
+    {
+     "id": "arvid_lindblad",
+     "name": "Arvid Lindblad",
+     "last": "Lindblad",
+     "code": "LIN",
+     "num": "41",
+     "pos": 11,
+     "points": 38,
+     "wins": 0
+    },
+    {
+     "id": "tsunoda",
+     "name": "Yuki Tsunoda",
+     "last": "Tsunoda",
+     "code": "TSU",
+     "num": "22",
+     "pos": 20,
+     "points": 1,
+     "wins": 0
+    }
+   ],
+   "prev": [
+    {
+     "season": 2024,
+     "pos": 8,
+     "points": 46
+    },
+    {
+     "season": 2025,
+     "pos": 6,
+     "points": 92
+    }
+   ],
+   "news": [
+    {
+     "title": "Liam Lawson has been a \"revelation\" as he earned 2027 Racing Bulls F1 deal - Alan Permane",
+     "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
+     "source": "Motorsport.com",
+     "image": "https://cdn-5.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794934957.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Racing Bulls boss Permane “should talk up” need for cost cap changes – Vowles | Formula 1",
+     "url": "https://www.racefans.net/2026/11/16/racing-bulls-boss-permane-should-talk-up-need-for-cost-cap-changes-vowles/",
+     "desc": "Williams team principal James Vowles says the leading midfield team of 2026 should want to see changes to Formula 1's cost cap.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794823549.0,
+     "teams": [
+      "williams",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Retaining Liam Lawson isn't enough – Red Bull must stop treating him like a failure",
+     "url": "https://www.motorsport.com/f1/news/retaining-liam-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874659/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
+     "source": "Motorsport.com",
+     "image": "https://cdn-5.motorsport.com/images/amp/YpbAe4N0/s6/liam-lawson-racing-bulls.jpg",
+     "date": "2026-11-15",
+     "date_human": "15 nov",
+     "ts": 1794767403.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Retaining Lawson isn't enough – Red Bull must stop treating him like a failure",
+     "url": "https://www.autosport.com/f1/news/retaining-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874666/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
+     "source": "Autosport",
+     "image": "https://cdn-1.motorsport.com/images/amp/YP743Le2/s6/liam-lawson-red-bull-2.jpg",
+     "date": "2026-11-15",
+     "date_human": "15 nov",
+     "ts": 1794748102.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Featured Comment: Pay more attention to Racing Bulls helping Red Bull | Brief",
+     "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
+     "desc": "Racing Bulls deserve more scrutiny for helping a 'rival' team",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-13",
+     "date_human": "13 nov",
+     "ts": 1794584132.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Tsolov lands reserve driver role for F1 2027",
+     "url": "https://www.autosport.com/f1/news/tsolov-lands-reserve-driver-role-for-f1-2027/10874151/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Nikola Tsolov has been named as reserve driver for both Red Bull and Racing Bulls for the 2027 Formula 1 season having missed out on a full-time drive. The 19-year-old Bulgarian had been linked to a step up from F2 to replace Liam",
+     "source": "Autosport",
+     "image": "https://cdn-7.motorsport.com/images/amp/6x7LbPRY/s6/nikola-tsolov-racing-bulls-4.jpg",
+     "date": "2026-11-12",
+     "date_human": "12 nov",
+     "ts": 1794496867.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    }
+   ]
+  },
+  {
+   "id": "alpine",
+   "name": "Alpine F1 Team",
+   "nationality": "French",
+   "pos": 6,
+   "points": 69,
+   "wins": 0,
+   "drivers": [
+    {
+     "id": "gasly",
+     "name": "Pierre Gasly",
+     "last": "Gasly",
+     "code": "GAS",
+     "num": "10",
+     "pos": 10,
+     "points": 42,
+     "wins": 0
+    },
+    {
+     "id": "colapinto",
+     "name": "Franco Colapinto",
+     "last": "Colapinto",
+     "code": "COL",
+     "num": "43",
+     "pos": 12,
+     "points": 27,
+     "wins": 0
+    }
+   ],
+   "prev": [
+    {
+     "season": 2024,
+     "pos": 6,
+     "points": 65
+    },
+    {
+     "season": 2025,
+     "pos": 10,
+     "points": 22
+    }
+   ],
+   "news": [
+    {
+     "title": "Permane signs new Racing Bulls F1 deal",
+     "url": "https://www.autosport.com/f1/news/permane-signs-new-racing-bulls-f1-deal/10871999/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Red Bull has given Alan Permane a new contract as the Racing Bulls Formula 1 squad’s team principal. Permane will retain the reins of the Faenza-based outfit until the end of the 2031 season. A stalwart of the current Alpine squad",
+     "source": "Autosport",
+     "image": "https://cdn-9.motorsport.com/images/amp/24QebeqY/s6/alan-permane-racing-bulls-2.jpg",
+     "date": "2026-11-06",
+     "date_human": "6 nov",
+     "ts": 1793957047.0,
+     "teams": [
+      "red_bull",
+      "alpine",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Bernie Ecclestone urges Lewis Hamilton ‘to think about quitting’ F1",
+     "url": "https://www.motorsportweek.com/2026/11/17/bernie-ecclestone-urges-lewis-hamilton-to-think-about-quitting-f1/",
+     "desc": "Ex-F1 boss Bernie Ecclestone has delivered a damning verdict on Lewis Hamilton's future in Formula 1, urging the seven-time world champion to consider retirement. The post Bernie Ecclestone urges Lewis Hamilton &#8216;to think abo",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1451195_HiRes-1-300x169.webp",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794927600.0,
+     "teams": [
+      "mercedes"
+     ],
+     "own": false
+    },
+    {
+     "title": "Toto Wolff shuts down speculation of Kimi Antonelli Ferrari defection",
+     "url": "https://www.motorsportweek.com/2026/11/17/toto-wolff-shuts-down-speculation-of-kimi-antonelli-ferrari-defection/",
+     "desc": "Toto Wolff has shut down speculation that Kimi Antonelli could leave Mercedes to join Ferrari in the near future after clinching his maiden F1 driver's title at the Mexico City GP. The post Toto Wolff shuts down speculation of Kim",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/09/Toto-Wolff.webp",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794924029.0,
+     "teams": [
+      "ferrari",
+      "mercedes"
+     ],
+     "own": false
+    }
+   ]
+  },
+  {
+   "id": "haas",
+   "name": "Haas F1 Team",
+   "nationality": "American",
+   "pos": 7,
+   "points": 31,
+   "wins": 0,
+   "drivers": [
+    {
+     "id": "bearman",
+     "name": "Oliver Bearman",
+     "last": "Bearman",
+     "code": "BEA",
+     "num": "87",
+     "pos": 13,
+     "points": 23,
+     "wins": 0
+    },
+    {
+     "id": "ocon",
+     "name": "Esteban Ocon",
+     "last": "Ocon",
+     "code": "OCO",
+     "num": "31",
+     "pos": 16,
+     "points": 7,
+     "wins": 0
+    },
+    {
+     "id": "ryo_hirakawa",
+     "name": "Ryo Hirakawa",
+     "last": "Hirakawa",
+     "code": "HIR",
+     "num": "50",
+     "pos": 21,
+     "points": 1,
+     "wins": 0
+    },
+    {
+     "id": "rafael_camara",
+     "name": "Rafael Camara",
+     "last": "Camara",
+     "code": "CAM",
+     "num": "51",
+     "pos": 25,
+     "points": 0,
+     "wins": 0
+    }
+   ],
+   "prev": [
+    {
+     "season": 2024,
+     "pos": 7,
+     "points": 58
+    },
+    {
+     "season": 2025,
+     "pos": 8,
+     "points": 79
+    }
+   ],
+   "news": [
+    {
+     "title": "Haas sticks with Camara for Las Vegas GP, Hirakawa in for FP1",
+     "url": "https://www.autosport.com/f1/news/haas-sticks-with-rafael-camara-for-las-vegas-ryo-hirakawa-in-for-fp1/10874781/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
+     "source": "Autosport",
+     "image": "https://cdn-6.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794822750.0,
+     "teams": [
+      "haas"
+     ],
+     "own": true
+    },
+    {
+     "title": "Haas sticks with Rafael Camara for Las Vegas, Ryo Hirakawa in for FP1",
+     "url": "https://www.motorsport.com/f1/news/haas-sticks-with-camara-for-las-vegas-hirakawa-in-for-fp1/10874778/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
+     "source": "Motorsport.com",
+     "image": "https://cdn-2.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794822676.0,
+     "teams": [
+      "haas"
+     ],
+     "own": true
+    },
+    {
+     "title": "Haas confirms driver plans for F1 Vegas GP with two changes",
+     "url": "https://www.crash.net/f1/news/1110122/1/haas-confirms-driver-plans-f1-vegas-gp-two-changes",
+     "desc": "Haas has confirmed two driver line-up changes for the Vegas GP",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/2303869558-926.jpg?width=1200",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794818813.0,
+     "teams": [
+      "haas"
+     ],
+     "own": true
+    },
+    {
+     "title": "Camara to race for Haas again in Las Vegas, Hirakawa to drive in practice | Formula 1",
+     "url": "https://www.racefans.net/2026/11/16/camara-to-race-for-haas-again-in-las-vegas-hirakawa-to-drive-in-practice/",
+     "desc": "Haas has confirmed Rafael Camara will race for the team again in this weekend's Las Vegas Grand Prix.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794816777.0,
+     "teams": [
+      "haas"
+     ],
+     "own": true
+    },
+    {
+     "title": "Guenther Steiner suggests Mark Webber became too involved in Oscar Piastri’s career",
+     "url": "https://www.motorsport.com/f1/news/guenther-steiner-suggests-mark-webber-became-too-involved-in-oscar-piastris-career/10874383/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Former Haas Formula 1 team principal Guenther Steiner believes Mark Webber may have become too involved in Oscar Piastri’s career in the second half of 2025, before the McLaren driver decided he wanted to “do this on my own”. Pias",
+     "source": "Motorsport.com",
+     "image": "https://cdn-3.motorsport.com/images/amp/6zoD8dL0/s6/motorsport-com-graphics-2026-1.jpg",
+     "date": "2026-11-13",
+     "date_human": "13 nov",
+     "ts": 1794590410.0,
+     "teams": [
+      "mclaren",
+      "haas"
+     ],
+     "own": true
+    },
+    {
+     "title": "Guenther Steiner suggests Max Verstappen could be better suited to lead Ferrari",
+     "url": "https://www.motorsport.com/f1/news/guenther-steiner-suggests-max-verstappen-could-be-better-suited-to-lead-ferrari/10874192/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Former Haas Formula 1 team principal Guenther Steiner has questioned whether Lewis Hamilton is the driver to turn Ferrari's fortunes around, suggesting Max Verstappen might be better suited to the role. Hamilton joined Ferrari in ",
+     "source": "Motorsport.com",
+     "image": "https://cdn-3.motorsport.com/images/amp/01QNX1q0/s6/motorsport-com-graphics-95.jpg",
+     "date": "2026-11-12",
+     "date_human": "12 nov",
+     "ts": 1794517204.0,
+     "teams": [
+      "ferrari",
+      "mercedes",
+      "red_bull",
+      "haas"
+     ],
+     "own": true
+    }
+   ]
+  },
+  {
+   "id": "audi",
+   "name": "Audi",
+   "nationality": "German",
+   "pos": 8,
+   "points": 28,
+   "wins": 0,
+   "drivers": [
+    {
+     "id": "bortoleto",
+     "name": "Gabriel Bortoleto",
+     "last": "Bortoleto",
+     "code": "BOR",
+     "num": "5",
+     "pos": 14,
+     "points": 14,
+     "wins": 0
+    },
+    {
+     "id": "hulkenberg",
+     "name": "Nico Hülkenberg",
+     "last": "Hülkenberg",
+     "code": "HUL",
+     "num": "27",
+     "pos": 15,
+     "points": 14,
+     "wins": 0
+    }
+   ],
+   "prev": [],
+   "news": [
+    {
+     "title": "Mercedes and Audi unveil adidas collections for F1 Las Vegas Grand Prix",
+     "url": "https://www.motorsport.com/f1/news/mercedes-and-audi-unveil-adidas-collections-for-f1-las-vegas-grand-prix/10874493/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Mercedes and Audi have unveiled special adidas fan collections for the upcoming Formula 1 Las Vegas Grand Prix. Mercedes' range is called \"Neon Lights\", while Audi's is named \"After Hours\". Both collections are available now throu",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/0o5AVbPY/s6/motorsport-com-graphics-2026-1.jpg",
+     "date": "2026-11-14",
+     "date_human": "14 nov",
+     "ts": 1794655970.0,
+     "teams": [
+      "mercedes",
+      "audi"
+     ],
+     "own": true
+    },
+    {
+     "title": "Court of Appeal to hear Audi’s case over Tsunoda decision on November 25th | Formula 1",
+     "url": "https://www.racefans.net/2026/11/12/court-of-appeal-to-hear-audis-case-over-tsunoda-decision-on-november-25th/",
+     "desc": "Audi is challenging the stewards decision' not to penalise Yuki Tsunoda for an infringement in the Italian Grand Prix.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-12",
+     "date_human": "12 nov",
+     "ts": 1794502339.0,
+     "teams": [
+      "audi"
+     ],
+     "own": true
+    },
+    {
+     "title": "Hearing set for Audi Tsunoda appeal",
+     "url": "https://www.the-race.com/formula-1/audi-appeal-f1-italian-gp-yuki-tsunoda/",
+     "desc": "The FIA has announced the hearing date for Audi’s appeal against Yuki Tsunoda not getting a penalty at Formula 1’s Italian Grand Prix",
+     "source": "The Race",
+     "image": "https://storage.ghost.io/c/dd/af/ddafbd99-2ccd-468c-b622-4b3cccf80b49/content/images/2026/11/XPB_1434343_HiRes.jpg",
+     "date": "",
+     "date_human": "",
+     "ts": 0,
+     "teams": [
+      "audi"
+     ],
+     "own": true
+    }
+   ]
+  },
+  {
+   "id": "williams",
+   "name": "Williams",
+   "nationality": "British",
+   "pos": 9,
+   "points": 12,
+   "wins": 0,
+   "drivers": [
+    {
+     "id": "sainz",
+     "name": "Carlos Sainz",
+     "last": "Sainz",
+     "code": "SAI",
+     "num": "55",
+     "pos": 18,
+     "points": 7,
+     "wins": 0
+    },
+    {
+     "id": "albon",
+     "name": "Alexander Albon",
+     "last": "Albon",
+     "code": "ALB",
+     "num": "23",
+     "pos": 19,
+     "points": 5,
+     "wins": 0
+    }
+   ],
+   "prev": [
+    {
+     "season": 2024,
+     "pos": 9,
+     "points": 17
+    },
+    {
+     "season": 2025,
+     "pos": 5,
+     "points": 137
+    }
+   ],
+   "news": [
+    {
+     "title": "Jade Jaquet re-signs with Williams for the 2027 F1 Academy season",
+     "url": "https://www.motorsportweek.com/2026/11/17/jade-jaquet-re-signs-with-williams-for-the-2027-f1-academy-season/",
+     "desc": "Williams has announced that Jade Jaquet will represent the team in the 2027 F1 Academy season, entering her second year in the series. The post Jade Jaquet re-signs with Williams for the 2027 F1 Academy season appeared first on Mo",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Jade_F1A_Contract_Extension-300x169.webp",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794931200.0,
+     "teams": [
+      "williams"
+     ],
+     "own": true
+    },
+    {
+     "title": "Williams, Aston Martin among new F1 liveries for Las Vegas GP as Acura \"replaces\" Honda",
+     "url": "https://www.motorsport.com/f1/news/williams-aston-martin-among-new-f1-liveries-for-las-vegas-gp-as-acura-replaces-honda/10874925/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Williams and Aston Martin are among the F1 teams to have revamped their car liveries for this weekend's Las Vegas Grand Prix. F1 heads to Las Vegas for its third of three US races, with the entertainment capital having quickly bec",
+     "source": "Motorsport.com",
+     "image": "https://cdn-4.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794854708.0,
+     "teams": [
+      "aston_martin",
+      "williams"
+     ],
+     "own": true
+    },
+    {
+     "title": "Williams to light up night sky with special Las Vegas livery",
+     "url": "https://www.motorsportweek.com/2026/11/16/williams-f1-las-vegas-gp-livery/",
+     "desc": "Williams has unveiled a special livery for this weekend's Formula 1 Las Vegas Grand Prix, and it promises to blend with the city's famous lights. The post Williams to light up night sky with special Las Vegas livery appeared first",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Williams-F1-Las-Vegas-GP-300x169.webp",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794852586.0,
+     "teams": [
+      "williams"
+     ],
+     "own": true
+    },
+    {
+     "title": "Cadillac, Williams and Aston Martin reveal one-off liveries for Las Vegas GP | Formula 1",
+     "url": "https://www.racefans.net/2026/11/16/cadillac-williams-and-aston-martin-reveal-one-off-liveries-for-las-vegas-gp/",
+     "desc": "Cadillac, Williams and Aston Martin have revealed special liveries for this weekend's Las Vegas Grand Prix.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794845454.0,
+     "teams": [
+      "aston_martin",
+      "williams",
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Racing Bulls boss Permane “should talk up” need for cost cap changes – Vowles | Formula 1",
+     "url": "https://www.racefans.net/2026/11/16/racing-bulls-boss-permane-should-talk-up-need-for-cost-cap-changes-vowles/",
+     "desc": "Williams team principal James Vowles says the leading midfield team of 2026 should want to see changes to Formula 1's cost cap.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794823549.0,
+     "teams": [
+      "williams",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "\"It's horribly painful\" - Williams drops 2026 car upgrades to benefit 2027",
+     "url": "https://www.motorsport.com/f1/news/horribly-painful-williams-2026-car-upgrades-benefit-2027/10874290/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Williams F1 team boss James Vowles says it was \"horribly painful\" for the squad to forego 2026 aero upgrades and save the resources for 2027 instead. Williams has been forced into playing the long game for some time now, but was h",
+     "source": "Motorsport.com",
+     "image": "https://cdn-4.motorsport.com/images/amp/68VwMox2/s6/alexander-albon-williams.jpg",
+     "date": "2026-11-13",
+     "date_human": "13 nov",
+     "ts": 1794572132.0,
+     "teams": [
+      "williams"
+     ],
+     "own": true
+    }
+   ]
+  },
+  {
+   "id": "aston_martin",
+   "name": "Aston Martin",
+   "nationality": "British",
+   "pos": 10,
+   "points": 7,
+   "wins": 0,
+   "drivers": [
+    {
+     "id": "alonso",
+     "name": "Fernando Alonso",
+     "last": "Alonso",
+     "code": "ALO",
+     "num": "14",
+     "pos": 17,
+     "points": 7,
+     "wins": 0
+    },
+    {
+     "id": "stroll",
+     "name": "Lance Stroll",
+     "last": "Stroll",
+     "code": "STR",
+     "num": "18",
+     "pos": 22,
+     "points": 0,
+     "wins": 0
+    }
+   ],
+   "prev": [
+    {
+     "season": 2024,
+     "pos": 5,
+     "points": 94
+    },
+    {
+     "season": 2025,
+     "pos": 7,
+     "points": 89
+    }
+   ],
+   "news": [
+    {
+     "title": "Fernando Alonso to return to Dakar Rally in 2027 with Aston Martin",
+     "url": "https://www.motorsportweek.com/2026/11/17/fernando-alonso-dakar-2027-aston-martin/",
+     "desc": "Fernando Alonso will return to the Dakar Rally after seven years away, competing with Aston Martin in 2027 alongside his Formula 1 campaign. The post Fernando Alonso to return to Dakar Rally in 2027 with Aston Martin appeared firs",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1453336_HiRes-1-300x169.webp",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794920400.0,
+     "teams": [
+      "aston_martin"
+     ],
+     "own": true
+    },
+    {
+     "title": "Spotlight: Alonso to enter Dakar in car Aston Martin designed for Call of Duty | Brief",
+     "url": "https://www.racefans.net/2026/11/17/spotlight-alonso-to-enter-dakar-in-car-aston-martin-designed-for-call-of-duty/",
+     "desc": "Alonso to return to Dakar rally in CoD Aston Martin",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794907008.0,
+     "teams": [
+      "aston_martin"
+     ],
+     "own": true
+    },
+    {
+     "title": "Fernando Alonso to race in Dakar Rally for Aston Martin",
+     "url": "https://www.crash.net/dakar/news/1110143/1/fernando-alonso-race-dakar-rally-aston-martin",
+     "desc": "Fernando Alonso confirms his return to prestigious Dakar rally.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/skysports-fernando-alonso-aston-martin_7408358.jpg?width=1200",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794906859.0,
+     "teams": [
+      "aston_martin"
+     ],
+     "own": true
+    },
+    {
+     "title": "Alonso, Loeb join Aston Martin for 2027 Dakar Rally",
+     "url": "https://www.autosport.com/dakar/news/alonso-loeb-join-aston-martin-for-2027-dakar-rally/10875003/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
+     "source": "Autosport",
+     "image": "https://cdn-6.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794906118.0,
+     "teams": [
+      "aston_martin"
+     ],
+     "own": true
+    },
+    {
+     "title": "Fernando Alonso to return to Dakar Rally with Aston Martin in 2027",
+     "url": "https://www.motorsport.com/dakar/news/fernando-alonso-to-return-to-dakar-rally-with-aston-martin-in-2027/10874907/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
+     "source": "Motorsport.com",
+     "image": "https://cdn-5.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "ts": 1794906100.0,
+     "teams": [
+      "aston_martin"
+     ],
+     "own": true
+    },
+    {
+     "title": "Williams, Aston Martin among new F1 liveries for Las Vegas GP as Acura \"replaces\" Honda",
+     "url": "https://www.motorsport.com/f1/news/williams-aston-martin-among-new-f1-liveries-for-las-vegas-gp-as-acura-replaces-honda/10874925/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Williams and Aston Martin are among the F1 teams to have revamped their car liveries for this weekend's Las Vegas Grand Prix. F1 heads to Las Vegas for its third of three US races, with the entertainment capital having quickly bec",
+     "source": "Motorsport.com",
+     "image": "https://cdn-4.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794854708.0,
+     "teams": [
+      "aston_martin",
+      "williams"
+     ],
+     "own": true
+    }
+   ]
+  },
+  {
+   "id": "cadillac",
+   "name": "Cadillac F1 Team",
+   "nationality": "American",
+   "pos": 11,
+   "points": 0,
+   "wins": 0,
+   "drivers": [
+    {
+     "id": "bottas",
+     "name": "Valtteri Bottas",
+     "last": "Bottas",
+     "code": "BOT",
+     "num": "77",
+     "pos": 23,
+     "points": 0,
+     "wins": 0
+    },
+    {
+     "id": "perez",
+     "name": "Sergio Pérez",
+     "last": "Pérez",
+     "code": "PER",
+     "num": "11",
+     "pos": 24,
+     "points": 0,
+     "wins": 0
+    }
+   ],
+   "prev": [],
+   "news": [
+    {
+     "title": "Cadillac, Williams and Aston Martin reveal one-off liveries for Las Vegas GP | Formula 1",
+     "url": "https://www.racefans.net/2026/11/16/cadillac-williams-and-aston-martin-reveal-one-off-liveries-for-las-vegas-gp/",
+     "desc": "Cadillac, Williams and Aston Martin have revealed special liveries for this weekend's Las Vegas Grand Prix.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794845454.0,
+     "teams": [
+      "aston_martin",
+      "williams",
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Christian Horner reveals how Max Verstappen’s management reshaped 2022 Red Bull development",
+     "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "ts": 1794833095.0,
+     "teams": [
+      "red_bull",
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Herta qualifies for F1 superlicence as Bottas remains bullish on 2027 seat",
+     "url": "https://www.autosport.com/f1/news/herta-qualifies-for-f1-superlicence-as-bottas-remains-bullish-on-2027-seat/10872179/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Cadillac Formula 1 test driver Colton Herta has finally obtained the last remaining superlicence point required to drive in the series, but incumbent Valtteri Bottas remains bullish on his future with the squad. Herta conducted hi",
+     "source": "Autosport",
+     "image": "https://cdn-1.motorsport.com/images/amp/01QNpEx0/s6/colton-herta-cadillac-f1-team.jpg",
+     "date": "2026-11-06",
+     "date_human": "6 nov",
+     "ts": 1793984236.0,
+     "teams": [
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Liverpool FC owners emerge as potential buyers of Cadillac F1 shares amid TWG uncertainty",
+     "url": "https://www.autosport.com/f1/news/liverpool-fc-owners-emerge-as-potential-buyers-of-cadillac-f1-shares-amid-twg-uncertainty/10871500/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Fresh doubts have emerged over the future of Cadillac Formula 1's majority ownership amid reports Mark Walter's TWG Global is looking to offload some of its shares - with Liverpool FC owner Fenway Sports Group said to be among the",
+     "source": "Autosport",
+     "image": "https://cdn-2.motorsport.com/images/amp/0Zq8bZL6/s6/sergio-perez-cadillac.jpg",
+     "date": "2026-11-04",
+     "date_human": "4 nov",
+     "ts": 1793802880.0,
+     "teams": [
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Herta to contest FP1 for Cadillac in Brazil to obtain final superlicence point",
+     "url": "https://www.autosport.com/f1/news/herta-to-contest-fp1-in-brazil/10871438/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Cadillac test driver Colton Herta will conduct his sixth Friday practice session of the Formula 1 season at this weekend's Brazil Grand Prix to collect his missing FIA superlicence point required to race in the series. Herta, who ",
+     "source": "Autosport",
+     "image": "https://cdn-6.motorsport.com/images/amp/6n7ABxe0/s6/colton-herta-cadillac-f1-team-2.jpg",
+     "date": "2026-11-04",
+     "date_human": "4 nov",
+     "ts": 1793785363.0,
+     "teams": [
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Sergio Pérez's F1 second act: Red Bull regrets, redemption and a fresh start at Cadillac",
+     "url": "https://www.espn.com/f1/story/_/id/50310746/sergio-perez-f1-second-act-red-bull-regrets-cadillac-contract",
+     "desc": "Sergio Pérez reflects on his Red Bull exit, finding happiness beyond F1 and rediscovering his love of racing as he prepares for his 300th grand prix.",
+     "source": "ESPN F1",
+     "image": null,
+     "date": "",
+     "date_human": "",
+     "ts": 0,
+     "teams": [
+      "red_bull",
+      "cadillac"
+     ],
+     "own": true
+    }
+   ]
+  }
+ ],
+ "drivers": [
+  {
+   "id": "antonelli",
+   "full": "Andrea Kimi Antonelli",
+   "first": "Andrea Kimi",
+   "last": "Antonelli",
+   "code": "ANT",
+   "num": "12",
+   "nationality": "Italian",
+   "flag": "🏁",
+   "dob": "2006-08-25",
+   "age": 20,
+   "wiki": "Andrea_Kimi_Antonelli",
+   "pos": 1,
+   "points": 390,
+   "wins": 9,
+   "team": {
+    "id": "mercedes",
+    "name": "Mercedes",
+    "pos": 1
+   },
+   "bio": "Andrea Kimi Antonelli, también conocido como Kimi Antonelli, es un piloto de automovilismo italiano. Entre 2019 y 2024 formó parte del Equipo Júnior de Mercedes, siendo piloto reserva de la escudería este último año. Desde 2025 es piloto de la escudería Mercedes en Fórmula 1, con quienes se consagró Campeón del Mundo en 2026. Con 20 años y 68 días, se convirtió en el piloto más joven en ser campeón, superando el récord de Seba",
+   "photo": "assets/drivers/antonelli.jpg"
+  },
+  {
+   "id": "max_verstappen",
+   "full": "Max Verstappen",
+   "first": "Max",
+   "last": "Verstappen",
+   "code": "VER",
+   "num": "3",
+   "nationality": "Dutch",
+   "flag": "🏁",
+   "dob": "1997-09-30",
+   "age": 29,
+   "wiki": "Max_Verstappen",
+   "pos": 2,
+   "points": 279,
+   "wins": 3,
+   "team": {
+    "id": "red_bull",
+    "name": "Red Bull",
+    "pos": 3
+   },
+   "bio": "Max Emilian Verstappen es un piloto de automovilismo neerlandés nacido en Bélgica. Ganó el Campeonato Mundial de Karting en 2013 y finalizó tercero en el Campeonato Europeo de Fórmula 3 de la FIA en su debut en monoplazas. Debutó en Fórmula 1 con la escudería Toro Rosso en 2015. Desde 2016 es piloto del equipo Red Bull Racing, con el que se consagró tetracampeón del Campeonato Mundial de Fórmula 1 tras los títulos obtenidos en",
+   "photo": "assets/drivers/max_verstappen.jpg"
+  },
+  {
+   "id": "russell",
+   "full": "George Russell",
+   "first": "George",
+   "last": "Russell",
+   "code": "RUS",
+   "num": "63",
+   "nationality": "British",
+   "flag": "🏁",
+   "dob": "1998-02-15",
+   "age": 28,
+   "wiki": "George_Russell_(racing_driver)",
+   "pos": 3,
+   "points": 262,
+   "wins": 3,
+   "team": {
+    "id": "mercedes",
+    "name": "Mercedes",
+    "pos": 1
+   },
+   "bio": "George William Russell is a British racing driver who competes in Formula One for Mercedes. Russell has won eight Formula One Grands Prix across eight seasons.",
+   "photo": "assets/drivers/russell.jpg"
+  },
+  {
+   "id": "hamilton",
+   "full": "Lewis Hamilton",
+   "first": "Lewis",
+   "last": "Hamilton",
+   "code": "HAM",
+   "num": "44",
+   "nationality": "British",
+   "flag": "🏁",
+   "dob": "1985-01-07",
+   "age": 41,
+   "wiki": "Lewis_Hamilton",
+   "pos": 4,
+   "points": 261,
+   "wins": 1,
+   "team": {
+    "id": "ferrari",
+    "name": "Ferrari",
+    "pos": 2
+   },
+   "bio": "Lewis Carl Davidson Larbalestier-Hamilton es un piloto de automovilismo británico. Debutó en la Fórmula 1 con la escudería McLaren en 2007, donde se proclamó campeón del Campeonato Mundial de Fórmula 1 en 2008 y subcampeón en su temporada de debut. Entre 2013 y 2024 formó parte del equipo Mercedes, con el que obtuvo seis campeonatos en 2014, 2015, 2017, 2018, 2019 y 2020, igualando el récord de siete títulos establecido por Mi",
+   "photo": "assets/drivers/hamilton.jpg"
+  },
+  {
+   "id": "leclerc",
+   "full": "Charles Leclerc",
+   "first": "Charles",
+   "last": "Leclerc",
+   "code": "LEC",
+   "num": "16",
+   "nationality": "Monegasque",
+   "flag": "🏁",
+   "dob": "1997-10-16",
+   "age": 29,
+   "wiki": "Charles_Leclerc",
+   "pos": 5,
+   "points": 249,
+   "wins": 1,
+   "team": {
+    "id": "ferrari",
+    "name": "Ferrari",
+    "pos": 2
+   },
+   "bio": "Charles Marc Hervé Perceval Leclerc es un piloto de automovilismo monegasco. Fue campeón de la Copa Mundial de Karting en 2011, y de GP3 Series en 2016 y del Campeonato de Fórmula 2 de la FIA en 2017, ambas como debutante. Debutó al año siguiente en Fórmula 1 con el equipo Sauber en 2018. Desde 2019 es piloto de la escudería Ferrari, resultando subcampeón en 2022, y tercero en 2024.",
+   "photo": "assets/drivers/leclerc.jpg"
+  },
+  {
+   "id": "norris",
+   "full": "Lando Norris",
+   "first": "Lando",
+   "last": "Norris",
+   "code": "NOR",
+   "num": "1",
+   "nationality": "British",
+   "flag": "🏁",
+   "dob": "1999-11-13",
+   "age": 27,
+   "wiki": "Lando_Norris",
+   "pos": 6,
+   "points": 246,
+   "wins": 3,
+   "team": {
+    "id": "mclaren",
+    "name": "McLaren",
+    "pos": 4
+   },
+   "bio": "Lando Norris es un piloto de automovilismo británico que también posee la nacionalidad belga. Fue campeón del Campeonato Mundial de Karting en 2014, de la Eurocopa de Fórmula Renault, la Fórmula Renault NEC y la Toyota Racing Series en 2016, así como del Campeonato Europeo de Fórmula 3 de la FIA en 2017. En 2018 fue subcampeón del Campeonato de Fórmula 2 de la FIA, este último como miembro del Programa de Jóvenes Pilotos de Mc",
+   "photo": "assets/drivers/norris.jpg"
+  },
+  {
+   "id": "piastri",
+   "full": "Oscar Piastri",
+   "first": "Oscar",
+   "last": "Piastri",
+   "code": "PIA",
+   "num": "81",
+   "nationality": "Australian",
+   "flag": "🏁",
+   "dob": "2001-04-06",
+   "age": 25,
+   "wiki": "Oscar_Piastri",
+   "pos": 7,
+   "points": 152,
+   "wins": 0,
+   "team": {
+    "id": "mclaren",
+    "name": "McLaren",
+    "pos": 4
+   },
+   "bio": "Oscar Jack Piastri es un piloto de automovilismo australiano. Entre los años 2019 y 2021 logró tres títulos seguidos: Eurocopa de Fórmula Renault, Fórmula 3 y Fórmula 2, y resultó subcampeón de la F4 Británica en 2017. En 2021 fue miembro de la Academia Alpine y piloto reserva de Alpine en 2022. Desde 2023 es piloto de McLaren en Fórmula 1, resultando tercero en 2025.",
+   "photo": "assets/drivers/piastri.jpg"
+  },
+  {
+   "id": "hadjar",
+   "full": "Isack Hadjar",
+   "first": "Isack",
+   "last": "Hadjar",
+   "code": "HAD",
+   "num": "6",
+   "nationality": "French",
+   "flag": "🏁",
+   "dob": "2004-09-28",
+   "age": 22,
+   "wiki": "Isack_Hadjar",
+   "pos": 8,
+   "points": 122,
+   "wins": 0,
+   "team": {
+    "id": "red_bull",
+    "name": "Red Bull",
+    "pos": 3
+   },
+   "bio": "Isack Alexandre Hadjar es un piloto de automovilismo francés de origen argelino. Fue tercero en el Campeonato Francés de F4 en 2020 y en la Fórmula Regional Asiática en 2022, y campeón de la categoría de novatos en la Fórmula Regional Europea. Fue cuarto en el Campeonato de Fórmula 3 de la FIA con Hitech GP en 2022, equipo con el que disputó el Campeonato de Fórmula 2 de la FIA en 2023, y resultó subcampeón con Campos Racing e",
+   "photo": "assets/drivers/hadjar.jpg"
+  },
+  {
+   "id": "lawson",
+   "full": "Liam Lawson",
+   "first": "Liam",
+   "last": "Lawson",
+   "code": "LAW",
+   "num": "30",
+   "nationality": "New Zealander",
+   "flag": "🏁",
+   "dob": "2002-02-11",
+   "age": 24,
+   "wiki": "Liam_Lawson",
+   "pos": 9,
+   "points": 89,
+   "wins": 0,
+   "team": {
+    "id": "rb",
+    "name": "RB F1 Team",
+    "pos": 5
+   },
+   "bio": "Liam Jared Lawson es un piloto de automovilismo neozelandés. Debutó en Fórmula 1 con la escudería AlphaTauri en el Gran Premio de los Países Bajos de 2023, donde sustituyó a Daniel Ricciardo durante cinco Grandes Premios. En 2024 fue piloto a tiempo parcial del equipo RB y dio el salto a Red Bull en 2025. Posteriormente, tras dos carreras, volvió al equipo Racing Bulls.",
+   "photo": "assets/drivers/lawson.jpg"
+  },
+  {
+   "id": "gasly",
+   "full": "Pierre Gasly",
+   "first": "Pierre",
+   "last": "Gasly",
+   "code": "GAS",
+   "num": "10",
+   "nationality": "French",
+   "flag": "🏁",
+   "dob": "1996-02-07",
+   "age": 30,
+   "wiki": "Pierre_Gasly",
+   "pos": 10,
+   "points": 42,
+   "wins": 0,
+   "team": {
+    "id": "alpine",
+    "name": "Alpine F1 Team",
+    "pos": 6
+   },
+   "bio": "Pierre Jean-Jacques Gasly es un piloto de automovilismo francés. Fue campeón de la Eurocopa Fórmula Renault 2.0 en 2013 y de GP2 Series en 2016. En 2017 resultó subcampeón de la Super Fórmula Japonesa y debutó en la temporada de Fórmula 1 con Toro Rosso. En 2019, disputó las 12 primeras carreras con Red Bull Racing, pero la escudería austríaca decidió prescindir de él a mitad de temporada. Desde 2020 hasta 2022, fue piloto de ",
+   "photo": "assets/drivers/gasly.jpg"
+  },
+  {
+   "id": "arvid_lindblad",
+   "full": "Arvid Lindblad",
+   "first": "Arvid",
+   "last": "Lindblad",
+   "code": "LIN",
+   "num": "41",
+   "nationality": "British",
+   "flag": "🏁",
+   "dob": "2007-08-08",
+   "age": 19,
+   "wiki": "Arvid_Lindblad",
+   "pos": 11,
+   "points": 38,
+   "wins": 0,
+   "team": {
+    "id": "rb",
+    "name": "RB F1 Team",
+    "pos": 5
+   },
+   "bio": "Arvid Anand Olof Lindblad es un piloto de automovilismo británico-sueco. Entre 2022 y 2025 formó parte del Equipo Júnior de Red Bull. Fue tercero en el Campeonato de Italia de F4, cuarto en el Campeonato Euro 4 y quinto en la F4 de Emiratos Árabes Unidos. En 2024 resultó cuarto como debutante en el Campeonato de Fórmula 3 de la FIA con Prema Racing, equipo con el que participó en las series pasadas. En 2025 fue piloto de Campo",
+   "photo": "assets/drivers/arvid_lindblad.jpg"
+  },
+  {
+   "id": "colapinto",
+   "full": "Franco Colapinto",
+   "first": "Franco",
+   "last": "Colapinto",
+   "code": "COL",
+   "num": "43",
+   "nationality": "Argentine",
+   "flag": "🏁",
+   "dob": "2003-05-27",
+   "age": 23,
+   "wiki": "Franco_Colapinto",
+   "pos": 12,
+   "points": 27,
+   "wins": 0,
+   "team": {
+    "id": "alpine",
+    "name": "Alpine F1 Team",
+    "pos": 6
+   },
+   "bio": "Franco Alejandro Colapinto es un piloto de automovilismo argentino. Fue campeón del Campeonato de España de F4 en 2019, y tercero en los campeonatos de Toyota Racing Series y Eurocopa de Fórmula Renault, Asian Le Mans Series (2021), cuarto en el Campeonato de Fórmula 3 de la FIA (2023), y compitió en el Campeonato de Fórmula 2 de la FIA con el equipo MP Motorsport durante diez rondas en 2024.",
+   "photo": "assets/drivers/colapinto.jpg"
+  },
+  {
+   "id": "bearman",
+   "full": "Oliver Bearman",
+   "first": "Oliver",
+   "last": "Bearman",
+   "code": "BEA",
+   "num": "87",
+   "nationality": "British",
+   "flag": "🏁",
+   "dob": "2005-05-08",
+   "age": 21,
+   "wiki": "Oliver_Bearman",
+   "pos": 13,
+   "points": 23,
+   "wins": 0,
+   "team": {
+    "id": "haas",
+    "name": "Haas F1 Team",
+    "pos": 7
+   },
+   "bio": "Oliver James Bearman is a British racing driver who competes in Formula One for Haas.",
+   "photo": "assets/drivers/bearman.jpg"
+  },
+  {
+   "id": "bortoleto",
+   "full": "Gabriel Bortoleto",
+   "first": "Gabriel",
+   "last": "Bortoleto",
+   "code": "BOR",
+   "num": "5",
+   "nationality": "Brazilian",
+   "flag": "🏁",
+   "dob": "2004-10-14",
+   "age": 22,
+   "wiki": "Gabriel_Bortoleto",
+   "pos": 14,
+   "points": 14,
+   "wins": 0,
+   "team": {
+    "id": "audi",
+    "name": "Audi",
+    "pos": 8
+   },
+   "bio": "Gabriel Lourenzo Bortoleto Oliveira es un piloto de automovilismo brasileño. En 2023 y 2024 fue miembro del Programa de Jóvenes Pilotos de McLaren. Fue tercero en el Campeonato Mundial de Karting de 2018, y resultó campeón del Campeonato de Fórmula 3 de la FIA de 2023 y del Campeonato de Fórmula 2 de la FIA de 2024, ambos como debutante. En 2025 fue piloto titular del equipo Sauber en Fórmula 1. Fue el segundo piloto confirmad",
+   "photo": "assets/drivers/bortoleto.jpg"
+  },
+  {
+   "id": "hulkenberg",
+   "full": "Nico Hülkenberg",
+   "first": "Nico",
+   "last": "Hülkenberg",
+   "code": "HUL",
+   "num": "27",
+   "nationality": "German",
+   "flag": "🏁",
+   "dob": "1987-08-19",
+   "age": 39,
+   "wiki": "Nico_H%C3%BClkenberg",
+   "pos": 15,
+   "points": 14,
+   "wins": 0,
+   "team": {
+    "id": "audi",
+    "name": "Audi",
+    "pos": 8
+   },
+   "bio": "",
+   "photo": null
+  },
+  {
+   "id": "ocon",
+   "full": "Esteban Ocon",
+   "first": "Esteban",
+   "last": "Ocon",
+   "code": "OCO",
+   "num": "31",
+   "nationality": "French",
+   "flag": "🏁",
+   "dob": "1996-09-17",
+   "age": 30,
+   "wiki": "Esteban_Ocon",
+   "pos": 16,
+   "points": 7,
+   "wins": 0,
+   "team": {
+    "id": "haas",
+    "name": "Haas F1 Team",
+    "pos": 7
+   },
+   "bio": "Esteban José Jean-Pierre Ocon-Khelfane, más conocido como Esteban Ocon, es un piloto de automovilismo francés. Fue tercero en la Eurocopa de Fórmula Renault 2.0 en 2013, y campeón del Campeonato Europeo de Fórmula 3 de la FIA en 2014 y de GP3 Series en 2015. Debutó en Fórmula 1 en 2016 con Manor y más tarde compitió para Force India y Racing Point. Luego de un año de desarrollo con Mercedes, volvió a este campeonato de la mano",
+   "photo": "assets/drivers/ocon.jpg"
+  },
+  {
+   "id": "alonso",
+   "full": "Fernando Alonso",
+   "first": "Fernando",
+   "last": "Alonso",
+   "code": "ALO",
+   "num": "14",
+   "nationality": "Spanish",
+   "flag": "🏁",
+   "dob": "1981-07-29",
+   "age": 45,
+   "wiki": "Fernando_Alonso",
+   "pos": 17,
+   "points": 7,
+   "wins": 0,
+   "team": {
+    "id": "aston_martin",
+    "name": "Aston Martin",
+    "pos": 10
+   },
+   "bio": "Fernando Alonso Díaz es un piloto de automovilismo español, galardonado con el Premio Príncipe de Asturias en 2005. Ganó dos veces el Campeonato Mundial de Fórmula 1 en 2005 y 2006 con el equipo Renault, resultó subcampeón en 2010, 2012 y 2013 con la escudería Ferrari, y obtuvo un tercer puesto en 2007 con McLaren. Fue campeón del Campeonato Mundial de Karting en 1996 y del Campeonato Mundial de Resistencia de la FIA en 2019, ",
+   "photo": "assets/drivers/alonso.jpg"
+  },
+  {
+   "id": "sainz",
+   "full": "Carlos Sainz",
+   "first": "Carlos",
+   "last": "Sainz",
+   "code": "SAI",
+   "num": "55",
+   "nationality": "Spanish",
+   "flag": "🏁",
+   "dob": "1994-09-01",
+   "age": 32,
+   "wiki": "Carlos_Sainz_Jr.",
+   "pos": 18,
+   "points": 7,
+   "wins": 0,
+   "team": {
+    "id": "williams",
+    "name": "Williams",
+    "pos": 9
+   },
+   "bio": "Carlos Sainz Vázquez de Castro, commonly known as Carlos Sainz Jr., is a Spanish racing driver who competes in Formula One for Williams. Sainz has won four Formula One Grands Prix across 12 seasons.",
+   "photo": "assets/drivers/sainz.jpg"
+  },
+  {
+   "id": "albon",
+   "full": "Alexander Albon",
+   "first": "Alexander",
+   "last": "Albon",
+   "code": "ALB",
+   "num": "23",
+   "nationality": "Thai",
+   "flag": "🏁",
+   "dob": "1996-03-23",
+   "age": 30,
+   "wiki": "Alexander_Albon",
+   "pos": 19,
+   "points": 5,
+   "wins": 0,
+   "team": {
+    "id": "williams",
+    "name": "Williams",
+    "pos": 9
+   },
+   "bio": "Alexander Philippe Albon Ansusinha is a Thai and British racing driver who competes under the Thai flag in Formula One for Williams.",
+   "photo": "assets/drivers/albon.jpg"
+  },
+  {
+   "id": "tsunoda",
+   "full": "Yuki Tsunoda",
+   "first": "Yuki",
+   "last": "Tsunoda",
+   "code": "TSU",
+   "num": "22",
+   "nationality": "Japanese",
+   "flag": "🏁",
+   "dob": "2000-05-11",
+   "age": 26,
+   "wiki": "Yuki_Tsunoda",
+   "pos": 20,
+   "points": 1,
+   "wins": 0,
+   "team": {
+    "id": "rb",
+    "name": "RB F1 Team",
+    "pos": 5
+   },
+   "bio": "Yuki Tsunoda  is a Japanese racing driver who serves as a reserve driver in Formula One for Red Bull Racing and Racing Bulls. Tsunoda competed in Formula One full-time from 2021 to 2025, and served as a reserve driver in 2026.",
+   "photo": "assets/drivers/tsunoda.jpg"
+  },
+  {
+   "id": "ryo_hirakawa",
+   "full": "Ryo Hirakawa",
+   "first": "Ryo",
+   "last": "Hirakawa",
+   "code": "HIR",
+   "num": "50",
+   "nationality": "Japanese",
+   "flag": "🏁",
+   "dob": "1994-03-07",
+   "age": 32,
+   "wiki": "Ryo_Hirakawa",
+   "pos": 21,
+   "points": 1,
+   "wins": 0,
+   "team": {
+    "id": "haas",
+    "name": "Haas F1 Team",
+    "pos": 7
+   },
+   "bio": "Ryo Hirakawa  is a Japanese racing driver who competes in the FIA World Endurance Championship for Toyota Racing, and serves as a reserve driver in Formula One for Haas.",
+   "photo": "assets/drivers/ryo_hirakawa.jpg"
+  },
+  {
+   "id": "stroll",
+   "full": "Lance Stroll",
+   "first": "Lance",
+   "last": "Stroll",
+   "code": "STR",
+   "num": "18",
+   "nationality": "Canadian",
+   "flag": "🏁",
+   "dob": "1998-10-29",
+   "age": 28,
+   "wiki": "Lance_Stroll",
+   "pos": 22,
+   "points": 0,
+   "wins": 0,
+   "team": {
+    "id": "aston_martin",
+    "name": "Aston Martin",
+    "pos": 10
+   },
+   "bio": "",
+   "photo": "assets/drivers/stroll.jpg"
+  },
+  {
+   "id": "bottas",
+   "full": "Valtteri Bottas",
+   "first": "Valtteri",
+   "last": "Bottas",
+   "code": "BOT",
+   "num": "77",
+   "nationality": "Finnish",
+   "flag": "🏁",
+   "dob": "1989-08-28",
+   "age": 37,
+   "wiki": "Valtteri_Bottas",
+   "pos": 23,
+   "points": 0,
+   "wins": 0,
+   "team": {
+    "id": "cadillac",
+    "name": "Cadillac F1 Team",
+    "pos": 11
+   },
+   "bio": "Valtteri Viktor Bottas is a Finnish racing driver who competes in Formula One for Cadillac. Bottas has twice finished runner-up in the World Drivers' Championship in 2019 and 2020 with Mercedes, and has won 10 Grands Prix across 13 seasons.",
+   "photo": "assets/drivers/bottas.jpg"
+  },
+  {
+   "id": "perez",
+   "full": "Sergio Pérez",
+   "first": "Sergio",
+   "last": "Pérez",
+   "code": "PER",
+   "num": "11",
+   "nationality": "Mexican",
+   "flag": "🏁",
+   "dob": "1990-01-26",
+   "age": 36,
+   "wiki": "Sergio_P%C3%A9rez",
+   "pos": 24,
+   "points": 0,
+   "wins": 0,
+   "team": {
+    "id": "cadillac",
+    "name": "Cadillac F1 Team",
+    "pos": 11
+   },
+   "bio": "",
+   "photo": null
+  },
+  {
+   "id": "rafael_camara",
+   "full": "Rafael Camara",
+   "first": "Rafael",
+   "last": "Camara",
+   "code": "CAM",
+   "num": "51",
+   "nationality": "Brazilian",
+   "flag": "🏁",
+   "dob": "2005-05-05",
+   "age": 21,
+   "wiki": "Rafael_C%C3%A2mara",
+   "pos": 25,
+   "points": 0,
+   "wins": 0,
+   "team": {
+    "id": "haas",
+    "name": "Haas F1 Team",
+    "pos": 7
+   },
+   "bio": "",
+   "photo": null
+  }
+ ],
+ "news": [
+  {
+   "title": "Ferrari boss Fred Vasseur handed ‘overwhelmed’ verdict by Bernie Ecclestone",
+   "url": "https://www.motorsportweek.com/2026/11/17/bernie-ecclestone-makes-overwhelmed-claim-about-ferrari-fred-vasseur/",
+   "desc": "Bernie Ecclestone believes Fred Vasseur is not the right man to lead Ferrari after claiming the Frenchman is \"overwhelmed\" at the F1 team. The post Ferrari boss Fred Vasseur handed &#8216;overwhelmed&#8217; verdict by Bernie Eccle",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Bernie-Ecclestone-F1-300x169.webp",
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794936600.0,
+   "teams": [
+    "ferrari"
+   ]
+  },
+  {
+   "title": "Liam Lawson has been a \"revelation\" as he earned 2027 Racing Bulls F1 deal - Alan Permane",
+   "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
+   "source": "Motorsport.com",
+   "image": "https://cdn-5.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794934957.0,
+   "teams": [
+    "red_bull",
+    "rb"
+   ]
+  },
+  {
+   "title": "Max Verstappen delivers hilarious Red Bull engine jibe",
+   "url": "https://www.motorsportweek.com/2026/11/17/max-verstappen-red-bull-engine-jibe/",
+   "desc": "Max Verstappen joked his Red Bull engine \"doesn't speak English\" after incurring a massive grid penalty at the F1 Sao Paulo GP. The post Max Verstappen delivers hilarious Red Bull engine jibe appeared first on Motorsport Week .",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-Red-Bull-300x169.webp",
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794933000.0,
+   "teams": [
+    "red_bull"
+   ]
+  },
+  {
+   "title": "Jade Jaquet re-signs with Williams for the 2027 F1 Academy season",
+   "url": "https://www.motorsportweek.com/2026/11/17/jade-jaquet-re-signs-with-williams-for-the-2027-f1-academy-season/",
+   "desc": "Williams has announced that Jade Jaquet will represent the team in the 2027 F1 Academy season, entering her second year in the series. The post Jade Jaquet re-signs with Williams for the 2027 F1 Academy season appeared first on Mo",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Jade_F1A_Contract_Extension-300x169.webp",
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794931200.0,
+   "teams": [
+    "williams"
+   ]
+  },
+  {
+   "title": "Toto Wolff offers blunt response to Kimi Antonelli to Ferrari question",
+   "url": "https://www.crash.net/f1/news/1110156/1/toto-wolff-offers-blunt-response-kimi-antonelli-ferrari-question",
+   "desc": "Toto Wolff addresses the prospect of Kimi Antonelli moving to Ferrari one day.",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1415432_hires.jpg?width=1200",
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794930145.0,
+   "teams": [
+    "ferrari",
+    "mercedes"
+   ]
+  },
+  {
+   "title": "Why George Russell won’t get Mercedes F1 engine upgrade at Las Vegas GP",
+   "url": "https://www.crash.net/f1/news/1110155/1/why-george-russell-wont-get-mercedes-f1-engine-upgrade-las-vegas-gp",
+   "desc": "Mercedes will finally introduce its ADUO F1 engine upgrade in Las Vegas.",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453187_hires.jpg?width=1200",
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794925762.0,
+   "teams": [
+    "mercedes"
+   ]
+  },
+  {
+   "title": "Lewis Hamilton announces huge new partnership ahead of Las Vegas GP",
+   "url": "https://www.crash.net/f1/news/1110149/1/lewis-hamilton-announces-huge-new-partnership-ahead-las-vegas-gp",
+   "desc": "Lewis Hamilton has become the new global ambassador for AG1.",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1443666_hires.jpg?width=1200",
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794924000.0,
+   "teams": [
+    "mercedes"
+   ]
+  },
+  {
+   "title": "Toto Wolff is not afraid of losing Kimi Antonelli to Ferrari",
+   "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
+   "source": "Motorsport.com",
+   "image": "https://cdn-1.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794915910.0,
+   "teams": [
+    "ferrari",
+    "mercedes"
+   ]
+  },
+  {
+   "title": "Spotlight: Alonso to enter Dakar in car Aston Martin designed for Call of Duty | Brief",
+   "url": "https://www.racefans.net/2026/11/17/spotlight-alonso-to-enter-dakar-in-car-aston-martin-designed-for-call-of-duty/",
+   "desc": "Alonso to return to Dakar rally in CoD Aston Martin",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794907008.0,
+   "teams": [
+    "aston_martin"
+   ]
+  },
+  {
+   "title": "An early season finale? Five talking points for the 2026 Las Vegas Grand Prix | Formula 1",
+   "url": "https://www.racefans.net/2026/11/17/an-early-season-finale-five-talking-points-for-the-2026-las-vegas-grand-prix/",
+   "desc": "Formula 1 heads to Las Vegas this weekend for what is supposed to be the first of three consecutive race weekends. Here are the talking points.",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794906431.0,
+   "teams": []
+  },
+  {
+   "title": "Alonso, Loeb join Aston Martin for 2027 Dakar Rally",
+   "url": "https://www.autosport.com/dakar/news/alonso-loeb-join-aston-martin-for-2027-dakar-rally/10875003/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
+   "source": "Autosport",
+   "image": "https://cdn-6.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794906118.0,
+   "teams": [
+    "aston_martin"
+   ]
+  },
+  {
+   "title": "Fernando Alonso to return to Dakar Rally with Aston Martin in 2027",
+   "url": "https://www.motorsport.com/dakar/news/fernando-alonso-to-return-to-dakar-rally-with-aston-martin-in-2027/10874907/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
+   "source": "Motorsport.com",
+   "image": "https://cdn-5.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "ts": 1794906100.0,
+   "teams": [
+    "aston_martin"
+   ]
+  }
+ ],
+ "news_pool": 217
+}

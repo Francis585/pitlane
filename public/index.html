@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pitlane — Fórmula 1 2026: escuderías, pilotos y clasificación</title>
+<meta name="description" content="Datos, historia y actualidad de la Fórmula 1 2026. Las once escuderías, 22 pilotos, calendario completo y clasificación actualizada.">
+<meta name="theme-color" content="#07080a">
+<meta property="og:title" content="Pitlane — Fórmula 1">
+<meta property="og:description" content="Datos, historia y actualidad de la Fórmula 1.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://pitlane-f1-pied.vercel.app/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style>:root{--brand:#ff5a1f;}</style>
+</head>
+<body class="">
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="index.html"><span class="logo-dot"></span>Pit<b>lane</b></a>
+    <div class="nav-links">
+      <a href="escuderias/index.html">Escuderías</a>
+      <a href="pilotos/index.html">Pilotos</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="clasificacion.html">Clasificación</a>
+      <a href="noticias.html">Noticias</a>
+    </div>
+    <div class="nav-round">2026 · R20/23</div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+  <span class="hero-year" aria-hidden="true">2026</span>
+  <div class="wrap hero-in">
+    <div>
+      <div class="eyebrow">Mundial de Fórmula 1 · temporada 2026</div>
+      <h1>La parrilla<br><em>al completo</em></h1>
+      <p class="hero-sub">Once escuderías, once formas de entender la velocidad. Datos oficiales,
+         historia de cada equipo y la actualidad del paddock, actualizados solos en cada carrera.</p>
+      <div class="hero-meta">
+        <div><span>Escuderías</span><b>11</b></div>
+        <div><span>Pilotos</span><b>25</b></div>
+        <div><span>Carreras</span><b>23</b></div>
+        <div><span>Disputadas</span><b>20</b></div>
+      </div>
+    </div>
+
+    <aside class="next-card">
+      <div class="eyebrow">Próximo gran premio</div>
+      <div class="next-gp">
+        <span class="flag">🇺🇸</span>
+        <h3>GP de Las Vegas</h3>
+      </div>
+      <p class="circuit">Las Vegas Strip Street Circuit · Las Vegas · 22 de noviembre de 2026</p>
+      <div class="countdown" id="countdown" data-date="2026-11-22">
+        <div><b data-cd="d">--</b><span>días</span></div>
+        <div><b data-cd="h">--</b><span>horas</span></div>
+        <div><b data-cd="m">--</b><span>min</span></div>
+        <div><b data-cd="s">--</b><span>seg</span></div>
+      </div>
+      <div class="next-foot">
+        <span class="src-note">Ronda 21 de 23</span>
+        <a class="sec-link" href="calendario.html">Calendario</a>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Campeonato de constructores</div>
+        <h2>Quién manda en 2026</h2>
+        <p>Puntos por escudería tras la ronda 20. Cada barra, un equipo; cada color, su identidad.</p>
+      </div>
+      <a class="sec-link" href="clasificacion.html">Clasificación completa →</a>
+    </div>
+    <div class="bars">
+  <a class="bar" href="escuderias/mercedes.html">
+    <span class="pos">1</span>
+    <span class="chip" style="background:#00D2BE"></span>
+    <span class="name">Mercedes<small>12 victorias</small></span>
+    <span class="track"><span class="fill" style="--w:100.0%;background:#00D2BE"></span></span>
+    <span class="pts">652</span>
+  </a>
+  <a class="bar" href="escuderias/ferrari.html">
+    <span class="pos">2</span>
+    <span class="chip" style="background:#E10600"></span>
+    <span class="name">Ferrari<small>2 victorias</small></span>
+    <span class="track"><span class="fill" style="--w:78.2%;background:#E10600"></span></span>
+    <span class="pts">510</span>
+  </a>
+  <a class="bar" href="escuderias/red_bull.html">
+    <span class="pos">3</span>
+    <span class="chip" style="background:#3671C6"></span>
+    <span class="name">Red Bull<small>3 victorias</small></span>
+    <span class="track"><span class="fill" style="--w:63.7%;background:#3671C6"></span></span>
+    <span class="pts">415</span>
+  </a>
+  <a class="bar" href="escuderias/mclaren.html">
+    <span class="pos">4</span>
+    <span class="chip" style="background:#FF8000"></span>
+    <span class="name">McLaren<small>3 victorias</small></span>
+    <span class="track"><span class="fill" style="--w:61.0%;background:#FF8000"></span></span>
+    <span class="pts">398</span>
+  </a>
+  <a class="bar" href="escuderias/rb.html">
+    <span class="pos">5</span>
+    <span class="chip" style="background:#6692FF"></span>
+    <span class="name">Racing Bulls<small>0 victorias</small></span>
+    <span class="track"><span class="fill" style="--w:17.5%;background:#6692FF"></span></span>
+    <span class="pts">114</span>
+  </a>
+  <a class="bar" href="escuderias/alpine.html">
+    <span class="pos">6</span>
+    <span class="chip" style="background:#0090FF"></span>
+    <span class="name">Alpine<small>0 victorias</small></span>
+    <span class="track"><span class="fill" style="--w:10.6%;background:#0090FF"></span></span>
+    <span class="pts">69</span>
+  </a>
+  <a class="bar" href="escuderias/haas.html">
+    <span class="pos">7</span>
+    <span class="chip" style="background:#E8002D"></span>
+    <span class="name">Haas<small>0 victorias</small></span>
+    <span class="track"><span class="fill" style="--w:4.8%;background:#E8002D"></span></span>
+    <span class="pts">31</span>
+  </a>
+  <a class="bar" href="escuderias/audi.html">
+    <span class="pos">8</span>
+    <span class="chip" style="background:#F50537"></span>
+    <span class="name">Audi<small>0 victorias</small></span>
+    <span class="track"><span class="fill" style="--w:4.3%;background:#F50537"></span></span>
+    <span class="pts">28</span>
+  </a>
+  <a class="bar" href="escuderias/williams.html">
+    <span class="pos">9</span>
+    <span class="chip" style="background:#005AFF"></span>
+    <span class="name">Williams<small>0 victorias</small></span>
+    <span class="track"><span class="fill" style="--w:1.8%;background:#005AFF"></span></span>
+    <span class="pts">12</span>
+  </a>
+  <a class="bar" href="escuderias/aston_martin.html">
+    <span class="pos">10</span>
+    <span class="chip" style="background:#00573F"></span>
+    <span class="name">Aston Martin<small>0 victorias</small></span>
+    <span class="track"><span class="fill" style="--w:1.1%;background:#00573F"></span></span>
+    <span class="pts">7</span>
+  </a>
+  <a class="bar" href="escuderias/cadillac.html">
+    <span class="pos">11</span>
+    <span class="chip" style="background:#C9A24C"></span>
+    <span class="name">Cadillac<small>0 victorias</small></span>
+    <span class="track"><span class="fill" style="--w:0.0%;background:#C9A24C"></span></span>
+    <span class="pts">0</span>
+  </a>
+</div>
+
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Las once escuderías</div>
+        <h2>Cada garaje, su estilo</h2>
+        <p>Cada ficha tiene su propia puesta en escena: la de Maranello se lee como un museo, la de
+           Brackley como una sala de datos.</p>
+      </div>
+      <a class="sec-link" href="escuderias/index.html">Ver todas →</a>
+    </div>
+    <div class="tiles">
+  <a class="tile" href="escuderias/mercedes.html" style="--c1:#00D2BE">
+    <div class="tpos">Brackley · P1</div>
+    <div class="tfoot">
+      <h3>Mercedes</h3>
+      <span>652 pts</span>
+    </div>
+  </a>
+  <a class="tile" href="escuderias/ferrari.html" style="--c1:#E10600">
+    <div class="tpos">Maranello · P2</div>
+    <div class="tfoot">
+      <h3>Ferrari</h3>
+      <span>510 pts</span>
+    </div>
+  </a>
+  <a class="tile" href="escuderias/red_bull.html" style="--c1:#3671C6">
+    <div class="tpos">Milton Keynes · P3</div>
+    <div class="tfoot">
+      <h3>Red Bull</h3>
+      <span>415 pts</span>
+    </div>
+  </a>
+  <a class="tile" href="escuderias/mclaren.html" style="--c1:#FF8000">
+    <div class="tpos">Woking · P4</div>
+    <div class="tfoot">
+      <h3>McLaren</h3>
+      <span>398 pts</span>
+    </div>
+  </a>
+  <a class="tile" href="escuderias/rb.html" style="--c1:#6692FF">
+    <div class="tpos">Faenza · P5</div>
+    <div class="tfoot">
+      <h3>Racing Bulls</h3>
+      <span>114 pts</span>
+    </div>
+  </a>
+  <a class="tile" href="escuderias/alpine.html" style="--c1:#0090FF">
+    <div class="tpos">Enstone · P6</div>
+    <div class="tfoot">
+      <h3>Alpine</h3>
+      <span>69 pts</span>
+    </div>
+  </a>
+  <a class="tile" href="escuderias/haas.html" style="--c1:#E8002D">
+    <div class="tpos">Kannapolis (EE. UU.) · Banbury (R. U.) · P7</div>
+    <div class="tfoot">
+      <h3>Haas</h3>
+      <span>31 pts</span>
+    </div>
+  </a>
+  <a class="tile" href="escuderias/audi.html" style="--c1:#F50537">
+    <div class="tpos">Hinwil · P8</div>
+    <div class="tfoot">
+      <h3>Audi</h3>
+      <span>28 pts</span>
+    </div>
+  </a>
+  <a class="tile" href="escuderias/williams.html" style="--c1:#005AFF">
+    <div class="tpos">Grove · P9</div>
+    <div class="tfoot">
+      <h3>Williams</h3>
+      <span>12 pts</span>
+    </div>
+  </a>
+  <a class="tile" href="escuderias/aston_martin.html" style="--c1:#00573F">
+    <div class="tpos">Silverstone · P10</div>
+    <div class="tfoot">
+      <h3>Aston Martin</h3>
+      <span>7 pts</span>
+    </div>
+  </a>
+  <a class="tile" href="escuderias/cadillac.html" style="--c1:#C9A24C">
+    <div class="tpos">Charlotte (EE. UU.) · Silverstone (R. U.) · P11</div>
+    <div class="tfoot">
+      <h3>Cadillac</h3>
+      <span>0 pts</span>
+    </div>
+  </a>
+</div>
+
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Campeonato de pilotos</div>
+        <h2>Los que están delante</h2>
+      </div>
+      <a class="sec-link" href="pilotos/index.html">Los 25 pilotos →</a>
+    </div>
+    <div class="drivers-grid">
+  <a class="dcard" href="pilotos/antonelli.html">
+    <div class="dcard-img">
+<span class="stripe" style="background:#00D2BE"></span><img src="assets/drivers/antonelli.jpg" alt="Andrea Kimi Antonelli" loading="lazy">      <span class="dcard-num">12</span>
+    </div>
+    <div class="dcard-meta">
+      <h3>Andrea Kimi Antonelli</h3>
+      <div class="team">Mercedes</div>
+      <div class="dcard-foot">
+        <span>P1</span>
+        <span><b>390</b> pts</span>
+      </div>
+    </div>
+  </a>
+  <a class="dcard" href="pilotos/max_verstappen.html">
+    <div class="dcard-img">
+<span class="stripe" style="background:#3671C6"></span><img src="assets/drivers/max_verstappen.jpg" alt="Max Verstappen" loading="lazy">      <span class="dcard-num">3</span>
+    </div>
+    <div class="dcard-meta">
+      <h3>Max Verstappen</h3>
+      <div class="team">Red Bull</div>
+      <div class="dcard-foot">
+        <span>P2</span>
+        <span><b>279</b> pts</span>
+      </div>
+    </div>
+  </a>
+  <a class="dcard" href="pilotos/russell.html">
+    <div class="dcard-img">
+<span class="stripe" style="background:#00D2BE"></span><img src="assets/drivers/russell.jpg" alt="George Russell" loading="lazy">      <span class="dcard-num">63</span>
+    </div>
+    <div class="dcard-meta">
+      <h3>George Russell</h3>
+      <div class="team">Mercedes</div>
+      <div class="dcard-foot">
+        <span>P3</span>
+        <span><b>262</b> pts</span>
+      </div>
+    </div>
+  </a>
+  <a class="dcard" href="pilotos/hamilton.html">
+    <div class="dcard-img">
+<span class="stripe" style="background:#E10600"></span><img src="assets/drivers/hamilton.jpg" alt="Lewis Hamilton" loading="lazy">      <span class="dcard-num">44</span>
+    </div>
+    <div class="dcard-meta">
+      <h3>Lewis Hamilton</h3>
+      <div class="team">Ferrari</div>
+      <div class="dcard-foot">
+        <span>P4</span>
+        <span><b>261</b> pts</span>
+      </div>
+    </div>
+  </a>
+  <a class="dcard" href="pilotos/leclerc.html">
+    <div class="dcard-img">
+<span class="stripe" style="background:#E10600"></span><img src="assets/drivers/leclerc.jpg" alt="Charles Leclerc" loading="lazy">      <span class="dcard-num">16</span>
+    </div>
+    <div class="dcard-meta">
+      <h3>Charles Leclerc</h3>
+      <div class="team">Ferrari</div>
+      <div class="dcard-foot">
+        <span>P5</span>
+        <span><b>249</b> pts</span>
+      </div>
+    </div>
+  </a>
+  <a class="dcard" href="pilotos/norris.html">
+    <div class="dcard-img">
+<span class="stripe" style="background:#FF8000"></span><img src="assets/drivers/norris.jpg" alt="Lando Norris" loading="lazy">      <span class="dcard-num">1</span>
+    </div>
+    <div class="dcard-meta">
+      <h3>Lando Norris</h3>
+      <div class="team">McLaren</div>
+      <div class="dcard-foot">
+        <span>P6</span>
+        <span><b>246</b> pts</span>
+      </div>
+    </div>
+  </a>
+  <a class="dcard" href="pilotos/piastri.html">
+    <div class="dcard-img">
+<span class="stripe" style="background:#FF8000"></span><img src="assets/drivers/piastri.jpg" alt="Oscar Piastri" loading="lazy">      <span class="dcard-num">81</span>
+    </div>
+    <div class="dcard-meta">
+      <h3>Oscar Piastri</h3>
+      <div class="team">McLaren</div>
+      <div class="dcard-foot">
+        <span>P7</span>
+        <span><b>152</b> pts</span>
+      </div>
+    </div>
+  </a>
+  <a class="dcard" href="pilotos/hadjar.html">
+    <div class="dcard-img">
+<span class="stripe" style="background:#3671C6"></span><img src="assets/drivers/hadjar.jpg" alt="Isack Hadjar" loading="lazy">      <span class="dcard-num">6</span>
+    </div>
+    <div class="dcard-meta">
+      <h3>Isack Hadjar</h3>
+      <div class="team">Red Bull</div>
+      <div class="dcard-foot">
+        <span>P8</span>
+        <span><b>122</b> pts</span>
+      </div>
+    </div>
+  </a>
+  <a class="dcard" href="pilotos/lawson.html">
+    <div class="dcard-img">
+<span class="stripe" style="background:#6692FF"></span><img src="assets/drivers/lawson.jpg" alt="Liam Lawson" loading="lazy">      <span class="dcard-num">30</span>
+    </div>
+    <div class="dcard-meta">
+      <h3>Liam Lawson</h3>
+      <div class="team">RB F1 Team</div>
+      <div class="dcard-foot">
+        <span>P9</span>
+        <span><b>89</b> pts</span>
+      </div>
+    </div>
+  </a>
+  <a class="dcard" href="pilotos/gasly.html">
+    <div class="dcard-img">
+<span class="stripe" style="background:#0090FF"></span><img src="assets/drivers/gasly.jpg" alt="Pierre Gasly" loading="lazy">      <span class="dcard-num">10</span>
+    </div>
+    <div class="dcard-meta">
+      <h3>Pierre Gasly</h3>
+      <div class="team">Alpine F1 Team</div>
+      <div class="dcard-foot">
+        <span>P10</span>
+        <span><b>42</b> pts</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+  </div>
+</section>
+
+
+<hr class="rule">
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Desde el paddock</div>
+        <h2>Últimas noticias</h2>
+        <p>Titulares de los medios especializados, recolectados automáticamente en cada publicación.</p>
+      </div>
+      <a class="sec-link" href="noticias.html">Todas las noticias →</a>
+    </div>
+    <div class="news-grid">
+  <a class="ncard" href="https://www.motorsportweek.com/2026/11/17/bernie-ecclestone-makes-overwhelmed-claim-about-ferrari-fred-vasseur/" target="_blank" rel="noopener nofollow">
+    <div class="ncard-img">
+<img src="https://www.motorsportweek.com/wp-content/uploads/2026/11/Bernie-Ecclestone-F1-300x169.webp" alt="" loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.parentNode.innerHTML=''">    </div>
+    <div class="ncard-body">
+      <h3>Ferrari boss Fred Vasseur handed ‘overwhelmed’ verdict by Bernie Ecclestone</h3>
+      <div class="ncard-src"><span>Motorsport Week</span><span>17 nov</span></div>
+    </div>
+  </a>
+  <a class="ncard" href="https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=www" target="_blank" rel="noopener nofollow">
+    <div class="ncard-img">
+<img src="https://cdn-5.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.parentNode.innerHTML=''">    </div>
+    <div class="ncard-body">
+      <h3>Liam Lawson has been a &#34;revelation&#34; as he earned 2027 Racing Bulls F1 deal - Alan Permane</h3>
+      <div class="ncard-src"><span>Motorsport.com</span><span>17 nov</span></div>
+    </div>
+  </a>
+  <a class="ncard" href="https://www.motorsportweek.com/2026/11/17/max-verstappen-red-bull-engine-jibe/" target="_blank" rel="noopener nofollow">
+    <div class="ncard-img">
+<img src="https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-Red-Bull-300x169.webp" alt="" loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.parentNode.innerHTML=''">    </div>
+    <div class="ncard-body">
+      <h3>Max Verstappen delivers hilarious Red Bull engine jibe</h3>
+      <div class="ncard-src"><span>Motorsport Week</span><span>17 nov</span></div>
+    </div>
+  </a>
+  <a class="ncard" href="https://www.motorsportweek.com/2026/11/17/jade-jaquet-re-signs-with-williams-for-the-2027-f1-academy-season/" target="_blank" rel="noopener nofollow">
+    <div class="ncard-img">
+<img src="https://www.motorsportweek.com/wp-content/uploads/2026/11/Jade_F1A_Contract_Extension-300x169.webp" alt="" loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.parentNode.innerHTML=''">    </div>
+    <div class="ncard-body">
+      <h3>Jade Jaquet re-signs with Williams for the 2027 F1 Academy season</h3>
+      <div class="ncard-src"><span>Motorsport Week</span><span>17 nov</span></div>
+    </div>
+  </a>
+  <a class="ncard" href="https://www.crash.net/f1/news/1110156/1/toto-wolff-offers-blunt-response-kimi-antonelli-ferrari-question" target="_blank" rel="noopener nofollow">
+    <div class="ncard-img">
+<img src="https://www.crash.net/sites/default/files/2026-11/xpb_1415432_hires.jpg?width=1200" alt="" loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.parentNode.innerHTML=''">    </div>
+    <div class="ncard-body">
+      <h3>Toto Wolff offers blunt response to Kimi Antonelli to Ferrari question</h3>
+      <div class="ncard-src"><span>Crash.net</span><span>17 nov</span></div>
+    </div>
+  </a>
+  <a class="ncard" href="https://www.crash.net/f1/news/1110155/1/why-george-russell-wont-get-mercedes-f1-engine-upgrade-las-vegas-gp" target="_blank" rel="noopener nofollow">
+    <div class="ncard-img">
+<img src="https://www.crash.net/sites/default/files/2026-11/xpb_1453187_hires.jpg?width=1200" alt="" loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.parentNode.innerHTML=''">    </div>
+    <div class="ncard-body">
+      <h3>Why George Russell won’t get Mercedes F1 engine upgrade at Las Vegas GP</h3>
+      <div class="ncard-src"><span>Crash.net</span><span>17 nov</span></div>
+    </div>
+  </a>
+  <a class="ncard" href="https://www.crash.net/f1/news/1110149/1/lewis-hamilton-announces-huge-new-partnership-ahead-las-vegas-gp" target="_blank" rel="noopener nofollow">
+    <div class="ncard-img">
+<img src="https://www.crash.net/sites/default/files/2026-11/xpb_1443666_hires.jpg?width=1200" alt="" loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.parentNode.innerHTML=''">    </div>
+    <div class="ncard-body">
+      <h3>Lewis Hamilton announces huge new partnership ahead of Las Vegas GP</h3>
+      <div class="ncard-src"><span>Crash.net</span><span>17 nov</span></div>
+    </div>
+  </a>
+  <a class="ncard" href="https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=www" target="_blank" rel="noopener nofollow">
+    <div class="ncard-img">
+<img src="https://cdn-1.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.parentNode.innerHTML=''">    </div>
+    <div class="ncard-body">
+      <h3>Toto Wolff is not afraid of losing Kimi Antonelli to Ferrari</h3>
+      <div class="ncard-src"><span>Motorsport.com</span><span>17 nov</span></div>
+    </div>
+  </a>
+  <a class="ncard" href="https://www.racefans.net/2026/11/17/spotlight-alonso-to-enter-dakar-in-car-aston-martin-designed-for-call-of-duty/" target="_blank" rel="noopener nofollow">
+    <div class="ncard-img">
+    </div>
+    <div class="ncard-body">
+      <h3>Spotlight: Alonso to enter Dakar in car Aston Martin designed for Call of Duty | Brief</h3>
+      <div class="ncard-src"><span>RaceFans</span><span>17 nov</span></div>
+    </div>
+  </a>
+</div>
+
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <h4>Pitlane</h4>
+        <p>Proyecto independiente de datos y divulgación sobre la Fórmula 1. Sin relación con la FIA,
+           la FOM, ninguno de los equipos ni sus patrocinadores.</p>
+      </div>
+      <div class="foot-links">
+        <div>
+          <a href="escuderias/index.html">Escuderías</a>
+          <a href="pilotos/index.html">Pilotos</a>
+          <a href="calendario.html">Calendario</a>
+          <a href="clasificacion.html">Clasificación</a>
+        </div>
+        <div>
+          <a href="noticias.html">Noticias</a>
+          <a href="metodologia.html">Datos y método</a>
+          <a href="sitemap.xml">Mapa del sitio</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>Temporada 2026 · datos actualizados el 17 de noviembre de 2026</span>
+      <span>Datos: Jolpica F1 API · Fotos: Wikimedia Commons · Titulares: Autosport · Crash.net · Motorsport Week · Motorsport.com · RaceFans</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Escuderías de la Fórmula 1 {{ site.season }} | Pitlane{% endblock %}
+{% block desc %}Las once escuderías de la temporada {{ site.season }} en Fórmula 1: historia, plantilla, palmarés y actualidad de cada equipo.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<section class="sec" style="padding-bottom:26px">
+  <div class="wrap">
+    <div class="eyebrow">Parrilla {{ site.season }}</div>
+    <h1 style="font-size:clamp(2.6rem,7vw,5.4rem);text-transform:uppercase;margin:12px 0 16px">Once escuderías,<br>cuatro formas de contarlo</h1>
+    <p class="dim" style="max-width:60ch">No todas las fichas se leen igual. Cada escudería tiene su propio
+      tratamiento visual según su carácter: herencia editorial, panel de datos, cartel contemporáneo o
+      brutalismo de garaje.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="teams-hub">
+      {% for layout in ['clasico', 'tecnico', 'moderno', 'rebelde'] %}
+      {% set ids = [] %}
+      {% for tid, m in meta.items() %}{% if m.layout == layout %}{% set _ = ids.append(tid) %}{% endif %}{% endfor %}
+      {% set rows = teams|selectattr('id', 'in', ids)|list %}
+      <div class="hub-block">
+        <div class="hub-head">
+          <h3>{{ layout|capitalize if layout != 'tecnico' else 'Técnico' }}</h3>
+          <p>{{ {'clasico':'Herencia editorial: museo, serif y silencio','tecnico':'Panel de datos: rejilla, monoespaciada y lectura fría','moderno':'Cartel contemporáneo: color a sangre y tipografía a gritos','rebelde':'Brutalismo de garaje: bordes duros y números enormes'}[layout] }}</p>
+        </div>
+        <div class="hub-body">
+          {% for t in rows %}
+          {% set m = meta[t.id] %}
+          <a class="hub-link" href="{{ root }}escuderias/{{ t.id }}.html" data-layout="{{ layout }}">
+            <div>
+              <b>{{ m.display }}</b>
+              <small>P{{ t.pos }} · {{ t.points }} pts · {{ t.wins }} victorias</small>
+            </div>
+            <span class="swatch" style="--c:{{ m.brand }}"></span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

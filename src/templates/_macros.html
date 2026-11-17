@@ -1,0 +1,98 @@
+{% macro news_cards(items, root, team_meta=None, limit=6) %}
+<div class="news-grid">
+  {% for n in items[:limit] %}
+  <a class="ncard" href="{{ n.url }}" target="_blank" rel="noopener nofollow">
+    <div class="ncard-img">
+      {% if n.image %}<img src="{{ n.image }}" alt="" loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.parentNode.innerHTML=''">{% endif %}
+    </div>
+    <div class="ncard-body">
+      <h3>{{ n.title }}</h3>
+      <div class="ncard-src"><span>{{ n.source }}</span><span>{{ n.date_human }}</span></div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro hist(items) %}
+<div class="hist">
+  {% for year, title, text in items %}
+  <div class="hist-item">
+    <div class="hist-year">{{ year }}</div>
+    <h4>{{ title }}</h4>
+    <p>{{ text }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro driver_cards(rows, root, meta, limit=8) %}
+<div class="drivers-grid">
+  {% for d in rows[:limit] %}
+  {% set t = meta.get(d.team.id) if d.team else None %}
+  <a class="dcard" href="{{ root }}pilotos/{{ d.id }}.html">
+    <div class="dcard-img">
+      {% if t %}<span class="stripe" style="background:{{ t.brand }}"></span>{% endif %}
+      {% if d.photo %}<img src="{{ root }}{{ d.photo }}" alt="{{ d.full }}" loading="lazy">{% endif %}
+      <span class="dcard-num">{{ d.num }}</span>
+    </div>
+    <div class="dcard-meta">
+      <h3>{{ d.full }}</h3>
+      <div class="team">{% if d.team %}{{ d.team.name }}{% endif %}</div>
+      <div class="dcard-foot">
+        <span>P{{ d.pos }}</span>
+        <span><b>{{ d.points }}</b> pts</span>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro team_tiles(teams, meta, root) %}
+<div class="tiles">
+  {% for t in teams %}
+  {% set m = meta[t.id] %}
+  <a class="tile" href="{{ root }}escuderias/{{ t.id }}.html" style="--c1:{{ m.brand }}">
+    <div class="tpos">{{ m.base.split(',')[0] }} · P{{ t.pos }}</div>
+    <div class="tfoot">
+      <h3>{{ m.display }}</h3>
+      <span>{{ t.points }} pts</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro bars(teams, meta, root) %}
+<div class="bars">
+  {% set top = teams[0].points or 1 %}
+  {% for t in teams %}
+  {% set m = meta[t.id] %}
+  <a class="bar" href="{{ root }}escuderias/{{ t.id }}.html">
+    <span class="pos">{{ t.pos }}</span>
+    <span class="chip" style="background:{{ m.brand }}"></span>
+    <span class="name">{{ m.display }}<small>{{ t.wins }} victorias</small></span>
+    <span class="track"><span class="fill" style="--w:{{ (t.points / top * 100)|round(1) }}%;background:{{ m.brand }}"></span></span>
+    <span class="pts">{{ t.points }}</span>
+  </a>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro roster(rows, root) %}
+<div class="roster">
+  {% for d in rows %}
+  <a class="pcard" href="{{ root }}pilotos/{{ d.id }}.html">
+    <div class="pcard-photo">{% if d.photo %}<img src="{{ root }}{{ d.photo }}" alt="{{ d.full }}" loading="lazy">{% endif %}</div>
+    <div class="pcard-body">
+      <div class="pc-num">#{{ d.num }}</div>
+      <h3>{{ d.full }}</h3>
+      <div class="pc-meta">{{ d.flag }} {{ d.nationality }} · {{ d.age }} años</div>
+      <div class="pc-pts">P{{ d.pos }} · <b>{{ d.points }}</b> pts · {{ d.wins }} victorias</div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endmacro %}

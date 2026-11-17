@@ -1,0 +1,42 @@
+name: Actualizar datos y publicar
+
+on:
+  schedule:
+    - cron: "0 5 * * *"      # cada día a las 05:00 UTC
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install jinja2
+
+      - name: Descargar datos y compilar
+        run: python build.py --fetch
+
+      - name: Comprobar que se han generado las páginas
+        run: |
+          test -f public/index.html
+          test -f public/escuderias/index.html
+          test -f public/pilotos/index.html
+          echo "páginas: $(find public -name '*.html' | wc -l)"
+          echo "fotos:   $(ls public/assets/drivers | wc -l)"
+
+      - name: Publicar en Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: npx --yes vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN"
+
+      - name: Confirmar cambios en el repositorio
+        run: |
+          git config user.name  "pitlane-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add src/data/site.json assets/drivers public
+          git diff --cached --quiet || git commit -m "datos: actualización automática $(date -u +%Y-%m-%d)"
+          git push

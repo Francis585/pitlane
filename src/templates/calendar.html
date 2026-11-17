@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Calendario F1 {{ site.season }} — {{ site.total_races }} carreras | Pitlane{% endblock %}
+{% block desc %}Calendario completo de la temporada {{ site.season }} de Fórmula 1: fechas, circuitos y resultados de las carreras disputadas.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<section class="sec" style="padding-bottom:22px">
+  <div class="wrap">
+    <div class="eyebrow">Calendario {{ site.season }}</div>
+    <h1 style="font-size:clamp(2.6rem,7vw,5rem);text-transform:uppercase;margin:12px 0 14px">{{ site.total_races }} carreras,<br>{{ site.rounds_done }} ya escritas</h1>
+    <p class="dim" style="max-width:58ch">Fechas oficiales del campeonato. Las carreras disputadas muestran
+       el ganador y el podio cuando la organización publica los resultados.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="cal">
+      {% for r in site.calendar %}
+      <div class="cal-row {% if r.done %}done{% elif r.is_next %}next{% endif %}">
+        <span class="rd">{{ '%02d'|format(r.round) }}</span>
+        <span class="flag">{{ r.flag }}</span>
+        <div>
+          <div class="gp">{{ r.name }}</div>
+          {% if r.winner %}<div class="podium-mini"><span>Ganó {{ r.winner }}</span></div>{% endif %}
+        </div>
+        <div class="circ">{{ r.circuit }}<small>{{ r.locality }} · {{ r.country }}</small></div>
+        <span class="dt">{{ r.date_human }}</span>
+        <span class="st">{% if r.done %}Disputada{% elif r.is_next %}Siguiente{% else %}Pendiente{% endif %}</span>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="src-note" style="margin-top:16px">Fuente: Jolpica F1 API · última actualización {{ generated_human }}</p>
+  </div>
+</section>
+
+{% if site.last_round and site.last_round.podium %}
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Último resultado</div><h2>{{ site.last_round.name }}</h2></div>
+      <span class="src-note">{{ site.last_round.locality }} · {{ site.last_round.date_human }}</span>
+    </div>
+    <div class="roster">
+      {% for p in site.last_round.podium %}
+      {% set m = meta.get(p.team) %}
+      <div class="pcard" style="grid-template-columns:1fr">
+        <div class="pcard-body">
+          <div class="pc-num" style="color:{{ m.brand if m else '#999' }}">P{{ p.pos }}</div>
+          <h3>{{ p.name }}</h3>
+          <div class="pc-meta">{{ m.display if m else p.team }} · {{ p.code }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

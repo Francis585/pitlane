@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}{{ tm.display }} — Fórmula 1 {{ site.season }} | Pitlane{% endblock %}
+{% block desc %}{{ tm.tagline }} Historia, plantilla, palmarés y actualidad de {{ tm.full }} en la temporada {{ site.season }}.{% endblock %}
+{% block bodyclass %}t-clasico{% endblock %}
+{% block vars %}
+:root{
+  --bg: {{ tm.ink }}; --bg-2: {{ tm.ink }}; --panel: color-mix(in srgb, {{ tm.ink }} 82%, #fff);
+  --brand: {{ tm.brand }}; --brand-2: {{ tm.brand2 }}; --fg: #f6f2ec; --dim: #a8a29a; --dim-2: #78736c;
+  --font-display: "Playfair Display", Georgia, serif;
+}
+{% endblock %}
+
+{% block content %}
+<header class="team-hero">
+  <span class="monogram-big" aria-hidden="true">{{ tm.monogram }}</span>
+  <div class="wrap th-in">
+    <div class="team-kicker"><span class="sq"></span><span>{{ tm.base }} · desde {{ tm.founded.split('·')[0].strip() }}</span><span class="sq"></span></div>
+    <h1>{{ tm.display }}</h1>
+    <p class="team-sub">{{ tm.tagline }}</p>
+    <div class="team-facts">
+      <div><span>Campeonatos</span><b>{{ tm.titles }}</b></div>
+      <div><span>Motor</span><b>{{ tm.engine }}</b></div>
+      <div><span>Jefe de equipo</span><b>{{ tm.principal }}</b></div>
+      <div><span>Posición {{ site.season }}</span><b>P{{ team.pos }}</b></div>
+    </div>
+  </div>
+  <div class="wrap"><div class="rule-gold"></div></div>
+  <div class="wrap team-stats">
+    <div><b>{{ team.points }}</b><span>Puntos {{ site.season }}</span></div>
+    <div><b>{{ team.wins }}</b><span>Victorias {{ site.season }}</span></div>
+    <div><b>{{ tm.titles }}</b><span>Títulos de constructores</span></div>
+    <div><b>{{ drivers|length }}</b><span>Pilotos en plantilla</span></div>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="eyebrow">La escudería</div>
+        <h2 style="font-size:clamp(1.9rem,3.4vw,2.9rem);font-weight:400;font-style:italic;text-transform:none;margin:10px 0 18px">
+          {{ tm.display }}, en pocas palabras</h2>
+        <p style="color:#d5d0c8;font-size:1.02rem;max-width:56ch">{{ tm.blurb }}</p>
+        <div class="quote-block" style="margin-top:28px">
+          <p>{{ tm.tagline }}</p>
+        </div>
+      </div>
+      <aside class="heritage" style="background:transparent">
+        <h4 style="font-family:var(--font-display);font-style:italic;font-weight:700;text-transform:none;font-size:1.3rem">Herencia</h4>
+        <p style="color:#a8a29a">{{ tm.heritage }}</p>
+        <hr class="rule" style="margin:18px 0">
+        <div class="mono" style="display:grid;gap:8px;color:#78736c">
+          <div style="display:flex;justify-content:space-between"><span>Sede</span><span style="color:#f6f2ec">{{ tm.base }}</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Fundación</span><span style="color:#f6f2ec">{{ tm.founded }}</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Unidad de potencia</span><span style="color:#f6f2ec">{{ tm.engine }}</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Títulos</span><span style="color:#f6f2ec">{{ tm.titles }}{% if tm.title_years %} · {{ tm.title_years }}{% endif %}</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow dim">Línea de tiempo</div>
+        <h2>La historia, por capítulos</h2>
+      </div>
+      <span class="src-note">{{ tm.timeline|length }} hitos</span>
+    </div>
+    <div class="split">
+      <div>{{ m.hist(tm.timeline) }}</div>
+      <div>
+        <div class="heritage">
+          <h4>Trayectoria reciente</h4>
+          {% for row in team.prev %}
+          <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line)">
+            <span class="mono" style="color:var(--dim)">{{ row.season }}</span>
+            <span class="mono">P{{ row.pos }} · {{ row.points }} pts</span>
+          </div>
+          {% endfor %}
+          <div style="display:flex;justify-content:space-between;padding:8px 0">
+            <span class="mono" style="color:var(--brand)">{{ site.season }}</span>
+            <span class="mono" style="color:var(--brand)">P{{ team.pos }} · {{ team.points }} pts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow dim">Plantilla {{ site.season }}</div>
+        <h2>Los que se juegan el mundial</h2>
+      </div>
+      <a class="sec-link" href="{{ root }}pilotos/index.html">Todos los pilotos →</a>
+    </div>
+    {{ m.roster(drivers, root) }}
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow dim">En su radar</div>
+        <h2>Actualidad de {{ tm.display }}</h2>
+        <p>Titulares recogidos automáticamente de los medios especializados.</p>
+      </div>
+    </div>
+    <div style="display:grid;gap:1px;background:var(--line);border:1px solid var(--line)">
+      {% for n in team.news %}
+      <a href="{{ n.url }}" target="_blank" rel="noopener nofollow"
+         style="display:grid;grid-template-columns:88px 1fr auto;gap:18px;align-items:baseline;padding:16px 18px;background:var(--bg)">
+        <span class="mono" style="color:var(--dim-2)">{{ n.source }}</span>
+        <span style="font-family:var(--font-display);font-style:italic;font-size:1.12rem;color:#ece7df">{{ n.title }}</span>
+        <span class="mono" style="color:var(--dim-2)">{{ n.date_human }}</span>
+      </a>
+      {% else %}
+      <div style="padding:18px;color:var(--dim)">Sin titulares nuevos de esta escudería.</div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="next-team">
+  <a href="{{ root }}escuderias/{{ prev_team.id }}.html">
+    <span class="eyebrow dim">Anterior en la parrilla</span>
+    <h4>{{ meta[prev_team.id].display }}</h4>
+  </a>
+  <a href="{{ root }}escuderias/{{ next_team.id }}.html">
+    <span class="eyebrow dim">Siguiente</span>
+    <h4>{{ meta[next_team.id].display }}</h4>
+  </a>
+</div>
+{% endblock %}

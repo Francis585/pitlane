@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Clasificación F1 {{ site.season }} — constructores y pilotos | Pitlane{% endblock %}
+{% block desc %}Clasificación actualizada de la temporada {{ site.season }} de Fórmula 1: campeonato de constructores y de pilotos tras la ronda {{ site.round }}.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<section class="sec" style="padding-bottom:22px">
+  <div class="wrap">
+    <div class="eyebrow">Ronda {{ site.round }} de {{ site.total_races }} · {{ site.rounds_done }} carreras disputadas</div>
+    <h1 style="font-size:clamp(2.6rem,7vw,5rem);text-transform:uppercase;margin:12px 0 14px">Clasificación {{ site.season }}</h1>
+    <p class="dim" style="max-width:58ch">Datos oficiales del campeonato, con la misma información que usa
+       la organización. Se actualiza en cada build del sitio.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Constructores</div><h2>Once equipos</h2></div>
+      <span class="src-note">{{ site.teams[0].points }} pts lidera {{ meta[site.teams[0].id].display }}</span>
+    </div>
+    {{ m.bars(site.teams, meta, root) }}
+  </div>
+</section>
+
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Pilotos</div><h2>El mundial individual</h2></div>
+    </div>
+    <table style="width:100%;border-collapse:collapse;font-size:.92rem">
+      <thead>
+        <tr style="border-bottom:1px solid var(--line-2)">
+          <th class="mono" style="text-align:left;padding:10px 8px">Pos</th>
+          <th class="mono" style="text-align:left;padding:10px 8px">Piloto</th>
+          <th class="mono" style="text-align:left;padding:10px 8px">Equipo</th>
+          <th class="mono" style="text-align:right;padding:10px 8px">Victorias</th>
+          <th class="mono" style="text-align:right;padding:10px 8px">Puntos</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for d in site.drivers %}
+        {% set t = meta.get(d.team.id) if d.team else None %}
+        <tr style="border-bottom:1px solid var(--line)">
+          <td class="mono" style="padding:9px 8px;color:var(--dim-2)">{{ d.pos }}</td>
+          <td style="padding:9px 8px"><a href="{{ root }}pilotos/{{ d.id }}.html">{{ d.full }}</a></td>
+          <td style="padding:9px 8px">
+            <span style="display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:8px;background:{{ t.brand if t else '#666' }}"></span>
+            <span class="dim">{{ d.team.name if d.team else '—' }}</span>
+          </td>
+          <td class="mono" style="padding:9px 8px;text-align:right;color:var(--dim)">{{ d.wins }}</td>
+          <td class="mono" style="padding:9px 8px;text-align:right">{{ d.points }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p class="src-note" style="margin-top:16px">Fuente: Jolpica F1 API · actualizado el {{ generated_human }}</p>
+  </div>
+</section>
+{% endblock %}

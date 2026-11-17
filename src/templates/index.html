@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Pitlane — Fórmula 1 {{ site.season }}: escuderías, pilotos y clasificación{% endblock %}
+{% block desc %}Datos, historia y actualidad de la Fórmula 1 {{ site.season }}. Las once escuderías, 22 pilotos, calendario completo y clasificación actualizada.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+  <span class="hero-year" aria-hidden="true">{{ site.season }}</span>
+  <div class="wrap hero-in">
+    <div>
+      <div class="eyebrow">Mundial de Fórmula 1 · temporada {{ site.season }}</div>
+      <h1>La parrilla<br><em>al completo</em></h1>
+      <p class="hero-sub">Once escuderías, once formas de entender la velocidad. Datos oficiales,
+         historia de cada equipo y la actualidad del paddock, actualizados solos en cada carrera.</p>
+      <div class="hero-meta">
+        <div><span>Escuderías</span><b>{{ site.teams|length }}</b></div>
+        <div><span>Pilotos</span><b>{{ site.drivers|length }}</b></div>
+        <div><span>Carreras</span><b>{{ site.total_races }}</b></div>
+        <div><span>Disputadas</span><b>{{ site.rounds_done }}</b></div>
+      </div>
+    </div>
+
+    {% if site.next_race %}
+    {% set nr = site.next_race %}
+    <aside class="next-card">
+      <div class="eyebrow">Próximo gran premio</div>
+      <div class="next-gp">
+        <span class="flag">{{ nr.flag }}</span>
+        <h3>{{ nr.name }}</h3>
+      </div>
+      <p class="circuit">{{ nr.circuit }} · {{ nr.locality }} · {{ nr.date_long }}</p>
+      <div class="countdown" id="countdown" data-date="{{ nr.date }}">
+        <div><b data-cd="d">--</b><span>días</span></div>
+        <div><b data-cd="h">--</b><span>horas</span></div>
+        <div><b data-cd="m">--</b><span>min</span></div>
+        <div><b data-cd="s">--</b><span>seg</span></div>
+      </div>
+      <div class="next-foot">
+        <span class="src-note">Ronda {{ nr.round }} de {{ site.total_races }}</span>
+        <a class="sec-link" href="{{ root }}calendario.html">Calendario</a>
+      </div>
+    </aside>
+    {% endif %}
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Campeonato de constructores</div>
+        <h2>Quién manda en {{ site.season }}</h2>
+        <p>Puntos por escudería tras la ronda {{ site.round }}. Cada barra, un equipo; cada color, su identidad.</p>
+      </div>
+      <a class="sec-link" href="{{ root }}clasificacion.html">Clasificación completa →</a>
+    </div>
+    {{ m.bars(site.teams, meta, root) }}
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Las once escuderías</div>
+        <h2>Cada garaje, su estilo</h2>
+        <p>Cada ficha tiene su propia puesta en escena: la de Maranello se lee como un museo, la de
+           Brackley como una sala de datos.</p>
+      </div>
+      <a class="sec-link" href="{{ root }}escuderias/index.html">Ver todas →</a>
+    </div>
+    {{ m.team_tiles(site.teams, meta, root) }}
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Campeonato de pilotos</div>
+        <h2>Los que están delante</h2>
+      </div>
+      <a class="sec-link" href="{{ root }}pilotos/index.html">Los {{ site.drivers|length }} pilotos →</a>
+    </div>
+    {{ m.driver_cards(site.drivers, root, meta, 10) }}
+  </div>
+</section>
+
+{% if site.last_round and site.last_round.podium %}
+<hr class="rule">
+<section class="sec">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="eyebrow">Última carrera</div>
+        <h2 style="font-size:clamp(2rem,4.4vw,3.2rem);text-transform:uppercase;margin-bottom:18px">
+          {{ site.last_round.name }}<br><span style="color:var(--dim-2)">{{ site.last_round.locality }}</span></h2>
+        <p class="dim" style="max-width:46ch">{{ site.last_round.date_long }} · {{ site.last_round.circuit }}</p>
+        <div style="display:grid;gap:10px;margin-top:22px;max-width:420px">
+          {% for p in site.last_round.podium %}
+          {% set tm = meta.get(p.team) %}
+          <div style="display:grid;grid-template-columns:40px 12px 1fr auto;align-items:center;gap:14px;
+                      border-bottom:1px solid var(--line);padding-bottom:10px">
+            <span class="mono" style="color:var(--dim-2)">P{{ p.pos }}</span>
+            <span style="width:12px;height:24px;border-radius:2px;background:{{ tm.brand if tm else '#666' }}"></span>
+            <b style="font-family:var(--font-display);font-size:1.3rem;text-transform:uppercase">{{ p.name }}</b>
+            <span class="mono" style="color:var(--dim)">{{ p.code }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">Lo que viene</div>
+        <div style="display:grid;gap:1px;margin-top:14px">
+          {% for r in site.calendar[site.round:site.round+4] %}
+          <div style="display:grid;grid-template-columns:44px 30px 1fr auto;gap:12px;align-items:center;
+                      padding:13px 14px;background:var(--bg-2);border:1px solid var(--line)">
+            <span class="mono" style="color:var(--dim-2)">R{{ r.round }}</span>
+            <span>{{ r.flag }}</span>
+            <span style="font-family:var(--font-display);font-size:1.16rem;text-transform:uppercase">{{ r.name }}</span>
+            <span class="mono" style="color:var(--dim)">{{ r.date_human }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<hr class="rule">
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Desde el paddock</div>
+        <h2>Últimas noticias</h2>
+        <p>Titulares de los medios especializados, recolectados automáticamente en cada publicación.</p>
+      </div>
+      <a class="sec-link" href="{{ root }}noticias.html">Todas las noticias →</a>
+    </div>
+    {{ m.news_cards(site.news, root, meta, 9) }}
+  </div>
+</section>
+{% endblock %}

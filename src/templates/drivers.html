@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Pilotos de la Fórmula 1 {{ site.season }} | Pitlane{% endblock %}
+{% block desc %}Los {{ site.drivers|length }} pilotos de la temporada {{ site.season }} de Fórmula 1: puntos, equipo, edad y ficha completa.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<section class="sec" style="padding-bottom:22px">
+  <div class="wrap">
+    <div class="eyebrow">Parrilla {{ site.season }}</div>
+    <h1 style="font-size:clamp(2.6rem,7vw,5.2rem);text-transform:uppercase;margin:12px 0 14px">Los {{ site.drivers|length }} pilotos</h1>
+    <p class="dim" style="max-width:58ch">Ordenados por campeonato. Toca una ficha para ver su temporada,
+       su equipo y su foto actualizada.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    {{ m.driver_cards(drivers, root, meta, drivers|length) }}
+  </div>
+</section>
+
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Mundial de pilotos</div><h2>Clasificación completa</h2></div>
+      <a class="sec-link" href="{{ root }}clasificacion.html">Constructores →</a>
+    </div>
+    <table style="width:100%;border-collapse:collapse;font-size:.9rem">
+      <thead>
+        <tr style="border-bottom:1px solid var(--line-2)">
+          <th class="mono" style="text-align:left;padding:10px 8px">Pos</th>
+          <th class="mono" style="text-align:left;padding:10px 8px">Piloto</th>
+          <th class="mono" style="text-align:left;padding:10px 8px">Equipo</th>
+          <th class="mono" style="text-align:right;padding:10px 8px">Victorias</th>
+          <th class="mono" style="text-align:right;padding:10px 8px">Puntos</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for d in drivers %}
+        {% set t = meta.get(d.team.id) if d.team else None %}
+        <tr style="border-bottom:1px solid var(--line)">
+          <td class="mono" style="padding:9px 8px;color:var(--dim-2)">{{ d.pos }}</td>
+          <td style="padding:9px 8px"><a href="{{ root }}pilotos/{{ d.id }}.html">{{ d.full }}</a></td>
+          <td style="padding:9px 8px">
+            <span style="display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:8px;background:{{ t.brand if t else '#666' }}"></span>
+            <span class="dim">{{ d.team.name if d.team else '—' }}</span>
+          </td>
+          <td class="mono" style="padding:9px 8px;text-align:right">{{ d.wins }}</td>
+          <td class="mono" style="padding:9px 8px;text-align:right">{{ d.points }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

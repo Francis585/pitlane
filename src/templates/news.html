@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Noticias de Fórmula 1 {{ site.season }} | Pitlane{% endblock %}
+{% block desc %}Titulares de Fórmula 1 recogidos automáticamente de The Race, Motorsport.com, Autosport, Crash.net, ESPN, RaceFans y Motorsport Week.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<section class="sec" style="padding-bottom:22px">
+  <div class="wrap">
+    <div class="eyebrow">Paddock · {{ site.news_pool }} titulares en el último barrido</div>
+    <h1 style="font-size:clamp(2.6rem,7vw,5rem);text-transform:uppercase;margin:12px 0 14px">Noticias</h1>
+    <p class="dim" style="max-width:58ch">Recolección automática de los RSS de los medios especializados.
+       Cada titular enlaza a su fuente original; aquí no se reescribe la información de nadie.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    {{ m.news_cards(site.news, root, meta, 12) }}
+  </div>
+</section>
+
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Por escudería</div><h2>La actualidad de cada garaje</h2></div>
+    </div>
+    <div class="teams-hub">
+      {% for t in site.teams %}
+      {% set tm = meta[t.id] %}
+      <div class="hub-block">
+        <div class="hub-head" style="border-left:3px solid {{ tm.brand }}">
+          <h3>{{ tm.display }}</h3>
+          <p>{{ t.news|length }} titulares · P{{ t.pos }}</p>
+        </div>
+        <div style="display:grid;gap:1px;background:var(--line)">
+          {% for n in t.news[:3] %}
+          <a href="{{ n.url }}" target="_blank" rel="noopener nofollow"
+             style="display:grid;grid-template-columns:1fr auto;gap:14px;align-items:baseline;padding:13px 18px;background:var(--bg-2)">
+            <span style="font-family:var(--font-body);font-size:.92rem">{{ n.title }}</span>
+            <span class="mono" style="color:var(--dim-2)">{{ n.date_human }}</span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
