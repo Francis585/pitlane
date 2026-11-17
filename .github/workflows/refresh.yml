@@ -42,10 +42,14 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: npx --yes vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN"
 
+      # El despliegue ya ha ocurrido: guardar los datos en el repo es un extra,
+      # así que nunca debe tumbar la ejecución (rebasa si hay cambios nuevos).
       - name: Confirmar cambios en el repositorio
+        continue-on-error: true
         run: |
           git config user.name  "pitlane-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add src/data/site.json assets/drivers public
+          git add src/data/site.json assets public
           git diff --cached --quiet || git commit -m "datos: actualización automática $(date -u +%Y-%m-%d)"
-          git push
+          git pull --rebase --autostash origin master || true
+          git push || echo "push omitido: hay cambios locales en master"
