@@ -248,9 +248,14 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 800; margin: 0; 
 .team-stats b { display: block; font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1; }
 .team-stats span { font-family: var(--font-mono); font-size: .6rem; letter-spacing: .16em; text-transform: uppercase; color: var(--dim-2); }
 
-.roster { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.roster { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
 .pcard { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--panel); display: grid; grid-template-columns: 132px 1fr; }
-.pcard-photo { background: #0a0c10; }
+.pcard-photo { background: linear-gradient(160deg, color-mix(in srgb, var(--brand) 22%, #0a0c10), #0a0c10 70%); position: relative; }
+.pcard-photo .ph, .dcard-img .ph {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  font-family: var(--font-display); font-weight: 800; font-size: 1.9rem; letter-spacing: .06em;
+  color: color-mix(in srgb, var(--brand) 70%, #ffffff); opacity: .75;
+}
 .pcard-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; filter: grayscale(.3) contrast(1.06); }
 .pcard-body { padding: 14px; }
 .pcard-body .pc-num { font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; color: var(--brand); line-height: 1; }
