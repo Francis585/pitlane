@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name  "pitlane-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add src/data/site.json assets public
+          git add src/data/site.json
           git diff --cached --quiet || git commit -m "datos: actualización automática $(date -u +%Y-%m-%d)"
           git pull --rebase --autostash origin master || true
           git push || echo "push omitido: hay cambios locales en master"
