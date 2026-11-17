@@ -6,3 +6,5 @@ assets/circuits/
 __pycache__/
 *.pyc
 .vercel/
+.env.local
+.env
