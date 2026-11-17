@@ -51,6 +51,13 @@ def render_all(site: dict) -> int:
         lstrip_blocks=True,
     )
 
+    # slug legible para las URLs (red_bull → red-bull)
+    for t in site["teams"]:
+        t["slug"] = t["id"].replace("_", "-")
+    for d in site["drivers"]:
+        if d.get("team"):
+            d["team"]["slug"] = d["team"]["id"].replace("_", "-")
+
     teams_by_id = {t["id"]: t for t in site["teams"]}
     drivers_by_id = {d["id"]: d for d in site["drivers"]}
     generated = human_date(site["generated"][:10])
@@ -87,7 +94,7 @@ def render_all(site: dict) -> int:
         tpl = f"team_{meta['layout']}.html"
         # Los 24 pilotos no: la ficha enseña la plantilla del equipo con sus datos de temporada.
         write(
-            f"escuderias/{t['id']}.html", tpl, "../",
+            f"escuderias/{t['slug']}.html", tpl, "../",
             team=t, tm=meta,
             drivers=[drivers_by_id[d["id"]] for d in t["drivers"] if d["id"] in drivers_by_id],
             next_team=next_team, prev_team=prev_team,
@@ -124,7 +131,9 @@ def write_static(site: dict) -> None:
 
     urls = ["", "escuderias/", "pilotos/", "calendario.html", "clasificacion.html",
             "noticias.html", "metodologia.html"]
-    urls += [f"escuderias/{t['id']}.html" for t in site["teams"]]
+    for t in site["teams"]:
+        t.setdefault("slug", t["id"].replace("_", "-"))
+    urls += [f"escuderias/{t['slug']}.html" for t in site["teams"]]
     urls += [f"pilotos/{d['id']}.html" for d in site["drivers"]]
     body = "".join(
         f"<url><loc>https://pitlane-f1-pied.vercel.app/{u}</loc>"

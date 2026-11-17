@@ -29,7 +29,7 @@
         <div class="hub-body">
           {% for t in rows %}
           {% set m = meta[t.id] %}
-          <a class="hub-link" href="{{ root }}escuderias/{{ t.id }}.html" data-layout="{{ layout }}">
+          <a class="hub-link" href="{{ root }}escuderias/{{ t.slug }}.html" data-layout="{{ layout }}">
             <div>
               <b>{{ m.display }}</b>
               <small>P{{ t.pos }} · {{ t.points }} pts · {{ t.wins }} victorias</small>

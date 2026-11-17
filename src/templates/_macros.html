@@ -55,7 +55,7 @@
 <div class="tiles">
   {% for t in teams %}
   {% set m = meta[t.id] %}
-  <a class="tile" href="{{ root }}escuderias/{{ t.id }}.html" style="--c1:{{ m.brand }}">
+  <a class="tile" href="{{ root }}escuderias/{{ t.slug }}.html" style="--c1:{{ m.brand }}">
     <div class="tpos">{{ m.base.split(',')[0] }} · P{{ t.pos }}</div>
     <div class="tfoot">
       <h3>{{ m.display }}</h3>
@@ -71,7 +71,7 @@
   {% set top = teams[0].points or 1 %}
   {% for t in teams %}
   {% set m = meta[t.id] %}
-  <a class="bar" href="{{ root }}escuderias/{{ t.id }}.html">
+  <a class="bar" href="{{ root }}escuderias/{{ t.slug }}.html">
     <span class="pos">{{ t.pos }}</span>
     <span class="chip" style="background:{{ m.brand }}"></span>
     <span class="name">{{ m.display }}<small>{{ t.wins }} victorias</small></span>
