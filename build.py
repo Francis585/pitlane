@@ -136,14 +136,14 @@ def write_static(site: dict) -> None:
     urls += [f"escuderias/{t['slug']}.html" for t in site["teams"]]
     urls += [f"pilotos/{d['id']}.html" for d in site["drivers"]]
     body = "".join(
-        f"<url><loc>https://pitlane-f1-pied.vercel.app/{u}</loc>"
+        f"<url><loc>https://pitlane-ruddy.vercel.app/{u}</loc>"
         f"<lastmod>{site['generated'][:10]}</lastmod></url>" for u in urls)
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>'
         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{body}</urlset>',
         encoding="utf-8")
     (OUT / "robots.txt").write_text(
-        "User-agent: *\nAllow: /\nSitemap: https://pitlane-f1-pied.vercel.app/sitemap.xml\n", encoding="utf-8")
+        "User-agent: *\nAllow: /\nSitemap: https://pitlane-ruddy.vercel.app/sitemap.xml\n", encoding="utf-8")
 
 
 def main() -> None:

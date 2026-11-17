@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://pitlane-f1-pied.vercel.app/sitemap.xml
+Sitemap: https://pitlane-ruddy.vercel.app/sitemap.xml

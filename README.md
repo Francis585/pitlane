@@ -3,7 +3,7 @@
 Sitio independiente sobre la Fórmula 1: las once escuderías, su historia, su plantilla y su actualidad,
 más calendario y clasificación de la temporada en curso. Sin relación con la FIA, la FOM ni ningún equipo.
 
-**En producción:** https://pitlane-f1-pied.vercel.app
+**En producción:** https://pitlane-ruddy.vercel.app
 
 ## Cómo funciona
 
