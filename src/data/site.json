@@ -439,7 +439,7 @@
    "winner": null
   }
  ],
- "generated": "2026-11-17T20:26:47+00:00",
+ "generated": "2026-11-17T20:43:08+00:00",
  "round": "20",
  "total_races": 23,
  "rounds_done": 20,
@@ -1064,7 +1064,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453187_hires.jpg?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 5 h",
+     "age": "hace 6 h",
      "ts": 1794925762.0,
      "teams": [
       "mercedes"
@@ -1173,7 +1173,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Bernie-Ecclestone-F1-300x169.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 2 h",
+     "age": "hace 3 h",
      "ts": 1794936600.0,
      "teams": [
       "ferrari"
@@ -1220,7 +1220,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1450961_hires.jpg?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 7 h",
+     "age": "hace 8 h",
      "ts": 1794918610.0,
      "teams": [
       "ferrari"
@@ -1356,7 +1356,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-Red-Bull-300x169.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 3 h",
+     "age": "hace 4 h",
      "ts": 1794933000.0,
      "teams": [
       "red_bull"
@@ -1791,7 +1791,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-Red-Bull-300x169.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 3 h",
+     "age": "hace 4 h",
      "ts": 1794933000.0,
      "teams": [
       "red_bull"
@@ -2108,7 +2108,7 @@
      "url": "https://www.motorsport.com/f1/news/williams-aston-martin-among-new-f1-liveries-for-las-vegas-gp-as-acura-replaces-honda/10874925/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Williams and Aston Martin are among the F1 teams to have revamped their car liveries for this weekend's Las Vegas Grand Prix. F1 heads to Las Vegas for its third of three US races, with the entertainment capital having quickly bec",
      "source": "Motorsport.com",
-     "image": "https://cdn-4.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 1 d",
@@ -2294,7 +2294,7 @@
      "url": "https://www.motorsport.com/dakar/news/fernando-alonso-to-return-to-dakar-rally-with-aston-martin-in-2027/10874907/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
      "age": "hace 11 h",
@@ -2309,7 +2309,7 @@
      "url": "https://www.motorsport.com/f1/news/williams-aston-martin-among-new-f1-liveries-for-las-vegas-gp-as-acura-replaces-honda/10874925/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Williams and Aston Martin are among the F1 teams to have revamped their car liveries for this weekend's Las Vegas Grand Prix. F1 heads to Las Vegas for its third of three US races, with the entertainment capital having quickly bec",
      "source": "Motorsport.com",
-     "image": "https://cdn-4.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 1 d",
@@ -2433,27 +2433,11 @@
       "cadillac"
      ],
      "own": true
-    },
-    {
-     "title": "Sergio Pérez's F1 second act: Red Bull regrets, redemption and a fresh start at Cadillac",
-     "url": "https://www.espn.com/f1/story/_/id/50310746/sergio-perez-f1-second-act-red-bull-regrets-cadillac-contract",
-     "desc": "Sergio Pérez reflects on his Red Bull exit, finding happiness beyond F1 and rediscovering his love of racing as he prepares for his 300th grand prix.",
-     "source": "ESPN F1",
-     "image": null,
-     "date": "",
-     "date_human": "",
-     "age": "",
-     "ts": 0,
-     "teams": [
-      "red_bull",
-      "cadillac"
-     ],
-     "own": true
     }
    ],
    "photo": "assets/drivers/bottas.jpg",
    "photo_of": "Valtteri Bottas",
-   "car": null
+   "car": "assets/teams/cadillac-car.jpg"
   }
  ],
  "drivers": [
@@ -3035,6 +3019,18 @@
  ],
  "news": [
   {
+   "title": "Social Media: FIA president indicates agreement reached on next power unit formula | Brief",
+   "url": "https://www.racefans.net/2026/11/17/social-media-fia-president-indicates-agreement-reached-on-next-power-unit-formula/",
+   "desc": "V8 engines are coming to F1 \"soon\", claims Ben Sulayem",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "age": "hace 1 h",
+   "ts": 1794947829.0,
+   "teams": []
+  },
+  {
    "title": "F1 Academy prepares for Las Vegas with special livery",
    "url": "https://www.motorsportweek.com/2026/11/17/f1-academy-prepares-for-las-vegas-with-special-livery/",
    "desc": "F1 Academy teams have begun unveiling their special liveries for the Las Vegas GP as they aim to make it a weekend to remember. The post F1 Academy prepares for Las Vegas with special livery appeared first on Motorsport Week .",
@@ -3068,7 +3064,7 @@
    "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Bernie-Ecclestone-F1-300x169.webp",
    "date": "2026-11-17",
    "date_human": "17 nov",
-   "age": "hace 2 h",
+   "age": "hace 3 h",
    "ts": 1794936600.0,
    "teams": [
     "ferrari"
@@ -3113,7 +3109,7 @@
    "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453187_hires.jpg?width=1200",
    "date": "2026-11-17",
    "date_human": "17 nov",
-   "age": "hace 5 h",
+   "age": "hace 6 h",
    "ts": 1794925762.0,
    "teams": [
     "mercedes"
@@ -3193,7 +3189,7 @@
    "url": "https://www.motorsport.com/dakar/news/fernando-alonso-to-return-to-dakar-rally-with-aston-martin-in-2027/10874907/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
    "source": "Motorsport.com",
-   "image": "https://cdn-1.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
+   "image": "https://cdn-5.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
    "date": "2026-11-17",
    "date_human": "17 nov",
    "age": "hace 11 h",
@@ -3214,20 +3210,6 @@
    "ts": 1794850203.0,
    "teams": [
     "mclaren"
-   ]
-  },
-  {
-   "title": "Hamilton tells F1 to spend £50 million in promoting under-represented talent | Formula 1",
-   "url": "https://www.racefans.net/2026/11/16/hamilton-tells-f1-to-spend-50-million-in-promoting-under-represented-talent/",
-   "desc": "Lewis Hamilton's Mission 44 organisation says Formula 1 fans want to see greater representation in the championship.",
-   "source": "RaceFans",
-   "image": null,
-   "date": "2026-11-16",
-   "date_human": "16 nov",
-   "age": "hace 1 d",
-   "ts": 1794849016.0,
-   "teams": [
-    "mercedes"
    ]
   },
   {
