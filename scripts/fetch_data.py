@@ -325,6 +325,12 @@ def commons_car_photo(team_name: str, slug_name: str) -> str | None:
             continue
         if w / h < 1.25:          # interesan fotos apaisadas
             continue
+        title = (pg.get("title") or "").lower()
+        # solo monoplazas en pista: fuera safety cars, coches de calle y eventos
+        if any(k in title for k in ("safety", "medical", "vantage", "dbx", "road", "vulcan", "logo")):
+            continue
+        if not any(k in title for k in ("formula", "grand prix", "gp")):
+            continue
         if not usable_image(ii.get("url", "")):
             continue
         url = ii.get("thumburl") or ii.get("url")

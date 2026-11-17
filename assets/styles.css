@@ -932,3 +932,7 @@ body { animation: pageIn .5s ease both; }
 /* el acento de la escudería manda sobre el del GP */
 body.race-week .t-clasico .logo b, body.race-week .t-tecnico .logo b,
 body.race-week .t-moderno .logo b, body.race-week .t-rebelde .logo b { color: var(--brand) !important; }
+
+/* la cinta del GP no pisa la identidad de una escudería */
+body.t-clasico .gp-ribbon, body.t-tecnico .gp-ribbon,
+body.t-moderno .gp-ribbon, body.t-rebelde .gp-ribbon { display: none; }
