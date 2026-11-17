@@ -36,9 +36,9 @@
     {% endif %}
   </div>
   <div class="wrap hero-band">
-    <div><span>Escuderías</span><b data-count="{{ site.teams|length }}">{{ site.teams|length }}</b></div>
-    <div><span>Pilotos</span><b data-count="{{ site.drivers|length }}">{{ site.drivers|length }}</b></div>
-    <div><span>Circuitos</span><b data-count="{{ site.circuits|length }}">{{ site.circuits|length }}</b></div>
+    <div><span>Escuderías</span><b>{{ site.teams|length }}</b></div>
+    <div><span>Pilotos</span><b>{{ site.drivers|length }}</b></div>
+    <div><span>Circuitos</span><b>{{ site.circuits|length }}</b></div>
     <div><span>Líder del mundial</span><b style="font-size:clamp(1.3rem,2.4vw,1.9rem)">{{ meta[site.teams[0].id].display }}</b></div>
   </div>
 </header>
