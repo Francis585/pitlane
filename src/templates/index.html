@@ -6,47 +6,40 @@
 
 {% block content %}
 <header class="hero">
-  <div class="hero-bg"></div>
-  {% if next_circuit and next_circuit.photo %}
-  <div class="hero-photo" style="--img:url('{{ img_url(next_circuit.photo) }}')"></div>
-  {% endif %}
-  <div class="hero-lines"></div>
-  <span class="hero-year" aria-hidden="true">{{ site.season }}</span>
+  {% set hero_team = site.teams[0] %}
+  <div class="hero-media" data-hero-slideshow>
+    {% for sl in hero_slides %}
+    <img src="{{ img_url(sl.src) }}" alt="{{ sl.alt }}" class="hero-slide{% if loop.first %} is-on{% endif %}"
+         data-label="{{ sl.label }}" loading="{% if loop.first %}eager{% else %}lazy{% endif %}">
+    {% endfor %}
+  </div>
+
+  <div class="hero-scrim"></div>
   <div class="wrap hero-in">
     <div>
-      <div class="eyebrow">Mundial de Fórmula 1 · temporada {{ site.season }}</div>
-      <h1>La parrilla<br><em>al completo</em></h1>
-      <p class="hero-sub">Once escuderías, once formas de entender la velocidad. Datos oficiales,
-         historia de cada equipo y la actualidad del paddock, actualizados solos en cada carrera.</p>
-      <div class="hero-meta">
-        <div><span>Escuderías</span><b>{{ site.teams|length }}</b></div>
-        <div><span>Pilotos</span><b>{{ site.drivers|length }}</b></div>
-        <div><span>Circuitos</span><b>{{ site.circuits|length }}</b></div>
-        <div><span>Disputadas</span><b>{{ site.rounds_done }}</b></div>
+      <div class="hero-kicker">{{ site.season }} · ronda {{ site.round }} de {{ site.total_races }}{% if gp.active %} · semana de {{ gp.gp }}{% endif %}</div>
+      <h1>La fórmula 1<br><span>al completo</span></h1>
+      <p class="hero-sub">Once escuderías y sus historias, la parrilla entera, los {{ site.circuits|length }} circuitos
+         y la actualidad del paddock. Todo verificado y actualizado solo, en cada carrera.</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="{{ root }}clasificacion.html">Ver la clasificación →</a>
+        <a class="btn btn-ghost" href="{{ root }}escuderias/index.html">▶ Las once escuderías</a>
       </div>
     </div>
-
     {% if site.next_race %}
     {% set nr = site.next_race %}
-    <aside class="next-card">
-      <div class="eyebrow">Próximo gran premio</div>
-      <div class="next-gp">
-        <span class="flag">{{ nr.flag }}</span>
-        <h3>{{ nr.name }}</h3>
-      </div>
-      <p class="circuit">{{ nr.circuit }} · {{ nr.locality }} · {{ nr.date_long }}</p>
-      <div class="countdown" id="countdown" data-date="{{ nr.date }}">
-        <div><b data-cd="d">--</b><span>días</span></div>
-        <div><b data-cd="h">--</b><span>horas</span></div>
-        <div><b data-cd="m">--</b><span>min</span></div>
-        <div><b data-cd="s">--</b><span>seg</span></div>
-      </div>
-      <div class="next-foot">
-        <span class="src-note">Ronda {{ nr.round }} de {{ site.total_races }}</span>
-        <a class="sec-link" href="{{ root }}calendario.html">Calendario</a>
-      </div>
-    </aside>
+    <a class="gp-pill" href="{% if next_circuit %}{{ root }}circuitos/{{ next_circuit.id }}.html{% else %}{{ root }}calendario.html{% endif %}">
+      <span class="flag"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(nr.country) }}.png" alt="" width="20" height="15"></span>
+      <span class="txt">Próximo GP · {{ nr.name }}</span>
+      <span class="when">{% if nr.days_until == 0 %}hoy{% else %}en {{ nr.days_until }} d{% endif %}</span>
+    </a>
     {% endif %}
+  </div>
+  <div class="wrap hero-band">
+    <div><span>Escuderías</span><b data-count="{{ site.teams|length }}">{{ site.teams|length }}</b></div>
+    <div><span>Pilotos</span><b data-count="{{ site.drivers|length }}">{{ site.drivers|length }}</b></div>
+    <div><span>Circuitos</span><b data-count="{{ site.circuits|length }}">{{ site.circuits|length }}</b></div>
+    <div><span>Líder del mundial</span><b style="font-size:clamp(1.3rem,2.4vw,1.9rem)">{{ meta[site.teams[0].id].display }}</b></div>
   </div>
 </header>
 
@@ -60,17 +53,7 @@
   </div>
 </div>
 
-<section class="sec" style="padding-block:38px">
-  <div class="wrap">
-    <div class="kpis">
-      <div><b>{{ meta[site.teams[0].id].display }}</b><span>Líder de constructores</span></div>
-      <div><b>{{ site.teams[0].points }}</b><span>Puntos del líder</span></div>
-      <div><b>{{ site.drivers[0].last }}</b><span>Líder de pilotos</span></div>
-      <div><b>{{ site.drivers[0].points }}</b><span>Puntos del líder</span></div>
-      <div><b>{{ site.next_race.days_until if site.next_race else '—' }}</b><span>Días al próximo GP</span></div>
-    </div>
-  </div>
-</section>
+
 
 {% if moments %}
 <section class="sec" style="padding-top:0">
@@ -103,7 +86,7 @@
 </section>
 {% endif %}
 
-<section class="sec">
+<section class="sec" data-reveal>
   <div class="wrap">
     <div class="sec-head">
       <div>
@@ -119,7 +102,7 @@
 
 <hr class="rule">
 
-<section class="sec">
+<section class="sec" data-reveal>
   <div class="wrap">
     <div class="sec-head">
       <div>
@@ -136,7 +119,7 @@
 
 <hr class="rule">
 
-<section class="sec">
+<section class="sec" data-reveal>
   <div class="wrap">
     <div class="sec-head">
       <div>
@@ -151,7 +134,7 @@
 
 {% if site.last_round and site.last_round.podium %}
 <hr class="rule">
-<section class="sec">
+<section class="sec" data-reveal>
   <div class="wrap">
     <div class="split">
       <div>
@@ -191,9 +174,35 @@
 </section>
 {% endif %}
 
+{% if gallery %}
 <hr class="rule">
 
-<section class="sec">
+<section class="sec" data-reveal>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="sec-num">05 — EL PADDOCK</span>
+        <h2>El mundial, en imágenes</h2>
+        <p>Coches, caras y escenarios. Todo lo que hay en esta página sale de datos e imágenes públicas
+           y se regenera en cada carrera.</p>
+      </div>
+      <a class="sec-link" href="{{ root }}circuitos/index.html">Ver circuitos →</a>
+    </div>
+    <div class="mosaic">
+      {% for g in gallery[:7] %}
+      <figure class="mosaic-item m{{ loop.index }}">
+        <img src="{{ img_url(g.src) }}" alt="{{ g.alt }}" loading="lazy">
+        <figcaption><b>{{ g.label }}</b><span>{{ g.sub }}</span></figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<hr class="rule">
+
+<section class="sec" data-reveal>
   <div class="wrap">
     <div class="sec-head">
       <div>

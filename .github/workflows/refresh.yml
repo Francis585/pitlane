@@ -5,7 +5,8 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 5 * * *"      # cada día a las 05:00 UTC
+    - cron: "0 5 * * *"      # datos de madrugada
+    - cron: "30 17 * * *"     # repaso tras las carreras del domingo
   workflow_dispatch:
 
 jobs:

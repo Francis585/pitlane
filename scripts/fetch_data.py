@@ -22,10 +22,29 @@ import time
 import urllib.error
 import urllib.request
 
+IMAGE_TTL_DAYS = int(os.environ.get("PITLANE_IMAGE_TTL", "10"))
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
 ASSETS = ROOT / "assets"
-SEASON = int(os.environ.get("PITLANE_SEASON", "2026"))
+def detect_season() -> int:
+    """Temporada activa sin intervención: el año en curso si ya hay calendario,
+    el anterior en pretemporada o si la API aún no lo publica."""
+    forced = os.environ.get("PITLANE_SEASON")
+    if forced:
+        return int(forced)
+    year = date.today().year
+    for candidate in (year, year - 1):
+        try:
+            body = get_json(f"{API}/{candidate}.json?limit=100")
+            if body["MRData"]["RaceTable"]["Races"]:
+                return candidate
+        except Exception:
+            continue
+    return year
+
+
+SEASON = 0  # se resuelve al arrancar, con detección automática
 API = "https://api.jolpi.ca/ergast/f1"
 
 UA = {"User-Agent": "PitlaneBot/1.0 (sitio informativo no oficial de F1)"}
@@ -283,6 +302,47 @@ def build_drivers(api: dict, teams: list) -> list:
     return out
 
 
+def commons_car_photo(team_name: str, slug_name: str) -> str | None:
+    """Busca en Wikimedia Commons una foto del coche del equipo y se queda con la mejor."""
+    from urllib.parse import quote as q
+    dest = ASSETS / "teams" / f"{slug_name}-car.jpg"
+    if fresh(dest, 12000) and is_photo(dest):
+        return f"assets/teams/{slug_name}-car.jpg"
+    terms = f"{team_name} Formula One {SEASON}"
+    url = ("https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search"
+           f"&gsrsearch={q('filetype:bitmap ' + terms)}&gsrlimit=10&gsrnamespace=6"
+           "&prop=imageinfo&iiprop=url|size&iiurlwidth=1600")
+    try:
+        data = get_json(url)
+    except Exception:
+        return None
+    pages = (data.get("query") or {}).get("pages") or {}
+    best = None
+    for pg in pages.values():
+        ii = (pg.get("imageinfo") or [{}])[0]
+        w, h = ii.get("width", 0), ii.get("height", 0)
+        if not w or not h or w < 1200 or h == 0:
+            continue
+        if w / h < 1.3:          # interesan fotos apaisadas
+            continue
+        if not usable_image(ii.get("url", "")):
+            continue
+        best = ii.get("thumburl") or ii.get("url")
+        if best:
+            break
+    if not best:
+        return None
+    try:
+        img = get(best, timeout=60)
+        if len(img) < 12000:
+            return None
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(img)
+        return f"assets/teams/{slug_name}-car.jpg" if is_photo(dest) else None
+    except Exception:
+        return None
+
+
 # Títulos extra de Wikipedia para circuitos cuya página solo ofrece mapas.
 CIRCUIT_FALLBACK = {
     "marina_bay": ["Marina Bay Sands", "Singapore"],
@@ -290,6 +350,13 @@ CIRCUIT_FALLBACK = {
     "rodriguez": ["Autódromo Hermanos Rodríguez", "Mexico City"],
     "monza": ["Monza", "Autodromo Nazionale Monza"],
     "hungaroring": ["Mogyoród", "Hungaroring"],
+}
+
+DISPLAY = {
+    "ferrari": "Ferrari", "mercedes": "Mercedes", "red_bull": "Red Bull Racing",
+    "mclaren": "McLaren", "aston_martin": "Aston Martin", "alpine": "Alpine",
+    "haas": "Haas", "audi": "Audi", "williams": "Williams", "rb": "Racing Bulls",
+    "cadillac": "Cadillac",
 }
 
 TEAM_WIKI = {
@@ -309,7 +376,7 @@ TEAM_WIKI = {
 # ---------------------------------------------------------------------- imágenes
 def driver_photo(wiki_title: str, did: str) -> str | None:
     dest = ASSETS / "drivers" / f"{did}.jpg"
-    if dest.exists() and dest.stat().st_size > 6000:
+    if fresh(dest):
         return f"assets/drivers/{did}.jpg"
     try:
         data = get_json(
@@ -368,6 +435,14 @@ def driver_bio(wiki_title: str) -> str:
 BAD_IMG = re.compile(r"(map|layout|logo|escudo|emblem|flag_of|icon|badge|circuit_?map|track_?map)", re.I)
 
 
+def fresh(path: pathlib.Path, min_size: int = 6000) -> bool:
+    """¿La imagen existe, tiene tamaño y no ha caducado?"""
+    if not path.exists() or path.stat().st_size < min_size:
+        return False
+    age_days = (time.time() - path.stat().st_mtime) / 86400
+    return age_days < IMAGE_TTL_DAYS
+
+
 def usable_image(url: str) -> bool:
     """Descarta mapas, escudos y SVG: solo interesan fotografías."""
     low = url.lower()
@@ -389,7 +464,7 @@ def is_photo(path: pathlib.Path) -> bool:
 def wiki_best_photo(titles: list[str], slug_name: str, folder: str, width: int = 960) -> str | None:
     """Prueba varios títulos de Wikipedia y se queda con la primera foto real."""
     dest = ASSETS / folder / f"{slug_name}.jpg"
-    if dest.exists() and dest.stat().st_size > 6000 and is_photo(dest):
+    if fresh(dest) and is_photo(dest):
         return f"assets/{folder}/{slug_name}.jpg"
     for title in titles:
         got = wiki_image(title, f"{slug_name}__try", folder, width)
@@ -409,7 +484,7 @@ def wiki_best_photo(titles: list[str], slug_name: str, folder: str, width: int =
 def wiki_image(title: str, slug_name: str, folder: str, width: int = 500) -> str | None:
     """Descarga la imagen principal de una página de Wikipedia."""
     dest = ASSETS / folder / f"{slug_name}.jpg"
-    if dest.exists() and dest.stat().st_size > 6000:
+    if fresh(dest):
         return f"assets/{folder}/{slug_name}.jpg"
     time.sleep(1.1)  # cortesía con la API de Wikipedia
     try:
@@ -495,7 +570,7 @@ def tag_teams(item: dict) -> list:
     return hits
 
 
-def fetch_news(limit: int = 12) -> list:
+def fetch_news(limit: int = 16) -> list:
     items, seen = [], set()
     for source, url in FEEDS:
         try:
@@ -541,6 +616,8 @@ def fetch_news(limit: int = 12) -> list:
                 "image": img,
                 "date": dt.date().isoformat() if dt else "",
                 "date_human": f"{dt.day} {MONTHS[dt.month - 1]}" if dt else "",
+                "age": (lambda h: f"hace {h} h" if h < 24 else f"hace {h // 24} d")(
+                    max(1, int((datetime.now().timestamp() - dt.timestamp()) / 3600))) if dt else "",
                 "ts": dt.timestamp() if dt else 0,
             }
             entry["teams"] = tag_teams(entry)
@@ -560,6 +637,19 @@ def fetch_news(limit: int = 12) -> list:
 
 # -------------------------------------------------------------------------- main
 def main() -> None:
+    """Ejecuta la descarga. Si la API falla, conserva los datos anteriores
+    y deja que el build siga con ellos (el sitio nunca se queda sin datos)."""
+    try:
+        _run()
+    except Exception as exc:  # noqa: BLE001
+        print(f"[data] aviso: no se han podido actualizar los datos ({exc}). "
+              f"Se mantiene la última copia en src/data/site.json")
+
+
+def _run() -> None:
+    global SEASON
+    SEASON = detect_season()
+    print(f"[data] temporada detectada: {SEASON}")
     today = date.today()
     api = fetch_api()
     calendar = build_calendar(api["calendar"], today)
@@ -598,6 +688,7 @@ def main() -> None:
         lead = next((d for d in drivers if d["team"] and d["team"]["id"] == t["id"] and d.get("photo")), None)
         t["photo"] = lead["photo"] if lead else None
         t["photo_of"] = lead["full"] if lead else None
+        t["car"] = commons_car_photo(DISPLAY.get(t["id"], t["name"]), t["id"])
 
     site = {
         "season": SEASON,

@@ -24,7 +24,7 @@
         {% if c.photo %}<img src="{{ root }}{{ c.photo }}" alt="{{ c.name }}" loading="lazy">{% endif %}
         <div class="circ-card-body">
           <h3>{{ c.name }}</h3>
-          <div class="cc-meta">{{ c.flag }} {{ c.locality }} · {{ c.country }}</div>
+          <div class="cc-meta"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(c.country) }}.png" alt="" width="20" height="15"> {{ c.locality }} · {{ c.country }}</div>
           <div class="cc-meta" style="color:var(--dim)">{{ c.gp }} · {{ c.date_human }}</div>
         </div>
       </a>

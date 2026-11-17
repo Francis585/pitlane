@@ -11,7 +11,7 @@
     {% if d.photo %}<img src="{{ root }}{{ d.photo }}" alt="{{ d.full }}">{% endif %}
   </div>
   <div class="dh-txt">
-    <div class="eyebrow">{{ d.flag }} {{ d.team.name if d.team else 'Fórmula 1' }} · Temporada {{ site.season }}</div>
+    <div class="eyebrow"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(d.nationality) }}.png" alt="" width="20" height="15"> {{ d.team.name if d.team else 'Fórmula 1' }} · Temporada {{ site.season }}</div>
     <div class="driver-num" style="margin-top:6px">{{ d.num or d.code }}</div>
     <h1>{{ d.first }}<br>{{ d.last }}</h1>
     <div class="mono" style="display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;color:var(--dim)">
@@ -79,7 +79,7 @@
     <div class="heritage" style="max-width:640px">
       <div class="mono" style="display:grid;gap:10px;color:var(--dim-2)">
         <div style="display:flex;justify-content:space-between"><span>Nombre completo</span><span style="color:var(--fg)">{{ d.full }}</span></div>
-        <div style="display:flex;justify-content:space-between"><span>País</span><span style="color:var(--fg)">{{ d.flag }} {{ d.nationality }}</span></div>
+        <div style="display:flex;justify-content:space-between"><span>País</span><span style="color:var(--fg)"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(d.nationality) }}.png" alt="" width="20" height="15"> {{ d.nationality }}</span></div>
         <div style="display:flex;justify-content:space-between"><span>Nacimiento</span><span style="color:var(--fg)">{{ d.dob }}</span></div>
         <div style="display:flex;justify-content:space-between"><span>Código FIA</span><span style="color:var(--fg)">{{ d.code }}</span></div>
         <div style="display:flex;justify-content:space-between"><span>Equipo {{ site.season }}</span><span style="color:var(--fg)">{{ d.team.name if d.team else '—' }}</span></div>

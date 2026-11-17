@@ -439,7 +439,7 @@
    "winner": null
   }
  ],
- "generated": "2026-11-17T19:51:29+00:00",
+ "generated": "2026-11-17T20:26:47+00:00",
  "round": "20",
  "total_races": 23,
  "rounds_done": 20,
@@ -1033,6 +1033,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1415432_hires.jpg?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 4 h",
      "ts": 1794930145.0,
      "teams": [
       "ferrari",
@@ -1048,6 +1049,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1451195_HiRes-1-300x169.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 5 h",
      "ts": 1794927600.0,
      "teams": [
       "mercedes"
@@ -1062,6 +1064,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453187_hires.jpg?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 5 h",
      "ts": 1794925762.0,
      "teams": [
       "mercedes"
@@ -1076,6 +1079,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/09/Toto-Wolff.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 6 h",
      "ts": 1794924029.0,
      "teams": [
       "ferrari",
@@ -1091,6 +1095,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1443666_hires.jpg?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 6 h",
      "ts": 1794924000.0,
      "teams": [
       "mercedes"
@@ -1102,9 +1107,10 @@
      "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
+     "image": "https://cdn-4.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 8 h",
      "ts": 1794915910.0,
      "teams": [
       "ferrari",
@@ -1114,7 +1120,8 @@
     }
    ],
    "photo": "assets/drivers/antonelli.jpg",
-   "photo_of": "Andrea Kimi Antonelli"
+   "photo_of": "Andrea Kimi Antonelli",
+   "car": "assets/teams/mercedes-car.jpg"
   },
   {
    "id": "ferrari",
@@ -1166,6 +1173,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Bernie-Ecclestone-F1-300x169.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 2 h",
      "ts": 1794936600.0,
      "teams": [
       "ferrari"
@@ -1180,6 +1188,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1415432_hires.jpg?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 4 h",
      "ts": 1794930145.0,
      "teams": [
       "ferrari",
@@ -1195,6 +1204,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/09/Toto-Wolff.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 6 h",
      "ts": 1794924029.0,
      "teams": [
       "ferrari",
@@ -1210,6 +1220,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1450961_hires.jpg?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 7 h",
      "ts": 1794918610.0,
      "teams": [
       "ferrari"
@@ -1221,9 +1232,10 @@
      "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
+     "image": "https://cdn-4.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 8 h",
      "ts": 1794915910.0,
      "teams": [
       "ferrari",
@@ -1239,6 +1251,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/1_1.png?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 10 h",
      "ts": 1794910715.0,
      "teams": [
       "ferrari",
@@ -1248,7 +1261,8 @@
     }
    ],
    "photo": "assets/drivers/hamilton.jpg",
-   "photo_of": "Lewis Hamilton"
+   "photo_of": "Lewis Hamilton",
+   "car": "assets/teams/ferrari-car.jpg"
   },
   {
    "id": "red_bull",
@@ -1310,6 +1324,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1341857_HiRes-1-300x169.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 2 h",
      "ts": 1794938400.0,
      "teams": [
       "red_bull"
@@ -1321,9 +1336,10 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 3 h",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
@@ -1340,6 +1356,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-Red-Bull-300x169.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 3 h",
      "ts": 1794933000.0,
      "teams": [
       "red_bull"
@@ -1351,9 +1368,10 @@
      "url": "https://www.motorsport.com/f1/news/lando-norriss-ln4-fusion-signs-former-red-bull-junior-oliver-goethe-as-its-first-f2-driver/10874918/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Lando Norris's new junior team LN4 Fusion has signed former Red Bull junior Oliver Goethe as its first driver for the 2027 Formula 2 season. The 22-year-old will make the move from MP Motorsport for his third season in F2, after c",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794851494.0,
      "teams": [
       "red_bull",
@@ -1369,6 +1387,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453799_hires_0.jpg?width=1200",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794833291.0,
      "teams": [
       "red_bull"
@@ -1380,9 +1399,10 @@
      "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
+     "image": "https://cdn-6.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794833095.0,
      "teams": [
       "red_bull",
@@ -1392,7 +1412,8 @@
     }
    ],
    "photo": "assets/drivers/max_verstappen.jpg",
-   "photo_of": "Max Verstappen"
+   "photo_of": "Max Verstappen",
+   "car": "assets/teams/red_bull-car.jpg"
   },
   {
    "id": "mclaren",
@@ -1441,9 +1462,10 @@
      "url": "https://www.motorsport.com/f1/news/lando-norriss-ln4-fusion-signs-former-red-bull-junior-oliver-goethe-as-its-first-f2-driver/10874918/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Lando Norris's new junior team LN4 Fusion has signed former Red Bull junior Oliver Goethe as its first driver for the 2027 Formula 2 season. The 22-year-old will make the move from MP Motorsport for his third season in F2, after c",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794851494.0,
      "teams": [
       "red_bull",
@@ -1456,9 +1478,10 @@
      "url": "https://www.motorsport.com/f1/news/lando-norris-f1-needs-better-rain-tyres-as-wet-las-vegas-would-be-scary/10874689/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "World champion Lando Norris hopes Formula 1 tyre supplier Pirelli will field much-improved rain tyres in 2027 as he expects the current range won't work properly at a low-downforce circuit like Las Vegas. Following partially rain-",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/27No3ae0/s6/lando-norris-mclaren.jpg",
+     "image": "https://cdn-4.motorsport.com/images/amp/27No3ae0/s6/lando-norris-mclaren.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794850242.0,
      "teams": [
       "mclaren"
@@ -1470,9 +1493,10 @@
      "url": "https://www.autosport.com/f1/news/lando-norris-f1-needs-better-rain-tyres-as-wet-las-vegas-would-be-scary/10874886/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Lando Norris hopes Formula 1 tyre supplier Pirelli will field much-improved rain tyres in 2027 as he expects the current range won't work properly at a low-downforce circuit like Las Vegas. Following partially rain-affected weeken",
      "source": "Autosport",
-     "image": "https://cdn-8.motorsport.com/images/amp/0o5AVObY/s6/lando-norris-mclaren-george-ru-2.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/0o5AVObY/s6/lando-norris-mclaren-george-ru-2.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794850203.0,
      "teams": [
       "mclaren"
@@ -1484,9 +1508,10 @@
      "url": "https://www.motorsport.com/f1/news/zak-brown-recalls-mclarens-very-toxic-environment-after-joining-team-in-2016/10874891/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "McLaren Racing CEO Zak Brown has described the team he joined in 2016 as \"a very toxic environment\", blaming a revolving door of leaders for years of poor results on and off the track. The American arrived at McLaren a decade ago,",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/YXyKXKd6/s6/motorsport-com-graphics-3.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/YXyKXKd6/s6/motorsport-com-graphics-3.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794844465.0,
      "teams": [
       "mclaren"
@@ -1498,9 +1523,10 @@
      "url": "https://www.motorsport.com/f1/news/topps-reveals-gem-mint-10-lando-norris-card-with-coca-cola-suit-patch/10874731/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Topps has shared one of its rarest Lando Norris cards: a signed 2024 Dynasty Formula 1 card with two pieces of race suit, one of them cut from the Coca-Cola logo on the sleeve of his McLaren race suit. The Topps Racing account pos",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/6b8ZMdv2/s6/motorsport-com-graphics-2026-1.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/6b8ZMdv2/s6/motorsport-com-graphics-2026-1.jpg",
      "date": "2026-11-15",
      "date_human": "15 nov",
+     "age": "hace 1 d",
      "ts": 1794782859.0,
      "teams": [
       "mclaren"
@@ -1512,9 +1538,10 @@
      "url": "https://www.motorsport.com/f1/news/oscar-piastri-youve-got-to-manhandle-mclarens-f1-car-to-find-its-potential/10874559/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Oscar Piastri says McLaren's 2026 Formula 1 car has to be \"manhandled\" to be quick, describing the MCL40 as a car that punishes drivers the moment they are not at the limit. The Australian driver has endured a difficult campaign a",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/6zoD8ea0/s6/motorsport-com-graphics-2026-1.jpg",
+     "image": "https://cdn-6.motorsport.com/images/amp/6zoD8ea0/s6/motorsport-com-graphics-2026-1.jpg",
      "date": "2026-11-14",
      "date_human": "14 nov",
+     "age": "hace 3 d",
      "ts": 1794677980.0,
      "teams": [
       "mclaren"
@@ -1523,7 +1550,8 @@
     }
    ],
    "photo": "assets/drivers/norris.jpg",
-   "photo_of": "Lando Norris"
+   "photo_of": "Lando Norris",
+   "car": "assets/teams/mclaren-car.jpg"
   },
   {
    "id": "rb",
@@ -1582,9 +1610,10 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 3 h",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
@@ -1601,6 +1630,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794823549.0,
      "teams": [
       "williams",
@@ -1613,9 +1643,10 @@
      "url": "https://www.motorsport.com/f1/news/retaining-liam-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874659/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/YpbAe4N0/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-4.motorsport.com/images/amp/YpbAe4N0/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-15",
      "date_human": "15 nov",
+     "age": "hace 2 d",
      "ts": 1794767403.0,
      "teams": [
       "red_bull",
@@ -1628,9 +1659,10 @@
      "url": "https://www.autosport.com/f1/news/retaining-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874666/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
      "source": "Autosport",
-     "image": "https://cdn-3.motorsport.com/images/amp/YP743Le2/s6/liam-lawson-red-bull-2.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/YP743Le2/s6/liam-lawson-red-bull-2.jpg",
      "date": "2026-11-15",
      "date_human": "15 nov",
+     "age": "hace 2 d",
      "ts": 1794748102.0,
      "teams": [
       "red_bull",
@@ -1646,6 +1678,7 @@
      "image": null,
      "date": "2026-11-13",
      "date_human": "13 nov",
+     "age": "hace 4 d",
      "ts": 1794584132.0,
      "teams": [
       "red_bull",
@@ -1658,9 +1691,10 @@
      "url": "https://www.autosport.com/f1/news/tsolov-lands-reserve-driver-role-for-f1-2027/10874151/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Nikola Tsolov has been named as reserve driver for both Red Bull and Racing Bulls for the 2027 Formula 1 season having missed out on a full-time drive. The 19-year-old Bulgarian had been linked to a step up from F2 to replace Liam",
      "source": "Autosport",
-     "image": "https://cdn-2.motorsport.com/images/amp/6x7LbPRY/s6/nikola-tsolov-racing-bulls-4.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/6x7LbPRY/s6/nikola-tsolov-racing-bulls-4.jpg",
      "date": "2026-11-12",
      "date_human": "12 nov",
+     "age": "hace 5 d",
      "ts": 1794496867.0,
      "teams": [
       "red_bull",
@@ -1670,7 +1704,8 @@
     }
    ],
    "photo": "assets/drivers/lawson.jpg",
-   "photo_of": "Liam Lawson"
+   "photo_of": "Liam Lawson",
+   "car": "assets/teams/rb-car.jpg"
   },
   {
    "id": "alpine",
@@ -1719,9 +1754,10 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 3 h",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
@@ -1735,9 +1771,10 @@
      "url": "https://www.autosport.com/f1/news/permane-signs-new-racing-bulls-f1-deal/10871999/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Red Bull has given Alan Permane a new contract as the Racing Bulls Formula 1 squad’s team principal. Permane will retain the reins of the Faenza-based outfit until the end of the 2031 season. A stalwart of the current Alpine squad",
      "source": "Autosport",
-     "image": "https://cdn-2.motorsport.com/images/amp/24QebeqY/s6/alan-permane-racing-bulls-2.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/24QebeqY/s6/alan-permane-racing-bulls-2.jpg",
      "date": "2026-11-06",
      "date_human": "6 nov",
+     "age": "hace 11 d",
      "ts": 1793957047.0,
      "teams": [
       "red_bull",
@@ -1747,22 +1784,24 @@
      "own": true
     },
     {
-     "title": "Jade Jaquet re-signs with Williams for the 2027 F1 Academy season",
-     "url": "https://www.motorsportweek.com/2026/11/17/jade-jaquet-re-signs-with-williams-for-the-2027-f1-academy-season/",
-     "desc": "Williams has announced that Jade Jaquet will represent the team in the 2027 F1 Academy season, entering her second year in the series. The post Jade Jaquet re-signs with Williams for the 2027 F1 Academy season appeared first on Mo",
+     "title": "Max Verstappen delivers hilarious Red Bull engine jibe",
+     "url": "https://www.motorsportweek.com/2026/11/17/max-verstappen-red-bull-engine-jibe/",
+     "desc": "Max Verstappen joked his Red Bull engine \"doesn't speak English\" after incurring a massive grid penalty at the F1 Sao Paulo GP. The post Max Verstappen delivers hilarious Red Bull engine jibe appeared first on Motorsport Week .",
      "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Jade_F1A_Contract_Extension-300x169.webp",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-Red-Bull-300x169.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "ts": 1794931200.0,
+     "age": "hace 3 h",
+     "ts": 1794933000.0,
      "teams": [
-      "williams"
+      "red_bull"
      ],
      "own": false
     }
    ],
    "photo": "assets/drivers/gasly.jpg",
-   "photo_of": "Pierre Gasly"
+   "photo_of": "Pierre Gasly",
+   "car": "assets/teams/alpine-car.jpg"
   },
   {
    "id": "haas",
@@ -1831,9 +1870,10 @@
      "url": "https://www.autosport.com/f1/news/haas-sticks-with-rafael-camara-for-las-vegas-ryo-hirakawa-in-for-fp1/10874781/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
      "source": "Autosport",
-     "image": "https://cdn-7.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794822750.0,
      "teams": [
       "haas"
@@ -1845,9 +1885,10 @@
      "url": "https://www.motorsport.com/f1/news/haas-sticks-with-camara-for-las-vegas-hirakawa-in-for-fp1/10874778/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
      "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794822676.0,
      "teams": [
       "haas"
@@ -1862,6 +1903,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/2303869558-926.jpg?width=1200",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794818813.0,
      "teams": [
       "haas"
@@ -1876,6 +1918,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794816777.0,
      "teams": [
       "haas"
@@ -1890,6 +1933,7 @@
      "image": "https://cdn-5.motorsport.com/images/amp/6zoD8dL0/s6/motorsport-com-graphics-2026-1.jpg",
      "date": "2026-11-13",
      "date_human": "13 nov",
+     "age": "hace 4 d",
      "ts": 1794590410.0,
      "teams": [
       "mclaren",
@@ -1902,9 +1946,10 @@
      "url": "https://www.motorsport.com/f1/news/guenther-steiner-suggests-max-verstappen-could-be-better-suited-to-lead-ferrari/10874192/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Former Haas Formula 1 team principal Guenther Steiner has questioned whether Lewis Hamilton is the driver to turn Ferrari's fortunes around, suggesting Max Verstappen might be better suited to the role. Hamilton joined Ferrari in ",
      "source": "Motorsport.com",
-     "image": "https://cdn-8.motorsport.com/images/amp/01QNX1q0/s6/motorsport-com-graphics-95.jpg",
+     "image": "https://cdn-2.motorsport.com/images/amp/01QNX1q0/s6/motorsport-com-graphics-95.jpg",
      "date": "2026-11-12",
      "date_human": "12 nov",
+     "age": "hace 4 d",
      "ts": 1794517204.0,
      "teams": [
       "ferrari",
@@ -1916,7 +1961,8 @@
     }
    ],
    "photo": "assets/drivers/bearman.jpg",
-   "photo_of": "Oliver Bearman"
+   "photo_of": "Oliver Bearman",
+   "car": "assets/teams/haas-car.jpg"
   },
   {
    "id": "audi",
@@ -1954,9 +2000,10 @@
      "url": "https://www.motorsport.com/f1/news/mercedes-and-audi-unveil-adidas-collections-for-f1-las-vegas-grand-prix/10874493/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes and Audi have unveiled special adidas fan collections for the upcoming Formula 1 Las Vegas Grand Prix. Mercedes' range is called \"Neon Lights\", while Audi's is named \"After Hours\". Both collections are available now throu",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/0o5AVbPY/s6/motorsport-com-graphics-2026-1.jpg",
+     "image": "https://cdn-6.motorsport.com/images/amp/0o5AVbPY/s6/motorsport-com-graphics-2026-1.jpg",
      "date": "2026-11-14",
      "date_human": "14 nov",
+     "age": "hace 3 d",
      "ts": 1794655970.0,
      "teams": [
       "mercedes",
@@ -1972,6 +2019,7 @@
      "image": null,
      "date": "2026-11-12",
      "date_human": "12 nov",
+     "age": "hace 5 d",
      "ts": 1794502339.0,
      "teams": [
       "audi"
@@ -1986,6 +2034,7 @@
      "image": "https://storage.ghost.io/c/dd/af/ddafbd99-2ccd-468c-b622-4b3cccf80b49/content/images/2026/11/XPB_1434343_HiRes.jpg",
      "date": "",
      "date_human": "",
+     "age": "",
      "ts": 0,
      "teams": [
       "audi"
@@ -1994,7 +2043,8 @@
     }
    ],
    "photo": "assets/drivers/bortoleto.jpg",
-   "photo_of": "Gabriel Bortoleto"
+   "photo_of": "Gabriel Bortoleto",
+   "car": "assets/teams/audi-car.jpg"
   },
   {
    "id": "williams",
@@ -2046,6 +2096,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Jade_F1A_Contract_Extension-300x169.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 4 h",
      "ts": 1794931200.0,
      "teams": [
       "williams"
@@ -2060,6 +2111,7 @@
      "image": "https://cdn-5.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794854708.0,
      "teams": [
       "aston_martin",
@@ -2075,6 +2127,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Williams-F1-Las-Vegas-GP-300x169.webp",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794852586.0,
      "teams": [
       "williams"
@@ -2089,6 +2142,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794845454.0,
      "teams": [
       "aston_martin",
@@ -2105,6 +2159,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794823549.0,
      "teams": [
       "williams",
@@ -2117,20 +2172,20 @@
      "url": "https://www.motorsport.com/f1/news/horribly-painful-williams-2026-car-upgrades-benefit-2027/10874290/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Williams F1 team boss James Vowles says it was \"horribly painful\" for the squad to forego 2026 aero upgrades and save the resources for 2027 instead. Williams has been forced into playing the long game for some time now, but was h",
      "source": "Motorsport.com",
-     "image": "https://cdn-2.motorsport.com/images/amp/68VwMox2/s6/alexander-albon-williams.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/68VwMox2/s6/alexander-albon-williams.jpg",
      "date": "2026-11-13",
      "date_human": "13 nov",
+     "age": "hace 4 d",
      "ts": 1794572132.0,
      "teams": [
-      "aston_martin",
-      "williams",
-      "cadillac"
+      "williams"
      ],
      "own": true
     }
    ],
    "photo": "assets/drivers/sainz.jpg",
-   "photo_of": "Carlos Sainz"
+   "photo_of": "Carlos Sainz",
+   "car": "assets/teams/williams-car.jpg"
   },
   {
    "id": "aston_martin",
@@ -2182,6 +2237,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1453336_HiRes-1-300x169.webp",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 7 h",
      "ts": 1794920400.0,
      "teams": [
       "aston_martin"
@@ -2196,6 +2252,7 @@
      "image": null,
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 11 h",
      "ts": 1794907008.0,
      "teams": [
       "aston_martin"
@@ -2210,6 +2267,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/skysports-fernando-alonso-aston-martin_7408358.jpg?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 11 h",
      "ts": 1794906859.0,
      "teams": [
       "aston_martin"
@@ -2221,9 +2279,10 @@
      "url": "https://www.autosport.com/dakar/news/alonso-loeb-join-aston-martin-for-2027-dakar-rally/10875003/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
      "source": "Autosport",
-     "image": "https://cdn-9.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 11 h",
      "ts": 1794906118.0,
      "teams": [
       "aston_martin"
@@ -2238,6 +2297,7 @@
      "image": "https://cdn-5.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
+     "age": "hace 11 h",
      "ts": 1794906100.0,
      "teams": [
       "aston_martin"
@@ -2252,6 +2312,7 @@
      "image": "https://cdn-5.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794854708.0,
      "teams": [
       "aston_martin",
@@ -2261,7 +2322,8 @@
     }
    ],
    "photo": "assets/drivers/alonso.jpg",
-   "photo_of": "Fernando Alonso"
+   "photo_of": "Fernando Alonso",
+   "car": "assets/teams/aston_martin-car.jpg"
   },
   {
    "id": "cadillac",
@@ -2302,6 +2364,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794845454.0,
      "teams": [
       "aston_martin",
@@ -2315,9 +2378,10 @@
      "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
+     "image": "https://cdn-6.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
+     "age": "hace 1 d",
      "ts": 1794833095.0,
      "teams": [
       "red_bull",
@@ -2330,9 +2394,10 @@
      "url": "https://www.autosport.com/f1/news/herta-qualifies-for-f1-superlicence-as-bottas-remains-bullish-on-2027-seat/10872179/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Cadillac Formula 1 test driver Colton Herta has finally obtained the last remaining superlicence point required to drive in the series, but incumbent Valtteri Bottas remains bullish on his future with the squad. Herta conducted hi",
      "source": "Autosport",
-     "image": "https://cdn-3.motorsport.com/images/amp/01QNpEx0/s6/colton-herta-cadillac-f1-team.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/01QNpEx0/s6/colton-herta-cadillac-f1-team.jpg",
      "date": "2026-11-06",
      "date_human": "6 nov",
+     "age": "hace 11 d",
      "ts": 1793984236.0,
      "teams": [
       "cadillac"
@@ -2344,9 +2409,10 @@
      "url": "https://www.autosport.com/f1/news/liverpool-fc-owners-emerge-as-potential-buyers-of-cadillac-f1-shares-amid-twg-uncertainty/10871500/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Fresh doubts have emerged over the future of Cadillac Formula 1's majority ownership amid reports Mark Walter's TWG Global is looking to offload some of its shares - with Liverpool FC owner Fenway Sports Group said to be among the",
      "source": "Autosport",
-     "image": "https://cdn-9.motorsport.com/images/amp/0Zq8bZL6/s6/sergio-perez-cadillac.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/0Zq8bZL6/s6/sergio-perez-cadillac.jpg",
      "date": "2026-11-04",
      "date_human": "4 nov",
+     "age": "hace 13 d",
      "ts": 1793802880.0,
      "teams": [
       "cadillac"
@@ -2358,18 +2424,36 @@
      "url": "https://www.autosport.com/f1/news/herta-to-contest-fp1-in-brazil/10871438/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Cadillac test driver Colton Herta will conduct his sixth Friday practice session of the Formula 1 season at this weekend's Brazil Grand Prix to collect his missing FIA superlicence point required to race in the series. Herta, who ",
      "source": "Autosport",
-     "image": "https://cdn-2.motorsport.com/images/amp/6n7ABxe0/s6/colton-herta-cadillac-f1-team-2.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/6n7ABxe0/s6/colton-herta-cadillac-f1-team-2.jpg",
      "date": "2026-11-04",
      "date_human": "4 nov",
+     "age": "hace 13 d",
      "ts": 1793785363.0,
      "teams": [
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Sergio Pérez's F1 second act: Red Bull regrets, redemption and a fresh start at Cadillac",
+     "url": "https://www.espn.com/f1/story/_/id/50310746/sergio-perez-f1-second-act-red-bull-regrets-cadillac-contract",
+     "desc": "Sergio Pérez reflects on his Red Bull exit, finding happiness beyond F1 and rediscovering his love of racing as he prepares for his 300th grand prix.",
+     "source": "ESPN F1",
+     "image": null,
+     "date": "",
+     "date_human": "",
+     "age": "",
+     "ts": 0,
+     "teams": [
+      "red_bull",
       "cadillac"
      ],
      "own": true
     }
    ],
    "photo": "assets/drivers/bottas.jpg",
-   "photo_of": "Valtteri Bottas"
+   "photo_of": "Valtteri Bottas",
+   "car": "assets/teams/cadillac-car.jpg"
   }
  ],
  "drivers": [
@@ -2876,7 +2960,7 @@
     "name": "Aston Martin",
     "pos": 10
    },
-   "bio": "",
+   "bio": "Lance Strulovitch, conocido como Lance Stroll, es un piloto de automovilismo canadiense. Ganó los campeonatos de Fórmula 4 Italiana en 2014 y de Fórmula 3 Europea en 2016. Disputó las temporadas 2017 y 2018 en Fórmula 1 con la escudería Williams, y compitió en 2019 y 2020 con Racing Point. Desde 2021, tras la reestructuración y cambio de nombre del equipo, es piloto de Aston Martin.",
    "photo": "assets/drivers/stroll.jpg"
   },
   {
@@ -2899,7 +2983,7 @@
     "name": "Cadillac F1 Team",
     "pos": 11
    },
-   "bio": "",
+   "bio": "Valtteri Viktor Bottas, más conocido como Valtteri Bottas, es un piloto de automovilismo finlandés. Debutó en Fórmula 1 en 2013 con el equipo Williams, donde se mantuvo hasta 2016. Entre 2017 y 2021 compitió para Mercedes, donde obtuvo sus mejores resultados en el campeonato, que son dos subcampeonatos en 2019 y 2020, y tercero en 2017 y 2021, también resultó cuarto con Williams en 2014. En 2022 y 2023 fue piloto de Alfa Romeo",
    "photo": "assets/drivers/bottas.jpg"
   },
   {
@@ -2951,6 +3035,18 @@
  ],
  "news": [
   {
+   "title": "F1 Academy prepares for Las Vegas with special livery",
+   "url": "https://www.motorsportweek.com/2026/11/17/f1-academy-prepares-for-las-vegas-with-special-livery/",
+   "desc": "F1 Academy teams have begun unveiling their special liveries for the Las Vegas GP as they aim to make it a weekend to remember. The post F1 Academy prepares for Las Vegas with special livery appeared first on Motorsport Week .",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/PHOTO-2026-11-17-17-00-48-300x169.webp",
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "age": "hace 1 h",
+   "ts": 1794945917.0,
+   "teams": []
+  },
+  {
    "title": "Red Bull rocked by departure of key Max Verstappen aide",
    "url": "https://www.motorsportweek.com/2026/11/17/red-bull-departure-of-key-max-verstappen-aide/",
    "desc": "Max Verstappen and Red Bull will need to search for a new mechanic, with the announcement that Jon Caller is to leave the team to seek a new challenge outside Formula 1. The post Red Bull rocked by departure of key Max Verstappen ",
@@ -2958,6 +3054,7 @@
    "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1341857_HiRes-1-300x169.webp",
    "date": "2026-11-17",
    "date_human": "17 nov",
+   "age": "hace 2 h",
    "ts": 1794938400.0,
    "teams": [
     "red_bull"
@@ -2971,6 +3068,7 @@
    "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Bernie-Ecclestone-F1-300x169.webp",
    "date": "2026-11-17",
    "date_human": "17 nov",
+   "age": "hace 2 h",
    "ts": 1794936600.0,
    "teams": [
     "ferrari"
@@ -2981,27 +3079,15 @@
    "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
    "source": "Motorsport.com",
-   "image": "https://cdn-5.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+   "image": "https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
    "date": "2026-11-17",
    "date_human": "17 nov",
+   "age": "hace 3 h",
    "ts": 1794934957.0,
    "teams": [
     "red_bull",
     "alpine",
     "rb"
-   ]
-  },
-  {
-   "title": "Max Verstappen delivers hilarious Red Bull engine jibe",
-   "url": "https://www.motorsportweek.com/2026/11/17/max-verstappen-red-bull-engine-jibe/",
-   "desc": "Max Verstappen joked his Red Bull engine \"doesn't speak English\" after incurring a massive grid penalty at the F1 Sao Paulo GP. The post Max Verstappen delivers hilarious Red Bull engine jibe appeared first on Motorsport Week .",
-   "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-Red-Bull-300x169.webp",
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "ts": 1794933000.0,
-   "teams": [
-    "red_bull"
    ]
   },
   {
@@ -3012,6 +3098,7 @@
    "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1415432_hires.jpg?width=1200",
    "date": "2026-11-17",
    "date_human": "17 nov",
+   "age": "hace 4 h",
    "ts": 1794930145.0,
    "teams": [
     "ferrari",
@@ -3026,6 +3113,7 @@
    "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453187_hires.jpg?width=1200",
    "date": "2026-11-17",
    "date_human": "17 nov",
+   "age": "hace 5 h",
    "ts": 1794925762.0,
    "teams": [
     "mercedes"
@@ -3039,6 +3127,7 @@
    "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1443666_hires.jpg?width=1200",
    "date": "2026-11-17",
    "date_human": "17 nov",
+   "age": "hace 6 h",
    "ts": 1794924000.0,
    "teams": [
     "mercedes"
@@ -3049,9 +3138,10 @@
    "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
    "source": "Motorsport.com",
-   "image": "https://cdn-1.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
+   "image": "https://cdn-4.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
    "date": "2026-11-17",
    "date_human": "17 nov",
+   "age": "hace 8 h",
    "ts": 1794915910.0,
    "teams": [
     "ferrari",
@@ -3066,6 +3156,7 @@
    "image": null,
    "date": "2026-11-17",
    "date_human": "17 nov",
+   "age": "hace 11 h",
    "ts": 1794907008.0,
    "teams": [
     "aston_martin"
@@ -3079,6 +3170,7 @@
    "image": null,
    "date": "2026-11-17",
    "date_human": "17 nov",
+   "age": "hace 11 h",
    "ts": 1794906431.0,
    "teams": []
   },
@@ -3087,9 +3179,10 @@
    "url": "https://www.autosport.com/dakar/news/alonso-loeb-join-aston-martin-for-2027-dakar-rally/10875003/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
    "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
    "source": "Autosport",
-   "image": "https://cdn-9.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
+   "image": "https://cdn-1.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
    "date": "2026-11-17",
    "date_human": "17 nov",
+   "age": "hace 11 h",
    "ts": 1794906118.0,
    "teams": [
     "aston_martin"
@@ -3103,10 +3196,65 @@
    "image": "https://cdn-5.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
    "date": "2026-11-17",
    "date_human": "17 nov",
+   "age": "hace 11 h",
    "ts": 1794906100.0,
    "teams": [
     "aston_martin"
    ]
+  },
+  {
+   "title": "Norris: Las Vegas GP would be \"scary\" with current F1 wet tyres",
+   "url": "https://www.autosport.com/f1/news/lando-norris-f1-needs-better-rain-tyres-as-wet-las-vegas-would-be-scary/10874886/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "Lando Norris hopes Formula 1 tyre supplier Pirelli will field much-improved rain tyres in 2027 as he expects the current range won't work properly at a low-downforce circuit like Las Vegas. Following partially rain-affected weeken",
+   "source": "Autosport",
+   "image": "https://cdn-7.motorsport.com/images/amp/0o5AVObY/s6/lando-norris-mclaren-george-ru-2.jpg",
+   "date": "2026-11-16",
+   "date_human": "16 nov",
+   "age": "hace 1 d",
+   "ts": 1794850203.0,
+   "teams": [
+    "mclaren"
+   ]
+  },
+  {
+   "title": "Hamilton tells F1 to spend £50 million in promoting under-represented talent | Formula 1",
+   "url": "https://www.racefans.net/2026/11/16/hamilton-tells-f1-to-spend-50-million-in-promoting-under-represented-talent/",
+   "desc": "Lewis Hamilton's Mission 44 organisation says Formula 1 fans want to see greater representation in the championship.",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-16",
+   "date_human": "16 nov",
+   "age": "hace 1 d",
+   "ts": 1794849016.0,
+   "teams": [
+    "mercedes"
+   ]
+  },
+  {
+   "title": "Haas sticks with Camara for Las Vegas GP, Hirakawa in for FP1",
+   "url": "https://www.autosport.com/f1/news/haas-sticks-with-rafael-camara-for-las-vegas-ryo-hirakawa-in-for-fp1/10874781/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
+   "source": "Autosport",
+   "image": "https://cdn-8.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+   "date": "2026-11-16",
+   "date_human": "16 nov",
+   "age": "hace 1 d",
+   "ts": 1794822750.0,
+   "teams": [
+    "haas"
+   ]
+  },
+  {
+   "title": "All the special liveries for F1's Las Vegas Grand Prix",
+   "url": "https://www.the-race.com/formula-1/f1-all-special-liveries-las-vegas-grand-prix/",
+   "desc": "It's time for the Las Vegas Grand Prix - and with it, a host of special liveries for F1 teams",
+   "source": "The Race",
+   "image": "https://storage.ghost.io/c/dd/af/ddafbd99-2ccd-468c-b622-4b3cccf80b49/content/images/2026/11/dee86a48-2c8c-42c2-9414-09f4380e5ba9-1.jpg",
+   "date": "",
+   "date_human": "",
+   "age": "",
+   "ts": 0,
+   "teams": []
   }
  ],
  "news_pool": 217

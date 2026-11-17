@@ -31,8 +31,66 @@ FONTS = {
     "rebelde": "Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600",
 }
 
+# país/nacionalidad → código ISO para banderas reales (los emoji no se ven en Windows)
+COUNTRY_CODE = {
+    "Australia": "au", "China": "cn", "Japan": "jp", "USA": "us", "Canada": "ca",
+    "Monaco": "mc", "Spain": "es", "Austria": "at", "UK": "gb", "Belgium": "be",
+    "Hungary": "hu", "Netherlands": "nl", "Italy": "it", "Azerbaijan": "az",
+    "Malaysia": "my", "Singapore": "sg", "Mexico": "mx", "Brazil": "br",
+    "Qatar": "qa", "UAE": "ae", "Germany": "de", "France": "fr", "Saudi Arabia": "sa",
+    "Bahrain": "bh", "Portugal": "pt", "Turkey": "tr", "South Africa": "za",
+    "Argentina": "ar", "Finland": "fi", "New Zealand": "nz", "Denmark": "dk",
+    "Switzerland": "ch", "Sweden": "se", "Poland": "pl", "Russia": "ru",
+    "Italian": "it", "British": "gb", "German": "de", "French": "fr", "Spanish": "es",
+    "Dutch": "nl", "Mexican": "mx", "Brazilian": "br", "Australian": "au",
+    "Canadian": "ca", "Japanese": "jp", "Chinese": "cn", "Monegasque": "mc",
+    "Austrian": "at", "Belgian": "be", "Hungarian": "hu", "Azerbaijani": "az",
+    "Singaporean": "sg", "Thai": "th", "Finnish": "fi", "Danish": "dk",
+    "Swiss": "ch", "Swedish": "se", "New Zealander": "nz", "Argentine": "ar",
+    "American": "us", "Portuguese": "pt", "Polish": "pl", "Russian": "ru",
+    "South African": "za", "Turkish": "tr", "Saudi": "sa", "Bahraini": "bh",
+}
+
 MONTHS_ES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
              "septiembre", "octubre", "noviembre", "diciembre"]
+
+
+AUTO_COLORS = [("#00A19C", "#F5C518"), ("#E10600", "#F5F5F5"), ("#1B5FAA", "#E4002B"),
+               ("#FF8000", "#00E5FF"), ("#8A1538", "#C8A24C"), ("#7B2CBF", "#22D3EE"),
+               ("#1E7B4F", "#CE2939"), ("#C9A24C", "#E8EDF2")]
+AUTO_LAYOUTS = ["moderno", "tecnico", "clasico", "rebelde"]
+AUTO_PATTERNS = ["stripes", "grid", "arcs", "chevrons", "rays", "shield", "wings", "hex"]
+
+
+def auto_meta(team: dict, index: int = 0) -> dict:
+    """Ficha por defecto para una escudería que aún no está curada a mano.
+
+    Así, si en 2027 u otro año entra un equipo nuevo, el sitio se genera igual
+    sin tocar código: color, layout y patrón se asignan solos.
+    """
+    brand, brand2 = AUTO_COLORS[index % len(AUTO_COLORS)]
+    return {
+        "display": team["name"],
+        "full": team["name"],
+        "layout": AUTO_LAYOUTS[index % len(AUTO_LAYOUTS)],
+        "brand": brand,
+        "brand2": brand2,
+        "ink": "#07080a",
+        "pattern": AUTO_PATTERNS[index % len(AUTO_PATTERNS)],
+        "font": "Barlow Condensed",
+        "monogram": "".join(w[0] for w in team["name"].split()[:3]).upper(),
+        "base": "—",
+        "founded": "—",
+        "engine": "—",
+        "principal": "—",
+        "titles": 0,
+        "title_years": "",
+        "tagline": f"{team['name']} en la temporada en curso.",
+        "blurb": "Ficha generada automáticamente a partir de los datos públicos del campeonato. "
+                 "Se completará con la información histórica en cuanto esté disponible.",
+        "heritage": "",
+        "timeline": [],
+    }
 
 
 def load_site() -> dict:
@@ -61,6 +119,7 @@ def race_week(site: dict) -> dict:
                 "gp": race["name"],
                 "city": race["locality"],
                 "flag": race["flag"],
+                "country": race["country"],
                 "date": race["date"],
                 "date_human": race["date_human"],
                 "start": start.isoformat(),
@@ -84,6 +143,8 @@ def build_moments(site: dict) -> list:
             "round": race["round"], "gp": race["name"], "winner": race["winner"],
             "team": race.get("winner_team"), "circuit": race["circuit"],
             "circuit_id": circ.get("id", ""), "photo": circ.get("photo"),
+            "team_car": next((tm.get("car") for tm in site["teams"]
+                              if tm["id"] == race.get("winner_team")), None),
             "podium": race["podium"],
         })
     return out[-4:][::-1]
@@ -104,6 +165,19 @@ def render_all(site: dict) -> int:
         if d.get("team"):
             d["team"]["slug"] = d["team"]["id"].replace("_", "-")
 
+    env.globals.update(
+        img_url=lambda p: "/" + str(p).lstrip("/"),
+        flag_code=lambda c: COUNTRY_CODE.get(str(c), "un"),
+    )
+
+    # ficha de cada escudería: la curada si existe, generada si es nueva
+    complete_meta = {}
+    for i, t in enumerate(site["teams"]):
+        base = dict(TEAMS.get(t["id"]) or auto_meta(t, i))
+        base["brand"] = base.get("brand") or AUTO_COLORS[i % len(AUTO_COLORS)][0]
+        base["brand2"] = base.get("brand2") or AUTO_COLORS[i % len(AUTO_COLORS)][1]
+        complete_meta[t["id"]] = base
+
     teams_by_id = {t["id"]: t for t in site["teams"]}
     drivers_by_id = {d["id"]: d for d in site["drivers"]}
     generated = human_date(site["generated"][:10])
@@ -112,6 +186,42 @@ def render_all(site: dict) -> int:
     next_circuit = next((c for c in site["circuits"]
                          if site.get("next_race") and c["round"] == site["next_race"]["round"]), None)
     upcoming_circuits = [c for c in site["circuits"] if not c["done"]][:4]
+
+    # portada: carrusel de imágenes variadas (coches, circuitos y pilotos)
+    meta_all = {t["id"]: (TEAMS.get(t["id"]) or auto_meta(t, i)) for i, t in enumerate(site["teams"])}
+    slides = []
+    for t in site["teams"]:
+        if t.get("car"):
+            slides.append({"src": t["car"], "alt": meta_all[t["id"]]["display"],
+                           "label": meta_all[t["id"]]["display"], "kind": "car"})
+    for c in site["circuits"][:6]:
+        if c.get("photo"):
+            slides.append({"src": c["photo"], "alt": c["name"], "label": c["name"], "kind": "circuit"})
+    seen, hero_slides = set(), []
+    for sl in slides:
+        if sl["src"] in seen:
+            continue
+        seen.add(sl["src"])
+        hero_slides.append(sl)
+        if len(hero_slides) >= 6:
+            break
+
+    # mosaico de imágenes del paddock
+    gallery = []
+    for t in site["teams"][:4]:
+        lead = next((d for d in site["drivers"]
+                     if d["team"] and d["team"]["id"] == t["id"] and d.get("photo")), None)
+        if lead:
+            gallery.append({"src": lead["photo"], "alt": lead["full"],
+                            "label": lead["full"], "sub": meta_all[t["id"]]["display"]})
+    for c in site["circuits"][8:12]:
+        if c.get("photo"):
+            gallery.append({"src": c["photo"], "alt": c["name"], "label": c["name"],
+                            "sub": c["locality"]})
+    for t in site["teams"][4:8]:
+        if t.get("car"):
+            gallery.append({"src": t["car"], "alt": meta_all[t["id"]]["display"],
+                            "label": meta_all[t["id"]]["display"], "sub": f"P{t['pos']} · {t['points']} pts"})
     sources = " · ".join(sorted({n["source"] for n in site["news"]})) or "medios especializados"
     pages = 0
 
@@ -120,7 +230,8 @@ def render_all(site: dict) -> int:
         dest = OUT / rel
         dest.parent.mkdir(parents=True, exist_ok=True)
         html = env.get_template(tpl).render(
-            site=site, meta=TEAMS, root=root, gp=gp, moments=moments,
+            site=site, meta=complete_meta, root=root, gp=gp, moments=moments,
+            hero_slides=hero_slides, gallery=gallery,
             next_circuit=next_circuit, upcoming_circuits=upcoming_circuits,
             site_title="Pitlane — Fórmula 1",
             site_desc="Datos, historia y actualidad de la Fórmula 1.",
@@ -128,6 +239,7 @@ def render_all(site: dict) -> int:
             generated_human=generated, news_sources=sources,
             font_query=FONTS[ctx.pop("font", "base")],
             img_url=lambda p: "/" + str(p).lstrip("/"),
+            flag_code=lambda c: COUNTRY_CODE.get(str(c), "un"),
             **ctx,
         )
         dest.write_text(html, encoding="utf-8")
@@ -141,7 +253,7 @@ def render_all(site: dict) -> int:
     write("escuderias/index.html", "teams.html", "../", teams=ranked)
 
     for i, t in enumerate(ranked):
-        meta = TEAMS[t["id"]]
+        meta = complete_meta[t["id"]]
         prev_team = ranked[(i + 1) % len(ranked)]
         next_team = ranked[(i - 1) % len(ranked)]
         tpl = f"team_{meta['layout']}.html"

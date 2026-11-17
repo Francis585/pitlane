@@ -14,7 +14,7 @@
 {% block content %}
 <header class="team-hero">
   <div class="pat pat-{{ tm.pattern }}"></div>
-  {% if team.photo %}<div class="team-hero-photo" style="--img:url('{{ img_url(team.photo) }}')"></div>{% endif %}
+  {% if team.car or team.photo %}<div class="team-hero-photo" style="--img:url('{{ img_url(team.car or team.photo) }}')"></div>{% endif %}
   <div class="wrap th-in">
     <div class="mono" style="color:var(--brand);margin-bottom:14px">{{ tm.full }}</div>
     <h1>{{ tm.display }}</h1>

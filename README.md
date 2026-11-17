@@ -5,6 +5,14 @@ más calendario y clasificación de la temporada en curso. Sin relación con la 
 
 **En producción:** https://pitlane-ruddy.vercel.app  
 
+## Cero mantenimiento entre temporadas
+
+- La temporada se detecta sola: el año en curso si la API ya publica calendario, el anterior en pretemporada.
+- Las escuderías que no estén curadas en `src/teams_meta.py` reciben ficha, color, layout y patrón automáticos.
+- Cada circuito desconocido usa la paleta neutra de `src/races_meta.py`.
+- Las imágenes caducan a los 10 días y se vuelven a descargar, así se renuevan con las fotos nuevas.
+- Si la API falla, la descarga avisa y el sitio se compila con los últimos datos guardados.
+
 ## Cómo funciona
 
 Todo el contenido se genera automáticamente en cada compilación. No hay base de datos ni CMS.

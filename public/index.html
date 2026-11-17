@@ -31,7 +31,16 @@
 
 <nav class="nav">
   <div class="wrap nav-in">
-    <a class="logo" href="index.html"><span class="logo-dot"></span>Pit<b>lane</b></a>
+    <a class="logo" href="index.html">
+      <svg class="logo-mark" width="26" height="18" viewBox="0 0 26 18" aria-hidden="true">
+        <g fill="currentColor">
+          <rect x="2" y="0" width="22" height="3.4" transform="skewX(-24)"/>
+          <rect x="2" y="7.3" width="15" height="3.4" transform="skewX(-24)"/>
+          <rect x="2" y="14.6" width="8" height="3.4" transform="skewX(-24)"/>
+        </g>
+      </svg>
+      Pit<b>lane</b>
+    </a>
     <div class="nav-links">
       <a href="escuderias/index.html">Escuderías</a>
       <a href="pilotos/index.html">Pilotos</a>
@@ -47,49 +56,51 @@
 <div class="gp-ribbon">
   <div class="wrap gp-ribbon-in">
     <span class="gp-tag">Semana de GP</span>
-    <span class="gp-name">🇺🇸 GP de Las Vegas</span>
+    <span class="gp-name"><img class="flag-img" src="https://flagcdn.com/w40/us.png" alt="" width="20" height="15"> GP de Las Vegas</span>
     <span class="gp-vibe">Neón violeta en el Strip</span>
     <span class="gp-when">Faltan 5 días</span>
   </div>
 </div>
 
 <header class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-photo" style="--img:url('/assets/circuits/vegas.jpg')"></div>
-  <div class="hero-lines"></div>
-  <span class="hero-year" aria-hidden="true">2026</span>
+  <div class="hero-media" data-hero-slideshow>
+    <img src="/assets/teams/mercedes-car.jpg" alt="Mercedes" class="hero-slide is-on"
+         data-label="Mercedes" loading="eager">
+    <img src="/assets/teams/ferrari-car.jpg" alt="Ferrari" class="hero-slide"
+         data-label="Ferrari" loading="lazy">
+    <img src="/assets/teams/red_bull-car.jpg" alt="Red Bull" class="hero-slide"
+         data-label="Red Bull" loading="lazy">
+    <img src="/assets/teams/mclaren-car.jpg" alt="McLaren" class="hero-slide"
+         data-label="McLaren" loading="lazy">
+    <img src="/assets/teams/rb-car.jpg" alt="Racing Bulls" class="hero-slide"
+         data-label="Racing Bulls" loading="lazy">
+    <img src="/assets/teams/alpine-car.jpg" alt="Alpine" class="hero-slide"
+         data-label="Alpine" loading="lazy">
+  </div>
+
+  <div class="hero-scrim"></div>
   <div class="wrap hero-in">
     <div>
-      <div class="eyebrow">Mundial de Fórmula 1 · temporada 2026</div>
-      <h1>La parrilla<br><em>al completo</em></h1>
-      <p class="hero-sub">Once escuderías, once formas de entender la velocidad. Datos oficiales,
-         historia de cada equipo y la actualidad del paddock, actualizados solos en cada carrera.</p>
-      <div class="hero-meta">
-        <div><span>Escuderías</span><b>11</b></div>
-        <div><span>Pilotos</span><b>25</b></div>
-        <div><span>Circuitos</span><b>23</b></div>
-        <div><span>Disputadas</span><b>20</b></div>
+      <div class="hero-kicker">2026 · ronda 20 de 23 · semana de GP de Las Vegas</div>
+      <h1>La fórmula 1<br><span>al completo</span></h1>
+      <p class="hero-sub">Once escuderías y sus historias, la parrilla entera, los 23 circuitos
+         y la actualidad del paddock. Todo verificado y actualizado solo, en cada carrera.</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="clasificacion.html">Ver la clasificación →</a>
+        <a class="btn btn-ghost" href="escuderias/index.html">▶ Las once escuderías</a>
       </div>
     </div>
-
-    <aside class="next-card">
-      <div class="eyebrow">Próximo gran premio</div>
-      <div class="next-gp">
-        <span class="flag">🇺🇸</span>
-        <h3>GP de Las Vegas</h3>
-      </div>
-      <p class="circuit">Las Vegas Strip Street Circuit · Las Vegas · 22 de noviembre de 2026</p>
-      <div class="countdown" id="countdown" data-date="2026-11-22">
-        <div><b data-cd="d">--</b><span>días</span></div>
-        <div><b data-cd="h">--</b><span>horas</span></div>
-        <div><b data-cd="m">--</b><span>min</span></div>
-        <div><b data-cd="s">--</b><span>seg</span></div>
-      </div>
-      <div class="next-foot">
-        <span class="src-note">Ronda 21 de 23</span>
-        <a class="sec-link" href="calendario.html">Calendario</a>
-      </div>
-    </aside>
+    <a class="gp-pill" href="circuitos/vegas.html">
+      <span class="flag"><img class="flag-img" src="https://flagcdn.com/w40/us.png" alt="" width="20" height="15"></span>
+      <span class="txt">Próximo GP · GP de Las Vegas</span>
+      <span class="when">en 5 d</span>
+    </a>
+  </div>
+  <div class="wrap hero-band">
+    <div><span>Escuderías</span><b data-count="11">11</b></div>
+    <div><span>Pilotos</span><b data-count="25">25</b></div>
+    <div><span>Circuitos</span><b data-count="23">23</b></div>
+    <div><span>Líder del mundial</span><b style="font-size:clamp(1.3rem,2.4vw,1.9rem)">Mercedes</b></div>
   </div>
 </header>
 
@@ -120,17 +131,7 @@
   </div>
 </div>
 
-<section class="sec" style="padding-block:38px">
-  <div class="wrap">
-    <div class="kpis">
-      <div><b>Mercedes</b><span>Líder de constructores</span></div>
-      <div><b>652</b><span>Puntos del líder</span></div>
-      <div><b>Antonelli</b><span>Líder de pilotos</span></div>
-      <div><b>390</b><span>Puntos del líder</span></div>
-      <div><b>5</b><span>Días al próximo GP</span></div>
-    </div>
-  </div>
-</section>
+
 
 <section class="sec" style="padding-top:0">
   <div class="wrap">
@@ -183,7 +184,7 @@
   </div>
 </section>
 
-<section class="sec">
+<section class="sec" data-reveal>
   <div class="wrap">
     <div class="sec-head">
       <div>
@@ -278,7 +279,7 @@
 
 <hr class="rule">
 
-<section class="sec">
+<section class="sec" data-reveal>
   <div class="wrap">
     <div class="sec-head">
       <div>
@@ -374,7 +375,7 @@
 
 <hr class="rule">
 
-<section class="sec">
+<section class="sec" data-reveal>
   <div class="wrap">
     <div class="sec-head">
       <div>
@@ -532,7 +533,53 @@
 
 <hr class="rule">
 
-<section class="sec">
+<section class="sec" data-reveal>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="sec-num">05 — EL PADDOCK</span>
+        <h2>El mundial, en imágenes</h2>
+        <p>Coches, caras y escenarios. Todo lo que hay en esta página sale de datos e imágenes públicas
+           y se regenera en cada carrera.</p>
+      </div>
+      <a class="sec-link" href="circuitos/index.html">Ver circuitos →</a>
+    </div>
+    <div class="mosaic">
+      <figure class="mosaic-item m1">
+        <img src="/assets/drivers/antonelli.jpg" alt="Andrea Kimi Antonelli" loading="lazy">
+        <figcaption><b>Andrea Kimi Antonelli</b><span>Mercedes</span></figcaption>
+      </figure>
+      <figure class="mosaic-item m2">
+        <img src="/assets/drivers/hamilton.jpg" alt="Lewis Hamilton" loading="lazy">
+        <figcaption><b>Lewis Hamilton</b><span>Ferrari</span></figcaption>
+      </figure>
+      <figure class="mosaic-item m3">
+        <img src="/assets/drivers/max_verstappen.jpg" alt="Max Verstappen" loading="lazy">
+        <figcaption><b>Max Verstappen</b><span>Red Bull</span></figcaption>
+      </figure>
+      <figure class="mosaic-item m4">
+        <img src="/assets/drivers/norris.jpg" alt="Lando Norris" loading="lazy">
+        <figcaption><b>Lando Norris</b><span>McLaren</span></figcaption>
+      </figure>
+      <figure class="mosaic-item m5">
+        <img src="/assets/circuits/silverstone.jpg" alt="Silverstone Circuit" loading="lazy">
+        <figcaption><b>Silverstone Circuit</b><span>Silverstone</span></figcaption>
+      </figure>
+      <figure class="mosaic-item m6">
+        <img src="/assets/circuits/spa.jpg" alt="Circuit de Spa-Francorchamps" loading="lazy">
+        <figcaption><b>Circuit de Spa-Francorchamps</b><span>Spa</span></figcaption>
+      </figure>
+      <figure class="mosaic-item m7">
+        <img src="/assets/circuits/hungaroring.jpg" alt="Hungaroring" loading="lazy">
+        <figcaption><b>Hungaroring</b><span>Budapest</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec" data-reveal>
   <div class="wrap">
     <div class="sec-head">
       <div>
@@ -543,13 +590,22 @@
       <a class="sec-link" href="noticias.html">Todas las noticias →</a>
     </div>
     <div class="news-grid">
+  <a class="ncard" href="https://www.motorsportweek.com/2026/11/17/f1-academy-prepares-for-las-vegas-with-special-livery/" target="_blank" rel="noopener nofollow">
+    <div class="ncard-img">
+<img src="https://www.motorsportweek.com/wp-content/uploads/2026/11/PHOTO-2026-11-17-17-00-48-300x169.webp" alt="" loading="lazy" referrerpolicy="no-referrer"
+           onerror="this.parentNode.innerHTML=''">    </div>
+    <div class="ncard-body">
+      <h3>F1 Academy prepares for Las Vegas with special livery</h3>
+      <div class="ncard-src"><span>Motorsport Week</span><span>hace 1 h</span></div>
+    </div>
+  </a>
   <a class="ncard" href="https://www.motorsportweek.com/2026/11/17/red-bull-departure-of-key-max-verstappen-aide/" target="_blank" rel="noopener nofollow">
     <div class="ncard-img">
 <img src="https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1341857_HiRes-1-300x169.webp" alt="" loading="lazy" referrerpolicy="no-referrer"
            onerror="this.parentNode.innerHTML=''">    </div>
     <div class="ncard-body">
       <h3>Red Bull rocked by departure of key Max Verstappen aide</h3>
-      <div class="ncard-src"><span>Motorsport Week</span><span>17 nov</span></div>
+      <div class="ncard-src"><span>Motorsport Week</span><span>hace 2 h</span></div>
     </div>
   </a>
   <a class="ncard" href="https://www.motorsportweek.com/2026/11/17/bernie-ecclestone-makes-overwhelmed-claim-about-ferrari-fred-vasseur/" target="_blank" rel="noopener nofollow">
@@ -558,25 +614,16 @@
            onerror="this.parentNode.innerHTML=''">    </div>
     <div class="ncard-body">
       <h3>Ferrari boss Fred Vasseur handed ‘overwhelmed’ verdict by Bernie Ecclestone</h3>
-      <div class="ncard-src"><span>Motorsport Week</span><span>17 nov</span></div>
+      <div class="ncard-src"><span>Motorsport Week</span><span>hace 2 h</span></div>
     </div>
   </a>
   <a class="ncard" href="https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=www" target="_blank" rel="noopener nofollow">
     <div class="ncard-img">
-<img src="https://cdn-5.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
+<img src="https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
            onerror="this.parentNode.innerHTML=''">    </div>
     <div class="ncard-body">
       <h3>“He’s beaten Alpine on his own” - Racing Bulls on why it kept Liam Lawson</h3>
-      <div class="ncard-src"><span>Motorsport.com</span><span>17 nov</span></div>
-    </div>
-  </a>
-  <a class="ncard" href="https://www.motorsportweek.com/2026/11/17/max-verstappen-red-bull-engine-jibe/" target="_blank" rel="noopener nofollow">
-    <div class="ncard-img">
-<img src="https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-Red-Bull-300x169.webp" alt="" loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentNode.innerHTML=''">    </div>
-    <div class="ncard-body">
-      <h3>Max Verstappen delivers hilarious Red Bull engine jibe</h3>
-      <div class="ncard-src"><span>Motorsport Week</span><span>17 nov</span></div>
+      <div class="ncard-src"><span>Motorsport.com</span><span>hace 3 h</span></div>
     </div>
   </a>
   <a class="ncard" href="https://www.crash.net/f1/news/1110156/1/toto-wolff-offers-blunt-response-kimi-antonelli-ferrari-question" target="_blank" rel="noopener nofollow">
@@ -585,7 +632,7 @@
            onerror="this.parentNode.innerHTML=''">    </div>
     <div class="ncard-body">
       <h3>Toto Wolff offers blunt response to Kimi Antonelli to Ferrari question</h3>
-      <div class="ncard-src"><span>Crash.net</span><span>17 nov</span></div>
+      <div class="ncard-src"><span>Crash.net</span><span>hace 4 h</span></div>
     </div>
   </a>
   <a class="ncard" href="https://www.crash.net/f1/news/1110155/1/why-george-russell-wont-get-mercedes-f1-engine-upgrade-las-vegas-gp" target="_blank" rel="noopener nofollow">
@@ -594,7 +641,7 @@
            onerror="this.parentNode.innerHTML=''">    </div>
     <div class="ncard-body">
       <h3>Why George Russell won’t get Mercedes F1 engine upgrade at Las Vegas GP</h3>
-      <div class="ncard-src"><span>Crash.net</span><span>17 nov</span></div>
+      <div class="ncard-src"><span>Crash.net</span><span>hace 5 h</span></div>
     </div>
   </a>
   <a class="ncard" href="https://www.crash.net/f1/news/1110149/1/lewis-hamilton-announces-huge-new-partnership-ahead-las-vegas-gp" target="_blank" rel="noopener nofollow">
@@ -603,16 +650,16 @@
            onerror="this.parentNode.innerHTML=''">    </div>
     <div class="ncard-body">
       <h3>Lewis Hamilton announces huge new partnership ahead of Las Vegas GP</h3>
-      <div class="ncard-src"><span>Crash.net</span><span>17 nov</span></div>
+      <div class="ncard-src"><span>Crash.net</span><span>hace 6 h</span></div>
     </div>
   </a>
   <a class="ncard" href="https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-F1&amp;utm_term=News&amp;utm_content=www" target="_blank" rel="noopener nofollow">
     <div class="ncard-img">
-<img src="https://cdn-1.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
+<img src="https://cdn-4.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"
            onerror="this.parentNode.innerHTML=''">    </div>
     <div class="ncard-body">
       <h3>Toto Wolff is not afraid of losing Kimi Antonelli to Ferrari</h3>
-      <div class="ncard-src"><span>Motorsport.com</span><span>17 nov</span></div>
+      <div class="ncard-src"><span>Motorsport.com</span><span>hace 8 h</span></div>
     </div>
   </a>
   <a class="ncard" href="https://www.racefans.net/2026/11/17/spotlight-alonso-to-enter-dakar-in-car-aston-martin-designed-for-call-of-duty/" target="_blank" rel="noopener nofollow">
@@ -620,7 +667,7 @@
     </div>
     <div class="ncard-body">
       <h3>Spotlight: Alonso to enter Dakar in car Aston Martin designed for Call of Duty | Brief</h3>
-      <div class="ncard-src"><span>RaceFans</span><span>17 nov</span></div>
+      <div class="ncard-src"><span>RaceFans</span><span>hace 11 h</span></div>
     </div>
   </a>
 </div>
@@ -652,7 +699,7 @@
     </div>
     <div class="foot-bot">
       <span>Temporada 2026 · datos actualizados el 17 de noviembre de 2026</span>
-      <span>Datos: Jolpica F1 API · Fotos: Wikimedia Commons · Titulares: Autosport · Crash.net · Motorsport Week · Motorsport.com · RaceFans</span>
+      <span>Datos: Jolpica F1 API · Fotos: Wikimedia Commons · Titulares: Autosport · Crash.net · Motorsport Week · Motorsport.com · RaceFans · The Race</span>
     </div>
   </div>
 </footer>

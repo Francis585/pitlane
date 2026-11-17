@@ -67,4 +67,77 @@
       document.documentElement.style.setProperty('--gp-2', '#e8e8e8');
     }
   }
+
+  // El menú pasa de transparente a sólido al bajar.
+  const nav = document.querySelector('.nav');
+  if (nav) {
+    const onScroll = () => nav.classList.toggle('is-solid', window.scrollY > 24);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  // marcar que hay JS (permite animaciones sin romper el HTML sin JS)
+  document.documentElement.classList.add('js');
+
+  // carrusel del hero
+  const hero = document.querySelector('[data-hero-slideshow]');
+  if (hero) {
+    const slides = [...hero.querySelectorAll('.hero-slide')];
+    const idxEl = document.querySelector('[data-hero-index]');
+    const labEl = document.querySelector('[data-hero-label]');
+    if (slides.length > 1) {
+      let i = 0;
+      setInterval(() => {
+        slides[i].classList.remove('is-on');
+        i = (i + 1) % slides.length;
+        slides[i].classList.add('is-on');
+        if (idxEl) idxEl.textContent = String(i + 1).padStart(2, '0');
+        if (labEl) labEl.textContent = slides[i].dataset.label || '';
+      }, 6000);
+    }
+  }
+
+  // aparición al hacer scroll
+  const reveals = [...document.querySelectorAll('[data-reveal]')];
+  if (reveals.length && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+    reveals.forEach((el) => io.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add('is-in'));
+  }
+  // red de seguridad: nunca dejar contenido oculto
+  setTimeout(() => reveals.forEach((el) => el.classList.add('is-in')), 2500);
+
+  // parallax suave del hero (desactivado en móvil o con movimiento reducido)
+  const media = document.querySelector('.hero-media');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (media && !reduce && window.innerWidth > 860) {
+    let raf = null;
+    const move = () => {
+      raf = null;
+      const y = Math.min(window.scrollY, 700);
+      media.style.transform = `translate3d(0, ${y * -0.05}px, 0)`;
+    };
+    window.addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(move); }, { passive: true });
+  }
+
+  // contadores
+  const counters = [...document.querySelectorAll('[data-count]')];
+  counters.forEach((el) => {
+    const target = Number(el.dataset.count);
+    if (!Number.isFinite(target)) return;
+    const dur = 1100, t0 = performance.now();
+    const step = (t) => {
+      const k = Math.min(1, (t - t0) / dur);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - k, 3)));
+      if (k < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+    // si el navegador se interrumpe, el valor final queda igualmente
+    setTimeout(() => { el.textContent = target; }, dur + 400);
+  });
 })();

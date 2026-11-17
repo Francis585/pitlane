@@ -8,7 +8,7 @@
     </div>
     <div class="ncard-body">
       <h3>{{ n.title }}</h3>
-      <div class="ncard-src"><span>{{ n.source }}</span><span>{{ n.date_human }}</span></div>
+      <div class="ncard-src"><span>{{ n.source }}</span><span>{{ n.age or n.date_human }}</span></div>
     </div>
   </a>
   {% endfor %}
@@ -93,7 +93,7 @@
     <div class="pcard-body">
       <div class="pc-num">#{{ d.num }}</div>
       <h3>{{ d.full }}</h3>
-      <div class="pc-meta">{{ d.flag }} {{ d.nationality }} · {{ d.age }} años</div>
+      <div class="pc-meta"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(d.nationality) }}.png" alt="" width="18" height="13"> {{ d.nationality }} · {{ d.age }} años</div>
       <div class="pc-pts">P{{ d.pos }} · <b>{{ d.points }}</b> pts · {{ d.wins }} victorias</div>
     </div>
   </a>
