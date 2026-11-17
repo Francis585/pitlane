@@ -1,0 +1,13 @@
+{
+  "name": "Pitlane — Fórmula 1",
+  "short_name": "Pitlane",
+  "description": "Datos, historia y actualidad de la Fórmula 1.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07080a",
+  "theme_color": "#07080a",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

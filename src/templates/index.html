@@ -7,6 +7,9 @@
 {% block content %}
 <header class="hero">
   <div class="hero-bg"></div>
+  {% if next_circuit and next_circuit.photo %}
+  <div class="hero-photo" style="--img:url('{{ img_url(next_circuit.photo) }}')"></div>
+  {% endif %}
   <div class="hero-lines"></div>
   <span class="hero-year" aria-hidden="true">{{ site.season }}</span>
   <div class="wrap hero-in">
@@ -18,7 +21,7 @@
       <div class="hero-meta">
         <div><span>Escuderías</span><b>{{ site.teams|length }}</b></div>
         <div><span>Pilotos</span><b>{{ site.drivers|length }}</b></div>
-        <div><span>Carreras</span><b>{{ site.total_races }}</b></div>
+        <div><span>Circuitos</span><b>{{ site.circuits|length }}</b></div>
         <div><span>Disputadas</span><b>{{ site.rounds_done }}</b></div>
       </div>
     </div>
@@ -46,6 +49,59 @@
     {% endif %}
   </div>
 </header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-in">
+    {% for _ in range(2) %}
+      {% for t in site.teams %}
+      <span>{{ meta[t.id].display }} <b>{{ t.points }}</b> pts</span>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+
+<section class="sec" style="padding-block:38px">
+  <div class="wrap">
+    <div class="kpis">
+      <div><b>{{ meta[site.teams[0].id].display }}</b><span>Líder de constructores</span></div>
+      <div><b>{{ site.teams[0].points }}</b><span>Puntos del líder</span></div>
+      <div><b>{{ site.drivers[0].last }}</b><span>Líder de pilotos</span></div>
+      <div><b>{{ site.drivers[0].points }}</b><span>Puntos del líder</span></div>
+      <div><b>{{ site.next_race.days_until if site.next_race else '—' }}</b><span>Días al próximo GP</span></div>
+    </div>
+  </div>
+</section>
+
+{% if moments %}
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Momentos {{ site.season }}</div>
+        <h2>Lo que ya ha pasado</h2>
+        <p>Las últimas carreras disputadas, con su podio y el escenario donde ocurrieron.</p>
+      </div>
+      <a class="sec-link" href="{{ root }}calendario.html">Todo el calendario →</a>
+    </div>
+    <div class="moments">
+      {% for mo in moments %}
+      {% set tm = meta.get(mo.team) %}
+      <a class="moment" href="{{ root }}circuitos/{{ mo.circuit_id }}.html">
+        {% if mo.photo %}<img src="{{ root }}{{ mo.photo }}" alt="{{ mo.circuit }}" loading="lazy">{% endif %}
+        <div class="moment-body">
+          <span class="moment-tag" style="--tag:{{ tm.brand if tm else '#444' }}">{{ mo.gp }} · R{{ mo.round }}</span>
+          <h3>Ganó {{ mo.winner }}</h3>
+          <p>{{ tm.display if tm else mo.team }} · {{ mo.circuit }}</p>
+          <div class="podium-mini">
+            {% for p in mo.podium %}<span>P{{ p.pos }} {{ p.name }}</span>{% endfor %}
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 
 <section class="sec">
   <div class="wrap">

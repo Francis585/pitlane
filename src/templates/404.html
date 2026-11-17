@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Página no encontrada | Pitlane{% endblock %}
+{% block desc %}Esa página no existe. Vuelve a la portada o busca entre las {{ site.teams|length }} escuderías.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<section class="sec">
+  <div class="wrap">
+    <div class="eyebrow">Error 404</div>
+    <h1 style="font-size:clamp(3rem,10vw,7rem);text-transform:uppercase;margin:10px 0 14px">Fuera de pista</h1>
+    <p class="dim" style="max-width:52ch">Esta página no existe o ha cambiado de sitio. Te dejamos volver
+       al pit lane.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+      <a class="btn btn-solid" href="{{ root }}index.html">Portada</a>
+      <a class="btn" href="{{ root }}escuderias/index.html">Escuderías</a>
+      <a class="btn" href="{{ root }}calendario.html">Calendario</a>
+    </div>
+    <div style="margin-top:44px">
+      <div class="eyebrow dim">Quizá buscabas</div>
+      <div class="tiles" style="margin-top:14px">
+        {% for t in site.teams[:4] %}
+        {% set mm = meta[t.id] %}
+        <a class="tile" href="{{ root }}escuderias/{{ t.slug if t.slug else t.id }}.html" style="--c1:{{ mm.brand }}">
+          <div class="tpos">P{{ t.pos }}</div>
+          <div class="tfoot"><h3>{{ mm.display }}</h3><span>{{ t.points }} pts</span></div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -18,6 +18,8 @@ from pathlib import Path
 from urllib.parse import quote
 from xml.etree import ElementTree as ET
 
+import time
+import urllib.error
 import urllib.request
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -61,13 +63,27 @@ def nrm(s: str) -> str:
     return "".join(c for c in s if unicodedata.category(c) != "Mn").lower()
 
 
-def get(url: str, timeout: int = 45) -> bytes:
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+def get(url: str, timeout: int = 45, retries: int = 4) -> bytes:
+    """GET con reintento y espera cuando Wikimedia responde 429."""
+    last = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code == 429:
+                wait = int(e.headers.get("Retry-After") or 0) or 8 * (attempt + 1)
+                time.sleep(min(wait, 30))
+                continue
+            raise
+    raise last  # type: ignore[misc]
 
 
 def get_json(url: str) -> dict:
+    if "wikipedia.org" in url:
+        time.sleep(0.9)
     return json.loads(get(url).decode("utf-8"))
 
 
@@ -109,6 +125,7 @@ def build_calendar(races: list, today: date) -> list:
             "name": gp_name(r),
             "official": r["raceName"],
             "circuit": r["Circuit"]["circuitName"],
+            "circuit_id": r["Circuit"]["circuitId"],
             "locality": loc["locality"],
             "country": loc["country"],
             "flag": FLAG.get(loc["country"], "🏁"),
@@ -139,6 +156,48 @@ def attach_winners(calendar: list, results: list) -> None:
         ]
         fl = res[0].get("FastestLap")
         c["fastest_lap"] = fl["Time"]["time"] if fl else None
+
+
+def enrich_circuits(raw_races: list, calendar: list) -> list:
+    """Ficha de cada circuito con foto y descripción de Wikipedia."""
+    out = []
+    for raw, race in zip(raw_races, calendar):
+        c = raw["Circuit"]
+        cid = c["circuitId"]
+        title = c["url"].rsplit("/", 1)[-1]
+        raw_name = raw["raceName"].replace(" Grand Prix", "").strip()
+        out.append({
+            "id": cid,
+            "name": c["circuitName"],
+            "locality": c["Location"]["locality"],
+            "country": c["Location"]["country"],
+            "flag": race["flag"],
+            "wiki": title,
+            "photo": wiki_best_photo(
+                # primero la página del gran premio (suele traer foto aérea),
+                # luego el circuito, y por último la ciudad
+                [f"{SEASON} {raw_name} Grand Prix", f"{raw_name} Grand Prix", title,
+                 c["Location"]["locality"]] + CIRCUIT_FALLBACK.get(cid, []),
+                cid, "circuits"),
+            "about": (wiki_extract(f"Gran Premio de {race['name'].replace('GP de ', '')}", 380)
+                      or wiki_extract(title, 380)),
+            "round": race["round"],
+            "gp": race["name"],
+            "date": race["date"],
+            "date_human": race["date_human"],
+            "weekday": race["weekday"],
+            "date_long": race["date_long"],
+            "done": race["done"],
+            "is_next": race["is_next"],
+            "winner": race.get("winner"),
+        })
+    return out
+
+
+def team_head_to_head(drivers: list, team_id: str) -> list:
+    rows = [d for d in drivers if d["team"] and d["team"]["id"] == team_id]
+    rows.sort(key=lambda d: -d["points"])
+    return rows
 
 
 def build_teams(api: dict, calendar: list) -> list:
@@ -224,6 +283,29 @@ def build_drivers(api: dict, teams: list) -> list:
     return out
 
 
+# Títulos extra de Wikipedia para circuitos cuya página solo ofrece mapas.
+CIRCUIT_FALLBACK = {
+    "marina_bay": ["Marina Bay Sands", "Singapore"],
+    "americas": ["Austin, Texas", "Austin"],
+    "rodriguez": ["Autódromo Hermanos Rodríguez", "Mexico City"],
+    "monza": ["Monza", "Autodromo Nazionale Monza"],
+    "hungaroring": ["Mogyoród", "Hungaroring"],
+}
+
+TEAM_WIKI = {
+    "ferrari": "Scuderia Ferrari",
+    "mercedes": "Mercedes-Benz in Formula One",
+    "red_bull": "Red Bull Racing",
+    "mclaren": "McLaren",
+    "aston_martin": "Aston Martin in Formula One",
+    "alpine": "Alpine F1 Team",
+    "haas": "Haas F1 Team",
+    "audi": "Audi in Formula One",
+    "williams": "Williams Grand Prix Engineering",
+    "rb": "Racing Bulls",
+    "cadillac": "Cadillac Formula One Team",
+}
+
 # ---------------------------------------------------------------------- imágenes
 def driver_photo(wiki_title: str, did: str) -> str | None:
     dest = ASSETS / "drivers" / f"{did}.jpg"
@@ -234,6 +316,21 @@ def driver_photo(wiki_title: str, did: str) -> str | None:
             "https://en.wikipedia.org/api/rest_v1/page/summary/" + quote(wiki_title.replace(" ", "_"))
         )
         src = (data.get("thumbnail") or {}).get("source")
+        if src and not usable_image(src):
+            src = None
+        if not src:
+            # sin miniatura válida en el resumen: se busca en la lista de medios de la página
+            media = get_json(
+                "https://en.wikipedia.org/api/rest_v1/page/media-list/" + quote(title.replace(" ", "_"))
+            )
+            for item in media.get("items", []):
+                if item.get("type") != "image" or not item.get("srcset"):
+                    continue
+                cand = item["srcset"][0]["src"]
+                if not usable_image(cand):
+                    continue
+                src = "https:" + cand if cand.startswith("//") else cand
+                break
         if not src:
             return None
         # Wikimedia solo sirve una lista cerrada de anchos (250/330/500/960/1280).
@@ -263,6 +360,103 @@ def driver_bio(wiki_title: str) -> str:
             ext = (data.get("extract") or "").strip()
             if len(ext) > 60:
                 return ext[:430]
+        except Exception:
+            continue
+    return ""
+
+
+BAD_IMG = re.compile(r"(map|layout|logo|escudo|emblem|flag_of|icon|badge|circuit_?map|track_?map)", re.I)
+
+
+def usable_image(url: str) -> bool:
+    """Descarta mapas, escudos y SVG: solo interesan fotografías."""
+    low = url.lower()
+    if low.endswith((".svg", ".gif")):
+        return False
+    return not BAD_IMG.search(low.rsplit("/", 1)[-1])
+
+
+def is_photo(path: pathlib.Path) -> bool:
+    """Una foto tiene miles de colores; un mapa o un escudo, unos cientos."""
+    try:
+        from PIL import Image
+        im = Image.open(path).convert("RGB").resize((100, 100))
+        return len(im.getcolors(maxcolors=200000) or []) > 2200
+    except Exception:
+        return True
+
+
+def wiki_best_photo(titles: list[str], slug_name: str, folder: str, width: int = 960) -> str | None:
+    """Prueba varios títulos de Wikipedia y se queda con la primera foto real."""
+    dest = ASSETS / folder / f"{slug_name}.jpg"
+    if dest.exists() and dest.stat().st_size > 6000 and is_photo(dest):
+        return f"assets/{folder}/{slug_name}.jpg"
+    for title in titles:
+        got = wiki_image(title, f"{slug_name}__try", folder, width)
+        if not got:
+            continue
+        probe = ASSETS / folder / f"{slug_name}__try.jpg"
+        if probe.exists() and is_photo(probe):
+            probe.replace(dest)
+            return f"assets/{folder}/{slug_name}.jpg"
+        if probe.exists():
+            probe.unlink()
+    if dest.exists() and not is_photo(dest):
+        dest.unlink()
+    return None
+
+
+def wiki_image(title: str, slug_name: str, folder: str, width: int = 500) -> str | None:
+    """Descarga la imagen principal de una página de Wikipedia."""
+    dest = ASSETS / folder / f"{slug_name}.jpg"
+    if dest.exists() and dest.stat().st_size > 6000:
+        return f"assets/{folder}/{slug_name}.jpg"
+    time.sleep(1.1)  # cortesía con la API de Wikipedia
+    try:
+        data = get_json(
+            "https://en.wikipedia.org/api/rest_v1/page/summary/" + quote(title.replace(" ", "_"))
+        )
+        src = (data.get("thumbnail") or {}).get("source")
+        if src and not usable_image(src):
+            src = None
+        if not src:
+            # sin miniatura válida en el resumen: se busca en la lista de medios de la página
+            media = get_json(
+                "https://en.wikipedia.org/api/rest_v1/page/media-list/" + quote(title.replace(" ", "_"))
+            )
+            for item in media.get("items", []):
+                if item.get("type") != "image" or not item.get("srcset"):
+                    continue
+                cand = item["srcset"][0]["src"]
+                if not usable_image(cand):
+                    continue
+                src = "https:" + cand if cand.startswith("//") else cand
+                break
+        if not src:
+            return None
+        no_q = src.split("?")[0]
+        cands = [re.sub(r"/\d+px-", f"/{w}px-", no_q) for w in (width, 330)]
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        for cand in cands:
+            try:
+                img = get(cand, timeout=40)
+            except Exception:
+                continue
+            if len(img) > 6000:
+                dest.write_bytes(img)
+                return f"assets/{folder}/{slug_name}.jpg"
+        return None
+    except Exception:
+        return None
+
+
+def wiki_extract(title: str, limit: int = 420) -> str:
+    for host in ("es.wikipedia.org", "en.wikipedia.org"):
+        try:
+            data = get_json(f"https://{host}/api/rest_v1/page/summary/" + quote(title.replace(" ", "_")))
+            ext = (data.get("extract") or "").strip()
+            if len(ext) > 60:
+                return ext[:limit]
         except Exception:
             continue
     return ""
@@ -399,8 +593,15 @@ def main() -> None:
                     taken.add(n["url"])
         t["news"] = mine
 
+    circuits = enrich_circuits(api["calendar"], calendar)
+    for t in teams:
+        lead = next((d for d in drivers if d["team"] and d["team"]["id"] == t["id"] and d.get("photo")), None)
+        t["photo"] = lead["photo"] if lead else None
+        t["photo_of"] = lead["full"] if lead else None
+
     site = {
         "season": SEASON,
+        "circuits": circuits,
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "round": api["drivers"]["round"],
         "total_races": len(calendar),

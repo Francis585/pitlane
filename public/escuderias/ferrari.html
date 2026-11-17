@@ -9,20 +9,30 @@
 <meta property="og:title" content="Pitlane — Fórmula 1">
 <meta property="og:description" content="Datos, historia y actualidad de la Fórmula 1.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Pitlane">
+<meta property="og:image" content="https://pitlane-ruddy.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://pitlane-ruddy.vercel.app/escuderias/ferrari.html">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon-192.png">
+<link rel="manifest" href="../assets/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/styles.css">
-<style>:root{
+<style>
+:root { --gp: #B026FF; --gp-2: #00E5FF; }
+:root{
   --bg: #0C0A09; --bg-2: #0C0A09; --panel: color-mix(in srgb, #0C0A09 82%, #fff);
   --brand: #E10600; --brand-2: #FFD100; --fg: #f6f2ec; --dim: #a8a29a; --dim-2: #78736c;
   --font-display: "Playfair Display", Georgia, serif;
 }
 </style>
 </head>
-<body class="t-clasico">
+<body class="t-clasico race-week"
+      data-gp-start="2026-11-16" data-gp-end="2026-11-22">
 
 <nav class="nav">
   <div class="wrap nav-in">
@@ -30,6 +40,7 @@
     <div class="nav-links">
       <a href="../escuderias/index.html">Escuderías</a>
       <a href="../pilotos/index.html">Pilotos</a>
+      <a href="../circuitos/index.html">Circuitos</a>
       <a href="../calendario.html">Calendario</a>
       <a href="../clasificacion.html">Clasificación</a>
       <a href="../noticias.html">Noticias</a>
@@ -38,8 +49,18 @@
   </div>
 </nav>
 
+<div class="gp-ribbon">
+  <div class="wrap gp-ribbon-in">
+    <span class="gp-tag">Semana de GP</span>
+    <span class="gp-name">🇺🇸 GP de Las Vegas</span>
+    <span class="gp-vibe">Neón violeta en el Strip</span>
+    <span class="gp-when">Faltan 5 días</span>
+  </div>
+</div>
+
 <header class="team-hero">
-  <span class="monogram-big" aria-hidden="true">SF</span>
+  <div class="pat pat-shield"></div>
+<div class="team-hero-photo" style="--img:url('/assets/drivers/hamilton.jpg')"></div>  <span class="monogram-big" aria-hidden="true">SF</span>
   <div class="wrap th-in">
     <div class="team-kicker"><span class="sq"></span><span>Maranello, Italia · desde 1929</span><span class="sq"></span></div>
     <h1>Ferrari</h1>
@@ -244,6 +265,52 @@
   </div>
 </section>
 
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow dim">Duelo en el garaje</div><h2>Los dos pilotos, cara a cara</h2></div>
+    </div>
+    <div class="h2h">
+  <div class="h2h-row">
+    <div><span class="who">Hamilton</span></div>
+    <div class="mid">Piloto</div>
+    <div style="text-align:right"><span class="who">Leclerc</span></div>
+  </div>
+  <div class="h2h-row lead-a">
+    <div><span class="val">261</span></div>
+    <div class="mid">Puntos</div>
+    <div style="text-align:right"><span class="val">249</span></div>
+  </div>
+  <div class="h2h-row lead-a">
+    <div><span class="val">4</span></div>
+    <div class="mid">Posición</div>
+    <div style="text-align:right"><span class="val">5</span></div>
+  </div>
+  <div class="h2h-row ">
+    <div><span class="val">1</span></div>
+    <div class="mid">Victorias</div>
+    <div style="text-align:right"><span class="val">1</span></div>
+  </div>
+</div>
+
+    <div style="margin-top:34px">
+      <div class="eyebrow dim">Palmarés</div>
+      <h2 style="font-size:1.7rem;text-transform:none;font-weight:400;font-style:italic;margin:8px 0 4px">16 títulos de constructores</h2>
+      <div class="titles-wrap">
+  <span class="title-chip win">1961</span>
+  <span class="title-chip win">1964</span>
+  <span class="title-chip win">1975-77</span>
+  <span class="title-chip win">1979</span>
+  <span class="title-chip win">1982-83</span>
+  <span class="title-chip win">1999</span>
+  <span class="title-chip win">2000-04</span>
+  <span class="title-chip win">2007-08</span>
+</div>
+
+    </div>
+  </div>
+</section>
+
 <div class="next-team">
   <a href="../escuderias/red-bull.html">
     <span class="eyebrow dim">Anterior en la parrilla</span>
@@ -279,7 +346,7 @@
     </div>
     <div class="foot-bot">
       <span>Temporada 2026 · datos actualizados el 17 de noviembre de 2026</span>
-      <span>Datos: Jolpica F1 API · Fotos: Wikimedia Commons · Titulares: Autosport · Crash.net · Motorsport Week · Motorsport.com</span>
+      <span>Datos: Jolpica F1 API · Fotos: Wikimedia Commons · Titulares: Autosport · Crash.net · Motorsport Week · Motorsport.com · RaceFans</span>
     </div>
   </div>
 </footer>

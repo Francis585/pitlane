@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install jinja2
+      - run: pip install jinja2 pillow
 
       - name: Descargar datos y compilar
         run: python build.py --fetch

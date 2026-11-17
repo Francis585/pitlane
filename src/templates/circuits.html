@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Circuitos de la Fórmula 1 {{ site.season }} | Pitlane{% endblock %}
+{% block desc %}Los {{ site.circuits|length }} circuitos del mundial {{ site.season }}: trazados, países, fechas y fotos de cada gran premio.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<section class="sec" style="padding-bottom:26px">
+  <div class="wrap">
+    <div class="eyebrow">{{ site.circuits|length }} escenarios · {{ site.season }}</div>
+    <h1 style="font-size:clamp(2.6rem,7vw,5.2rem);text-transform:uppercase;margin:12px 0 16px">Los circuitos<br><span style="color:transparent;-webkit-text-stroke:1.4px rgba(255,255,255,.5)">del mundial</span></h1>
+    <p class="dim" style="max-width:60ch">De Albert Park a Yas Marina. Cada trazado con su foto, su ciudad y
+       la fecha en la que se corre este año.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="circ-grid">
+      {% for c in site.circuits %}
+      <a class="circ-card {% if c.is_next %}next{% endif %}" href="{{ root }}circuitos/{{ c.id }}.html">
+        {% if c.is_next %}<span class="badge">Siguiente</span>
+        {% elif c.done %}<span class="badge">R{{ c.round }}</span>
+        {% else %}<span class="badge">R{{ c.round }}</span>{% endif %}
+        {% if c.photo %}<img src="{{ root }}{{ c.photo }}" alt="{{ c.name }}" loading="lazy">{% endif %}
+        <div class="circ-card-body">
+          <h3>{{ c.name }}</h3>
+          <div class="cc-meta">{{ c.flag }} {{ c.locality }} · {{ c.country }}</div>
+          <div class="cc-meta" style="color:var(--dim)">{{ c.gp }} · {{ c.date_human }}</div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

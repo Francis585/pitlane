@@ -100,3 +100,36 @@
   {% endfor %}
 </div>
 {% endmacro %}
+
+{% macro titles_chips(tm) %}
+{% if tm.title_years %}
+<div class="titles-wrap">
+  {% for chunk in tm.title_years.split(' · ') %}
+  <span class="title-chip win">{{ chunk }}</span>
+  {% endfor %}
+</div>
+{% endif %}
+{% endmacro %}
+
+{% macro head2head(rows, root) %}
+{% if rows|length > 1 %}
+<div class="h2h">
+  {% set lead = rows[0] %}
+  {% set metrics = [('Puntos', 'points'), ('Posición', 'pos'), ('Victorias', 'wins')] %}
+  <div class="h2h-row">
+    <div><span class="who">{{ rows[0].last }}</span></div>
+    <div class="mid">Piloto</div>
+    <div style="text-align:right"><span class="who">{{ rows[1].last }}</span></div>
+  </div>
+  {% for label, key in metrics %}
+  {% set a = rows[0][key] %}{% set b = rows[1][key] %}
+  {% set a_wins = (a > b and key != 'pos') or (a < b and key == 'pos') %}
+  <div class="h2h-row {% if a_wins %}lead-a{% elif a != b %}lead-b{% endif %}">
+    <div><span class="val">{{ a }}</span></div>
+    <div class="mid">{{ label }}</div>
+    <div style="text-align:right"><span class="val">{{ b }}</span></div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+{% endmacro %}

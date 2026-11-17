@@ -9,15 +9,26 @@
 <meta property="og:title" content="{% block ogtitle %}{{ site_title }}{% endblock %}">
 <meta property="og:description" content="{% block ogdesc %}{{ site_desc }}{% endblock %}">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Pitlane">
+<meta property="og:image" content="https://pitlane-ruddy.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://pitlane-ruddy.vercel.app{{ current }}">
 <link rel="icon" href="{{ root }}assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ root }}assets/icon-192.png">
+<link rel="manifest" href="{{ root }}assets/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family={{ font_query }}&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ root }}assets/styles.css">
-<style>{% block vars %}{% endblock %}</style>
+<style>
+:root { --gp: {{ gp.brand }}; --gp-2: {{ gp.brand2 }}; }
+{% block vars %}{% endblock %}
+</style>
 </head>
-<body class="{% block bodyclass %}{% endblock %}">
+<body class="{% block bodyclass %}{% endblock %}{% if gp.active %} race-week{% endif %}"
+      data-gp-start="{{ gp.get('start', '') }}" data-gp-end="{{ gp.get('end', '') }}">
 
 <nav class="nav">
   <div class="wrap nav-in">
@@ -25,6 +36,7 @@
     <div class="nav-links">
       <a href="{{ root }}escuderias/index.html">Escuderías</a>
       <a href="{{ root }}pilotos/index.html">Pilotos</a>
+      <a href="{{ root }}circuitos/index.html">Circuitos</a>
       <a href="{{ root }}calendario.html">Calendario</a>
       <a href="{{ root }}clasificacion.html">Clasificación</a>
       <a href="{{ root }}noticias.html">Noticias</a>
@@ -32,6 +44,17 @@
     <div class="nav-round">{{ site.season }} · R{{ site.round }}/{{ site.total_races }}</div>
   </div>
 </nav>
+
+{% if gp.active %}
+<div class="gp-ribbon">
+  <div class="wrap gp-ribbon-in">
+    <span class="gp-tag">Semana de GP</span>
+    <span class="gp-name">{{ gp.flag }} {{ gp.gp }}</span>
+    <span class="gp-vibe">{{ gp.vibe }}</span>
+    <span class="gp-when">{% if gp.days == 0 %}Hoy en pista{% elif gp.days == 1 %}Mañana{% else %}Faltan {{ gp.days }} días{% endif %}</span>
+  </div>
+</div>
+{% endif %}
 
 {% block content %}{% endblock %}
 

@@ -13,6 +13,8 @@
 
 {% block content %}
 <header class="team-hero">
+  <div class="pat pat-{{ tm.pattern }}"></div>
+  {% if team.photo %}<div class="team-hero-photo" style="--img:url('{{ img_url(team.photo) }}')"></div>{% endif %}
   <div class="wrap th-in">
     <div>
       <div class="team-kicker"><span class="sq"></span><span>{{ tm.monogram }} · {{ team.id|upper }} · {{ site.season }}</span></div>
@@ -153,6 +155,22 @@
       </a>
       {% endfor %}
     </div>
+  </div>
+</section>
+
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Comparativa interna</div><h2>Duelo de datos</h2></div>
+      <span class="src-note">{{ site.season }}</span>
+    </div>
+    {{ m.head2head(drivers, root) }}
+    {% if tm.title_years %}
+    <div style="margin-top:30px">
+      <h4 class="mono" style="color:var(--dim-2)">Títulos de constructores</h4>
+      {{ m.titles_chips(tm) }}
+    </div>
+    {% endif %}
   </div>
 </section>
 

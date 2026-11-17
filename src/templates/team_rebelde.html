@@ -13,6 +13,8 @@
 
 {% block content %}
 <header class="team-hero">
+  <div class="pat pat-{{ tm.pattern }}"></div>
+  {% if team.photo %}<div class="team-hero-photo" style="--img:url('{{ img_url(team.photo) }}')"></div>{% endif %}
   <div class="wrap th-in">
     <div class="mono" style="color:var(--brand);margin-bottom:14px">{{ tm.full }}</div>
     <h1>{{ tm.display }}</h1>
@@ -93,6 +95,25 @@
       {% else %}
       <div style="padding:18px;color:var(--dim)">Sin titulares nuevos de esta escudería.</div>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,60px);align-items:start">
+      <div>
+        <div class="eyebrow">Duelo</div>
+        <h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem);text-transform:uppercase;margin:8px 0 18px">Cara a cara</h2>
+        {{ m.head2head(drivers, root) }}
+      </div>
+      <div>
+        {% if tm.title_years %}
+        <div class="eyebrow">Palmarés</div>
+        <h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem);text-transform:uppercase;margin:8px 0 4px">{{ tm.titles }} títulos</h2>
+        {{ m.titles_chips(tm) }}
+        {% endif %}
+      </div>
     </div>
   </div>
 </section>

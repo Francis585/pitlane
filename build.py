@@ -9,7 +9,7 @@ import json
 import shutil
 import subprocess
 import sys
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -21,6 +21,7 @@ ASSETS = ROOT / "assets"
 
 sys.path.insert(0, str(SRC))
 from teams_meta import LAYOUT_LABEL, PATTERN_ORDER, TEAMS  # noqa: E402
+from races_meta import DEFAULT as GP_DEFAULT, RACES as GP_THEMES  # noqa: E402
 
 FONTS = {
     "base": "Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600",
@@ -43,6 +44,51 @@ def human_date(iso: str) -> str:
     return f"{dt.day} de {MONTHS_ES[dt.month - 1]} de {dt.year}"
 
 
+def race_week(site: dict) -> dict:
+    """Devuelve el GP cuya semana está en curso, o None fuera de semana de carreras.
+
+    La semana va del lunes anterior a la carrera hasta el día de la carrera.
+    """
+    today = date.today()
+    for race in site["calendar"]:
+        d = date.fromisoformat(race["date"])
+        start = d - timedelta(days=6)
+        if start <= today <= d:
+            theme = GP_THEMES.get(race.get("circuit_id", ""), GP_DEFAULT)
+            return {
+                "active": True,
+                "round": race["round"],
+                "gp": race["name"],
+                "city": race["locality"],
+                "flag": race["flag"],
+                "date": race["date"],
+                "date_human": race["date_human"],
+                "start": start.isoformat(),
+                "end": d.isoformat(),
+                "days": (d - today).days,
+                **{k: theme[k] for k in ("brand", "brand2", "pattern", "vibe")},
+            }
+    return {"active": False, "brand": GP_DEFAULT["brand"], "brand2": GP_DEFAULT["brand2"],
+            "pattern": GP_DEFAULT["pattern"], "vibe": GP_DEFAULT["vibe"]}
+
+
+def build_moments(site: dict) -> list:
+    """Últimas carreras con resultado: ganador, podio y foto del circuito."""
+    photos = {c["round"]: c for c in site["circuits"]}
+    out = []
+    for race in site["calendar"]:
+        if not race.get("winner") or not race.get("podium"):
+            continue
+        circ = photos.get(race["round"], {})
+        out.append({
+            "round": race["round"], "gp": race["name"], "winner": race["winner"],
+            "team": race.get("winner_team"), "circuit": race["circuit"],
+            "circuit_id": circ.get("id", ""), "photo": circ.get("photo"),
+            "podium": race["podium"],
+        })
+    return out[-4:][::-1]
+
+
 def render_all(site: dict) -> int:
     env = Environment(
         loader=FileSystemLoader(str(SRC / "templates")),
@@ -61,6 +107,11 @@ def render_all(site: dict) -> int:
     teams_by_id = {t["id"]: t for t in site["teams"]}
     drivers_by_id = {d["id"]: d for d in site["drivers"]}
     generated = human_date(site["generated"][:10])
+    gp = race_week(site)
+    moments = build_moments(site)
+    next_circuit = next((c for c in site["circuits"]
+                         if site.get("next_race") and c["round"] == site["next_race"]["round"]), None)
+    upcoming_circuits = [c for c in site["circuits"] if not c["done"]][:4]
     sources = " · ".join(sorted({n["source"] for n in site["news"]})) or "medios especializados"
     pages = 0
 
@@ -69,12 +120,14 @@ def render_all(site: dict) -> int:
         dest = OUT / rel
         dest.parent.mkdir(parents=True, exist_ok=True)
         html = env.get_template(tpl).render(
-            site=site, meta=TEAMS, root=root,
+            site=site, meta=TEAMS, root=root, gp=gp, moments=moments,
+            next_circuit=next_circuit, upcoming_circuits=upcoming_circuits,
             site_title="Pitlane — Fórmula 1",
             site_desc="Datos, historia y actualidad de la Fórmula 1.",
             current="/" + rel.replace("index.html", ""),
             generated_human=generated, news_sources=sources,
             font_query=FONTS[ctx.pop("font", "base")],
+            img_url=lambda p: "/" + str(p).lstrip("/"),
             **ctx,
         )
         dest.write_text(html, encoding="utf-8")
@@ -112,10 +165,16 @@ def render_all(site: dict) -> int:
               font=TEAMS.get(d["team"]["id"], {}).get("layout", "base") if d["team"] else "base")
 
     # ------------------------------------------------------------ estáticas
+    write("circuitos/index.html", "circuits.html", "../", circuits=site["circuits"])
+    for c in site["circuits"]:
+        write(f"circuitos/{c['id']}.html", "circuit.html", "../", c=c,
+              theme=GP_THEMES.get(c["id"], GP_DEFAULT),
+              others=[o for o in site["circuits"] if o["id"] != c["id"]][:4])
     write("calendario.html", "calendar.html", "")
     write("clasificacion.html", "standings.html", "")
     write("noticias.html", "news.html", "")
     write("metodologia.html", "method.html", "")
+    write("404.html", "404.html", "")
     return pages
 
 
@@ -129,12 +188,13 @@ def write_static(site: dict) -> None:
         '<path d="M14 48V16h9l11 19V16h9v32h-9L23 29v19z" fill="#ff5a1f"/></svg>',
         encoding="utf-8")
 
-    urls = ["", "escuderias/", "pilotos/", "calendario.html", "clasificacion.html",
+    urls = ["", "escuderias/", "pilotos/", "circuitos/", "calendario.html", "clasificacion.html",
             "noticias.html", "metodologia.html"]
     for t in site["teams"]:
         t.setdefault("slug", t["id"].replace("_", "-"))
     urls += [f"escuderias/{t['slug']}.html" for t in site["teams"]]
     urls += [f"pilotos/{d['id']}.html" for d in site["drivers"]]
+    urls += [f"circuitos/{c['id']}.html" for c in site.get("circuits", [])]
     body = "".join(
         f"<url><loc>https://pitlane-ruddy.vercel.app/{u}</loc>"
         f"<lastmod>{site['generated'][:10]}</lastmod></url>" for u in urls)

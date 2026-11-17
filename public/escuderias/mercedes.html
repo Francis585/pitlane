@@ -9,20 +9,30 @@
 <meta property="og:title" content="Pitlane — Fórmula 1">
 <meta property="og:description" content="Datos, historia y actualidad de la Fórmula 1.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Pitlane">
+<meta property="og:image" content="https://pitlane-ruddy.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://pitlane-ruddy.vercel.app/escuderias/mercedes.html">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon-192.png">
+<link rel="manifest" href="../assets/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&amp;family=Saira+Condensed:wght@700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/styles.css">
-<style>:root{
+<style>
+:root { --gp: #B026FF; --gp-2: #00E5FF; }
+:root{
   --bg: #05070a; --bg-2: #080b10; --panel: rgba(255,255,255,.03);
   --brand: #00D2BE; --brand-2: #C8CDD2; --dim: #8d949f; --dim-2: #626a75;
   --font-display: "Chakra Petch", "Saira Condensed", sans-serif;
 }
 </style>
 </head>
-<body class="t-tecnico">
+<body class="t-tecnico race-week"
+      data-gp-start="2026-11-16" data-gp-end="2026-11-22">
 
 <nav class="nav">
   <div class="wrap nav-in">
@@ -30,6 +40,7 @@
     <div class="nav-links">
       <a href="../escuderias/index.html">Escuderías</a>
       <a href="../pilotos/index.html">Pilotos</a>
+      <a href="../circuitos/index.html">Circuitos</a>
       <a href="../calendario.html">Calendario</a>
       <a href="../clasificacion.html">Clasificación</a>
       <a href="../noticias.html">Noticias</a>
@@ -38,8 +49,18 @@
   </div>
 </nav>
 
+<div class="gp-ribbon">
+  <div class="wrap gp-ribbon-in">
+    <span class="gp-tag">Semana de GP</span>
+    <span class="gp-name">🇺🇸 GP de Las Vegas</span>
+    <span class="gp-vibe">Neón violeta en el Strip</span>
+    <span class="gp-when">Faltan 5 días</span>
+  </div>
+</div>
+
 <header class="team-hero">
-  <div class="wrap th-in">
+  <div class="pat pat-hex"></div>
+<div class="team-hero-photo" style="--img:url('/assets/drivers/antonelli.jpg')"></div>  <div class="wrap th-in">
     <div>
       <div class="team-kicker"><span class="sq"></span><span>M-AMG · MERCEDES · 2026</span></div>
       <h1>Mercedes</h1>
@@ -271,6 +292,52 @@ P1</b>
   </div>
 </section>
 
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Comparativa interna</div><h2>Duelo de datos</h2></div>
+      <span class="src-note">2026</span>
+    </div>
+    <div class="h2h">
+  <div class="h2h-row">
+    <div><span class="who">Antonelli</span></div>
+    <div class="mid">Piloto</div>
+    <div style="text-align:right"><span class="who">Russell</span></div>
+  </div>
+  <div class="h2h-row lead-a">
+    <div><span class="val">390</span></div>
+    <div class="mid">Puntos</div>
+    <div style="text-align:right"><span class="val">262</span></div>
+  </div>
+  <div class="h2h-row lead-a">
+    <div><span class="val">1</span></div>
+    <div class="mid">Posición</div>
+    <div style="text-align:right"><span class="val">3</span></div>
+  </div>
+  <div class="h2h-row lead-a">
+    <div><span class="val">9</span></div>
+    <div class="mid">Victorias</div>
+    <div style="text-align:right"><span class="val">3</span></div>
+  </div>
+</div>
+
+    <div style="margin-top:30px">
+      <h4 class="mono" style="color:var(--dim-2)">Títulos de constructores</h4>
+      <div class="titles-wrap">
+  <span class="title-chip win">2014</span>
+  <span class="title-chip win">2015</span>
+  <span class="title-chip win">2016</span>
+  <span class="title-chip win">2017</span>
+  <span class="title-chip win">2018</span>
+  <span class="title-chip win">2019</span>
+  <span class="title-chip win">2020</span>
+  <span class="title-chip win">2021</span>
+</div>
+
+    </div>
+  </div>
+</section>
+
 <div class="next-team">
   <a href="../escuderias/ferrari.html"><span class="eyebrow dim">Anterior</span><h4>Ferrari</h4></a>
   <a href="../escuderias/cadillac.html"><span class="eyebrow dim">Siguiente</span><h4>Cadillac</h4></a>
@@ -300,7 +367,7 @@ P1</b>
     </div>
     <div class="foot-bot">
       <span>Temporada 2026 · datos actualizados el 17 de noviembre de 2026</span>
-      <span>Datos: Jolpica F1 API · Fotos: Wikimedia Commons · Titulares: Autosport · Crash.net · Motorsport Week · Motorsport.com</span>
+      <span>Datos: Jolpica F1 API · Fotos: Wikimedia Commons · Titulares: Autosport · Crash.net · Motorsport Week · Motorsport.com · RaceFans</span>
     </div>
   </div>
 </footer>

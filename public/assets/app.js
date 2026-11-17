@@ -53,4 +53,18 @@
     try { await navigator.clipboard.writeText(location.href); b.textContent = 'Enlace copiado'; }
     catch { b.textContent = location.href; }
   }));
+
+  // Semana de GP: si el build es antiguo y la semana ya terminó, se retira el tema
+  // y el sitio vuelve a sus colores neutros sin esperar a la siguiente compilación.
+  const body = document.body;
+  if (body.classList.contains('race-week') && body.dataset.gpEnd) {
+    const end = new Date(body.dataset.gpEnd + 'T23:59:59');
+    if (Date.now() > end.getTime()) {
+      body.classList.remove('race-week');
+      const ribbon = document.querySelector('.gp-ribbon');
+      if (ribbon) ribbon.remove();
+      document.documentElement.style.setProperty('--gp', '#ff5a1f');
+      document.documentElement.style.setProperty('--gp-2', '#e8e8e8');
+    }
+  }
 })();
