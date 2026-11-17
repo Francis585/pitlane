@@ -317,30 +317,35 @@ def commons_car_photo(team_name: str, slug_name: str) -> str | None:
     except Exception:
         return None
     pages = (data.get("query") or {}).get("pages") or {}
-    best = None
+    candidates = []
     for pg in pages.values():
         ii = (pg.get("imageinfo") or [{}])[0]
         w, h = ii.get("width", 0), ii.get("height", 0)
-        if not w or not h or w < 1200 or h == 0:
+        if not w or not h or w < 1200:
             continue
-        if w / h < 1.3:          # interesan fotos apaisadas
+        if w / h < 1.25:          # interesan fotos apaisadas
             continue
         if not usable_image(ii.get("url", "")):
             continue
-        best = ii.get("thumburl") or ii.get("url")
-        if best:
-            break
-    if not best:
-        return None
-    try:
-        img = get(best, timeout=60)
+        url = ii.get("thumburl") or ii.get("url")
+        if url:
+            candidates.append(url)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    probe = dest.with_suffix(".tmp.jpg")
+    for url in candidates[:4]:
+        try:
+            img = get(url, timeout=60)
+        except Exception:
+            continue
         if len(img) < 12000:
-            return None
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_bytes(img)
-        return f"assets/teams/{slug_name}-car.jpg" if is_photo(dest) else None
-    except Exception:
-        return None
+            continue
+        probe.write_bytes(img)
+        # ni mapas ni fotos nocturnas: la cabecera necesita una imagen legible
+        if is_photo(probe) and brightness(probe) >= 42:
+            probe.replace(dest)
+            return f"assets/teams/{slug_name}-car.jpg"
+    probe.unlink(missing_ok=True)
+    return None
 
 
 # Títulos extra de Wikipedia para circuitos cuya página solo ofrece mapas.
@@ -449,6 +454,17 @@ def usable_image(url: str) -> bool:
     if low.endswith((".svg", ".gif")):
         return False
     return not BAD_IMG.search(low.rsplit("/", 1)[-1])
+
+
+def brightness(path: pathlib.Path) -> int:
+    """Luminosidad media (0-255). Descarta fotos casi negras para cabeceras."""
+    try:
+        from PIL import Image
+        im = Image.open(path).convert("L").resize((80, 80))
+        px = list(im.getdata())
+        return int(sum(px) / len(px))
+    except Exception:
+        return 128
 
 
 def is_photo(path: pathlib.Path) -> bool:

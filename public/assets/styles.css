@@ -769,7 +769,7 @@ body.race-week .circ-hero-img ~ .circ-hero-in .eyebrow { color: var(--gp); }
 /* cabecera de escudería: coche a sangre */
 .team-hero { min-height: clamp(440px, 62vh, 620px); display: flex; flex-direction: column; justify-content: flex-end; }
 .team-hero .th-in { padding-top: clamp(70px, 11vw, 150px); }
-.team-hero-photo { opacity: .95; filter: saturate(.9) contrast(1.05); background-position: 68% 50%; }
+.team-hero-photo { opacity: .95; filter: saturate(.95) brightness(1.12) contrast(1.04); background-position: 68% 50%; }
 .team-hero-photo::after {
   background:
     linear-gradient(90deg, rgba(7, 8, 10, .97) 0%, rgba(7, 8, 10, .86) 34%, rgba(7, 8, 10, .3) 66%, rgba(7, 8, 10, .18) 100%),
@@ -928,3 +928,7 @@ body { animation: pageIn .5s ease both; }
 .t-clasico .logo b, .t-tecnico .logo b, .t-moderno .logo b, .t-rebelde .logo b { color: var(--brand); }
 .t-clasico .eyebrow:not(.dim), .t-tecnico .eyebrow:not(.dim),
 .t-moderno .eyebrow:not(.dim), .t-rebelde .eyebrow:not(.dim) { color: var(--brand); }
+
+/* el acento de la escudería manda sobre el del GP */
+body.race-week .t-clasico .logo b, body.race-week .t-tecnico .logo b,
+body.race-week .t-moderno .logo b, body.race-week .t-rebelde .logo b { color: var(--brand) !important; }
