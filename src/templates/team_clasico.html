@@ -54,7 +54,8 @@
           <div style="display:flex;justify-content:space-between"><span>Sede</span><span style="color:#f6f2ec">{{ tm.base }}</span></div>
           <div style="display:flex;justify-content:space-between"><span>Fundación</span><span style="color:#f6f2ec">{{ tm.founded }}</span></div>
           <div style="display:flex;justify-content:space-between"><span>Unidad de potencia</span><span style="color:#f6f2ec">{{ tm.engine }}</span></div>
-          <div style="display:flex;justify-content:space-between"><span>Títulos</span><span style="color:#f6f2ec">{{ tm.titles }}{% if tm.title_years %} · {{ tm.title_years }}{% endif %}</span></div>
+          <div style="display:flex;justify-content:space-between;gap:14px"><span>Títulos</span><span style="color:#f6f2ec">{{ tm.titles }}</span></div>
+          {% if tm.title_years %}<div style="line-height:1.5">{{ tm.title_years }}</div>{% endif %}
         </div>
       </aside>
     </div>
