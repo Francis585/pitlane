@@ -3106,7 +3106,7 @@
    }
   }
  ],
- "generated": "2026-11-18T17:55:30+00:00",
+ "generated": "2026-11-18T22:29:55+00:00",
  "round": 20,
  "total_races": 23,
  "rounds_done": 20,
@@ -3556,7 +3556,218 @@
      "fastest_rank": ""
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:19.507",
+     "q2": "1:18.934",
+     "q3": "1:18.518"
+    },
+    {
+     "pos": "2",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:20.120",
+     "q2": "1:19.435",
+     "q3": "1:18.811"
+    },
+    {
+     "pos": "3",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:20.023",
+     "q2": "1:19.653",
+     "q3": "1:19.303"
+    },
+    {
+     "pos": "4",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:20.226",
+     "q2": "1:19.357",
+     "q3": "1:19.327"
+    },
+    {
+     "pos": "5",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:19.664",
+     "q2": "1:19.525",
+     "q3": "1:19.380"
+    },
+    {
+     "pos": "6",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:20.010",
+     "q2": "1:19.882",
+     "q3": "1:19.475"
+    },
+    {
+     "pos": "7",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:19.811",
+     "q2": "1:19.921",
+     "q3": "1:19.478"
+    },
+    {
+     "pos": "8",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:20.491",
+     "q2": "1:20.144",
+     "q3": "1:19.994"
+    },
+    {
+     "pos": "9",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:20.409",
+     "q2": "1:19.971",
+     "q3": "1:21.247"
+    },
+    {
+     "pos": "10",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:20.495",
+     "q2": "1:20.221",
+     "q3": ""
+    },
+    {
+     "pos": "11",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:21.024",
+     "q2": "1:20.303",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:21.247",
+     "q2": "1:20.311",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:20.759",
+     "q2": "1:20.491",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:21.138",
+     "q2": "1:20.501",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:21.051",
+     "q2": "1:20.941",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:21.200",
+     "q2": "1:21.270",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:21.969",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:22.605",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:23.244",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 2,
@@ -4003,7 +4214,473 @@
      "fastest_rank": ""
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:33.305",
+     "q2": "1:32.443",
+     "q3": "1:32.064"
+    },
+    {
+     "pos": "2",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:33.262",
+     "q2": "1:32.523",
+     "q3": "1:32.286"
+    },
+    {
+     "pos": "3",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:33.522",
+     "q2": "1:32.567",
+     "q3": "1:32.415"
+    },
+    {
+     "pos": "4",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:33.175",
+     "q2": "1:32.486",
+     "q3": "1:32.428"
+    },
+    {
+     "pos": "5",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:33.590",
+     "q2": "1:33.130",
+     "q3": "1:32.550"
+    },
+    {
+     "pos": "6",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:33.535",
+     "q2": "1:32.910",
+     "q3": "1:32.608"
+    },
+    {
+     "pos": "7",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:33.788",
+     "q2": "1:33.003",
+     "q3": "1:32.873"
+    },
+    {
+     "pos": "8",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:33.417",
+     "q2": "1:33.098",
+     "q3": "1:33.002"
+    },
+    {
+     "pos": "9",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:33.632",
+     "q2": "1:33.352",
+     "q3": "1:33.121"
+    },
+    {
+     "pos": "10",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:33.687",
+     "q2": "1:33.197",
+     "q3": "1:33.292"
+    },
+    {
+     "pos": "11",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:34.116",
+     "q2": "1:33.354",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:33.634",
+     "q2": "1:33.357",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:33.974",
+     "q2": "1:33.538",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:34.139",
+     "q2": "1:33.765",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:33.906",
+     "q2": "1:33.784",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:33.549",
+     "q2": "1:33.965",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:34.317",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:34.772",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:35.203",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:35.436",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:35.995",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:36.906",
+     "q2": "",
+     "q3": ""
+    }
+   ],
+   "sprint": [
+    {
+     "pos": "1",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 8,
+     "time": "33:38.998"
+    },
+    {
+     "pos": "2",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 7,
+     "time": "+0.674"
+    },
+    {
+     "pos": "3",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 6,
+     "time": "+2.554"
+    },
+    {
+     "pos": "4",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 5,
+     "time": "+4.433"
+    },
+    {
+     "pos": "5",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 4,
+     "time": "+5.688"
+    },
+    {
+     "pos": "6",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 3,
+     "time": "+6.809"
+    },
+    {
+     "pos": "7",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 2,
+     "time": "+10.900"
+    },
+    {
+     "pos": "8",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 1,
+     "time": "+11.271"
+    },
+    {
+     "pos": "9",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 0,
+     "time": "+11.619"
+    },
+    {
+     "pos": "10",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 0,
+     "time": "+13.887"
+    },
+    {
+     "pos": "11",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 0,
+     "time": "+14.780"
+    },
+    {
+     "pos": "12",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "+15.753"
+    },
+    {
+     "pos": "13",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 0,
+     "time": "+15.858"
+    },
+    {
+     "pos": "14",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 0,
+     "time": "+16.393"
+    },
+    {
+     "pos": "15",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 0,
+     "time": "+16.430"
+    },
+    {
+     "pos": "16",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "+20.014"
+    },
+    {
+     "pos": "17",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "+21.599"
+    },
+    {
+     "pos": "18",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "+21.971"
+    },
+    {
+     "pos": "19",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "+28.241"
+    },
+    {
+     "pos": "R",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 0,
+     "time": "Retired"
+    },
+    {
+     "pos": "R",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "Retired"
+    },
+    {
+     "pos": "R",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 0,
+     "time": "Retired"
+    }
+   ]
   },
   {
    "round": 3,
@@ -4450,7 +5127,251 @@
      "fastest_rank": "18"
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:30.035",
+     "q2": "1:29.048",
+     "q3": "1:28.778"
+    },
+    {
+     "pos": "2",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:29.967",
+     "q2": "1:29.686",
+     "q3": "1:29.076"
+    },
+    {
+     "pos": "3",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:30.200",
+     "q2": "1:29.451",
+     "q3": "1:29.132"
+    },
+    {
+     "pos": "4",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:29.915",
+     "q2": "1:29.303",
+     "q3": "1:29.405"
+    },
+    {
+     "pos": "5",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:30.401",
+     "q2": "1:29.795",
+     "q3": "1:29.409"
+    },
+    {
+     "pos": "6",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:30.309",
+     "q2": "1:29.589",
+     "q3": "1:29.567"
+    },
+    {
+     "pos": "7",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:30.584",
+     "q2": "1:29.874",
+     "q3": "1:29.691"
+    },
+    {
+     "pos": "8",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:30.662",
+     "q2": "1:30.104",
+     "q3": "1:29.978"
+    },
+    {
+     "pos": "9",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:30.359",
+     "q2": "1:29.990",
+     "q3": "1:30.274"
+    },
+    {
+     "pos": "10",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:30.781",
+     "q2": "1:30.109",
+     "q3": "1:30.319"
+    },
+    {
+     "pos": "11",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:30.519",
+     "q2": "1:30.262",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:30.915",
+     "q2": "1:30.309",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:30.358",
+     "q2": "1:30.387",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:30.657",
+     "q2": "1:30.495",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:30.931",
+     "q2": "1:30.627",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:30.927",
+     "q2": "1:31.033",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:31.088",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:31.090",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:32.206",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:32.330",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:32.646",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:32.920",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 4,
@@ -4897,7 +5818,473 @@
      "fastest_rank": "19"
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:28.653",
+     "q2": "1:28.289",
+     "q3": "1:27.798"
+    },
+    {
+     "pos": "2",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:29.099",
+     "q2": "1:28.116",
+     "q3": "1:27.964"
+    },
+    {
+     "pos": "3",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:28.938",
+     "q2": "1:28.315",
+     "q3": "1:28.143"
+    },
+    {
+     "pos": "4",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:29.183",
+     "q2": "1:28.920",
+     "q3": "1:28.183"
+    },
+    {
+     "pos": "5",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:29.492",
+     "q2": "1:28.477",
+     "q3": "1:28.197"
+    },
+    {
+     "pos": "6",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:29.483",
+     "q2": "1:28.477",
+     "q3": "1:28.319"
+    },
+    {
+     "pos": "7",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:29.920",
+     "q2": "1:28.332",
+     "q3": "1:28.500"
+    },
+    {
+     "pos": "8",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:29.584",
+     "q2": "1:28.975",
+     "q3": "1:28.762"
+    },
+    {
+     "pos": "9",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:29.914",
+     "q2": "1:29.070",
+     "q3": "1:28.810"
+    },
+    {
+     "pos": "10",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:29.645",
+     "q2": "1:29.439",
+     "q3": ""
+    },
+    {
+     "pos": "11",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:29.595",
+     "q2": "1:29.499",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:29.340",
+     "q2": "1:29.567",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:29.540",
+     "q2": "1:29.568",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:29.838",
+     "q2": "1:29.772",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:29.720",
+     "q2": "1:29.946",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:30.133",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:31.098",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:31.164",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:31.629",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:31.967",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:33.737",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "",
+     "q2": "",
+     "q3": ""
+    }
+   ],
+   "sprint": [
+    {
+     "pos": "1",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 8,
+     "time": "29:15.045"
+    },
+    {
+     "pos": "2",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 7,
+     "time": "+3.766"
+    },
+    {
+     "pos": "3",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 6,
+     "time": "+6.251"
+    },
+    {
+     "pos": "4",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 5,
+     "time": "+12.951"
+    },
+    {
+     "pos": "5",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 4,
+     "time": "+13.639"
+    },
+    {
+     "pos": "6",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 3,
+     "time": "+13.777"
+    },
+    {
+     "pos": "7",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 2,
+     "time": "+21.665"
+    },
+    {
+     "pos": "8",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 1,
+     "time": "+30.525"
+    },
+    {
+     "pos": "9",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 0,
+     "time": "+35.346"
+    },
+    {
+     "pos": "10",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 0,
+     "time": "+36.970"
+    },
+    {
+     "pos": "11",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 0,
+     "time": "+56.972"
+    },
+    {
+     "pos": "12",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 0,
+     "time": "+57.365"
+    },
+    {
+     "pos": "13",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "+58.504"
+    },
+    {
+     "pos": "14",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 0,
+     "time": "+59.358"
+    },
+    {
+     "pos": "15",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "+1:16.067"
+    },
+    {
+     "pos": "16",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "+1:16.691"
+    },
+    {
+     "pos": "17",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "+1:17.626"
+    },
+    {
+     "pos": "18",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "+1:28.173"
+    },
+    {
+     "pos": "19",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "+1:29.597"
+    },
+    {
+     "pos": "W",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 0,
+     "time": "Did not start"
+    },
+    {
+     "pos": "W",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 0,
+     "time": "Did not start"
+    },
+    {
+     "pos": "D",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 0,
+     "time": "Disqualified"
+    }
+   ]
   },
   {
    "round": 5,
@@ -5344,7 +6731,473 @@
      "fastest_rank": ""
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:13.953",
+     "q2": "1:13.079",
+     "q3": "1:12.578"
+    },
+    {
+     "pos": "2",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:13.380",
+     "q2": "1:13.076",
+     "q3": "1:12.646"
+    },
+    {
+     "pos": "3",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:13.503",
+     "q2": "1:13.049",
+     "q3": "1:12.729"
+    },
+    {
+     "pos": "4",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:13.559",
+     "q2": "1:13.285",
+     "q3": "1:12.781"
+    },
+    {
+     "pos": "5",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:13.767",
+     "q2": "1:13.041",
+     "q3": "1:12.868"
+    },
+    {
+     "pos": "6",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:14.067",
+     "q2": "1:13.479",
+     "q3": "1:12.907"
+    },
+    {
+     "pos": "7",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:13.654",
+     "q2": "1:12.975",
+     "q3": "1:12.935"
+    },
+    {
+     "pos": "8",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:13.825",
+     "q2": "1:13.496",
+     "q3": "1:12.976"
+    },
+    {
+     "pos": "9",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:13.895",
+     "q2": "1:13.548",
+     "q3": "1:13.280"
+    },
+    {
+     "pos": "10",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:14.466",
+     "q2": "1:13.857",
+     "q3": "1:13.697"
+    },
+    {
+     "pos": "11",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:14.562",
+     "q2": "1:13.886",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:14.346",
+     "q2": "1:13.897",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:14.775",
+     "q2": "1:14.071",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:14.698",
+     "q2": "1:14.187",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:14.276",
+     "q2": "1:14.273",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:14.449",
+     "q2": "1:14.416",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:14.845",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:14.851",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:15.196",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:15.429",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:16.195",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:16.272",
+     "q2": "",
+     "q3": ""
+    }
+   ],
+   "sprint": [
+    {
+     "pos": "1",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 8,
+     "time": "28:50.951"
+    },
+    {
+     "pos": "2",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 7,
+     "time": "+1.272"
+    },
+    {
+     "pos": "3",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 6,
+     "time": "+1.843"
+    },
+    {
+     "pos": "4",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 5,
+     "time": "+9.797"
+    },
+    {
+     "pos": "5",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 4,
+     "time": "+9.929"
+    },
+    {
+     "pos": "6",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 3,
+     "time": "+10.545"
+    },
+    {
+     "pos": "7",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 2,
+     "time": "+15.935"
+    },
+    {
+     "pos": "8",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 1,
+     "time": "+29.710"
+    },
+    {
+     "pos": "9",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 0,
+     "time": "+31.621"
+    },
+    {
+     "pos": "10",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "+36.793"
+    },
+    {
+     "pos": "11",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 0,
+     "time": "+1:01.344"
+    },
+    {
+     "pos": "12",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 0,
+     "time": "+1:01.814"
+    },
+    {
+     "pos": "13",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 0,
+     "time": "+1:04.209"
+    },
+    {
+     "pos": "14",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "+1:10.402"
+    },
+    {
+     "pos": "15",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 0,
+     "time": "+1:12.158"
+    },
+    {
+     "pos": "16",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "+13.127"
+    },
+    {
+     "pos": "17",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "+17.861"
+    },
+    {
+     "pos": "18",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 0,
+     "time": "+23.846"
+    },
+    {
+     "pos": "19",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "+53.493"
+    },
+    {
+     "pos": "20",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 0,
+     "time": "+1:08.477"
+    },
+    {
+     "pos": "21",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 0,
+     "time": "+18.135"
+    },
+    {
+     "pos": "R",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "Retired"
+    }
+   ]
   },
   {
    "round": 6,
@@ -5791,7 +7644,251 @@
      "fastest_rank": ""
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:13.599",
+     "q2": "1:12.704",
+     "q3": "1:12.051"
+    },
+    {
+     "pos": "2",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:13.490",
+     "q2": "1:12.499",
+     "q3": "1:12.094"
+    },
+    {
+     "pos": "3",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:13.777",
+     "q2": "1:12.934",
+     "q3": "1:12.279"
+    },
+    {
+     "pos": "4",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:13.293",
+     "q2": "1:12.774",
+     "q3": "1:12.351"
+    },
+    {
+     "pos": "5",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:14.408",
+     "q2": "1:12.722",
+     "q3": "1:12.434"
+    },
+    {
+     "pos": "6",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:14.214",
+     "q2": "1:13.238",
+     "q3": "1:12.445"
+    },
+    {
+     "pos": "7",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:14.159",
+     "q2": "1:12.983",
+     "q3": "1:12.624"
+    },
+    {
+     "pos": "8",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:13.630",
+     "q2": "1:12.919",
+     "q3": "1:12.765"
+    },
+    {
+     "pos": "9",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:14.469",
+     "q2": "1:13.762",
+     "q3": "1:13.226"
+    },
+    {
+     "pos": "10",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:14.498",
+     "q2": "1:13.471",
+     "q3": "1:13.412"
+    },
+    {
+     "pos": "11",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:14.321",
+     "q2": "1:13.787",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:14.348",
+     "q2": "1:13.815",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:13.923",
+     "q2": "1:13.902",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:14.573",
+     "q2": "1:13.995",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:14.685",
+     "q2": "1:14.248",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:14.683",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:14.722",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:14.747",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:14.814",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:15.283",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:15.349",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:16.061",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 7,
@@ -6238,7 +8335,251 @@
      "fastest_rank": "22"
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:15.717",
+     "q2": "1:15.228",
+     "q3": "1:14.679"
+    },
+    {
+     "pos": "2",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:15.625",
+     "q2": "1:15.418",
+     "q3": "1:14.743"
+    },
+    {
+     "pos": "3",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:15.977",
+     "q2": "1:15.295",
+     "q3": "1:14.998"
+    },
+    {
+     "pos": "4",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:16.287",
+     "q2": "1:15.361",
+     "q3": "1:15.001"
+    },
+    {
+     "pos": "5",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:16.352",
+     "q2": "1:15.484",
+     "q3": "1:15.021"
+    },
+    {
+     "pos": "6",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:16.427",
+     "q2": "1:15.754",
+     "q3": "1:15.077"
+    },
+    {
+     "pos": "7",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:16.138",
+     "q2": "1:15.518",
+     "q3": "1:15.090"
+    },
+    {
+     "pos": "8",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:16.673",
+     "q2": "1:15.585",
+     "q3": "1:16.542"
+    },
+    {
+     "pos": "9",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:16.066",
+     "q2": "1:15.768",
+     "q3": "1:16.657"
+    },
+    {
+     "pos": "10",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:15.964",
+     "q2": "1:15.281",
+     "q3": ""
+    },
+    {
+     "pos": "11",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:16.425",
+     "q2": "1:15.840",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:16.616",
+     "q2": "1:16.001",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:16.590",
+     "q2": "1:16.191",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:16.599",
+     "q2": "1:16.261",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:16.571",
+     "q2": "1:16.389",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:16.881",
+     "q2": "1:17.827",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:17.073",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:17.424",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:17.545",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:17.757",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:18.758",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:18.815",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 8,
@@ -6685,7 +9026,251 @@
      "fastest_rank": ""
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:07.398",
+     "q2": "1:06.979",
+     "q3": "1:06.113"
+    },
+    {
+     "pos": "2",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:07.543",
+     "q2": "1:07.030",
+     "q3": "1:06.349"
+    },
+    {
+     "pos": "3",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:07.290",
+     "q2": "1:06.994",
+     "q3": "1:06.408"
+    },
+    {
+     "pos": "4",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:07.083",
+     "q2": "1:06.763",
+     "q3": "1:06.414"
+    },
+    {
+     "pos": "5",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:07.407",
+     "q2": "1:07.183",
+     "q3": "1:06.475"
+    },
+    {
+     "pos": "6",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:07.259",
+     "q2": "1:06.897",
+     "q3": "1:06.502"
+    },
+    {
+     "pos": "7",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:07.487",
+     "q2": "1:06.890",
+     "q3": "1:06.511"
+    },
+    {
+     "pos": "8",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:07.408",
+     "q2": "1:07.086",
+     "q3": "1:06.632"
+    },
+    {
+     "pos": "9",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:07.385",
+     "q2": "1:07.136",
+     "q3": "1:06.955"
+    },
+    {
+     "pos": "10",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:07.549",
+     "q2": "1:07.155",
+     "q3": "1:07.007"
+    },
+    {
+     "pos": "11",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:08.038",
+     "q2": "1:07.223",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:08.035",
+     "q2": "1:07.293",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:08.061",
+     "q2": "1:07.523",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:08.066",
+     "q2": "1:07.611",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:08.231",
+     "q2": "1:07.817",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:07.894",
+     "q2": "1:08.171",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:08.252",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:08.509",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:08.945",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:09.030",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:09.942",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:10.363",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 9,
@@ -7132,7 +9717,473 @@
      "fastest_rank": "10"
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:29.719",
+     "q2": "1:28.493",
+     "q3": "1:28.111"
+    },
+    {
+     "pos": "2",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:29.534",
+     "q2": "1:28.626",
+     "q3": "1:28.286"
+    },
+    {
+     "pos": "3",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:29.644",
+     "q2": "1:28.864",
+     "q3": "1:28.458"
+    },
+    {
+     "pos": "4",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:29.985",
+     "q2": "1:28.920",
+     "q3": "1:28.481"
+    },
+    {
+     "pos": "5",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:29.276",
+     "q2": "1:29.069",
+     "q3": "1:28.746"
+    },
+    {
+     "pos": "6",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:30.186",
+     "q2": "1:29.383",
+     "q3": "1:28.877"
+    },
+    {
+     "pos": "7",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:29.549",
+     "q2": "1:29.113",
+     "q3": "1:28.893"
+    },
+    {
+     "pos": "8",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:29.971",
+     "q2": "1:29.218",
+     "q3": "1:29.032"
+    },
+    {
+     "pos": "9",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:29.661",
+     "q2": "1:29.324",
+     "q3": "1:29.305"
+    },
+    {
+     "pos": "10",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:29.300",
+     "q2": "1:29.429",
+     "q3": "1:29.716"
+    },
+    {
+     "pos": "11",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:30.269",
+     "q2": "1:29.461",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:30.345",
+     "q2": "1:30.063",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:29.539",
+     "q2": "1:30.076",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:30.570",
+     "q2": "1:30.501",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:30.562",
+     "q2": "1:30.623",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:30.638",
+     "q2": "1:31.341",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:30.680",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:31.227",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:31.321",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:31.451",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:32.863",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:33.025",
+     "q2": "",
+     "q3": ""
+    }
+   ],
+   "sprint": [
+    {
+     "pos": "1",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 8,
+     "time": "26:12.129"
+    },
+    {
+     "pos": "2",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 7,
+     "time": "+2.745"
+    },
+    {
+     "pos": "3",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 6,
+     "time": "+9.783"
+    },
+    {
+     "pos": "4",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 5,
+     "time": "+10.639"
+    },
+    {
+     "pos": "5",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 4,
+     "time": "+12.620"
+    },
+    {
+     "pos": "6",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 3,
+     "time": "+16.550"
+    },
+    {
+     "pos": "7",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 2,
+     "time": "+17.551"
+    },
+    {
+     "pos": "8",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 1,
+     "time": "+30.233"
+    },
+    {
+     "pos": "9",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 0,
+     "time": "+30.953"
+    },
+    {
+     "pos": "10",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 0,
+     "time": "+35.110"
+    },
+    {
+     "pos": "11",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 0,
+     "time": "+40.273"
+    },
+    {
+     "pos": "12",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 0,
+     "time": "+41.026"
+    },
+    {
+     "pos": "13",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 0,
+     "time": "+42.499"
+    },
+    {
+     "pos": "14",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 0,
+     "time": "+45.784"
+    },
+    {
+     "pos": "15",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 0,
+     "time": "+46.680"
+    },
+    {
+     "pos": "16",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 0,
+     "time": "+49.810"
+    },
+    {
+     "pos": "17",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "+50.379"
+    },
+    {
+     "pos": "18",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "+50.757"
+    },
+    {
+     "pos": "19",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "+1:15.117"
+    },
+    {
+     "pos": "20",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "+1:31.872"
+    },
+    {
+     "pos": "21",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "+22.277"
+    },
+    {
+     "pos": "22",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "+33.566"
+    }
+   ]
   },
   {
    "round": 10,
@@ -7579,7 +10630,251 @@
      "fastest_rank": ""
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:46.304",
+     "q2": "1:45.142",
+     "q3": "1:44.361"
+    },
+    {
+     "pos": "2",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:45.930",
+     "q2": "1:45.589",
+     "q3": "1:44.678"
+    },
+    {
+     "pos": "3",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:45.865",
+     "q2": "1:45.454",
+     "q3": "1:44.801"
+    },
+    {
+     "pos": "4",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:46.185",
+     "q2": "1:45.689",
+     "q3": "1:44.869"
+    },
+    {
+     "pos": "5",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:46.278",
+     "q2": "1:45.397",
+     "q3": "1:44.893"
+    },
+    {
+     "pos": "6",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:46.124",
+     "q2": "1:45.543",
+     "q3": "1:44.895"
+    },
+    {
+     "pos": "7",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:46.433",
+     "q2": "1:45.671",
+     "q3": "1:45.016"
+    },
+    {
+     "pos": "8",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:46.191",
+     "q2": "1:45.629",
+     "q3": "1:45.143"
+    },
+    {
+     "pos": "9",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:46.609",
+     "q2": "1:46.082",
+     "q3": "1:45.628"
+    },
+    {
+     "pos": "10",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:46.062",
+     "q2": "1:45.823",
+     "q3": ""
+    },
+    {
+     "pos": "11",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:46.501",
+     "q2": "1:46.120",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:46.679",
+     "q2": "1:46.331",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:46.795",
+     "q2": "1:46.392",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:46.893",
+     "q2": "1:46.671",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:47.080",
+     "q2": "1:46.777",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:47.113",
+     "q2": "1:46.779",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:47.120",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:47.801",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:47.823",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:47.971",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:50.002",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:50.177",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 11,
@@ -8026,7 +11321,251 @@
      "fastest_rank": "22"
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:18.277",
+     "q2": "1:17.456",
+     "q3": "1:17.207"
+    },
+    {
+     "pos": "2",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:18.730",
+     "q2": "1:17.803",
+     "q3": "1:17.219"
+    },
+    {
+     "pos": "3",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:18.984",
+     "q2": "1:17.626",
+     "q3": "1:17.445"
+    },
+    {
+     "pos": "4",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:18.726",
+     "q2": "1:18.393",
+     "q3": "1:17.479"
+    },
+    {
+     "pos": "5",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:18.891",
+     "q2": "1:17.928",
+     "q3": "1:17.684"
+    },
+    {
+     "pos": "6",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:18.656",
+     "q2": "1:18.249",
+     "q3": "1:17.725"
+    },
+    {
+     "pos": "7",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:18.856",
+     "q2": "1:18.445",
+     "q3": "1:17.760"
+    },
+    {
+     "pos": "8",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:18.754",
+     "q2": "1:17.872",
+     "q3": "1:17.856"
+    },
+    {
+     "pos": "9",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:19.233",
+     "q2": "1:18.360",
+     "q3": "1:18.281"
+    },
+    {
+     "pos": "10",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:18.796",
+     "q2": "1:18.639",
+     "q3": "1:18.686"
+    },
+    {
+     "pos": "11",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:19.161",
+     "q2": "1:18.765",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:19.741",
+     "q2": "1:18.844",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:19.771",
+     "q2": "1:19.027",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:19.069",
+     "q2": "1:19.105",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:20.010",
+     "q2": "1:19.734",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:20.126",
+     "q2": "1:19.808",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:20.233",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:20.621",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:20.658",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:20.659",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:20.886",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:21.322",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 12,
@@ -8473,7 +12012,473 @@
      "fastest_rank": ""
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:12.695",
+     "q2": "1:11.628",
+     "q3": "1:11.163"
+    },
+    {
+     "pos": "2",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:12.924",
+     "q2": "1:11.959",
+     "q3": "1:11.265"
+    },
+    {
+     "pos": "3",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:13.022",
+     "q2": "1:11.915",
+     "q3": "1:11.296"
+    },
+    {
+     "pos": "4",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:12.610",
+     "q2": "1:11.641",
+     "q3": "1:11.305"
+    },
+    {
+     "pos": "5",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:12.673",
+     "q2": "1:11.970",
+     "q3": "1:11.494"
+    },
+    {
+     "pos": "6",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:13.064",
+     "q2": "1:11.910",
+     "q3": "1:11.558"
+    },
+    {
+     "pos": "7",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:13.290",
+     "q2": "1:11.874",
+     "q3": "1:11.618"
+    },
+    {
+     "pos": "8",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:13.392",
+     "q2": "1:12.301",
+     "q3": "1:11.733"
+    },
+    {
+     "pos": "9",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:13.142",
+     "q2": "1:12.433",
+     "q3": "1:12.079"
+    },
+    {
+     "pos": "10",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:13.074",
+     "q2": "1:12.525",
+     "q3": "1:12.185"
+    },
+    {
+     "pos": "11",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:13.115",
+     "q2": "1:12.616",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Yuki Tsunoda",
+     "driver_id": "tsunoda",
+     "code": "TSU",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:13.085",
+     "q2": "1:12.627",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:13.188",
+     "q2": "1:12.797",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:13.322",
+     "q2": "1:12.800",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:13.544",
+     "q2": "1:13.137",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:13.552",
+     "q2": "1:13.182",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:13.574",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:13.650",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:13.818",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:13.826",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:14.371",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:14.600",
+     "q2": "",
+     "q3": ""
+    }
+   ],
+   "sprint": [
+    {
+     "pos": "1",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 8,
+     "time": "30:25.318"
+    },
+    {
+     "pos": "2",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 7,
+     "time": "+1.360"
+    },
+    {
+     "pos": "3",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 6,
+     "time": "+5.196"
+    },
+    {
+     "pos": "4",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 5,
+     "time": "+5.581"
+    },
+    {
+     "pos": "5",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 4,
+     "time": "+10.185"
+    },
+    {
+     "pos": "6",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 3,
+     "time": "+10.529"
+    },
+    {
+     "pos": "7",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 2,
+     "time": "+12.188"
+    },
+    {
+     "pos": "8",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 1,
+     "time": "+42.510"
+    },
+    {
+     "pos": "9",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 0,
+     "time": "+44.437"
+    },
+    {
+     "pos": "10",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 0,
+     "time": "+44.971"
+    },
+    {
+     "pos": "11",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 0,
+     "time": "+47.471"
+    },
+    {
+     "pos": "12",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 0,
+     "time": "+54.466"
+    },
+    {
+     "pos": "13",
+     "driver": "Yuki Tsunoda",
+     "driver_id": "tsunoda",
+     "code": "TSU",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 0,
+     "time": "+56.483"
+    },
+    {
+     "pos": "14",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 0,
+     "time": "+1:06.098"
+    },
+    {
+     "pos": "15",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 0,
+     "time": "+1:06.588"
+    },
+    {
+     "pos": "16",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "+1:14.632"
+    },
+    {
+     "pos": "17",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "+1:14.650"
+    },
+    {
+     "pos": "18",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "+1:15.284"
+    },
+    {
+     "pos": "19",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "+3.909"
+    },
+    {
+     "pos": "20",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "+37.723"
+    },
+    {
+     "pos": "21",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "+1:02.477"
+    },
+    {
+     "pos": "R",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 0,
+     "time": "Lapped"
+    }
+   ]
   },
   {
    "round": 13,
@@ -8920,7 +12925,251 @@
      "fastest_rank": ""
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:22.612",
+     "q2": "1:22.077",
+     "q3": "1:21.786"
+    },
+    {
+     "pos": "2",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:22.779",
+     "q2": "1:22.161",
+     "q3": "1:21.846"
+    },
+    {
+     "pos": "3",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:22.924",
+     "q2": "1:22.017",
+     "q3": "1:21.966"
+    },
+    {
+     "pos": "4",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:22.902",
+     "q2": "1:22.509",
+     "q3": "1:22.004"
+    },
+    {
+     "pos": "5",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:22.847",
+     "q2": "1:22.516",
+     "q3": "1:22.011"
+    },
+    {
+     "pos": "6",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:22.631",
+     "q2": "1:22.188",
+     "q3": "1:22.070"
+    },
+    {
+     "pos": "7",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:22.758",
+     "q2": "1:21.882",
+     "q3": "1:22.093"
+    },
+    {
+     "pos": "8",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:22.662",
+     "q2": "1:22.400",
+     "q3": "1:22.220"
+    },
+    {
+     "pos": "9",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:22.659",
+     "q2": "1:22.067",
+     "q3": "1:22.256"
+    },
+    {
+     "pos": "10",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:22.727",
+     "q2": "1:22.345",
+     "q3": "1:22.286"
+    },
+    {
+     "pos": "11",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:22.946",
+     "q2": "1:22.517",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:22.906",
+     "q2": "1:22.756",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:23.440",
+     "q2": "1:22.779",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:22.989",
+     "q2": "1:22.821",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:23.616",
+     "q2": "1:23.453",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:23.466",
+     "q2": "1:23.454",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Yuki Tsunoda",
+     "driver_id": "tsunoda",
+     "code": "TSU",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:23.755",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:24.356",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:24.364",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:24.595",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:25.150",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:25.222",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 14,
@@ -9367,7 +13616,229 @@
      "fastest_rank": "19"
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:33.469",
+     "q2": "1:32.873",
+     "q3": "1:31.824"
+    },
+    {
+     "pos": "2",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:33.267",
+     "q2": "1:32.591",
+     "q3": "1:31.835"
+    },
+    {
+     "pos": "3",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:33.381",
+     "q2": "1:32.431",
+     "q3": "1:31.964"
+    },
+    {
+     "pos": "4",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:33.531",
+     "q2": "1:32.710",
+     "q3": "1:32.013"
+    },
+    {
+     "pos": "5",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:33.532",
+     "q2": "1:32.755",
+     "q3": "1:32.019"
+    },
+    {
+     "pos": "6",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:33.211",
+     "q2": "1:32.850",
+     "q3": "1:32.149"
+    },
+    {
+     "pos": "7",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:33.829",
+     "q2": "1:33.204",
+     "q3": "1:32.294"
+    },
+    {
+     "pos": "8",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:33.310",
+     "q2": "1:32.780",
+     "q3": "1:32.316"
+    },
+    {
+     "pos": "9",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:33.963",
+     "q2": "1:33.038",
+     "q3": "1:32.903"
+    },
+    {
+     "pos": "10",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:34.340",
+     "q2": "1:33.204",
+     "q3": "1:33.041"
+    },
+    {
+     "pos": "11",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:34.417",
+     "q2": "1:33.223",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:33.986",
+     "q2": "1:33.388",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:34.667",
+     "q2": "1:33.667",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:34.246",
+     "q2": "1:33.753",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Yuki Tsunoda",
+     "driver_id": "tsunoda",
+     "code": "TSU",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:34.311",
+     "q2": "1:34.084",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:35.307",
+     "q2": "1:35.532",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:35.312",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:35.388",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:35.913",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:38.011",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 15,
@@ -9814,7 +14285,251 @@
      "fastest_rank": "22"
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:43.615",
+     "q2": "1:43.462",
+     "q3": "1:42.526"
+    },
+    {
+     "pos": "2",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:44.360",
+     "q2": "1:43.780",
+     "q3": "1:43.363"
+    },
+    {
+     "pos": "3",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:45.014",
+     "q2": "1:43.814",
+     "q3": "1:43.364"
+    },
+    {
+     "pos": "4",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:44.161",
+     "q2": "1:43.880",
+     "q3": "1:43.500"
+    },
+    {
+     "pos": "5",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:44.571",
+     "q2": "1:44.020",
+     "q3": "1:43.672"
+    },
+    {
+     "pos": "6",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:44.260",
+     "q2": "1:44.037",
+     "q3": "1:43.858"
+    },
+    {
+     "pos": "7",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:44.489",
+     "q2": "1:44.106",
+     "q3": "1:44.047"
+    },
+    {
+     "pos": "8",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:44.041",
+     "q2": "1:43.706",
+     "q3": "1:44.081"
+    },
+    {
+     "pos": "9",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:45.104",
+     "q2": "1:44.629",
+     "q3": "1:44.566"
+    },
+    {
+     "pos": "10",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:45.106",
+     "q2": "1:44.683",
+     "q3": "1:44.963"
+    },
+    {
+     "pos": "11",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:45.228",
+     "q2": "1:44.775",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:45.535",
+     "q2": "1:44.860",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:45.031",
+     "q2": "1:45.001",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:45.039",
+     "q2": "1:45.016",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:45.381",
+     "q2": "1:45.106",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:45.504",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:45.799",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:45.920",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:46.593",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:46.658",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:47.337",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:48.290",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 16,
@@ -10261,7 +14976,251 @@
      "fastest_rank": "22"
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:36.477",
+     "q2": "1:35.696",
+     "q3": "1:35.130"
+    },
+    {
+     "pos": "2",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:36.595",
+     "q2": "1:36.032",
+     "q3": "1:35.428"
+    },
+    {
+     "pos": "3",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:36.898",
+     "q2": "1:36.192",
+     "q3": "1:35.558"
+    },
+    {
+     "pos": "4",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:37.041",
+     "q2": "1:35.959",
+     "q3": "1:35.631"
+    },
+    {
+     "pos": "5",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:36.730",
+     "q2": "1:35.970",
+     "q3": "1:35.666"
+    },
+    {
+     "pos": "6",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:37.092",
+     "q2": "1:36.173",
+     "q3": "1:35.757"
+    },
+    {
+     "pos": "7",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:36.852",
+     "q2": "1:36.020",
+     "q3": "1:35.762"
+    },
+    {
+     "pos": "8",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:37.264",
+     "q2": "1:36.245",
+     "q3": "1:35.871"
+    },
+    {
+     "pos": "9",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:37.174",
+     "q2": "1:36.410",
+     "q3": "1:37.210"
+    },
+    {
+     "pos": "10",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:37.106",
+     "q2": "1:36.814",
+     "q3": "1:37.673"
+    },
+    {
+     "pos": "11",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:37.332",
+     "q2": "1:37.023",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:37.721",
+     "q2": "1:37.220",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:37.651",
+     "q2": "1:37.527",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:37.729",
+     "q2": "1:37.566",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:37.179",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:37.883",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:37.970",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:37.980",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:38.233",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:38.600",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:38.611",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:38.933",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 17,
@@ -10708,7 +15667,473 @@
      "fastest_rank": "22"
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:33.241",
+     "q2": "1:31.639",
+     "q3": "1:31.373"
+    },
+    {
+     "pos": "2",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:32.774",
+     "q2": "1:31.953",
+     "q3": "1:31.427"
+    },
+    {
+     "pos": "3",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:32.429",
+     "q2": "1:31.529",
+     "q3": "1:31.496"
+    },
+    {
+     "pos": "4",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:33.601",
+     "q2": "1:32.079",
+     "q3": "1:31.562"
+    },
+    {
+     "pos": "5",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:32.775",
+     "q2": "1:31.895",
+     "q3": "1:31.712"
+    },
+    {
+     "pos": "6",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:33.617",
+     "q2": "1:32.212",
+     "q3": "1:31.747"
+    },
+    {
+     "pos": "7",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:33.076",
+     "q2": "1:32.245",
+     "q3": "1:31.860"
+    },
+    {
+     "pos": "8",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:33.182",
+     "q2": "1:32.602",
+     "q3": "1:32.225"
+    },
+    {
+     "pos": "9",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:32.885",
+     "q2": "1:32.319",
+     "q3": "1:32.369"
+    },
+    {
+     "pos": "10",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:33.288",
+     "q2": "1:32.498",
+     "q3": "1:32.781"
+    },
+    {
+     "pos": "11",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:33.147",
+     "q2": "1:32.784",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:33.356",
+     "q2": "1:32.908",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:33.803",
+     "q2": "1:33.323",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:33.774",
+     "q2": "1:33.526",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:34.169",
+     "q2": "1:33.658",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:33.261",
+     "q2": "1:33.787",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:34.223",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:34.289",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:34.946",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:35.123",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:35.984",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "",
+     "q2": "",
+     "q3": ""
+    }
+   ],
+   "sprint": [
+    {
+     "pos": "1",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 8,
+     "time": "39:48.162"
+    },
+    {
+     "pos": "2",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 7,
+     "time": "+2.591"
+    },
+    {
+     "pos": "3",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "points": 6,
+     "time": "+16.871"
+    },
+    {
+     "pos": "4",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 5,
+     "time": "+17.238"
+    },
+    {
+     "pos": "5",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 4,
+     "time": "+20.632"
+    },
+    {
+     "pos": "6",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 3,
+     "time": "+24.321"
+    },
+    {
+     "pos": "7",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 2,
+     "time": "+27.525"
+    },
+    {
+     "pos": "8",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 1,
+     "time": "+28.272"
+    },
+    {
+     "pos": "9",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 0,
+     "time": "+36.220"
+    },
+    {
+     "pos": "10",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "points": 0,
+     "time": "+37.640"
+    },
+    {
+     "pos": "11",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "+50.464"
+    },
+    {
+     "pos": "12",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "+52.467"
+    },
+    {
+     "pos": "13",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "points": 0,
+     "time": "+55.792"
+    },
+    {
+     "pos": "14",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "points": 0,
+     "time": "Retired"
+    },
+    {
+     "pos": "R",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "points": 0,
+     "time": "Retired"
+    },
+    {
+     "pos": "R",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "points": 0,
+     "time": "Retired"
+    },
+    {
+     "pos": "R",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "Retired"
+    },
+    {
+     "pos": "R",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "points": 0,
+     "time": "Retired"
+    },
+    {
+     "pos": "R",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "points": 0,
+     "time": "Retired"
+    },
+    {
+     "pos": "R",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "points": 0,
+     "time": "Retired"
+    },
+    {
+     "pos": "R",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "points": 0,
+     "time": "Retired"
+    },
+    {
+     "pos": "R",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "points": 0,
+     "time": "Retired"
+    }
+   ]
   },
   {
    "round": 18,
@@ -11155,7 +16580,251 @@
      "fastest_rank": "22"
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:35.390",
+     "q2": "1:34.278",
+     "q3": "1:34.035"
+    },
+    {
+     "pos": "2",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:35.215",
+     "q2": "1:34.471",
+     "q3": "1:34.214"
+    },
+    {
+     "pos": "3",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:35.286",
+     "q2": "1:34.887",
+     "q3": "1:34.250"
+    },
+    {
+     "pos": "4",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:35.200",
+     "q2": "1:34.198",
+     "q3": "1:34.267"
+    },
+    {
+     "pos": "5",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:35.355",
+     "q2": "1:34.833",
+     "q3": "1:34.311"
+    },
+    {
+     "pos": "6",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:35.730",
+     "q2": "1:34.305",
+     "q3": "1:34.476"
+    },
+    {
+     "pos": "7",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:35.842",
+     "q2": "1:34.818",
+     "q3": "1:34.803"
+    },
+    {
+     "pos": "8",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:35.029",
+     "q2": "1:34.539",
+     "q3": "1:35.049"
+    },
+    {
+     "pos": "9",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:35.755",
+     "q2": "1:34.950",
+     "q3": "1:36.049"
+    },
+    {
+     "pos": "10",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:35.662",
+     "q2": "1:35.058",
+     "q3": ""
+    },
+    {
+     "pos": "11",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:35.969",
+     "q2": "1:35.080",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:35.704",
+     "q2": "1:35.158",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:35.632",
+     "q2": "1:35.691",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:35.898",
+     "q2": "1:35.722",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:36.240",
+     "q2": "1:35.818",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:36.175",
+     "q2": "1:36.031",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Esteban Ocon",
+     "driver_id": "ocon",
+     "code": "OCO",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:36.531",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:36.677",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:36.770",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:36.967",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:37.433",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:37.523",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 19,
@@ -11602,7 +17271,251 @@
      "fastest_rank": "21"
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:17.341",
+     "q2": "1:16.953",
+     "q3": "1:16.514"
+    },
+    {
+     "pos": "2",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:17.659",
+     "q2": "1:17.027",
+     "q3": "1:16.523"
+    },
+    {
+     "pos": "3",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:17.506",
+     "q2": "1:16.944",
+     "q3": "1:16.633"
+    },
+    {
+     "pos": "4",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:17.942",
+     "q2": "1:16.876",
+     "q3": "1:16.692"
+    },
+    {
+     "pos": "5",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:17.918",
+     "q2": "1:17.133",
+     "q3": "1:16.707"
+    },
+    {
+     "pos": "6",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:17.733",
+     "q2": "1:16.728",
+     "q3": "1:16.824"
+    },
+    {
+     "pos": "7",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:17.385",
+     "q2": "1:17.047",
+     "q3": "1:16.900"
+    },
+    {
+     "pos": "8",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:18.210",
+     "q2": "1:17.135",
+     "q3": "1:17.117"
+    },
+    {
+     "pos": "9",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:18.194",
+     "q2": "1:17.278",
+     "q3": "1:17.153"
+    },
+    {
+     "pos": "10",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:17.868",
+     "q2": "1:17.306",
+     "q3": ""
+    },
+    {
+     "pos": "11",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:18.517",
+     "q2": "1:17.640",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:17.659",
+     "q2": "1:17.646",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:17.727",
+     "q2": "1:17.680",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:18.083",
+     "q2": "1:18.083",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:18.521",
+     "q2": "1:18.885",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:18.630",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:18.908",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Ryo Hirakawa",
+     "driver_id": "ryo_hirakawa",
+     "code": "HIR",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:18.958",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:19.072",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:19.105",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:19.852",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 20,
@@ -12049,7 +17962,251 @@
      "fastest_rank": ""
     }
    ],
-   "finished": 22
+   "finished": 22,
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:30.939",
+     "q2": "1:29.207",
+     "q3": "1:27.470"
+    },
+    {
+     "pos": "2",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:31.206",
+     "q2": "1:26.745",
+     "q3": "1:27.674"
+    },
+    {
+     "pos": "3",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:32.229",
+     "q2": "1:29.302",
+     "q3": "1:28.095"
+    },
+    {
+     "pos": "4",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:32.121",
+     "q2": "1:28.082",
+     "q3": "1:28.289"
+    },
+    {
+     "pos": "5",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:32.085",
+     "q2": "1:27.049",
+     "q3": "1:28.321"
+    },
+    {
+     "pos": "6",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:31.693",
+     "q2": "1:28.361",
+     "q3": "1:28.668"
+    },
+    {
+     "pos": "7",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:32.059",
+     "q2": "1:27.218",
+     "q3": "1:28.763"
+    },
+    {
+     "pos": "8",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:33.030",
+     "q2": "1:29.130",
+     "q3": "1:29.831"
+    },
+    {
+     "pos": "9",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:32.092",
+     "q2": "1:29.072",
+     "q3": "1:30.311"
+    },
+    {
+     "pos": "10",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:33.150",
+     "q2": "1:28.918",
+     "q3": "1:30.456"
+    },
+    {
+     "pos": "11",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:31.666",
+     "q2": "1:30.001",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:32.251",
+     "q2": "1:30.369",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Rafael Camara",
+     "driver_id": "rafael_camara",
+     "code": "CAM",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:32.809",
+     "q2": "1:31.515",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:32.306",
+     "q2": "1:31.687",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:32.959",
+     "q2": "1:31.785",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:31.238",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:33.327",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:33.449",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:33.653",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:33.774",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:34.509",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:41.564",
+     "q2": "",
+     "q3": ""
+    }
+   ]
   },
   {
    "round": 21,
@@ -12779,7 +18936,251 @@
     "fastest_rank": ""
    }
   ],
-  "finished": 22
+  "finished": 22,
+  "qualifying": [
+   {
+    "pos": "1",
+    "driver": "Lando Norris",
+    "driver_id": "norris",
+    "code": "NOR",
+    "team": "McLaren",
+    "team_id": "mclaren",
+    "q1": "1:30.939",
+    "q2": "1:29.207",
+    "q3": "1:27.470"
+   },
+   {
+    "pos": "2",
+    "driver": "George Russell",
+    "driver_id": "russell",
+    "code": "RUS",
+    "team": "Mercedes",
+    "team_id": "mercedes",
+    "q1": "1:31.206",
+    "q2": "1:26.745",
+    "q3": "1:27.674"
+   },
+   {
+    "pos": "3",
+    "driver": "Andrea Kimi Antonelli",
+    "driver_id": "antonelli",
+    "code": "ANT",
+    "team": "Mercedes",
+    "team_id": "mercedes",
+    "q1": "1:32.229",
+    "q2": "1:29.302",
+    "q3": "1:28.095"
+   },
+   {
+    "pos": "4",
+    "driver": "Charles Leclerc",
+    "driver_id": "leclerc",
+    "code": "LEC",
+    "team": "Ferrari",
+    "team_id": "ferrari",
+    "q1": "1:32.121",
+    "q2": "1:28.082",
+    "q3": "1:28.289"
+   },
+   {
+    "pos": "5",
+    "driver": "Liam Lawson",
+    "driver_id": "lawson",
+    "code": "LAW",
+    "team": "RB F1 Team",
+    "team_id": "rb",
+    "q1": "1:32.085",
+    "q2": "1:27.049",
+    "q3": "1:28.321"
+   },
+   {
+    "pos": "6",
+    "driver": "Nico Hülkenberg",
+    "driver_id": "hulkenberg",
+    "code": "HUL",
+    "team": "Audi",
+    "team_id": "audi",
+    "q1": "1:31.693",
+    "q2": "1:28.361",
+    "q3": "1:28.668"
+   },
+   {
+    "pos": "7",
+    "driver": "Isack Hadjar",
+    "driver_id": "hadjar",
+    "code": "HAD",
+    "team": "Red Bull",
+    "team_id": "red_bull",
+    "q1": "1:32.059",
+    "q2": "1:27.218",
+    "q3": "1:28.763"
+   },
+   {
+    "pos": "8",
+    "driver": "Oliver Bearman",
+    "driver_id": "bearman",
+    "code": "BEA",
+    "team": "Haas F1 Team",
+    "team_id": "haas",
+    "q1": "1:33.030",
+    "q2": "1:29.130",
+    "q3": "1:29.831"
+   },
+   {
+    "pos": "9",
+    "driver": "Fernando Alonso",
+    "driver_id": "alonso",
+    "code": "ALO",
+    "team": "Aston Martin",
+    "team_id": "aston_martin",
+    "q1": "1:32.092",
+    "q2": "1:29.072",
+    "q3": "1:30.311"
+   },
+   {
+    "pos": "10",
+    "driver": "Alexander Albon",
+    "driver_id": "albon",
+    "code": "ALB",
+    "team": "Williams",
+    "team_id": "williams",
+    "q1": "1:33.150",
+    "q2": "1:28.918",
+    "q3": "1:30.456"
+   },
+   {
+    "pos": "11",
+    "driver": "Lewis Hamilton",
+    "driver_id": "hamilton",
+    "code": "HAM",
+    "team": "Ferrari",
+    "team_id": "ferrari",
+    "q1": "1:31.666",
+    "q2": "1:30.001",
+    "q3": ""
+   },
+   {
+    "pos": "12",
+    "driver": "Oscar Piastri",
+    "driver_id": "piastri",
+    "code": "PIA",
+    "team": "McLaren",
+    "team_id": "mclaren",
+    "q1": "1:32.251",
+    "q2": "1:30.369",
+    "q3": ""
+   },
+   {
+    "pos": "13",
+    "driver": "Rafael Camara",
+    "driver_id": "rafael_camara",
+    "code": "CAM",
+    "team": "Haas F1 Team",
+    "team_id": "haas",
+    "q1": "1:32.809",
+    "q2": "1:31.515",
+    "q3": ""
+   },
+   {
+    "pos": "14",
+    "driver": "Arvid Lindblad",
+    "driver_id": "arvid_lindblad",
+    "code": "LIN",
+    "team": "RB F1 Team",
+    "team_id": "rb",
+    "q1": "1:32.306",
+    "q2": "1:31.687",
+    "q3": ""
+   },
+   {
+    "pos": "15",
+    "driver": "Carlos Sainz",
+    "driver_id": "sainz",
+    "code": "SAI",
+    "team": "Williams",
+    "team_id": "williams",
+    "q1": "1:32.959",
+    "q2": "1:31.785",
+    "q3": ""
+   },
+   {
+    "pos": "16",
+    "driver": "Max Verstappen",
+    "driver_id": "max_verstappen",
+    "code": "VER",
+    "team": "Red Bull",
+    "team_id": "red_bull",
+    "q1": "1:31.238",
+    "q2": "",
+    "q3": ""
+   },
+   {
+    "pos": "17",
+    "driver": "Franco Colapinto",
+    "driver_id": "colapinto",
+    "code": "COL",
+    "team": "Alpine F1 Team",
+    "team_id": "alpine",
+    "q1": "1:33.327",
+    "q2": "",
+    "q3": ""
+   },
+   {
+    "pos": "18",
+    "driver": "Pierre Gasly",
+    "driver_id": "gasly",
+    "code": "GAS",
+    "team": "Alpine F1 Team",
+    "team_id": "alpine",
+    "q1": "1:33.449",
+    "q2": "",
+    "q3": ""
+   },
+   {
+    "pos": "19",
+    "driver": "Lance Stroll",
+    "driver_id": "stroll",
+    "code": "STR",
+    "team": "Aston Martin",
+    "team_id": "aston_martin",
+    "q1": "1:33.653",
+    "q2": "",
+    "q3": ""
+   },
+   {
+    "pos": "20",
+    "driver": "Valtteri Bottas",
+    "driver_id": "bottas",
+    "code": "BOT",
+    "team": "Cadillac F1 Team",
+    "team_id": "cadillac",
+    "q1": "1:33.774",
+    "q2": "",
+    "q3": ""
+   },
+   {
+    "pos": "21",
+    "driver": "Sergio Pérez",
+    "driver_id": "perez",
+    "code": "PER",
+    "team": "Cadillac F1 Team",
+    "team_id": "cadillac",
+    "q1": "1:34.509",
+    "q2": "",
+    "q3": ""
+   },
+   {
+    "pos": "22",
+    "driver": "Gabriel Bortoleto",
+    "driver_id": "bortoleto",
+    "code": "BOR",
+    "team": "Audi",
+    "team_id": "audi",
+    "q1": "1:41.564",
+    "q2": "",
+    "q3": ""
+   }
+  ]
  },
  "teams": [
   {
@@ -12832,7 +19233,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1450415_hires_0.jpg?width=1200",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 2 h",
+     "age": "hace 6 h",
      "ts": 1795016010.0,
      "teams": [
       "mercedes"
@@ -12847,7 +19248,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/George-Russell-F1-300x169.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 2 h",
+     "age": "hace 7 h",
      "ts": 1795014000.0,
      "teams": [
       "mercedes"
@@ -12862,7 +19263,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-Kimi-Antonelli-F1-United-States-GP.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 4 h",
+     "age": "hace 9 h",
      "ts": 1795006800.0,
      "teams": [
       "mercedes",
@@ -12878,7 +19279,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1452327_hires.jpg?width=1200",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 7 h",
+     "age": "hace 11 h",
      "ts": 1794998926.0,
      "teams": [
       "mercedes",
@@ -12891,10 +19292,10 @@
      "url": "https://www.autosport.com/f1/news/the-antonelli-you-dont-know-daily-life-with-f1s-newest-champion/10875217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "There is one thing that physiotherapist Sergi Avila took a little while to understand. When Kimi Antonelli finally found himself with a free weekend, after weeks being spent between circuits, airports and training, the most logica",
      "source": "Autosport",
-     "image": "https://cdn-7.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
+     "image": "https://cdn-4.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 8 h",
+     "age": "hace 13 h",
      "ts": 1794993655.0,
      "teams": [
       "mercedes"
@@ -12906,10 +19307,10 @@
      "url": "https://www.motorsport.com/f1/news/the-kimi-antonelli-you-dont-know-told-by-those-closest-to-him/10875085/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "There is one thing that physiotherapist Sergi Avila took a little while to understand. When Kimi Antonelli finally found himself with a free weekend, after weeks being spent between circuits, airports and training, the most logica",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/YWKAl9kY/s6/andrea-kimi-antonelli-mercedes-3.jpg",
+     "image": "https://cdn-4.motorsport.com/images/amp/YWKAl9kY/s6/andrea-kimi-antonelli-mercedes-3.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 8 h",
+     "age": "hace 13 h",
      "ts": 1794993260.0,
      "teams": [
       "mercedes"
@@ -12999,7 +19400,7 @@
      "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
      "age": "hace 1 d",
@@ -13047,7 +19448,7 @@
      "url": "https://www.motorsport.com/f1/news/toto-wolff-says-kimi-antonelli-is-more-loved-in-italy-than-michael-schumacher-was-at-ferrari/10874809/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes team principal Toto Wolff is no stranger to making bold statements, but his latest assessment of Kimi Antonelli's popularity might actually shock the dedicated Ferrari fanbase. Following Antonelli's historic 2026 drivers'",
      "source": "Motorsport.com",
-     "image": "https://cdn-4.motorsport.com/images/amp/2dEoloBY/s6/motorsport-com-graphics-5-2.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/2dEoloBY/s6/motorsport-com-graphics-5-2.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -13123,7 +19524,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-Kimi-Antonelli-F1-United-States-GP.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 4 h",
+     "age": "hace 9 h",
      "ts": 1795006800.0,
      "teams": [
       "mercedes",
@@ -13139,7 +19540,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1452327_hires.jpg?width=1200",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 7 h",
+     "age": "hace 11 h",
      "ts": 1794998926.0,
      "teams": [
       "mercedes",
@@ -13152,7 +19553,7 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-7.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-2.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
      "age": "hace 1 d",
@@ -13169,7 +19570,7 @@
      "url": "https://www.motorsport.com/f1/news/lando-norriss-ln4-fusion-signs-former-red-bull-junior-oliver-goethe-as-its-first-f2-driver/10874918/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Lando Norris's new junior team LN4 Fusion has signed former Red Bull junior Oliver Goethe as its first driver for the 2027 Formula 2 season. The 22-year-old will make the move from MP Motorsport for his third season in F2, after c",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
+     "image": "https://cdn-6.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -13200,7 +19601,7 @@
      "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
      "source": "Motorsport.com",
-     "image": "https://cdn-7.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -13266,7 +19667,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1446609_HiRes-1-300x169.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 1 h",
+     "age": "hace 4 h",
      "ts": 1795023000.0,
      "teams": [
       "mclaren"
@@ -13281,7 +19682,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1448428_HiRes-1-300x169.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 1 h",
+     "age": "hace 6 h",
      "ts": 1795017600.0,
      "teams": [
       "mclaren"
@@ -13293,10 +19694,10 @@
      "url": "https://www.motorsport.com/f1/news/we-havent-taken-any-steps-backwards-mclaren-boss-explains-2026/10875219/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
      "source": "Motorsport.com",
-     "image": "https://cdn-6.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 4 h",
+     "age": "hace 8 h",
      "ts": 1795008602.0,
      "teams": [
       "mclaren"
@@ -13308,10 +19709,10 @@
      "url": "https://www.autosport.com/f1/news/what-mclaren-has-learned-from-a-tough-f1-2026/10875268/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
      "source": "Autosport",
-     "image": "https://cdn-5.motorsport.com/images/amp/6VyKR1lY/s6/andrea-stella-mclaren-2.jpg",
+     "image": "https://cdn-6.motorsport.com/images/amp/6VyKR1lY/s6/andrea-stella-mclaren-2.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 4 h",
+     "age": "hace 8 h",
      "ts": 1795008602.0,
      "teams": [
       "mclaren"
@@ -13326,7 +19727,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1452016_HiRes-1.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 6 h",
+     "age": "hace 10 h",
      "ts": 1795001400.0,
      "teams": [
       "mclaren"
@@ -13341,7 +19742,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1439737_hires-1.jpg?width=1200",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 7 h",
+     "age": "hace 12 h",
      "ts": 1794996254.0,
      "teams": [
       "mclaren"
@@ -13410,26 +19811,11 @@
      "url": "https://www.motorsport.com/f1/news/speed-trust-controlled-aggression-what-really-led-to-liam-lawsons-career-saving-f1-2026/10875262/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Liam Lawson's improved form made him too good for Racing Bulls to ignore for the 2027 Formula 1 campaign. But, as always, there's more than just a single factor behind that upturn in performances. It was only last week that the 24",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/6O7zMmO6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-2.motorsport.com/images/amp/6O7zMmO6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 5 h",
+     "age": "hace 10 h",
      "ts": 1795004551.0,
-     "teams": [
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "Racing Bulls boss reveals reason behind Liam Lawson extension",
-     "url": "https://www.motorsportweek.com/2026/11/18/racing-bulls-boss-reveals-reason-behind-liam-lawson-extension/",
-     "desc": "Racing Bulls team principal Alan Permane has identified Liam Lawson’s “immense” form during the 2026 F1 season as the reason behind the team’s decision to extend his contract. The post Racing Bulls boss reveals reason behind Liam ",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Liam-Lawson-F1-Sao-Paulo-GP-300x169.webp",
-     "date": "2026-11-18",
-     "date_human": "18 nov",
-     "age": "hace 7 h",
-     "ts": 1794997800.0,
      "teams": [
       "rb"
      ],
@@ -13440,7 +19826,7 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-7.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-2.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
      "age": "hace 1 d",
@@ -13473,10 +19859,10 @@
      "url": "https://www.motorsport.com/f1/news/retaining-liam-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874659/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
      "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/YpbAe4N0/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/YpbAe4N0/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-15",
      "date_human": "15 nov",
-     "age": "hace 2 d",
+     "age": "hace 3 d",
      "ts": 1794767403.0,
      "teams": [
       "red_bull",
@@ -13489,11 +19875,27 @@
      "url": "https://www.autosport.com/f1/news/retaining-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874666/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
      "source": "Autosport",
-     "image": "https://cdn-7.motorsport.com/images/amp/YP743Le2/s6/liam-lawson-red-bull-2.jpg",
+     "image": "https://cdn-2.motorsport.com/images/amp/YP743Le2/s6/liam-lawson-red-bull-2.jpg",
      "date": "2026-11-15",
      "date_human": "15 nov",
      "age": "hace 3 d",
      "ts": 1794748102.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Featured Comment: Pay more attention to Racing Bulls helping Red Bull | Brief",
+     "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
+     "desc": "Racing Bulls deserve more scrutiny for helping a 'rival' team",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-13",
+     "date_human": "13 nov",
+     "age": "hace 5 d",
+     "ts": 1794584132.0,
      "teams": [
       "red_bull",
       "rb"
@@ -13555,7 +19957,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-17-at-18.04.22-300x169.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 4 h",
+     "age": "hace 8 h",
      "ts": 1795008600.0,
      "teams": [
       "alpine"
@@ -13567,7 +19969,7 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-7.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-2.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
      "age": "hace 1 d",
@@ -13602,7 +20004,7 @@
      "url": "https://www.autosport.com/f1/news/permane-signs-new-racing-bulls-f1-deal/10871999/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Red Bull has given Alan Permane a new contract as the Racing Bulls Formula 1 squad’s team principal. Permane will retain the reins of the Faenza-based outfit until the end of the 2031 season. A stalwart of the current Alpine squad",
      "source": "Autosport",
-     "image": "https://cdn-5.motorsport.com/images/amp/24QebeqY/s6/alan-permane-racing-bulls-2.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/24QebeqY/s6/alan-permane-racing-bulls-2.jpg",
      "date": "2026-11-06",
      "date_human": "6 nov",
      "age": "hace 12 d",
@@ -13721,7 +20123,7 @@
      "url": "https://www.autosport.com/f1/news/haas-sticks-with-rafael-camara-for-las-vegas-ryo-hirakawa-in-for-fp1/10874781/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
      "source": "Autosport",
-     "image": "https://cdn-6.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -13736,7 +20138,7 @@
      "url": "https://www.motorsport.com/f1/news/haas-sticks-with-camara-for-las-vegas-hirakawa-in-for-fp1/10874778/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -13777,36 +20179,35 @@
      "own": true
     },
     {
-     "title": "Guenther Steiner suggests Mark Webber became too involved in Oscar Piastri’s career",
-     "url": "https://www.motorsport.com/f1/news/guenther-steiner-suggests-mark-webber-became-too-involved-in-oscar-piastris-career/10874383/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Former Haas Formula 1 team principal Guenther Steiner believes Mark Webber may have become too involved in Oscar Piastri’s career in the second half of 2025, before the McLaren driver decided he wanted to “do this on my own”. Pias",
-     "source": "Motorsport.com",
-     "image": "https://cdn-6.motorsport.com/images/amp/6zoD8dL0/s6/motorsport-com-graphics-2026-1.jpg",
-     "date": "2026-11-13",
-     "date_human": "13 nov",
-     "age": "hace 5 d",
-     "ts": 1794590410.0,
-     "teams": [
-      "mclaren",
-      "haas"
-     ],
-     "own": true
-    },
-    {
      "title": "Leclerc penalised for Lawson clash; Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
      "url": "https://www.autosport.com/f1/news/leclerc-penalised-for-lawson-clash-antonelli-and-oliver-bearman-also-punished-after-f1-brazilian-gp/10873166/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Charles Leclerc was handed a five-second penalty after the Formula 1 Brazilian Grand Prix for his clash with Liam Lawson, dropping the Ferrari driver down to eighth place in the final results. The Monegasque was battling the Racin",
      "source": "Autosport",
-     "image": "https://cdn-9.motorsport.com/images/amp/0Zq8VdL6/s6/charles-leclerc-ferrari-arvid-.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/0Zq8VdL6/s6/charles-leclerc-ferrari-arvid-.jpg",
      "date": "2026-11-08",
      "date_human": "8 nov",
-     "age": "hace 9 d",
+     "age": "hace 10 d",
      "ts": 1794175171.0,
      "teams": [
       "ferrari",
       "mercedes",
       "haas",
       "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Ocon axing ‘surprised everybody at Haas’",
+     "url": "https://www.autosport.com/f1/news/ayao-komatsu-esteban-ocon-axing-surprised-everybody-at-haas/10872457/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Ayao Komatsu says “everybody was surprised” when he told the Haas squad that Esteban Ocon wouldn’t compete for the outfit in Formula 1’s Mexican Grand Prix. Ocon was dropped by Haas after a falling-out following Friday practice at",
+     "source": "Autosport",
+     "image": "https://cdn-6.motorsport.com/images/amp/0rVPoPO0/s6/esteban-ocon-haas-f1-team-2.jpg",
+     "date": "2026-11-07",
+     "date_human": "7 nov",
+     "age": "hace 11 d",
+     "ts": 1794049249.0,
+     "teams": [
+      "haas"
      ],
      "own": true
     }
@@ -13851,7 +20252,7 @@
      "url": "https://www.motorsport.com/f1/news/mercedes-and-audi-unveil-adidas-collections-for-f1-las-vegas-grand-prix/10874493/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes and Audi have unveiled special adidas fan collections for the upcoming Formula 1 Las Vegas Grand Prix. Mercedes' range is called \"Neon Lights\", while Audi's is named \"After Hours\". Both collections are available now throu",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/0o5AVbPY/s6/motorsport-com-graphics-2026-1.jpg",
+     "image": "https://cdn-4.motorsport.com/images/amp/0o5AVbPY/s6/motorsport-com-graphics-2026-1.jpg",
      "date": "2026-11-14",
      "date_human": "14 nov",
      "age": "hace 4 d",
@@ -13878,15 +20279,15 @@
      "own": true
     },
     {
-     "title": "Team Penske retains longest tenured driver with multi-year extension",
-     "url": "https://www.motorsportweek.com/2026/11/18/team-penske-retains-longest-tenured-driver-with-multi-year-extension/",
-     "desc": "Team Penske has announced a contract extension with its long-time driver Josef Newgarden. The agreement is a multi-year extension to keep the veteran driver behind the wheel of the #2 entry with one of IndyCar’s most iconic teams ",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/2026-10_15-300x169.jpg",
+     "title": "Five things to watch out for at the F1 Las Vegas GP",
+     "url": "https://www.motorsport.com/f1/news/five-things-to-watch-out-for-at-the-f1-las-vegas-gp/10875316/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Formula 1 kickstarts its final triple-header of the 2026 campaign with this weekend’s Las Vegas Grand Prix. The American venue serves as race 21 of the 23-round calendar with grands prix in Qatar and Abu Dhabi to follow Vegas and ",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/6DGq1eGY/s6/lando-norris-mclaren-george-ru.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 2 h",
-     "ts": 1795016112.0,
+     "age": "hace 5 h",
+     "ts": 1795019440.0,
      "teams": [],
      "own": false
     }
@@ -13942,10 +20343,10 @@
      "url": "https://www.motorsport.com/f1/news/williams-aston-martin-among-new-f1-liveries-for-las-vegas-gp-as-acura-replaces-honda/10874925/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Williams and Aston Martin are among the F1 teams to have revamped their car liveries for this weekend's Las Vegas Grand Prix. F1 heads to Las Vegas for its third of three US races, with the entertainment capital having quickly bec",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794854708.0,
      "teams": [
       "aston_martin",
@@ -14027,7 +20428,7 @@
      "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/06/17939995869595.jpg",
      "date": "2026-11-06",
      "date_human": "6 nov",
-     "age": "hace 11 d",
+     "age": "hace 12 d",
      "ts": 1793999590.0,
      "teams": [
       "williams"
@@ -14116,7 +20517,7 @@
      "url": "https://www.autosport.com/dakar/news/alonso-loeb-join-aston-martin-for-2027-dakar-rally/10875003/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
      "source": "Autosport",
-     "image": "https://cdn-1.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
      "age": "hace 1 d",
@@ -14131,7 +20532,7 @@
      "url": "https://www.motorsport.com/dakar/news/fernando-alonso-to-return-to-dakar-rally-with-aston-martin-in-2027/10874907/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
      "source": "Motorsport.com",
-     "image": "https://cdn-6.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
      "age": "hace 1 d",
@@ -14146,10 +20547,10 @@
      "url": "https://www.motorsport.com/f1/news/williams-aston-martin-among-new-f1-liveries-for-las-vegas-gp-as-acura-replaces-honda/10874925/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Williams and Aston Martin are among the F1 teams to have revamped their car liveries for this weekend's Las Vegas Grand Prix. F1 heads to Las Vegas for its third of three US races, with the entertainment capital having quickly bec",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794854708.0,
      "teams": [
       "aston_martin",
@@ -14212,97 +20613,91 @@
    "prev": [],
    "news": [
     {
-     "title": "Cadillac, Williams, Alpine and Aston Martin change liveries for Las Vegas GP | Formula 1",
-     "url": "https://www.racefans.net/2026/11/16/cadillac-williams-alpine-and-aston-martin-change-liveries-for-las-vegas-gp/",
-     "desc": "Cadillac, Williams, Alpine and Aston Martin have revealed special liveries for this weekend's Las Vegas Grand Prix.",
+     "title": "Valtteri Bottas decision reached as Cadillac announces 2027 F1 lineup",
+     "url": "https://www.motorsportweek.com/2026/11/18/valtteri-bottas-cadillac-2027-f1-decision/",
+     "desc": "The question of who would partner Sergio Perez at Cadillac for the 2027 Formula 1 season has been the subject of much conversation. Now a decision has been reached. The post Valtteri Bottas decision reached as Cadillac announces 2",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Valtteri-Bottas-Cadillac--300x169.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 1 h",
+     "ts": 1795038033.0,
+     "teams": [
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Cadillac finally confirms F1 2027 driver line-up after huge speculation",
+     "url": "https://www.crash.net/f1/news/1110177/1/cadillac-finally-confirms-f1-2027-driver-line-after-speculation",
+     "desc": "Cadillac has finally made a decision on its 2027 F1 driver line-up.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453807_hires.jpg?width=1200",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 1 h",
+     "ts": 1795035210.0,
+     "teams": [
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Official: Bottas to stay at Cadillac in 2027 alongside Perez | Formula 1",
+     "url": "https://www.racefans.net/2026/11/18/official-bottas-to-stay-at-cadillacin-2027/",
+     "desc": "Colton Herta will not make hie Formula 1 debut next year as Cadillac has confirmed Valtteri Bottas will continue to drive for them.",
      "source": "RaceFans",
      "image": null,
-     "date": "2026-11-16",
-     "date_human": "16 nov",
-     "age": "hace 2 d",
-     "ts": 1794845454.0,
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 2 h",
+     "ts": 1795032431.0,
      "teams": [
-      "aston_martin",
-      "alpine",
-      "williams",
       "cadillac"
      ],
      "own": true
     },
     {
-     "title": "Christian Horner reveals how Max Verstappen’s management reshaped 2022 Red Bull development",
-     "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
+     "title": "Cadillac retaining Bottas for F1 2027 is the logical move",
+     "url": "https://www.autosport.com/f1/news/cadillac-retaining-bottas-for-f1-2027-is-the-logical-move/10875337/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "The longest-running contract saga of the Formula 1 season is now at an end. Not that it has been blockbuster material, since it revolves around a team struggling to lift itself from the back of the grid. Still, the easy option for",
+     "source": "Autosport",
+     "image": "https://cdn-6.motorsport.com/images/amp/2eZgEAjY/s6/valtteri-bottas-cadillac-racin-3.jpg",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 2 h",
+     "ts": 1795032095.0,
+     "teams": [
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "What the Valtteri Bottas contract renewal says about Cadillac's F1 future",
+     "url": "https://www.motorsport.com/f1/news/what-valtteri-bottas-contract-renewal-says-about-cadillacs-f1-future/10875333/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "The longest-running contract saga of the Formula 1 season is now at an end. Not that it has been blockbuster material, since it revolves around a team struggling to lift itself from the back of the grid. Still, the easy option for",
      "source": "Motorsport.com",
-     "image": "https://cdn-7.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
-     "date": "2026-11-16",
-     "date_human": "16 nov",
-     "age": "hace 2 d",
-     "ts": 1794833095.0,
+     "image": "https://cdn-9.motorsport.com/images/amp/0R7BrvZ2/s6/valtteri-bottas-cadillac-racin.jpg",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 2 h",
+     "ts": 1795032085.0,
      "teams": [
-      "red_bull",
       "cadillac"
      ],
      "own": true
     },
     {
-     "title": "Herta qualifies for F1 superlicence as Bottas remains bullish on 2027 seat",
-     "url": "https://www.autosport.com/f1/news/herta-qualifies-for-f1-superlicence-as-bottas-remains-bullish-on-2027-seat/10872179/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-     "desc": "Cadillac Formula 1 test driver Colton Herta has finally obtained the last remaining superlicence point required to drive in the series, but incumbent Valtteri Bottas remains bullish on his future with the squad. Herta conducted hi",
+     "title": "Cadillac completes F1 2027 driver pairing",
+     "url": "https://www.autosport.com/f1/news/cadillac-completes-f1-2027-driver-pairing/10875162/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Incumbent Valtteri Bottas will remain with the Cadillac Formula 1 team through 2027 after the US-owned team decided against fast-tracking American test driver Colton Herta to a race seat. Bottas will stay on board with Cadillac al",
      "source": "Autosport",
-     "image": "https://cdn-3.motorsport.com/images/amp/01QNpEx0/s6/colton-herta-cadillac-f1-team.jpg",
-     "date": "2026-11-06",
-     "date_human": "6 nov",
-     "age": "hace 12 d",
-     "ts": 1793984236.0,
+     "image": "https://cdn-3.motorsport.com/images/amp/6DGqnGVY/s6/valtteri-bottas-cadillac-racin-2.jpg",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 2 h",
+     "ts": 1795032071.0,
      "teams": [
-      "cadillac"
-     ],
-     "own": true
-    },
-    {
-     "title": "Liverpool FC owners emerge as potential buyers of Cadillac F1 shares amid TWG uncertainty",
-     "url": "https://www.autosport.com/f1/news/liverpool-fc-owners-emerge-as-potential-buyers-of-cadillac-f1-shares-amid-twg-uncertainty/10871500/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-     "desc": "Fresh doubts have emerged over the future of Cadillac Formula 1's majority ownership amid reports Mark Walter's TWG Global is looking to offload some of its shares - with Liverpool FC owner Fenway Sports Group said to be among the",
-     "source": "Autosport",
-     "image": "https://cdn-8.motorsport.com/images/amp/0Zq8bZL6/s6/sergio-perez-cadillac.jpg",
-     "date": "2026-11-04",
-     "date_human": "4 nov",
-     "age": "hace 14 d",
-     "ts": 1793802880.0,
-     "teams": [
-      "cadillac"
-     ],
-     "own": true
-    },
-    {
-     "title": "\"Lawson está haciendo quedar al Checo Pérez muy bien\"",
-     "url": "https://www.marca.com/motor/formula1/2025/03/31/lawson-haciendo-quedar-checo-perez-bien.html",
-     "desc": "Mario Andretti asegura que el piloto mexicano es una &quot;opción&quot; para el asiento de Cadillac en la temporada 2026 de la Fórmula 1&nbsp; Leer",
-     "source": "Marca Motor",
-     "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2025/03/31/17434058642774.jpg",
-     "date": "2025-03-31",
-     "date_human": "31 mar",
-     "age": "hace 597 d",
-     "ts": 1743405877.0,
-     "teams": [
-      "rb",
-      "cadillac"
-     ],
-     "own": true
-    },
-    {
-     "title": "Renovación estelar de Pérez",
-     "url": "https://as.com/motor/2022/05/31/formula_1/1654001414_831533.html#?ref=rss&format=simple&link=link",
-     "desc": "Checo extiende su contrato con Red Bull dos años más, 2023 y 2024, coincidiendo con su victoria en el GP de Mónaco. \"Ha cerrado el hueco con Verstappen\", dice Horner.",
-     "source": "AS Motor",
-     "image": "https://as00.epimg.net/motor/imagenes/2022/05/31/formula_1/1654001414_831533_1654001509_miniatura_normal.jpg",
-     "date": "2022-05-31",
-     "date_human": "31 may",
-     "age": "hace 1632 d",
-     "ts": 1654001665.0,
-     "teams": [
-      "red_bull",
       "cadillac"
      ],
      "own": true
@@ -14892,14 +21287,124 @@
  ],
  "news": [
   {
+   "title": "Valtteri Bottas decision reached as Cadillac announces 2027 F1 lineup",
+   "url": "https://www.motorsportweek.com/2026/11/18/valtteri-bottas-cadillac-2027-f1-decision/",
+   "desc": "The question of who would partner Sergio Perez at Cadillac for the 2027 Formula 1 season has been the subject of much conversation. Now a decision has been reached. The post Valtteri Bottas decision reached as Cadillac announces 2",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Valtteri-Bottas-Cadillac--300x169.webp",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 1 h",
+   "ts": 1795038033.0,
+   "teams": [
+    "cadillac"
+   ]
+  },
+  {
+   "title": "Cadillac finally confirms F1 2027 driver line-up after huge speculation",
+   "url": "https://www.crash.net/f1/news/1110177/1/cadillac-finally-confirms-f1-2027-driver-line-after-speculation",
+   "desc": "Cadillac has finally made a decision on its 2027 F1 driver line-up.",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453807_hires.jpg?width=1200",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 1 h",
+   "ts": 1795035210.0,
+   "teams": [
+    "cadillac"
+   ]
+  },
+  {
+   "title": "F1 2027 grid: Which drivers have a seat and who is out of contract?",
+   "url": "https://www.crash.net/f1/feature/1088707/1/f1-2027-grid-every-teams-confirmed-driver-line",
+   "desc": "The complete F1 grid for the 2027 season, including every team’s confirmed driver line-ups (so far).",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-10/xpb_1447111_hires.jpg?width=1200",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 1 h",
+   "ts": 1795035000.0,
+   "teams": []
+  },
+  {
+   "title": "Official: Bottas to stay at Cadillac in 2027 alongside Perez | Formula 1",
+   "url": "https://www.racefans.net/2026/11/18/official-bottas-to-stay-at-cadillacin-2027/",
+   "desc": "Colton Herta will not make hie Formula 1 debut next year as Cadillac has confirmed Valtteri Bottas will continue to drive for them.",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 2 h",
+   "ts": 1795032431.0,
+   "teams": [
+    "cadillac"
+   ]
+  },
+  {
+   "title": "Cadillac retaining Bottas for F1 2027 is the logical move",
+   "url": "https://www.autosport.com/f1/news/cadillac-retaining-bottas-for-f1-2027-is-the-logical-move/10875337/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "The longest-running contract saga of the Formula 1 season is now at an end. Not that it has been blockbuster material, since it revolves around a team struggling to lift itself from the back of the grid. Still, the easy option for",
+   "source": "Autosport",
+   "image": "https://cdn-6.motorsport.com/images/amp/2eZgEAjY/s6/valtteri-bottas-cadillac-racin-3.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 2 h",
+   "ts": 1795032095.0,
+   "teams": [
+    "cadillac"
+   ]
+  },
+  {
+   "title": "What the Valtteri Bottas contract renewal says about Cadillac's F1 future",
+   "url": "https://www.motorsport.com/f1/news/what-valtteri-bottas-contract-renewal-says-about-cadillacs-f1-future/10875333/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "The longest-running contract saga of the Formula 1 season is now at an end. Not that it has been blockbuster material, since it revolves around a team struggling to lift itself from the back of the grid. Still, the easy option for",
+   "source": "Motorsport.com",
+   "image": "https://cdn-9.motorsport.com/images/amp/0R7BrvZ2/s6/valtteri-bottas-cadillac-racin.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 2 h",
+   "ts": 1795032085.0,
+   "teams": [
+    "cadillac"
+   ]
+  },
+  {
+   "title": "Cadillac completes F1 2027 driver pairing",
+   "url": "https://www.autosport.com/f1/news/cadillac-completes-f1-2027-driver-pairing/10875162/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "Incumbent Valtteri Bottas will remain with the Cadillac Formula 1 team through 2027 after the US-owned team decided against fast-tracking American test driver Colton Herta to a race seat. Bottas will stay on board with Cadillac al",
+   "source": "Autosport",
+   "image": "https://cdn-3.motorsport.com/images/amp/6DGqnGVY/s6/valtteri-bottas-cadillac-racin-2.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 2 h",
+   "ts": 1795032071.0,
+   "teams": [
+    "cadillac"
+   ]
+  },
+  {
+   "title": "Valtteri Bottas beats Colton Herta to 2027 Cadillac F1 seat",
+   "url": "https://www.motorsport.com/f1/news/valtteri-bottas-retains-cadillac-f1-seat-for-2027-ahead-of-colton-herta/10875159/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Incumbent Valtteri Bottas will remain with the Cadillac Formula 1 team through 2027 after the US-owned team decided against fast-tracking American test driver Colton Herta to a race seat. Bottas will stay on board with Cadillac al",
+   "source": "Motorsport.com",
+   "image": "https://cdn-7.motorsport.com/images/amp/Y9lLAl72/s6/valtteri-bottas-cadillac-racin.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 2 h",
+   "ts": 1795032046.0,
+   "teams": [
+    "cadillac"
+   ]
+  },
+  {
    "title": "F1 to showcase driver health data in new partnership",
    "url": "https://www.autosport.com/f1/news/f1-announces-new-partnership-with-whoop/10875346/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
    "desc": "Formula 1 has signed a deal with wearables company WHOOP which will see a number of drivers wear the company's health trackers and showcase their data on the TV broadcasts in 2027. WHOOP will become an Official Partner of F1 in a ",
    "source": "Autosport",
-   "image": "https://cdn-2.motorsport.com/images/amp/2y7Q83g6/s6/ahmed-domenicali.jpg",
+   "image": "https://cdn-4.motorsport.com/images/amp/2y7Q83g6/s6/ahmed-domenicali.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 1 h",
+   "age": "hace 4 h",
    "ts": 1795023561.0,
    "teams": []
   },
@@ -14911,7 +21416,7 @@
    "image": "https://cdn-8.motorsport.com/images/amp/2y7Q83g6/s6/ahmed-domenicali.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 1 h",
+   "age": "hace 4 h",
    "ts": 1795023443.0,
    "teams": []
   },
@@ -14923,7 +21428,7 @@
    "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1446609_HiRes-1-300x169.webp",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 1 h",
+   "age": "hace 4 h",
    "ts": 1795023000.0,
    "teams": [
     "mclaren"
@@ -14937,35 +21442,9 @@
    "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/2026-11_06-300x169.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 1 h",
+   "age": "hace 5 h",
    "ts": 1795022823.0,
    "teams": []
-  },
-  {
-   "title": "Five things to watch out for at the F1 Las Vegas GP",
-   "url": "https://www.motorsport.com/f1/news/five-things-to-watch-out-for-at-the-f1-las-vegas-gp/10875316/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Formula 1 kickstarts its final triple-header of the 2026 campaign with this weekend’s Las Vegas Grand Prix. The American venue serves as race 21 of the 23-round calendar with grands prix in Qatar and Abu Dhabi to follow Vegas and ",
-   "source": "Motorsport.com",
-   "image": "https://cdn-6.motorsport.com/images/amp/6DGq1eGY/s6/lando-norris-mclaren-george-ru.jpg",
-   "date": "2026-11-18",
-   "date_human": "18 nov",
-   "age": "hace 1 h",
-   "ts": 1795019440.0,
-   "teams": []
-  },
-  {
-   "title": "Oscar Piastri to take a significant penalty for Las Vegas GP",
-   "url": "https://www.motorsportweek.com/2026/11/18/oscar-piastri-to-take-a-significant-penalty-for-las-vegas-gp/",
-   "desc": "Oscar Piastri is changing his power unit for the Las Vegas Grand Prix, earning a significant grid penalty for the race. The post Oscar Piastri to take a significant penalty for Las Vegas GP appeared first on Motorsport Week .",
-   "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1448428_HiRes-1-300x169.webp",
-   "date": "2026-11-18",
-   "date_human": "18 nov",
-   "age": "hace 1 h",
-   "ts": 1795017600.0,
-   "teams": [
-    "mclaren"
-   ]
   },
   {
    "title": "Toto Wolff addresses F1 champion Kimi Antonelli salary claims",
@@ -14975,75 +21454,10 @@
    "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1450415_hires_0.jpg?width=1200",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 2 h",
+   "age": "hace 6 h",
    "ts": 1795016010.0,
    "teams": [
     "mercedes"
-   ]
-  },
-  {
-   "title": "The factors behind the abortive 2030 F1 rules announcement",
-   "url": "https://www.autosport.com/f1/news/the-factors-behind-the-abortive-f1-2030-rules-announcement/10875290/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-   "desc": "Famously, when the papal conclave gathers to elect a new pope, a successful vote is communicated to the huddled masses via smoke from the Sistine Chapel chimney as the chemically impregnated ballot papers are burned: white smoke s",
-   "source": "Autosport",
-   "image": "https://cdn-6.motorsport.com/images/amp/0rVx13O0/s6/stefano-domenicali-mohammed-be-2.jpg",
-   "date": "2026-11-18",
-   "date_human": "18 nov",
-   "age": "hace 3 h",
-   "ts": 1795010888.0,
-   "teams": []
-  },
-  {
-   "title": "Future imperfect: What's behind the abortive 2030 F1 rules announcement?",
-   "url": "https://www.motorsport.com/f1/news/future-imperfect-whats-behind-the-abortive-2030-f1-rules-announcement/10875283/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Famously, when the papal conclave gathers to elect a new pope, a successful vote is communicated to the huddled masses via smoke from the Sistine Chapel chimney as the chemically impregnated ballot papers are burned: white smoke s",
-   "source": "Motorsport.com",
-   "image": "https://cdn-8.motorsport.com/images/amp/0o5AkOxY/s6/gettyimages-2209898755.jpg",
-   "date": "2026-11-18",
-   "date_human": "18 nov",
-   "age": "hace 3 h",
-   "ts": 1795010659.0,
-   "teams": []
-  },
-  {
-   "title": "What McLaren has learned from a tough 2026 as it aims for a return to glory in 2027",
-   "url": "https://www.autosport.com/f1/news/what-mclaren-has-learned-from-a-tough-f1-2026/10875268/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-   "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
-   "source": "Autosport",
-   "image": "https://cdn-5.motorsport.com/images/amp/6VyKR1lY/s6/andrea-stella-mclaren-2.jpg",
-   "date": "2026-11-18",
-   "date_human": "18 nov",
-   "age": "hace 4 h",
-   "ts": 1795008602.0,
-   "teams": [
-    "mclaren"
-   ]
-  },
-  {
-   "title": "What’s behind bizarre deleted F1 V8 announcement?",
-   "url": "https://www.crash.net/f1/news/1110167/1/whats-behind-bizarre-deleted-f1-v8-announcement",
-   "desc": "F1’s V8 future was revealed and then deleted on Tuesday",
-   "source": "Crash.net",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453426_hires.jpg?width=1200",
-   "date": "2026-11-18",
-   "date_human": "18 nov",
-   "age": "hace 5 h",
-   "ts": 1795003533.0,
-   "teams": []
-  },
-  {
-   "title": "Max Verstappen’s blunt response on Kimi Antonelli F1 motivation",
-   "url": "https://www.crash.net/f1/news/1110164/1/max-verstappens-blunt-response-kimi-antonelli-f1-motivation",
-   "desc": "Max Verstappen says he doesn’t need Kimi Antonelli's success to be motivated",
-   "source": "Crash.net",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1452327_hires.jpg?width=1200",
-   "date": "2026-11-18",
-   "date_human": "18 nov",
-   "age": "hace 7 h",
-   "ts": 1794998926.0,
-   "teams": [
-    "mercedes",
-    "red_bull"
    ]
   },
   {
@@ -15054,7 +21468,7 @@
    "image": null,
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 7 h",
+   "age": "hace 12 h",
    "ts": 1794997294.0,
    "teams": []
   },
@@ -15066,23 +21480,11 @@
    "image": null,
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 10 h",
+   "age": "hace 15 h",
    "ts": 1794986148.0,
    "teams": [
     "mercedes"
    ]
-  },
-  {
-   "title": "Social Media: FIA president indicates agreement reached on next power unit formula | Brief",
-   "url": "https://www.racefans.net/2026/11/17/social-media-fia-president-indicates-agreement-reached-on-next-power-unit-formula/",
-   "desc": "V8 engines are coming back to F1 \"soon\", claims Ben Sulayem",
-   "source": "RaceFans",
-   "image": null,
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "age": "hace 21 h",
-   "ts": 1794947829.0,
-   "teams": []
   },
   {
    "title": "MotoGP GP Qatar: horarios de clasificación y carrera sprint y dónde ver hoy en TV a Marc Márquez",
