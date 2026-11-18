@@ -223,4 +223,75 @@
       try { localStorage.setItem('pitlane-theme', next); } catch (e) {}
     });
   }
+  // ------- comparador de pilotos -------
+  const cmpData = document.getElementById('cmp-data');
+  if (cmpData) {
+    const rows = JSON.parse(cmpData.textContent);
+    const A = document.getElementById('cmp-a');
+    const B = document.getElementById('cmp-b');
+    const out = document.getElementById('cmp-out');
+    const norm = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    rows.sort((a, b) => a.pos - b.pos);
+    const opts = rows.map((r, i) => `<option value="${i}">${r.name} · ${r.team}</option>`).join('');
+    A.innerHTML = opts; B.innerHTML = opts;
+    A.value = '0'; B.value = rows.length > 1 ? '1' : '0';
+
+    const metrics = [
+      ['Posición', 'pos', true], ['Puntos', 'points'], ['Victorias', 'wins'], ['Podios', 'podiums'],
+      ['Poles', 'poles'], ['Vueltas rápidas', 'fl'], ['Carreras', 'races'], ['Abandonos', 'dnf', true],
+    ];
+
+    const render = () => {
+      const a = rows[+A.value], b = rows[+B.value];
+      if (!a || !b) return;
+      const head = `
+        <div class="cmp-head">
+          <div class="cmp-side" style="--c:${a.brand}"><b>${a.name}</b><span>${a.team}</span></div>
+          <span class="cmp-vs-sm">vs</span>
+          <div class="cmp-side cmp-side--r" style="--c:${b.brand}"><b>${b.name}</b><span>${b.team}</span></div>
+        </div>`;
+      const body = metrics.map(([label, key, lowerWins]) => {
+        const va = a[key] ?? 0, vb = b[key] ?? 0;
+        const total = Math.max(va, vb, 1);
+        const aWins = lowerWins ? va < vb : va > vb;
+        const bWins = lowerWins ? vb < va : vb > va;
+        return `<div class="cmp-row">
+          <span class="cmp-val ${aWins ? 'is-win' : ''}">${va}</span>
+          <span class="cmp-track cmp-track--l"><i style="--w:${(va / total * 100).toFixed(1)}%;background:${a.brand}"></i></span>
+          <span class="cmp-label">${label}</span>
+          <span class="cmp-track cmp-track--r"><i style="--w:${(vb / total * 100).toFixed(1)}%;background:${b.brand}"></i></span>
+          <span class="cmp-val ${bWins ? 'is-win' : ''}">${vb}</span>
+        </div>`;
+      }).join('');
+      out.innerHTML = head + body;
+    };
+    A.addEventListener('change', render); B.addEventListener('change', render);
+    render();
+  }
+
+  // ------- buscador -------
+  const searchData = document.getElementById('search-data');
+  if (searchData) {
+    const items = JSON.parse(searchData.textContent);
+    const input = document.getElementById('site-search');
+    const out = document.getElementById('search-out');
+    const count = document.getElementById('search-count');
+    const strip = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    items.forEach((i) => { i._k = strip(i.t + ' ' + i.s + ' ' + i.k); });
+
+    const draw = () => {
+      const q = strip(input.value.trim());
+      const found = q ? items.filter((i) => i._k.includes(q)).slice(0, 24) : items.slice(0, 12);
+      count.textContent = q ? `${found.length} resultados` : '';
+      out.innerHTML = found.length
+        ? found.map((i) => `<a class="search-item" href="${i.u}">
+             <span class="s-kind">${i.k}</span>
+             <b>${i.t}</b>
+             <span class="s-sub">${i.s}</span>
+           </a>`).join('')
+        : `<p class="dim">Nada con «${input.value}». Prueba con un apellido, una escudería o un circuito.</p>`;
+    };
+    let t; input.addEventListener('input', () => { clearTimeout(t); t = setTimeout(draw, 90); });
+    draw();
+  }
 })();

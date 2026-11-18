@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}Estadísticas F1 {{ site.season }} — victorias, podios y poles | Pitlane{% endblock %}
+{% block desc %}Estadísticas de la temporada {{ site.season }}: victorias, podios, poles, vueltas rápidas y abandonos por piloto y por escudería.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<section class="sec" style="padding-bottom:20px">
+  <div class="wrap">
+    <div class="eyebrow">Temporada {{ site.season }} · {{ stats.races }} carreras</div>
+    <h1 class="page-title">Estadísticas</h1>
+    <p class="dim" style="max-width:60ch">Todo lo que dejan las {{ stats.races }} carreras disputadas: victorias,
+       podios, poles, vueltas rápidas y abandonos.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:6px">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="eyebrow">Pilotos</div><h2>Victorias</h2></div>
+      <a class="btn" href="{{ root }}comparador.html">Comparar dos pilotos →</a></div>
+    <div class="hist-bars">
+      {% for d in stats.drivers if d.wins %}
+      {% set tm = meta.get(d.team_id) %}
+      <div class="hist-bar">
+        <span class="hb-name">{{ d.name.split(' ')[-1] }}</span>
+        <span class="hb-track"><span class="hb-fill" style="--w:{{ (d.wins / stats.max_wins * 100)|round(1) }}%;background:{{ tm.brand if tm else 'var(--gp)' }}"></span></span>
+        <span class="hb-val">{{ d.wins }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="sec-head" style="margin-top:44px"><div><div class="eyebrow">Escuderías</div><h2>Victorias por equipo</h2></div></div>
+    <div class="hist-bars">
+      {% for t in stats.teams if t.wins %}
+      {% set tm = meta.get(t.id) %}
+      <div class="hist-bar">
+        <span class="hb-name">{{ t.name }}</span>
+        <span class="hb-track"><span class="hb-fill" style="--w:{{ (t.wins / stats.max_team_wins * 100)|round(1) }}%;background:{{ tm.brand if tm else 'var(--gp)' }}"></span></span>
+        <span class="hb-val">{{ t.wins }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="eyebrow">Tabla completa</div><h2>Pilotos</h2></div></div>
+    <table class="res-table stats-table">
+      <thead>
+        <tr><th>Piloto</th><th class="num">Carreras</th><th class="num">Victorias</th><th class="num">Podios</th>
+            <th class="num">Poles</th><th class="num">V. rápidas</th><th class="num">Abandonos</th><th class="num">Mejor</th><th class="num">Puntos</th></tr>
+      </thead>
+      <tbody>
+        {% for d in stats.drivers %}
+        <tr>
+          <td>{{ d.name }}</td>
+          <td class="num">{{ d.races }}</td>
+          <td class="num">{{ d.wins }}</td>
+          <td class="num">{{ d.podiums }}</td>
+          <td class="num">{{ d.poles }}</td>
+          <td class="num">{{ d.fl }}</td>
+          <td class="num">{{ d.dnf }}</td>
+          <td class="num">{{ ('P' ~ d.best) if d.best else '—' }}</td>
+          <td class="num">{{ d.points }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="eyebrow">Tabla completa</div><h2>Escuderías</h2></div></div>
+    <table class="res-table stats-table">
+      <thead>
+        <tr><th>Escudería</th><th class="num">Victorias</th><th class="num">Podios</th><th class="num">Poles</th>
+            <th class="num">V. rápidas</th><th class="num">Abandonos</th><th class="num">Puntos</th></tr>
+      </thead>
+      <tbody>
+        {% for t in stats.teams %}
+        <tr>
+          <td>{{ t.name }}</td>
+          <td class="num">{{ t.wins }}</td>
+          <td class="num">{{ t.podiums }}</td>
+          <td class="num">{{ t.poles }}</td>
+          <td class="num">{{ t.fl }}</td>
+          <td class="num">{{ t.dnf }}</td>
+          <td class="num">{{ t.points }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

@@ -96,6 +96,63 @@ def auto_meta(team: dict, index: int = 0) -> dict:
     }
 
 
+def season_stats(site: dict) -> dict:
+    """Victorias, podios, poles, vueltas rápidas y abandonos de la temporada."""
+    drivers, teams = {}, {}
+
+    def blank(name, tid=""):
+        return {"name": name, "id": tid, "wins": 0, "podiums": 0, "poles": 0, "fl": 0,
+                "dnf": 0, "races": 0, "points": 0, "best": None}
+
+    for race in site["calendar"]:
+        rows = race.get("results") or []
+        for row in rows:
+            d = drivers.setdefault(row["driver_id"], blank(row["driver"]))
+            t = teams.setdefault(row["team_id"], blank(row["team"], row["team_id"]))
+            d["races"] += 1
+            d["team_id"] = row["team_id"]
+            t["races"] += 1
+            finished = str(row["status"]).startswith("Finished") or str(row["status"]).startswith("+")
+            if not finished and row["pos_num"] > 90:
+                d["dnf"] += 1
+                t["dnf"] += 1
+            elif not finished:
+                d["dnf"] += 1
+                t["dnf"] += 1
+            if row["pos_num"] == 1:
+                d["wins"] += 1
+                t["wins"] += 1
+            if row["pos_num"] <= 3:
+                d["podiums"] += 1
+                t["podiums"] += 1
+            if str(row["fastest_rank"]) == "1":
+                d["fl"] += 1
+                t["fl"] += 1
+            if d["best"] is None or row["pos_num"] < d["best"]:
+                d["best"] = row["pos_num"]
+        for q in race.get("qualifying") or []:
+            if q["pos"] == "1":
+                if q["driver_id"] in drivers:
+                    drivers[q["driver_id"]]["poles"] += 1
+                if q["team_id"] in teams:
+                    teams[q["team_id"]]["poles"] += 1
+
+    for d in site["drivers"]:
+        if d["id"] in drivers:
+            drivers[d["id"]]["points"] = d["points"]
+            drivers[d["id"]]["team_id"] = d.get("team", {}).get("id", "")
+    for t in site["teams"]:
+        if t["id"] in teams:
+            teams[t["id"]]["points"] = t["points"]
+
+    ds = sorted(drivers.values(), key=lambda x: (-x["wins"], -x["podiums"], x["best"] or 99))
+    ts = sorted(teams.values(), key=lambda x: (-x["wins"], -x["podiums"], x["points"] * -1))
+    return {"drivers": ds, "teams": ts,
+            "max_wins": max([x["wins"] for x in ds] + [1]),
+            "max_team_wins": max([x["wins"] for x in ts] + [1]),
+            "races": len([r for r in site["calendar"] if r.get("results")])}
+
+
 def srcset_for(url: str) -> str:
     """Lista de candidatos para el atributo srcset."""
     if not url:
@@ -374,6 +431,43 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
               fastest=next((x for x in r["results"] if str(x["fastest_rank"]) == "1"), None),
               prev_race=done_races[i - 1] if i > 0 else None,
               next_race=done_races[i + 1] if i + 1 < len(done_races) else None)
+    stats = season_stats(site)
+
+    def brand_of(team_id):
+        return (complete_meta.get(team_id) or {}).get("brand", "#888")
+
+    cmp_rows = []
+    for d in site["drivers"]:
+        st = next((x for x in stats["drivers"] if x["name"] == d["full"]), None)
+        cmp_rows.append({
+            "id": d["id"], "name": d["full"], "short": d["last"], "code": d.get("code", ""),
+            "team": d.get("team", {}).get("name", ""), "brand": brand_of(d.get("team", {}).get("id", "")),
+            "pos": d["pos"], "points": d["points"], "wins": st["wins"] if st else 0,
+            "podiums": st["podiums"] if st else 0, "poles": st["poles"] if st else 0,
+            "fl": st["fl"] if st else 0, "dnf": st["dnf"] if st else 0,
+            "races": st["races"] if st else 0, "best": st["best"] if st else None,
+        })
+
+    search_rows = []
+    for d in site["drivers"]:
+        search_rows.append({"t": d["full"], "s": (d.get("team") or {}).get("name", "") + " · piloto",
+                            "u": f"/pilotos/{d['id']}.html", "k": "piloto"})
+    for t in site["teams"]:
+        tm = complete_meta.get(t["id"]) or {}
+        search_rows.append({"t": tm.get("display", t["name"]), "s": tm.get("full", t["name"]) + " · escudería",
+                            "u": f"/escuderias/{t['id']}.html", "k": "escudería"})
+    for c in site["circuits"]:
+        search_rows.append({"t": c["name"], "s": c.get("locality", "") + " · circuito",
+                            "u": f"/circuitos/{c['id']}.html", "k": "circuito"})
+    for r in site["calendar"]:
+        search_rows.append({"t": r["name"], "s": f"Ronda {r['round']} · {r['date_human']}",
+                            "u": f"/resultados/{r['circuit_id']}.html" if r.get("results") else f"/circuitos/{r['circuit_id']}.html",
+                            "k": "gran premio"})
+
+    write("estadisticas.html", "stats.html", "", stats=stats)
+    write("comparador.html", "compare.html", "", data=json.dumps(cmp_rows, ensure_ascii=False))
+    write("buscador.html", "search.html", "", data=json.dumps(search_rows, ensure_ascii=False))
+
     write("calendario.html", "calendar.html", "")
     write("clasificacion.html", "standings.html", "")
     write("noticias.html", "news.html", "")
@@ -559,6 +653,7 @@ def write_static(site: dict) -> None:
         encoding="utf-8")
 
     urls = ["", "escuderias/", "pilotos/", "circuitos/", "resultados/", "calendario.html", "clasificacion.html",
+            "estadisticas.html", "comparador.html", "buscador.html",
             "noticias.html", "metodologia.html"]
     for t in site["teams"]:
         t.setdefault("slug", t["id"].replace("_", "-"))

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Comparador de pilotos — F1 {{ site.season }} | Pitlane{% endblock %}
+{% block desc %}Compara dos pilotos de la temporada {{ site.season }} cara a cara: puntos, victorias, podios, poles y abandonos.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<section class="sec" style="padding-bottom:16px">
+  <div class="wrap">
+    <div class="eyebrow">Temporada {{ site.season }}</div>
+    <h1 class="page-title">Comparador</h1>
+    <p class="dim" style="max-width:56ch">Elige dos pilotos y mira quién manda en cada apartado.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="cmp-picks">
+      <label class="cmp-pick">
+        <span class="eyebrow">Piloto A</span>
+        <select id="cmp-a" class="cmp-select"></select>
+      </label>
+      <span class="cmp-vs">VS</span>
+      <label class="cmp-pick">
+        <span class="eyebrow">Piloto B</span>
+        <select id="cmp-b" class="cmp-select"></select>
+      </label>
+    </div>
+
+    <div id="cmp-out" class="cmp-out" aria-live="polite"></div>
+  </div>
+</section>
+
+<script id="cmp-data" type="application/json">{{ data | safe }}</script>
+{% endblock %}
