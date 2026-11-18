@@ -28,9 +28,10 @@
           <div>
             <div class="gp">{{ r.name }}</div>
             {% if r.winner %}<div class="podium-mini"><span>Ganó {{ r.winner }}</span></div>{% endif %}
-            {% if r.sessions %}<a class="circ-link circ-link--m" href="{{ root }}circuitos/{{ r.circuit_id }}.html">Horarios →</a>{% endif %}
+            {% if r.results %}<a class="circ-link circ-link--m" href="{{ root }}resultados/{{ r.circuit_id }}.html">Resultado →</a>
+            {% elif r.sessions %}<a class="circ-link circ-link--m" href="{{ root }}circuitos/{{ r.circuit_id }}.html">Horarios →</a>{% endif %}
           </div>
-          <div class="circ">{{ r.circuit }}<small>{{ r.locality }} · {{ r.country }}</small></div>
+          <div class="circ">{{ r.circuit }}<small>{{ r.locality }} · {{ r.country_es }}</small></div>
           <span class="dt">{{ r.date_human }}</span>
           <span class="st">{% if r.done %}Disputada{% elif r.is_next %}Siguiente{% else %}Pendiente{% endif %}</span>
         </div>

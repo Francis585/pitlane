@@ -225,6 +225,7 @@ def build_calendar(races: list, today: date) -> list:
             "circuit_id": r["Circuit"]["circuitId"],
             "locality": loc["locality"],
             "country": loc["country"],
+            "country_es": COUNTRY_ES.get(loc["country"], loc["country"]),
             "flag": FLAG.get(loc["country"], "🏁"),
             "date": r["date"],
             "date_human": f"{d.day} {MONTHS[d.month - 1]} {d.year}",
@@ -236,6 +237,38 @@ def build_calendar(races: list, today: date) -> list:
             "sessions": [],
         })
     return out
+
+
+def attach_results(calendar: list, results: list) -> None:
+    """Clasificación completa de cada carrera disputada."""
+    by_round = {int(r["round"]): r for r in results}
+    for race in calendar:
+        raw = by_round.get(race["round"])
+        if not raw:
+            continue
+        rows = []
+        for res in raw.get("Results", []):
+            drv = res["Driver"]
+            tm = res["Constructor"]
+            fl = res.get("FastestLap") or {}
+            rows.append({
+                "pos": res["positionText"],
+                "pos_num": int(res["position"]) if res["position"].isdigit() else 99,
+                "driver": f"{drv['givenName']} {drv['familyName']}",
+                "driver_id": drv["driverId"],
+                "code": drv.get("code", ""),
+                "team": tm["name"],
+                "team_id": tm["constructorId"],
+                "grid": int(res["grid"]) if str(res["grid"]).isdigit() else 0,
+                "laps": res.get("laps", ""),
+                "time": (res.get("Time") or {}).get("time", "") or res.get("status", ""),
+                "status": res.get("status", ""),
+                "points": int(float(res.get("points", 0))),
+                "fastest": (fl.get("Time") or {}).get("time", ""),
+                "fastest_rank": fl.get("rank", ""),
+            })
+        race["results"] = rows
+        race["finished"] = len(rows)
 
 
 def attach_sessions(calendar: list, raw_races: list) -> None:
@@ -985,6 +1018,7 @@ def _run() -> None:
     calendar = build_calendar(api["calendar"], today)
     attach_winners(calendar, api["results"])
     attach_sessions(calendar, api["calendar"])
+    attach_results(calendar, api["results"])
     teams = build_teams(api, calendar)
     hist = prev_seasons([t["id"] for t in teams])
     for t in teams:

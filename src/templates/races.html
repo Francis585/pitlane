@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Resultados F1 {{ site.season }} — todas las carreras | Pitlane{% endblock %}
+{% block desc %}Resultados de las {{ site.rounds_done }} carreras disputadas en la temporada {{ site.season }} de Fórmula 1: ganador, podio y clasificación completa de cada gran premio.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<section class="sec" style="padding-bottom:22px">
+  <div class="wrap">
+    <div class="eyebrow">Temporada {{ site.season }} · {{ site.rounds_done }} carreras disputadas</div>
+    <h1 style="font-size:clamp(2.4rem,6.4vw,4.6rem);text-transform:uppercase;margin:12px 0 14px">Resultados</h1>
+    <p class="dim" style="max-width:58ch">Cada gran premio con su clasificación completa: posiciones, tiempos,
+       puntos y vuelta rápida.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="res-grid">
+      {% for r in races %}
+      {% set c = circuits.get(r.circuit_id) %}
+      {% set tm = meta.get(r.winner_team) %}
+      <a class="res-card" href="{{ root }}resultados/{{ r.circuit_id }}.html">
+        <div class="res-card-top">
+          <span class="res-round">R{{ '%02d'|format(r.round) }}</span>
+          <span class="res-date">{{ r.date_human }}</span>
+        </div>
+        <h3>{{ r.name }}</h3>
+        <div class="res-loc">{{ r.flag if false }}{{ r.locality }} · {{ r.circuit }}</div>
+        <div class="res-win">
+          <span class="res-dot" style="background:{{ tm.brand if tm else '#555' }}"></span>
+          <b>{{ r.winner }}</b>
+          <span class="res-team-sm">{{ tm.display if tm else r.winner_team }}</span>
+        </div>
+        {% if r.podium %}
+        <div class="podium-mini">
+          {% for p in r.podium %}<span>P{{ p.pos }} {{ p.name.split(' ')[-1] }}</span>{% endfor %}
+        </div>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+    <p class="src-note" style="margin-top:18px">Fuente: Jolpica F1 API · actualizado el {{ generated_human }}</p>
+  </div>
+</section>
+{% endblock %}

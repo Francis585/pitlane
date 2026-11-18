@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Resultados {{ r.name }} — F1 {{ site.season }} | Pitlane{% endblock %}
+{% block desc %}Clasificación completa del {{ r.name }} de {{ site.season }}: posiciones, tiempos, puntos y vuelta rápida.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<header class="circ-hero">
+  {% if c.photo %}<div class="circ-hero-img" style="--img:url('{{ img_url(c.photo) }}')"></div>{% endif %}
+  <div class="pat pat-{{ gp.pattern }}"></div>
+  <div class="wrap circ-hero-in">
+    <div class="eyebrow">{{ flag_tag(flag_code(r.country), "flag-img", 20, 15) | safe }} Ronda {{ r.round }} · {{ r.locality }}, {{ r.country_es }}</div>
+    <h1 style="margin-top:10px">{{ r.name }}</h1>
+    <p class="team-sub">{{ r.circuit }} · {{ r.date_long }}</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+      <span class="btn btn-solid" style="border:0">Ganó {{ r.winner }}</span>
+      <a class="btn" href="{{ root }}resultados/index.html">Todos los resultados</a>
+      <a class="btn" href="{{ root }}circuitos/{{ c.id }}.html">El circuito</a>
+    </div>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="kpis" style="margin-bottom:30px">
+      <div><b>{{ r.results|length }}</b><span>Pilotos clasificados</span></div>
+      <div><b>{{ r.results[0].laps if r.results else '—' }}</b><span>Vueltas</span></div>
+      <div><b>{{ fastest.driver.split(' ')[-1] if fastest else '—' }}</b><span>Vuelta rápida{% if fastest %} · {{ fastest.fastest }}{% endif %}</span></div>
+      <div><b>{{ r.date_human }}</b><span>Fecha</span></div>
+    </div>
+
+    <table class="res-table">
+      <thead>
+        <tr>
+          <th>Pos</th><th>Piloto</th><th>Equipo</th><th class="num">Salida</th>
+          <th class="num">Vueltas</th><th>Tiempo / estado</th><th class="num">Puntos</th><th class="num">V. rápida</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in r.results %}
+        {% set tm = meta.get(row.team_id) %}
+        <tr class="{% if row.fastest_rank|string == "1" %}has-fl{% endif %}">
+          <td class="pos-cell">{{ row.pos }}</td>
+          <td>
+            <a class="res-driver" href="{{ root }}pilotos/{{ row.driver_id }}.html">
+              <span class="res-dot" style="background:{{ tm.brand if tm else '#555' }}"></span>
+              {{ row.driver }}
+            </a>
+            <small class="res-code">{{ row.code }}</small>
+          </td>
+          <td class="res-team">{{ tm.display if tm else row.team }}</td>
+          <td class="num">{{ row.grid if row.grid else '—' }}</td>
+          <td class="num">{{ row.laps }}</td>
+          <td class="res-time">{{ row.time }}</td>
+          <td class="num">{{ row.points if row.points else '—' }}</td>
+          <td class="num res-fl">{{ row.fastest }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p class="src-note" style="margin-top:14px">Fuente: Jolpica F1 API · vuelta rápida en morado</p>
+  </div>
+</section>
+
+<div class="next-team">
+  {% if prev_race %}<a href="{{ root }}resultados/{{ prev_race.circuit_id }}.html"><span class="eyebrow dim">Carrera anterior</span><h4>{{ prev_race.name }}</h4></a>{% else %}<a href="{{ root }}resultados/index.html"><span class="eyebrow dim">Todos</span><h4>Resultados</h4></a>{% endif %}
+  {% if next_race %}<a href="{{ root }}resultados/{{ next_race.circuit_id }}.html"><span class="eyebrow dim">Carrera siguiente</span><h4>{{ next_race.name }}</h4></a>{% else %}<a href="{{ root }}calendario.html"><span class="eyebrow dim">Siguiente</span><h4>Calendario</h4></a>{% endif %}
+</div>
+{% endblock %}

@@ -320,6 +320,16 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
               others=[o for o in site["circuits"] if o["id"] != c["id"]][:4],
               schedule=next((r.get("sessions", []) for r in site["calendar"]
                              if r["round"] == c["round"]), []))
+    # resultados por carrera
+    circuits_by_id = {c["id"]: c for c in site["circuits"]}
+    done_races = [r for r in site["calendar"] if r.get("results")]
+    write("resultados/index.html", "races.html", "../", races=done_races, circuits=circuits_by_id)
+    for i, r in enumerate(done_races):
+        write(f"resultados/{r['circuit_id']}.html", "race.html", "../", r=r,
+              c=circuits_by_id.get(r["circuit_id"], {}),
+              fastest=next((x for x in r["results"] if str(x["fastest_rank"]) == "1"), None),
+              prev_race=done_races[i - 1] if i > 0 else None,
+              next_race=done_races[i + 1] if i + 1 < len(done_races) else None)
     write("calendario.html", "calendar.html", "")
     write("clasificacion.html", "standings.html", "")
     write("noticias.html", "news.html", "")
@@ -495,13 +505,14 @@ def write_static(site: dict) -> None:
         '<path d="M14 48V16h9l11 19V16h9v32h-9L23 29v19z" fill="#ff5a1f"/></svg>',
         encoding="utf-8")
 
-    urls = ["", "escuderias/", "pilotos/", "circuitos/", "calendario.html", "clasificacion.html",
+    urls = ["", "escuderias/", "pilotos/", "circuitos/", "resultados/", "calendario.html", "clasificacion.html",
             "noticias.html", "metodologia.html"]
     for t in site["teams"]:
         t.setdefault("slug", t["id"].replace("_", "-"))
     urls += [f"escuderias/{t['slug']}.html" for t in site["teams"]]
     urls += [f"pilotos/{d['id']}.html" for d in site["drivers"]]
     urls += [f"circuitos/{c['id']}.html" for c in site.get("circuits", [])]
+    urls += [f"resultados/{r['circuit_id']}.html" for r in site["calendar"] if r.get("results")]
     body = "".join(
         f"<url><loc>https://pitlane-ruddy.vercel.app/{u}</loc>"
         f"<lastmod>{site['generated'][:10]}</lastmod></url>" for u in urls)
