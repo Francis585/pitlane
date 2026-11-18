@@ -1432,3 +1432,6 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
   .gp-count b { font-size: 2.4rem; }
   .gp-txt b { font-size: 1.05rem; }
 }
+
+.gp-count { padding-inline: 10px 4px; min-width: 78px; }
+.gp-count b { font-size: clamp(2.2rem, 3.4vw, 2.9rem); letter-spacing: -.02em; }
