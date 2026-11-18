@@ -4,7 +4,7 @@
 {% block desc %}{{ tm.tagline }} Historia, plantilla, palmarés y actualidad de {{ tm.full }} en la temporada {{ site.season }}.{% endblock %}
 {% block bodyclass %}t-clasico{% endblock %}
 {% block vars %}
-:root{
+html:root{
   --bg: {{ tm.ink }}; --bg-2: {{ tm.ink }}; --panel: color-mix(in srgb, {{ tm.ink }} 82%, #fff);
   --brand: {{ tm.brand }}; --brand-2: {{ tm.brand2 }}; --fg: #f6f2ec; --dim: #a8a29a; --dim-2: #78736c;
   --font-display: "Playfair Display", Georgia, serif;

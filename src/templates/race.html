@@ -61,6 +61,60 @@
   </div>
 </section>
 
+
+{% if r.sprint %}
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Sprint</div><h2>Clasificación del sprint</h2></div>
+      <span class="src-note">{{ r.sprint|length }} pilotos</span>
+    </div>
+    <table class="res-table">
+      <thead><tr><th>Pos</th><th>Piloto</th><th>Equipo</th><th>Tiempo / estado</th><th class="num">Puntos</th></tr></thead>
+      <tbody>
+        {% for row in r.sprint %}
+        {% set tm = meta.get(row.team_id) %}
+        <tr>
+          <td class="pos-cell">{{ row.pos }}</td>
+          <td><a class="res-driver" href="{{ root }}pilotos/{{ row.driver_id }}.html"><span class="res-dot" style="background:{{ tm.brand if tm else '#555' }}"></span>{{ row.driver }}</a></td>
+          <td class="res-team">{{ tm.display if tm else row.team }}</td>
+          <td class="res-time">{{ row.time }}</td>
+          <td class="num">{{ row.points if row.points else '—' }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endif %}
+
+{% if r.qualifying %}
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Clasificación</div><h2>Parrilla de salida</h2></div>
+      <span class="src-note">Q1 · Q2 · Q3</span>
+    </div>
+    <table class="res-table qual-table">
+      <thead><tr><th>Pos</th><th>Piloto</th><th>Equipo</th><th class="num">Q1</th><th class="num">Q2</th><th class="num">Q3</th></tr></thead>
+      <tbody>
+        {% for row in r.qualifying %}
+        {% set tm = meta.get(row.team_id) %}
+        <tr>
+          <td class="pos-cell">{{ row.pos }}</td>
+          <td><a class="res-driver" href="{{ root }}pilotos/{{ row.driver_id }}.html"><span class="res-dot" style="background:{{ tm.brand if tm else '#555' }}"></span>{{ row.driver }}</a></td>
+          <td class="res-team">{{ tm.display if tm else row.team }}</td>
+          <td class="num">{{ row.q1 or '—' }}</td>
+          <td class="num">{{ row.q2 or '—' }}</td>
+          <td class="num">{{ row.q3 or '—' }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endif %}
+
 <div class="next-team">
   {% if prev_race %}<a href="{{ root }}resultados/{{ prev_race.circuit_id }}.html"><span class="eyebrow dim">Carrera anterior</span><h4>{{ prev_race.name }}</h4></a>{% else %}<a href="{{ root }}resultados/index.html"><span class="eyebrow dim">Todos</span><h4>Resultados</h4></a>{% endif %}
   {% if next_race %}<a href="{{ root }}resultados/{{ next_race.circuit_id }}.html"><span class="eyebrow dim">Carrera siguiente</span><h4>{{ next_race.name }}</h4></a>{% else %}<a href="{{ root }}calendario.html"><span class="eyebrow dim">Siguiente</span><h4>Calendario</h4></a>{% endif %}

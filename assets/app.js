@@ -211,4 +211,15 @@
       if (box) { box.classList.add('ncard-img--empty'); img.remove(); }
     });
   });
+
+  // tema claro / oscuro
+  const toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const root = document.documentElement;
+      const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('pitlane-theme', next); } catch (e) {}
+    });
+  }
 })();

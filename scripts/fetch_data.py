@@ -140,6 +140,17 @@ def fetch_api() -> dict:
     teams = get_json(f"{API}/{SEASON}/constructorstandings.json?limit=100")["MRData"][
         "StandingsTable"]["StandingsLists"][0]
     # la consulta global recorta a 100 registros (~5 carreras), así que se pide ronda a ronda
+    qualifying, sprint = [], []
+    for r in cal:
+        for kind, bucket in (("qualifying", qualifying), ("sprint", sprint)):
+            try:
+                body = get_json(f"{API}/{SEASON}/{r['round']}/{kind}.json")
+                races = body["MRData"]["RaceTable"]["Races"]
+                if races and races[0].get("QualifyingResults" if kind == "qualifying" else "SprintResults"):
+                    bucket.append(races[0])
+            except Exception:
+                continue
+
     results = []
     for r in cal:
         try:
@@ -149,7 +160,8 @@ def fetch_api() -> dict:
                 results.append(races[0])
         except Exception:
             continue
-    return {"calendar": cal, "drivers": drivers, "teams": teams, "results": results}
+    return {"calendar": cal, "drivers": drivers, "teams": teams, "results": results,
+            "qualifying": qualifying, "sprint": sprint}
 
 
 SESSION_FIELDS = [
@@ -269,6 +281,36 @@ def attach_results(calendar: list, results: list) -> None:
             })
         race["results"] = rows
         race["finished"] = len(rows)
+
+
+def attach_qualifying(calendar: list, raw: list) -> None:
+    """Tiempos de la clasificación (Q1/Q2/Q3) y del sprint si lo hay."""
+    by_round = {int(r["round"]): r for r in raw}
+    for race in calendar:
+        item = by_round.get(race["round"])
+        if not item:
+            continue
+        if item.get("QualifyingResults"):
+            race["qualifying"] = [{
+                "pos": q["position"],
+                "driver": f"{q['Driver']['givenName']} {q['Driver']['familyName']}",
+                "driver_id": q["Driver"]["driverId"],
+                "code": q["Driver"].get("code", ""),
+                "team": q["Constructor"]["name"],
+                "team_id": q["Constructor"]["constructorId"],
+                "q1": (q.get("Q1") or ""), "q2": (q.get("Q2") or ""), "q3": (q.get("Q3") or ""),
+            } for q in item["QualifyingResults"]]
+        if item.get("SprintResults"):
+            race["sprint"] = [{
+                "pos": x["positionText"],
+                "driver": f"{x['Driver']['givenName']} {x['Driver']['familyName']}",
+                "driver_id": x["Driver"]["driverId"],
+                "code": x["Driver"].get("code", ""),
+                "team": x["Constructor"]["name"],
+                "team_id": x["Constructor"]["constructorId"],
+                "points": int(float(x.get("points", 0))),
+                "time": (x.get("Time") or {}).get("time", "") or x.get("status", ""),
+            } for x in item["SprintResults"]]
 
 
 def attach_sessions(calendar: list, raw_races: list) -> None:
@@ -1019,6 +1061,8 @@ def _run() -> None:
     attach_winners(calendar, api["results"])
     attach_sessions(calendar, api["calendar"])
     attach_results(calendar, api["results"])
+    attach_qualifying(calendar, api["qualifying"])
+    attach_qualifying(calendar, api["sprint"])
     teams = build_teams(api, calendar)
     hist = prev_seasons([t["id"] for t in teams])
     for t in teams:
