@@ -452,6 +452,41 @@ def optimize_assets() -> dict:
     }
 
 
+def write_ics(site: dict) -> None:
+    """Calendario .ics con todas las sesiones, para suscribirse o importar."""
+    from datetime import datetime, timedelta, timezone
+
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Pitlane//F1//ES",
+             "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+             f"X-WR-CALNAME:Fórmula 1 {site['season']} · Pitlane",
+             "X-WR-TIMEZONE:Europe/Madrid"]
+    durations = {"FP1": 60, "FP2": 60, "FP3": 60, "SQ": 45, "SPR": 60, "Q": 45, "RACE": 120}
+
+    def esc(text: str) -> str:
+        return (text.replace("\\", "\\\\").replace(",", "\\,")
+                .replace(";", "\\;").replace("\n", "\\n"))
+
+    for race in site["calendar"]:
+        for ses in race.get("sessions", []):
+            start = datetime.strptime(ses["iso"], "%Y-%m-%dT%H:%M:%SZ")
+            end = start + timedelta(minutes=durations.get(ses["code"], 60))
+            lines += [
+                "BEGIN:VEVENT",
+                f"UID:{site['season']}-{race['round']}-{ses['code']}@pitlane",
+                f"DTSTAMP:{stamp}",
+                f"DTSTART:{start.strftime('%Y%m%dT%H%M%SZ')}",
+                f"DTEND:{end.strftime('%Y%m%dT%H%M%SZ')}",
+                f"SUMMARY:{esc(race['name'] + ' · ' + ses['name'])}",
+                f"LOCATION:{esc(race['circuit'] + ', ' + race['locality'] + ', ' + race['country'])}",
+                f"DESCRIPTION:{esc('Ronda ' + str(race['round']) + ' · ' + race['name'])}",
+                f"URL:https://pitlane-ruddy.vercel.app/circuitos/{race['circuit_id']}.html",
+                "END:VEVENT",
+            ]
+    lines.append("END:VCALENDAR")
+    (OUT / "calendario.ics").write_bytes(("\r\n".join(lines) + "\r\n").encode("utf-8"))
+
+
 def write_static(site: dict) -> None:
     (OUT / "assets").mkdir(parents=True, exist_ok=True)
     (OUT / "assets" / "favicon.svg").write_text(
@@ -470,6 +505,8 @@ def write_static(site: dict) -> None:
     body = "".join(
         f"<url><loc>https://pitlane-ruddy.vercel.app/{u}</loc>"
         f"<lastmod>{site['generated'][:10]}</lastmod></url>" for u in urls)
+    write_ics(site)
+
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>'
         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{body}</urlset>',

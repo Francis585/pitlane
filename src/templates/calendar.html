@@ -15,6 +15,10 @@
 
 <section class="sec" style="padding-top:0">
   <div class="wrap">
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px">
+      <a class="btn" href="{{ root }}calendario.ics" download>Descargar calendario (.ics)</a>
+      <span class="src-note" style="align-self:center">Todas las sesiones, en hora UTC</span>
+    </div>
     <div class="cal">
       {% for r in site.calendar %}
       <div class="cal-item">
