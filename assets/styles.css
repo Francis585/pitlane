@@ -1344,3 +1344,15 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
 @media (max-width: 760px) {
   .circ-link--m { display: inline-block; margin-top: 4px; font-size: .54rem; }
 }
+
+/* móvil: menú en dos filas limpias y foto centrada */
+@media (max-width: 760px) {
+  .nav-in { flex-wrap: wrap; height: auto; padding-block: 9px; row-gap: 8px; }
+  .nav-links {
+    order: 3; width: 100%; flex: 1 0 100%; justify-content: flex-start;
+    border-top: 1px solid rgba(255,255,255,.07); padding-top: 7px;
+  }
+  .nav-links a { padding: 4px 8px 4px 0; font-size: .62rem; }
+  .team-hero-photo { background-position: 55% 45%; }
+  .team-hero { min-height: 74vh; }
+}
