@@ -410,8 +410,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 800; margin: 0; 
   .driver-hero { grid-template-columns: 1fr; }
   .driver-hero .dh-img { min-height: 340px; grid-row: 1; }
   .driver-hero .dh-img::after { background: linear-gradient(180deg, transparent 40%, var(--bg) 100%); }
-  .cal-row { grid-template-columns: 48px 26px 1fr 96px; }
-  .cal-row .circ, .cal-row .st { display: none; }
+  .cal-row { grid-template-columns: 40px 24px minmax(0, 1fr) 90px; }
 }
 @media (max-width: 720px) {
   .nav-in { height: auto; padding-block: 10px; flex-wrap: wrap; gap: 10px; }
@@ -1323,4 +1322,20 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
   hr.rule { margin: 0; }
   .next-team a { padding: 20px var(--pad); }
   .next-team h4 { font-size: 1.2rem; }
+}
+
+/* calendario: fila limpia en móvil */
+@media (max-width: 760px) {
+  .cal-row {
+    grid-template-columns: 30px 20px minmax(0, 1fr) auto;
+    gap: 10px; padding: 13px 12px; align-items: start;
+  }
+  .cal-row .rd { font-size: 1.05rem; line-height: 1.2; }
+  .cal-row .flag .flag-img { width: 18px; }
+  .cal-row .gp { font-size: 1.05rem; line-height: 1.1; }
+  .cal-row .circ { display: none; }
+  .cal-row .st { display: none; }
+  .cal-row .dt { font-size: .58rem; text-align: right; white-space: nowrap; padding-top: 2px; }
+  .podium-mini { margin-top: 3px; }
+  .podium-mini span { font-size: .54rem; }
 }

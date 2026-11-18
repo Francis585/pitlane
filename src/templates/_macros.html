@@ -1,10 +1,10 @@
 {% macro news_cards(items, root, team_meta=None, limit=6) %}
 <div class="news-grid">
   {% for n in items[:limit] %}
-  <a class="ncard" href="{{ n.url }}" target="_blank" rel="noopener nofollow">
+  <a class="ncard" href="{{ n.url }}" target="_blank" rel="noopener noreferrer nofollow">
     <div class="ncard-img{% if not n.image %} ncard-img--empty{% endif %}">
       {% if n.image %}<img src="{{ n.image }}" alt="" loading="lazy" referrerpolicy="no-referrer"
-           onerror="this.parentNode.classList.add('ncard-img--empty')">{% else %}<span>PITLANE</span>{% endif %}
+           data-fallback>{% else %}<span>PITLANE</span>{% endif %}
     </div>
     <div class="ncard-body">
       <h3>{{ n.title }}</h3>

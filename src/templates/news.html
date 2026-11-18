@@ -35,7 +35,7 @@
         </div>
         <div style="display:grid;gap:1px;background:var(--line)">
           {% for n in t.news[:3] %}
-          <a href="{{ n.url }}" target="_blank" rel="noopener nofollow"
+          <a href="{{ n.url }}" target="_blank" rel="noopener noreferrer nofollow"
              style="display:grid;grid-template-columns:1fr auto;gap:14px;align-items:baseline;padding:13px 18px;background:var(--bg-2)">
             <span style="font-family:var(--font-body);font-size:.92rem">{{ n.title }}</span>
             <span class="mono" style="color:var(--dim-2)">{{ n.date_human }}</span>

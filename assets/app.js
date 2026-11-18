@@ -203,4 +203,12 @@
       });
     }, { passive: true });
   }
+
+  // si una imagen de noticia falla, la tarjeta muestra el patrón de marca
+  document.querySelectorAll('img[data-fallback]').forEach((img) => {
+    img.addEventListener('error', () => {
+      const box = img.parentElement;
+      if (box) { box.classList.add('ncard-img--empty'); img.remove(); }
+    });
+  });
 })();

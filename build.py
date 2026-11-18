@@ -368,6 +368,17 @@ def write_static(site: dict) -> None:
         '<?xml version="1.0" encoding="UTF-8"?>'
         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{body}</urlset>',
         encoding="utf-8")
+    # contacto de seguridad y metadatos del proyecto
+    wk = OUT / ".well-known"
+    wk.mkdir(parents=True, exist_ok=True)
+    (wk / "security.txt").write_text(
+        "Contact: https://github.com/Francis585/pitlane/issues\n"
+        "Expires: 2027-12-31T23:59:00.000Z\n"
+        "Preferred-Languages: es, en\n"
+        "Canonical: https://pitlane-ruddy.vercel.app/.well-known/security.txt\n"
+        "Policy: https://github.com/Francis585/pitlane/security/policy\n",
+        encoding="utf-8")
+
     (OUT / "robots.txt").write_text(
         "User-agent: *\nAllow: /\nSitemap: https://pitlane-ruddy.vercel.app/sitemap.xml\n", encoding="utf-8")
 

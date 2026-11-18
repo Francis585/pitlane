@@ -72,7 +72,8 @@
       {% for mo in moments %}
       {% set tm = meta.get(mo.team) %}
       <a class="moment" href="{{ root }}circuitos/{{ mo.circuit_id }}.html">
-        {% if mo.photo %}<img src="{{ img_url(mo.photo) }}" alt="{{ mo.circuit }}" loading="lazy">{% endif %}
+        {% set mimg = mo.team_car or mo.photo %}
+        {% if mimg %}<img src="{{ img_url(mimg) }}" alt="{{ mo.winner }} · {{ mo.gp }}" loading="lazy">{% endif %}
         <div class="moment-body">
           <span class="moment-tag" style="--tag:{{ tm.brand if tm else '#444' }}">{{ mo.gp }} · R{{ mo.round }}</span>
           <h3>Ganó {{ mo.winner }}</h3>
