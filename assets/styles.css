@@ -1668,3 +1668,9 @@ html[data-theme="light"] body[class*="t-"] .theme-toggle { color: var(--fg); }
 html[data-theme="light"] body[class*="t-"] .foot { color: var(--dim); border-top-color: var(--line-2); }
 html[data-theme="light"] body[class*="t-"] .foot a { color: var(--dim); }
 html[data-theme="light"] body[class*="t-"] .theme-toggle:hover { background: var(--hover); }
+
+/* contraste del menú en tema claro */
+html[data-theme="light"] .nav-links a { color: #3b424d; opacity: 1; }
+html[data-theme="light"] .nav-links a:hover { color: #111418; }
+html[data-theme="light"] .nav .brand { color: var(--ink); }
+html[data-theme="light"] .nav-links a span { color: #8a919c; }
