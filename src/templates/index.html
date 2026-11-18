@@ -2,6 +2,7 @@
 {% import "_macros.html" as m %}
 {% block title %}Pitlane — Fórmula 1 {{ site.season }}: escuderías, pilotos y clasificación{% endblock %}
 {% block desc %}Datos, historia y actualidad de la Fórmula 1 {{ site.season }}. Las once escuderías, 22 pilotos, calendario completo y clasificación actualizada.{% endblock %}
+{% block head %}{% if hero_slides %}<link rel="preload" as="image" href="{{ img_url(hero_slides[0].src) }}" fetchpriority="high">{% endif %}{% endblock %}
 {% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
 
 {% block content %}
@@ -73,7 +74,7 @@
       {% set tm = meta.get(mo.team) %}
       <a class="moment" href="{{ root }}circuitos/{{ mo.circuit_id }}.html">
         {% set mimg = mo.team_car or mo.photo %}
-        {% if mimg %}<img src="{{ img_url(mimg) }}" alt="{{ mo.winner }} · {{ mo.gp }}" loading="lazy">{% endif %}
+        {% if mimg %}<img src="{{ img_url(mimg) }}" alt="{{ mo.winner }} · {{ mo.gp }}" loading="lazy" decoding="async">{% endif %}
         <div class="moment-body">
           <span class="moment-tag" style="--tag:{{ tm.brand if tm else '#444' }}">{{ mo.gp }} · R{{ mo.round }}</span>
           <h3>Ganó {{ mo.winner }}</h3>
@@ -224,7 +225,7 @@
     <div class="mosaic">
       {% for g in gallery[:7] %}
       <figure class="mosaic-item m{{ loop.index }}">
-        <img src="{{ img_url(g.src) }}" alt="{{ g.alt }}" loading="lazy">
+        <img src="{{ img_url(g.src) }}" alt="{{ g.alt }}" loading="lazy" decoding="async">
         <figcaption><b>{{ g.label }}</b><span>{{ g.sub }}</span></figcaption>
       </figure>
       {% endfor %}

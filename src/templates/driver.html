@@ -59,7 +59,7 @@
       <a class="dcard" href="{{ root }}pilotos/{{ t.id }}.html">
         <div class="dcard-img">
           <span class="stripe" style="background:var(--brand)"></span>
-          {% if t.photo %}<img src="{{ img_url(t.photo) }}" alt="{{ t.full }}" loading="lazy">{% endif %}
+          {% if t.photo %}<img src="{{ img_url(t.photo) }}" alt="{{ t.full }}" loading="lazy" decoding="async">{% endif %}
           <span class="dcard-num">{{ t.num }}</span>
         </div>
         <div class="dcard-meta">

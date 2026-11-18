@@ -24,6 +24,7 @@
 <link rel="dns-prefetch" href="https://flagcdn.com">
 <link href="https://fonts.googleapis.com/css2?family={{ font_query }}&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ root }}assets/styles.css?v={{ asset_css }}">
+{% block head %}{% endblock %}
 <style>
 :root { --gp: {{ gp.brand }}; --gp-2: {{ gp.brand2 }}; }
 {% block vars %}{% endblock %}
