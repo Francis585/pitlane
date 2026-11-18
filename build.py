@@ -6,6 +6,7 @@ Uso:  python build.py            (usa los datos de src/data/site.json)
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -356,6 +357,28 @@ def make_og_cards(site: dict, meta: dict) -> dict:
     return cards
 
 
+def minify_css(text: str) -> str:
+    """Quita comentarios y espacios sobrantes sin tocar cadenas ni url()."""
+    text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
+    out, quote, i = [], None, 0
+    while i < len(text):
+        ch = text[i]
+        if quote:
+            out.append(ch)
+            if ch == quote and text[i - 1] != "\\":
+                quote = None
+        elif ch in "\"'":
+            quote = ch
+            out.append(ch)
+        else:
+            out.append(ch)
+        i += 1
+    css = "".join(out)
+    css = re.sub(r"\s+", " ", css)
+    css = re.sub(r"\s*([{};:,>])\s*", r"\1", css)
+    return css.replace(";}", "}").strip()
+
+
 def optimize_assets() -> dict:
     """Copia los assets, recomprime las fotos y devuelve versiones para cache-busting."""
     import hashlib
@@ -391,6 +414,12 @@ def optimize_assets() -> dict:
                 img.unlink()  # el sitio ya solo sirve WebP
             except Exception:
                 continue
+
+    css_path = OUT / "assets" / "styles.css"
+    try:
+        css_path.write_text(minify_css(css_path.read_text(encoding="utf-8")), encoding="utf-8")
+    except Exception:
+        pass
 
     def version(path: pathlib.Path) -> str:
         return hashlib.md5(path.read_bytes()).hexdigest()[:10]
