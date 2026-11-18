@@ -642,7 +642,9 @@ def brightness(path: pathlib.Path) -> int:
     try:
         from PIL import Image
         im = Image.open(path).convert("L").resize((80, 80))
-        px = list(im.getdata())
+        # Pillow 14 retira getdata(); se usa get_flattened_data cuando existe
+        data = getattr(im, "get_flattened_data", im.getdata)
+        px = list(data())
         return int(sum(px) / len(px))
     except Exception:
         return 128
