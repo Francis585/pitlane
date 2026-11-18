@@ -85,6 +85,58 @@
   </div>
 </section>
 
+{% if c.history and c.history.editions %}
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="sec-num">HISTORIA</span>
+        <h2>{{ c.name }} en el tiempo</h2>
+        <p>{{ c.history.editions }} ediciones disputadas desde {{ c.history.first_year }}.</p>
+      </div>
+      <span class="src-note">Datos: Jolpica F1 API</span>
+    </div>
+
+    <div class="kpis" style="margin-bottom:30px">
+      <div><b>{{ c.history.editions }}</b><span>Ediciones</span></div>
+      <div><b>{{ c.history.first_year }}</b><span>Primera edición</span></div>
+      <div><b style="font-size:1.5rem">{{ c.history.top_driver.name.split(' ')[-1] }}</b><span>{{ c.history.top_driver.wins }} victorias</span></div>
+      <div><b style="font-size:1.5rem">{{ c.history.top_team.name }}</b><span>{{ c.history.top_team.wins }} victorias</span></div>
+    </div>
+
+    <div class="split">
+      <div>
+        <div class="eyebrow">Victorias por equipo</div>
+        <div class="hist-bars">
+          {% for t in c.history.teams %}
+          {% set tm = meta.get(t.id) %}
+          <div class="hist-bar">
+            <span class="hb-name">{{ t.name }}</span>
+            <span class="hb-track"><span class="hb-fill" style="--w:{{ (t.wins / c.history.max_wins * 100)|round(1) }}%;background:{{ tm.brand if tm else 'var(--gp)' }}"></span></span>
+            <span class="hb-val">{{ t.wins }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">Últimos ganadores</div>
+        <div class="hist-winners">
+          {% for w in c.history.winners %}
+          {% set tm = meta.get(w.team_id) %}
+          <div class="hw-row">
+            <span class="hw-year">{{ w.year }}</span>
+            <span class="hw-dot" style="background:{{ tm.brand if tm else '#555' }}"></span>
+            <span class="hw-driver">{{ w.driver }}</span>
+            <span class="hw-team">{{ tm.display if tm else w.team }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="sec" style="border-top:1px solid var(--line);padding-top:44px">
   <div class="wrap">
     <div class="sec-head">

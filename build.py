@@ -6,8 +6,10 @@ Uso:  python build.py            (usa los datos de src/data/site.json)
 from __future__ import annotations
 
 import json
+import os
 import re
 import shutil
+import time
 import subprocess
 import sys
 from datetime import date, datetime, timedelta
@@ -432,6 +434,7 @@ def optimize_assets() -> dict:
 
 
 def write_static(site: dict) -> None:
+    (OUT / "assets").mkdir(parents=True, exist_ok=True)
     (OUT / "assets" / "favicon.svg").write_text(
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">'
         '<rect width="64" height="64" rx="12" fill="#07080a"/>'
@@ -467,7 +470,31 @@ def write_static(site: dict) -> None:
         "User-agent: *\nAllow: /\nSitemap: https://pitlane-ruddy.vercel.app/sitemap.xml\n", encoding="utf-8")
 
 
+LOCK = ROOT / ".build.lock"
+
+
+def acquire_lock() -> bool:
+    """Impide dos compilaciones a la vez (dejaban public/ a medias)."""
+    if LOCK.exists():
+        age = time.time() - LOCK.stat().st_mtime
+        if age < 900:  # menos de 15 minutos: hay otra compilación viva
+            return False
+        LOCK.unlink(missing_ok=True)
+    LOCK.write_text(str(os.getpid()), encoding="utf-8")
+    return True
+
+
 def main() -> None:
+    if not acquire_lock():
+        print("[build] ya hay una compilación en curso; se omite esta")
+        return
+    try:
+        _main()
+    finally:
+        LOCK.unlink(missing_ok=True)
+
+
+def _main() -> None:
     if "--fetch" in sys.argv:
         subprocess.run([sys.executable, str(ROOT / "scripts" / "fetch_data.py")], check=True)
     site = load_site()

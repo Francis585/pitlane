@@ -166,47 +166,7 @@
   </div>
 </section>
 
-{% if site.last_round and site.last_round.podium %}
-<hr class="rule">
-<section class="sec" data-reveal>
-  <div class="wrap">
-    <div class="split">
-      <div>
-        <div class="eyebrow">Última carrera</div>
-        <h2 style="font-size:clamp(2rem,4.4vw,3.2rem);text-transform:uppercase;margin-bottom:18px">
-          {{ site.last_round.name }}<br><span style="color:var(--dim-2)">{{ site.last_round.locality }}</span></h2>
-        <p class="dim" style="max-width:46ch">{{ site.last_round.date_long }} · {{ site.last_round.circuit }}</p>
-        <div style="display:grid;gap:10px;margin-top:22px;max-width:420px">
-          {% for p in site.last_round.podium %}
-          {% set tm = meta.get(p.team) %}
-          <div style="display:grid;grid-template-columns:40px 12px 1fr auto;align-items:center;gap:14px;
-                      border-bottom:1px solid var(--line);padding-bottom:10px">
-            <span class="mono" style="color:var(--dim-2)">P{{ p.pos }}</span>
-            <span style="width:12px;height:24px;border-radius:2px;background:{{ tm.brand if tm else '#666' }}"></span>
-            <b style="font-family:var(--font-display);font-size:1.3rem;text-transform:uppercase">{{ p.name }}</b>
-            <span class="mono" style="color:var(--dim)">{{ p.code }}</span>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      <div>
-        <div class="eyebrow">Lo que viene</div>
-        <div style="display:grid;gap:1px;margin-top:14px">
-          {% for r in site.calendar[site.round:site.round+4] %}
-          <div style="display:grid;grid-template-columns:44px 30px 1fr auto;gap:12px;align-items:center;
-                      padding:13px 14px;background:var(--bg-2);border:1px solid var(--line)">
-            <span class="mono" style="color:var(--dim-2)">R{{ r.round }}</span>
-            <span>{{ r.flag }}</span>
-            <span style="font-family:var(--font-display);font-size:1.16rem;text-transform:uppercase">{{ r.name }}</span>
-            <span class="mono" style="color:var(--dim)">{{ r.date_human }}</span>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+
 
 {% if gallery %}
 <hr class="rule">

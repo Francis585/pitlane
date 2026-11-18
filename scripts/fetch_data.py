@@ -119,11 +119,16 @@ def fetch_api() -> dict:
         "StandingsTable"]["StandingsLists"][0]
     teams = get_json(f"{API}/{SEASON}/constructorstandings.json?limit=100")["MRData"][
         "StandingsTable"]["StandingsLists"][0]
-    try:
-        results = get_json(f"{API}/{SEASON}/results.json?limit=1000")["MRData"][
-            "RaceTable"]["Races"]
-    except Exception:
-        results = []
+    # la consulta global recorta a 100 registros (~5 carreras), así que se pide ronda a ronda
+    results = []
+    for r in cal:
+        try:
+            body = get_json(f"{API}/{SEASON}/{r['round']}/results.json")
+            races = body["MRData"]["RaceTable"]["Races"]
+            if races and races[0].get("Results"):
+                results.append(races[0])
+        except Exception:
+            continue
     return {"calendar": cal, "drivers": drivers, "teams": teams, "results": results}
 
 
@@ -246,6 +251,44 @@ def attach_winners(calendar: list, results: list) -> None:
         c["fastest_lap"] = fl["Time"]["time"] if fl else None
 
 
+def circuit_history(circuit_id: str) -> dict:
+    """Palmarés del circuito: victorias por piloto y equipo, ediciones y últimos ganadores."""
+    try:
+        body = get_json(f"{API}/circuits/{circuit_id}/results/1.json?limit=100")
+        races = body["MRData"]["RaceTable"]["Races"]
+    except Exception:
+        return {}
+    if not races:
+        return {}
+
+    by_team, by_driver, winners = {}, {}, []
+    for r in races:
+        res = r["Results"][0]
+        team = res["Constructor"]["name"]
+        team_id = res["Constructor"]["constructorId"]
+        drv = f"{res['Driver']['givenName']} {res['Driver']['familyName']}"
+        row = by_team.setdefault(team, {"wins": 0, "id": team_id})
+        row["wins"] += 1
+        by_driver[drv] = by_driver.get(drv, 0) + 1
+        winners.append({"year": r["season"], "gp": r["raceName"], "driver": drv,
+                        "team": team, "team_id": team_id})
+
+    winners.sort(key=lambda w: w["year"], reverse=True)
+    teams = sorted(({"name": n, "wins": v["wins"], "id": v["id"]} for n, v in by_team.items()),
+                   key=lambda t: -t["wins"])[:5]
+    top_driver = max(by_driver.items(), key=lambda kv: kv[1])
+    return {
+        "editions": len(races),
+        "first_year": races[0]["season"],
+        "last_year": races[-1]["season"],
+        "winners": winners[:6],
+        "teams": teams,
+        "max_wins": teams[0]["wins"] if teams else 1,
+        "top_team": {"name": teams[0]["name"], "wins": teams[0]["wins"]} if teams else None,
+        "top_driver": {"name": top_driver[0], "wins": top_driver[1]},
+    }
+
+
 def enrich_circuits(raw_races: list, calendar: list) -> list:
     """Ficha de cada circuito con foto y descripción de Wikipedia."""
     out = []
@@ -276,6 +319,7 @@ def enrich_circuits(raw_races: list, calendar: list) -> list:
             "done": race["done"],
             "is_next": race["is_next"],
             "winner": race.get("winner"),
+            "history": circuit_history(cid),
         })
     return out
 
@@ -751,6 +795,8 @@ FEEDS = [
     ("ESPN F1", "https://www.espn.com/espn/rss/f1/news"),
     ("RaceFans", "https://www.racefans.net/feed/"),
     ("Motorsport Week", "https://www.motorsportweek.com/feed/"),
+    ("AS Motor", "https://as.com/rss/motor/formula_1.xml"),
+    ("Marca Motor", "https://e00-marca.uecdn.es/rss/motor.xml"),
 ]
 
 # Alias que identifican cada escudería en un titular (minúsculas, sin acentos).
@@ -903,7 +949,7 @@ def _run() -> None:
         "champions": champions,
         "circuits": circuits,
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "round": api["drivers"]["round"],
+        "round": int(api["drivers"]["round"]),
         "total_races": len(calendar),
         "rounds_done": len(done),
         "calendar": calendar,

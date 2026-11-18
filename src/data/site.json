@@ -44,7 +44,92 @@
    "date_long": "8 de marzo de 2026",
    "done": true,
    "is_next": false,
-   "winner": "Russell"
+   "winner": "Russell",
+   "history": {
+    "editions": 29,
+    "first_year": "1996",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Australian Grand Prix",
+      "driver": "George Russell",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2025",
+      "gp": "Australian Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "Australian Grand Prix",
+      "driver": "Carlos Sainz",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2023",
+      "gp": "Australian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Australian Grand Prix",
+      "driver": "Charles Leclerc",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2019",
+      "gp": "Australian Grand Prix",
+      "driver": "Valtteri Bottas",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Ferrari",
+      "wins": 10,
+      "id": "ferrari"
+     },
+     {
+      "name": "McLaren",
+      "wins": 7,
+      "id": "mclaren"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 5,
+      "id": "mercedes"
+     },
+     {
+      "name": "Renault",
+      "wins": 2,
+      "id": "renault"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 2,
+      "id": "red_bull"
+     }
+    ],
+    "max_wins": 10,
+    "top_team": {
+     "name": "Ferrari",
+     "wins": 10
+    },
+    "top_driver": {
+     "name": "Michael Schumacher",
+     "wins": 4
+    }
+   }
   },
   {
    "id": "shanghai",
@@ -63,7 +148,92 @@
    "date_long": "15 de marzo de 2026",
    "done": true,
    "is_next": false,
-   "winner": "Antonelli"
+   "winner": "Antonelli",
+   "history": {
+    "editions": 19,
+    "first_year": "2004",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Chinese Grand Prix",
+      "driver": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2025",
+      "gp": "Chinese Grand Prix",
+      "driver": "Oscar Piastri",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "Chinese Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2019",
+      "gp": "Chinese Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2018",
+      "gp": "Chinese Grand Prix",
+      "driver": "Daniel Ricciardo",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2017",
+      "gp": "Chinese Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Mercedes",
+      "wins": 7,
+      "id": "mercedes"
+     },
+     {
+      "name": "Ferrari",
+      "wins": 4,
+      "id": "ferrari"
+     },
+     {
+      "name": "McLaren",
+      "wins": 4,
+      "id": "mclaren"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 3,
+      "id": "red_bull"
+     },
+     {
+      "name": "Renault",
+      "wins": 1,
+      "id": "renault"
+     }
+    ],
+    "max_wins": 7,
+    "top_team": {
+     "name": "Mercedes",
+     "wins": 7
+    },
+    "top_driver": {
+     "name": "Lewis Hamilton",
+     "wins": 6
+    }
+   }
   },
   {
    "id": "suzuka",
@@ -82,7 +252,92 @@
    "date_long": "29 de marzo de 2026",
    "done": true,
    "is_next": false,
-   "winner": "Antonelli"
+   "winner": "Antonelli",
+   "history": {
+    "editions": 36,
+    "first_year": "1987",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Japanese Grand Prix",
+      "driver": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2025",
+      "gp": "Japanese Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2024",
+      "gp": "Japanese Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2023",
+      "gp": "Japanese Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Japanese Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2019",
+      "gp": "Japanese Grand Prix",
+      "driver": "Valtteri Bottas",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Red Bull",
+      "wins": 8,
+      "id": "red_bull"
+     },
+     {
+      "name": "Ferrari",
+      "wins": 7,
+      "id": "ferrari"
+     },
+     {
+      "name": "McLaren",
+      "wins": 7,
+      "id": "mclaren"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 7,
+      "id": "mercedes"
+     },
+     {
+      "name": "Benetton",
+      "wins": 3,
+      "id": "benetton"
+     }
+    ],
+    "max_wins": 8,
+    "top_team": {
+     "name": "Red Bull",
+     "wins": 8
+    },
+    "top_driver": {
+     "name": "Michael Schumacher",
+     "wins": 6
+    }
+   }
   },
   {
    "id": "miami",
@@ -101,7 +356,75 @@
    "date_long": "3 de mayo de 2026",
    "done": true,
    "is_next": false,
-   "winner": "Antonelli"
+   "winner": "Antonelli",
+   "history": {
+    "editions": 5,
+    "first_year": "2022",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Miami Grand Prix",
+      "driver": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2025",
+      "gp": "Miami Grand Prix",
+      "driver": "Oscar Piastri",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "Miami Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2023",
+      "gp": "Miami Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Miami Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Red Bull",
+      "wins": 2,
+      "id": "red_bull"
+     },
+     {
+      "name": "McLaren",
+      "wins": 2,
+      "id": "mclaren"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 1,
+      "id": "mercedes"
+     }
+    ],
+    "max_wins": 2,
+    "top_team": {
+     "name": "Red Bull",
+     "wins": 2
+    },
+    "top_driver": {
+     "name": "Max Verstappen",
+     "wins": 2
+    }
+   }
   },
   {
    "id": "villeneuve",
@@ -120,7 +443,92 @@
    "date_long": "24 de mayo de 2026",
    "done": true,
    "is_next": false,
-   "winner": "Antonelli"
+   "winner": "Antonelli",
+   "history": {
+    "editions": 45,
+    "first_year": "1978",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Canadian Grand Prix",
+      "driver": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2025",
+      "gp": "Canadian Grand Prix",
+      "driver": "George Russell",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2024",
+      "gp": "Canadian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2023",
+      "gp": "Canadian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Canadian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2019",
+      "gp": "Canadian Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Ferrari",
+      "wins": 11,
+      "id": "ferrari"
+     },
+     {
+      "name": "McLaren",
+      "wins": 9,
+      "id": "mclaren"
+     },
+     {
+      "name": "Williams",
+      "wins": 7,
+      "id": "williams"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 6,
+      "id": "mercedes"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 5,
+      "id": "red_bull"
+     }
+    ],
+    "max_wins": 11,
+    "top_team": {
+     "name": "Ferrari",
+     "wins": 11
+    },
+    "top_driver": {
+     "name": "Michael Schumacher",
+     "wins": 7
+    }
+   }
   },
   {
    "id": "monaco",
@@ -129,7 +537,7 @@
    "country": "Monaco",
    "flag": "🇲🇨",
    "wiki": "Circuit_de_Monaco",
-   "photo": null,
+   "photo": "assets/circuits/monaco.jpg",
    "about": "El Gran Premio de Mónaco es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el Circuito de Mónaco, ubicado entre los distritos de Montecarlo y La Condamine, dentro del Principado de Mónaco. Es uno de los grandes premios más antiguos y prestigiosos de la categoría.…",
    "round": 6,
    "gp": "GP de Mónaco",
@@ -139,7 +547,92 @@
    "date_long": "7 de junio de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Antonelli",
+   "history": {
+    "editions": 72,
+    "first_year": "1950",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Monaco Grand Prix",
+      "driver": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2025",
+      "gp": "Monaco Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "Monaco Grand Prix",
+      "driver": "Charles Leclerc",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2023",
+      "gp": "Monaco Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Monaco Grand Prix",
+      "driver": "Sergio Pérez",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "Monaco Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     }
+    ],
+    "teams": [
+     {
+      "name": "McLaren",
+      "wins": 16,
+      "id": "mclaren"
+     },
+     {
+      "name": "Ferrari",
+      "wins": 10,
+      "id": "ferrari"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 7,
+      "id": "red_bull"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 6,
+      "id": "mercedes"
+     },
+     {
+      "name": "BRM",
+      "wins": 5,
+      "id": "brm"
+     }
+    ],
+    "max_wins": 16,
+    "top_team": {
+     "name": "McLaren",
+     "wins": 16
+    },
+    "top_driver": {
+     "name": "Ayrton Senna",
+     "wins": 6
+    }
+   }
   },
   {
    "id": "catalunya",
@@ -158,7 +651,92 @@
    "date_long": "14 de junio de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Hamilton",
+   "history": {
+    "editions": 36,
+    "first_year": "1991",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Barcelona Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2025",
+      "gp": "Spanish Grand Prix",
+      "driver": "Oscar Piastri",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "Spanish Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2023",
+      "gp": "Spanish Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Spanish Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "Spanish Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Ferrari",
+      "wins": 9,
+      "id": "ferrari"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 7,
+      "id": "mercedes"
+     },
+     {
+      "name": "Williams",
+      "wins": 6,
+      "id": "williams"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 6,
+      "id": "red_bull"
+     },
+     {
+      "name": "McLaren",
+      "wins": 5,
+      "id": "mclaren"
+     }
+    ],
+    "max_wins": 9,
+    "top_team": {
+     "name": "Ferrari",
+     "wins": 9
+    },
+    "top_driver": {
+     "name": "Lewis Hamilton",
+     "wins": 7
+    }
+   }
   },
   {
    "id": "red_bull_ring",
@@ -177,7 +755,92 @@
    "date_long": "28 de junio de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Russell",
+   "history": {
+    "editions": 40,
+    "first_year": "1970",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Austrian Grand Prix",
+      "driver": "George Russell",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2025",
+      "gp": "Austrian Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "Austrian Grand Prix",
+      "driver": "George Russell",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2023",
+      "gp": "Austrian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Austrian Grand Prix",
+      "driver": "Charles Leclerc",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2021",
+      "gp": "Styrian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Mercedes",
+      "wins": 8,
+      "id": "mercedes"
+     },
+     {
+      "name": "McLaren",
+      "wins": 7,
+      "id": "mclaren"
+     },
+     {
+      "name": "Ferrari",
+      "wins": 5,
+      "id": "ferrari"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 5,
+      "id": "red_bull"
+     },
+     {
+      "name": "Team Lotus",
+      "wins": 4,
+      "id": "team_lotus"
+     }
+    ],
+    "max_wins": 8,
+    "top_team": {
+     "name": "Mercedes",
+     "wins": 8
+    },
+    "top_driver": {
+     "name": "Max Verstappen",
+     "wins": 5
+    }
+   }
   },
   {
    "id": "silverstone",
@@ -196,7 +859,92 @@
    "date_long": "5 de julio de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Leclerc",
+   "history": {
+    "editions": 61,
+    "first_year": "1950",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "British Grand Prix",
+      "driver": "Charles Leclerc",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2025",
+      "gp": "British Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "British Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2023",
+      "gp": "British Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "British Grand Prix",
+      "driver": "Carlos Sainz",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2021",
+      "gp": "British Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Ferrari",
+      "wins": 16,
+      "id": "ferrari"
+     },
+     {
+      "name": "McLaren",
+      "wins": 13,
+      "id": "mclaren"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 9,
+      "id": "mercedes"
+     },
+     {
+      "name": "Williams",
+      "wins": 8,
+      "id": "williams"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 5,
+      "id": "red_bull"
+     }
+    ],
+    "max_wins": 16,
+    "top_team": {
+     "name": "Ferrari",
+     "wins": 16
+    },
+    "top_driver": {
+     "name": "Lewis Hamilton",
+     "wins": 9
+    }
+   }
   },
   {
    "id": "spa",
@@ -215,7 +963,92 @@
    "date_long": "19 de julio de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Antonelli",
+   "history": {
+    "editions": 59,
+    "first_year": "1950",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Belgian Grand Prix",
+      "driver": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2025",
+      "gp": "Belgian Grand Prix",
+      "driver": "Oscar Piastri",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "Belgian Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2023",
+      "gp": "Belgian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Belgian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "Belgian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Ferrari",
+      "wins": 14,
+      "id": "ferrari"
+     },
+     {
+      "name": "McLaren",
+      "wins": 12,
+      "id": "mclaren"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 7,
+      "id": "mercedes"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 6,
+      "id": "red_bull"
+     },
+     {
+      "name": "Lotus-Climax",
+      "wins": 4,
+      "id": "lotus-climax"
+     }
+    ],
+    "max_wins": 14,
+    "top_team": {
+     "name": "Ferrari",
+     "wins": 14
+    },
+    "top_driver": {
+     "name": "Michael Schumacher",
+     "wins": 6
+    }
+   }
   },
   {
    "id": "hungaroring",
@@ -234,7 +1067,92 @@
    "date_long": "26 de julio de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Norris",
+   "history": {
+    "editions": 41,
+    "first_year": "1986",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Hungarian Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2025",
+      "gp": "Hungarian Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "Hungarian Grand Prix",
+      "driver": "Oscar Piastri",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2023",
+      "gp": "Hungarian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Hungarian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "Hungarian Grand Prix",
+      "driver": "Esteban Ocon",
+      "team": "Alpine F1 Team",
+      "team_id": "alpine"
+     }
+    ],
+    "teams": [
+     {
+      "name": "McLaren",
+      "wins": 14,
+      "id": "mclaren"
+     },
+     {
+      "name": "Williams",
+      "wins": 7,
+      "id": "williams"
+     },
+     {
+      "name": "Ferrari",
+      "wins": 7,
+      "id": "ferrari"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 5,
+      "id": "mercedes"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 4,
+      "id": "red_bull"
+     }
+    ],
+    "max_wins": 14,
+    "top_team": {
+     "name": "McLaren",
+     "wins": 14
+    },
+    "top_driver": {
+     "name": "Lewis Hamilton",
+     "wins": 8
+    }
+   }
   },
   {
    "id": "zandvoort",
@@ -253,7 +1171,92 @@
    "date_long": "23 de agosto de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Norris",
+   "history": {
+    "editions": 36,
+    "first_year": "1952",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Dutch Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2025",
+      "gp": "Dutch Grand Prix",
+      "driver": "Oscar Piastri",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "Dutch Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2023",
+      "gp": "Dutch Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Dutch Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "Dutch Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Ferrari",
+      "wins": 8,
+      "id": "ferrari"
+     },
+     {
+      "name": "McLaren",
+      "wins": 6,
+      "id": "mclaren"
+     },
+     {
+      "name": "Lotus-Climax",
+      "wins": 3,
+      "id": "lotus-climax"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 3,
+      "id": "red_bull"
+     },
+     {
+      "name": "BRM",
+      "wins": 2,
+      "id": "brm"
+     }
+    ],
+    "max_wins": 8,
+    "top_team": {
+     "name": "Ferrari",
+     "wins": 8
+    },
+    "top_driver": {
+     "name": "Jim Clark",
+     "wins": 4
+    }
+   }
   },
   {
    "id": "monza",
@@ -272,7 +1275,92 @@
    "date_long": "6 de septiembre de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Antonelli",
+   "history": {
+    "editions": 76,
+    "first_year": "1950",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Italian Grand Prix",
+      "driver": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2025",
+      "gp": "Italian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2024",
+      "gp": "Italian Grand Prix",
+      "driver": "Charles Leclerc",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2023",
+      "gp": "Italian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Italian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "Italian Grand Prix",
+      "driver": "Daniel Ricciardo",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Ferrari",
+      "wins": 20,
+      "id": "ferrari"
+     },
+     {
+      "name": "McLaren",
+      "wins": 10,
+      "id": "mclaren"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 8,
+      "id": "mercedes"
+     },
+     {
+      "name": "Williams",
+      "wins": 6,
+      "id": "williams"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 5,
+      "id": "red_bull"
+     }
+    ],
+    "max_wins": 20,
+    "top_team": {
+     "name": "Ferrari",
+     "wins": 20
+    },
+    "top_driver": {
+     "name": "Michael Schumacher",
+     "wins": 5
+    }
+   }
   },
   {
    "id": "madring",
@@ -291,7 +1379,37 @@
    "date_long": "13 de septiembre de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Antonelli",
+   "history": {
+    "editions": 1,
+    "first_year": "2026",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Spanish Grand Prix",
+      "driver": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Mercedes",
+      "wins": 1,
+      "id": "mercedes"
+     }
+    ],
+    "max_wins": 1,
+    "top_team": {
+     "name": "Mercedes",
+     "wins": 1
+    },
+    "top_driver": {
+     "name": "Andrea Kimi Antonelli",
+     "wins": 1
+    }
+   }
   },
   {
    "id": "baku",
@@ -310,7 +1428,82 @@
    "date_long": "26 de septiembre de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Russell",
+   "history": {
+    "editions": 10,
+    "first_year": "2016",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Azerbaijan Grand Prix",
+      "driver": "George Russell",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2025",
+      "gp": "Azerbaijan Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2024",
+      "gp": "Azerbaijan Grand Prix",
+      "driver": "Oscar Piastri",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2023",
+      "gp": "Azerbaijan Grand Prix",
+      "driver": "Sergio Pérez",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Azerbaijan Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "Azerbaijan Grand Prix",
+      "driver": "Sergio Pérez",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Red Bull",
+      "wins": 5,
+      "id": "red_bull"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 4,
+      "id": "mercedes"
+     },
+     {
+      "name": "McLaren",
+      "wins": 1,
+      "id": "mclaren"
+     }
+    ],
+    "max_wins": 5,
+    "top_team": {
+     "name": "Red Bull",
+     "wins": 5
+    },
+    "top_driver": {
+     "name": "Sergio Pérez",
+     "wins": 2
+    }
+   }
   },
   {
    "id": "sepang",
@@ -329,7 +1522,92 @@
    "date_long": "4 de octubre de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Verstappen",
+   "history": {
+    "editions": 20,
+    "first_year": "1999",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Bahrain Grand Prix in Malaysia",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2017",
+      "gp": "Malaysian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2016",
+      "gp": "Malaysian Grand Prix",
+      "driver": "Daniel Ricciardo",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2015",
+      "gp": "Malaysian Grand Prix",
+      "driver": "Sebastian Vettel",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2014",
+      "gp": "Malaysian Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2013",
+      "gp": "Malaysian Grand Prix",
+      "driver": "Sebastian Vettel",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Ferrari",
+      "wins": 7,
+      "id": "ferrari"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 6,
+      "id": "red_bull"
+     },
+     {
+      "name": "McLaren",
+      "wins": 2,
+      "id": "mclaren"
+     },
+     {
+      "name": "Renault",
+      "wins": 2,
+      "id": "renault"
+     },
+     {
+      "name": "Williams",
+      "wins": 1,
+      "id": "williams"
+     }
+    ],
+    "max_wins": 7,
+    "top_team": {
+     "name": "Ferrari",
+     "wins": 7
+    },
+    "top_driver": {
+     "name": "Sebastian Vettel",
+     "wins": 4
+    }
+   }
   },
   {
    "id": "marina_bay",
@@ -348,7 +1626,92 @@
    "date_long": "11 de octubre de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Verstappen",
+   "history": {
+    "editions": 17,
+    "first_year": "2008",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Singapore Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2025",
+      "gp": "Singapore Grand Prix",
+      "driver": "George Russell",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2024",
+      "gp": "Singapore Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2023",
+      "gp": "Singapore Grand Prix",
+      "driver": "Carlos Sainz",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2022",
+      "gp": "Singapore Grand Prix",
+      "driver": "Sergio Pérez",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2019",
+      "gp": "Singapore Grand Prix",
+      "driver": "Sebastian Vettel",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Red Bull",
+      "wins": 5,
+      "id": "red_bull"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 5,
+      "id": "mercedes"
+     },
+     {
+      "name": "Ferrari",
+      "wins": 4,
+      "id": "ferrari"
+     },
+     {
+      "name": "McLaren",
+      "wins": 2,
+      "id": "mclaren"
+     },
+     {
+      "name": "Renault",
+      "wins": 1,
+      "id": "renault"
+     }
+    ],
+    "max_wins": 5,
+    "top_team": {
+     "name": "Red Bull",
+     "wins": 5
+    },
+    "top_driver": {
+     "name": "Sebastian Vettel",
+     "wins": 5
+    }
+   }
   },
   {
    "id": "americas",
@@ -367,7 +1730,87 @@
    "date_long": "25 de octubre de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Antonelli",
+   "history": {
+    "editions": 14,
+    "first_year": "2012",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "United States Grand Prix",
+      "driver": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2025",
+      "gp": "United States Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2024",
+      "gp": "United States Grand Prix",
+      "driver": "Charles Leclerc",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2023",
+      "gp": "United States Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "United States Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "United States Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Mercedes",
+      "wins": 6,
+      "id": "mercedes"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 5,
+      "id": "red_bull"
+     },
+     {
+      "name": "Ferrari",
+      "wins": 2,
+      "id": "ferrari"
+     },
+     {
+      "name": "McLaren",
+      "wins": 1,
+      "id": "mclaren"
+     }
+    ],
+    "max_wins": 6,
+    "top_team": {
+     "name": "Mercedes",
+     "wins": 6
+    },
+    "top_driver": {
+     "name": "Lewis Hamilton",
+     "wins": 5
+    }
+   }
   },
   {
    "id": "rodriguez",
@@ -386,7 +1829,92 @@
    "date_long": "1 de noviembre de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Verstappen",
+   "history": {
+    "editions": 26,
+    "first_year": "1963",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Mexico City Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2025",
+      "gp": "Mexico City Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "Mexico City Grand Prix",
+      "driver": "Carlos Sainz",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2023",
+      "gp": "Mexico City Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Mexico City Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "Mexico City Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Red Bull",
+      "wins": 6,
+      "id": "red_bull"
+     },
+     {
+      "name": "Ferrari",
+      "wins": 3,
+      "id": "ferrari"
+     },
+     {
+      "name": "Williams",
+      "wins": 3,
+      "id": "williams"
+     },
+     {
+      "name": "McLaren",
+      "wins": 3,
+      "id": "mclaren"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 3,
+      "id": "mercedes"
+     }
+    ],
+    "max_wins": 6,
+    "top_team": {
+     "name": "Red Bull",
+     "wins": 6
+    },
+    "top_driver": {
+     "name": "Max Verstappen",
+     "wins": 6
+    }
+   }
   },
   {
    "id": "interlagos",
@@ -405,7 +1933,92 @@
    "date_long": "8 de noviembre de 2026",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": "Norris",
+   "history": {
+    "editions": 43,
+    "first_year": "1973",
+    "last_year": "2026",
+    "winners": [
+     {
+      "year": "2026",
+      "gp": "Brazilian Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2025",
+      "gp": "São Paulo Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2024",
+      "gp": "São Paulo Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2023",
+      "gp": "São Paulo Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "São Paulo Grand Prix",
+      "driver": "George Russell",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2021",
+      "gp": "São Paulo Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     }
+    ],
+    "teams": [
+     {
+      "name": "McLaren",
+      "wins": 10,
+      "id": "mclaren"
+     },
+     {
+      "name": "Ferrari",
+      "wins": 9,
+      "id": "ferrari"
+     },
+     {
+      "name": "Red Bull",
+      "wins": 7,
+      "id": "red_bull"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 6,
+      "id": "mercedes"
+     },
+     {
+      "name": "Williams",
+      "wins": 4,
+      "id": "williams"
+     }
+    ],
+    "max_wins": 10,
+    "top_team": {
+     "name": "McLaren",
+     "wins": 10
+    },
+    "top_driver": {
+     "name": "Michael Schumacher",
+     "wins": 4
+    }
+   }
   },
   {
    "id": "vegas",
@@ -424,7 +2037,56 @@
    "date_long": "22 de noviembre de 2026",
    "done": false,
    "is_next": true,
-   "winner": null
+   "winner": null,
+   "history": {
+    "editions": 3,
+    "first_year": "2023",
+    "last_year": "2025",
+    "winners": [
+     {
+      "year": "2025",
+      "gp": "Las Vegas Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2024",
+      "gp": "Las Vegas Grand Prix",
+      "driver": "George Russell",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2023",
+      "gp": "Las Vegas Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Red Bull",
+      "wins": 2,
+      "id": "red_bull"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 1,
+      "id": "mercedes"
+     }
+    ],
+    "max_wins": 2,
+    "top_team": {
+     "name": "Red Bull",
+     "wins": 2
+    },
+    "top_driver": {
+     "name": "Max Verstappen",
+     "wins": 2
+    }
+   }
   },
   {
    "id": "losail",
@@ -433,7 +2095,7 @@
    "country": "Qatar",
    "flag": "🇶🇦",
    "wiki": "Lusail_International_Circuit",
-   "photo": null,
+   "photo": "assets/circuits/losail.jpg",
    "about": "El Gran Premio de Catar es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el circuito Internacional de Losail, ubicado en la ciudad de Lusail, Catar, a aproximadamente 28 kilómetros al norte de la capital Doha.…",
    "round": 22,
    "gp": "GP de Catar",
@@ -443,7 +2105,63 @@
    "date_long": "29 de noviembre de 2026",
    "done": false,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "history": {
+    "editions": 4,
+    "first_year": "2021",
+    "last_year": "2025",
+    "winners": [
+     {
+      "year": "2025",
+      "gp": "Qatar Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2024",
+      "gp": "Qatar Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2023",
+      "gp": "Qatar Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "Qatar Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Red Bull",
+      "wins": 3,
+      "id": "red_bull"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 1,
+      "id": "mercedes"
+     }
+    ],
+    "max_wins": 3,
+    "top_team": {
+     "name": "Red Bull",
+     "wins": 3
+    },
+    "top_driver": {
+     "name": "Max Verstappen",
+     "wins": 3
+    }
+   }
   },
   {
    "id": "yas_marina",
@@ -452,7 +2170,7 @@
    "country": "UAE",
    "flag": "🇦🇪",
    "wiki": "Yas_Marina_Circuit",
-   "photo": null,
+   "photo": "assets/circuits/yas_marina.jpg",
    "about": "El Gran Premio de Abu Dabi es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el circuito Yas Marina, ubicado en la Isla de Yas, en Abu Dabi, Emiratos Árabes Unidos.",
    "round": 23,
    "gp": "GP de Abu Dabi",
@@ -462,11 +2180,91 @@
    "date_long": "6 de diciembre de 2026",
    "done": false,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "history": {
+    "editions": 17,
+    "first_year": "2009",
+    "last_year": "2025",
+    "winners": [
+     {
+      "year": "2025",
+      "gp": "Abu Dhabi Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2024",
+      "gp": "Abu Dhabi Grand Prix",
+      "driver": "Lando Norris",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "2023",
+      "gp": "Abu Dhabi Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2022",
+      "gp": "Abu Dhabi Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "Abu Dhabi Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2020",
+      "gp": "Abu Dhabi Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     }
+    ],
+    "teams": [
+     {
+      "name": "Red Bull",
+      "wins": 8,
+      "id": "red_bull"
+     },
+     {
+      "name": "Mercedes",
+      "wins": 6,
+      "id": "mercedes"
+     },
+     {
+      "name": "McLaren",
+      "wins": 2,
+      "id": "mclaren"
+     },
+     {
+      "name": "Lotus F1",
+      "wins": 1,
+      "id": "lotus_f1"
+     }
+    ],
+    "max_wins": 8,
+    "top_team": {
+     "name": "Red Bull",
+     "wins": 8
+    },
+    "top_driver": {
+     "name": "Lewis Hamilton",
+     "wins": 5
+    }
+   }
   }
  ],
- "generated": "2026-11-18T15:49:49+00:00",
- "round": "20",
+ "generated": "2026-11-18T16:44:25+00:00",
+ "round": 20,
  "total_races": 23,
  "rounds_done": 20,
  "calendar": [
@@ -940,7 +2738,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Antonelli",
    "sessions": [
     {
      "name": "Libres 1",
@@ -992,7 +2790,29 @@
      "time_es": "15:00",
      "time_utc": "13:00"
     }
-   ]
+   ],
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "2",
+     "name": "Hamilton",
+     "team": "ferrari",
+     "code": "HAM"
+    },
+    {
+     "pos": "3",
+     "name": "Hadjar",
+     "team": "red_bull",
+     "code": "HAD"
+    }
+   ],
+   "fastest_lap": "1:13.481"
   },
   {
    "round": 7,
@@ -1009,7 +2829,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Hamilton",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1061,7 +2881,29 @@
      "time_es": "15:00",
      "time_utc": "13:00"
     }
-   ]
+   ],
+   "winner_team": "ferrari",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Hamilton",
+     "team": "ferrari",
+     "code": "HAM"
+    },
+    {
+     "pos": "2",
+     "name": "Russell",
+     "team": "mercedes",
+     "code": "RUS"
+    },
+    {
+     "pos": "3",
+     "name": "Norris",
+     "team": "mclaren",
+     "code": "NOR"
+    }
+   ],
+   "fastest_lap": "1:20.122"
   },
   {
    "round": 8,
@@ -1078,7 +2920,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Russell",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1130,7 +2972,29 @@
      "time_es": "15:00",
      "time_utc": "13:00"
     }
-   ]
+   ],
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Russell",
+     "team": "mercedes",
+     "code": "RUS"
+    },
+    {
+     "pos": "2",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    },
+    {
+     "pos": "3",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    }
+   ],
+   "fastest_lap": "1:10.683"
   },
   {
    "round": 9,
@@ -1147,7 +3011,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Leclerc",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1199,7 +3063,29 @@
      "time_es": "16:00",
      "time_utc": "14:00"
     }
-   ]
+   ],
+   "winner_team": "ferrari",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Leclerc",
+     "team": "ferrari",
+     "code": "LEC"
+    },
+    {
+     "pos": "2",
+     "name": "Russell",
+     "team": "mercedes",
+     "code": "RUS"
+    },
+    {
+     "pos": "3",
+     "name": "Hamilton",
+     "team": "ferrari",
+     "code": "HAM"
+    }
+   ],
+   "fastest_lap": "1:32.871"
   },
   {
    "round": 10,
@@ -1216,7 +3102,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Antonelli",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1268,7 +3154,29 @@
      "time_es": "15:00",
      "time_utc": "13:00"
     }
-   ]
+   ],
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "2",
+     "name": "Leclerc",
+     "team": "ferrari",
+     "code": "LEC"
+    },
+    {
+     "pos": "3",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    }
+   ],
+   "fastest_lap": "1:49.098"
   },
   {
    "round": 11,
@@ -1285,7 +3193,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Norris",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1337,7 +3245,29 @@
      "time_es": "15:00",
      "time_utc": "13:00"
     }
-   ]
+   ],
+   "winner_team": "mclaren",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Norris",
+     "team": "mclaren",
+     "code": "NOR"
+    },
+    {
+     "pos": "2",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    },
+    {
+     "pos": "3",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    }
+   ],
+   "fastest_lap": "1:22.491"
   },
   {
    "round": 12,
@@ -1354,7 +3284,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Norris",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1406,7 +3336,29 @@
      "time_es": "15:00",
      "time_utc": "13:00"
     }
-   ]
+   ],
+   "winner_team": "mclaren",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Norris",
+     "team": "mclaren",
+     "code": "NOR"
+    },
+    {
+     "pos": "2",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "3",
+     "name": "Russell",
+     "team": "mercedes",
+     "code": "RUS"
+    }
+   ],
+   "fastest_lap": "1:14.321"
   },
   {
    "round": 13,
@@ -1423,7 +3375,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Antonelli",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1475,7 +3427,29 @@
      "time_es": "15:00",
      "time_utc": "13:00"
     }
-   ]
+   ],
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "2",
+     "name": "Russell",
+     "team": "mercedes",
+     "code": "RUS"
+    },
+    {
+     "pos": "3",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    }
+   ],
+   "fastest_lap": "1:23.504"
   },
   {
    "round": 14,
@@ -1492,7 +3466,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Antonelli",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1544,7 +3518,29 @@
      "time_es": "15:00",
      "time_utc": "13:00"
     }
-   ]
+   ],
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "2",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    },
+    {
+     "pos": "3",
+     "name": "Norris",
+     "team": "mclaren",
+     "code": "NOR"
+    }
+   ],
+   "fastest_lap": "1:36.030"
   },
   {
    "round": 15,
@@ -1561,7 +3557,7 @@
    "weekday": "sábado",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Russell",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1613,7 +3609,29 @@
      "time_es": "13:00",
      "time_utc": "11:00"
     }
-   ]
+   ],
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Russell",
+     "team": "mercedes",
+     "code": "RUS"
+    },
+    {
+     "pos": "2",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    },
+    {
+     "pos": "3",
+     "name": "Hadjar",
+     "team": "red_bull",
+     "code": "HAD"
+    }
+   ],
+   "fastest_lap": "1:44.916"
   },
   {
    "round": 16,
@@ -1630,7 +3648,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Verstappen",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1682,7 +3700,29 @@
      "time_es": "09:00",
      "time_utc": "07:00"
     }
-   ]
+   ],
+   "winner_team": "red_bull",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    },
+    {
+     "pos": "2",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "3",
+     "name": "Hamilton",
+     "team": "ferrari",
+     "code": "HAM"
+    }
+   ],
+   "fastest_lap": "1:38.220"
   },
   {
    "round": 17,
@@ -1699,7 +3739,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Verstappen",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1751,7 +3791,29 @@
      "time_es": "14:00",
      "time_utc": "12:00"
     }
-   ]
+   ],
+   "winner_team": "red_bull",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    },
+    {
+     "pos": "2",
+     "name": "Leclerc",
+     "team": "ferrari",
+     "code": "LEC"
+    },
+    {
+     "pos": "3",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    }
+   ],
+   "fastest_lap": "1:36.201"
   },
   {
    "round": 18,
@@ -1768,7 +3830,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Antonelli",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1820,7 +3882,29 @@
      "time_es": "21:00",
      "time_utc": "20:00"
     }
-   ]
+   ],
+   "winner_team": "mercedes",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    },
+    {
+     "pos": "2",
+     "name": "Leclerc",
+     "team": "ferrari",
+     "code": "LEC"
+    },
+    {
+     "pos": "3",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    }
+   ],
+   "fastest_lap": "1:39.086"
   },
   {
    "round": 19,
@@ -1837,7 +3921,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Verstappen",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1889,7 +3973,29 @@
      "time_es": "21:00",
      "time_utc": "20:00"
     }
-   ]
+   ],
+   "winner_team": "red_bull",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    },
+    {
+     "pos": "2",
+     "name": "Hamilton",
+     "team": "ferrari",
+     "code": "HAM"
+    },
+    {
+     "pos": "3",
+     "name": "Antonelli",
+     "team": "mercedes",
+     "code": "ANT"
+    }
+   ],
+   "fastest_lap": "1:19.328"
   },
   {
    "round": 20,
@@ -1906,7 +4012,7 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null,
+   "winner": "Norris",
    "sessions": [
     {
      "name": "Libres 1",
@@ -1958,7 +4064,29 @@
      "time_es": "18:00",
      "time_utc": "17:00"
     }
-   ]
+   ],
+   "winner_team": "mclaren",
+   "podium": [
+    {
+     "pos": "1",
+     "name": "Norris",
+     "team": "mclaren",
+     "code": "NOR"
+    },
+    {
+     "pos": "2",
+     "name": "Verstappen",
+     "team": "red_bull",
+     "code": "VER"
+    },
+    {
+     "pos": "3",
+     "name": "Hadjar",
+     "team": "red_bull",
+     "code": "HAD"
+    }
+   ],
+   "fastest_lap": "1:12.983"
   },
   {
    "round": 21,
@@ -2254,7 +4382,7 @@
   "weekday": "domingo",
   "done": true,
   "is_next": false,
-  "winner": null,
+  "winner": "Norris",
   "sessions": [
    {
     "name": "Libres 1",
@@ -2306,7 +4434,29 @@
     "time_es": "18:00",
     "time_utc": "17:00"
    }
-  ]
+  ],
+  "winner_team": "mclaren",
+  "podium": [
+   {
+    "pos": "1",
+    "name": "Norris",
+    "team": "mclaren",
+    "code": "NOR"
+   },
+   {
+    "pos": "2",
+    "name": "Verstappen",
+    "team": "red_bull",
+    "code": "VER"
+   },
+   {
+    "pos": "3",
+    "name": "Hadjar",
+    "team": "red_bull",
+    "code": "HAD"
+   }
+  ],
+  "fastest_lap": "1:12.983"
  },
  "teams": [
   {
@@ -2389,7 +4539,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-Kimi-Antonelli-F1-United-States-GP.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 2 h",
+     "age": "hace 3 h",
      "ts": 1795006800.0,
      "teams": [
       "mercedes",
@@ -2421,7 +4571,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1453952_HiRes-1.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 6 h",
+     "age": "hace 7 h",
      "ts": 1794994290.0,
      "teams": [
       "mercedes"
@@ -2433,10 +4583,10 @@
      "url": "https://www.autosport.com/f1/news/the-antonelli-you-dont-know-daily-life-with-f1s-newest-champion/10875217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "There is one thing that physiotherapist Sergi Avila took a little while to understand. When Kimi Antonelli finally found himself with a free weekend, after weeks being spent between circuits, airports and training, the most logica",
      "source": "Autosport",
-     "image": "https://cdn-2.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 6 h",
+     "age": "hace 7 h",
      "ts": 1794993655.0,
      "teams": [
       "mercedes"
@@ -2498,7 +4648,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1452325_HiRes-1-300x169.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 9 h",
+     "age": "hace 10 h",
      "ts": 1794981600.0,
      "teams": [
       "ferrari",
@@ -2542,7 +4692,7 @@
      "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
      "source": "Motorsport.com",
-     "image": "https://cdn-6.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
      "age": "hace 1 d",
@@ -2650,7 +4800,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-Kimi-Antonelli-F1-United-States-GP.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 2 h",
+     "age": "hace 3 h",
      "ts": 1795006800.0,
      "teams": [
       "mercedes",
@@ -2679,10 +4829,10 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 22 h",
+     "age": "hace 23 h",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
@@ -2696,7 +4846,7 @@
      "url": "https://www.motorsport.com/f1/news/lando-norriss-ln4-fusion-signs-former-red-bull-junior-oliver-goethe-as-its-first-f2-driver/10874918/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Lando Norris's new junior team LN4 Fusion has signed former Red Bull junior Oliver Goethe as its first driver for the 2027 Formula 2 season. The 22-year-old will make the move from MP Motorsport for his third season in F2, after c",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 1 d",
@@ -2727,7 +4877,7 @@
      "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -2786,14 +4936,29 @@
    ],
    "news": [
     {
+     "title": "Oscar Piastri to take a significant penalty for Las Vegas GP",
+     "url": "https://www.motorsportweek.com/2026/11/18/oscar-piastri-to-take-a-significant-penalty-for-las-vegas-gp/",
+     "desc": "Oscar Piastri is changing his power unit for the Las Vegas Grand Prix, earning a significant grid penalty for the race. The post Oscar Piastri to take a significant penalty for Las Vegas GP appeared first on Motorsport Week .",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1448428_HiRes-1-300x169.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 1 h",
+     "ts": 1795017600.0,
+     "teams": [
+      "mclaren"
+     ],
+     "own": true
+    },
+    {
      "title": "\"We haven't taken any steps backwards\" – McLaren boss explains 2026",
      "url": "https://www.motorsport.com/f1/news/we-havent-taken-any-steps-backwards-mclaren-boss-explains-2026/10875219/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
+     "image": "https://cdn-4.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 2 h",
+     "age": "hace 3 h",
      "ts": 1795008602.0,
      "teams": [
       "mclaren"
@@ -2808,7 +4973,7 @@
      "image": "https://cdn-3.motorsport.com/images/amp/6VyKR1lY/s6/andrea-stella-mclaren-2.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 2 h",
+     "age": "hace 3 h",
      "ts": 1795008602.0,
      "teams": [
       "mclaren"
@@ -2823,7 +4988,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1452016_HiRes-1.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 4 h",
+     "age": "hace 5 h",
      "ts": 1795001400.0,
      "teams": [
       "mclaren"
@@ -2838,7 +5003,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1439737_hires-1.jpg?width=1200",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 5 h",
+     "age": "hace 6 h",
      "ts": 1794996254.0,
      "teams": [
       "mclaren"
@@ -2853,23 +5018,8 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1450906_hires.jpg?width=1200",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 6 h",
-     "ts": 1794994269.0,
-     "teams": [
-      "mclaren"
-     ],
-     "own": true
-    },
-    {
-     "title": "Piastri to receive 10-place grid drop at Las Vegas GP",
-     "url": "https://www.autosport.com/f1/news/piastri-to-receive-grid-drop-at-las-vegas-gp/10875205/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-     "desc": "McLaren driver Oscar Piastri is set for a 10-place grid drop at the Las Vegas Grand Prix for exceeding his engine allowance in the 2026 Formula 1 season. The 25-year-old was already on the limit of four internal combustion engines",
-     "source": "Autosport",
-     "image": "https://cdn-3.motorsport.com/images/amp/YXypRDx6/s6/oscar-piastri-mclaren-3.jpg",
-     "date": "2026-11-18",
-     "date_human": "18 nov",
      "age": "hace 7 h",
-     "ts": 1794989679.0,
+     "ts": 1794994269.0,
      "teams": [
       "mclaren"
      ],
@@ -2937,10 +5087,10 @@
      "url": "https://www.motorsport.com/f1/news/speed-trust-controlled-aggression-what-really-led-to-liam-lawsons-career-saving-f1-2026/10875262/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Liam Lawson's improved form made him too good for Racing Bulls to ignore for the 2027 Formula 1 campaign. But, as always, there's more than just a single factor behind that upturn in performances. It was only last week that the 24",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6O7zMmO6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/6O7zMmO6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 3 h",
+     "age": "hace 4 h",
      "ts": 1795004551.0,
      "teams": [
       "rb"
@@ -2955,7 +5105,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Liam-Lawson-F1-Sao-Paulo-GP-300x169.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 5 h",
+     "age": "hace 6 h",
      "ts": 1794997800.0,
      "teams": [
       "rb"
@@ -2967,10 +5117,10 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 22 h",
+     "age": "hace 23 h",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
@@ -3000,7 +5150,7 @@
      "url": "https://www.motorsport.com/f1/news/retaining-liam-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874659/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
      "source": "Motorsport.com",
-     "image": "https://cdn-7.motorsport.com/images/amp/YpbAe4N0/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/YpbAe4N0/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-15",
      "date_human": "15 nov",
      "age": "hace 2 d",
@@ -3016,7 +5166,7 @@
      "url": "https://www.autosport.com/f1/news/retaining-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874666/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
      "source": "Autosport",
-     "image": "https://cdn-5.motorsport.com/images/amp/YP743Le2/s6/liam-lawson-red-bull-2.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/YP743Le2/s6/liam-lawson-red-bull-2.jpg",
      "date": "2026-11-15",
      "date_human": "15 nov",
      "age": "hace 3 d",
@@ -3082,7 +5232,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-17-at-18.04.22-300x169.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 2 h",
+     "age": "hace 3 h",
      "ts": 1795008600.0,
      "teams": [
       "alpine"
@@ -3094,10 +5244,10 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 22 h",
+     "age": "hace 23 h",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
@@ -3114,7 +5264,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794845454.0,
      "teams": [
       "aston_martin",
@@ -3129,7 +5279,7 @@
      "url": "https://www.autosport.com/f1/news/permane-signs-new-racing-bulls-f1-deal/10871999/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Red Bull has given Alan Permane a new contract as the Racing Bulls Formula 1 squad’s team principal. Permane will retain the reins of the Faenza-based outfit until the end of the 2031 season. A stalwart of the current Alpine squad",
      "source": "Autosport",
-     "image": "https://cdn-5.motorsport.com/images/amp/24QebeqY/s6/alan-permane-racing-bulls-2.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/24QebeqY/s6/alan-permane-racing-bulls-2.jpg",
      "date": "2026-11-06",
      "date_human": "6 nov",
      "age": "hace 12 d",
@@ -3138,6 +5288,41 @@
       "red_bull",
       "alpine",
       "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "\"Tenemos al mejor Alonso\"",
+     "url": "https://as.com/motor/2022/05/28/formula_1/1653715741_756073.html#?ref=rss&format=simple&link=link",
+     "desc": "Pat Fry, director técnico de Alpine: \"Fernando está relajado, es sensible con el coche y va rápido\".",
+     "source": "AS Motor",
+     "image": "https://as00.epimg.net/motor/imagenes/2022/05/28/formula_1/1653715741_756073_1653715897_miniatura_normal.jpg",
+     "date": "2022-05-28",
+     "date_human": "28 may",
+     "age": "hace 1635 d",
+     "ts": 1653717364.0,
+     "teams": [
+      "aston_martin",
+      "alpine"
+     ],
+     "own": true
+    },
+    {
+     "title": "En casa de Leclerc hay cuatro pilotos que aspiran a la pole",
+     "url": "https://as.com/motor/2022/05/27/formula_1/1653657144_400730.html#?ref=rss&format=simple&link=link",
+     "desc": "Manda el monegasco con Pérez y Sainz a menos de una décima. Verstappen, a 181 milésimas. Discreto Alpine: Alonso fue 13º a más de un segundo.",
+     "source": "AS Motor",
+     "image": "https://as00.epimg.net/motor/imagenes/2022/05/27/formula_1/1653657144_400730_1653657236_miniatura_normal.jpg",
+     "date": "2022-05-27",
+     "date_human": "27 may",
+     "age": "hace 1636 d",
+     "ts": 1653657423.0,
+     "teams": [
+      "red_bull",
+      "aston_martin",
+      "alpine",
+      "williams",
+      "cadillac"
      ],
      "own": true
     }
@@ -3213,7 +5398,7 @@
      "url": "https://www.autosport.com/f1/news/haas-sticks-with-rafael-camara-for-las-vegas-ryo-hirakawa-in-for-fp1/10874781/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
      "source": "Autosport",
-     "image": "https://cdn-6.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "image": "https://cdn-2.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -3228,7 +5413,7 @@
      "url": "https://www.motorsport.com/f1/news/haas-sticks-with-camara-for-las-vegas-hirakawa-in-for-fp1/10874778/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
      "source": "Motorsport.com",
-     "image": "https://cdn-8.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -3273,7 +5458,7 @@
      "url": "https://www.motorsport.com/f1/news/guenther-steiner-suggests-mark-webber-became-too-involved-in-oscar-piastris-career/10874383/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Former Haas Formula 1 team principal Guenther Steiner believes Mark Webber may have become too involved in Oscar Piastri’s career in the second half of 2025, before the McLaren driver decided he wanted to “do this on my own”. Pias",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6zoD8dL0/s6/motorsport-com-graphics-2026-1.jpg",
+     "image": "https://cdn-2.motorsport.com/images/amp/6zoD8dL0/s6/motorsport-com-graphics-2026-1.jpg",
      "date": "2026-11-13",
      "date_human": "13 nov",
      "age": "hace 4 d",
@@ -3289,7 +5474,7 @@
      "url": "https://www.autosport.com/f1/news/leclerc-penalised-for-lawson-clash-antonelli-and-oliver-bearman-also-punished-after-f1-brazilian-gp/10873166/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Charles Leclerc was handed a five-second penalty after the Formula 1 Brazilian Grand Prix for his clash with Liam Lawson, dropping the Ferrari driver down to eighth place in the final results. The Monegasque was battling the Racin",
      "source": "Autosport",
-     "image": "https://cdn-2.motorsport.com/images/amp/0Zq8VdL6/s6/charles-leclerc-ferrari-arvid-.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/0Zq8VdL6/s6/charles-leclerc-ferrari-arvid-.jpg",
      "date": "2026-11-08",
      "date_human": "8 nov",
      "age": "hace 9 d",
@@ -3343,7 +5528,7 @@
      "url": "https://www.motorsport.com/f1/news/mercedes-and-audi-unveil-adidas-collections-for-f1-las-vegas-grand-prix/10874493/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes and Audi have unveiled special adidas fan collections for the upcoming Formula 1 Las Vegas Grand Prix. Mercedes' range is called \"Neon Lights\", while Audi's is named \"After Hours\". Both collections are available now throu",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/0o5AVbPY/s6/motorsport-com-graphics-2026-1.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/0o5AVbPY/s6/motorsport-com-graphics-2026-1.jpg",
      "date": "2026-11-14",
      "date_human": "14 nov",
      "age": "hace 4 d",
@@ -3370,18 +5555,16 @@
      "own": true
     },
     {
-     "title": "GALLERY: Alpine to run new livery for remainder of the F1 season",
-     "url": "https://www.motorsportweek.com/2026/11/18/alpine-to-run-new-livery-for-remainder-of-the-f1-season/",
-     "desc": "For the final three rounds of the 2027 Formula 1 season, the Alpine F1 team will display a new livery, with BWT pink covering the A526's sidepods. The post GALLERY: Alpine to run new livery for remainder of the F1 season appeared ",
+     "title": "How Marc Marquez can win the 2026 MotoGP title at the Portuguese GP",
+     "url": "https://www.motorsportweek.com/2026/11/18/marc-marquez-scenarios-champion-portuguesegp/",
+     "desc": "Here are all the scenarios that could see Marc Marquez crowned MotoGP World Champion for the eighth time in Portimao. The post How Marc Marquez can win the 2026 MotoGP title at the Portuguese GP appeared first on Motorsport Week .",
      "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-17-at-18.04.22-300x169.webp",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Marc_Marquez-10-300x169.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
      "age": "hace 2 h",
-     "ts": 1795008600.0,
-     "teams": [
-      "alpine"
-     ],
+     "ts": 1795010400.0,
+     "teams": [],
      "own": false
     }
    ],
@@ -3439,7 +5622,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1452325_HiRes-1-300x169.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 9 h",
+     "age": "hace 10 h",
      "ts": 1794981600.0,
      "teams": [
       "ferrari",
@@ -3471,7 +5654,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794845454.0,
      "teams": [
       "aston_martin",
@@ -3498,16 +5681,33 @@
      "own": true
     },
     {
-     "title": "Why Williams has turned Sainz and Albon into test drivers",
-     "url": "https://www.the-race.com/formula-1/why-williams-has-turned-sainz-and-albon-into-test-drivers/",
-     "desc": "Williams duo Carlos Sainz and Alex Albon have become arguably the most overqualified test drivers in F1 in recent weeks",
-     "source": "The Race",
-     "image": "https://storage.ghost.io/c/dd/af/ddafbd99-2ccd-468c-b622-4b3cccf80b49/content/images/2026/11/XPB_1451432_HiRes.jpg",
-     "date": "",
-     "date_human": "",
-     "age": "",
-     "ts": 0,
+     "title": "Horarios F1 libres y clasificación del GP de Brasil: a qué hora es y dónde ver hoy en TV la 'qualy' de Sainz y Alonso",
+     "url": "https://www.marca.com/motor/formula1/gp-brasil/2026/11/07/horarios-f1-libres-clasificacion-gp-brasil-hora-ver-hoy-tv-qualy-sainz-alonso.html",
+     "desc": "El Campeón del Mundo sigue dominando&nbsp; Leer",
+     "source": "Marca Motor",
+     "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/07/17940107358835.png",
+     "date": "2026-11-07",
+     "date_human": "7 nov",
+     "age": "hace 11 d",
+     "ts": 1794037169.0,
      "teams": [
+      "aston_martin",
+      "williams"
+     ],
+     "own": true
+    },
+    {
+     "title": "Horarios F1 libres y clasificación del GP de Brasil: a qué hora es y dónde ver en TV la 'qualy' de Sainz y Alonso",
+     "url": "https://www.marca.com/motor/formula1/gp-brasil/2026/11/07/horarios-f1-libres-clasificacion-gp-brasil-hora-ver-tv-qualy-sainz-alonso.html",
+     "desc": "El Campeón del Mundo sigue dominando&nbsp; Leer",
+     "source": "Marca Motor",
+     "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/07/17940107358835.png",
+     "date": "2026-11-07",
+     "date_human": "7 nov",
+     "age": "hace 11 d",
+     "ts": 1794010742.0,
+     "teams": [
+      "aston_martin",
       "williams"
      ],
      "own": true
@@ -3609,7 +5809,7 @@
      "url": "https://www.motorsport.com/dakar/news/fernando-alonso-to-return-to-dakar-rally-with-aston-martin-in-2027/10874907/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
      "source": "Motorsport.com",
-     "image": "https://cdn-8.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
      "age": "hace 1 d",
@@ -3643,7 +5843,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794845454.0,
      "teams": [
       "aston_martin",
@@ -3697,7 +5897,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794845454.0,
      "teams": [
       "aston_martin",
@@ -3712,7 +5912,7 @@
      "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -3728,7 +5928,7 @@
      "url": "https://www.autosport.com/f1/news/herta-qualifies-for-f1-superlicence-as-bottas-remains-bullish-on-2027-seat/10872179/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Cadillac Formula 1 test driver Colton Herta has finally obtained the last remaining superlicence point required to drive in the series, but incumbent Valtteri Bottas remains bullish on his future with the squad. Herta conducted hi",
      "source": "Autosport",
-     "image": "https://cdn-4.motorsport.com/images/amp/01QNpEx0/s6/colton-herta-cadillac-f1-team.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/01QNpEx0/s6/colton-herta-cadillac-f1-team.jpg",
      "date": "2026-11-06",
      "date_human": "6 nov",
      "age": "hace 11 d",
@@ -3743,7 +5943,7 @@
      "url": "https://www.autosport.com/f1/news/liverpool-fc-owners-emerge-as-potential-buyers-of-cadillac-f1-shares-amid-twg-uncertainty/10871500/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Fresh doubts have emerged over the future of Cadillac Formula 1's majority ownership amid reports Mark Walter's TWG Global is looking to offload some of its shares - with Liverpool FC owner Fenway Sports Group said to be among the",
      "source": "Autosport",
-     "image": "https://cdn-9.motorsport.com/images/amp/0Zq8bZL6/s6/sergio-perez-cadillac.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/0Zq8bZL6/s6/sergio-perez-cadillac.jpg",
      "date": "2026-11-04",
      "date_human": "4 nov",
      "age": "hace 14 d",
@@ -3758,7 +5958,7 @@
      "url": "https://www.autosport.com/f1/news/herta-to-contest-fp1-in-brazil/10871438/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Cadillac test driver Colton Herta will conduct his sixth Friday practice session of the Formula 1 season at this weekend's Brazil Grand Prix to collect his missing FIA superlicence point required to race in the series. Herta, who ",
      "source": "Autosport",
-     "image": "https://cdn-7.motorsport.com/images/amp/6n7ABxe0/s6/colton-herta-cadillac-f1-team-2.jpg",
+     "image": "https://cdn-2.motorsport.com/images/amp/6n7ABxe0/s6/colton-herta-cadillac-f1-team-2.jpg",
      "date": "2026-11-04",
      "date_human": "4 nov",
      "age": "hace 14 d",
@@ -3769,17 +5969,17 @@
      "own": true
     },
     {
-     "title": "Sergio Pérez's F1 second act: Red Bull regrets, redemption and a fresh start at Cadillac",
-     "url": "https://www.espn.com/f1/story/_/id/50310746/sergio-perez-f1-second-act-red-bull-regrets-cadillac-contract",
-     "desc": "Sergio Pérez reflects on his Red Bull exit, finding happiness beyond F1 and rediscovering his love of racing as he prepares for his 300th grand prix.",
-     "source": "ESPN F1",
-     "image": null,
-     "date": "",
-     "date_human": "",
-     "age": "",
-     "ts": 0,
+     "title": "\"Lawson está haciendo quedar al Checo Pérez muy bien\"",
+     "url": "https://www.marca.com/motor/formula1/2025/03/31/lawson-haciendo-quedar-checo-perez-bien.html",
+     "desc": "Mario Andretti asegura que el piloto mexicano es una &quot;opción&quot; para el asiento de Cadillac en la temporada 2026 de la Fórmula 1&nbsp; Leer",
+     "source": "Marca Motor",
+     "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2025/03/31/17434058642774.jpg",
+     "date": "2025-03-31",
+     "date_human": "31 mar",
+     "age": "hace 597 d",
+     "ts": 1743405877.0,
      "teams": [
-      "red_bull",
+      "rb",
       "cadillac"
      ],
      "own": true
@@ -4369,6 +6569,32 @@
  ],
  "news": [
   {
+   "title": "Five things to watch out for at the F1 Las Vegas GP",
+   "url": "https://www.motorsport.com/f1/news/five-things-to-watch-out-for-at-the-f1-las-vegas-gp/10875316/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Formula 1 kickstarts its final triple-header of the 2026 campaign with this weekend’s Las Vegas Grand Prix. The American venue serves as race 21 of the 23-round calendar with grands prix in Qatar and Abu Dhabi to follow Vegas and ",
+   "source": "Motorsport.com",
+   "image": "https://cdn-9.motorsport.com/images/amp/6DGq1eGY/s6/lando-norris-mclaren-george-ru.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 1 h",
+   "ts": 1795019440.0,
+   "teams": []
+  },
+  {
+   "title": "Oscar Piastri to take a significant penalty for Las Vegas GP",
+   "url": "https://www.motorsportweek.com/2026/11/18/oscar-piastri-to-take-a-significant-penalty-for-las-vegas-gp/",
+   "desc": "Oscar Piastri is changing his power unit for the Las Vegas Grand Prix, earning a significant grid penalty for the race. The post Oscar Piastri to take a significant penalty for Las Vegas GP appeared first on Motorsport Week .",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1448428_HiRes-1-300x169.webp",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 1 h",
+   "ts": 1795017600.0,
+   "teams": [
+    "mclaren"
+   ]
+  },
+  {
    "title": "Team Penske retains longest tenured driver with multi-year extension",
    "url": "https://www.motorsportweek.com/2026/11/18/team-penske-retains-longest-tenured-driver-with-multi-year-extension/",
    "desc": "Team Penske has announced a contract extension with its long-time driver Josef Newgarden. The agreement is a multi-year extension to keep the veteran driver behind the wheel of the #2 entry with one of IndyCar’s most iconic teams ",
@@ -4416,7 +6642,7 @@
    "image": "https://cdn-5.motorsport.com/images/amp/0rVx13O0/s6/stefano-domenicali-mohammed-be-2.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 1 h",
+   "age": "hace 2 h",
    "ts": 1795010888.0,
    "teams": []
   },
@@ -4425,23 +6651,11 @@
    "url": "https://www.motorsport.com/f1/news/future-imperfect-whats-behind-the-abortive-2030-f1-rules-announcement/10875283/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "desc": "Famously, when the papal conclave gathers to elect a new pope, a successful vote is communicated to the huddled masses via smoke from the Sistine Chapel chimney as the chemically impregnated ballot papers are burned: white smoke s",
    "source": "Motorsport.com",
-   "image": "https://cdn-5.motorsport.com/images/amp/0o5AkOxY/s6/gettyimages-2209898755.jpg",
+   "image": "https://cdn-7.motorsport.com/images/amp/0o5AkOxY/s6/gettyimages-2209898755.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 1 h",
+   "age": "hace 2 h",
    "ts": 1795010659.0,
-   "teams": []
-  },
-  {
-   "title": "How Marc Marquez can win the 2026 MotoGP title at the Portuguese GP",
-   "url": "https://www.motorsportweek.com/2026/11/18/marc-marquez-scenarios-champion-portuguesegp/",
-   "desc": "Here are all the scenarios that could see Marc Marquez crowned MotoGP World Champion for the eighth time in Portimao. The post How Marc Marquez can win the 2026 MotoGP title at the Portuguese GP appeared first on Motorsport Week .",
-   "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Marc_Marquez-10-300x169.jpg",
-   "date": "2026-11-18",
-   "date_human": "18 nov",
-   "age": "hace 1 h",
-   "ts": 1795010400.0,
    "teams": []
   },
   {
@@ -4449,10 +6663,10 @@
    "url": "https://www.motorsport.com/f1/news/we-havent-taken-any-steps-backwards-mclaren-boss-explains-2026/10875219/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
    "source": "Motorsport.com",
-   "image": "https://cdn-5.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
+   "image": "https://cdn-4.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 2 h",
+   "age": "hace 3 h",
    "ts": 1795008602.0,
    "teams": [
     "mclaren"
@@ -4466,24 +6680,10 @@
    "image": "https://cdn-3.motorsport.com/images/amp/6VyKR1lY/s6/andrea-stella-mclaren-2.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 2 h",
+   "age": "hace 3 h",
    "ts": 1795008602.0,
    "teams": [
     "mclaren"
-   ]
-  },
-  {
-   "title": "Speed, trust, controlled aggression - What really led to Liam Lawson's career-saving F1 2026",
-   "url": "https://www.motorsport.com/f1/news/speed-trust-controlled-aggression-what-really-led-to-liam-lawsons-career-saving-f1-2026/10875262/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Liam Lawson's improved form made him too good for Racing Bulls to ignore for the 2027 Formula 1 campaign. But, as always, there's more than just a single factor behind that upturn in performances. It was only last week that the 24",
-   "source": "Motorsport.com",
-   "image": "https://cdn-1.motorsport.com/images/amp/6O7zMmO6/s6/liam-lawson-racing-bulls.jpg",
-   "date": "2026-11-18",
-   "date_human": "18 nov",
-   "age": "hace 3 h",
-   "ts": 1795004551.0,
-   "teams": [
-    "rb"
    ]
   },
   {
@@ -4494,7 +6694,7 @@
    "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453426_hires.jpg?width=1200",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 3 h",
+   "age": "hace 4 h",
    "ts": 1795003533.0,
    "teams": []
   },
@@ -4521,7 +6721,7 @@
    "image": null,
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 5 h",
+   "age": "hace 6 h",
    "ts": 1794997294.0,
    "teams": []
   },
@@ -4530,10 +6730,10 @@
    "url": "https://www.autosport.com/f1/news/the-antonelli-you-dont-know-daily-life-with-f1s-newest-champion/10875217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
    "desc": "There is one thing that physiotherapist Sergi Avila took a little while to understand. When Kimi Antonelli finally found himself with a free weekend, after weeks being spent between circuits, airports and training, the most logica",
    "source": "Autosport",
-   "image": "https://cdn-2.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
+   "image": "https://cdn-3.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 6 h",
+   "age": "hace 7 h",
    "ts": 1794993655.0,
    "teams": [
     "mercedes"
@@ -4547,7 +6747,7 @@
    "image": null,
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 8 h",
+   "age": "hace 9 h",
    "ts": 1794986148.0,
    "teams": [
     "mercedes"
@@ -4561,24 +6761,22 @@
    "image": null,
    "date": "2026-11-17",
    "date_human": "17 nov",
-   "age": "hace 19 h",
+   "age": "hace 20 h",
    "ts": 1794947829.0,
    "teams": []
   },
   {
-   "title": "Ford's real role in building F1's 'best' engine",
-   "url": "https://www.the-race.com/formula-1/ford-real-role-in-building-f1-best-engine/",
-   "desc": "How much has Ford really been involved in Red Bull Powertrains' instant success? More than you might think",
-   "source": "The Race",
-   "image": "https://storage.ghost.io/c/dd/af/ddafbd99-2ccd-468c-b622-4b3cccf80b49/content/images/2026/11/XPB_1451161_HiRes.jpg",
-   "date": "",
-   "date_human": "",
-   "age": "",
-   "ts": 0,
-   "teams": [
-    "red_bull"
-   ]
+   "title": "MotoGP GP Qatar: horarios de clasificación y carrera sprint y dónde ver hoy en TV a Marc Márquez",
+   "url": "https://www.marca.com/motor/motogp/gp-qatar/2026/11/07/motogp-gp-qatar-horarios-clasificacion-carrera-sprint-ver-hoy-tv-marc-marquez.html",
+   "desc": "Marc Márquez a un paso de conseguir el que sería su 10º Mundial&nbsp; Leer",
+   "source": "Marca Motor",
+   "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/06/17939920025742.jpg",
+   "date": "2026-11-07",
+   "date_human": "7 nov",
+   "age": "hace 11 d",
+   "ts": 1794037328.0,
+   "teams": []
   }
  ],
- "news_pool": 216
+ "news_pool": 324
 }
