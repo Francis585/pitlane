@@ -497,14 +497,13 @@ p, h1, h2, h3, h4, li, td { overflow-wrap: break-word; }
 /* circuito: rejilla con foto */
 .circ-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr)); gap: 14px; }
 .circ-card { position: relative; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #0b0d11; }
-.circ-card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; filter: grayscale(.82) contrast(1.15) brightness(.92); transition: .45s; }
+.circ-card > img { width: 100%; aspect-ratio: 16/10; object-fit: cover; filter: grayscale(.82) contrast(1.15) brightness(.92); transition: .45s; }
 .circ-card::after { content: ""; position: absolute; inset: 0; pointer-events: none;
-                    background: linear-gradient(180deg, transparent 30%, rgba(7,8,10,.9) 100%),
-                                linear-gradient(120deg, color-mix(in srgb, var(--gp, #ff5a1f) 30%, transparent), transparent 62%);
+                    background: linear-gradient(180deg, transparent 30%, rgba(7,8,10,.9) 100%);
                     mix-blend-mode: normal; }
 .circ-card-body { position: relative; z-index: 1; }
 .circ-card .badge { z-index: 2; }
-.circ-card:hover img { filter: none; transform: scale(1.03); }
+.circ-card:hover > img { filter: none; transform: scale(1.03); }
 .circ-card-body { padding: 14px 16px 16px; }
 .circ-card-body h3 { font-size: 1.24rem; text-transform: uppercase; min-height: 2.1em; }
 .circ-card-body .cc-meta { font-family: var(--font-mono); font-size: .62rem; letter-spacing: .12em;
@@ -863,8 +862,8 @@ body.race-week .circ-hero-img ~ .circ-hero-in .eyebrow { color: var(--gp); }
 }
 
 /* ---------- semana de GP: más superficie teñida ---------- */
-.race-week body, body.race-week { background: color-mix(in srgb, var(--gp) 5%, #05060a); }
-.race-week .sec:nth-of-type(odd) { background: color-mix(in srgb, var(--gp) 3.5%, transparent); }
+body.race-week { background: #06070a; }
+.race-week .sec:nth-of-type(odd) { background: color-mix(in srgb, var(--gp) 1.5%, transparent); }
 .race-week .hero-band b { color: var(--gp); }
 .race-week .hero-band { border-top-color: color-mix(in srgb, var(--gp) 45%, rgba(255,255,255,.14)); }
 .race-week .hero-band > div { border-right-color: color-mix(in srgb, var(--gp) 30%, rgba(255,255,255,.14)); }
@@ -1435,3 +1434,10 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
 
 .gp-count { padding-inline: 10px 4px; min-width: 78px; }
 .gp-count b { font-size: clamp(2.2rem, 3.4vw, 2.9rem); letter-spacing: -.02em; }
+
+/* las banderas nunca se estiran */
+.flag-img { width: 20px !important; height: auto !important; aspect-ratio: auto !important; object-fit: none; }
+.circ-card .cc-meta .flag-img, .cal-row .flag-img { width: 18px !important; }
+
+/* menos aire al principio de las páginas interiores */
+.sec[style*="padding-bottom:26px"] { padding-top: clamp(34px, 4.5vw, 64px); }
