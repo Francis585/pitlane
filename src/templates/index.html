@@ -16,6 +16,7 @@
   </div>
 
   <div class="hero-scrim"></div>
+  <span class="edge-label">Fórmula 1 · {{ site.season }} · Pitlane</span>
   <div class="wrap hero-in">
     <div>
       <div class="hero-kicker">{{ site.season }} · ronda {{ site.round }} de {{ site.total_races }}{% if gp.active %} · semana de {{ gp.gp }}{% endif %}</div>
@@ -87,10 +88,40 @@
 </section>
 {% endif %}
 
+<section class="statement">
+  <div class="wrap">
+    <p>Once equipos. <em>Un solo</em> campeonato. Y {{ site.total_races - site.rounds_done }} carreras para decidirlo.</p>
+    <div class="attribution">Temporada {{ site.season }} · ronda {{ site.round }} de {{ site.total_races }}</div>
+  </div>
+</section>
+
+{% if site.champions %}
 <section class="sec" data-reveal>
   <div class="wrap">
     <div class="sec-head">
       <div>
+        <span class="sec-num">00 — LOS TÍTULOS</span>
+        <h2>A quién le toca la corona</h2>
+        <p>Estado real de los dos campeonatos en la ronda {{ site.round }}.</p>
+      </div>
+      <a class="sec-link" href="{{ root }}clasificacion.html">Ver cuentas →</a>
+    </div>
+    <div class="champs">
+      {{ m.champion_card('drivers', site.champions.drivers, meta, root, site.season) }}
+      {{ m.champion_card('constructors', site.champions.constructors, meta, root, site.season) }}
+    </div>
+  </div>
+</section>
+
+{% endif %}
+
+<hr class="rule">
+
+<section class="sec" data-reveal>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="sec-num">01 — EL MUNDIAL</span>
         <div class="eyebrow">Campeonato de constructores</div>
         <h2>Quién manda en {{ site.season }}</h2>
         <p>Puntos por escudería tras la ronda {{ site.round }}. Cada barra, un equipo; cada color, su identidad.</p>
@@ -107,7 +138,7 @@
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="eyebrow">Las once escuderías</div>
+        <span class="sec-num">02 — ESCUDERÍAS</span><div class="eyebrow">Las once escuderías</div>
         <h2>Cada garaje, su estilo</h2>
         <p>Cada ficha tiene su propia puesta en escena: la de Maranello se lee como un museo, la de
            Brackley como una sala de datos.</p>
@@ -124,7 +155,7 @@
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="eyebrow">Campeonato de pilotos</div>
+        <span class="sec-num">03 — PILOTOS</span><div class="eyebrow">Campeonato de pilotos</div>
         <h2>Los que están delante</h2>
       </div>
       <a class="sec-link" href="{{ root }}pilotos/index.html">Los {{ site.drivers|length }} pilotos →</a>
@@ -207,7 +238,7 @@
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="eyebrow">Desde el paddock</div>
+        <span class="sec-num">06 — PRENSA</span><div class="eyebrow">Desde el paddock</div>
         <h2>Últimas noticias</h2>
         <p>Titulares de los medios especializados, recolectados automáticamente en cada publicación.</p>
       </div>

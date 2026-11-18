@@ -1,5 +1,31 @@
 {
  "season": 2026,
+ "champions": {
+  "drivers": {
+   "id": "antonelli",
+   "name": "Andrea Kimi Antonelli",
+   "points": 390,
+   "team": "mercedes",
+   "gap": 111,
+   "remaining": 3,
+   "max_left": 75,
+   "decided": true,
+   "rival": "Max Verstappen",
+   "rival_points": 279
+  },
+  "constructors": {
+   "id": "mercedes",
+   "name": "Mercedes",
+   "points": 652,
+   "team": "mercedes",
+   "gap": 142,
+   "remaining": 3,
+   "max_left": 129,
+   "decided": true,
+   "rival": "Ferrari",
+   "rival_points": 510
+  }
+ },
  "circuits": [
   {
    "id": "albert_park",
@@ -85,7 +111,7 @@
    "flag": "🇨🇦",
    "wiki": "Circuit_Gilles_Villeneuve",
    "photo": "assets/circuits/villeneuve.jpg",
-   "about": "El Gran Premio de Canadá es una carrera de automovilismo que se lleva a cabo con monoplazas en Canadá desde el año 1961, con ausencias en 1975, 1987 y 2009, y que a partir de 1967 es válida para el Campeonato Mundial de Fórmula 1. Hasta 1977 se disputó en los autódromos de Mosport Park y Circuit Mont-Tremblant. A partir de 1978, se disputa regularmente en un circuito callejero ",
+   "about": "El Gran Premio de Canadá es una carrera de automovilismo que se lleva a cabo con monoplazas en Canadá desde el año 1961, con ausencias en 1975, 1987 y 2009, y que a partir de 1967 es válida para el Campeonato Mundial de Fórmula 1. Hasta 1977 se disputó en los autódromos de Mosport Park y Circuit Mont-Tremblant.…",
    "round": 5,
    "gp": "GP de Canadá",
    "date": "2026-05-24",
@@ -103,8 +129,8 @@
    "country": "Monaco",
    "flag": "🇲🇨",
    "wiki": "Circuit_de_Monaco",
-   "photo": "assets/circuits/monaco.jpg",
-   "about": "El Gran Premio de Mónaco es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el Circuito de Mónaco, ubicado entre los distritos de Montecarlo y La Condamine, dentro del Principado de Mónaco. Es uno de los grandes premios más antiguos y prestigiosos de la categoría. El fundador de este circuito fue Antony Nog",
+   "photo": null,
+   "about": "El Gran Premio de Mónaco es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el Circuito de Mónaco, ubicado entre los distritos de Montecarlo y La Condamine, dentro del Principado de Mónaco. Es uno de los grandes premios más antiguos y prestigiosos de la categoría.…",
    "round": 6,
    "gp": "GP de Mónaco",
    "date": "2026-06-07",
@@ -161,7 +187,7 @@
    "flag": "🇬🇧",
    "wiki": "Silverstone_Circuit",
    "photo": "assets/circuits/silverstone.jpg",
-   "about": "Gran Premio de Gran Bretaña es una carrera de automovilismo para monoplazas que tiene lugar en el Reino Unido desde el año 1926. Junto con el Gran Premio de Italia, ha sido válida para el Campeonato Mundial de Fórmula 1 en todas las temporadas a partir de su creación en 1950. Actualmente se disputa en el Circuito de Silverstone, cerca del pueblo de Silverstone, en Northamptonsh",
+   "about": "Gran Premio de Gran Bretaña es una carrera de automovilismo para monoplazas que tiene lugar en el Reino Unido desde el año 1926. Junto con el Gran Premio de Italia, ha sido válida para el Campeonato Mundial de Fórmula 1 en todas las temporadas a partir de su creación en 1950.…",
    "round": 9,
    "gp": "GP de Gran Bretaña",
    "date": "2026-07-05",
@@ -199,7 +225,7 @@
    "flag": "🇭🇺",
    "wiki": "Hungaroring",
    "photo": "assets/circuits/hungaroring.jpg",
-   "about": "El Gran Premio de Hungría es una carrera de automovilismo que tiene lugar en Hungría. La primera edición se disputó el 21 de junio de 1936 sobre un circuito trazado en un parque cerca del centro de Budapest. Los constructores Mercedes-Benz, Auto Union y Ferrari enviaron tres automóviles cada uno y el evento atrajo a una gran multitud. Sin embargo, la política y la cercana Segun",
+   "about": "El Gran Premio de Hungría es una carrera de automovilismo que tiene lugar en Hungría. La primera edición se disputó el 21 de junio de 1936 sobre un circuito trazado en un parque cerca del centro de Budapest. Los constructores Mercedes-Benz, Auto Union y Ferrari enviaron tres automóviles cada uno y el evento atrajo a una gran multitud.…",
    "round": 11,
    "gp": "GP de Hungría",
    "date": "2026-07-26",
@@ -237,7 +263,7 @@
    "flag": "🇮🇹",
    "wiki": "Monza_Circuit",
    "photo": "assets/circuits/monza.jpg",
-   "about": "El Gran Premio de Italia es una carrera de automovilismo de velocidad disputada con monoplazas en Italia. Es una de las carreras de Gran Premio más antiguas, con su primera edición disputada en el año 1921. El Gran Premio de Italia forma parte de la Fórmula 1 desde su inicio en 1950 siendo la tercera pista de carrera permanente en la existencia de la Fórmula 1 y, junto con el G",
+   "about": "El Gran Premio de Italia es una carrera de automovilismo de velocidad disputada con monoplazas en Italia. Es una de las carreras de Gran Premio más antiguas, con su primera edición disputada en el año 1921. El Gran Premio de Italia forma parte de la Fórmula 1 desde su inicio en 1950 siendo la tercera pista de carrera permanente en la existencia de la Fórmula 1 y, junto con el…",
    "round": 13,
    "gp": "GP de Italia",
    "date": "2026-09-06",
@@ -389,7 +415,7 @@
    "flag": "🇺🇸",
    "wiki": "Las_Vegas_Grand_Prix#Circuit",
    "photo": "assets/circuits/vegas.jpg",
-   "about": "El Gran Premio de Las Vegas es una carrera de automovilismo que se disputa en Las Vegas, Estados Unidos. En el pasado, fue conocida popularmente como Gran Premio de Caesars Palace que fue parte del calendario del mundial de automovilismo de Fórmula 1 para las temporadas de 1981 y 1982, y tras su abandono por la Fórmula 1 por diversos motivos deportivos, continuó como competenci",
+   "about": "El Gran Premio de Las Vegas es una carrera de automovilismo que se disputa en Las Vegas, Estados Unidos. En el pasado, fue conocida popularmente como Gran Premio de Caesars Palace que fue parte del calendario del mundial de automovilismo de Fórmula 1 para las temporadas de 1981 y 1982, y tras su abandono por la Fórmula 1 por diversos motivos deportivos, continuó como…",
    "round": 21,
    "gp": "GP de Las Vegas",
    "date": "2026-11-22",
@@ -407,8 +433,8 @@
    "country": "Qatar",
    "flag": "🇶🇦",
    "wiki": "Lusail_International_Circuit",
-   "photo": "assets/circuits/losail.jpg",
-   "about": "El Gran Premio de Catar es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el circuito Internacional de Losail, ubicado en la ciudad de Lusail, Catar, a aproximadamente 28 kilómetros al norte de la capital Doha. Se celebró por primera vez en la temporada 2021, siendo el piloto británico Lewis Hamilton de la",
+   "photo": null,
+   "about": "El Gran Premio de Catar es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el circuito Internacional de Losail, ubicado en la ciudad de Lusail, Catar, a aproximadamente 28 kilómetros al norte de la capital Doha.…",
    "round": 22,
    "gp": "GP de Catar",
    "date": "2026-11-29",
@@ -426,7 +452,7 @@
    "country": "UAE",
    "flag": "🇦🇪",
    "wiki": "Yas_Marina_Circuit",
-   "photo": "assets/circuits/yas_marina.jpg",
+   "photo": null,
    "about": "El Gran Premio de Abu Dabi es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el circuito Yas Marina, ubicado en la Isla de Yas, en Abu Dabi, Emiratos Árabes Unidos.",
    "round": 23,
    "gp": "GP de Abu Dabi",
@@ -439,7 +465,7 @@
    "winner": null
   }
  ],
- "generated": "2026-11-17T20:43:08+00:00",
+ "generated": "2026-11-18T15:49:49+00:00",
  "round": "20",
  "total_races": 23,
  "rounds_done": 20,
@@ -460,6 +486,58 @@
    "done": true,
    "is_next": false,
    "winner": "Russell",
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-03-06T01:30:00+00:00",
+     "iso": "2026-03-06T01:30:00Z",
+     "date": "2026-03-06",
+     "day": "vie 6",
+     "time_es": "02:30",
+     "time_utc": "01:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-03-06T05:00:00+00:00",
+     "iso": "2026-03-06T05:00:00Z",
+     "date": "2026-03-06",
+     "day": "vie 6",
+     "time_es": "06:00",
+     "time_utc": "05:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-03-07T01:30:00+00:00",
+     "iso": "2026-03-07T01:30:00Z",
+     "date": "2026-03-07",
+     "day": "sáb 7",
+     "time_es": "02:30",
+     "time_utc": "01:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-03-07T05:00:00+00:00",
+     "iso": "2026-03-07T05:00:00Z",
+     "date": "2026-03-07",
+     "day": "sáb 7",
+     "time_es": "06:00",
+     "time_utc": "05:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-03-08T04:00:00+00:00",
+     "iso": "2026-03-08T04:00:00Z",
+     "date": "2026-03-08",
+     "day": "dom 8",
+     "time_es": "05:00",
+     "time_utc": "04:00"
+    }
+   ],
    "winner_team": "mercedes",
    "podium": [
     {
@@ -499,6 +577,58 @@
    "done": true,
    "is_next": false,
    "winner": "Antonelli",
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-03-13T03:30:00+00:00",
+     "iso": "2026-03-13T03:30:00Z",
+     "date": "2026-03-13",
+     "day": "vie 13",
+     "time_es": "04:30",
+     "time_utc": "03:30"
+    },
+    {
+     "name": "Clasificación sprint",
+     "code": "SQ",
+     "utc": "2026-03-13T07:30:00+00:00",
+     "iso": "2026-03-13T07:30:00Z",
+     "date": "2026-03-13",
+     "day": "vie 13",
+     "time_es": "08:30",
+     "time_utc": "07:30"
+    },
+    {
+     "name": "Sprint",
+     "code": "SPR",
+     "utc": "2026-03-14T03:00:00+00:00",
+     "iso": "2026-03-14T03:00:00Z",
+     "date": "2026-03-14",
+     "day": "sáb 14",
+     "time_es": "04:00",
+     "time_utc": "03:00"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-03-14T07:00:00+00:00",
+     "iso": "2026-03-14T07:00:00Z",
+     "date": "2026-03-14",
+     "day": "sáb 14",
+     "time_es": "08:00",
+     "time_utc": "07:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-03-15T07:00:00+00:00",
+     "iso": "2026-03-15T07:00:00Z",
+     "date": "2026-03-15",
+     "day": "dom 15",
+     "time_es": "08:00",
+     "time_utc": "07:00"
+    }
+   ],
    "winner_team": "mercedes",
    "podium": [
     {
@@ -538,6 +668,58 @@
    "done": true,
    "is_next": false,
    "winner": "Antonelli",
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-03-27T02:30:00+00:00",
+     "iso": "2026-03-27T02:30:00Z",
+     "date": "2026-03-27",
+     "day": "vie 27",
+     "time_es": "03:30",
+     "time_utc": "02:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-03-27T06:00:00+00:00",
+     "iso": "2026-03-27T06:00:00Z",
+     "date": "2026-03-27",
+     "day": "vie 27",
+     "time_es": "07:00",
+     "time_utc": "06:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-03-28T02:30:00+00:00",
+     "iso": "2026-03-28T02:30:00Z",
+     "date": "2026-03-28",
+     "day": "sáb 28",
+     "time_es": "03:30",
+     "time_utc": "02:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-03-28T06:00:00+00:00",
+     "iso": "2026-03-28T06:00:00Z",
+     "date": "2026-03-28",
+     "day": "sáb 28",
+     "time_es": "07:00",
+     "time_utc": "06:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-03-29T05:00:00+00:00",
+     "iso": "2026-03-29T05:00:00Z",
+     "date": "2026-03-29",
+     "day": "dom 29",
+     "time_es": "07:00",
+     "time_utc": "05:00"
+    }
+   ],
    "winner_team": "mercedes",
    "podium": [
     {
@@ -577,6 +759,58 @@
    "done": true,
    "is_next": false,
    "winner": "Antonelli",
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-05-01T16:00:00+00:00",
+     "iso": "2026-05-01T16:00:00Z",
+     "date": "2026-05-01",
+     "day": "vie 1",
+     "time_es": "18:00",
+     "time_utc": "16:00"
+    },
+    {
+     "name": "Clasificación sprint",
+     "code": "SQ",
+     "utc": "2026-05-01T20:30:00+00:00",
+     "iso": "2026-05-01T20:30:00Z",
+     "date": "2026-05-01",
+     "day": "vie 1",
+     "time_es": "22:30",
+     "time_utc": "20:30"
+    },
+    {
+     "name": "Sprint",
+     "code": "SPR",
+     "utc": "2026-05-02T16:00:00+00:00",
+     "iso": "2026-05-02T16:00:00Z",
+     "date": "2026-05-02",
+     "day": "sáb 2",
+     "time_es": "18:00",
+     "time_utc": "16:00"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-05-02T20:00:00+00:00",
+     "iso": "2026-05-02T20:00:00Z",
+     "date": "2026-05-02",
+     "day": "sáb 2",
+     "time_es": "22:00",
+     "time_utc": "20:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-05-03T20:00:00+00:00",
+     "iso": "2026-05-03T20:00:00Z",
+     "date": "2026-05-03",
+     "day": "dom 3",
+     "time_es": "22:00",
+     "time_utc": "20:00"
+    }
+   ],
    "winner_team": "mercedes",
    "podium": [
     {
@@ -616,6 +850,58 @@
    "done": true,
    "is_next": false,
    "winner": "Antonelli",
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-05-22T16:30:00+00:00",
+     "iso": "2026-05-22T16:30:00Z",
+     "date": "2026-05-22",
+     "day": "vie 22",
+     "time_es": "18:30",
+     "time_utc": "16:30"
+    },
+    {
+     "name": "Clasificación sprint",
+     "code": "SQ",
+     "utc": "2026-05-22T20:30:00+00:00",
+     "iso": "2026-05-22T20:30:00Z",
+     "date": "2026-05-22",
+     "day": "vie 22",
+     "time_es": "22:30",
+     "time_utc": "20:30"
+    },
+    {
+     "name": "Sprint",
+     "code": "SPR",
+     "utc": "2026-05-23T16:00:00+00:00",
+     "iso": "2026-05-23T16:00:00Z",
+     "date": "2026-05-23",
+     "day": "sáb 23",
+     "time_es": "18:00",
+     "time_utc": "16:00"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-05-23T20:00:00+00:00",
+     "iso": "2026-05-23T20:00:00Z",
+     "date": "2026-05-23",
+     "day": "sáb 23",
+     "time_es": "22:00",
+     "time_utc": "20:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-05-24T20:00:00+00:00",
+     "iso": "2026-05-24T20:00:00Z",
+     "date": "2026-05-24",
+     "day": "dom 24",
+     "time_es": "22:00",
+     "time_utc": "20:00"
+    }
+   ],
    "winner_team": "mercedes",
    "podium": [
     {
@@ -654,7 +940,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-06-05T11:30:00+00:00",
+     "iso": "2026-06-05T11:30:00Z",
+     "date": "2026-06-05",
+     "day": "vie 5",
+     "time_es": "13:30",
+     "time_utc": "11:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-06-05T15:00:00+00:00",
+     "iso": "2026-06-05T15:00:00Z",
+     "date": "2026-06-05",
+     "day": "vie 5",
+     "time_es": "17:00",
+     "time_utc": "15:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-06-06T10:30:00+00:00",
+     "iso": "2026-06-06T10:30:00Z",
+     "date": "2026-06-06",
+     "day": "sáb 6",
+     "time_es": "12:30",
+     "time_utc": "10:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-06-06T14:00:00+00:00",
+     "iso": "2026-06-06T14:00:00Z",
+     "date": "2026-06-06",
+     "day": "sáb 6",
+     "time_es": "16:00",
+     "time_utc": "14:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-06-07T13:00:00+00:00",
+     "iso": "2026-06-07T13:00:00Z",
+     "date": "2026-06-07",
+     "day": "dom 7",
+     "time_es": "15:00",
+     "time_utc": "13:00"
+    }
+   ]
   },
   {
    "round": 7,
@@ -671,7 +1009,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-06-12T11:30:00+00:00",
+     "iso": "2026-06-12T11:30:00Z",
+     "date": "2026-06-12",
+     "day": "vie 12",
+     "time_es": "13:30",
+     "time_utc": "11:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-06-12T15:00:00+00:00",
+     "iso": "2026-06-12T15:00:00Z",
+     "date": "2026-06-12",
+     "day": "vie 12",
+     "time_es": "17:00",
+     "time_utc": "15:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-06-13T10:30:00+00:00",
+     "iso": "2026-06-13T10:30:00Z",
+     "date": "2026-06-13",
+     "day": "sáb 13",
+     "time_es": "12:30",
+     "time_utc": "10:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-06-13T14:00:00+00:00",
+     "iso": "2026-06-13T14:00:00Z",
+     "date": "2026-06-13",
+     "day": "sáb 13",
+     "time_es": "16:00",
+     "time_utc": "14:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-06-14T13:00:00+00:00",
+     "iso": "2026-06-14T13:00:00Z",
+     "date": "2026-06-14",
+     "day": "dom 14",
+     "time_es": "15:00",
+     "time_utc": "13:00"
+    }
+   ]
   },
   {
    "round": 8,
@@ -688,7 +1078,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-06-26T11:30:00+00:00",
+     "iso": "2026-06-26T11:30:00Z",
+     "date": "2026-06-26",
+     "day": "vie 26",
+     "time_es": "13:30",
+     "time_utc": "11:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-06-26T15:00:00+00:00",
+     "iso": "2026-06-26T15:00:00Z",
+     "date": "2026-06-26",
+     "day": "vie 26",
+     "time_es": "17:00",
+     "time_utc": "15:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-06-27T10:30:00+00:00",
+     "iso": "2026-06-27T10:30:00Z",
+     "date": "2026-06-27",
+     "day": "sáb 27",
+     "time_es": "12:30",
+     "time_utc": "10:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-06-27T14:00:00+00:00",
+     "iso": "2026-06-27T14:00:00Z",
+     "date": "2026-06-27",
+     "day": "sáb 27",
+     "time_es": "16:00",
+     "time_utc": "14:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-06-28T13:00:00+00:00",
+     "iso": "2026-06-28T13:00:00Z",
+     "date": "2026-06-28",
+     "day": "dom 28",
+     "time_es": "15:00",
+     "time_utc": "13:00"
+    }
+   ]
   },
   {
    "round": 9,
@@ -705,7 +1147,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-07-03T11:30:00+00:00",
+     "iso": "2026-07-03T11:30:00Z",
+     "date": "2026-07-03",
+     "day": "vie 3",
+     "time_es": "13:30",
+     "time_utc": "11:30"
+    },
+    {
+     "name": "Clasificación sprint",
+     "code": "SQ",
+     "utc": "2026-07-03T15:30:00+00:00",
+     "iso": "2026-07-03T15:30:00Z",
+     "date": "2026-07-03",
+     "day": "vie 3",
+     "time_es": "17:30",
+     "time_utc": "15:30"
+    },
+    {
+     "name": "Sprint",
+     "code": "SPR",
+     "utc": "2026-07-04T11:00:00+00:00",
+     "iso": "2026-07-04T11:00:00Z",
+     "date": "2026-07-04",
+     "day": "sáb 4",
+     "time_es": "13:00",
+     "time_utc": "11:00"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-07-04T15:00:00+00:00",
+     "iso": "2026-07-04T15:00:00Z",
+     "date": "2026-07-04",
+     "day": "sáb 4",
+     "time_es": "17:00",
+     "time_utc": "15:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-07-05T14:00:00+00:00",
+     "iso": "2026-07-05T14:00:00Z",
+     "date": "2026-07-05",
+     "day": "dom 5",
+     "time_es": "16:00",
+     "time_utc": "14:00"
+    }
+   ]
   },
   {
    "round": 10,
@@ -722,7 +1216,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-07-17T11:30:00+00:00",
+     "iso": "2026-07-17T11:30:00Z",
+     "date": "2026-07-17",
+     "day": "vie 17",
+     "time_es": "13:30",
+     "time_utc": "11:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-07-17T15:00:00+00:00",
+     "iso": "2026-07-17T15:00:00Z",
+     "date": "2026-07-17",
+     "day": "vie 17",
+     "time_es": "17:00",
+     "time_utc": "15:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-07-18T10:30:00+00:00",
+     "iso": "2026-07-18T10:30:00Z",
+     "date": "2026-07-18",
+     "day": "sáb 18",
+     "time_es": "12:30",
+     "time_utc": "10:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-07-18T14:00:00+00:00",
+     "iso": "2026-07-18T14:00:00Z",
+     "date": "2026-07-18",
+     "day": "sáb 18",
+     "time_es": "16:00",
+     "time_utc": "14:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-07-19T13:00:00+00:00",
+     "iso": "2026-07-19T13:00:00Z",
+     "date": "2026-07-19",
+     "day": "dom 19",
+     "time_es": "15:00",
+     "time_utc": "13:00"
+    }
+   ]
   },
   {
    "round": 11,
@@ -739,7 +1285,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-07-24T11:30:00+00:00",
+     "iso": "2026-07-24T11:30:00Z",
+     "date": "2026-07-24",
+     "day": "vie 24",
+     "time_es": "13:30",
+     "time_utc": "11:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-07-24T15:00:00+00:00",
+     "iso": "2026-07-24T15:00:00Z",
+     "date": "2026-07-24",
+     "day": "vie 24",
+     "time_es": "17:00",
+     "time_utc": "15:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-07-25T10:30:00+00:00",
+     "iso": "2026-07-25T10:30:00Z",
+     "date": "2026-07-25",
+     "day": "sáb 25",
+     "time_es": "12:30",
+     "time_utc": "10:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-07-25T14:00:00+00:00",
+     "iso": "2026-07-25T14:00:00Z",
+     "date": "2026-07-25",
+     "day": "sáb 25",
+     "time_es": "16:00",
+     "time_utc": "14:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-07-26T13:00:00+00:00",
+     "iso": "2026-07-26T13:00:00Z",
+     "date": "2026-07-26",
+     "day": "dom 26",
+     "time_es": "15:00",
+     "time_utc": "13:00"
+    }
+   ]
   },
   {
    "round": 12,
@@ -756,7 +1354,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-08-21T10:30:00+00:00",
+     "iso": "2026-08-21T10:30:00Z",
+     "date": "2026-08-21",
+     "day": "vie 21",
+     "time_es": "12:30",
+     "time_utc": "10:30"
+    },
+    {
+     "name": "Clasificación sprint",
+     "code": "SQ",
+     "utc": "2026-08-21T14:30:00+00:00",
+     "iso": "2026-08-21T14:30:00Z",
+     "date": "2026-08-21",
+     "day": "vie 21",
+     "time_es": "16:30",
+     "time_utc": "14:30"
+    },
+    {
+     "name": "Sprint",
+     "code": "SPR",
+     "utc": "2026-08-22T10:00:00+00:00",
+     "iso": "2026-08-22T10:00:00Z",
+     "date": "2026-08-22",
+     "day": "sáb 22",
+     "time_es": "12:00",
+     "time_utc": "10:00"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-08-22T14:00:00+00:00",
+     "iso": "2026-08-22T14:00:00Z",
+     "date": "2026-08-22",
+     "day": "sáb 22",
+     "time_es": "16:00",
+     "time_utc": "14:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-08-23T13:00:00+00:00",
+     "iso": "2026-08-23T13:00:00Z",
+     "date": "2026-08-23",
+     "day": "dom 23",
+     "time_es": "15:00",
+     "time_utc": "13:00"
+    }
+   ]
   },
   {
    "round": 13,
@@ -773,7 +1423,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-09-04T10:30:00+00:00",
+     "iso": "2026-09-04T10:30:00Z",
+     "date": "2026-09-04",
+     "day": "vie 4",
+     "time_es": "12:30",
+     "time_utc": "10:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-09-04T14:00:00+00:00",
+     "iso": "2026-09-04T14:00:00Z",
+     "date": "2026-09-04",
+     "day": "vie 4",
+     "time_es": "16:00",
+     "time_utc": "14:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-09-05T10:30:00+00:00",
+     "iso": "2026-09-05T10:30:00Z",
+     "date": "2026-09-05",
+     "day": "sáb 5",
+     "time_es": "12:30",
+     "time_utc": "10:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-09-05T14:00:00+00:00",
+     "iso": "2026-09-05T14:00:00Z",
+     "date": "2026-09-05",
+     "day": "sáb 5",
+     "time_es": "16:00",
+     "time_utc": "14:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-09-06T13:00:00+00:00",
+     "iso": "2026-09-06T13:00:00Z",
+     "date": "2026-09-06",
+     "day": "dom 6",
+     "time_es": "15:00",
+     "time_utc": "13:00"
+    }
+   ]
   },
   {
    "round": 14,
@@ -790,7 +1492,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-09-11T11:30:00+00:00",
+     "iso": "2026-09-11T11:30:00Z",
+     "date": "2026-09-11",
+     "day": "vie 11",
+     "time_es": "13:30",
+     "time_utc": "11:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-09-11T15:00:00+00:00",
+     "iso": "2026-09-11T15:00:00Z",
+     "date": "2026-09-11",
+     "day": "vie 11",
+     "time_es": "17:00",
+     "time_utc": "15:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-09-12T10:30:00+00:00",
+     "iso": "2026-09-12T10:30:00Z",
+     "date": "2026-09-12",
+     "day": "sáb 12",
+     "time_es": "12:30",
+     "time_utc": "10:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-09-12T14:00:00+00:00",
+     "iso": "2026-09-12T14:00:00Z",
+     "date": "2026-09-12",
+     "day": "sáb 12",
+     "time_es": "16:00",
+     "time_utc": "14:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-09-13T13:00:00+00:00",
+     "iso": "2026-09-13T13:00:00Z",
+     "date": "2026-09-13",
+     "day": "dom 13",
+     "time_es": "15:00",
+     "time_utc": "13:00"
+    }
+   ]
   },
   {
    "round": 15,
@@ -807,7 +1561,59 @@
    "weekday": "sábado",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-09-24T08:30:00+00:00",
+     "iso": "2026-09-24T08:30:00Z",
+     "date": "2026-09-24",
+     "day": "jue 24",
+     "time_es": "10:30",
+     "time_utc": "08:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-09-24T12:00:00+00:00",
+     "iso": "2026-09-24T12:00:00Z",
+     "date": "2026-09-24",
+     "day": "jue 24",
+     "time_es": "14:00",
+     "time_utc": "12:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-09-25T08:30:00+00:00",
+     "iso": "2026-09-25T08:30:00Z",
+     "date": "2026-09-25",
+     "day": "vie 25",
+     "time_es": "10:30",
+     "time_utc": "08:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-09-25T12:00:00+00:00",
+     "iso": "2026-09-25T12:00:00Z",
+     "date": "2026-09-25",
+     "day": "vie 25",
+     "time_es": "14:00",
+     "time_utc": "12:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-09-26T11:00:00+00:00",
+     "iso": "2026-09-26T11:00:00Z",
+     "date": "2026-09-26",
+     "day": "sáb 26",
+     "time_es": "13:00",
+     "time_utc": "11:00"
+    }
+   ]
   },
   {
    "round": 16,
@@ -824,7 +1630,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-10-02T04:30:00+00:00",
+     "iso": "2026-10-02T04:30:00Z",
+     "date": "2026-10-02",
+     "day": "vie 2",
+     "time_es": "06:30",
+     "time_utc": "04:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-10-02T08:00:00+00:00",
+     "iso": "2026-10-02T08:00:00Z",
+     "date": "2026-10-02",
+     "day": "vie 2",
+     "time_es": "10:00",
+     "time_utc": "08:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-10-03T04:30:00+00:00",
+     "iso": "2026-10-03T04:30:00Z",
+     "date": "2026-10-03",
+     "day": "sáb 3",
+     "time_es": "06:30",
+     "time_utc": "04:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-10-03T08:00:00+00:00",
+     "iso": "2026-10-03T08:00:00Z",
+     "date": "2026-10-03",
+     "day": "sáb 3",
+     "time_es": "10:00",
+     "time_utc": "08:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-10-04T07:00:00+00:00",
+     "iso": "2026-10-04T07:00:00Z",
+     "date": "2026-10-04",
+     "day": "dom 4",
+     "time_es": "09:00",
+     "time_utc": "07:00"
+    }
+   ]
   },
   {
    "round": 17,
@@ -841,7 +1699,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-10-09T08:30:00+00:00",
+     "iso": "2026-10-09T08:30:00Z",
+     "date": "2026-10-09",
+     "day": "vie 9",
+     "time_es": "10:30",
+     "time_utc": "08:30"
+    },
+    {
+     "name": "Clasificación sprint",
+     "code": "SQ",
+     "utc": "2026-10-09T12:30:00+00:00",
+     "iso": "2026-10-09T12:30:00Z",
+     "date": "2026-10-09",
+     "day": "vie 9",
+     "time_es": "14:30",
+     "time_utc": "12:30"
+    },
+    {
+     "name": "Sprint",
+     "code": "SPR",
+     "utc": "2026-10-10T09:00:00+00:00",
+     "iso": "2026-10-10T09:00:00Z",
+     "date": "2026-10-10",
+     "day": "sáb 10",
+     "time_es": "11:00",
+     "time_utc": "09:00"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-10-10T13:00:00+00:00",
+     "iso": "2026-10-10T13:00:00Z",
+     "date": "2026-10-10",
+     "day": "sáb 10",
+     "time_es": "15:00",
+     "time_utc": "13:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-10-11T12:00:00+00:00",
+     "iso": "2026-10-11T12:00:00Z",
+     "date": "2026-10-11",
+     "day": "dom 11",
+     "time_es": "14:00",
+     "time_utc": "12:00"
+    }
+   ]
   },
   {
    "round": 18,
@@ -858,7 +1768,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-10-23T17:30:00+00:00",
+     "iso": "2026-10-23T17:30:00Z",
+     "date": "2026-10-23",
+     "day": "vie 23",
+     "time_es": "19:30",
+     "time_utc": "17:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-10-23T21:00:00+00:00",
+     "iso": "2026-10-23T21:00:00Z",
+     "date": "2026-10-23",
+     "day": "vie 23",
+     "time_es": "23:00",
+     "time_utc": "21:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-10-24T17:30:00+00:00",
+     "iso": "2026-10-24T17:30:00Z",
+     "date": "2026-10-24",
+     "day": "sáb 24",
+     "time_es": "19:30",
+     "time_utc": "17:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-10-24T21:00:00+00:00",
+     "iso": "2026-10-24T21:00:00Z",
+     "date": "2026-10-24",
+     "day": "sáb 24",
+     "time_es": "23:00",
+     "time_utc": "21:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-10-25T20:00:00+00:00",
+     "iso": "2026-10-25T20:00:00Z",
+     "date": "2026-10-25",
+     "day": "dom 25",
+     "time_es": "21:00",
+     "time_utc": "20:00"
+    }
+   ]
   },
   {
    "round": 19,
@@ -875,7 +1837,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-10-30T18:30:00+00:00",
+     "iso": "2026-10-30T18:30:00Z",
+     "date": "2026-10-30",
+     "day": "vie 30",
+     "time_es": "19:30",
+     "time_utc": "18:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-10-30T22:00:00+00:00",
+     "iso": "2026-10-30T22:00:00Z",
+     "date": "2026-10-30",
+     "day": "vie 30",
+     "time_es": "23:00",
+     "time_utc": "22:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-10-31T17:30:00+00:00",
+     "iso": "2026-10-31T17:30:00Z",
+     "date": "2026-10-31",
+     "day": "sáb 31",
+     "time_es": "18:30",
+     "time_utc": "17:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-10-31T21:00:00+00:00",
+     "iso": "2026-10-31T21:00:00Z",
+     "date": "2026-10-31",
+     "day": "sáb 31",
+     "time_es": "22:00",
+     "time_utc": "21:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-11-01T20:00:00+00:00",
+     "iso": "2026-11-01T20:00:00Z",
+     "date": "2026-11-01",
+     "day": "dom 1",
+     "time_es": "21:00",
+     "time_utc": "20:00"
+    }
+   ]
   },
   {
    "round": 20,
@@ -892,7 +1906,59 @@
    "weekday": "domingo",
    "done": true,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-11-06T15:30:00+00:00",
+     "iso": "2026-11-06T15:30:00Z",
+     "date": "2026-11-06",
+     "day": "vie 6",
+     "time_es": "16:30",
+     "time_utc": "15:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-11-06T19:00:00+00:00",
+     "iso": "2026-11-06T19:00:00Z",
+     "date": "2026-11-06",
+     "day": "vie 6",
+     "time_es": "20:00",
+     "time_utc": "19:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-11-07T14:30:00+00:00",
+     "iso": "2026-11-07T14:30:00Z",
+     "date": "2026-11-07",
+     "day": "sáb 7",
+     "time_es": "15:30",
+     "time_utc": "14:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-11-07T18:00:00+00:00",
+     "iso": "2026-11-07T18:00:00Z",
+     "date": "2026-11-07",
+     "day": "sáb 7",
+     "time_es": "19:00",
+     "time_utc": "18:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-11-08T17:00:00+00:00",
+     "iso": "2026-11-08T17:00:00Z",
+     "date": "2026-11-08",
+     "day": "dom 8",
+     "time_es": "18:00",
+     "time_utc": "17:00"
+    }
+   ]
   },
   {
    "round": 21,
@@ -910,7 +1976,59 @@
    "done": false,
    "is_next": true,
    "winner": null,
-   "days_until": 5
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-11-20T00:30:00+00:00",
+     "iso": "2026-11-20T00:30:00Z",
+     "date": "2026-11-20",
+     "day": "vie 20",
+     "time_es": "01:30",
+     "time_utc": "00:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-11-20T04:00:00+00:00",
+     "iso": "2026-11-20T04:00:00Z",
+     "date": "2026-11-20",
+     "day": "vie 20",
+     "time_es": "05:00",
+     "time_utc": "04:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-11-21T00:30:00+00:00",
+     "iso": "2026-11-21T00:30:00Z",
+     "date": "2026-11-21",
+     "day": "sáb 21",
+     "time_es": "01:30",
+     "time_utc": "00:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-11-21T04:00:00+00:00",
+     "iso": "2026-11-21T04:00:00Z",
+     "date": "2026-11-21",
+     "day": "sáb 21",
+     "time_es": "05:00",
+     "time_utc": "04:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-11-22T04:00:00+00:00",
+     "iso": "2026-11-22T04:00:00Z",
+     "date": "2026-11-22",
+     "day": "dom 22",
+     "time_es": "05:00",
+     "time_utc": "04:00"
+    }
+   ],
+   "days_until": 4
   },
   {
    "round": 22,
@@ -927,7 +2045,59 @@
    "weekday": "domingo",
    "done": false,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-11-27T13:30:00+00:00",
+     "iso": "2026-11-27T13:30:00Z",
+     "date": "2026-11-27",
+     "day": "vie 27",
+     "time_es": "14:30",
+     "time_utc": "13:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-11-27T17:00:00+00:00",
+     "iso": "2026-11-27T17:00:00Z",
+     "date": "2026-11-27",
+     "day": "vie 27",
+     "time_es": "18:00",
+     "time_utc": "17:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-11-28T14:30:00+00:00",
+     "iso": "2026-11-28T14:30:00Z",
+     "date": "2026-11-28",
+     "day": "sáb 28",
+     "time_es": "15:30",
+     "time_utc": "14:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-11-28T18:00:00+00:00",
+     "iso": "2026-11-28T18:00:00Z",
+     "date": "2026-11-28",
+     "day": "sáb 28",
+     "time_es": "19:00",
+     "time_utc": "18:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-11-29T16:00:00+00:00",
+     "iso": "2026-11-29T16:00:00Z",
+     "date": "2026-11-29",
+     "day": "dom 29",
+     "time_es": "17:00",
+     "time_utc": "16:00"
+    }
+   ]
   },
   {
    "round": 23,
@@ -944,7 +2114,59 @@
    "weekday": "domingo",
    "done": false,
    "is_next": false,
-   "winner": null
+   "winner": null,
+   "sessions": [
+    {
+     "name": "Libres 1",
+     "code": "FP1",
+     "utc": "2026-12-04T09:30:00+00:00",
+     "iso": "2026-12-04T09:30:00Z",
+     "date": "2026-12-04",
+     "day": "vie 4",
+     "time_es": "10:30",
+     "time_utc": "09:30"
+    },
+    {
+     "name": "Libres 2",
+     "code": "FP2",
+     "utc": "2026-12-04T13:00:00+00:00",
+     "iso": "2026-12-04T13:00:00Z",
+     "date": "2026-12-04",
+     "day": "vie 4",
+     "time_es": "14:00",
+     "time_utc": "13:00"
+    },
+    {
+     "name": "Libres 3",
+     "code": "FP3",
+     "utc": "2026-12-05T10:30:00+00:00",
+     "iso": "2026-12-05T10:30:00Z",
+     "date": "2026-12-05",
+     "day": "sáb 5",
+     "time_es": "11:30",
+     "time_utc": "10:30"
+    },
+    {
+     "name": "Clasificación",
+     "code": "Q",
+     "utc": "2026-12-05T14:00:00+00:00",
+     "iso": "2026-12-05T14:00:00Z",
+     "date": "2026-12-05",
+     "day": "sáb 5",
+     "time_es": "15:00",
+     "time_utc": "14:00"
+    },
+    {
+     "name": "Carrera",
+     "code": "RACE",
+     "utc": "2026-12-06T13:00:00+00:00",
+     "iso": "2026-12-06T13:00:00Z",
+     "date": "2026-12-06",
+     "day": "dom 6",
+     "time_es": "14:00",
+     "time_utc": "13:00"
+    }
+   ]
   }
  ],
  "next_race": {
@@ -963,7 +2185,59 @@
   "done": false,
   "is_next": true,
   "winner": null,
-  "days_until": 5
+  "sessions": [
+   {
+    "name": "Libres 1",
+    "code": "FP1",
+    "utc": "2026-11-20T00:30:00+00:00",
+    "iso": "2026-11-20T00:30:00Z",
+    "date": "2026-11-20",
+    "day": "vie 20",
+    "time_es": "01:30",
+    "time_utc": "00:30"
+   },
+   {
+    "name": "Libres 2",
+    "code": "FP2",
+    "utc": "2026-11-20T04:00:00+00:00",
+    "iso": "2026-11-20T04:00:00Z",
+    "date": "2026-11-20",
+    "day": "vie 20",
+    "time_es": "05:00",
+    "time_utc": "04:00"
+   },
+   {
+    "name": "Libres 3",
+    "code": "FP3",
+    "utc": "2026-11-21T00:30:00+00:00",
+    "iso": "2026-11-21T00:30:00Z",
+    "date": "2026-11-21",
+    "day": "sáb 21",
+    "time_es": "01:30",
+    "time_utc": "00:30"
+   },
+   {
+    "name": "Clasificación",
+    "code": "Q",
+    "utc": "2026-11-21T04:00:00+00:00",
+    "iso": "2026-11-21T04:00:00Z",
+    "date": "2026-11-21",
+    "day": "sáb 21",
+    "time_es": "05:00",
+    "time_utc": "04:00"
+   },
+   {
+    "name": "Carrera",
+    "code": "RACE",
+    "utc": "2026-11-22T04:00:00+00:00",
+    "iso": "2026-11-22T04:00:00Z",
+    "date": "2026-11-22",
+    "day": "dom 22",
+    "time_es": "05:00",
+    "time_utc": "04:00"
+   }
+  ],
+  "days_until": 4
  },
  "last_round": {
   "round": 20,
@@ -980,7 +2254,59 @@
   "weekday": "domingo",
   "done": true,
   "is_next": false,
-  "winner": null
+  "winner": null,
+  "sessions": [
+   {
+    "name": "Libres 1",
+    "code": "FP1",
+    "utc": "2026-11-06T15:30:00+00:00",
+    "iso": "2026-11-06T15:30:00Z",
+    "date": "2026-11-06",
+    "day": "vie 6",
+    "time_es": "16:30",
+    "time_utc": "15:30"
+   },
+   {
+    "name": "Libres 2",
+    "code": "FP2",
+    "utc": "2026-11-06T19:00:00+00:00",
+    "iso": "2026-11-06T19:00:00Z",
+    "date": "2026-11-06",
+    "day": "vie 6",
+    "time_es": "20:00",
+    "time_utc": "19:00"
+   },
+   {
+    "name": "Libres 3",
+    "code": "FP3",
+    "utc": "2026-11-07T14:30:00+00:00",
+    "iso": "2026-11-07T14:30:00Z",
+    "date": "2026-11-07",
+    "day": "sáb 7",
+    "time_es": "15:30",
+    "time_utc": "14:30"
+   },
+   {
+    "name": "Clasificación",
+    "code": "Q",
+    "utc": "2026-11-07T18:00:00+00:00",
+    "iso": "2026-11-07T18:00:00Z",
+    "date": "2026-11-07",
+    "day": "sáb 7",
+    "time_es": "19:00",
+    "time_utc": "18:00"
+   },
+   {
+    "name": "Carrera",
+    "code": "RACE",
+    "utc": "2026-11-08T17:00:00+00:00",
+    "iso": "2026-11-08T17:00:00Z",
+    "date": "2026-11-08",
+    "day": "dom 8",
+    "time_es": "18:00",
+    "time_utc": "17:00"
+   }
+  ]
  },
  "teams": [
   {
@@ -1026,94 +2352,93 @@
    ],
    "news": [
     {
-     "title": "Toto Wolff offers blunt response to Kimi Antonelli to Ferrari question",
-     "url": "https://www.crash.net/f1/news/1110156/1/toto-wolff-offers-blunt-response-kimi-antonelli-ferrari-question",
-     "desc": "Toto Wolff addresses the prospect of Kimi Antonelli moving to Ferrari one day.",
+     "title": "Toto Wolff addresses F1 champion Kimi Antonelli salary claims",
+     "url": "https://www.crash.net/f1/news/1110172/1/toto-wolff-addresses-f1-champion-kimi-antonelli-salary-claims",
+     "desc": "Toto Wolff has commented on Kimi Antonelli’s salary",
      "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1415432_hires.jpg?width=1200",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
-     "age": "hace 4 h",
-     "ts": 1794930145.0,
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1450415_hires_0.jpg?width=1200",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 1 h",
+     "ts": 1795016010.0,
      "teams": [
-      "ferrari",
       "mercedes"
      ],
      "own": true
     },
     {
-     "title": "Bernie Ecclestone urges Lewis Hamilton ‘to think about quitting’ F1",
-     "url": "https://www.motorsportweek.com/2026/11/17/bernie-ecclestone-urges-lewis-hamilton-to-think-about-quitting-f1/",
-     "desc": "Ex-F1 boss Bernie Ecclestone has delivered a damning verdict on Lewis Hamilton's future in Formula 1, urging the seven-time world champion to consider retirement. The post Bernie Ecclestone urges Lewis Hamilton &#8216;to think abo",
+     "title": "Mercedes reveal championship ‘priority’ after leaving George Russell upgrade-less at F1 Las Vegas GP",
+     "url": "https://www.motorsportweek.com/2026/11/18/mercedes-reveal-championship-priority-george-russell-f1-las-vegas-gp/",
+     "desc": "Only Andrea Kimi Antonelli, and not George Russell, will be running an upgraded turbocharger for Mercedes at the F1 Las Vegas GP. The post Mercedes reveal championship &#8216;priority&#8217; after leaving George Russell upgrade-le",
      "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1451195_HiRes-1-300x169.webp",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/George-Russell-F1-300x169.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 1 h",
+     "ts": 1795014000.0,
+     "teams": [
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Max Verstappen delivers telling statement over F1 future following Kimi Antonelli title",
+     "url": "https://www.motorsportweek.com/2026/11/18/max-verstappen-delivers-telling-statement-over-f1-future-following-kimi-antonelli-title/",
+     "desc": "Max Verstappen has delivered a telling statement over his F1 future following the runaway success of Kimi Antonelli in 2026, which saw the young Italian win the title at the Mexico City GP. The post Max Verstappen delivers telling",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-Kimi-Antonelli-F1-United-States-GP.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 2 h",
+     "ts": 1795006800.0,
+     "teams": [
+      "mercedes",
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Max Verstappen’s blunt response on Kimi Antonelli F1 motivation",
+     "url": "https://www.crash.net/f1/news/1110164/1/max-verstappens-blunt-response-kimi-antonelli-f1-motivation",
+     "desc": "Max Verstappen says he doesn’t need Kimi Antonelli's success to be motivated",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1452327_hires.jpg?width=1200",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
      "age": "hace 5 h",
-     "ts": 1794927600.0,
+     "ts": 1794998926.0,
      "teams": [
-      "mercedes"
+      "mercedes",
+      "red_bull"
      ],
      "own": true
     },
     {
-     "title": "Why George Russell won’t get Mercedes F1 engine upgrade at Las Vegas GP",
-     "url": "https://www.crash.net/f1/news/1110155/1/why-george-russell-wont-get-mercedes-f1-engine-upgrade-las-vegas-gp",
-     "desc": "Mercedes will finally introduce its ADUO F1 engine upgrade in Las Vegas.",
-     "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453187_hires.jpg?width=1200",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
-     "age": "hace 6 h",
-     "ts": 1794925762.0,
-     "teams": [
-      "mercedes"
-     ],
-     "own": true
-    },
-    {
-     "title": "Toto Wolff shuts down speculation of Kimi Antonelli Ferrari defection",
-     "url": "https://www.motorsportweek.com/2026/11/17/toto-wolff-shuts-down-speculation-of-kimi-antonelli-ferrari-defection/",
-     "desc": "Toto Wolff has shut down speculation that Kimi Antonelli could leave Mercedes to join Ferrari in the near future after clinching his maiden F1 driver's title at the Mexico City GP. The post Toto Wolff shuts down speculation of Kim",
+     "title": "George Russell reveals bounce-back plan for 2027 F1 season",
+     "url": "https://www.motorsportweek.com/2026/11/18/george-russell-reveals-bounce-back-plan-for-2027-f1-season/",
+     "desc": "After narrowly missing out on his maiden F1 World Championship, George Russell already has a plan to return to form next season. The post George Russell reveals bounce-back plan for 2027 F1 season appeared first on Motorsport Week",
      "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/09/Toto-Wolff.webp",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1453952_HiRes-1.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
      "age": "hace 6 h",
-     "ts": 1794924029.0,
-     "teams": [
-      "ferrari",
-      "mercedes"
-     ],
-     "own": true
-    },
-    {
-     "title": "Lewis Hamilton announces huge new partnership ahead of Las Vegas GP",
-     "url": "https://www.crash.net/f1/news/1110149/1/lewis-hamilton-announces-huge-new-partnership-ahead-las-vegas-gp",
-     "desc": "Lewis Hamilton has become the new global ambassador for AG1.",
-     "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1443666_hires.jpg?width=1200",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
-     "age": "hace 6 h",
-     "ts": 1794924000.0,
+     "ts": 1794994290.0,
      "teams": [
       "mercedes"
      ],
      "own": true
     },
     {
-     "title": "Toto Wolff is not afraid of losing Kimi Antonelli to Ferrari",
-     "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
-     "source": "Motorsport.com",
-     "image": "https://cdn-4.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
-     "age": "hace 8 h",
-     "ts": 1794915910.0,
+     "title": "The Antonelli you don't know: Daily life with F1's newest champion",
+     "url": "https://www.autosport.com/f1/news/the-antonelli-you-dont-know-daily-life-with-f1s-newest-champion/10875217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "There is one thing that physiotherapist Sergi Avila took a little while to understand. When Kimi Antonelli finally found himself with a free weekend, after weeks being spent between circuits, airports and training, the most logica",
+     "source": "Autosport",
+     "image": "https://cdn-2.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 6 h",
+     "ts": 1794993655.0,
      "teams": [
-      "ferrari",
       "mercedes"
      ],
      "own": true
@@ -1166,17 +2491,18 @@
    ],
    "news": [
     {
-     "title": "Ferrari boss Fred Vasseur handed ‘overwhelmed’ verdict by Bernie Ecclestone",
-     "url": "https://www.motorsportweek.com/2026/11/17/bernie-ecclestone-makes-overwhelmed-claim-about-ferrari-fred-vasseur/",
-     "desc": "Bernie Ecclestone believes Fred Vasseur is not the right man to lead Ferrari after claiming the Frenchman is \"overwhelmed\" at the F1 team. The post Ferrari boss Fred Vasseur handed &#8216;overwhelmed&#8217; verdict by Bernie Eccle",
+     "title": "Carlos Sainz lays bare pain of ‘completely unexpected’ Ferrari exit",
+     "url": "https://www.motorsportweek.com/2026/11/18/carlos-sainz-completely-unexpected-ferrari-exit/",
+     "desc": "Carlos Sainz has spoken at length about the one of the lowest ebbs of his career - his \"completely unexpected\" exit from Ferrari. The post Carlos Sainz lays bare pain of &#8216;completely unexpected&#8217; Ferrari exit appeared fi",
      "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Bernie-Ecclestone-F1-300x169.webp",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
-     "age": "hace 3 h",
-     "ts": 1794936600.0,
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1452325_HiRes-1-300x169.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 9 h",
+     "ts": 1794981600.0,
      "teams": [
-      "ferrari"
+      "ferrari",
+      "williams"
      ],
      "own": true
     },
@@ -1188,24 +2514,8 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1415432_hires.jpg?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 4 h",
+     "age": "hace 1 d",
      "ts": 1794930145.0,
-     "teams": [
-      "ferrari",
-      "mercedes"
-     ],
-     "own": true
-    },
-    {
-     "title": "Toto Wolff shuts down speculation of Kimi Antonelli Ferrari defection",
-     "url": "https://www.motorsportweek.com/2026/11/17/toto-wolff-shuts-down-speculation-of-kimi-antonelli-ferrari-defection/",
-     "desc": "Toto Wolff has shut down speculation that Kimi Antonelli could leave Mercedes to join Ferrari in the near future after clinching his maiden F1 driver's title at the Mexico City GP. The post Toto Wolff shuts down speculation of Kim",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/09/Toto-Wolff.webp",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
-     "age": "hace 6 h",
-     "ts": 1794924029.0,
      "teams": [
       "ferrari",
       "mercedes"
@@ -1220,7 +2530,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1450961_hires.jpg?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 8 h",
+     "age": "hace 1 d",
      "ts": 1794918610.0,
      "teams": [
       "ferrari"
@@ -1232,10 +2542,10 @@
      "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
      "source": "Motorsport.com",
-     "image": "https://cdn-4.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
+     "image": "https://cdn-6.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 8 h",
+     "age": "hace 1 d",
      "ts": 1794915910.0,
      "teams": [
       "ferrari",
@@ -1251,8 +2561,24 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/1_1.png?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 10 h",
+     "age": "hace 1 d",
      "ts": 1794910715.0,
+     "teams": [
+      "ferrari",
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Lewis Hamilton told to “think about quitting” F1 by Bernie Ecclestone",
+     "url": "https://www.crash.net/f1/news/1110144/1/lewis-hamilton-told-think-about-quitting-f1-bernie-ecclestone",
+     "desc": "Ex-F1 supremo Bernie Ecclestone issues a brutal verdict about Ferrari driver Lewis Hamilton.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-10/xpb_1444166_hires.jpg?width=1200",
+     "date": "2026-11-17",
+     "date_human": "17 nov",
+     "age": "hace 1 d",
+     "ts": 1794909419.0,
      "teams": [
       "ferrari",
       "mercedes"
@@ -1317,16 +2643,33 @@
    ],
    "news": [
     {
-     "title": "Red Bull rocked by departure of key Max Verstappen aide",
-     "url": "https://www.motorsportweek.com/2026/11/17/red-bull-departure-of-key-max-verstappen-aide/",
-     "desc": "Max Verstappen and Red Bull will need to search for a new mechanic, with the announcement that Jon Caller is to leave the team to seek a new challenge outside Formula 1. The post Red Bull rocked by departure of key Max Verstappen ",
+     "title": "Max Verstappen delivers telling statement over F1 future following Kimi Antonelli title",
+     "url": "https://www.motorsportweek.com/2026/11/18/max-verstappen-delivers-telling-statement-over-f1-future-following-kimi-antonelli-title/",
+     "desc": "Max Verstappen has delivered a telling statement over his F1 future following the runaway success of Kimi Antonelli in 2026, which saw the young Italian win the title at the Mexico City GP. The post Max Verstappen delivers telling",
      "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1341857_HiRes-1-300x169.webp",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-Kimi-Antonelli-F1-United-States-GP.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
      "age": "hace 2 h",
-     "ts": 1794938400.0,
+     "ts": 1795006800.0,
      "teams": [
+      "mercedes",
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Max Verstappen’s blunt response on Kimi Antonelli F1 motivation",
+     "url": "https://www.crash.net/f1/news/1110164/1/max-verstappens-blunt-response-kimi-antonelli-f1-motivation",
+     "desc": "Max Verstappen says he doesn’t need Kimi Antonelli's success to be motivated",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1452327_hires.jpg?width=1200",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 5 h",
+     "ts": 1794998926.0,
+     "teams": [
+      "mercedes",
       "red_bull"
      ],
      "own": true
@@ -1339,27 +2682,12 @@
      "image": "https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 3 h",
+     "age": "hace 22 h",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
       "alpine",
       "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "Max Verstappen delivers hilarious Red Bull engine jibe",
-     "url": "https://www.motorsportweek.com/2026/11/17/max-verstappen-red-bull-engine-jibe/",
-     "desc": "Max Verstappen joked his Red Bull engine \"doesn't speak English\" after incurring a massive grid penalty at the F1 Sao Paulo GP. The post Max Verstappen delivers hilarious Red Bull engine jibe appeared first on Motorsport Week .",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-Red-Bull-300x169.webp",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
-     "age": "hace 4 h",
-     "ts": 1794933000.0,
-     "teams": [
-      "red_bull"
      ],
      "own": true
     },
@@ -1387,7 +2715,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453799_hires_0.jpg?width=1200",
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794833291.0,
      "teams": [
       "red_bull"
@@ -1399,10 +2727,10 @@
      "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
      "source": "Motorsport.com",
-     "image": "https://cdn-6.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794833095.0,
      "teams": [
       "red_bull",
@@ -1458,91 +2786,90 @@
    ],
    "news": [
     {
-     "title": "Lando Norris's LN4 Fusion signs former Red Bull junior Oliver Goethe as its first F2 driver",
-     "url": "https://www.motorsport.com/f1/news/lando-norriss-ln4-fusion-signs-former-red-bull-junior-oliver-goethe-as-its-first-f2-driver/10874918/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Lando Norris's new junior team LN4 Fusion has signed former Red Bull junior Oliver Goethe as its first driver for the 2027 Formula 2 season. The 22-year-old will make the move from MP Motorsport for his third season in F2, after c",
+     "title": "\"We haven't taken any steps backwards\" – McLaren boss explains 2026",
+     "url": "https://www.motorsport.com/f1/news/we-havent-taken-any-steps-backwards-mclaren-boss-explains-2026/10875219/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
      "source": "Motorsport.com",
-     "image": "https://cdn-7.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
-     "date": "2026-11-16",
-     "date_human": "16 nov",
-     "age": "hace 1 d",
-     "ts": 1794851494.0,
-     "teams": [
-      "red_bull",
-      "mclaren"
-     ],
-     "own": true
-    },
-    {
-     "title": "Lando Norris: F1 needs better rain tyres as wet Las Vegas would be \"scary\"",
-     "url": "https://www.motorsport.com/f1/news/lando-norris-f1-needs-better-rain-tyres-as-wet-las-vegas-would-be-scary/10874689/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "World champion Lando Norris hopes Formula 1 tyre supplier Pirelli will field much-improved rain tyres in 2027 as he expects the current range won't work properly at a low-downforce circuit like Las Vegas. Following partially rain-",
-     "source": "Motorsport.com",
-     "image": "https://cdn-4.motorsport.com/images/amp/27No3ae0/s6/lando-norris-mclaren.jpg",
-     "date": "2026-11-16",
-     "date_human": "16 nov",
-     "age": "hace 1 d",
-     "ts": 1794850242.0,
+     "image": "https://cdn-5.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 2 h",
+     "ts": 1795008602.0,
      "teams": [
       "mclaren"
      ],
      "own": true
     },
     {
-     "title": "Norris: Las Vegas GP would be \"scary\" with current F1 wet tyres",
-     "url": "https://www.autosport.com/f1/news/lando-norris-f1-needs-better-rain-tyres-as-wet-las-vegas-would-be-scary/10874886/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-     "desc": "Lando Norris hopes Formula 1 tyre supplier Pirelli will field much-improved rain tyres in 2027 as he expects the current range won't work properly at a low-downforce circuit like Las Vegas. Following partially rain-affected weeken",
+     "title": "What McLaren has learned from a tough 2026 as it aims for a return to glory in 2027",
+     "url": "https://www.autosport.com/f1/news/what-mclaren-has-learned-from-a-tough-f1-2026/10875268/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
      "source": "Autosport",
-     "image": "https://cdn-7.motorsport.com/images/amp/0o5AVObY/s6/lando-norris-mclaren-george-ru-2.jpg",
-     "date": "2026-11-16",
-     "date_human": "16 nov",
-     "age": "hace 1 d",
-     "ts": 1794850203.0,
+     "image": "https://cdn-3.motorsport.com/images/amp/6VyKR1lY/s6/andrea-stella-mclaren-2.jpg",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 2 h",
+     "ts": 1795008602.0,
      "teams": [
       "mclaren"
      ],
      "own": true
     },
     {
-     "title": "Zak Brown recalls McLaren's \"very toxic environment\" after joining team in 2016",
-     "url": "https://www.motorsport.com/f1/news/zak-brown-recalls-mclarens-very-toxic-environment-after-joining-team-in-2016/10874891/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "McLaren Racing CEO Zak Brown has described the team he joined in 2016 as \"a very toxic environment\", blaming a revolving door of leaders for years of poor results on and off the track. The American arrived at McLaren a decade ago,",
-     "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/YXyKXKd6/s6/motorsport-com-graphics-3.jpg",
-     "date": "2026-11-16",
-     "date_human": "16 nov",
-     "age": "hace 1 d",
-     "ts": 1794844465.0,
+     "title": "Zak Brown explains ‘adaptations’ contributing to 2026 Oscar Piastri F1 dip",
+     "url": "https://www.motorsportweek.com/2026/11/18/zak-brown-explains-adaptations-contributing-to-2026-oscar-piastri-f1-dip/",
+     "desc": "Oscar Piastri's 2026 F1 struggles have shocked many, but Zak Brown believes the new regulations have neutralised his competitive advantages The post Zak Brown explains &#8216;adaptations&#8217; contributing to 2026 Oscar Piastri F",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1452016_HiRes-1.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 4 h",
+     "ts": 1795001400.0,
      "teams": [
       "mclaren"
      ],
      "own": true
     },
     {
-     "title": "Topps reveals Gem Mint 10 Lando Norris card with Coca-Cola suit patch",
-     "url": "https://www.motorsport.com/f1/news/topps-reveals-gem-mint-10-lando-norris-card-with-coca-cola-suit-patch/10874731/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Topps has shared one of its rarest Lando Norris cards: a signed 2024 Dynasty Formula 1 card with two pieces of race suit, one of them cut from the Coca-Cola logo on the sleeve of his McLaren race suit. The Topps Racing account pos",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6b8ZMdv2/s6/motorsport-com-graphics-2026-1.jpg",
-     "date": "2026-11-15",
-     "date_human": "15 nov",
-     "age": "hace 1 d",
-     "ts": 1794782859.0,
+     "title": "Why McLaren’s F1 title defence failed in 2026",
+     "url": "https://www.crash.net/f1/news/1110162/1/why-mclarens-f1-title-defence-failed-2026",
+     "desc": "Zak Brown has explained why 2026 has been so tough for McLaren",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1439737_hires-1.jpg?width=1200",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 5 h",
+     "ts": 1794996254.0,
      "teams": [
       "mclaren"
      ],
      "own": true
     },
     {
-     "title": "Oscar Piastri: You've got to \"manhandle\" McLaren's F1 car to find its potential",
-     "url": "https://www.motorsport.com/f1/news/oscar-piastri-youve-got-to-manhandle-mclarens-f1-car-to-find-its-potential/10874559/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Oscar Piastri says McLaren's 2026 Formula 1 car has to be \"manhandled\" to be quick, describing the MCL40 as a car that punishes drivers the moment they are not at the limit. The Australian driver has endured a difficult campaign a",
-     "source": "Motorsport.com",
-     "image": "https://cdn-6.motorsport.com/images/amp/6zoD8ea0/s6/motorsport-com-graphics-2026-1.jpg",
-     "date": "2026-11-14",
-     "date_human": "14 nov",
-     "age": "hace 3 d",
-     "ts": 1794677980.0,
+     "title": "Oscar Piastri set for huge Las Vegas GP grid penalty",
+     "url": "https://www.crash.net/f1/news/1110160/1/oscar-piastri-set-huge-las-vegas-gp-grid-penalty",
+     "desc": "Oscar Piastri will take a grid penalty at the Las Vegas GP",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1450906_hires.jpg?width=1200",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 6 h",
+     "ts": 1794994269.0,
+     "teams": [
+      "mclaren"
+     ],
+     "own": true
+    },
+    {
+     "title": "Piastri to receive 10-place grid drop at Las Vegas GP",
+     "url": "https://www.autosport.com/f1/news/piastri-to-receive-grid-drop-at-las-vegas-gp/10875205/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "McLaren driver Oscar Piastri is set for a 10-place grid drop at the Las Vegas Grand Prix for exceeding his engine allowance in the 2026 Formula 1 season. The 25-year-old was already on the limit of four internal combustion engines",
+     "source": "Autosport",
+     "image": "https://cdn-3.motorsport.com/images/amp/YXypRDx6/s6/oscar-piastri-mclaren-3.jpg",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 7 h",
+     "ts": 1794989679.0,
      "teams": [
       "mclaren"
      ],
@@ -1606,6 +2933,36 @@
    ],
    "news": [
     {
+     "title": "Speed, trust, controlled aggression - What really led to Liam Lawson's career-saving F1 2026",
+     "url": "https://www.motorsport.com/f1/news/speed-trust-controlled-aggression-what-really-led-to-liam-lawsons-career-saving-f1-2026/10875262/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Liam Lawson's improved form made him too good for Racing Bulls to ignore for the 2027 Formula 1 campaign. But, as always, there's more than just a single factor behind that upturn in performances. It was only last week that the 24",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/6O7zMmO6/s6/liam-lawson-racing-bulls.jpg",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 3 h",
+     "ts": 1795004551.0,
+     "teams": [
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Racing Bulls boss reveals reason behind Liam Lawson extension",
+     "url": "https://www.motorsportweek.com/2026/11/18/racing-bulls-boss-reveals-reason-behind-liam-lawson-extension/",
+     "desc": "Racing Bulls team principal Alan Permane has identified Liam Lawson’s “immense” form during the 2026 F1 season as the reason behind the team’s decision to extend his contract. The post Racing Bulls boss reveals reason behind Liam ",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Liam-Lawson-F1-Sao-Paulo-GP-300x169.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 5 h",
+     "ts": 1794997800.0,
+     "teams": [
+      "rb"
+     ],
+     "own": true
+    },
+    {
      "title": "“He’s beaten Alpine on his own” - Racing Bulls on why it kept Liam Lawson",
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
@@ -1613,7 +2970,7 @@
      "image": "https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 3 h",
+     "age": "hace 22 h",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
@@ -1630,7 +2987,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794823549.0,
      "teams": [
       "williams",
@@ -1643,7 +3000,7 @@
      "url": "https://www.motorsport.com/f1/news/retaining-liam-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874659/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
      "source": "Motorsport.com",
-     "image": "https://cdn-4.motorsport.com/images/amp/YpbAe4N0/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/YpbAe4N0/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-15",
      "date_human": "15 nov",
      "age": "hace 2 d",
@@ -1659,43 +3016,11 @@
      "url": "https://www.autosport.com/f1/news/retaining-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874666/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
      "source": "Autosport",
-     "image": "https://cdn-1.motorsport.com/images/amp/YP743Le2/s6/liam-lawson-red-bull-2.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/YP743Le2/s6/liam-lawson-red-bull-2.jpg",
      "date": "2026-11-15",
      "date_human": "15 nov",
-     "age": "hace 2 d",
+     "age": "hace 3 d",
      "ts": 1794748102.0,
-     "teams": [
-      "red_bull",
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "Featured Comment: Pay more attention to Racing Bulls helping Red Bull | Brief",
-     "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
-     "desc": "Racing Bulls deserve more scrutiny for helping a 'rival' team",
-     "source": "RaceFans",
-     "image": null,
-     "date": "2026-11-13",
-     "date_human": "13 nov",
-     "age": "hace 4 d",
-     "ts": 1794584132.0,
-     "teams": [
-      "red_bull",
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "Tsolov lands reserve driver role for F1 2027",
-     "url": "https://www.autosport.com/f1/news/tsolov-lands-reserve-driver-role-for-f1-2027/10874151/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-     "desc": "Nikola Tsolov has been named as reserve driver for both Red Bull and Racing Bulls for the 2027 Formula 1 season having missed out on a full-time drive. The 19-year-old Bulgarian had been linked to a step up from F2 to replace Liam",
-     "source": "Autosport",
-     "image": "https://cdn-1.motorsport.com/images/amp/6x7LbPRY/s6/nikola-tsolov-racing-bulls-4.jpg",
-     "date": "2026-11-12",
-     "date_human": "12 nov",
-     "age": "hace 5 d",
-     "ts": 1794496867.0,
      "teams": [
       "red_bull",
       "rb"
@@ -1750,6 +3075,21 @@
    ],
    "news": [
     {
+     "title": "GALLERY: Alpine to run new livery for remainder of the F1 season",
+     "url": "https://www.motorsportweek.com/2026/11/18/alpine-to-run-new-livery-for-remainder-of-the-f1-season/",
+     "desc": "For the final three rounds of the 2027 Formula 1 season, the Alpine F1 team will display a new livery, with BWT pink covering the A526's sidepods. The post GALLERY: Alpine to run new livery for remainder of the F1 season appeared ",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-17-at-18.04.22-300x169.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 2 h",
+     "ts": 1795008600.0,
+     "teams": [
+      "alpine"
+     ],
+     "own": true
+    },
+    {
      "title": "“He’s beaten Alpine on his own” - Racing Bulls on why it kept Liam Lawson",
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
@@ -1757,7 +3097,7 @@
      "image": "https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 3 h",
+     "age": "hace 22 h",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
@@ -1767,14 +3107,32 @@
      "own": true
     },
     {
+     "title": "Cadillac, Williams, Alpine and Aston Martin change liveries for Las Vegas GP | Formula 1",
+     "url": "https://www.racefans.net/2026/11/16/cadillac-williams-alpine-and-aston-martin-change-liveries-for-las-vegas-gp/",
+     "desc": "Cadillac, Williams, Alpine and Aston Martin have revealed special liveries for this weekend's Las Vegas Grand Prix.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "age": "hace 1 d",
+     "ts": 1794845454.0,
+     "teams": [
+      "aston_martin",
+      "alpine",
+      "williams",
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
      "title": "Permane signs new Racing Bulls F1 deal",
      "url": "https://www.autosport.com/f1/news/permane-signs-new-racing-bulls-f1-deal/10871999/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Red Bull has given Alan Permane a new contract as the Racing Bulls Formula 1 squad’s team principal. Permane will retain the reins of the Faenza-based outfit until the end of the 2031 season. A stalwart of the current Alpine squad",
      "source": "Autosport",
-     "image": "https://cdn-9.motorsport.com/images/amp/24QebeqY/s6/alan-permane-racing-bulls-2.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/24QebeqY/s6/alan-permane-racing-bulls-2.jpg",
      "date": "2026-11-06",
      "date_human": "6 nov",
-     "age": "hace 11 d",
+     "age": "hace 12 d",
      "ts": 1793957047.0,
      "teams": [
       "red_bull",
@@ -1782,21 +3140,6 @@
       "rb"
      ],
      "own": true
-    },
-    {
-     "title": "Max Verstappen delivers hilarious Red Bull engine jibe",
-     "url": "https://www.motorsportweek.com/2026/11/17/max-verstappen-red-bull-engine-jibe/",
-     "desc": "Max Verstappen joked his Red Bull engine \"doesn't speak English\" after incurring a massive grid penalty at the F1 Sao Paulo GP. The post Max Verstappen delivers hilarious Red Bull engine jibe appeared first on Motorsport Week .",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-Red-Bull-300x169.webp",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
-     "age": "hace 4 h",
-     "ts": 1794933000.0,
-     "teams": [
-      "red_bull"
-     ],
-     "own": false
     }
    ],
    "photo": "assets/drivers/gasly.jpg",
@@ -1870,10 +3213,10 @@
      "url": "https://www.autosport.com/f1/news/haas-sticks-with-rafael-camara-for-las-vegas-ryo-hirakawa-in-for-fp1/10874781/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
      "source": "Autosport",
-     "image": "https://cdn-8.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "image": "https://cdn-6.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794822750.0,
      "teams": [
       "haas"
@@ -1885,10 +3228,10 @@
      "url": "https://www.motorsport.com/f1/news/haas-sticks-with-camara-for-las-vegas-hirakawa-in-for-fp1/10874778/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
      "source": "Motorsport.com",
-     "image": "https://cdn-7.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794822676.0,
      "teams": [
       "haas"
@@ -1903,7 +3246,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/2303869558-926.jpg?width=1200",
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794818813.0,
      "teams": [
       "haas"
@@ -1918,7 +3261,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794816777.0,
      "teams": [
       "haas"
@@ -1930,7 +3273,7 @@
      "url": "https://www.motorsport.com/f1/news/guenther-steiner-suggests-mark-webber-became-too-involved-in-oscar-piastris-career/10874383/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Former Haas Formula 1 team principal Guenther Steiner believes Mark Webber may have become too involved in Oscar Piastri’s career in the second half of 2025, before the McLaren driver decided he wanted to “do this on my own”. Pias",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/6zoD8dL0/s6/motorsport-com-graphics-2026-1.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/6zoD8dL0/s6/motorsport-com-graphics-2026-1.jpg",
      "date": "2026-11-13",
      "date_human": "13 nov",
      "age": "hace 4 d",
@@ -1942,20 +3285,20 @@
      "own": true
     },
     {
-     "title": "Guenther Steiner suggests Max Verstappen could be better suited to lead Ferrari",
-     "url": "https://www.motorsport.com/f1/news/guenther-steiner-suggests-max-verstappen-could-be-better-suited-to-lead-ferrari/10874192/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Former Haas Formula 1 team principal Guenther Steiner has questioned whether Lewis Hamilton is the driver to turn Ferrari's fortunes around, suggesting Max Verstappen might be better suited to the role. Hamilton joined Ferrari in ",
-     "source": "Motorsport.com",
-     "image": "https://cdn-2.motorsport.com/images/amp/01QNX1q0/s6/motorsport-com-graphics-95.jpg",
-     "date": "2026-11-12",
-     "date_human": "12 nov",
-     "age": "hace 4 d",
-     "ts": 1794517204.0,
+     "title": "Leclerc penalised for Lawson clash; Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
+     "url": "https://www.autosport.com/f1/news/leclerc-penalised-for-lawson-clash-antonelli-and-oliver-bearman-also-punished-after-f1-brazilian-gp/10873166/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Charles Leclerc was handed a five-second penalty after the Formula 1 Brazilian Grand Prix for his clash with Liam Lawson, dropping the Ferrari driver down to eighth place in the final results. The Monegasque was battling the Racin",
+     "source": "Autosport",
+     "image": "https://cdn-2.motorsport.com/images/amp/0Zq8VdL6/s6/charles-leclerc-ferrari-arvid-.jpg",
+     "date": "2026-11-08",
+     "date_human": "8 nov",
+     "age": "hace 9 d",
+     "ts": 1794175171.0,
      "teams": [
       "ferrari",
       "mercedes",
-      "red_bull",
-      "haas"
+      "haas",
+      "rb"
      ],
      "own": true
     }
@@ -2000,10 +3343,10 @@
      "url": "https://www.motorsport.com/f1/news/mercedes-and-audi-unveil-adidas-collections-for-f1-las-vegas-grand-prix/10874493/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes and Audi have unveiled special adidas fan collections for the upcoming Formula 1 Las Vegas Grand Prix. Mercedes' range is called \"Neon Lights\", while Audi's is named \"After Hours\". Both collections are available now throu",
      "source": "Motorsport.com",
-     "image": "https://cdn-6.motorsport.com/images/amp/0o5AVbPY/s6/motorsport-com-graphics-2026-1.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/0o5AVbPY/s6/motorsport-com-graphics-2026-1.jpg",
      "date": "2026-11-14",
      "date_human": "14 nov",
-     "age": "hace 3 d",
+     "age": "hace 4 d",
      "ts": 1794655970.0,
      "teams": [
       "mercedes",
@@ -2027,19 +3370,19 @@
      "own": true
     },
     {
-     "title": "Hearing set for Audi Tsunoda appeal",
-     "url": "https://www.the-race.com/formula-1/audi-appeal-f1-italian-gp-yuki-tsunoda/",
-     "desc": "The FIA has announced the hearing date for Audi’s appeal against Yuki Tsunoda not getting a penalty at Formula 1’s Italian Grand Prix",
-     "source": "The Race",
-     "image": "https://storage.ghost.io/c/dd/af/ddafbd99-2ccd-468c-b622-4b3cccf80b49/content/images/2026/11/XPB_1434343_HiRes.jpg",
-     "date": "",
-     "date_human": "",
-     "age": "",
-     "ts": 0,
+     "title": "GALLERY: Alpine to run new livery for remainder of the F1 season",
+     "url": "https://www.motorsportweek.com/2026/11/18/alpine-to-run-new-livery-for-remainder-of-the-f1-season/",
+     "desc": "For the final three rounds of the 2027 Formula 1 season, the Alpine F1 team will display a new livery, with BWT pink covering the A526's sidepods. The post GALLERY: Alpine to run new livery for remainder of the F1 season appeared ",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-17-at-18.04.22-300x169.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 2 h",
+     "ts": 1795008600.0,
      "teams": [
-      "audi"
+      "alpine"
      ],
-     "own": true
+     "own": false
     }
    ],
    "photo": "assets/drivers/bortoleto.jpg",
@@ -2089,16 +3432,17 @@
    ],
    "news": [
     {
-     "title": "Jade Jaquet re-signs with Williams for the 2027 F1 Academy season",
-     "url": "https://www.motorsportweek.com/2026/11/17/jade-jaquet-re-signs-with-williams-for-the-2027-f1-academy-season/",
-     "desc": "Williams has announced that Jade Jaquet will represent the team in the 2027 F1 Academy season, entering her second year in the series. The post Jade Jaquet re-signs with Williams for the 2027 F1 Academy season appeared first on Mo",
+     "title": "Carlos Sainz lays bare pain of ‘completely unexpected’ Ferrari exit",
+     "url": "https://www.motorsportweek.com/2026/11/18/carlos-sainz-completely-unexpected-ferrari-exit/",
+     "desc": "Carlos Sainz has spoken at length about the one of the lowest ebbs of his career - his \"completely unexpected\" exit from Ferrari. The post Carlos Sainz lays bare pain of &#8216;completely unexpected&#8217; Ferrari exit appeared fi",
      "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Jade_F1A_Contract_Extension-300x169.webp",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
-     "age": "hace 4 h",
-     "ts": 1794931200.0,
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1452325_HiRes-1-300x169.webp",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 9 h",
+     "ts": 1794981600.0,
      "teams": [
+      "ferrari",
       "williams"
      ],
      "own": true
@@ -2120,24 +3464,9 @@
      "own": true
     },
     {
-     "title": "Williams to light up night sky with special Las Vegas livery",
-     "url": "https://www.motorsportweek.com/2026/11/16/williams-f1-las-vegas-gp-livery/",
-     "desc": "Williams has unveiled a special livery for this weekend's Formula 1 Las Vegas Grand Prix, and it promises to blend with the city's famous lights. The post Williams to light up night sky with special Las Vegas livery appeared first",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Williams-F1-Las-Vegas-GP-300x169.webp",
-     "date": "2026-11-16",
-     "date_human": "16 nov",
-     "age": "hace 1 d",
-     "ts": 1794852586.0,
-     "teams": [
-      "williams"
-     ],
-     "own": true
-    },
-    {
-     "title": "Cadillac, Williams and Aston Martin reveal one-off liveries for Las Vegas GP | Formula 1",
-     "url": "https://www.racefans.net/2026/11/16/cadillac-williams-and-aston-martin-reveal-one-off-liveries-for-las-vegas-gp/",
-     "desc": "Cadillac, Williams and Aston Martin have revealed special liveries for this weekend's Las Vegas Grand Prix.",
+     "title": "Cadillac, Williams, Alpine and Aston Martin change liveries for Las Vegas GP | Formula 1",
+     "url": "https://www.racefans.net/2026/11/16/cadillac-williams-alpine-and-aston-martin-change-liveries-for-las-vegas-gp/",
+     "desc": "Cadillac, Williams, Alpine and Aston Martin have revealed special liveries for this weekend's Las Vegas Grand Prix.",
      "source": "RaceFans",
      "image": null,
      "date": "2026-11-16",
@@ -2146,6 +3475,7 @@
      "ts": 1794845454.0,
      "teams": [
       "aston_martin",
+      "alpine",
       "williams",
       "cadillac"
      ],
@@ -2159,7 +3489,7 @@
      "image": null,
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794823549.0,
      "teams": [
       "williams",
@@ -2168,15 +3498,15 @@
      "own": true
     },
     {
-     "title": "\"It's horribly painful\" - Williams drops 2026 car upgrades to benefit 2027",
-     "url": "https://www.motorsport.com/f1/news/horribly-painful-williams-2026-car-upgrades-benefit-2027/10874290/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Williams F1 team boss James Vowles says it was \"horribly painful\" for the squad to forego 2026 aero upgrades and save the resources for 2027 instead. Williams has been forced into playing the long game for some time now, but was h",
-     "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/68VwMox2/s6/alexander-albon-williams.jpg",
-     "date": "2026-11-13",
-     "date_human": "13 nov",
-     "age": "hace 4 d",
-     "ts": 1794572132.0,
+     "title": "Why Williams has turned Sainz and Albon into test drivers",
+     "url": "https://www.the-race.com/formula-1/why-williams-has-turned-sainz-and-albon-into-test-drivers/",
+     "desc": "Williams duo Carlos Sainz and Alex Albon have become arguably the most overqualified test drivers in F1 in recent weeks",
+     "source": "The Race",
+     "image": "https://storage.ghost.io/c/dd/af/ddafbd99-2ccd-468c-b622-4b3cccf80b49/content/images/2026/11/XPB_1451432_HiRes.jpg",
+     "date": "",
+     "date_human": "",
+     "age": "",
+     "ts": 0,
      "teams": [
       "williams"
      ],
@@ -2230,21 +3560,6 @@
    ],
    "news": [
     {
-     "title": "Fernando Alonso to return to Dakar Rally in 2027 with Aston Martin",
-     "url": "https://www.motorsportweek.com/2026/11/17/fernando-alonso-dakar-2027-aston-martin/",
-     "desc": "Fernando Alonso will return to the Dakar Rally after seven years away, competing with Aston Martin in 2027 alongside his Formula 1 campaign. The post Fernando Alonso to return to Dakar Rally in 2027 with Aston Martin appeared firs",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1453336_HiRes-1-300x169.webp",
-     "date": "2026-11-17",
-     "date_human": "17 nov",
-     "age": "hace 7 h",
-     "ts": 1794920400.0,
-     "teams": [
-      "aston_martin"
-     ],
-     "own": true
-    },
-    {
      "title": "Spotlight: Alonso to enter Dakar in car Aston Martin designed for Call of Duty | Brief",
      "url": "https://www.racefans.net/2026/11/17/spotlight-alonso-to-enter-dakar-in-car-aston-martin-designed-for-call-of-duty/",
      "desc": "Alonso to return to Dakar rally in CoD Aston Martin",
@@ -2252,7 +3567,7 @@
      "image": null,
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 11 h",
+     "age": "hace 1 d",
      "ts": 1794907008.0,
      "teams": [
       "aston_martin"
@@ -2267,7 +3582,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/skysports-fernando-alonso-aston-martin_7408358.jpg?width=1200",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 11 h",
+     "age": "hace 1 d",
      "ts": 1794906859.0,
      "teams": [
       "aston_martin"
@@ -2279,10 +3594,10 @@
      "url": "https://www.autosport.com/dakar/news/alonso-loeb-join-aston-martin-for-2027-dakar-rally/10875003/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
      "source": "Autosport",
-     "image": "https://cdn-1.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 11 h",
+     "age": "hace 1 d",
      "ts": 1794906118.0,
      "teams": [
       "aston_martin"
@@ -2294,10 +3609,10 @@
      "url": "https://www.motorsport.com/dakar/news/fernando-alonso-to-return-to-dakar-rally-with-aston-martin-in-2027/10874907/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 11 h",
+     "age": "hace 1 d",
      "ts": 1794906100.0,
      "teams": [
       "aston_martin"
@@ -2317,6 +3632,24 @@
      "teams": [
       "aston_martin",
       "williams"
+     ],
+     "own": true
+    },
+    {
+     "title": "Cadillac, Williams, Alpine and Aston Martin change liveries for Las Vegas GP | Formula 1",
+     "url": "https://www.racefans.net/2026/11/16/cadillac-williams-alpine-and-aston-martin-change-liveries-for-las-vegas-gp/",
+     "desc": "Cadillac, Williams, Alpine and Aston Martin have revealed special liveries for this weekend's Las Vegas Grand Prix.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "age": "hace 1 d",
+     "ts": 1794845454.0,
+     "teams": [
+      "aston_martin",
+      "alpine",
+      "williams",
+      "cadillac"
      ],
      "own": true
     }
@@ -2357,9 +3690,9 @@
    "prev": [],
    "news": [
     {
-     "title": "Cadillac, Williams and Aston Martin reveal one-off liveries for Las Vegas GP | Formula 1",
-     "url": "https://www.racefans.net/2026/11/16/cadillac-williams-and-aston-martin-reveal-one-off-liveries-for-las-vegas-gp/",
-     "desc": "Cadillac, Williams and Aston Martin have revealed special liveries for this weekend's Las Vegas Grand Prix.",
+     "title": "Cadillac, Williams, Alpine and Aston Martin change liveries for Las Vegas GP | Formula 1",
+     "url": "https://www.racefans.net/2026/11/16/cadillac-williams-alpine-and-aston-martin-change-liveries-for-las-vegas-gp/",
+     "desc": "Cadillac, Williams, Alpine and Aston Martin have revealed special liveries for this weekend's Las Vegas Grand Prix.",
      "source": "RaceFans",
      "image": null,
      "date": "2026-11-16",
@@ -2368,6 +3701,7 @@
      "ts": 1794845454.0,
      "teams": [
       "aston_martin",
+      "alpine",
       "williams",
       "cadillac"
      ],
@@ -2378,10 +3712,10 @@
      "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
      "source": "Motorsport.com",
-     "image": "https://cdn-6.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1794833095.0,
      "teams": [
       "red_bull",
@@ -2394,7 +3728,7 @@
      "url": "https://www.autosport.com/f1/news/herta-qualifies-for-f1-superlicence-as-bottas-remains-bullish-on-2027-seat/10872179/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Cadillac Formula 1 test driver Colton Herta has finally obtained the last remaining superlicence point required to drive in the series, but incumbent Valtteri Bottas remains bullish on his future with the squad. Herta conducted hi",
      "source": "Autosport",
-     "image": "https://cdn-1.motorsport.com/images/amp/01QNpEx0/s6/colton-herta-cadillac-f1-team.jpg",
+     "image": "https://cdn-4.motorsport.com/images/amp/01QNpEx0/s6/colton-herta-cadillac-f1-team.jpg",
      "date": "2026-11-06",
      "date_human": "6 nov",
      "age": "hace 11 d",
@@ -2409,10 +3743,10 @@
      "url": "https://www.autosport.com/f1/news/liverpool-fc-owners-emerge-as-potential-buyers-of-cadillac-f1-shares-amid-twg-uncertainty/10871500/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Fresh doubts have emerged over the future of Cadillac Formula 1's majority ownership amid reports Mark Walter's TWG Global is looking to offload some of its shares - with Liverpool FC owner Fenway Sports Group said to be among the",
      "source": "Autosport",
-     "image": "https://cdn-3.motorsport.com/images/amp/0Zq8bZL6/s6/sergio-perez-cadillac.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/0Zq8bZL6/s6/sergio-perez-cadillac.jpg",
      "date": "2026-11-04",
      "date_human": "4 nov",
-     "age": "hace 13 d",
+     "age": "hace 14 d",
      "ts": 1793802880.0,
      "teams": [
       "cadillac"
@@ -2427,9 +3761,25 @@
      "image": "https://cdn-5.motorsport.com/images/amp/6n7ABxe0/s6/colton-herta-cadillac-f1-team-2.jpg",
      "date": "2026-11-04",
      "date_human": "4 nov",
-     "age": "hace 13 d",
+     "age": "hace 14 d",
      "ts": 1793785363.0,
      "teams": [
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Sergio Pérez's F1 second act: Red Bull regrets, redemption and a fresh start at Cadillac",
+     "url": "https://www.espn.com/f1/story/_/id/50310746/sergio-perez-f1-second-act-red-bull-regrets-cadillac-contract",
+     "desc": "Sergio Pérez reflects on his Red Bull exit, finding happiness beyond F1 and rediscovering his love of racing as he prepares for his 300th grand prix.",
+     "source": "ESPN F1",
+     "image": null,
+     "date": "",
+     "date_human": "",
+     "age": "",
+     "ts": 0,
+     "teams": [
+      "red_bull",
       "cadillac"
      ],
      "own": true
@@ -3019,225 +4369,216 @@
  ],
  "news": [
   {
-   "title": "Social Media: FIA president indicates agreement reached on next power unit formula | Brief",
-   "url": "https://www.racefans.net/2026/11/17/social-media-fia-president-indicates-agreement-reached-on-next-power-unit-formula/",
-   "desc": "V8 engines are coming to F1 \"soon\", claims Ben Sulayem",
-   "source": "RaceFans",
-   "image": null,
-   "date": "2026-11-17",
-   "date_human": "17 nov",
+   "title": "Team Penske retains longest tenured driver with multi-year extension",
+   "url": "https://www.motorsportweek.com/2026/11/18/team-penske-retains-longest-tenured-driver-with-multi-year-extension/",
+   "desc": "Team Penske has announced a contract extension with its long-time driver Josef Newgarden. The agreement is a multi-year extension to keep the veteran driver behind the wheel of the #2 entry with one of IndyCar’s most iconic teams ",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/2026-10_15-300x169.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
    "age": "hace 1 h",
-   "ts": 1794947829.0,
+   "ts": 1795016112.0,
    "teams": []
   },
   {
-   "title": "F1 Academy prepares for Las Vegas with special livery",
-   "url": "https://www.motorsportweek.com/2026/11/17/f1-academy-prepares-for-las-vegas-with-special-livery/",
-   "desc": "F1 Academy teams have begun unveiling their special liveries for the Las Vegas GP as they aim to make it a weekend to remember. The post F1 Academy prepares for Las Vegas with special livery appeared first on Motorsport Week .",
-   "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/PHOTO-2026-11-17-17-00-48-300x169.webp",
-   "date": "2026-11-17",
-   "date_human": "17 nov",
+   "title": "Toto Wolff addresses F1 champion Kimi Antonelli salary claims",
+   "url": "https://www.crash.net/f1/news/1110172/1/toto-wolff-addresses-f1-champion-kimi-antonelli-salary-claims",
+   "desc": "Toto Wolff has commented on Kimi Antonelli’s salary",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1450415_hires_0.jpg?width=1200",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
    "age": "hace 1 h",
-   "ts": 1794945917.0,
+   "ts": 1795016010.0,
+   "teams": [
+    "mercedes"
+   ]
+  },
+  {
+   "title": "Mercedes reveal championship ‘priority’ after leaving George Russell upgrade-less at F1 Las Vegas GP",
+   "url": "https://www.motorsportweek.com/2026/11/18/mercedes-reveal-championship-priority-george-russell-f1-las-vegas-gp/",
+   "desc": "Only Andrea Kimi Antonelli, and not George Russell, will be running an upgraded turbocharger for Mercedes at the F1 Las Vegas GP. The post Mercedes reveal championship &#8216;priority&#8217; after leaving George Russell upgrade-le",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/George-Russell-F1-300x169.webp",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 1 h",
+   "ts": 1795014000.0,
+   "teams": [
+    "mercedes"
+   ]
+  },
+  {
+   "title": "The factors behind the abortive 2030 F1 rules announcement",
+   "url": "https://www.autosport.com/f1/news/the-factors-behind-the-abortive-f1-2030-rules-announcement/10875290/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "Famously, when the papal conclave gathers to elect a new pope, a successful vote is communicated to the huddled masses via smoke from the Sistine Chapel chimney as the chemically impregnated ballot papers are burned: white smoke s",
+   "source": "Autosport",
+   "image": "https://cdn-5.motorsport.com/images/amp/0rVx13O0/s6/stefano-domenicali-mohammed-be-2.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 1 h",
+   "ts": 1795010888.0,
    "teams": []
   },
   {
-   "title": "Red Bull rocked by departure of key Max Verstappen aide",
-   "url": "https://www.motorsportweek.com/2026/11/17/red-bull-departure-of-key-max-verstappen-aide/",
-   "desc": "Max Verstappen and Red Bull will need to search for a new mechanic, with the announcement that Jon Caller is to leave the team to seek a new challenge outside Formula 1. The post Red Bull rocked by departure of key Max Verstappen ",
+   "title": "Future imperfect: What's behind the abortive 2030 F1 rules announcement?",
+   "url": "https://www.motorsport.com/f1/news/future-imperfect-whats-behind-the-abortive-2030-f1-rules-announcement/10875283/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Famously, when the papal conclave gathers to elect a new pope, a successful vote is communicated to the huddled masses via smoke from the Sistine Chapel chimney as the chemically impregnated ballot papers are burned: white smoke s",
+   "source": "Motorsport.com",
+   "image": "https://cdn-5.motorsport.com/images/amp/0o5AkOxY/s6/gettyimages-2209898755.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 1 h",
+   "ts": 1795010659.0,
+   "teams": []
+  },
+  {
+   "title": "How Marc Marquez can win the 2026 MotoGP title at the Portuguese GP",
+   "url": "https://www.motorsportweek.com/2026/11/18/marc-marquez-scenarios-champion-portuguesegp/",
+   "desc": "Here are all the scenarios that could see Marc Marquez crowned MotoGP World Champion for the eighth time in Portimao. The post How Marc Marquez can win the 2026 MotoGP title at the Portuguese GP appeared first on Motorsport Week .",
    "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1341857_HiRes-1-300x169.webp",
-   "date": "2026-11-17",
-   "date_human": "17 nov",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Marc_Marquez-10-300x169.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 1 h",
+   "ts": 1795010400.0,
+   "teams": []
+  },
+  {
+   "title": "\"We haven't taken any steps backwards\" – McLaren boss explains 2026",
+   "url": "https://www.motorsport.com/f1/news/we-havent-taken-any-steps-backwards-mclaren-boss-explains-2026/10875219/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
+   "source": "Motorsport.com",
+   "image": "https://cdn-5.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
    "age": "hace 2 h",
-   "ts": 1794938400.0,
-   "teams": [
-    "red_bull"
-   ]
-  },
-  {
-   "title": "Ferrari boss Fred Vasseur handed ‘overwhelmed’ verdict by Bernie Ecclestone",
-   "url": "https://www.motorsportweek.com/2026/11/17/bernie-ecclestone-makes-overwhelmed-claim-about-ferrari-fred-vasseur/",
-   "desc": "Bernie Ecclestone believes Fred Vasseur is not the right man to lead Ferrari after claiming the Frenchman is \"overwhelmed\" at the F1 team. The post Ferrari boss Fred Vasseur handed &#8216;overwhelmed&#8217; verdict by Bernie Eccle",
-   "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Bernie-Ecclestone-F1-300x169.webp",
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "age": "hace 3 h",
-   "ts": 1794936600.0,
-   "teams": [
-    "ferrari"
-   ]
-  },
-  {
-   "title": "“He’s beaten Alpine on his own” - Racing Bulls on why it kept Liam Lawson",
-   "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
-   "source": "Motorsport.com",
-   "image": "https://cdn-9.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "age": "hace 3 h",
-   "ts": 1794934957.0,
-   "teams": [
-    "red_bull",
-    "alpine",
-    "rb"
-   ]
-  },
-  {
-   "title": "Toto Wolff offers blunt response to Kimi Antonelli to Ferrari question",
-   "url": "https://www.crash.net/f1/news/1110156/1/toto-wolff-offers-blunt-response-kimi-antonelli-ferrari-question",
-   "desc": "Toto Wolff addresses the prospect of Kimi Antonelli moving to Ferrari one day.",
-   "source": "Crash.net",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1415432_hires.jpg?width=1200",
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "age": "hace 4 h",
-   "ts": 1794930145.0,
-   "teams": [
-    "ferrari",
-    "mercedes"
-   ]
-  },
-  {
-   "title": "Why George Russell won’t get Mercedes F1 engine upgrade at Las Vegas GP",
-   "url": "https://www.crash.net/f1/news/1110155/1/why-george-russell-wont-get-mercedes-f1-engine-upgrade-las-vegas-gp",
-   "desc": "Mercedes will finally introduce its ADUO F1 engine upgrade in Las Vegas.",
-   "source": "Crash.net",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453187_hires.jpg?width=1200",
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "age": "hace 6 h",
-   "ts": 1794925762.0,
-   "teams": [
-    "mercedes"
-   ]
-  },
-  {
-   "title": "Lewis Hamilton announces huge new partnership ahead of Las Vegas GP",
-   "url": "https://www.crash.net/f1/news/1110149/1/lewis-hamilton-announces-huge-new-partnership-ahead-las-vegas-gp",
-   "desc": "Lewis Hamilton has become the new global ambassador for AG1.",
-   "source": "Crash.net",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1443666_hires.jpg?width=1200",
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "age": "hace 6 h",
-   "ts": 1794924000.0,
-   "teams": [
-    "mercedes"
-   ]
-  },
-  {
-   "title": "Toto Wolff is not afraid of losing Kimi Antonelli to Ferrari",
-   "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
-   "source": "Motorsport.com",
-   "image": "https://cdn-4.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "age": "hace 8 h",
-   "ts": 1794915910.0,
-   "teams": [
-    "ferrari",
-    "mercedes"
-   ]
-  },
-  {
-   "title": "Spotlight: Alonso to enter Dakar in car Aston Martin designed for Call of Duty | Brief",
-   "url": "https://www.racefans.net/2026/11/17/spotlight-alonso-to-enter-dakar-in-car-aston-martin-designed-for-call-of-duty/",
-   "desc": "Alonso to return to Dakar rally in CoD Aston Martin",
-   "source": "RaceFans",
-   "image": null,
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "age": "hace 11 h",
-   "ts": 1794907008.0,
-   "teams": [
-    "aston_martin"
-   ]
-  },
-  {
-   "title": "An early season finale? Five talking points for the 2026 Las Vegas Grand Prix | Formula 1",
-   "url": "https://www.racefans.net/2026/11/17/an-early-season-finale-five-talking-points-for-the-2026-las-vegas-grand-prix/",
-   "desc": "Formula 1 heads to Las Vegas this weekend for what is supposed to be the first of three consecutive race weekends. Here are the talking points.",
-   "source": "RaceFans",
-   "image": null,
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "age": "hace 11 h",
-   "ts": 1794906431.0,
-   "teams": []
-  },
-  {
-   "title": "Alonso, Loeb join Aston Martin for 2027 Dakar Rally",
-   "url": "https://www.autosport.com/dakar/news/alonso-loeb-join-aston-martin-for-2027-dakar-rally/10875003/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-   "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
-   "source": "Autosport",
-   "image": "https://cdn-1.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "age": "hace 11 h",
-   "ts": 1794906118.0,
-   "teams": [
-    "aston_martin"
-   ]
-  },
-  {
-   "title": "Fernando Alonso to return to Dakar Rally with Aston Martin in 2027",
-   "url": "https://www.motorsport.com/dakar/news/fernando-alonso-to-return-to-dakar-rally-with-aston-martin-in-2027/10874907/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
-   "source": "Motorsport.com",
-   "image": "https://cdn-5.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
-   "date": "2026-11-17",
-   "date_human": "17 nov",
-   "age": "hace 11 h",
-   "ts": 1794906100.0,
-   "teams": [
-    "aston_martin"
-   ]
-  },
-  {
-   "title": "Norris: Las Vegas GP would be \"scary\" with current F1 wet tyres",
-   "url": "https://www.autosport.com/f1/news/lando-norris-f1-needs-better-rain-tyres-as-wet-las-vegas-would-be-scary/10874886/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-   "desc": "Lando Norris hopes Formula 1 tyre supplier Pirelli will field much-improved rain tyres in 2027 as he expects the current range won't work properly at a low-downforce circuit like Las Vegas. Following partially rain-affected weeken",
-   "source": "Autosport",
-   "image": "https://cdn-7.motorsport.com/images/amp/0o5AVObY/s6/lando-norris-mclaren-george-ru-2.jpg",
-   "date": "2026-11-16",
-   "date_human": "16 nov",
-   "age": "hace 1 d",
-   "ts": 1794850203.0,
+   "ts": 1795008602.0,
    "teams": [
     "mclaren"
    ]
   },
   {
-   "title": "Haas sticks with Camara for Las Vegas GP, Hirakawa in for FP1",
-   "url": "https://www.autosport.com/f1/news/haas-sticks-with-rafael-camara-for-las-vegas-ryo-hirakawa-in-for-fp1/10874781/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-   "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
+   "title": "What McLaren has learned from a tough 2026 as it aims for a return to glory in 2027",
+   "url": "https://www.autosport.com/f1/news/what-mclaren-has-learned-from-a-tough-f1-2026/10875268/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
    "source": "Autosport",
-   "image": "https://cdn-8.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
-   "date": "2026-11-16",
-   "date_human": "16 nov",
-   "age": "hace 1 d",
-   "ts": 1794822750.0,
+   "image": "https://cdn-3.motorsport.com/images/amp/6VyKR1lY/s6/andrea-stella-mclaren-2.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 2 h",
+   "ts": 1795008602.0,
    "teams": [
-    "haas"
+    "mclaren"
    ]
   },
   {
-   "title": "All the special liveries for F1's Las Vegas Grand Prix",
-   "url": "https://www.the-race.com/formula-1/f1-all-special-liveries-las-vegas-grand-prix/",
-   "desc": "It's time for the Las Vegas Grand Prix - and with it, a host of special liveries for F1 teams",
+   "title": "Speed, trust, controlled aggression - What really led to Liam Lawson's career-saving F1 2026",
+   "url": "https://www.motorsport.com/f1/news/speed-trust-controlled-aggression-what-really-led-to-liam-lawsons-career-saving-f1-2026/10875262/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Liam Lawson's improved form made him too good for Racing Bulls to ignore for the 2027 Formula 1 campaign. But, as always, there's more than just a single factor behind that upturn in performances. It was only last week that the 24",
+   "source": "Motorsport.com",
+   "image": "https://cdn-1.motorsport.com/images/amp/6O7zMmO6/s6/liam-lawson-racing-bulls.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 3 h",
+   "ts": 1795004551.0,
+   "teams": [
+    "rb"
+   ]
+  },
+  {
+   "title": "What’s behind bizarre deleted F1 V8 announcement?",
+   "url": "https://www.crash.net/f1/news/1110167/1/whats-behind-bizarre-deleted-f1-v8-announcement",
+   "desc": "F1’s V8 future was revealed and then deleted on Tuesday",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453426_hires.jpg?width=1200",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 3 h",
+   "ts": 1795003533.0,
+   "teams": []
+  },
+  {
+   "title": "Max Verstappen’s blunt response on Kimi Antonelli F1 motivation",
+   "url": "https://www.crash.net/f1/news/1110164/1/max-verstappens-blunt-response-kimi-antonelli-f1-motivation",
+   "desc": "Max Verstappen says he doesn’t need Kimi Antonelli's success to be motivated",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1452327_hires.jpg?width=1200",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 5 h",
+   "ts": 1794998926.0,
+   "teams": [
+    "mercedes",
+    "red_bull"
+   ]
+  },
+  {
+   "title": "Featured Comment: F1 fans underestimate importance of “getting to a top car” | Brief",
+   "url": "https://www.racefans.net/2026/11/18/featured-comment-f1-fans-underestimate-importance-of-getting-to-a-top-car/",
+   "desc": "\"Half of the grid\" could be champions in the right car",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 5 h",
+   "ts": 1794997294.0,
+   "teams": []
+  },
+  {
+   "title": "The Antonelli you don't know: Daily life with F1's newest champion",
+   "url": "https://www.autosport.com/f1/news/the-antonelli-you-dont-know-daily-life-with-f1s-newest-champion/10875217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "There is one thing that physiotherapist Sergi Avila took a little while to understand. When Kimi Antonelli finally found himself with a free weekend, after weeks being spent between circuits, airports and training, the most logica",
+   "source": "Autosport",
+   "image": "https://cdn-2.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 6 h",
+   "ts": 1794993655.0,
+   "teams": [
+    "mercedes"
+   ]
+  },
+  {
+   "title": "Mercedes’ technical director explains how Antonelli leapt ahead of Russell in 2026 | Formula 1",
+   "url": "https://www.racefans.net/2026/11/18/mercedes-technical-director-explains-how-antonelli-leapt-ahead-of-russell-in-second-season/",
+   "desc": "Mercedes technical director James Allison explains why Andrea Kimi Antonelli has performed better in this year's car than George Russell.",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-18",
+   "date_human": "18 nov",
+   "age": "hace 8 h",
+   "ts": 1794986148.0,
+   "teams": [
+    "mercedes"
+   ]
+  },
+  {
+   "title": "Social Media: FIA president indicates agreement reached on next power unit formula | Brief",
+   "url": "https://www.racefans.net/2026/11/17/social-media-fia-president-indicates-agreement-reached-on-next-power-unit-formula/",
+   "desc": "V8 engines are coming back to F1 \"soon\", claims Ben Sulayem",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-17",
+   "date_human": "17 nov",
+   "age": "hace 19 h",
+   "ts": 1794947829.0,
+   "teams": []
+  },
+  {
+   "title": "Ford's real role in building F1's 'best' engine",
+   "url": "https://www.the-race.com/formula-1/ford-real-role-in-building-f1-best-engine/",
+   "desc": "How much has Ford really been involved in Red Bull Powertrains' instant success? More than you might think",
    "source": "The Race",
-   "image": "https://storage.ghost.io/c/dd/af/ddafbd99-2ccd-468c-b622-4b3cccf80b49/content/images/2026/11/dee86a48-2c8c-42c2-9414-09f4380e5ba9-1.jpg",
+   "image": "https://storage.ghost.io/c/dd/af/ddafbd99-2ccd-468c-b622-4b3cccf80b49/content/images/2026/11/XPB_1451161_HiRes.jpg",
    "date": "",
    "date_human": "",
    "age": "",
    "ts": 0,
-   "teams": []
+   "teams": [
+    "red_bull"
+   ]
   }
  ],
- "news_pool": 195
+ "news_pool": 216
 }

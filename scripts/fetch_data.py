@@ -23,6 +23,7 @@ import urllib.error
 import urllib.request
 
 IMAGE_TTL_DAYS = int(os.environ.get("PITLANE_IMAGE_TTL", "10"))
+SKIP_IMAGES = os.environ.get("PITLANE_SKIP_IMAGES") == "1"  # modo rápido: solo datos
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
@@ -126,6 +127,58 @@ def fetch_api() -> dict:
     return {"calendar": cal, "drivers": drivers, "teams": teams, "results": results}
 
 
+SESSION_FIELDS = [
+    ("FirstPractice", "Libres 1", "FP1"),
+    ("SecondPractice", "Libres 2", "FP2"),
+    ("ThirdPractice", "Libres 3", "FP3"),
+    ("SprintQualifying", "Clasificación sprint", "SQ"),
+    ("SprintShootout", "Clasificación sprint", "SQ"),
+    ("Sprint", "Sprint", "SPR"),
+    ("Qualifying", "Clasificación", "Q"),
+]
+
+try:  # zona horaria real si hay base de datos IANA
+    from zoneinfo import ZoneInfo
+    _MADRID = ZoneInfo("Europe/Madrid")
+except Exception:  # respaldo: España es UTC+1 en invierno y UTC+2 en verano
+    _MADRID = None
+
+
+def to_madrid(dt):
+    """Hora peninsular a partir de un datetime UTC."""
+    from datetime import timedelta, timezone
+    if _MADRID is not None:
+        return dt.astimezone(_MADRID)
+    # regla de horario de verano de la UE: último domingo de marzo a último domingo de octubre
+    def last_sunday(y, m):
+        d = datetime(y, m + 1, 1) - timedelta(days=1)
+        return d - timedelta(days=(d.weekday() + 1) % 7)
+    local = dt.replace(tzinfo=timezone.utc) + timedelta(hours=1)
+    start, end = last_sunday(local.year, 3), last_sunday(local.year, 10)
+    if start <= local.replace(tzinfo=None) < end:
+        local += timedelta(hours=1)
+    return local
+
+
+def parse_session(node: dict) -> dict | None:
+    if not node or "date" not in node:
+        return None
+    raw = f"{node['date']}T{node.get('time', '00:00:00Z').rstrip('Z')}"
+    try:
+        utc = datetime.fromisoformat(raw).replace(tzinfo=timezone.utc)
+    except Exception:
+        return None
+    mad = to_madrid(utc)
+    return {
+        "utc": utc.isoformat(),
+        "iso": utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "date": utc.date().isoformat(),
+        "day": f"{["lun", "mar", "mié", "jue", "vie", "sáb", "dom"][mad.weekday()]} {mad.day}",
+        "time_es": mad.strftime("%H:%M"),
+        "time_utc": utc.strftime("%H:%M"),
+    }
+
+
 def gp_name(race: dict) -> str:
     base = race["raceName"].replace(" Grand Prix", "").strip()
     es = GP_ES.get(base, base)
@@ -155,8 +208,24 @@ def build_calendar(races: list, today: date) -> list:
             "done": d < today,
             "is_next": False,
             "winner": None,
+            "sessions": [],
         })
     return out
+
+
+def attach_sessions(calendar: list, raw_races: list) -> None:
+    """Horarios de todas las sesiones del fin de semana."""
+    for race, raw in zip(calendar, raw_races):
+        items = []
+        for field, label, code in SESSION_FIELDS:
+            s_ = parse_session(raw.get(field))
+            if s_:
+                items.append({"name": label, "code": code, **s_})
+        race_s = parse_session({"date": raw["date"], "time": raw.get("time", "00:00:00Z")})
+        if race_s:
+            items.append({"name": "Carrera", "code": "RACE", **race_s})
+        items.sort(key=lambda x: x["utc"])
+        race["sessions"] = items
 
 
 def attach_winners(calendar: list, results: list) -> None:
@@ -192,12 +261,10 @@ def enrich_circuits(raw_races: list, calendar: list) -> list:
             "country": c["Location"]["country"],
             "flag": race["flag"],
             "wiki": title,
-            "photo": wiki_best_photo(
-                # primero la página del gran premio (suele traer foto aérea),
-                # luego el circuito, y por último la ciudad
-                [f"{SEASON} {raw_name} Grand Prix", f"{raw_name} Grand Prix", title,
-                 c["Location"]["locality"]] + CIRCUIT_FALLBACK.get(cid, []),
-                cid, "circuits"),
+            "photo": circuit_photo({"id": cid, "name": c["circuitName"],
+                                    "locality": c["Location"]["locality"],
+                                    "gp": GP_ES.get(raw_name, raw_name),
+                                    "wiki": title}),
             "about": (wiki_extract(f"Gran Premio de {race['name'].replace('GP de ', '')}", 380)
                       or wiki_extract(title, 380)),
             "round": race["round"],
@@ -269,6 +336,40 @@ def prev_seasons(team_ids: list, years=(2024, 2025)) -> dict:
     return out
 
 
+PTS_DRIVER = 25      # puntos máximos de un piloto por carrera
+PTS_TEAM = 43        # 1º y 2º de un equipo en la misma carrera
+
+
+def championship_state(teams: list, drivers: list, rounds_done: int, total_races: int) -> dict:
+    """¿Está decidido el título? Si no, cuánto falta.
+
+    Regla simple y honesta: si la ventaja del líder supera todo lo que puede sumar
+    el segundo en las carreras que quedan, el título está matemáticamente cerrado.
+    """
+    remaining = max(0, total_races - rounds_done)
+    out = {}
+    for kind, rows, per_race in (("drivers", drivers, PTS_DRIVER), ("constructors", teams, PTS_TEAM)):
+        if not rows:
+            continue
+        first, second = rows[0], (rows[1] if len(rows) > 1 else None)
+        gap = first["points"] - (second["points"] if second else 0)
+        max_left = remaining * per_race
+        decided = remaining == 0 or gap > max_left
+        out[kind] = {
+            "id": first["id"],
+            "name": first.get("full") or first.get("name"),
+            "points": first["points"],
+            "team": (first.get("team") or {}).get("id") if kind == "drivers" else first["id"],
+            "gap": gap,
+            "remaining": remaining,
+            "max_left": max_left,
+            "decided": decided,
+            "rival": (second.get("full") or second.get("name")) if second else None,
+            "rival_points": second["points"] if second else 0,
+        }
+    return out
+
+
 def build_drivers(api: dict, teams: list) -> list:
     team_of = {}
     for t in teams:
@@ -301,6 +402,78 @@ def build_drivers(api: dict, teams: list) -> list:
         })
     return out
 
+
+
+def commons_search(query: str, limit: int = 12) -> list:
+    """Búsqueda en Wikimedia Commons: devuelve (título, url_1200) de fotos apaisadas."""
+    from urllib.parse import quote as q
+    url = ("https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search"
+           f"&gsrsearch={q('filetype:bitmap ' + query)}&gsrlimit={limit}&gsrnamespace=6"
+           "&prop=imageinfo&iiprop=url|size&iiurlwidth=1400")
+    try:
+        data = get_json(url)
+    except Exception:
+        return []
+    out = []
+    for pg in ((data.get("query") or {}).get("pages") or {}).values():
+        ii = (pg.get("imageinfo") or [{}])[0]
+        w, h = ii.get("width", 0), ii.get("height", 0)
+        if not w or not h or w < 1100 or w / h < 1.2:
+            continue
+        title = (pg.get("title") or "").lower()
+        if BAD_IMG.search(title):
+            continue
+        url_ = ii.get("thumburl") or ii.get("url")
+        if url_:
+            out.append((title, url_))
+    return out
+
+
+def best_from_queries(queries: list, dest: pathlib.Path, min_bright: int = 42) -> bool:
+    """Prueba varias búsquedas y guarda la primera foto válida y luminosa."""
+    if SKIP_IMAGES:
+        return dest.exists() and dest.stat().st_size > 15000
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    probe = dest.with_suffix(".tmp.webp")
+    for query in queries:
+        for _title, url in commons_search(query, limit=8)[:2]:
+            try:
+                img = get(url, timeout=60)
+            except Exception:
+                continue
+            if len(img) < 15000:
+                continue
+            probe.write_bytes(img)
+            if is_photo(probe) and brightness(probe) >= min_bright:
+                probe.replace(dest)
+                return True
+    probe.unlink(missing_ok=True)
+    return False
+
+
+def circuit_photo(c: dict) -> str | None:
+    """Foto aérea del trazado; si no hay, la imagen de la ficha de Wikipedia."""
+    slug = c["id"]
+    dest = ASSETS / "circuits" / f"{slug}.jpg"
+    if fresh(dest) and is_photo(dest) and brightness(dest) >= 42:
+        return f"assets/circuits/{slug}.jpg"
+    commands = [f"{c['name']} aerial", f"{c['name']} circuit aerial",
+                f"{c['locality']} circuit aerial"]
+    if best_from_queries(commands, dest):
+        return f"assets/circuits/{slug}.jpg"
+    return wiki_best_photo([c["wiki"], f"{c['locality']}"], slug, "circuits")
+
+
+def team_car_photo(t: dict, display: str) -> str | None:
+    """Monoplaza en pista, con la temporada en curso."""
+    slug = t["id"]
+    dest = ASSETS / "teams" / f"{slug}-car.jpg"
+    if fresh(dest, 12000) and is_photo(dest) and brightness(dest) >= 42:
+        return f"assets/teams/{slug}-car.jpg"
+    queries = [f"{display} {SEASON} Grand Prix", f"{display} Formula One {SEASON}"]
+    if best_from_queries(queries, dest):
+        return f"assets/teams/{slug}-car.jpg"
+    return None
 
 def commons_car_photo(team_name: str, slug_name: str) -> str | None:
     """Busca en Wikimedia Commons una foto del coche del equipo y se queda con la mejor."""
@@ -387,6 +560,8 @@ TEAM_WIKI = {
 # ---------------------------------------------------------------------- imágenes
 def driver_photo(wiki_title: str, did: str) -> str | None:
     dest = ASSETS / "drivers" / f"{did}.jpg"
+    if SKIP_IMAGES:
+        return f"assets/drivers/{did}.jpg" if dest.exists() else None
     if fresh(dest):
         return f"assets/drivers/{did}.jpg"
     try:
@@ -506,6 +681,8 @@ def wiki_best_photo(titles: list[str], slug_name: str, folder: str, width: int =
 def wiki_image(title: str, slug_name: str, folder: str, width: int = 500) -> str | None:
     """Descarga la imagen principal de una página de Wikipedia."""
     dest = ASSETS / folder / f"{slug_name}.jpg"
+    if SKIP_IMAGES:
+        return f"assets/{folder}/{slug_name}.jpg" if dest.exists() else None
     if fresh(dest):
         return f"assets/{folder}/{slug_name}.jpg"
     time.sleep(1.1)  # cortesía con la API de Wikipedia
@@ -553,7 +730,11 @@ def wiki_extract(title: str, limit: int = 420) -> str:
             data = get_json(f"https://{host}/api/rest_v1/page/summary/" + quote(title.replace(" ", "_")))
             ext = (data.get("extract") or "").strip()
             if len(ext) > 60:
-                return ext[:limit]
+                if len(ext) > limit:
+                    cut = ext[:limit]
+                    end = max(cut.rfind(". "), cut.rfind("; "))
+                    ext = (cut[:end + 1] if end > limit * 0.55 else cut.rsplit(" ", 1)[0]) + "…"
+                return ext
         except Exception:
             continue
     return ""
@@ -676,6 +857,7 @@ def _run() -> None:
     api = fetch_api()
     calendar = build_calendar(api["calendar"], today)
     attach_winners(calendar, api["results"])
+    attach_sessions(calendar, api["calendar"])
     teams = build_teams(api, calendar)
     hist = prev_seasons([t["id"] for t in teams])
     for t in teams:
@@ -710,10 +892,13 @@ def _run() -> None:
         lead = next((d for d in drivers if d["team"] and d["team"]["id"] == t["id"] and d.get("photo")), None)
         t["photo"] = lead["photo"] if lead else None
         t["photo_of"] = lead["full"] if lead else None
-        t["car"] = commons_car_photo(DISPLAY.get(t["id"], t["name"]), t["id"])
+        t["car"] = team_car_photo(t, DISPLAY.get(t["id"], t["name"]))
+
+    champions = championship_state(teams, drivers, len(done), len(calendar))
 
     site = {
         "season": SEASON,
+        "champions": champions,
         "circuits": circuits,
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "round": api["drivers"]["round"],

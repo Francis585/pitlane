@@ -133,3 +133,25 @@
 </div>
 {% endif %}
 {% endmacro %}
+
+{% macro champion_card(kind, info, meta, root, season) %}
+{% set team = meta.get(info.team) if info.team else None %}
+<a class="champ" href="{{ root }}{% if kind == 'drivers' %}pilotos/{{ info.id }}.html{% else %}escuderias/{{ info.id }}.html{% endif %}"
+   style="--c:{{ team.brand if team else 'var(--gp)' }}">
+  <div class="champ-top">
+    <span class="champ-kind">{% if kind == 'drivers' %}Mundial de pilotos{% else %}Mundial de constructores{% endif %}</span>
+    <span class="champ-state {{ 'won' if info.decided else 'live' }}">
+      {% if info.decided %}Campeón {{ season }}{% else %}En juego{% endif %}
+    </span>
+  </div>
+  <h3>{{ info.name }}</h3>
+  <div class="champ-meta">
+    <b>{{ info.points }}</b><span>puntos</span>
+    {% if not info.decided %}
+    <span class="champ-gap">+{{ info.gap }} sobre {{ info.rival }} · {{ info.remaining }} carreras por delante</span>
+    {% else %}
+    <span class="champ-gap">Título matemáticamente cerrado · {{ info.gap }} de ventaja</span>
+    {% endif %}
+  </div>
+</a>
+{% endmacro %}

@@ -19,6 +19,9 @@
     <div>
       <div class="team-kicker"><span class="sq"></span><span>{{ tm.monogram }} · {{ team.id|upper }} · {{ site.season }}</span></div>
       <h1>{{ tm.display }}</h1>
+    {% if site.champions and site.champions.constructors.decided and site.champions.constructors.id == team.id %}
+    <div class="champ-badge" style="--brand:{{ tm.brand }}">★ Campeón de constructores {{ site.season }}</div>
+    {% endif %}
       <p class="team-sub">{{ tm.blurb }}</p>
     </div>
     <div class="team-facts">
@@ -38,6 +41,8 @@
     <div><b>{{ tm.titles }}</b><span>Títulos</span></div>
   </div>
 </header>
+<div class="wrap"><div class="signature" aria-hidden="true">{{ tm.display }} · {{ site.season }}</div></div>
+
 
 <section class="sec">
   <div class="wrap">

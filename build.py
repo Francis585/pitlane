@@ -290,7 +290,9 @@ def render_all(site: dict, asset_versions: dict) -> int:
     for c in site["circuits"]:
         write(f"circuitos/{c['id']}.html", "circuit.html", "../", c=c,
               theme=GP_THEMES.get(c["id"], GP_DEFAULT),
-              others=[o for o in site["circuits"] if o["id"] != c["id"]][:4])
+              others=[o for o in site["circuits"] if o["id"] != c["id"]][:4],
+              schedule=next((r.get("sessions", []) for r in site["calendar"]
+                             if r["round"] == c["round"]), []))
     write("calendario.html", "calendar.html", "")
     write("clasificacion.html", "standings.html", "")
     write("noticias.html", "news.html", "")

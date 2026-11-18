@@ -43,6 +43,22 @@
         </div>
       </div>
       <aside>
+        {% if schedule %}
+        <div class="heritage" style="margin-top:14px">
+          <h4>Horarios del gran premio</h4>
+          <div class="sess-grid" style="margin-top:10px">
+            {% for ses in schedule %}
+            <div class="sess-row {% if ses.code == 'RACE' %}sess-race{% endif %}">
+              <span class="sess-code">{{ ses.code }}</span>
+              <span class="sess-name">{{ ses.name }}</span>
+              <span class="sess-day">{{ ses.day }}</span>
+              <span class="sess-time">{{ ses.time_es }}<small>h. peninsular</small></span>
+            </div>
+            {% endfor %}
+          </div>
+          <p class="src-note" style="margin-top:10px">Hora peninsular española (CET/CEST)</p>
+        </div>
+        {% endif %}
         <div class="heritage">
           <h4>Datos del gran premio</h4>
           <div class="mono" style="display:grid;gap:10px;color:var(--dim-2);margin-top:12px">

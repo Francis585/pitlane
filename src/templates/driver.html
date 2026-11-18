@@ -14,6 +14,9 @@
     <div class="eyebrow"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(d.nationality) }}.png" alt="" width="20" height="15"> {{ d.team.name if d.team else 'Fórmula 1' }} · Temporada {{ site.season }}</div>
     <div class="driver-num" style="margin-top:6px">{{ d.num or d.code }}</div>
     <h1>{{ d.first }}<br>{{ d.last }}</h1>
+    {% if site.champions and site.champions.drivers.decided and site.champions.drivers.id == d.id %}
+    <div class="champ-badge">★ Campeón del mundo {{ site.season }}</div>
+    {% endif %}
     <div class="mono" style="display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;color:var(--dim)">
       <span>P{{ d.pos }} del mundial</span>
       <span>{{ d.points }} puntos</span>

@@ -984,3 +984,343 @@ body.t-moderno .gp-ribbon, body.t-rebelde .gp-ribbon { display: none; }
 /* refuerzo final de legibilidad en la banda de cifras */
 .team-hero .team-stats { background: rgba(6, 7, 9, .93) !important; border-top: 1px solid rgba(255,255,255,.14); }
 .team-hero .team-stats span { color: #98a0aa; }
+
+/* ==========================================================================
+   DIRECCIÓN DE ARTE — grano, tipografía a lo grande y composición editorial
+   ========================================================================== */
+
+/* textura: grano sutil sobre todo el sitio (la diferencia entre plano y caro) */
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: 90; pointer-events: none; opacity: .045;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* escala tipográfica más rotunda */
+.sec-head h2 { font-size: clamp(2.2rem, 5.6vw, 4.4rem); line-height: .9; letter-spacing: -.025em; }
+.hero h1 { letter-spacing: -.03em; line-height: .82; }
+.hero h1 span { display: inline-block; }
+
+/* etiqueta vertical en el hero */
+.edge-label {
+  position: absolute; left: 10px; top: 50%; transform: translateY(-50%) rotate(180deg);
+  writing-mode: vertical-rl; z-index: 3; font-family: var(--font-mono); font-size: .58rem;
+  letter-spacing: .34em; text-transform: uppercase; color: rgba(255,255,255,.42);
+  display: flex; align-items: center; gap: 14px;
+}
+.edge-label::after { content: ""; width: 1px; height: 54px; background: linear-gradient(180deg, var(--gp), transparent); }
+
+/* corte diagonal entre el hero y lo que viene */
+.hero::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 64px; z-index: 2;
+  background: linear-gradient(180deg, transparent, #07080a 92%);
+  clip-path: polygon(0 62%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* numeración de sección con marca */
+.sec-head .eyebrow, .sec-head .sec-num { position: relative; }
+.sec-head .sec-num::before {
+  content: ""; display: inline-block; width: 22px; height: 1px; background: var(--gp);
+  vertical-align: middle; margin-right: 10px;
+}
+
+/* declaración a lo grande */
+.statement { position: relative; overflow: hidden; padding-block: clamp(70px, 11vw, 150px);
+             border-block: 1px solid var(--line); background: #050608; }
+.statement::before {
+  content: ""; position: absolute; inset: -20% -10% auto auto; width: 60vw; height: 60vw;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--gp) 22%, transparent), transparent 70%);
+  pointer-events: none;
+}
+.statement p {
+  position: relative; margin: 0; font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(1.9rem, 5.2vw, 4.2rem); line-height: .98; letter-spacing: -.02em;
+  text-transform: uppercase; max-width: 22ch;
+}
+.statement p em { font-style: normal; color: transparent; -webkit-text-stroke: 1.5px var(--gp); }
+.statement .attribution {
+  margin-top: 26px; display: flex; align-items: center; gap: 12px;
+  font-family: var(--font-mono); font-size: .62rem; letter-spacing: .18em; text-transform: uppercase; color: var(--dim);
+}
+.statement .attribution::before { content: ""; width: 40px; height: 1px; background: var(--gp); }
+
+/* tarjetas con más carácter */
+.dcard { border-radius: 2px; }
+.dcard:hover { transform: translateY(-6px) scale(1.005); }
+.dcard-meta h3 { letter-spacing: .005em; }
+.tile { border-radius: 2px; }
+.tile::after { border-width: 1px; opacity: .8; }
+.ncard { border-radius: 2px; }
+.circ-card { border-radius: 2px; }
+
+/* filetes y marcas de registro en las secciones */
+.sec { position: relative; }
+.sec > .wrap::before {
+  content: ""; position: absolute; left: var(--pad); top: 0; width: 42px; height: 1px;
+  background: color-mix(in srgb, var(--gp) 60%, transparent);
+}
+
+/* cifras de la banda del hero: más grandes y con línea fina */
+.hero-band b { font-size: clamp(2rem, 4.2vw, 3.4rem); letter-spacing: -.03em; }
+
+/* firma de cada escudería */
+.signature {
+  margin-top: 8px; font-size: clamp(2.2rem, 7vw, 5.4rem); line-height: .86; letter-spacing: -.03em;
+  text-transform: uppercase; opacity: .1; pointer-events: none; user-select: none;
+}
+.t-clasico .signature { font-style: italic; font-weight: 400; text-transform: none; opacity: .16; }
+.t-rebelde .signature { -webkit-text-stroke: 1.5px rgba(255,255,255,.3); color: transparent; opacity: 1; }
+
+/* navegación con índices */
+.nav-links a::before {
+  content: attr(data-i); font-family: var(--font-mono); font-size: .52rem; opacity: .45;
+  margin-right: 6px; letter-spacing: 0;
+}
+
+/* tablas con aire editorial */
+table tbody tr:hover { background: rgba(255,255,255,.03); }
+
+@media (max-width: 900px) {
+  .edge-label { display: none; }
+  .hero::after { height: 36px; }
+  .statement p { max-width: 100%; }
+}
+
+/* ---------- animaciones extra ---------- */
+.read-bar {
+  position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 120;
+  background: linear-gradient(90deg, var(--gp), var(--gp-2));
+  transform-origin: 0 50%; transform: scaleX(0); transition: transform .1s linear;
+  pointer-events: none;
+}
+
+.stagger-init > * { opacity: 0; transform: translateY(18px); }
+.stagger-in > * {
+  opacity: 1; transform: none;
+  transition: opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .stagger-init > * { opacity: 1; transform: none; }
+}
+
+.dcard, .circ-card, .tile { will-change: transform; transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s; }
+
+/* etiquetas de las tarjetas que suben al pasar el ratón */
+.circ-card-body, .mosaic-item figcaption { transition: transform .4s cubic-bezier(.22,1,.36,1); }
+.circ-card:hover .circ-card-body { transform: translateY(-3px); }
+
+/* la marquesina se detiene al pasar por encima */
+.marquee:hover .marquee-in { animation-play-state: paused; }
+
+/* menú que se comprime */
+.nav { transition: background .25s, border-color .25s, height .2s; }
+.nav.is-solid .nav-in { height: 54px; }
+.nav-in { transition: height .2s; }
+
+/* ---------- campeones ---------- */
+.champs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.champ {
+  position: relative; display: flex; flex-direction: column; gap: 10px; padding: 22px;
+  border: 1px solid var(--line); border-radius: var(--r); overflow: hidden;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--c) 22%, #0a0c10), #08090d 72%);
+  box-shadow: var(--sh); transition: transform .3s, border-color .3s;
+}
+.champ::after { content: ""; position: absolute; right: -40px; bottom: -60px; width: 180px; height: 180px;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--c) 60%, transparent), transparent); opacity: .35; }
+.champ:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--c) 55%, var(--line)); }
+.champ-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.champ-kind { font-family: var(--font-mono); font-size: .58rem; letter-spacing: .2em; text-transform: uppercase; color: #b9bfc9; }
+.champ-state { font-family: var(--font-mono); font-size: .56rem; letter-spacing: .16em; text-transform: uppercase;
+  padding: 5px 10px; border-radius: 999px; border: 1px solid currentColor; }
+.champ-state.won { color: #0a0a0a; background: var(--c); border-color: transparent; font-weight: 700; }
+.champ-state.live { color: var(--c); }
+.champ h3 { font-size: clamp(1.7rem, 3.2vw, 2.4rem); text-transform: uppercase; letter-spacing: -.02em; }
+.champ-meta { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; font-family: var(--font-mono); font-size: .68rem; color: #a9b0ba; }
+.champ-meta b { font-family: var(--font-display); font-size: 1.7rem; color: #fff; }
+.champ-gap { font-size: .62rem; letter-spacing: .08em; }
+.champ-badge { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px;
+  font-family: var(--font-mono); font-size: .6rem; letter-spacing: .18em; text-transform: uppercase;
+  padding: 7px 12px; border-radius: 999px; background: var(--brand); color: #08090b; font-weight: 700; }
+
+/* ---------- horarios de sesiones ---------- */
+.cal { display: block; background: transparent; border-radius: 8px; }
+.cal-item { background: var(--bg-2); border-bottom: 1px solid var(--line); }
+.cal-item:last-child { border-bottom: 0; }
+.cal-row { background: transparent; }
+.cal-item:hover { background: var(--panel); }
+
+.sess { border-top: 1px dashed rgba(255,255,255,.1); }
+.sess summary {
+  list-style: none; cursor: pointer; padding: 11px 20px; display: flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono); font-size: .62rem; letter-spacing: .16em; text-transform: uppercase; color: var(--dim);
+}
+.sess summary::-webkit-details-marker { display: none; }
+.sess summary::before {
+  content: "+"; display: grid; place-items: center; width: 16px; height: 16px; border-radius: 50%;
+  border: 1px solid currentColor; font-size: .7rem; line-height: 1;
+}
+.sess[open] summary::before { content: "–"; }
+.sess[open] summary { color: var(--gp); }
+.sess-close { display: none; }
+.sess[open] .sess-open { display: none; }
+.sess[open] .sess-close { display: inline; }
+
+.sess-grid { padding: 0 20px 16px; display: grid; gap: 1px; }
+.sess-row {
+  display: grid; grid-template-columns: 62px minmax(120px, 1fr) 78px 118px 92px;
+  align-items: center; gap: 10px; padding: 9px 0; border-top: 1px solid rgba(255,255,255,.06);
+}
+.sess-code {
+  font-family: var(--font-mono); font-size: .58rem; letter-spacing: .12em; text-align: center;
+  padding: 3px 0; border-radius: 3px; border: 1px solid var(--line-2); color: var(--dim);
+}
+.sess-race .sess-code { background: var(--gp); color: #06070a; border-color: transparent; font-weight: 700; }
+.sess-name { font-family: var(--font-display); font-size: 1.02rem; text-transform: uppercase; letter-spacing: .02em; }
+.sess-day { font-family: var(--font-mono); font-size: .66rem; color: var(--dim); text-transform: uppercase; }
+.sess-time { font-family: var(--font-mono); font-size: .86rem; color: var(--fg); }
+.sess-time small { display: block; font-size: .5rem; letter-spacing: .12em; color: var(--dim-2); text-transform: uppercase; }
+.dim-time { color: var(--dim); }
+.sess-race .sess-time { color: var(--gp); }
+@media (max-width: 720px) {
+  .sess-row { grid-template-columns: 52px 1fr 88px; }
+  .sess-day, .dim-time { display: none; }
+}
+
+.circ-link { display: inline-block; margin-top: 6px; font-family: var(--font-mono); font-size: .58rem;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--gp); border-bottom: 1px solid transparent; }
+.circ-link:hover { border-color: currentColor; }
+
+/* ==========================================================================
+   MÓVIL — versión pensada, no encogida
+   ========================================================================== */
+@media (max-width: 760px) {
+
+  :root { --pad: 18px; }
+
+  /* --- menú: una sola fila deslizable, sin romper en tres líneas --- */
+  .nav-in { height: 56px; gap: 12px; flex-wrap: nowrap; }
+  .logo { font-size: 1.15rem; }
+  .logo svg { width: 20px; height: 14px; }
+  .nav-round { display: none; }
+  .nav-links {
+    order: 0; width: auto; flex: 1; justify-content: flex-end;
+    overflow-x: auto; flex-wrap: nowrap; scrollbar-width: none; gap: 0;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; padding: 6px 8px; font-size: .66rem; letter-spacing: .1em; }
+  .nav-links a::before { display: none; }
+  .nav-links a::after { display: none; }
+
+  /* --- cinta de GP --- */
+  .gp-ribbon-in { padding-block: 8px; gap: 8px; }
+  .gp-name { font-size: 1rem; }
+  .gp-when { font-size: .56rem; }
+
+  /* --- hero --- */
+  .hero { min-height: auto; }
+  .hero-in { padding-block: 40px 0; gap: 18px; }
+  .hero-kicker { font-size: .54rem; letter-spacing: .16em; }
+  .hero h1 { font-size: clamp(2.35rem, 12vw, 3.4rem); line-height: .88; }
+  .hero-sub { font-size: .92rem; line-height: 1.6; margin-top: 14px; }
+  .hero-cta { gap: 8px; margin-top: 20px; }
+  .hero-cta .btn { flex: 1 1 auto; justify-content: center; padding: 12px 16px; font-size: .66rem; }
+  .gp-pill { width: 100%; justify-content: space-between; margin-top: 18px; }
+  .hero-band { margin-top: 26px; grid-template-columns: repeat(2, 1fr); }
+  .hero-band > div { padding: 14px 10px; }
+  .hero-band > div:first-child { padding-left: 0; }
+  .hero-band b { font-size: 1.5rem; }
+  .hero-band span { font-size: .5rem; letter-spacing: .12em; }
+  .hero::after { height: 28px; }
+
+  /* --- secciones --- */
+  .sec { padding-block: 46px; }
+  .sec-head { margin-bottom: 22px; gap: 12px; }
+  .sec-head h2 { font-size: clamp(1.75rem, 8.6vw, 2.5rem); }
+  .sec-head p { font-size: .86rem; }
+  .sec-link { font-size: .6rem; }
+  .sec > .wrap::before { display: none; }
+
+  /* --- declaración --- */
+  .statement { padding-block: 44px; }
+  .statement p { font-size: clamp(1.45rem, 8vw, 2.1rem); }
+  .statement .attribution { font-size: .56rem; }
+
+  /* --- tarjetas de campeón --- */
+  .champ { padding: 16px; }
+  .champ h3 { font-size: 1.5rem; }
+  .champ-meta b { font-size: 1.4rem; }
+  .champs { gap: 10px; }
+
+  /* --- barras de clasificación --- */
+  .bar { grid-template-columns: 22px 8px 1fr 52px; gap: 9px; padding: 9px 4px; }
+  .bar .name { font-size: 1rem; }
+  .bar .name small { font-size: .54rem; }
+  .bar .track { display: none; }
+  .bar .pts { font-size: .78rem; }
+
+  /* --- rejillas --- */
+  .drivers-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .dcard-meta { padding: 0 9px 9px; margin-top: -26px; }
+  .dcard-meta h3 { font-size: .92rem; }
+  .dcard-meta .team { font-size: .56rem; }
+  .dcard-num { font-size: 1.9rem; }
+  .dcard-foot { font-size: .58rem; }
+  .dcard-foot b { font-size: .72rem; }
+
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .tile { min-height: 116px; padding: 12px; }
+  .tile h3 { font-size: 1.15rem; }
+
+  .moments { grid-template-columns: 1fr; }
+  .moment { min-height: 200px; }
+
+  .circ-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .circ-card-body { padding: 10px 12px 12px; }
+  .circ-card-body h3 { font-size: .98rem; min-height: 2.4em; }
+  .circ-card-body .cc-meta { font-size: .54rem; }
+
+  .news-grid { grid-template-columns: 1fr; }
+
+  .mosaic { grid-template-columns: repeat(2, 1fr); grid-template-rows: 150px 130px 130px; gap: 8px; }
+  .mosaic-item.m1 { grid-column: span 2; grid-row: span 1; }
+
+  /* --- fichas de escudería --- */
+  .team-hero { min-height: auto; }
+  .team-hero .th-in { padding-top: 60px; }
+  .team-hero h1 { font-size: clamp(2.4rem, 12vw, 3.6rem); }
+  .team-hero .team-sub { font-size: .92rem; }
+  .team-hero .team-facts { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 12px; }
+  .team-hero .team-facts div b { font-size: .9rem; }
+  .team-hero .team-stats { grid-template-columns: repeat(2, 1fr); }
+  .team-hero .team-stats div { padding: 14px 10px; }
+  .team-hero .team-stats b { font-size: 1.7rem; }
+  .signature { font-size: 2rem; }
+  .roster { grid-template-columns: 1fr; }
+  .pcard { grid-template-columns: 96px 1fr; }
+  .h2h-row { grid-template-columns: 1fr 84px 1fr; }
+  .h2h-row > div { padding: 11px 10px; }
+
+  /* --- circuito --- */
+  .circ-hero h1 { font-size: clamp(1.9rem, 9vw, 2.8rem); }
+  .circ-hero .team-sub { font-size: .82rem; }
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+  .kpis > div { padding: 12px 10px; }
+  .kpis b { font-size: 1.15rem; }
+  .sess-row { grid-template-columns: 46px 1fr 74px; gap: 8px; }
+  .sess-name { font-size: .92rem; }
+  .sess-time { font-size: .78rem; }
+  .sess-time small { font-size: .44rem; }
+
+  /* --- tablas: se deslizan, no se aplastan --- */
+  table { display: block; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+  table thead, table tbody { display: table; width: 100%; min-width: 520px; }
+
+  /* --- pie --- */
+  .foot { padding-block: 30px 24px; }
+  .foot-links { gap: 22px; }
+  .foot-bot { gap: 8px; font-size: .54rem; }
+
+  /* --- menos aire entre bloques --- */
+  hr.rule { margin: 0; }
+  .next-team a { padding: 20px var(--pad); }
+  .next-team h4 { font-size: 1.2rem; }
+}

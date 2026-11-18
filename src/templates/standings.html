@@ -14,6 +14,17 @@
   </div>
 </section>
 
+{% if site.champions %}
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="champs">
+      {{ m.champion_card('drivers', site.champions.drivers, meta, root, site.season) }}
+      {{ m.champion_card('constructors', site.champions.constructors, meta, root, site.season) }}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="sec" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head">

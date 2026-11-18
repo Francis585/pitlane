@@ -147,4 +147,60 @@
     // si el navegador se interrumpe, el valor final queda igualmente
     setTimeout(() => { el.textContent = target; }, dur + 400);
   });
+
+  // barra de progreso de lectura
+  const bar = document.createElement('div');
+  bar.className = 'read-bar';
+  document.body.appendChild(bar);
+  const paint = () => {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    bar.style.transform = `scaleX(${max > 0 ? h.scrollTop / max : 0})`;
+  };
+  paint();
+  window.addEventListener('scroll', paint, { passive: true });
+  window.addEventListener('resize', paint);
+
+  // entrada escalonada de las rejillas
+  const grids = [...document.querySelectorAll('.drivers-grid, .tiles, .moments, .circ-grid, .news-grid, .roster')];
+  grids.forEach((g) => {
+    [...g.children].forEach((child, i) => {
+      child.style.transitionDelay = `${Math.min(i, 9) * 55}ms`;
+      g.classList.add('stagger-init');
+    });
+    const io = new IntersectionObserver((es) => {
+      es.forEach((e) => {
+        if (e.isIntersecting) { g.classList.remove('stagger-init'); g.classList.add('stagger-in'); io.unobserve(g); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px' });
+    io.observe(g);
+    setTimeout(() => { g.classList.remove('stagger-init'); g.classList.add('stagger-in'); }, 2600);
+  });
+
+  // inclinación suave de las tarjetas de piloto (solo ratón)
+  if (window.matchMedia('(hover: hover) and (min-width: 900px)').matches && !reduce) {
+    document.querySelectorAll('.dcard, .circ-card, .tile').forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `translateY(-6px) rotateX(${(-y * 3).toFixed(2)}deg) rotateY(${(x * 3).toFixed(2)}deg)`;
+      });
+      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    });
+  }
+
+  // parallax de la cabecera de escudería
+  const th = document.querySelector('.team-hero-photo');
+  if (th && !reduce && window.innerWidth > 860) {
+    let rafT = null;
+    window.addEventListener('scroll', () => {
+      if (rafT) return;
+      rafT = requestAnimationFrame(() => {
+        rafT = null;
+        const y = Math.min(window.scrollY, 600);
+        th.style.transform = `translate3d(0, ${y * -0.06}px, 0) scale(1.04)`;
+      });
+    }, { passive: true });
+  }
 })();
