@@ -150,7 +150,19 @@ def build_moments(site: dict) -> list:
     return out[-4:][::-1]
 
 
-def render_all(site: dict, asset_versions: dict) -> int:
+def build_meta(site: dict) -> dict:
+    """Ficha visual de cada escudería: curada si existe, generada si es nueva."""
+    complete_meta = {}
+    for i, t in enumerate(site["teams"]):
+        base = dict(TEAMS.get(t["id"]) or auto_meta(t, i))
+        base["brand"] = base.get("brand") or AUTO_COLORS[i % len(AUTO_COLORS)][0]
+        base["brand2"] = base.get("brand2") or AUTO_COLORS[i % len(AUTO_COLORS)][1]
+        complete_meta[t["id"]] = base
+
+    return complete_meta
+
+
+def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
     env = Environment(
         loader=FileSystemLoader(str(SRC / "templates")),
         autoescape=select_autoescape(["html"]),
@@ -177,14 +189,6 @@ def render_all(site: dict, asset_versions: dict) -> int:
         img_url=asset_url,
         flag_code=lambda c: COUNTRY_CODE.get(str(c), "un"),
     )
-
-    # ficha de cada escudería: la curada si existe, generada si es nueva
-    complete_meta = {}
-    for i, t in enumerate(site["teams"]):
-        base = dict(TEAMS.get(t["id"]) or auto_meta(t, i))
-        base["brand"] = base.get("brand") or AUTO_COLORS[i % len(AUTO_COLORS)][0]
-        base["brand2"] = base.get("brand2") or AUTO_COLORS[i % len(AUTO_COLORS)][1]
-        complete_meta[t["id"]] = base
 
     teams_by_id = {t["id"]: t for t in site["teams"]}
     drivers_by_id = {d["id"]: d for d in site["drivers"]}
@@ -248,6 +252,7 @@ def render_all(site: dict, asset_versions: dict) -> int:
             font_query=FONTS[ctx.pop("font", "base")],
             img_url=asset_url,
             asset_css=asset_versions["css"], asset_js=asset_versions["js"],
+            og_image=ctx.pop("og_image", OG_CARDS.get("home")),
             flag_code=lambda c: COUNTRY_CODE.get(str(c), "un"),
             **ctx,
         )
@@ -268,7 +273,7 @@ def render_all(site: dict, asset_versions: dict) -> int:
         tpl = f"team_{meta['layout']}.html"
         # Los 24 pilotos no: la ficha enseña la plantilla del equipo con sus datos de temporada.
         write(
-            f"escuderias/{t['slug']}.html", tpl, "../",
+            f"escuderias/{t['slug']}.html", tpl, "../", og_image=OG_CARDS.get(t["id"]),
             team=t, tm=meta,
             drivers=[drivers_by_id[d["id"]] for d in t["drivers"] if d["id"] in drivers_by_id],
             next_team=next_team, prev_team=prev_team,
@@ -299,6 +304,56 @@ def render_all(site: dict, asset_versions: dict) -> int:
     write("metodologia.html", "method.html", "")
     write("404.html", "404.html", "")
     return pages
+
+
+def make_og_cards(site: dict, meta: dict) -> dict:
+    """Genera una imagen de compartir por escudería (y una general) al vuelo."""
+    from PIL import Image, ImageDraw, ImageFont
+    out = OUT / "assets" / "og"
+    out.mkdir(parents=True, exist_ok=True)
+    try:
+        bold = ImageFont.truetype("C:/Windows/Fonts/arialbd.ttf", 96)
+        small = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 34)
+        tiny = ImageFont.truetype("C:/Windows/Fonts/arialbd.ttf", 24)
+    except Exception:
+        bold = small = tiny = ImageFont.load_default()
+
+    def card(path, title, subtitle, colour, extra=""):
+        W, H = 1200, 630
+        img = Image.new("RGB", (W, H), (7, 8, 10))
+        d = ImageDraw.Draw(img)
+        for i in range(H):  # degradado vertical
+            d.line([(0, i), (W, i)], fill=(int(9 + 18 * (1 - i / H)), int(10 + 14 * (1 - i / H)),
+                                          int(12 + 26 * (1 - i / H))))
+        for x in range(-300, W + 300, 54):  # rayas de velocidad
+            d.line([(x, 0), (x - 220, H)], fill=(19, 21, 28), width=3)
+        d.rectangle([0, 0, 10, H], fill=colour)
+        d.rectangle([0, H - 8, W, H], fill=colour)
+        import textwrap
+        d.text((64, 150), title.upper()[:18], font=bold, fill=(244, 246, 249))
+        y = 300
+        for line in textwrap.wrap(subtitle, 46)[:2]:
+            d.text((66, y), line, font=small, fill=(176, 183, 194))
+            y += 44
+        if extra:
+            for line in textwrap.wrap(extra, 52)[:2]:
+                d.text((66, y + 6), line, font=small, fill=(140, 147, 158))
+                y += 44
+        d.text((66, H - 74), "PITLANE · FÓRMULA 1 " + str(site["season"]), font=tiny, fill=colour)
+        img.save(out / path, "PNG", optimize=True)
+
+    cards = {}
+    card("home.png", "Pitlane", f"F1 {site['season']}: once escuderías, pilotos y circuitos",
+         (255, 90, 31), f"Ronda {site['round']} de {site['total_races']}")
+    cards["home"] = "/assets/og/home.png"
+    for t in site["teams"]:
+        m = meta[t["id"]]
+        hexc = m["brand"].lstrip("#")
+        rgb = tuple(int(hexc[i:i + 2], 16) for i in (0, 2, 4))
+        card(f"{t['id']}.png", m["display"], f"P{t['pos']} · {t['points']} puntos · {m.get('engine', '')}",
+             rgb, m.get("tagline", "")[:64])
+        cards[t["id"]] = f"/assets/og/{t['id']}.png"
+    return cards
 
 
 def optimize_assets() -> dict:
@@ -391,7 +446,10 @@ def main() -> None:
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
     asset_versions = optimize_assets()
-    n = render_all(site, asset_versions)
+    complete_meta = build_meta(site)
+    global OG_CARDS
+    OG_CARDS = make_og_cards(site, complete_meta)
+    n = render_all(site, asset_versions, complete_meta)
     write_static(site)
     print(f"[build] {n} páginas · {len(site['teams'])} escuderías · "
           f"{len(site['drivers'])} pilotos · imágenes -{asset_versions['saved_mb']} MB")

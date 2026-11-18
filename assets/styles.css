@@ -11,8 +11,8 @@
   --line: rgba(255, 255, 255, .10);
   --line-2: rgba(255, 255, 255, .18);
   --fg: #f2f4f7;
-  --dim: #8e95a1;
-  --dim-2: #626975;
+  --dim: #9aa2ae;
+  --dim-2: #7b8492;
   --brand: #e8e8e8;
   --brand-2: #9aa0aa;
   --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
@@ -1355,4 +1355,17 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
   .nav-links a { padding: 4px 8px 4px 0; font-size: .62rem; }
   .team-hero-photo { background-position: 55% 45%; }
   .team-hero { min-height: 74vh; }
+}
+
+/* ---------- accesibilidad y acabado ---------- */
+@media print {
+  .nav, .foot, .read-bar, .gp-ribbon, .marquee, .hero-media { display: none !important; }
+  body { background: #fff !important; color: #111 !important; }
+  .wrap { max-width: 100%; padding: 0; }
+  a { color: #111; text-decoration: underline; }
+  .dcard, .tile, .ncard, .champ { break-inside: avoid; }
+}
+@media (prefers-contrast: more) {
+  :root { --dim: #c3c9d2; --dim-2: #a9b1bb; }
+  .sec-head p, .hero-sub { color: #e6e9ee; }
 }
