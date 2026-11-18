@@ -31,12 +31,6 @@
           <span class="st">{% if r.done %}Disputada{% elif r.is_next %}Siguiente{% else %}Pendiente{% endif %}</span>
         </div>
       </div>
-          {% if r.winner %}<div class="podium-mini"><span>Ganó {{ r.winner }}</span></div>{% endif %}
-        </div>
-        <div class="circ">{{ r.circuit }}<small>{{ r.locality }} · {{ r.country }}</small></div>
-        <span class="dt">{{ r.date_human }}</span>
-        <span class="st">{% if r.done %}Disputada{% elif r.is_next %}Siguiente{% else %}Pendiente{% endif %}</span>
-      </div>
       {% endfor %}
     </div>
     <p class="src-note" style="margin-top:16px">Fuente: Jolpica F1 API · última actualización {{ generated_human }}</p>
