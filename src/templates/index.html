@@ -10,7 +10,7 @@
   {% set hero_team = site.teams[0] %}
   <div class="hero-media" data-hero-slideshow>
     {% for sl in hero_slides %}
-    <img {% if loop.first %}src="{{ img_url(sl.src) }}" fetchpriority="high"{% else %}data-src="{{ img_url(sl.src) }}"{% endif %}
+    <img {% if loop.first %}src="{{ img_url(sl.src) }}" srcset="{{ srcset_for(img_url(sl.src)) }}" sizes="100vw" fetchpriority="high"{% else %}data-src="{{ img_url(sl.src) }}" data-srcset="{{ srcset_for(img_url(sl.src)) }}" sizes="100vw"{% endif %}
          alt="{{ sl.alt }}" class="hero-slide{% if loop.first %} is-on{% endif %}"
          data-label="{{ sl.label }}" loading="{% if loop.first %}eager{% else %}lazy{% endif %}">
     {% endfor %}
@@ -81,7 +81,7 @@
       {% set tm = meta.get(mo.team) %}
       <a class="moment" href="{{ root }}circuitos/{{ mo.circuit_id }}.html">
         {% set mimg = mo.team_car or mo.photo %}
-        {% if mimg %}<img src="{{ img_url(mimg) }}" alt="{{ mo.winner }} · {{ mo.gp }}" loading="lazy" decoding="async">{% endif %}
+        {% if mimg %}{{ pic(img_url(mimg), mo.winner ~ " · " ~ mo.gp, "(max-width:760px) 92vw, 420px") | safe }}{% endif %}
         <div class="moment-body">
           <span class="moment-tag" style="--tag:{{ tm.brand if tm else '#444' }}">{{ mo.gp }} · R{{ mo.round }}</span>
           <h3>Ganó {{ mo.winner }}</h3>
@@ -192,7 +192,7 @@
     <div class="mosaic">
       {% for g in gallery[:7] %}
       <figure class="mosaic-item m{{ loop.index }}">
-        <img src="{{ img_url(g.src) }}" alt="{{ g.alt }}" loading="lazy" decoding="async">
+        {{ pic(img_url(g.src), g.alt, "(max-width:760px) 92vw, 32vw") | safe }}
         <figcaption><b>{{ g.label }}</b><span>{{ g.sub }}</span></figcaption>
       </figure>
       {% endfor %}

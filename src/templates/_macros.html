@@ -34,7 +34,7 @@
   <a class="dcard" href="{{ root }}pilotos/{{ d.id }}.html">
     <div class="dcard-img">
       {% if t %}<span class="stripe" style="background:{{ t.brand }}"></span>{% endif %}
-      {% if d.photo %}<img src="{{ img_url(d.photo) }}" alt="{{ d.full }}" loading="lazy" decoding="async">
+      {% if d.photo %}{{ pic(img_url(d.photo), d.full, "(max-width:760px) 46vw, 260px") | safe }}
       {% else %}<span class="ph">{{ d.code }}</span>{% endif %}
       <span class="dcard-num">{{ d.num }}</span>
     </div>
@@ -87,7 +87,7 @@
   {% for d in rows %}
   <a class="pcard" href="{{ root }}pilotos/{{ d.id }}.html">
     <div class="pcard-photo">
-      {% if d.photo %}<img src="{{ img_url(d.photo) }}" alt="{{ d.full }}" loading="lazy" decoding="async">
+      {% if d.photo %}{{ pic(img_url(d.photo), d.full, "(max-width:760px) 46vw, 260px") | safe }}
       {% else %}<span class="ph">{{ d.code }}</span>{% endif %}
     </div>
     <div class="pcard-body">

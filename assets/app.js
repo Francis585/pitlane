@@ -87,6 +87,7 @@
     const labEl = document.querySelector('[data-hero-label]');
     // el resto de imágenes se cargan después, cuando la página ya está lista
     const hydrate = () => slides.forEach((s) => {
+      if (s.dataset.srcset) { s.srcset = s.dataset.srcset; delete s.dataset.srcset; }
       if (s.dataset.src && !s.src) { s.src = s.dataset.src; delete s.dataset.src; }
     });
     if ('requestIdleCallback' in window) requestIdleCallback(hydrate, { timeout: 2500 });

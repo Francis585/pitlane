@@ -96,6 +96,46 @@ def auto_meta(team: dict, index: int = 0) -> dict:
     }
 
 
+def srcset_for(url: str) -> str:
+    """Lista de candidatos para el atributo srcset."""
+    if not url:
+        return ""
+    base = url.rsplit(".", 1)[0]
+    return f"{base}-sm.webp 480w, {base}-md.webp 900w, {url} 1600w"
+
+
+IMG_INFO: dict[str, int] = {}
+
+
+def pic(url: str, alt: str = "", sizes: str = "100vw", cls: str = "",
+        loading: str = "lazy", priority: bool = False) -> str:
+    """<img> con srcset: el móvil descarga 480 px, el portátil la buena."""
+    if not url:
+        return ""
+    base = url.rsplit(".", 1)[0]
+    ext = url.rsplit(".", 1)[1] if "." in url else "webp"
+    small, medium = f"{base}-sm.{ext}", f"{base}-md.{ext}"
+
+    def width_of(u: str) -> int | None:
+        return IMG_INFO.get(u.lstrip("/"))
+
+    candidates = [(u, width_of(u)) for u in (small, medium, url)]
+    candidates = [(u, w) for u, w in candidates if w]
+    srcset = ", ".join(f"{u} {w}w" for u, w in candidates) or url
+    attrs = [
+        f'src="{url}"',
+        f'srcset="{srcset}"',
+        f'sizes="{sizes}"',
+        f'alt="{alt}"',
+        'width="1600" height="900"' if False else "",
+        'decoding="async"',
+    ]
+    if cls:
+        attrs.insert(0, f'class="{cls}"')
+    attrs.append('fetchpriority="high"' if priority else f'loading="{loading}"')
+    return "<img " + " ".join(a for a in attrs if a) + ">"
+
+
 def flag_tag(code: str, cls: str = "flag-img", w: int = 20, h: int = 15) -> str:
     """Bandera nítida en cualquier pantalla, usando los anchos que sirve flagcdn."""
     allowed = [20, 40, 80, 160, 320]
@@ -209,6 +249,8 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
         img_url=asset_url,
         flag_code=lambda c: COUNTRY_CODE.get(str(c), "un"),
         flag_tag=flag_tag,
+        pic=pic,
+        srcset_for=srcset_for,
     )
 
     teams_by_id = {t["id"]: t for t in site["teams"]}
@@ -276,6 +318,8 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
             og_image=ctx.pop("og_image", OG_CARDS.get("home")),
             flag_code=lambda c: COUNTRY_CODE.get(str(c), "un"),
         flag_tag=flag_tag,
+        pic=pic,
+        srcset_for=srcset_for,
             **ctx,
         )
         dest.write_text(html, encoding="utf-8")
@@ -437,11 +481,20 @@ def optimize_assets() -> dict:
             except Exception:
                 continue
 
-    # versión WebP (mucho más ligera) manteniendo el JPG como respaldo
+    # versión WebP (mucho más ligera) más variantes para móvil y tablet
     if Image:
         for img in list((OUT / "assets").rglob("*.jpg")):
             try:
-                Image.open(img).convert("RGB").save(img.with_suffix(".webp"), "WEBP", quality=74, method=4)
+                im = Image.open(img).convert("RGB")
+                big = img.with_suffix(".webp")
+                im.save(big, "WEBP", quality=74, method=4)
+                IMG_INFO[str(big.relative_to(OUT)).replace("\\", "/")] = im.width
+                for suffix, width in (("-sm", 480), ("-md", 900)):
+                    if im.width > width:
+                        variant = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
+                        out = img.with_name(img.stem + suffix + ".webp")
+                        variant.save(out, "WEBP", quality=74, method=4)
+                        IMG_INFO[str(out.relative_to(OUT)).replace("\\", "/")] = width
                 img.unlink()  # el sitio ya solo sirve WebP
             except Exception:
                 continue

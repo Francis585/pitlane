@@ -21,7 +21,7 @@
         {% if c.is_next %}<span class="badge">Siguiente</span>
         {% elif c.done %}<span class="badge">R{{ c.round }}</span>
         {% else %}<span class="badge">R{{ c.round }}</span>{% endif %}
-        {% if c.photo %}<img src="{{ img_url(c.photo) }}" alt="{{ c.name }}" loading="lazy" decoding="async">{% endif %}
+        {% if c.photo %}{{ pic(img_url(c.photo), c.name, "(max-width:760px) 92vw, 380px") | safe }}{% endif %}
         <div class="circ-card-body">
           <h3>{{ c.name }}</h3>
           <div class="cc-meta">{{ flag_tag(flag_code(c.country)) | safe }} {{ c.locality }} · {{ c.country_es }}</div>
