@@ -31,10 +31,17 @@
     </div>
     {% if site.next_race %}
     {% set nr = site.next_race %}
-    <a class="gp-pill" href="{% if next_circuit %}{{ root }}circuitos/{{ next_circuit.id }}.html{% else %}{{ root }}calendario.html{% endif %}">
-      <span class="flag"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(nr.country) }}.png" alt="" width="20" height="15"></span>
-      <span class="txt">Próximo GP · {{ nr.name }}</span>
-      <span class="when">{% if nr.days_until == 0 %}hoy en pista{% elif nr.days_until == 1 %}mañana{% else %}en {{ nr.days_until }} días{% endif %}</span>
+    <a class="gp-card" href="{% if next_circuit %}{{ root }}circuitos/{{ next_circuit.id }}.html{% else %}{{ root }}calendario.html{% endif %}">
+      <span class="gp-flag"><img class="flag-img" src="https://flagcdn.com/w80/{{ flag_code(nr.country) }}.png" alt="" width="28" height="20"></span>
+      <span class="gp-txt">
+        <small>Próximo gran premio</small>
+        <b>{{ nr.name }}</b>
+        <em>{{ nr.locality }} · {{ nr.date_human }}</em>
+      </span>
+      <span class="gp-count">
+        <b>{{ nr.days_until }}</b>
+        <small>{% if nr.days_until == 1 %}día{% else %}días{% endif %}</small>
+      </span>
     </a>
     {% endif %}
   </div>

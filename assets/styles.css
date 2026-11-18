@@ -1402,3 +1402,33 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
   .hist-bar { grid-template-columns: 1fr 34px; }
   .hb-track { display: none; }
 }
+
+/* ---------- tarjeta del próximo GP con contador grande ---------- */
+.gp-card {
+  justify-self: end; align-self: start; display: grid;
+  grid-template-columns: auto 1fr auto; align-items: center; gap: 16px;
+  padding: 14px 18px; border-radius: 16px; min-width: min(100%, 360px);
+  background: rgba(8, 10, 14, .78); border: 1px solid rgba(255,255,255,.16);
+  backdrop-filter: blur(12px); box-shadow: 0 26px 60px -34px rgba(0,0,0,.95);
+  transition: transform .3s, border-color .3s;
+}
+.gp-card:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--gp) 55%, transparent); }
+.gp-flag { display: grid; place-items: center; }
+.gp-flag .flag-img { width: 28px; box-shadow: 0 0 0 1px rgba(255,255,255,.18); }
+.gp-txt { display: flex; flex-direction: column; gap: 2px; }
+.gp-txt small { font-family: var(--font-mono); font-size: .54rem; letter-spacing: .18em; text-transform: uppercase; color: #98a0aa; }
+.gp-txt b { font-family: var(--font-display); font-size: 1.22rem; text-transform: uppercase; letter-spacing: .01em; }
+.gp-txt em { font-style: normal; font-family: var(--font-mono); font-size: .56rem; letter-spacing: .1em; color: #8d949f; text-transform: uppercase; }
+.gp-count { text-align: center; padding-left: 16px; border-left: 1px solid rgba(255,255,255,.16); }
+.gp-count b {
+  display: block; font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(2.6rem, 4.2vw, 3.4rem); line-height: .85; color: var(--gp);
+  font-variant-numeric: tabular-nums;
+}
+.gp-count small { font-family: var(--font-mono); font-size: .56rem; letter-spacing: .18em; text-transform: uppercase; color: #98a0aa; }
+
+@media (max-width: 760px) {
+  .gp-card { justify-self: stretch; width: 100%; padding: 12px 14px; gap: 12px; }
+  .gp-count b { font-size: 2.4rem; }
+  .gp-txt b { font-size: 1.05rem; }
+}
