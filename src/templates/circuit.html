@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}{{ c.name }} — {{ c.gp }} {{ site.season }} | Pitlane{% endblock %}
-{% block desc %}{{ c.name }}, {{ c.locality }} ({{ c.country }}): ficha del circuito y fecha del {{ c.gp }} de {{ site.season }}.{% endblock %}
+{% block desc %}{{ c.name }}, {{ c.locality }} ({{ c.country_es }}): ficha del circuito y fecha del {{ c.gp }} de {{ site.season }}.{% endblock %}
 {% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
 
 {% block content %}
@@ -8,7 +8,7 @@
   <div class="pat pat-{{ theme.pattern }}"></div>
   {% if c.photo %}<div class="circ-hero-img" style="--img:url('{{ img_url(c.photo) }}')"></div>{% endif %}
   <div class="wrap circ-hero-in">
-    <div class="eyebrow" style="color:{{ theme.brand }}"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(c.country) }}.png" alt="" width="20" height="15"> {{ c.locality }}, {{ c.country }} · Ronda {{ c.round }}</div>
+    <div class="eyebrow" style="color:{{ theme.brand }}"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(c.country) }}.png" alt="" width="20" height="15"> {{ c.locality }}, {{ c.country_es }} · Ronda {{ c.round }}</div>
     <h1 style="margin-top:10px">{{ c.name }}</h1>
     <p class="team-sub" style="max-width:58ch">{{ c.gp }} · {{ c.date_long }} · {{ c.weekday|capitalize }}</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
@@ -26,7 +26,7 @@
       <div><b>{{ c.round }}</b><span>Ronda</span></div>
       <div><b>{{ c.date_human }}</b><span>Fecha</span></div>
       <div><b>{{ c.locality }}</b><span>Ciudad</span></div>
-      <div><b><img class="flag-img" style="width:34px;height:auto" src="https://flagcdn.com/w80/{{ flag_code(c.country) }}.png" alt="" width="34" height="26"></b><span>País</span></div>
+      <div><b><img class="flag-lg" src="https://flagcdn.com/w80/{{ flag_code(c.country) }}.png" alt="{{ c.country_es }}" width="38" height="26"></b><span>País</span></div>
       {% if c.winner %}<div><b>{{ c.winner }}</b><span>Ganador {{ site.season }}</span></div>{% endif %}
     </div>
 
@@ -35,8 +35,22 @@
         <div class="eyebrow">El trazado</div>
         <h2 style="font-size:clamp(1.9rem,3.4vw,2.8rem);text-transform:uppercase;margin:10px 0 16px">Sobre {{ c.name }}</h2>
         <p style="color:#cfd4dc;font-size:1rem;max-width:58ch">{{ c.about or "Circuito del campeonato mundial de Fórmula 1." }}</p>
-        <p class="src-note" style="margin-top:12px">Descripción: Wikipedia (CC BY-SA)</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+        {% if c.history and c.history.winners %}
+        <div class="last-winners">
+          <span class="eyebrow" style="display:block;margin-bottom:10px">Últimos ganadores</span>
+          {% for w in c.history.winners[:4] %}
+          {% set tm = meta.get(w.team_id) %}
+          <div class="hw-row">
+            <span class="hw-year">{{ w.year }}</span>
+            <span class="hw-dot" style="background:{{ tm.brand if tm else '#555' }}"></span>
+            <span class="hw-driver">{{ w.driver }}</span>
+            <span class="hw-team">{{ tm.display if tm else w.team }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
           <a class="btn" href="https://en.wikipedia.org/wiki/{{ c.wiki }}" target="_blank" rel="noopener noreferrer nofollow">Ficha en Wikipedia →</a>
           <a class="btn" href="{{ root }}calendario.html">Ver la temporada</a>
         </div>
@@ -64,7 +78,7 @@
             <div style="display:flex;justify-content:space-between;gap:12px"><span>Gran premio</span><span style="color:var(--fg);text-align:right">{{ c.gp }}</span></div>
             <div style="display:flex;justify-content:space-between;gap:12px"><span>Circuito</span><span style="color:var(--fg);text-align:right">{{ c.name }}</span></div>
             <div style="display:flex;justify-content:space-between;gap:12px"><span>Ciudad</span><span style="color:var(--fg);text-align:right">{{ c.locality }}</span></div>
-            <div style="display:flex;justify-content:space-between;gap:12px"><span>País</span><span style="color:var(--fg);text-align:right">{{ c.country }}</span></div>
+            <div style="display:flex;justify-content:space-between;gap:12px"><span>País</span><span style="color:var(--fg);text-align:right">{{ c.country_es }}</span></div>
             <div style="display:flex;justify-content:space-between;gap:12px"><span>Fecha</span><span style="color:var(--fg);text-align:right">{{ c.date_human }}</span></div>
           </div>
         </div>
@@ -118,7 +132,18 @@
         </div>
       </div>
       <div>
-        <div class="eyebrow">Últimos ganadores</div>
+        <div class="eyebrow" style="margin-bottom:12px">Pilotos con más victorias</div>
+        <div class="hist-bars">
+          {% for d in c.history.drivers %}
+          <div class="hist-bar">
+            <span class="hb-name">{{ d.name.split(' ')[-1] }}</span>
+            <span class="hb-track"><span class="hb-fill" style="--w:{{ (d.wins / c.history.max_driver_wins * 100)|round(1) }}%;background:var(--gp)"></span></span>
+            <span class="hb-val">{{ d.wins }}</span>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="eyebrow" style="margin:22px 0 12px">Últimos ganadores</div>
         <div class="hist-winners">
           {% for w in c.history.winners %}
           {% set tm = meta.get(w.team_id) %}

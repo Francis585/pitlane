@@ -1453,3 +1453,12 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
 .gp-name { color: #fff; }
 .gp-tag { background: color-mix(in srgb, var(--gp) 82%, #000); color: #08090c; }
 .gp-when { color: color-mix(in srgb, var(--gp) 70%, #cfd4dc); }
+
+.flag-lg { width: 38px !important; height: 26px !important; object-fit: cover; border-radius: 3px;
+           box-shadow: 0 0 0 1px rgba(255,255,255,.16); display: block; }
+.last-winners { margin-top: 26px; max-width: 520px; }
+.last-winners .hw-row { grid-template-columns: 46px 8px 1fr auto; }
+
+.circ-hero .circ-hero-in { padding-block: clamp(34px, 5vw, 64px) clamp(26px, 3.4vw, 44px); }
+.circ-hero h1 { font-size: clamp(2rem, 5.6vw, 4.2rem); line-height: .92; }
+@media (max-width: 760px) { .circ-hero h1 { font-size: clamp(1.7rem, 8.4vw, 2.6rem); } }

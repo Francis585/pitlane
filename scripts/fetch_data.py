@@ -62,6 +62,14 @@ GP_ES = {
     "Russian": "Rusia", "Eifel": "Eifel", "Styrian": "Estiria", "Tuscan": "Toscana",
 }
 
+COUNTRY_ES = {
+    "Australia": "Australia", "China": "China", "Japan": "Japón", "USA": "Estados Unidos",
+    "Canada": "Canadá", "Monaco": "Mónaco", "Spain": "España", "Austria": "Austria",
+    "UK": "Reino Unido", "Belgium": "Bélgica", "Hungary": "Hungría", "Netherlands": "Países Bajos",
+    "Italy": "Italia", "Azerbaijan": "Azerbaiyán", "Malaysia": "Malasia", "Singapore": "Singapur",
+    "Mexico": "México", "Brazil": "Brasil", "Qatar": "Catar", "UAE": "Emiratos Árabes Unidos",
+}
+
 FLAG = {
     "Australia": "🇦🇺", "China": "🇨🇳", "Japan": "🇯🇵", "USA": "🇺🇸", "Canada": "🇨🇦",
     "Monaco": "🇲🇨", "Spain": "🇪🇸", "Austria": "🇦🇹", "UK": "🇬🇧", "Belgium": "🇧🇪",
@@ -277,16 +285,44 @@ def circuit_history(circuit_id: str) -> dict:
     teams = sorted(({"name": n, "wins": v["wins"], "id": v["id"]} for n, v in by_team.items()),
                    key=lambda t: -t["wins"])[:5]
     top_driver = max(by_driver.items(), key=lambda kv: kv[1])
+    drivers_top = [{"name": n, "wins": w}
+                   for n, w in sorted(by_driver.items(), key=lambda kv: -kv[1])[:5]]
+    spec = CIRCUIT_SPECS.get(circuit_id)
     return {
         "editions": len(races),
         "first_year": races[0]["season"],
         "last_year": races[-1]["season"],
-        "winners": winners[:6],
+        "winners": winners[:8],
         "teams": teams,
+        "drivers": drivers_top,
+        "distinct_winners": len(by_driver),
         "max_wins": teams[0]["wins"] if teams else 1,
+        "max_driver_wins": drivers_top[0]["wins"] if drivers_top else 1,
         "top_team": {"name": teams[0]["name"], "wins": teams[0]["wins"]} if teams else None,
         "top_driver": {"name": top_driver[0], "wins": top_driver[1]},
+        "length_km": spec[0] if spec else None,
+        "laps": spec[1] if spec else None,
     }
+
+
+def circuit_blurb(name: str, locality: str, country: str, history: dict, gp: str) -> str:
+    """Texto propio, corto y factual: nada de párrafos de enciclopedia."""
+    if not history:
+        return f"{name}, en {locality} ({country}). Sede del {gp}."
+    parts = [
+        f"{name}, en {locality} ({country}). Ha acogido {history['editions']} ediciones del mundial "
+        f"desde {history['first_year']}, con {history['distinct_winners']} ganadores distintos.",
+    ]
+    if history.get("top_team"):
+        parts.append(f"El equipo más laureado es {history['top_team']['name']}, "
+                     f"con {history['top_team']['wins']} victorias.")
+    if history.get("top_driver") and history["top_driver"]["wins"] > 1:
+        parts.append(f"El piloto con más triunfos es {history['top_driver']['name']} "
+                     f"({history['top_driver']['wins']}).")
+    if history.get("length_km"):
+        parts.append(f"El trazado mide {history['length_km']:.3f} km y la carrera se disputa "
+                     f"a {history['laps']} vueltas.")
+    return " ".join(parts)
 
 
 def enrich_circuits(raw_races: list, calendar: list) -> list:
@@ -297,19 +333,22 @@ def enrich_circuits(raw_races: list, calendar: list) -> list:
         cid = c["circuitId"]
         title = c["url"].rsplit("/", 1)[-1]
         raw_name = raw["raceName"].replace(" Grand Prix", "").strip()
+        hist = circuit_history(cid)
         out.append({
             "id": cid,
             "name": c["circuitName"],
             "locality": c["Location"]["locality"],
             "country": c["Location"]["country"],
+            "country_es": COUNTRY_ES.get(c["Location"]["country"], c["Location"]["country"]),
             "flag": race["flag"],
             "wiki": title,
             "photo": circuit_photo({"id": cid, "name": c["circuitName"],
                                     "locality": c["Location"]["locality"],
                                     "gp": GP_ES.get(raw_name, raw_name),
                                     "wiki": title}),
-            "about": (wiki_extract(f"Gran Premio de {race['name'].replace('GP de ', '')}", 380)
-                      or wiki_extract(title, 380)),
+            "about": circuit_blurb(c["circuitName"], c["Location"]["locality"],
+                                   COUNTRY_ES.get(c["Location"]["country"], c["Location"]["country"]),
+                                   hist, race["name"]),
             "round": race["round"],
             "gp": race["name"],
             "date": race["date"],
@@ -319,7 +358,7 @@ def enrich_circuits(raw_races: list, calendar: list) -> list:
             "done": race["done"],
             "is_next": race["is_next"],
             "winner": race.get("winner"),
-            "history": circuit_history(cid),
+            "history": hist,
         })
     return out
 
@@ -572,6 +611,17 @@ def commons_car_photo(team_name: str, slug_name: str) -> str | None:
 
 
 # Títulos extra de Wikipedia para circuitos cuya página solo ofrece mapas.
+CIRCUIT_SPECS = {
+    "albert_park": (5.278, 58), "shanghai": (5.451, 56), "suzuka": (5.807, 53),
+    "miami": (5.412, 57), "villeneuve": (4.361, 70), "monaco": (3.337, 78),
+    "catalunya": (4.657, 66), "red_bull_ring": (4.318, 71), "silverstone": (5.891, 52),
+    "spa": (7.004, 44), "hungaroring": (4.381, 70), "zandvoort": (4.259, 72),
+    "monza": (5.793, 53), "baku": (6.003, 51), "sepang": (5.543, 56),
+    "marina_bay": (4.940, 62), "americas": (5.513, 56), "rodriguez": (4.304, 71),
+    "interlagos": (4.309, 71), "vegas": (6.201, 50), "losail": (5.419, 57),
+    "yas_marina": (5.281, 58),
+}
+
 CIRCUIT_FALLBACK = {
     "marina_bay": ["Marina Bay Sands", "Singapore"],
     "americas": ["Austin, Texas", "Austin"],

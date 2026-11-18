@@ -32,10 +32,11 @@
    "name": "Albert Park Grand Prix Circuit",
    "locality": "Melbourne",
    "country": "Australia",
+   "country_es": "Australia",
    "flag": "🇦🇺",
    "wiki": "Albert_Park_Circuit",
    "photo": "assets/circuits/albert_park.jpg",
-   "about": "El Gran Premio de Australia es una carrera de automovilismo de velocidad que se disputa actualmente en el Circuito de Albert Park de la ciudad de Melbourne, Australia. Se corre desde 1928 con distintos tipos de monoplazas, pero entró a formar parte del calendario de la Fórmula 1 en 1985, cuando se disputó en el circuito callejero de Adelaida.",
+   "about": "Albert Park Grand Prix Circuit, en Melbourne (Australia). Ha acogido 29 ediciones del mundial desde 1996, con 18 ganadores distintos. El equipo más laureado es Ferrari, con 10 victorias. El piloto con más triunfos es Michael Schumacher (4). El trazado mide 5.278 km y la carrera se disputa a 58 vueltas.",
    "round": 1,
    "gp": "GP de Australia",
    "date": "2026-03-08",
@@ -91,6 +92,20 @@
       "driver": "Valtteri Bottas",
       "team": "Mercedes",
       "team_id": "mercedes"
+     },
+     {
+      "year": "2018",
+      "gp": "Australian Grand Prix",
+      "driver": "Sebastian Vettel",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2017",
+      "gp": "Australian Grand Prix",
+      "driver": "Sebastian Vettel",
+      "team": "Ferrari",
+      "team_id": "ferrari"
      }
     ],
     "teams": [
@@ -120,7 +135,31 @@
       "id": "red_bull"
      }
     ],
+    "drivers": [
+     {
+      "name": "Michael Schumacher",
+      "wins": 4
+     },
+     {
+      "name": "Jenson Button",
+      "wins": 3
+     },
+     {
+      "name": "Sebastian Vettel",
+      "wins": 3
+     },
+     {
+      "name": "David Coulthard",
+      "wins": 2
+     },
+     {
+      "name": "Kimi Räikkönen",
+      "wins": 2
+     }
+    ],
+    "distinct_winners": 18,
     "max_wins": 10,
+    "max_driver_wins": 4,
     "top_team": {
      "name": "Ferrari",
      "wins": 10
@@ -128,7 +167,9 @@
     "top_driver": {
      "name": "Michael Schumacher",
      "wins": 4
-    }
+    },
+    "length_km": 5.278,
+    "laps": 58
    }
   },
   {
@@ -136,10 +177,11 @@
    "name": "Shanghai International Circuit",
    "locality": "Shanghai",
    "country": "China",
+   "country_es": "China",
    "flag": "🇨🇳",
    "wiki": "Shanghai_International_Circuit",
    "photo": "assets/circuits/shanghai.jpg",
-   "about": "El Gran Premio de China es una carrera de automovilismo de velocidad que se corre en la República Popular de China, y que forma parte del calendario oficial de la Fórmula 1 desde el año 2004.",
+   "about": "Shanghai International Circuit, en Shanghai (China). Ha acogido 19 ediciones del mundial desde 2004, con 12 ganadores distintos. El equipo más laureado es Mercedes, con 7 victorias. El piloto con más triunfos es Lewis Hamilton (6). El trazado mide 5.451 km y la carrera se disputa a 56 vueltas.",
    "round": 2,
    "gp": "GP de China",
    "date": "2026-03-15",
@@ -195,6 +237,20 @@
       "driver": "Lewis Hamilton",
       "team": "Mercedes",
       "team_id": "mercedes"
+     },
+     {
+      "year": "2016",
+      "gp": "Chinese Grand Prix",
+      "driver": "Nico Rosberg",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2015",
+      "gp": "Chinese Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
      }
     ],
     "teams": [
@@ -224,7 +280,31 @@
       "id": "renault"
      }
     ],
+    "drivers": [
+     {
+      "name": "Lewis Hamilton",
+      "wins": 6
+     },
+     {
+      "name": "Fernando Alonso",
+      "wins": 2
+     },
+     {
+      "name": "Nico Rosberg",
+      "wins": 2
+     },
+     {
+      "name": "Rubens Barrichello",
+      "wins": 1
+     },
+     {
+      "name": "Michael Schumacher",
+      "wins": 1
+     }
+    ],
+    "distinct_winners": 12,
     "max_wins": 7,
+    "max_driver_wins": 6,
     "top_team": {
      "name": "Mercedes",
      "wins": 7
@@ -232,7 +312,9 @@
     "top_driver": {
      "name": "Lewis Hamilton",
      "wins": 6
-    }
+    },
+    "length_km": 5.451,
+    "laps": 56
    }
   },
   {
@@ -240,10 +322,11 @@
    "name": "Suzuka Circuit",
    "locality": "Suzuka",
    "country": "Japan",
+   "country_es": "Japón",
    "flag": "🇯🇵",
    "wiki": "Suzuka_International_Racing_Course",
    "photo": "assets/circuits/suzuka.jpg",
-   "about": "El Gran Premio de Japón es una carrera de automovilismo de velocidad que se corre en dicho país como parte del campeonato de Fórmula 1. Su lugar tradicional al final del calendario hacía que en este evento generalmente se decidieran los campeonatos. De los primeros 19 Grandes Premios que se disputaron en Japón, en 12 de ellos se decidió el título mundial.",
+   "about": "Suzuka Circuit, en Suzuka (Japón). Ha acogido 36 ediciones del mundial desde 1987, con 18 ganadores distintos. El equipo más laureado es Red Bull, con 8 victorias. El piloto con más triunfos es Michael Schumacher (6). El trazado mide 5.807 km y la carrera se disputa a 53 vueltas.",
    "round": 3,
    "gp": "GP de Japón",
    "date": "2026-03-29",
@@ -299,6 +382,20 @@
       "driver": "Valtteri Bottas",
       "team": "Mercedes",
       "team_id": "mercedes"
+     },
+     {
+      "year": "2018",
+      "gp": "Japanese Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2017",
+      "gp": "Japanese Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
      }
     ],
     "teams": [
@@ -328,7 +425,31 @@
       "id": "benetton"
      }
     ],
+    "drivers": [
+     {
+      "name": "Michael Schumacher",
+      "wins": 6
+     },
+     {
+      "name": "Sebastian Vettel",
+      "wins": 4
+     },
+     {
+      "name": "Lewis Hamilton",
+      "wins": 4
+     },
+     {
+      "name": "Max Verstappen",
+      "wins": 4
+     },
+     {
+      "name": "Gerhard Berger",
+      "wins": 2
+     }
+    ],
+    "distinct_winners": 18,
     "max_wins": 8,
+    "max_driver_wins": 6,
     "top_team": {
      "name": "Red Bull",
      "wins": 8
@@ -336,7 +457,9 @@
     "top_driver": {
      "name": "Michael Schumacher",
      "wins": 6
-    }
+    },
+    "length_km": 5.807,
+    "laps": 53
    }
   },
   {
@@ -344,10 +467,11 @@
    "name": "Miami International Autodrome",
    "locality": "Miami",
    "country": "USA",
+   "country_es": "Estados Unidos",
    "flag": "🇺🇸",
    "wiki": "Miami_International_Autodrome",
    "photo": "assets/circuits/miami.jpg",
-   "about": "El Gran Premio de Miami es una carrera de automovilismo de velocidad puntuable para el Campeonato Mundial de Fórmula 1 desde 2022.",
+   "about": "Miami International Autodrome, en Miami (Estados Unidos). Ha acogido 5 ediciones del mundial desde 2022, con 4 ganadores distintos. El equipo más laureado es Red Bull, con 2 victorias. El piloto con más triunfos es Max Verstappen (2). El trazado mide 5.412 km y la carrera se disputa a 57 vueltas.",
    "round": 4,
    "gp": "GP de Miami",
    "date": "2026-05-03",
@@ -415,7 +539,27 @@
       "id": "mercedes"
      }
     ],
+    "drivers": [
+     {
+      "name": "Max Verstappen",
+      "wins": 2
+     },
+     {
+      "name": "Lando Norris",
+      "wins": 1
+     },
+     {
+      "name": "Oscar Piastri",
+      "wins": 1
+     },
+     {
+      "name": "Andrea Kimi Antonelli",
+      "wins": 1
+     }
+    ],
+    "distinct_winners": 4,
     "max_wins": 2,
+    "max_driver_wins": 2,
     "top_team": {
      "name": "Red Bull",
      "wins": 2
@@ -423,7 +567,9 @@
     "top_driver": {
      "name": "Max Verstappen",
      "wins": 2
-    }
+    },
+    "length_km": 5.412,
+    "laps": 57
    }
   },
   {
@@ -431,10 +577,11 @@
    "name": "Circuit Gilles Villeneuve",
    "locality": "Montreal",
    "country": "Canada",
+   "country_es": "Canadá",
    "flag": "🇨🇦",
    "wiki": "Circuit_Gilles_Villeneuve",
    "photo": "assets/circuits/villeneuve.jpg",
-   "about": "El Gran Premio de Canadá es una carrera de automovilismo que se lleva a cabo con monoplazas en Canadá desde el año 1961, con ausencias en 1975, 1987 y 2009, y que a partir de 1967 es válida para el Campeonato Mundial de Fórmula 1. Hasta 1977 se disputó en los autódromos de Mosport Park y Circuit Mont-Tremblant.…",
+   "about": "Circuit Gilles Villeneuve, en Montreal (Canadá). Ha acogido 45 ediciones del mundial desde 1978, con 26 ganadores distintos. El equipo más laureado es Ferrari, con 11 victorias. El piloto con más triunfos es Michael Schumacher (7). El trazado mide 4.361 km y la carrera se disputa a 70 vueltas.",
    "round": 5,
    "gp": "GP de Canadá",
    "date": "2026-05-24",
@@ -490,6 +637,20 @@
       "driver": "Lewis Hamilton",
       "team": "Mercedes",
       "team_id": "mercedes"
+     },
+     {
+      "year": "2018",
+      "gp": "Canadian Grand Prix",
+      "driver": "Sebastian Vettel",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2017",
+      "gp": "Canadian Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
      }
     ],
     "teams": [
@@ -519,7 +680,31 @@
       "id": "red_bull"
      }
     ],
+    "drivers": [
+     {
+      "name": "Michael Schumacher",
+      "wins": 7
+     },
+     {
+      "name": "Lewis Hamilton",
+      "wins": 7
+     },
+     {
+      "name": "Nelson Piquet",
+      "wins": 3
+     },
+     {
+      "name": "Max Verstappen",
+      "wins": 3
+     },
+     {
+      "name": "Alan Jones",
+      "wins": 2
+     }
+    ],
+    "distinct_winners": 26,
     "max_wins": 11,
+    "max_driver_wins": 7,
     "top_team": {
      "name": "Ferrari",
      "wins": 11
@@ -527,7 +712,9 @@
     "top_driver": {
      "name": "Michael Schumacher",
      "wins": 7
-    }
+    },
+    "length_km": 4.361,
+    "laps": 70
    }
   },
   {
@@ -535,10 +722,11 @@
    "name": "Circuit de Monaco",
    "locality": "Monte Carlo",
    "country": "Monaco",
+   "country_es": "Mónaco",
    "flag": "🇲🇨",
    "wiki": "Circuit_de_Monaco",
    "photo": "assets/circuits/monaco.jpg",
-   "about": "El Gran Premio de Mónaco es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el Circuito de Mónaco, ubicado entre los distritos de Montecarlo y La Condamine, dentro del Principado de Mónaco. Es uno de los grandes premios más antiguos y prestigiosos de la categoría.…",
+   "about": "Circuit de Monaco, en Monte Carlo (Mónaco). Ha acogido 72 ediciones del mundial desde 1950, con 39 ganadores distintos. El equipo más laureado es McLaren, con 16 victorias. El piloto con más triunfos es Ayrton Senna (6). El trazado mide 3.337 km y la carrera se disputa a 78 vueltas.",
    "round": 6,
    "gp": "GP de Mónaco",
    "date": "2026-06-07",
@@ -594,6 +782,20 @@
       "driver": "Max Verstappen",
       "team": "Red Bull",
       "team_id": "red_bull"
+     },
+     {
+      "year": "2019",
+      "gp": "Monaco Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2018",
+      "gp": "Monaco Grand Prix",
+      "driver": "Daniel Ricciardo",
+      "team": "Red Bull",
+      "team_id": "red_bull"
      }
     ],
     "teams": [
@@ -623,7 +825,31 @@
       "id": "brm"
      }
     ],
+    "drivers": [
+     {
+      "name": "Ayrton Senna",
+      "wins": 6
+     },
+     {
+      "name": "Graham Hill",
+      "wins": 5
+     },
+     {
+      "name": "Michael Schumacher",
+      "wins": 5
+     },
+     {
+      "name": "Alain Prost",
+      "wins": 4
+     },
+     {
+      "name": "Stirling Moss",
+      "wins": 3
+     }
+    ],
+    "distinct_winners": 39,
     "max_wins": 16,
+    "max_driver_wins": 6,
     "top_team": {
      "name": "McLaren",
      "wins": 16
@@ -631,7 +857,9 @@
     "top_driver": {
      "name": "Ayrton Senna",
      "wins": 6
-    }
+    },
+    "length_km": 3.337,
+    "laps": 78
    }
   },
   {
@@ -639,10 +867,11 @@
    "name": "Circuit de Barcelona-Catalunya",
    "locality": "Barcelona",
    "country": "Spain",
+   "country_es": "España",
    "flag": "🇪🇸",
    "wiki": "Circuit_de_Barcelona-Catalunya",
    "photo": "assets/circuits/catalunya.jpg",
-   "about": "El Gran Premio de Barcelona-Catalunya [sic] es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1, que se disputa en el circuito de Barcelona-Cataluña, en Montmeló, España, desde 2026.",
+   "about": "Circuit de Barcelona-Catalunya, en Barcelona (España). Ha acogido 36 ediciones del mundial desde 1991, con 17 ganadores distintos. El equipo más laureado es Ferrari, con 9 victorias. El piloto con más triunfos es Lewis Hamilton (7). El trazado mide 4.657 km y la carrera se disputa a 66 vueltas.",
    "round": 7,
    "gp": "GP de Barcelona",
    "date": "2026-06-14",
@@ -698,6 +927,20 @@
       "driver": "Lewis Hamilton",
       "team": "Mercedes",
       "team_id": "mercedes"
+     },
+     {
+      "year": "2020",
+      "gp": "Spanish Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2019",
+      "gp": "Spanish Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
      }
     ],
     "teams": [
@@ -727,7 +970,31 @@
       "id": "mclaren"
      }
     ],
+    "drivers": [
+     {
+      "name": "Lewis Hamilton",
+      "wins": 7
+     },
+     {
+      "name": "Michael Schumacher",
+      "wins": 6
+     },
+     {
+      "name": "Max Verstappen",
+      "wins": 4
+     },
+     {
+      "name": "Mika Häkkinen",
+      "wins": 3
+     },
+     {
+      "name": "Nigel Mansell",
+      "wins": 2
+     }
+    ],
+    "distinct_winners": 17,
     "max_wins": 9,
+    "max_driver_wins": 7,
     "top_team": {
      "name": "Ferrari",
      "wins": 9
@@ -735,7 +1002,9 @@
     "top_driver": {
      "name": "Lewis Hamilton",
      "wins": 7
-    }
+    },
+    "length_km": 4.657,
+    "laps": 66
    }
   },
   {
@@ -743,10 +1012,11 @@
    "name": "Red Bull Ring",
    "locality": "Spielberg",
    "country": "Austria",
+   "country_es": "Austria",
    "flag": "🇦🇹",
    "wiki": "Red_Bull_Ring",
    "photo": "assets/circuits/red_bull_ring.jpg",
-   "about": "El Gran Premio de Austria es una carrera de automovilismo de velocidad que forma parte del calendario de la Fórmula 1 en distintos períodos entre 1964 y 2014. La Fórmula 3000 Internacional estuvo presente como categoría previa en 1985, 1986 y entre 1998 y 2003.",
+   "about": "Red Bull Ring, en Spielberg (Austria). Ha acogido 40 ediciones del mundial desde 1970, con 26 ganadores distintos. El equipo más laureado es Mercedes, con 8 victorias. El piloto con más triunfos es Max Verstappen (5). El trazado mide 4.318 km y la carrera se disputa a 71 vueltas.",
    "round": 8,
    "gp": "GP de Austria",
    "date": "2026-06-28",
@@ -802,6 +1072,20 @@
       "driver": "Max Verstappen",
       "team": "Red Bull",
       "team_id": "red_bull"
+     },
+     {
+      "year": "2021",
+      "gp": "Austrian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2020",
+      "gp": "Austrian Grand Prix",
+      "driver": "Valtteri Bottas",
+      "team": "Mercedes",
+      "team_id": "mercedes"
      }
     ],
     "teams": [
@@ -831,7 +1115,31 @@
       "id": "team_lotus"
      }
     ],
+    "drivers": [
+     {
+      "name": "Max Verstappen",
+      "wins": 5
+     },
+     {
+      "name": "Alain Prost",
+      "wins": 3
+     },
+     {
+      "name": "Ronnie Peterson",
+      "wins": 2
+     },
+     {
+      "name": "Alan Jones",
+      "wins": 2
+     },
+     {
+      "name": "Mika Häkkinen",
+      "wins": 2
+     }
+    ],
+    "distinct_winners": 26,
     "max_wins": 8,
+    "max_driver_wins": 5,
     "top_team": {
      "name": "Mercedes",
      "wins": 8
@@ -839,7 +1147,9 @@
     "top_driver": {
      "name": "Max Verstappen",
      "wins": 5
-    }
+    },
+    "length_km": 4.318,
+    "laps": 71
    }
   },
   {
@@ -847,10 +1157,11 @@
    "name": "Silverstone Circuit",
    "locality": "Silverstone",
    "country": "UK",
+   "country_es": "Reino Unido",
    "flag": "🇬🇧",
    "wiki": "Silverstone_Circuit",
    "photo": "assets/circuits/silverstone.jpg",
-   "about": "Gran Premio de Gran Bretaña es una carrera de automovilismo para monoplazas que tiene lugar en el Reino Unido desde el año 1926. Junto con el Gran Premio de Italia, ha sido válida para el Campeonato Mundial de Fórmula 1 en todas las temporadas a partir de su creación en 1950.…",
+   "about": "Silverstone Circuit, en Silverstone (Reino Unido). Ha acogido 61 ediciones del mundial desde 1950, con 34 ganadores distintos. El equipo más laureado es Ferrari, con 16 victorias. El piloto con más triunfos es Lewis Hamilton (9). El trazado mide 5.891 km y la carrera se disputa a 52 vueltas.",
    "round": 9,
    "gp": "GP de Gran Bretaña",
    "date": "2026-07-05",
@@ -906,6 +1217,20 @@
       "driver": "Lewis Hamilton",
       "team": "Mercedes",
       "team_id": "mercedes"
+     },
+     {
+      "year": "2020",
+      "gp": "British Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2020",
+      "gp": "70th Anniversary Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
      }
     ],
     "teams": [
@@ -935,7 +1260,31 @@
       "id": "red_bull"
      }
     ],
+    "drivers": [
+     {
+      "name": "Lewis Hamilton",
+      "wins": 9
+     },
+     {
+      "name": "Alain Prost",
+      "wins": 5
+     },
+     {
+      "name": "Jim Clark",
+      "wins": 3
+     },
+     {
+      "name": "Nigel Mansell",
+      "wins": 3
+     },
+     {
+      "name": "Michael Schumacher",
+      "wins": 3
+     }
+    ],
+    "distinct_winners": 34,
     "max_wins": 16,
+    "max_driver_wins": 9,
     "top_team": {
      "name": "Ferrari",
      "wins": 16
@@ -943,7 +1292,9 @@
     "top_driver": {
      "name": "Lewis Hamilton",
      "wins": 9
-    }
+    },
+    "length_km": 5.891,
+    "laps": 52
    }
   },
   {
@@ -951,10 +1302,11 @@
    "name": "Circuit de Spa-Francorchamps",
    "locality": "Spa",
    "country": "Belgium",
+   "country_es": "Bélgica",
    "flag": "🇧🇪",
    "wiki": "Circuit_de_Spa-Francorchamps",
    "photo": "assets/circuits/spa.jpg",
-   "about": "El Gran Premio de Bélgica es una carrera de automovilismo de velocidad disputada en Bélgica con monoplazas. Actualmente es válida para el Campeonato Mundial de Fórmula 1. La Fórmula 3000 Internacional acompañó a la Fórmula 1 en 1987 y desde 1991 hasta 2004. Sus sucesores, la GP2 Series y la FIA Fórmula 2, han hecho lo mismo desde 2005.",
+   "about": "Circuit de Spa-Francorchamps, en Spa (Bélgica). Ha acogido 59 ediciones del mundial desde 1950, con 30 ganadores distintos. El equipo más laureado es Ferrari, con 14 victorias. El piloto con más triunfos es Michael Schumacher (6). El trazado mide 7.004 km y la carrera se disputa a 44 vueltas.",
    "round": 10,
    "gp": "GP de Bélgica",
    "date": "2026-07-19",
@@ -1010,6 +1362,20 @@
       "driver": "Max Verstappen",
       "team": "Red Bull",
       "team_id": "red_bull"
+     },
+     {
+      "year": "2020",
+      "gp": "Belgian Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2019",
+      "gp": "Belgian Grand Prix",
+      "driver": "Charles Leclerc",
+      "team": "Ferrari",
+      "team_id": "ferrari"
      }
     ],
     "teams": [
@@ -1039,7 +1405,31 @@
       "id": "lotus-climax"
      }
     ],
+    "drivers": [
+     {
+      "name": "Michael Schumacher",
+      "wins": 6
+     },
+     {
+      "name": "Ayrton Senna",
+      "wins": 5
+     },
+     {
+      "name": "Lewis Hamilton",
+      "wins": 5
+     },
+     {
+      "name": "Jim Clark",
+      "wins": 4
+     },
+     {
+      "name": "Kimi Räikkönen",
+      "wins": 4
+     }
+    ],
+    "distinct_winners": 30,
     "max_wins": 14,
+    "max_driver_wins": 6,
     "top_team": {
      "name": "Ferrari",
      "wins": 14
@@ -1047,7 +1437,9 @@
     "top_driver": {
      "name": "Michael Schumacher",
      "wins": 6
-    }
+    },
+    "length_km": 7.004,
+    "laps": 44
    }
   },
   {
@@ -1055,10 +1447,11 @@
    "name": "Hungaroring",
    "locality": "Budapest",
    "country": "Hungary",
+   "country_es": "Hungría",
    "flag": "🇭🇺",
    "wiki": "Hungaroring",
    "photo": "assets/circuits/hungaroring.jpg",
-   "about": "El Gran Premio de Hungría es una carrera de automovilismo que tiene lugar en Hungría. La primera edición se disputó el 21 de junio de 1936 sobre un circuito trazado en un parque cerca del centro de Budapest. Los constructores Mercedes-Benz, Auto Union y Ferrari enviaron tres automóviles cada uno y el evento atrajo a una gran multitud.…",
+   "about": "Hungaroring, en Budapest (Hungría). Ha acogido 41 ediciones del mundial desde 1986, con 21 ganadores distintos. El equipo más laureado es McLaren, con 14 victorias. El piloto con más triunfos es Lewis Hamilton (8). El trazado mide 4.381 km y la carrera se disputa a 70 vueltas.",
    "round": 11,
    "gp": "GP de Hungría",
    "date": "2026-07-26",
@@ -1114,6 +1507,20 @@
       "driver": "Esteban Ocon",
       "team": "Alpine F1 Team",
       "team_id": "alpine"
+     },
+     {
+      "year": "2020",
+      "gp": "Hungarian Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2019",
+      "gp": "Hungarian Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
      }
     ],
     "teams": [
@@ -1143,7 +1550,31 @@
       "id": "red_bull"
      }
     ],
+    "drivers": [
+     {
+      "name": "Lewis Hamilton",
+      "wins": 8
+     },
+     {
+      "name": "Michael Schumacher",
+      "wins": 4
+     },
+     {
+      "name": "Ayrton Senna",
+      "wins": 3
+     },
+     {
+      "name": "Nelson Piquet",
+      "wins": 2
+     },
+     {
+      "name": "Damon Hill",
+      "wins": 2
+     }
+    ],
+    "distinct_winners": 21,
     "max_wins": 14,
+    "max_driver_wins": 8,
     "top_team": {
      "name": "McLaren",
      "wins": 14
@@ -1151,7 +1582,9 @@
     "top_driver": {
      "name": "Lewis Hamilton",
      "wins": 8
-    }
+    },
+    "length_km": 4.381,
+    "laps": 70
    }
   },
   {
@@ -1159,10 +1592,11 @@
    "name": "Circuit Park Zandvoort",
    "locality": "Zandvoort",
    "country": "Netherlands",
+   "country_es": "Países Bajos",
    "flag": "🇳🇱",
    "wiki": "Circuit_Zandvoort",
    "photo": "assets/circuits/zandvoort.jpg",
-   "about": "El Circuito de Zandvoort, oficialmente Circuit Park Zandvoort, es un autódromo situado cerca de Zandvoort y Haarlem, Países Bajos, sobre el Mar del Norte, unos 15 km al oeste de la ciudad de Ámsterdam.",
+   "about": "Circuit Park Zandvoort, en Zandvoort (Países Bajos). Ha acogido 36 ediciones del mundial desde 1952, con 22 ganadores distintos. El equipo más laureado es Ferrari, con 8 victorias. El piloto con más triunfos es Jim Clark (4). El trazado mide 4.259 km y la carrera se disputa a 72 vueltas.",
    "round": 12,
    "gp": "GP de Países Bajos",
    "date": "2026-08-23",
@@ -1218,6 +1652,20 @@
       "driver": "Max Verstappen",
       "team": "Red Bull",
       "team_id": "red_bull"
+     },
+     {
+      "year": "1985",
+      "gp": "Dutch Grand Prix",
+      "driver": "Niki Lauda",
+      "team": "McLaren",
+      "team_id": "mclaren"
+     },
+     {
+      "year": "1984",
+      "gp": "Dutch Grand Prix",
+      "driver": "Alain Prost",
+      "team": "McLaren",
+      "team_id": "mclaren"
      }
     ],
     "teams": [
@@ -1247,7 +1695,31 @@
       "id": "brm"
      }
     ],
+    "drivers": [
+     {
+      "name": "Jim Clark",
+      "wins": 4
+     },
+     {
+      "name": "Jackie Stewart",
+      "wins": 3
+     },
+     {
+      "name": "Niki Lauda",
+      "wins": 3
+     },
+     {
+      "name": "Max Verstappen",
+      "wins": 3
+     },
+     {
+      "name": "Alberto Ascari",
+      "wins": 2
+     }
+    ],
+    "distinct_winners": 22,
     "max_wins": 8,
+    "max_driver_wins": 4,
     "top_team": {
      "name": "Ferrari",
      "wins": 8
@@ -1255,7 +1727,9 @@
     "top_driver": {
      "name": "Jim Clark",
      "wins": 4
-    }
+    },
+    "length_km": 4.259,
+    "laps": 72
    }
   },
   {
@@ -1263,10 +1737,11 @@
    "name": "Autodromo Nazionale di Monza",
    "locality": "Monza",
    "country": "Italy",
+   "country_es": "Italia",
    "flag": "🇮🇹",
    "wiki": "Monza_Circuit",
    "photo": "assets/circuits/monza.jpg",
-   "about": "El Gran Premio de Italia es una carrera de automovilismo de velocidad disputada con monoplazas en Italia. Es una de las carreras de Gran Premio más antiguas, con su primera edición disputada en el año 1921. El Gran Premio de Italia forma parte de la Fórmula 1 desde su inicio en 1950 siendo la tercera pista de carrera permanente en la existencia de la Fórmula 1 y, junto con el…",
+   "about": "Autodromo Nazionale di Monza, en Monza (Italia). Ha acogido 76 ediciones del mundial desde 1950, con 41 ganadores distintos. El equipo más laureado es Ferrari, con 20 victorias. El piloto con más triunfos es Michael Schumacher (5). El trazado mide 5.793 km y la carrera se disputa a 53 vueltas.",
    "round": 13,
    "gp": "GP de Italia",
    "date": "2026-09-06",
@@ -1322,6 +1797,20 @@
       "driver": "Daniel Ricciardo",
       "team": "McLaren",
       "team_id": "mclaren"
+     },
+     {
+      "year": "2020",
+      "gp": "Italian Grand Prix",
+      "driver": "Pierre Gasly",
+      "team": "AlphaTauri",
+      "team_id": "alphatauri"
+     },
+     {
+      "year": "2019",
+      "gp": "Italian Grand Prix",
+      "driver": "Charles Leclerc",
+      "team": "Ferrari",
+      "team_id": "ferrari"
      }
     ],
     "teams": [
@@ -1351,7 +1840,31 @@
       "id": "red_bull"
      }
     ],
+    "drivers": [
+     {
+      "name": "Michael Schumacher",
+      "wins": 5
+     },
+     {
+      "name": "Lewis Hamilton",
+      "wins": 5
+     },
+     {
+      "name": "Juan Fangio",
+      "wins": 3
+     },
+     {
+      "name": "Stirling Moss",
+      "wins": 3
+     },
+     {
+      "name": "Ronnie Peterson",
+      "wins": 3
+     }
+    ],
+    "distinct_winners": 41,
     "max_wins": 20,
+    "max_driver_wins": 5,
     "top_team": {
      "name": "Ferrari",
      "wins": 20
@@ -1359,7 +1872,9 @@
     "top_driver": {
      "name": "Michael Schumacher",
      "wins": 5
-    }
+    },
+    "length_km": 5.793,
+    "laps": 53
    }
   },
   {
@@ -1367,10 +1882,11 @@
    "name": "Madring",
    "locality": "Madrid",
    "country": "Spain",
+   "country_es": "España",
    "flag": "🇪🇸",
    "wiki": "Madring",
    "photo": "assets/circuits/madring.jpg",
-   "about": "El Gran Premio de España es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1. Desde el año 2026 se disputa en el circuito de Madring. Con anterioridad, este Gran Premio se ha corrido en otros trazados, como Terramar, Lasarte, Pedralbes, Jarama, Montjuic, Jerez y Montmeló aunque solo los últimos cinco fueron válidos para la Fórmula 1.",
+   "about": "Madring, en Madrid (España). Ha acogido 1 ediciones del mundial desde 2026, con 1 ganadores distintos. El equipo más laureado es Mercedes, con 1 victorias.",
    "round": 14,
    "gp": "GP de España",
    "date": "2026-09-13",
@@ -1400,7 +1916,15 @@
       "id": "mercedes"
      }
     ],
+    "drivers": [
+     {
+      "name": "Andrea Kimi Antonelli",
+      "wins": 1
+     }
+    ],
+    "distinct_winners": 1,
     "max_wins": 1,
+    "max_driver_wins": 1,
     "top_team": {
      "name": "Mercedes",
      "wins": 1
@@ -1408,7 +1932,9 @@
     "top_driver": {
      "name": "Andrea Kimi Antonelli",
      "wins": 1
-    }
+    },
+    "length_km": null,
+    "laps": null
    }
   },
   {
@@ -1416,10 +1942,11 @@
    "name": "Baku City Circuit",
    "locality": "Baku",
    "country": "Azerbaijan",
+   "country_es": "Azerbaiyán",
    "flag": "🇦🇿",
    "wiki": "Baku_City_Circuit",
    "photo": "assets/circuits/baku.jpg",
-   "about": "El Gran Premio de Azerbaiyán es una carrera puntuable en el Campeonato Mundial de Fórmula 1 desde la temporada 2017, que se disputa en la ciudad de Bakú, capital de Azerbaiyán, en el circuito callejero de Bakú.",
+   "about": "Baku City Circuit, en Baku (Azerbaiyán). Ha acogido 10 ediciones del mundial desde 2016, con 8 ganadores distintos. El equipo más laureado es Red Bull, con 5 victorias. El piloto con más triunfos es Sergio Pérez (2). El trazado mide 6.003 km y la carrera se disputa a 51 vueltas.",
    "round": 15,
    "gp": "GP de Azerbaiyán",
    "date": "2026-09-26",
@@ -1475,6 +2002,20 @@
       "driver": "Sergio Pérez",
       "team": "Red Bull",
       "team_id": "red_bull"
+     },
+     {
+      "year": "2019",
+      "gp": "Azerbaijan Grand Prix",
+      "driver": "Valtteri Bottas",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2018",
+      "gp": "Azerbaijan Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
      }
     ],
     "teams": [
@@ -1494,7 +2035,31 @@
       "id": "mclaren"
      }
     ],
+    "drivers": [
+     {
+      "name": "Sergio Pérez",
+      "wins": 2
+     },
+     {
+      "name": "Max Verstappen",
+      "wins": 2
+     },
+     {
+      "name": "Nico Rosberg",
+      "wins": 1
+     },
+     {
+      "name": "Daniel Ricciardo",
+      "wins": 1
+     },
+     {
+      "name": "Lewis Hamilton",
+      "wins": 1
+     }
+    ],
+    "distinct_winners": 8,
     "max_wins": 5,
+    "max_driver_wins": 2,
     "top_team": {
      "name": "Red Bull",
      "wins": 5
@@ -1502,7 +2067,9 @@
     "top_driver": {
      "name": "Sergio Pérez",
      "wins": 2
-    }
+    },
+    "length_km": 6.003,
+    "laps": 51
    }
   },
   {
@@ -1510,10 +2077,11 @@
    "name": "Sepang International Circuit",
    "locality": "Kuala Lumpur",
    "country": "Malaysia",
+   "country_es": "Malasia",
    "flag": "🇲🇾",
    "wiki": "Sepang_International_Circuit",
    "photo": "assets/circuits/sepang.jpg",
-   "about": "El Gran Premio de Malasia fue una carrera de automovilismo perteneciente al Campeonato de Fórmula 1 desde la temporada 1999 hasta 2017. Se disputaba en el circuito Internacional de Sepang, en Kuala Lumpur, Malasia. A lo largo de sus ediciones, el GP de Malasia ha sido patrocinado por Petronas, la empresa estatal de petróleos.",
+   "about": "Sepang International Circuit, en Kuala Lumpur (Malasia). Ha acogido 20 ediciones del mundial desde 1999, con 11 ganadores distintos. El equipo más laureado es Ferrari, con 7 victorias. El piloto con más triunfos es Sebastian Vettel (4). El trazado mide 5.543 km y la carrera se disputa a 56 vueltas.",
    "round": 16,
    "gp": "GP de Malasia",
    "date": "2026-10-04",
@@ -1569,6 +2137,20 @@
       "driver": "Sebastian Vettel",
       "team": "Red Bull",
       "team_id": "red_bull"
+     },
+     {
+      "year": "2012",
+      "gp": "Malaysian Grand Prix",
+      "driver": "Fernando Alonso",
+      "team": "Ferrari",
+      "team_id": "ferrari"
+     },
+     {
+      "year": "2011",
+      "gp": "Malaysian Grand Prix",
+      "driver": "Sebastian Vettel",
+      "team": "Red Bull",
+      "team_id": "red_bull"
      }
     ],
     "teams": [
@@ -1598,7 +2180,31 @@
       "id": "williams"
      }
     ],
+    "drivers": [
+     {
+      "name": "Sebastian Vettel",
+      "wins": 4
+     },
+     {
+      "name": "Michael Schumacher",
+      "wins": 3
+     },
+     {
+      "name": "Fernando Alonso",
+      "wins": 3
+     },
+     {
+      "name": "Kimi Räikkönen",
+      "wins": 2
+     },
+     {
+      "name": "Max Verstappen",
+      "wins": 2
+     }
+    ],
+    "distinct_winners": 11,
     "max_wins": 7,
+    "max_driver_wins": 4,
     "top_team": {
      "name": "Ferrari",
      "wins": 7
@@ -1606,7 +2212,9 @@
     "top_driver": {
      "name": "Sebastian Vettel",
      "wins": 4
-    }
+    },
+    "length_km": 5.543,
+    "laps": 56
    }
   },
   {
@@ -1614,10 +2222,11 @@
    "name": "Marina Bay Street Circuit",
    "locality": "Marina Bay",
    "country": "Singapore",
+   "country_es": "Singapur",
    "flag": "🇸🇬",
    "wiki": "Marina_Bay_Street_Circuit",
    "photo": "assets/circuits/marina_bay.jpg",
-   "about": "El Gran Premio de Singapur es una carrera de automovilismo de velocidad que forma parte del Campeonato Mundial de Fórmula 1. El evento se lleva a cabo en el circuito callejero de Marina Bay, además de ser la carrera nocturna inaugural y el primer circuito callejero en Asia diseñado para carreras de Fórmula 1.",
+   "about": "Marina Bay Street Circuit, en Marina Bay (Singapur). Ha acogido 17 ediciones del mundial desde 2008, con 9 ganadores distintos. El equipo más laureado es Red Bull, con 5 victorias. El piloto con más triunfos es Sebastian Vettel (5). El trazado mide 4.940 km y la carrera se disputa a 62 vueltas.",
    "round": 17,
    "gp": "GP de Singapur",
    "date": "2026-10-11",
@@ -1673,6 +2282,20 @@
       "driver": "Sebastian Vettel",
       "team": "Ferrari",
       "team_id": "ferrari"
+     },
+     {
+      "year": "2018",
+      "gp": "Singapore Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2017",
+      "gp": "Singapore Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
      }
     ],
     "teams": [
@@ -1702,7 +2325,31 @@
       "id": "renault"
      }
     ],
+    "drivers": [
+     {
+      "name": "Sebastian Vettel",
+      "wins": 5
+     },
+     {
+      "name": "Lewis Hamilton",
+      "wins": 4
+     },
+     {
+      "name": "Fernando Alonso",
+      "wins": 2
+     },
+     {
+      "name": "Nico Rosberg",
+      "wins": 1
+     },
+     {
+      "name": "Sergio Pérez",
+      "wins": 1
+     }
+    ],
+    "distinct_winners": 9,
     "max_wins": 5,
+    "max_driver_wins": 5,
     "top_team": {
      "name": "Red Bull",
      "wins": 5
@@ -1710,7 +2357,9 @@
     "top_driver": {
      "name": "Sebastian Vettel",
      "wins": 5
-    }
+    },
+    "length_km": 4.94,
+    "laps": 62
    }
   },
   {
@@ -1718,10 +2367,11 @@
    "name": "Circuit of the Americas",
    "locality": "Austin",
    "country": "USA",
+   "country_es": "Estados Unidos",
    "flag": "🇺🇸",
    "wiki": "Circuit_of_the_Americas",
    "photo": "assets/circuits/americas.jpg",
-   "about": "El Gran Premio de los Estados Unidos es una competición de automovilismo válida para el campeonato de Fórmula 1 que se ha disputado en varias ocasiones desde 1959 en diferentes localidades. Inicialmente formó parte del campeonato estadounidense.",
+   "about": "Circuit of the Americas, en Austin (Estados Unidos). Ha acogido 14 ediciones del mundial desde 2012, con 7 ganadores distintos. El equipo más laureado es Mercedes, con 6 victorias. El piloto con más triunfos es Lewis Hamilton (5). El trazado mide 5.513 km y la carrera se disputa a 56 vueltas.",
    "round": 18,
    "gp": "GP de Estados Unidos",
    "date": "2026-10-25",
@@ -1777,6 +2427,20 @@
       "driver": "Max Verstappen",
       "team": "Red Bull",
       "team_id": "red_bull"
+     },
+     {
+      "year": "2019",
+      "gp": "United States Grand Prix",
+      "driver": "Valtteri Bottas",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2018",
+      "gp": "United States Grand Prix",
+      "driver": "Kimi Räikkönen",
+      "team": "Ferrari",
+      "team_id": "ferrari"
      }
     ],
     "teams": [
@@ -1801,7 +2465,31 @@
       "id": "mclaren"
      }
     ],
+    "drivers": [
+     {
+      "name": "Lewis Hamilton",
+      "wins": 5
+     },
+     {
+      "name": "Max Verstappen",
+      "wins": 4
+     },
+     {
+      "name": "Sebastian Vettel",
+      "wins": 1
+     },
+     {
+      "name": "Kimi Räikkönen",
+      "wins": 1
+     },
+     {
+      "name": "Valtteri Bottas",
+      "wins": 1
+     }
+    ],
+    "distinct_winners": 7,
     "max_wins": 6,
+    "max_driver_wins": 5,
     "top_team": {
      "name": "Mercedes",
      "wins": 6
@@ -1809,7 +2497,9 @@
     "top_driver": {
      "name": "Lewis Hamilton",
      "wins": 5
-    }
+    },
+    "length_km": 5.513,
+    "laps": 56
    }
   },
   {
@@ -1817,10 +2507,11 @@
    "name": "Autódromo Hermanos Rodríguez",
    "locality": "Mexico City",
    "country": "Mexico",
+   "country_es": "México",
    "flag": "🇲🇽",
    "wiki": "Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez",
    "photo": "assets/circuits/rodriguez.jpg",
-   "about": "",
+   "about": "Autódromo Hermanos Rodríguez, en Mexico City (México). Ha acogido 26 ediciones del mundial desde 1963, con 17 ganadores distintos. El equipo más laureado es Red Bull, con 6 victorias. El piloto con más triunfos es Max Verstappen (6). El trazado mide 4.304 km y la carrera se disputa a 71 vueltas.",
    "round": 19,
    "gp": "GP de Ciudad de México",
    "date": "2026-11-01",
@@ -1876,6 +2567,20 @@
       "driver": "Max Verstappen",
       "team": "Red Bull",
       "team_id": "red_bull"
+     },
+     {
+      "year": "2019",
+      "gp": "Mexican Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2018",
+      "gp": "Mexican Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
      }
     ],
     "teams": [
@@ -1905,7 +2610,31 @@
       "id": "mercedes"
      }
     ],
+    "drivers": [
+     {
+      "name": "Max Verstappen",
+      "wins": 6
+     },
+     {
+      "name": "Jim Clark",
+      "wins": 2
+     },
+     {
+      "name": "Nigel Mansell",
+      "wins": 2
+     },
+     {
+      "name": "Alain Prost",
+      "wins": 2
+     },
+     {
+      "name": "Lewis Hamilton",
+      "wins": 2
+     }
+    ],
+    "distinct_winners": 17,
     "max_wins": 6,
+    "max_driver_wins": 6,
     "top_team": {
      "name": "Red Bull",
      "wins": 6
@@ -1913,7 +2642,9 @@
     "top_driver": {
      "name": "Max Verstappen",
      "wins": 6
-    }
+    },
+    "length_km": 4.304,
+    "laps": 71
    }
   },
   {
@@ -1921,10 +2652,11 @@
    "name": "Autódromo José Carlos Pace",
    "locality": "São Paulo",
    "country": "Brazil",
+   "country_es": "Brasil",
    "flag": "🇧🇷",
    "wiki": "Interlagos_Circuit",
    "photo": "assets/circuits/interlagos.jpg",
-   "about": "El Gran Premio de São Paulo es una carrera de automovilismo de velocidad disputada en Brasil desde el año 1972, que ha sido válida para el Campeonato Mundial de Fórmula 1 desde 1973.",
+   "about": "Autódromo José Carlos Pace, en São Paulo (Brasil). Ha acogido 43 ediciones del mundial desde 1973, con 26 ganadores distintos. El equipo más laureado es McLaren, con 10 victorias. El piloto con más triunfos es Michael Schumacher (4). El trazado mide 4.309 km y la carrera se disputa a 71 vueltas.",
    "round": 20,
    "gp": "GP de Brasil",
    "date": "2026-11-08",
@@ -1980,6 +2712,20 @@
       "driver": "Lewis Hamilton",
       "team": "Mercedes",
       "team_id": "mercedes"
+     },
+     {
+      "year": "2019",
+      "gp": "Brazilian Grand Prix",
+      "driver": "Max Verstappen",
+      "team": "Red Bull",
+      "team_id": "red_bull"
+     },
+     {
+      "year": "2018",
+      "gp": "Brazilian Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
      }
     ],
     "teams": [
@@ -2009,7 +2755,31 @@
       "id": "williams"
      }
     ],
+    "drivers": [
+     {
+      "name": "Michael Schumacher",
+      "wins": 4
+     },
+     {
+      "name": "Sebastian Vettel",
+      "wins": 3
+     },
+     {
+      "name": "Lewis Hamilton",
+      "wins": 3
+     },
+     {
+      "name": "Max Verstappen",
+      "wins": 3
+     },
+     {
+      "name": "Emerson Fittipaldi",
+      "wins": 2
+     }
+    ],
+    "distinct_winners": 26,
     "max_wins": 10,
+    "max_driver_wins": 4,
     "top_team": {
      "name": "McLaren",
      "wins": 10
@@ -2017,7 +2787,9 @@
     "top_driver": {
      "name": "Michael Schumacher",
      "wins": 4
-    }
+    },
+    "length_km": 4.309,
+    "laps": 71
    }
   },
   {
@@ -2025,10 +2797,11 @@
    "name": "Las Vegas Strip Street Circuit",
    "locality": "Las Vegas",
    "country": "USA",
+   "country_es": "Estados Unidos",
    "flag": "🇺🇸",
    "wiki": "Las_Vegas_Grand_Prix#Circuit",
    "photo": "assets/circuits/vegas.jpg",
-   "about": "El Gran Premio de Las Vegas es una carrera de automovilismo que se disputa en Las Vegas, Estados Unidos. En el pasado, fue conocida popularmente como Gran Premio de Caesars Palace que fue parte del calendario del mundial de automovilismo de Fórmula 1 para las temporadas de 1981 y 1982, y tras su abandono por la Fórmula 1 por diversos motivos deportivos, continuó como…",
+   "about": "Las Vegas Strip Street Circuit, en Las Vegas (Estados Unidos). Ha acogido 3 ediciones del mundial desde 2023, con 2 ganadores distintos. El equipo más laureado es Red Bull, con 2 victorias. El piloto con más triunfos es Max Verstappen (2). El trazado mide 6.201 km y la carrera se disputa a 50 vueltas.",
    "round": 21,
    "gp": "GP de Las Vegas",
    "date": "2026-11-22",
@@ -2077,7 +2850,19 @@
       "id": "mercedes"
      }
     ],
+    "drivers": [
+     {
+      "name": "Max Verstappen",
+      "wins": 2
+     },
+     {
+      "name": "George Russell",
+      "wins": 1
+     }
+    ],
+    "distinct_winners": 2,
     "max_wins": 2,
+    "max_driver_wins": 2,
     "top_team": {
      "name": "Red Bull",
      "wins": 2
@@ -2085,7 +2870,9 @@
     "top_driver": {
      "name": "Max Verstappen",
      "wins": 2
-    }
+    },
+    "length_km": 6.201,
+    "laps": 50
    }
   },
   {
@@ -2093,10 +2880,11 @@
    "name": "Lusail International Circuit",
    "locality": "Lusail",
    "country": "Qatar",
+   "country_es": "Catar",
    "flag": "🇶🇦",
    "wiki": "Lusail_International_Circuit",
    "photo": "assets/circuits/losail.jpg",
-   "about": "El Gran Premio de Catar es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el circuito Internacional de Losail, ubicado en la ciudad de Lusail, Catar, a aproximadamente 28 kilómetros al norte de la capital Doha.…",
+   "about": "Lusail International Circuit, en Lusail (Catar). Ha acogido 4 ediciones del mundial desde 2021, con 2 ganadores distintos. El equipo más laureado es Red Bull, con 3 victorias. El piloto con más triunfos es Max Verstappen (3). El trazado mide 5.419 km y la carrera se disputa a 57 vueltas.",
    "round": 22,
    "gp": "GP de Catar",
    "date": "2026-11-29",
@@ -2152,7 +2940,19 @@
       "id": "mercedes"
      }
     ],
+    "drivers": [
+     {
+      "name": "Max Verstappen",
+      "wins": 3
+     },
+     {
+      "name": "Lewis Hamilton",
+      "wins": 1
+     }
+    ],
+    "distinct_winners": 2,
     "max_wins": 3,
+    "max_driver_wins": 3,
     "top_team": {
      "name": "Red Bull",
      "wins": 3
@@ -2160,7 +2960,9 @@
     "top_driver": {
      "name": "Max Verstappen",
      "wins": 3
-    }
+    },
+    "length_km": 5.419,
+    "laps": 57
    }
   },
   {
@@ -2168,10 +2970,11 @@
    "name": "Yas Marina Circuit",
    "locality": "Abu Dhabi",
    "country": "UAE",
+   "country_es": "Emiratos Árabes Unidos",
    "flag": "🇦🇪",
    "wiki": "Yas_Marina_Circuit",
    "photo": "assets/circuits/yas_marina.jpg",
-   "about": "El Gran Premio de Abu Dabi es una carrera de automovilismo válida para el Campeonato Mundial de Fórmula 1 que se disputa anualmente con monoplazas en el circuito Yas Marina, ubicado en la Isla de Yas, en Abu Dabi, Emiratos Árabes Unidos.",
+   "about": "Yas Marina Circuit, en Abu Dhabi (Emiratos Árabes Unidos). Ha acogido 17 ediciones del mundial desde 2009, con 7 ganadores distintos. El equipo más laureado es Red Bull, con 8 victorias. El piloto con más triunfos es Lewis Hamilton (5). El trazado mide 5.281 km y la carrera se disputa a 58 vueltas.",
    "round": 23,
    "gp": "GP de Abu Dabi",
    "date": "2026-12-06",
@@ -2227,6 +3030,20 @@
       "driver": "Max Verstappen",
       "team": "Red Bull",
       "team_id": "red_bull"
+     },
+     {
+      "year": "2019",
+      "gp": "Abu Dhabi Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
+     },
+     {
+      "year": "2018",
+      "gp": "Abu Dhabi Grand Prix",
+      "driver": "Lewis Hamilton",
+      "team": "Mercedes",
+      "team_id": "mercedes"
      }
     ],
     "teams": [
@@ -2251,7 +3068,31 @@
       "id": "lotus_f1"
      }
     ],
+    "drivers": [
+     {
+      "name": "Lewis Hamilton",
+      "wins": 5
+     },
+     {
+      "name": "Max Verstappen",
+      "wins": 5
+     },
+     {
+      "name": "Sebastian Vettel",
+      "wins": 3
+     },
+     {
+      "name": "Kimi Räikkönen",
+      "wins": 1
+     },
+     {
+      "name": "Nico Rosberg",
+      "wins": 1
+     }
+    ],
+    "distinct_winners": 7,
     "max_wins": 8,
+    "max_driver_wins": 5,
     "top_team": {
      "name": "Red Bull",
      "wins": 8
@@ -2259,11 +3100,13 @@
     "top_driver": {
      "name": "Lewis Hamilton",
      "wins": 5
-    }
+    },
+    "length_km": 5.281,
+    "laps": 58
    }
   }
  ],
- "generated": "2026-11-18T16:44:25+00:00",
+ "generated": "2026-11-18T17:15:09+00:00",
  "round": 20,
  "total_races": 23,
  "rounds_done": 20,
@@ -4524,7 +5367,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/George-Russell-F1-300x169.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 1 h",
+     "age": "hace 2 h",
      "ts": 1795014000.0,
      "teams": [
       "mercedes"
@@ -4539,7 +5382,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-Kimi-Antonelli-F1-United-States-GP.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 3 h",
+     "age": "hace 4 h",
      "ts": 1795006800.0,
      "teams": [
       "mercedes",
@@ -4555,7 +5398,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1452327_hires.jpg?width=1200",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 5 h",
+     "age": "hace 6 h",
      "ts": 1794998926.0,
      "teams": [
       "mercedes",
@@ -4583,7 +5426,7 @@
      "url": "https://www.autosport.com/f1/news/the-antonelli-you-dont-know-daily-life-with-f1s-newest-champion/10875217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "There is one thing that physiotherapist Sergi Avila took a little while to understand. When Kimi Antonelli finally found himself with a free weekend, after weeks being spent between circuits, airports and training, the most logica",
      "source": "Autosport",
-     "image": "https://cdn-3.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
      "age": "hace 7 h",
@@ -4648,7 +5491,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1452325_HiRes-1-300x169.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 10 h",
+     "age": "hace 11 h",
      "ts": 1794981600.0,
      "teams": [
       "ferrari",
@@ -4692,7 +5535,7 @@
      "url": "https://www.motorsport.com/f1/news/toto-wolff-is-not-afraid-of-losing-kimi-antonelli-to-ferrari/10875044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes team principal Toto Wolff is “0.0%” afraid that Kimi Antonelli could switch to Ferrari in Formula 1. Many Italians would love to see the new world champion in a red cockpit one day, but according to Wolff, that will not h",
      "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/Y9lNjD72/s6/lewis-hamilton-ferrari-andrea-.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
      "age": "hace 1 d",
@@ -4800,7 +5643,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-Kimi-Antonelli-F1-United-States-GP.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 3 h",
+     "age": "hace 4 h",
      "ts": 1795006800.0,
      "teams": [
       "mercedes",
@@ -4816,7 +5659,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1452327_hires.jpg?width=1200",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 5 h",
+     "age": "hace 6 h",
      "ts": 1794998926.0,
      "teams": [
       "mercedes",
@@ -4829,10 +5672,10 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 23 h",
+     "age": "hace 1 d",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
@@ -4846,7 +5689,7 @@
      "url": "https://www.motorsport.com/f1/news/lando-norriss-ln4-fusion-signs-former-red-bull-junior-oliver-goethe-as-its-first-f2-driver/10874918/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Lando Norris's new junior team LN4 Fusion has signed former Red Bull junior Oliver Goethe as its first driver for the 2027 Formula 2 season. The 22-year-old will make the move from MP Motorsport for his third season in F2, after c",
      "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/0LdereN0/s6/motorsport-com-graphics.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 1 d",
@@ -4877,7 +5720,7 @@
      "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
      "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -4955,7 +5798,7 @@
      "url": "https://www.motorsport.com/f1/news/we-havent-taken-any-steps-backwards-mclaren-boss-explains-2026/10875219/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
      "source": "Motorsport.com",
-     "image": "https://cdn-4.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
      "age": "hace 3 h",
@@ -4970,7 +5813,7 @@
      "url": "https://www.autosport.com/f1/news/what-mclaren-has-learned-from-a-tough-f1-2026/10875268/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
      "source": "Autosport",
-     "image": "https://cdn-3.motorsport.com/images/amp/6VyKR1lY/s6/andrea-stella-mclaren-2.jpg",
+     "image": "https://cdn-9.motorsport.com/images/amp/6VyKR1lY/s6/andrea-stella-mclaren-2.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
      "age": "hace 3 h",
@@ -5003,7 +5846,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1439737_hires-1.jpg?width=1200",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 6 h",
+     "age": "hace 7 h",
      "ts": 1794996254.0,
      "teams": [
       "mclaren"
@@ -5087,7 +5930,7 @@
      "url": "https://www.motorsport.com/f1/news/speed-trust-controlled-aggression-what-really-led-to-liam-lawsons-career-saving-f1-2026/10875262/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Liam Lawson's improved form made him too good for Racing Bulls to ignore for the 2027 Formula 1 campaign. But, as always, there's more than just a single factor behind that upturn in performances. It was only last week that the 24",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/6O7zMmO6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/6O7zMmO6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
      "age": "hace 4 h",
@@ -5117,10 +5960,10 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 23 h",
+     "age": "hace 1 d",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
@@ -5150,7 +5993,7 @@
      "url": "https://www.motorsport.com/f1/news/retaining-liam-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874659/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
      "source": "Motorsport.com",
-     "image": "https://cdn-8.motorsport.com/images/amp/YpbAe4N0/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-2.motorsport.com/images/amp/YpbAe4N0/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-15",
      "date_human": "15 nov",
      "age": "hace 2 d",
@@ -5166,7 +6009,7 @@
      "url": "https://www.autosport.com/f1/news/retaining-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874666/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Liam Lawson never failed at Red Bull Racing in 2025. It was Red Bull that failed Liam Lawson. Retaining his services for another year isn't just a logical decision, but perhaps the first sign that the organisation is changing the ",
      "source": "Autosport",
-     "image": "https://cdn-7.motorsport.com/images/amp/YP743Le2/s6/liam-lawson-red-bull-2.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/YP743Le2/s6/liam-lawson-red-bull-2.jpg",
      "date": "2026-11-15",
      "date_human": "15 nov",
      "age": "hace 3 d",
@@ -5244,10 +6087,10 @@
      "url": "https://www.motorsport.com/f1/news/alan-permane-liam-lawson-has-been-a-revelation-as-he-earned-2027-racing-bulls-f1-deal/10875104/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Racing Bulls Formula 1 chief Alan Permane says Liam Lawson's improved 2026 form has been a \"revelation\", and addressed suggestions of a difference in vision within Red Bull. In a wide-ranging interview with Motorsport.com, Permane",
      "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/YXyKl5x6/s6/liam-lawson-racing-bulls.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 23 h",
+     "age": "hace 1 d",
      "ts": 1794934957.0,
      "teams": [
       "red_bull",
@@ -5398,7 +6241,7 @@
      "url": "https://www.autosport.com/f1/news/haas-sticks-with-rafael-camara-for-las-vegas-ryo-hirakawa-in-for-fp1/10874781/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
      "source": "Autosport",
-     "image": "https://cdn-2.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -5413,7 +6256,7 @@
      "url": "https://www.motorsport.com/f1/news/haas-sticks-with-camara-for-las-vegas-hirakawa-in-for-fp1/10874778/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
      "source": "Motorsport.com",
-     "image": "https://cdn-9.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "image": "https://cdn-7.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -5458,7 +6301,7 @@
      "url": "https://www.motorsport.com/f1/news/guenther-steiner-suggests-mark-webber-became-too-involved-in-oscar-piastris-career/10874383/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Former Haas Formula 1 team principal Guenther Steiner believes Mark Webber may have become too involved in Oscar Piastri’s career in the second half of 2025, before the McLaren driver decided he wanted to “do this on my own”. Pias",
      "source": "Motorsport.com",
-     "image": "https://cdn-2.motorsport.com/images/amp/6zoD8dL0/s6/motorsport-com-graphics-2026-1.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/6zoD8dL0/s6/motorsport-com-graphics-2026-1.jpg",
      "date": "2026-11-13",
      "date_human": "13 nov",
      "age": "hace 4 d",
@@ -5474,7 +6317,7 @@
      "url": "https://www.autosport.com/f1/news/leclerc-penalised-for-lawson-clash-antonelli-and-oliver-bearman-also-punished-after-f1-brazilian-gp/10873166/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Charles Leclerc was handed a five-second penalty after the Formula 1 Brazilian Grand Prix for his clash with Liam Lawson, dropping the Ferrari driver down to eighth place in the final results. The Monegasque was battling the Racin",
      "source": "Autosport",
-     "image": "https://cdn-3.motorsport.com/images/amp/0Zq8VdL6/s6/charles-leclerc-ferrari-arvid-.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/0Zq8VdL6/s6/charles-leclerc-ferrari-arvid-.jpg",
      "date": "2026-11-08",
      "date_human": "8 nov",
      "age": "hace 9 d",
@@ -5528,7 +6371,7 @@
      "url": "https://www.motorsport.com/f1/news/mercedes-and-audi-unveil-adidas-collections-for-f1-las-vegas-grand-prix/10874493/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Mercedes and Audi have unveiled special adidas fan collections for the upcoming Formula 1 Las Vegas Grand Prix. Mercedes' range is called \"Neon Lights\", while Audi's is named \"After Hours\". Both collections are available now throu",
      "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/0o5AVbPY/s6/motorsport-com-graphics-2026-1.jpg",
+     "image": "https://cdn-2.motorsport.com/images/amp/0o5AVbPY/s6/motorsport-com-graphics-2026-1.jpg",
      "date": "2026-11-14",
      "date_human": "14 nov",
      "age": "hace 4 d",
@@ -5547,7 +6390,7 @@
      "image": null,
      "date": "2026-11-12",
      "date_human": "12 nov",
-     "age": "hace 5 d",
+     "age": "hace 6 d",
      "ts": 1794502339.0,
      "teams": [
       "audi"
@@ -5562,7 +6405,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Marc_Marquez-10-300x169.jpg",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 2 h",
+     "age": "hace 3 h",
      "ts": 1795010400.0,
      "teams": [],
      "own": false
@@ -5622,7 +6465,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1452325_HiRes-1-300x169.webp",
      "date": "2026-11-18",
      "date_human": "18 nov",
-     "age": "hace 10 h",
+     "age": "hace 11 h",
      "ts": 1794981600.0,
      "teams": [
       "ferrari",
@@ -5635,7 +6478,7 @@
      "url": "https://www.motorsport.com/f1/news/williams-aston-martin-among-new-f1-liveries-for-las-vegas-gp-as-acura-replaces-honda/10874925/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Williams and Aston Martin are among the F1 teams to have revamped their car liveries for this weekend's Las Vegas Grand Prix. F1 heads to Las Vegas for its third of three US races, with the entertainment capital having quickly bec",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 1 d",
@@ -5809,7 +6652,7 @@
      "url": "https://www.motorsport.com/dakar/news/fernando-alonso-to-return-to-dakar-rally-with-aston-martin-in-2027/10874907/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Two-time Formula 1 champion Fernando Alonso will headline Aston Martin’s factory entry into the Dakar Rally in 2027, joining Sebastien Loeb and Lucas Moraes as part of a star-studded line-up. Alonso will drive a Prodrive-built Ast",
      "source": "Motorsport.com",
-     "image": "https://cdn-5.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
+     "image": "https://cdn-1.motorsport.com/images/amp/63QaLLb2/s6/fernando-alonso-aston-martin-r-2.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
      "age": "hace 1 d",
@@ -5824,7 +6667,7 @@
      "url": "https://www.motorsport.com/f1/news/williams-aston-martin-among-new-f1-liveries-for-las-vegas-gp-as-acura-replaces-honda/10874925/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Williams and Aston Martin are among the F1 teams to have revamped their car liveries for this weekend's Las Vegas Grand Prix. F1 heads to Las Vegas for its third of three US races, with the entertainment capital having quickly bec",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
+     "image": "https://cdn-8.motorsport.com/images/amp/2GdKxKQY/s6/williams-las-vegas-livery.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 1 d",
@@ -5912,7 +6755,7 @@
      "url": "https://www.motorsport.com/f1/news/horner-reveals-verstappens-management-intervened-when-the-2022-red-bull-favored-perez/10874617/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "The narrative surrounding Sergio Perez's tenure at Red Bull Racing often centres on his inability to consistently extract the same raw pace as his team-mate Max Verstappen. But former Red Bull Racing CEO and team principal Christi",
      "source": "Motorsport.com",
-     "image": "https://cdn-3.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/6grQkBPY/s6/motorsport-com-graphics-1-2.jpg",
      "date": "2026-11-16",
      "date_human": "16 nov",
      "age": "hace 2 d",
@@ -5928,10 +6771,10 @@
      "url": "https://www.autosport.com/f1/news/herta-qualifies-for-f1-superlicence-as-bottas-remains-bullish-on-2027-seat/10872179/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Cadillac Formula 1 test driver Colton Herta has finally obtained the last remaining superlicence point required to drive in the series, but incumbent Valtteri Bottas remains bullish on his future with the squad. Herta conducted hi",
      "source": "Autosport",
-     "image": "https://cdn-8.motorsport.com/images/amp/01QNpEx0/s6/colton-herta-cadillac-f1-team.jpg",
+     "image": "https://cdn-5.motorsport.com/images/amp/01QNpEx0/s6/colton-herta-cadillac-f1-team.jpg",
      "date": "2026-11-06",
      "date_human": "6 nov",
-     "age": "hace 11 d",
+     "age": "hace 12 d",
      "ts": 1793984236.0,
      "teams": [
       "cadillac"
@@ -5943,7 +6786,7 @@
      "url": "https://www.autosport.com/f1/news/liverpool-fc-owners-emerge-as-potential-buyers-of-cadillac-f1-shares-amid-twg-uncertainty/10871500/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Fresh doubts have emerged over the future of Cadillac Formula 1's majority ownership amid reports Mark Walter's TWG Global is looking to offload some of its shares - with Liverpool FC owner Fenway Sports Group said to be among the",
      "source": "Autosport",
-     "image": "https://cdn-7.motorsport.com/images/amp/0Zq8bZL6/s6/sergio-perez-cadillac.jpg",
+     "image": "https://cdn-4.motorsport.com/images/amp/0Zq8bZL6/s6/sergio-perez-cadillac.jpg",
      "date": "2026-11-04",
      "date_human": "4 nov",
      "age": "hace 14 d",
@@ -5958,7 +6801,7 @@
      "url": "https://www.autosport.com/f1/news/herta-to-contest-fp1-in-brazil/10871438/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
      "desc": "Cadillac test driver Colton Herta will conduct his sixth Friday practice session of the Formula 1 season at this weekend's Brazil Grand Prix to collect his missing FIA superlicence point required to race in the series. Herta, who ",
      "source": "Autosport",
-     "image": "https://cdn-2.motorsport.com/images/amp/6n7ABxe0/s6/colton-herta-cadillac-f1-team-2.jpg",
+     "image": "https://cdn-3.motorsport.com/images/amp/6n7ABxe0/s6/colton-herta-cadillac-f1-team-2.jpg",
      "date": "2026-11-04",
      "date_human": "4 nov",
      "age": "hace 14 d",
@@ -6573,7 +7416,7 @@
    "url": "https://www.motorsport.com/f1/news/five-things-to-watch-out-for-at-the-f1-las-vegas-gp/10875316/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "desc": "Formula 1 kickstarts its final triple-header of the 2026 campaign with this weekend’s Las Vegas Grand Prix. The American venue serves as race 21 of the 23-round calendar with grands prix in Qatar and Abu Dhabi to follow Vegas and ",
    "source": "Motorsport.com",
-   "image": "https://cdn-9.motorsport.com/images/amp/6DGq1eGY/s6/lando-norris-mclaren-george-ru.jpg",
+   "image": "https://cdn-6.motorsport.com/images/amp/6DGq1eGY/s6/lando-norris-mclaren-george-ru.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
    "age": "hace 1 h",
@@ -6628,7 +7471,7 @@
    "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/George-Russell-F1-300x169.webp",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 1 h",
+   "age": "hace 2 h",
    "ts": 1795014000.0,
    "teams": [
     "mercedes"
@@ -6639,10 +7482,10 @@
    "url": "https://www.autosport.com/f1/news/the-factors-behind-the-abortive-f1-2030-rules-announcement/10875290/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
    "desc": "Famously, when the papal conclave gathers to elect a new pope, a successful vote is communicated to the huddled masses via smoke from the Sistine Chapel chimney as the chemically impregnated ballot papers are burned: white smoke s",
    "source": "Autosport",
-   "image": "https://cdn-5.motorsport.com/images/amp/0rVx13O0/s6/stefano-domenicali-mohammed-be-2.jpg",
+   "image": "https://cdn-3.motorsport.com/images/amp/0rVx13O0/s6/stefano-domenicali-mohammed-be-2.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 2 h",
+   "age": "hace 3 h",
    "ts": 1795010888.0,
    "teams": []
   },
@@ -6651,10 +7494,10 @@
    "url": "https://www.motorsport.com/f1/news/future-imperfect-whats-behind-the-abortive-2030-f1-rules-announcement/10875283/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "desc": "Famously, when the papal conclave gathers to elect a new pope, a successful vote is communicated to the huddled masses via smoke from the Sistine Chapel chimney as the chemically impregnated ballot papers are burned: white smoke s",
    "source": "Motorsport.com",
-   "image": "https://cdn-7.motorsport.com/images/amp/0o5AkOxY/s6/gettyimages-2209898755.jpg",
+   "image": "https://cdn-3.motorsport.com/images/amp/0o5AkOxY/s6/gettyimages-2209898755.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 2 h",
+   "age": "hace 3 h",
    "ts": 1795010659.0,
    "teams": []
   },
@@ -6663,7 +7506,7 @@
    "url": "https://www.motorsport.com/f1/news/we-havent-taken-any-steps-backwards-mclaren-boss-explains-2026/10875219/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
    "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
    "source": "Motorsport.com",
-   "image": "https://cdn-4.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
+   "image": "https://cdn-8.motorsport.com/images/amp/6grBblnY/s6/andrea-stella-mclaren-2.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
    "age": "hace 3 h",
@@ -6677,7 +7520,7 @@
    "url": "https://www.autosport.com/f1/news/what-mclaren-has-learned-from-a-tough-f1-2026/10875268/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
    "desc": "McLaren's 2026 Formula 1 season has been characterised by a recovery effort that never quite came to fruition. Yet, team principal Andrea Stella insists the reasons for this are well understood, so he can be optimistic about 2027:",
    "source": "Autosport",
-   "image": "https://cdn-3.motorsport.com/images/amp/6VyKR1lY/s6/andrea-stella-mclaren-2.jpg",
+   "image": "https://cdn-9.motorsport.com/images/amp/6VyKR1lY/s6/andrea-stella-mclaren-2.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
    "age": "hace 3 h",
@@ -6694,7 +7537,7 @@
    "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1453426_hires.jpg?width=1200",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 4 h",
+   "age": "hace 5 h",
    "ts": 1795003533.0,
    "teams": []
   },
@@ -6706,7 +7549,7 @@
    "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1452327_hires.jpg?width=1200",
    "date": "2026-11-18",
    "date_human": "18 nov",
-   "age": "hace 5 h",
+   "age": "hace 6 h",
    "ts": 1794998926.0,
    "teams": [
     "mercedes",
@@ -6730,7 +7573,7 @@
    "url": "https://www.autosport.com/f1/news/the-antonelli-you-dont-know-daily-life-with-f1s-newest-champion/10875217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
    "desc": "There is one thing that physiotherapist Sergi Avila took a little while to understand. When Kimi Antonelli finally found himself with a free weekend, after weeks being spent between circuits, airports and training, the most logica",
    "source": "Autosport",
-   "image": "https://cdn-3.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
+   "image": "https://cdn-8.motorsport.com/images/amp/YN7vl3m6/s6/andrea-kimi-antonelli-mercedes-3.jpg",
    "date": "2026-11-18",
    "date_human": "18 nov",
    "age": "hace 7 h",
