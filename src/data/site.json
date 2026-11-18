@@ -2878,7 +2878,7 @@
    ],
    "photo": "assets/drivers/norris.jpg",
    "photo_of": "Lando Norris",
-   "car": null
+   "car": "assets/teams/mclaren-car.jpg"
   },
   {
    "id": "rb",
@@ -3030,7 +3030,7 @@
    ],
    "photo": "assets/drivers/lawson.jpg",
    "photo_of": "Liam Lawson",
-   "car": null
+   "car": "assets/teams/rb-car.jpg"
   },
   {
    "id": "alpine",
