@@ -396,13 +396,21 @@ def circuit_blurb(name: str, locality: str, country: str, history: dict, gp: str
     """Texto propio, corto y factual: nada de párrafos de enciclopedia."""
     if not history:
         return f"{name}, en {locality} ({country}). Sede del {gp}."
+    n = history["editions"]
+    w = history["distinct_winners"]
+    plural = lambda k, one, many: one if k == 1 else f"{k} {many}"
     parts = [
-        f"{name}, en {locality} ({country}). Ha acogido {history['editions']} ediciones del mundial "
-        f"desde {history['first_year']}, con {history['distinct_winners']} ganadores distintos.",
+        f"{name}, en {locality} ({country}). Ha acogido {plural(n, 'una edición', str(n) + ' ediciones')} "
+        f"del mundial desde {history['first_year']}, con "
+        f"{plural(w, 'un solo ganador', 'ganadores distintos')}."
+        if n == 1 else
+        f"{name}, en {locality} ({country}). Ha acogido {n} ediciones del mundial "
+        f"desde {history['first_year']}, con {w} ganadores distintos.",
     ]
     if history.get("top_team"):
+        tw = history["top_team"]["wins"]
         parts.append(f"El equipo más laureado es {history['top_team']['name']}, "
-                     f"con {history['top_team']['wins']} victorias.")
+                     f"con {plural(tw, 'una victoria', 'victorias')}.")
     if history.get("top_driver") and history["top_driver"]["wins"] > 1:
         parts.append(f"El piloto con más triunfos es {history['top_driver']['name']} "
                      f"({history['top_driver']['wins']}).")
@@ -699,6 +707,7 @@ def commons_car_photo(team_name: str, slug_name: str) -> str | None:
 
 # Títulos extra de Wikipedia para circuitos cuya página solo ofrece mapas.
 CIRCUIT_SPECS = {
+    "madring": (5.416, 57),
     "albert_park": (5.278, 58), "shanghai": (5.451, 56), "suzuka": (5.807, 53),
     "miami": (5.412, 57), "villeneuve": (4.361, 70), "monaco": (3.337, 78),
     "catalunya": (4.657, 66), "red_bull_ring": (4.318, 71), "silverstone": (5.891, 52),
@@ -1070,8 +1079,10 @@ def _run() -> None:
     drivers = build_drivers(api, teams)
 
     stats = {}
+    overrides = {"rafael_camara": "Rafael Camara"}
     for d in drivers:
-        stats[d["id"]] = {"bio": driver_blurb(d), "photo": driver_photo(d["wiki"], d["id"])}
+        wiki = overrides.get(d["id"], d["wiki"])
+        stats[d["id"]] = {"bio": driver_blurb(d), "photo": driver_photo(wiki, d["id"])}
         d.update(stats[d["id"]])
 
     done = [c for c in calendar if c["done"]]
