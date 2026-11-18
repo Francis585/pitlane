@@ -1201,7 +1201,7 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
   .logo svg { width: 20px; height: 14px; }
   .nav-round { display: none; }
   .nav-links {
-    order: 0; width: auto; flex: 1; justify-content: flex-end;
+    order: 0; width: auto; flex: 1; justify-content: flex-start;
     overflow-x: auto; flex-wrap: nowrap; scrollbar-width: none; gap: 0;
   }
   .nav-links::-webkit-scrollbar { display: none; }
@@ -1338,4 +1338,9 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
   .cal-row .dt { font-size: .58rem; text-align: right; white-space: nowrap; padding-top: 2px; }
   .podium-mini { margin-top: 3px; }
   .podium-mini span { font-size: .54rem; }
+}
+
+.circ-link--m { display: none; }
+@media (max-width: 760px) {
+  .circ-link--m { display: inline-block; margin-top: 4px; font-size: .54rem; }
 }
