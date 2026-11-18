@@ -116,7 +116,7 @@
       <div><b style="font-size:1.5rem">{{ c.history.top_team.name }}</b><span>{{ c.history.top_team.wins }} victorias</span></div>
     </div>
 
-    <div class="split">
+    <div class="hist-grid">
       <div>
         <div class="eyebrow">Victorias por equipo</div>
         <div class="hist-bars">
@@ -130,8 +130,9 @@
           {% endfor %}
         </div>
       </div>
+
       <div>
-        <div class="eyebrow" style="margin-bottom:12px">Pilotos con más victorias</div>
+        <div class="eyebrow">Pilotos con más victorias</div>
         <div class="hist-bars">
           {% for d in c.history.drivers %}
           <div class="hist-bar">
@@ -141,8 +142,10 @@
           </div>
           {% endfor %}
         </div>
+      </div>
 
-        <div class="eyebrow" style="margin:22px 0 12px">Últimos ganadores</div>
+      <div>
+        <div class="eyebrow">Últimos ganadores</div>
         <div class="hist-winners">
           {% for w in c.history.winners %}
           {% set tm = meta.get(w.team_id) %}
