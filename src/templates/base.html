@@ -102,7 +102,7 @@
 <div class="gp-ribbon">
   <div class="wrap gp-ribbon-in">
     <span class="gp-tag">Semana de GP</span>
-    <span class="gp-name"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(gp.country) }}.png" alt="" width="20" height="15"> {{ gp.gp }}</span>
+    <span class="gp-name">{{ flag_tag(flag_code(gp.country)) | safe }} {{ gp.gp }}</span>
     <span class="gp-when">{% if gp.days == 0 %}Hoy en pista{% elif gp.days == 1 %}Mañana{% else %}Faltan {{ gp.days }} días{% endif %}</span>
   </div>
 </div>

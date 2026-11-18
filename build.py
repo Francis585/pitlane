@@ -96,6 +96,23 @@ def auto_meta(team: dict, index: int = 0) -> dict:
     }
 
 
+def flag_tag(code: str, cls: str = "flag-img", w: int = 20, h: int = 15) -> str:
+    """Bandera nítida en cualquier pantalla, usando los anchos que sirve flagcdn."""
+    allowed = [20, 40, 80, 160, 320]
+
+    def pick(px: int) -> int:
+        return next((a for a in allowed if a >= px), allowed[-1])
+
+    one, two, three = pick(w), pick(w * 2), pick(w * 3)
+    return (
+        f'<img class="{cls}" src="https://flagcdn.com/w{one}/{code}.png" '
+        f'srcset="https://flagcdn.com/w{one}/{code}.png 1x, '
+        f'https://flagcdn.com/w{two}/{code}.png 2x, '
+        f'https://flagcdn.com/w{three}/{code}.png 3x" '
+        f'width="{w}" height="{h}" alt="" loading="lazy" decoding="async">'
+    )
+
+
 def load_site() -> dict:
     return json.loads((SRC / "data" / "site.json").read_text(encoding="utf-8"))
 
@@ -191,6 +208,7 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
     env.globals.update(
         img_url=asset_url,
         flag_code=lambda c: COUNTRY_CODE.get(str(c), "un"),
+        flag_tag=flag_tag,
     )
 
     teams_by_id = {t["id"]: t for t in site["teams"]}
@@ -257,6 +275,7 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
             asset_css=asset_versions["css"], asset_js=asset_versions["js"],
             og_image=ctx.pop("og_image", OG_CARDS.get("home")),
             flag_code=lambda c: COUNTRY_CODE.get(str(c), "un"),
+        flag_tag=flag_tag,
             **ctx,
         )
         dest.write_text(html, encoding="utf-8")

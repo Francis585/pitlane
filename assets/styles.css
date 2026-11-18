@@ -1436,7 +1436,8 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
 .gp-count b { font-size: clamp(2.2rem, 3.4vw, 2.9rem); letter-spacing: -.02em; }
 
 /* las banderas nunca se estiran */
-.flag-img { width: 20px !important; height: auto !important; aspect-ratio: auto !important; object-fit: none; }
+.flag-img { width: 20px !important; height: auto !important; aspect-ratio: auto !important;
+            object-fit: cover; image-rendering: -webkit-optimize-contrast; background: #1a1c22; }
 .circ-card .cc-meta .flag-img, .cal-row .flag-img { width: 18px !important; }
 
 /* menos aire al principio de las páginas interiores */
@@ -1492,4 +1493,11 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
   .hist-grid { grid-template-columns: 1fr; gap: 26px; }
   .hist-bar { grid-template-columns: minmax(0, 110px) minmax(0, 1fr) 26px; }
   .hw-team { font-size: .58rem; }
+}
+
+/* banderas siempre nítidas */
+.flag-img, .flag-lg { border-radius: 2px; }
+.circ-card .cc-meta .flag-img { width: 20px !important; }
+@media (min-resolution: 2dppx) {
+  .flag-img { image-rendering: auto; }
 }

@@ -8,7 +8,7 @@
   <div class="pat pat-{{ theme.pattern }}"></div>
   {% if c.photo %}<div class="circ-hero-img" style="--img:url('{{ img_url(c.photo) }}')"></div>{% endif %}
   <div class="wrap circ-hero-in">
-    <div class="eyebrow" style="color:{{ theme.brand }}"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(c.country) }}.png" alt="" width="20" height="15"> {{ c.locality }}, {{ c.country_es }} · Ronda {{ c.round }}</div>
+    <div class="eyebrow" style="color:{{ theme.brand }}">{{ flag_tag(flag_code(c.country)) | safe }} {{ c.locality }}, {{ c.country_es }} · Ronda {{ c.round }}</div>
     <h1 style="margin-top:10px">{{ c.name }}</h1>
     <p class="team-sub" style="max-width:58ch">{{ c.gp }} · {{ c.date_long }} · {{ c.weekday|capitalize }}</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
@@ -26,7 +26,7 @@
       <div><b>{{ c.round }}</b><span>Ronda</span></div>
       <div><b>{{ c.date_human }}</b><span>Fecha</span></div>
       <div><b>{{ c.locality }}</b><span>Ciudad</span></div>
-      <div><b><img class="flag-lg" src="https://flagcdn.com/w80/{{ flag_code(c.country) }}.png" alt="{{ c.country_es }}" width="38" height="26"></b><span>País</span></div>
+      <div><b>{{ flag_tag(flag_code(c.country), "flag-lg", 38, 26) | safe }}</b><span>País</span></div>
       {% if c.winner %}<div><b>{{ c.winner }}</b><span>Ganador {{ site.season }}</span></div>{% endif %}
     </div>
 

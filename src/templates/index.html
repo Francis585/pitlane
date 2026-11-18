@@ -32,7 +32,7 @@
     {% if site.next_race %}
     {% set nr = site.next_race %}
     <a class="gp-card" href="{% if next_circuit %}{{ root }}circuitos/{{ next_circuit.id }}.html{% else %}{{ root }}calendario.html{% endif %}">
-      <span class="gp-flag"><img class="flag-img" src="https://flagcdn.com/w80/{{ flag_code(nr.country) }}.png" alt="" width="28" height="20"></span>
+      <span class="gp-flag">{{ flag_tag(flag_code(nr.country), "flag-img", 28, 20) | safe }}</span>
       <span class="gp-txt">
         <small>Próximo gran premio</small>
         <b>{{ nr.name }}</b>

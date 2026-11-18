@@ -20,7 +20,7 @@
       <div class="cal-item">
         <div class="cal-row {% if r.done %}done{% elif r.is_next %}next{% endif %}">
           <span class="rd">{{ '%02d'|format(r.round) }}</span>
-          <span class="flag"><img class="flag-img" src="https://flagcdn.com/w40/{{ flag_code(r.country) }}.png" alt="" width="20" height="15"></span>
+          <span class="flag">{{ flag_tag(flag_code(r.country)) | safe }}</span>
           <div>
             <div class="gp">{{ r.name }}</div>
             {% if r.winner %}<div class="podium-mini"><span>Ganó {{ r.winner }}</span></div>{% endif %}
