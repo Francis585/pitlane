@@ -62,6 +62,18 @@ GP_ES = {
     "Russian": "Rusia", "Eifel": "Eifel", "Styrian": "Estiria", "Tuscan": "Toscana",
 }
 
+NATIONALITY_ES = {
+    "Italian": "italiano", "British": "británico", "German": "alemán", "French": "francés",
+    "Spanish": "español", "Dutch": "neerlandés", "Mexican": "mexicano", "Brazilian": "brasileño",
+    "Australian": "australiano", "Canadian": "canadiense", "Japanese": "japonés", "Chinese": "chino",
+    "Monegasque": "monegasco", "Austrian": "austriaco", "Belgian": "belga", "Hungarian": "húngaro",
+    "Azerbaijani": "azerbaiyano", "Singaporean": "singapurense", "Thai": "tailandés",
+    "Finnish": "finlandés", "Danish": "danés", "Swiss": "suizo", "Swedish": "sueco",
+    "New Zealander": "neozelandés", "Argentine": "argentino", "American": "estadounidense",
+    "Portuguese": "portugués", "Polish": "polaco", "Russian": "ruso", "South African": "sudafricano",
+    "Turkish": "turco", "Saudi": "saudí", "Bahraini": "bareiní",
+}
+
 COUNTRY_ES = {
     "Australia": "Australia", "China": "China", "Japan": "Japón", "USA": "Estados Unidos",
     "Canada": "Canadá", "Monaco": "Mónaco", "Spain": "España", "Austria": "Austria",
@@ -697,6 +709,23 @@ def driver_photo(wiki_title: str, did: str) -> str | None:
         return None
 
 
+def driver_blurb(d: dict) -> str:
+    """Ficha redactada con los datos del campeonato, sin copiar de ninguna enciclopedia."""
+    team = d["team"]["name"] if d.get("team") else "la Fórmula 1"
+    ordinals = {1: "líder", 2: "segundo", 3: "tercero", 4: "cuarto", 5: "quinto"}
+    place = ordinals.get(d["pos"], f"{d['pos']}º")
+    nat = NATIONALITY_ES.get(d["nationality"], d["nationality"]).lower()
+    base = (f"{d['full']} ({nat}, {d['age']} años) pilota para {team} "
+            f"en la temporada {SEASON}. Es {place} del mundial con {d['points']} puntos")
+    if d["wins"] == 0:
+        base += " y todavía no ha ganado una carrera este año."
+    elif d["wins"] == 1:
+        base += " y ha logrado una victoria."
+    else:
+        base += f" y suma {d['wins']} victorias."
+    return base
+
+
 def driver_bio(wiki_title: str) -> str:
     """Resumen en español si existe; si no, el inglés."""
     for host in ("es.wikipedia.org", "en.wikipedia.org"):
@@ -964,7 +993,7 @@ def _run() -> None:
 
     stats = {}
     for d in drivers:
-        stats[d["id"]] = {"bio": driver_bio(d["wiki"]), "photo": driver_photo(d["wiki"], d["id"])}
+        stats[d["id"]] = {"bio": driver_blurb(d), "photo": driver_photo(d["wiki"], d["id"])}
         d.update(stats[d["id"]])
 
     done = [c for c in calendar if c["done"]]

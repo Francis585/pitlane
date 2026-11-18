@@ -1462,3 +1462,19 @@ table tbody tr:hover { background: rgba(255,255,255,.03); }
 .circ-hero .circ-hero-in { padding-block: clamp(34px, 5vw, 64px) clamp(26px, 3.4vw, 44px); }
 .circ-hero h1 { font-size: clamp(2rem, 5.6vw, 4.2rem); line-height: .92; }
 @media (max-width: 760px) { .circ-hero h1 { font-size: clamp(1.7rem, 8.4vw, 2.6rem); } }
+
+/* histórico: dos columnas equilibradas y barras legibles */
+.hist-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 72px); }
+.hist-bar { grid-template-columns: minmax(74px, 132px) minmax(0, 1fr) 30px; gap: 14px; }
+.hb-name { font-size: .92rem; }
+@media (max-width: 900px) {
+  .hist-grid { grid-template-columns: 1fr; }
+  .hist-bar { grid-template-columns: minmax(70px, 110px) minmax(0, 1fr) 26px; }
+}
+@media (max-width: 520px) {
+  .hist-bar { grid-template-columns: 1fr 26px; }
+  .hist-bar .hb-track { display: none; }
+}
+/* la banda de datos no se tiñe de GP */
+.race-week .kpis > div { background: transparent; }
+.race-week .kpis { border-color: var(--line); }

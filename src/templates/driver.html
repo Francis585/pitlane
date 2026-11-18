@@ -25,7 +25,6 @@
     </div>
     {% if d.bio %}
     <p class="driver-bio">{{ d.bio }}</p>
-    <p class="src-note" style="margin-top:10px">Resumen biográfico: Wikipedia (CC BY-SA)</p>
     {% endif %}
     {% if d.team %}
     <a class="btn" style="margin-top:22px" href="{{ root }}escuderias/{{ d.team.slug }}.html">
@@ -86,8 +85,6 @@
         <div style="display:flex;justify-content:space-between"><span>Nacimiento</span><span style="color:var(--fg)">{{ d.dob }}</span></div>
         <div style="display:flex;justify-content:space-between"><span>Código FIA</span><span style="color:var(--fg)">{{ d.code }}</span></div>
         <div style="display:flex;justify-content:space-between"><span>Equipo {{ site.season }}</span><span style="color:var(--fg)">{{ d.team.name if d.team else '—' }}</span></div>
-        <div style="display:flex;justify-content:space-between"><span>Wikipedia</span>
-          <a href="https://en.wikipedia.org/wiki/{{ d.wiki }}" target="_blank" rel="noopener noreferrer nofollow" style="color:var(--brand)">Ficha</a></div>
       </div>
     </div>
   </div>
