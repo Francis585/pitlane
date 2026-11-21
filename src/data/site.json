@@ -3106,8 +3106,8 @@
    }
   }
  ],
- "generated": "2026-11-20T23:29:01+00:00",
- "round": 20,
+ "generated": "2026-11-21T13:23:02+00:00",
+ "round": 21,
  "total_races": 23,
  "rounds_done": 20,
  "calendar": [
@@ -18277,7 +18277,251 @@
      "time_utc": "04:00"
     }
    ],
-   "days_until": 2
+   "qualifying": [
+    {
+     "pos": "1",
+     "driver": "Andrea Kimi Antonelli",
+     "driver_id": "antonelli",
+     "code": "ANT",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:34.684",
+     "q2": "1:35.086",
+     "q3": "1:33.893"
+    },
+    {
+     "pos": "2",
+     "driver": "Max Verstappen",
+     "driver_id": "max_verstappen",
+     "code": "VER",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:35.264",
+     "q2": "1:34.394",
+     "q3": "1:34.151"
+    },
+    {
+     "pos": "3",
+     "driver": "George Russell",
+     "driver_id": "russell",
+     "code": "RUS",
+     "team": "Mercedes",
+     "team_id": "mercedes",
+     "q1": "1:34.664",
+     "q2": "1:34.617",
+     "q3": "1:34.224"
+    },
+    {
+     "pos": "4",
+     "driver": "Lando Norris",
+     "driver_id": "norris",
+     "code": "NOR",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:35.109",
+     "q2": "1:34.766",
+     "q3": "1:34.244"
+    },
+    {
+     "pos": "5",
+     "driver": "Isack Hadjar",
+     "driver_id": "hadjar",
+     "code": "HAD",
+     "team": "Red Bull",
+     "team_id": "red_bull",
+     "q1": "1:35.413",
+     "q2": "1:35.064",
+     "q3": "1:34.592"
+    },
+    {
+     "pos": "6",
+     "driver": "Arvid Lindblad",
+     "driver_id": "arvid_lindblad",
+     "code": "LIN",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:35.456",
+     "q2": "1:34.963",
+     "q3": "1:34.668"
+    },
+    {
+     "pos": "7",
+     "driver": "Oscar Piastri",
+     "driver_id": "piastri",
+     "code": "PIA",
+     "team": "McLaren",
+     "team_id": "mclaren",
+     "q1": "1:35.491",
+     "q2": "1:34.763",
+     "q3": "1:34.899"
+    },
+    {
+     "pos": "8",
+     "driver": "Liam Lawson",
+     "driver_id": "lawson",
+     "code": "LAW",
+     "team": "RB F1 Team",
+     "team_id": "rb",
+     "q1": "1:35.489",
+     "q2": "1:35.048",
+     "q3": "1:35.090"
+    },
+    {
+     "pos": "9",
+     "driver": "Pierre Gasly",
+     "driver_id": "gasly",
+     "code": "GAS",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:35.718",
+     "q2": "1:34.559",
+     "q3": "1:35.105"
+    },
+    {
+     "pos": "10",
+     "driver": "Franco Colapinto",
+     "driver_id": "colapinto",
+     "code": "COL",
+     "team": "Alpine F1 Team",
+     "team_id": "alpine",
+     "q1": "1:35.930",
+     "q2": "1:34.982",
+     "q3": "1:35.314"
+    },
+    {
+     "pos": "11",
+     "driver": "Charles Leclerc",
+     "driver_id": "leclerc",
+     "code": "LEC",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:35.040",
+     "q2": "1:35.197",
+     "q3": ""
+    },
+    {
+     "pos": "12",
+     "driver": "Lewis Hamilton",
+     "driver_id": "hamilton",
+     "code": "HAM",
+     "team": "Ferrari",
+     "team_id": "ferrari",
+     "q1": "1:35.743",
+     "q2": "1:35.253",
+     "q3": ""
+    },
+    {
+     "pos": "13",
+     "driver": "Nico Hülkenberg",
+     "driver_id": "hulkenberg",
+     "code": "HUL",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:35.710",
+     "q2": "1:35.460",
+     "q3": ""
+    },
+    {
+     "pos": "14",
+     "driver": "Carlos Sainz",
+     "driver_id": "sainz",
+     "code": "SAI",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:35.588",
+     "q2": "1:35.641",
+     "q3": ""
+    },
+    {
+     "pos": "15",
+     "driver": "Gabriel Bortoleto",
+     "driver_id": "bortoleto",
+     "code": "BOR",
+     "team": "Audi",
+     "team_id": "audi",
+     "q1": "1:36.149",
+     "q2": "1:35.993",
+     "q3": ""
+    },
+    {
+     "pos": "16",
+     "driver": "Alexander Albon",
+     "driver_id": "albon",
+     "code": "ALB",
+     "team": "Williams",
+     "team_id": "williams",
+     "q1": "1:35.856",
+     "q2": "1:36.125",
+     "q3": ""
+    },
+    {
+     "pos": "17",
+     "driver": "Rafael Camara",
+     "driver_id": "rafael_camara",
+     "code": "CAM",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:36.220",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "18",
+     "driver": "Sergio Pérez",
+     "driver_id": "perez",
+     "code": "PER",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:37.383",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "19",
+     "driver": "Fernando Alonso",
+     "driver_id": "alonso",
+     "code": "ALO",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:37.400",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "20",
+     "driver": "Lance Stroll",
+     "driver_id": "stroll",
+     "code": "STR",
+     "team": "Aston Martin",
+     "team_id": "aston_martin",
+     "q1": "1:37.550",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "21",
+     "driver": "Valtteri Bottas",
+     "driver_id": "bottas",
+     "code": "BOT",
+     "team": "Cadillac F1 Team",
+     "team_id": "cadillac",
+     "q1": "1:37.601",
+     "q2": "",
+     "q3": ""
+    },
+    {
+     "pos": "22",
+     "driver": "Oliver Bearman",
+     "driver_id": "bearman",
+     "code": "BEA",
+     "team": "Haas F1 Team",
+     "team_id": "haas",
+     "q1": "1:48.005",
+     "q2": "",
+     "q3": ""
+    }
+   ],
+   "days_until": 1
   },
   {
    "round": 22,
@@ -18489,7 +18733,251 @@
     "time_utc": "04:00"
    }
   ],
-  "days_until": 2
+  "qualifying": [
+   {
+    "pos": "1",
+    "driver": "Andrea Kimi Antonelli",
+    "driver_id": "antonelli",
+    "code": "ANT",
+    "team": "Mercedes",
+    "team_id": "mercedes",
+    "q1": "1:34.684",
+    "q2": "1:35.086",
+    "q3": "1:33.893"
+   },
+   {
+    "pos": "2",
+    "driver": "Max Verstappen",
+    "driver_id": "max_verstappen",
+    "code": "VER",
+    "team": "Red Bull",
+    "team_id": "red_bull",
+    "q1": "1:35.264",
+    "q2": "1:34.394",
+    "q3": "1:34.151"
+   },
+   {
+    "pos": "3",
+    "driver": "George Russell",
+    "driver_id": "russell",
+    "code": "RUS",
+    "team": "Mercedes",
+    "team_id": "mercedes",
+    "q1": "1:34.664",
+    "q2": "1:34.617",
+    "q3": "1:34.224"
+   },
+   {
+    "pos": "4",
+    "driver": "Lando Norris",
+    "driver_id": "norris",
+    "code": "NOR",
+    "team": "McLaren",
+    "team_id": "mclaren",
+    "q1": "1:35.109",
+    "q2": "1:34.766",
+    "q3": "1:34.244"
+   },
+   {
+    "pos": "5",
+    "driver": "Isack Hadjar",
+    "driver_id": "hadjar",
+    "code": "HAD",
+    "team": "Red Bull",
+    "team_id": "red_bull",
+    "q1": "1:35.413",
+    "q2": "1:35.064",
+    "q3": "1:34.592"
+   },
+   {
+    "pos": "6",
+    "driver": "Arvid Lindblad",
+    "driver_id": "arvid_lindblad",
+    "code": "LIN",
+    "team": "RB F1 Team",
+    "team_id": "rb",
+    "q1": "1:35.456",
+    "q2": "1:34.963",
+    "q3": "1:34.668"
+   },
+   {
+    "pos": "7",
+    "driver": "Oscar Piastri",
+    "driver_id": "piastri",
+    "code": "PIA",
+    "team": "McLaren",
+    "team_id": "mclaren",
+    "q1": "1:35.491",
+    "q2": "1:34.763",
+    "q3": "1:34.899"
+   },
+   {
+    "pos": "8",
+    "driver": "Liam Lawson",
+    "driver_id": "lawson",
+    "code": "LAW",
+    "team": "RB F1 Team",
+    "team_id": "rb",
+    "q1": "1:35.489",
+    "q2": "1:35.048",
+    "q3": "1:35.090"
+   },
+   {
+    "pos": "9",
+    "driver": "Pierre Gasly",
+    "driver_id": "gasly",
+    "code": "GAS",
+    "team": "Alpine F1 Team",
+    "team_id": "alpine",
+    "q1": "1:35.718",
+    "q2": "1:34.559",
+    "q3": "1:35.105"
+   },
+   {
+    "pos": "10",
+    "driver": "Franco Colapinto",
+    "driver_id": "colapinto",
+    "code": "COL",
+    "team": "Alpine F1 Team",
+    "team_id": "alpine",
+    "q1": "1:35.930",
+    "q2": "1:34.982",
+    "q3": "1:35.314"
+   },
+   {
+    "pos": "11",
+    "driver": "Charles Leclerc",
+    "driver_id": "leclerc",
+    "code": "LEC",
+    "team": "Ferrari",
+    "team_id": "ferrari",
+    "q1": "1:35.040",
+    "q2": "1:35.197",
+    "q3": ""
+   },
+   {
+    "pos": "12",
+    "driver": "Lewis Hamilton",
+    "driver_id": "hamilton",
+    "code": "HAM",
+    "team": "Ferrari",
+    "team_id": "ferrari",
+    "q1": "1:35.743",
+    "q2": "1:35.253",
+    "q3": ""
+   },
+   {
+    "pos": "13",
+    "driver": "Nico Hülkenberg",
+    "driver_id": "hulkenberg",
+    "code": "HUL",
+    "team": "Audi",
+    "team_id": "audi",
+    "q1": "1:35.710",
+    "q2": "1:35.460",
+    "q3": ""
+   },
+   {
+    "pos": "14",
+    "driver": "Carlos Sainz",
+    "driver_id": "sainz",
+    "code": "SAI",
+    "team": "Williams",
+    "team_id": "williams",
+    "q1": "1:35.588",
+    "q2": "1:35.641",
+    "q3": ""
+   },
+   {
+    "pos": "15",
+    "driver": "Gabriel Bortoleto",
+    "driver_id": "bortoleto",
+    "code": "BOR",
+    "team": "Audi",
+    "team_id": "audi",
+    "q1": "1:36.149",
+    "q2": "1:35.993",
+    "q3": ""
+   },
+   {
+    "pos": "16",
+    "driver": "Alexander Albon",
+    "driver_id": "albon",
+    "code": "ALB",
+    "team": "Williams",
+    "team_id": "williams",
+    "q1": "1:35.856",
+    "q2": "1:36.125",
+    "q3": ""
+   },
+   {
+    "pos": "17",
+    "driver": "Rafael Camara",
+    "driver_id": "rafael_camara",
+    "code": "CAM",
+    "team": "Haas F1 Team",
+    "team_id": "haas",
+    "q1": "1:36.220",
+    "q2": "",
+    "q3": ""
+   },
+   {
+    "pos": "18",
+    "driver": "Sergio Pérez",
+    "driver_id": "perez",
+    "code": "PER",
+    "team": "Cadillac F1 Team",
+    "team_id": "cadillac",
+    "q1": "1:37.383",
+    "q2": "",
+    "q3": ""
+   },
+   {
+    "pos": "19",
+    "driver": "Fernando Alonso",
+    "driver_id": "alonso",
+    "code": "ALO",
+    "team": "Aston Martin",
+    "team_id": "aston_martin",
+    "q1": "1:37.400",
+    "q2": "",
+    "q3": ""
+   },
+   {
+    "pos": "20",
+    "driver": "Lance Stroll",
+    "driver_id": "stroll",
+    "code": "STR",
+    "team": "Aston Martin",
+    "team_id": "aston_martin",
+    "q1": "1:37.550",
+    "q2": "",
+    "q3": ""
+   },
+   {
+    "pos": "21",
+    "driver": "Valtteri Bottas",
+    "driver_id": "bottas",
+    "code": "BOT",
+    "team": "Cadillac F1 Team",
+    "team_id": "cadillac",
+    "q1": "1:37.601",
+    "q2": "",
+    "q3": ""
+   },
+   {
+    "pos": "22",
+    "driver": "Oliver Bearman",
+    "driver_id": "bearman",
+    "code": "BEA",
+    "team": "Haas F1 Team",
+    "team_id": "haas",
+    "q1": "1:48.005",
+    "q2": "",
+    "q3": ""
+   }
+  ],
+  "days_until": 1
  },
  "last_round": {
   "round": 20,
@@ -19226,95 +19714,95 @@
    ],
    "news": [
     {
-     "title": "George Russell issues ‘realistic’ F1 Las Vegas outlook after topping FP2",
-     "url": "https://www.motorsportweek.com/2026/11/20/george-russell-issues-realistic-f1-las-vegas-outlook-after-topping-fp2/",
-     "desc": "Despite topping FP2, George Russell has called his Mercedes team to \"understand\" the pace differential at the Formula 1 Las Vegas Grand Prix. The post George Russell issues &#8216;realistic&#8217; F1 Las Vegas outlook after toppin",
+     "title": "Lewis Hamilton laments Las Vegas F1 qualifying: ‘We were nowhere’",
+     "url": "https://www.motorsportweek.com/2026/11/21/lewis-hamilton-laments-las-vegas-f1-qualifying/",
+     "desc": "Lewis Hamilton has lamented his qualifying performance at the F1 Las Vegas GP, after struggles for pace and straight-line speed saw the seven-time world champion eliminated in Q2. The post Lewis Hamilton laments Las Vegas F1 quali",
      "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/XPB_1454561_HiRes-1.webp",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 8 h",
-     "ts": 1795186800.0,
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Lewis-Hamilton-F1-Las-Vegas-GP-300x169.webp",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 1 h",
+     "ts": 1795262400.0,
      "teams": [
       "mercedes"
      ],
      "own": true
     },
     {
-     "title": "Spotlight: Donnelly to publish autobiography with contributions from Hamilton and Pitt | Brief",
-     "url": "https://www.racefans.net/2026/11/20/spotlight-donnelly-to-publish-autobiography-with-contributions-from-hamilton-and-pitt/",
-     "desc": "Hamilton and Pitt contribute to new Donnelly autobiography",
-     "source": "RaceFans",
-     "image": null,
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 12 h",
-     "ts": 1795172709.0,
-     "teams": [
-      "mercedes"
-     ],
-     "own": true
-    },
-    {
-     "title": "George Russell impressed by \"exceptionally fast\" McLaren as rain delays Lando Norris' floor test",
-     "url": "https://www.motorsport.com/f1/news/george-russell-impressed-by-exceptionally-fast-mclaren-as-rain-delays-lando-norris-floor-test/10875966/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "George Russell came out of nowhere to set the fastest time in the closing stages of the second Formula 1 practice session in Las Vegas, although Alpine driver Pierre Gasly almost caused a major surprise by beating him. The Frenchm",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/2dEolNeY/s6/lando-norris-mclaren.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 13 h",
-     "ts": 1795167074.0,
+     "title": "George Russell warned “you don’t want to make an enemy” of Max Verstappen",
+     "url": "https://www.crash.net/f1/news/1110568/1/george-russell-warned-you-dont-want-make-enemy-max-verstappen",
+     "desc": "Jacques Villeneuve issues warning to George Russell after Max Verstappen clash in Las Vegas.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/si202611210072.jpg?width=1200",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 1 h",
+     "ts": 1795262067.0,
      "teams": [
       "mercedes",
-      "mclaren",
-      "alpine"
+      "red_bull"
      ],
      "own": true
     },
     {
-     "title": "Wet Las Vegas practice was like a cold, miserable day karting at Rowrah – Hamilton | Formula 1",
-     "url": "https://www.racefans.net/2026/11/20/wet-las-vegas-practice-was-like-a-cold-miserable-day-karting-at-rowrah-hamilton/",
-     "desc": "Lewis Hamilton said the rain-hit practice session at Las Vegas reminded him of his early days karting in the north of England.",
-     "source": "RaceFans",
-     "image": null,
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 14 h",
-     "ts": 1795165786.0,
-     "teams": [
-      "mercedes"
-     ],
-     "own": true
-    },
-    {
-     "title": "Lewis Hamilton shares fresh update on Ferrari contract situation: \"No need to think about it\"",
-     "url": "https://www.crash.net/f1/news/1110273/1/lewis-hamilton-shares-fresh-update-ferrari-contract-situation-no-need-think-about",
-     "desc": "Lewis Hamilton provides a fresh update on his Ferrari F1 contract situation.",
+     "title": "Toto Wolff predicts ‘big cinema’ for Max Verstappen v George Russell after Las Vegas GP needle",
+     "url": "https://www.crash.net/f1/news/1110556/1/toto-wolff-predicts-big-cinema-max-verstappen-v-george-russell-after-las-vegas-gp",
+     "desc": "Toto Wolff is expecting fireworks between Max Verstappen and George Russell at the start in Las Vegas.",
      "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-10/xpb_1444055_hires.jpg?width=1200",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 14 h",
-     "ts": 1795164158.0,
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455454_hires.jpg?width=1200",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 1 h",
+     "ts": 1795260285.0,
      "teams": [
-      "ferrari",
+      "mercedes",
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Antonelli and Russell set for Mercedes talks over Las Vegas GP qualifying mix-up",
+     "url": "https://www.autosport.com/f1/news/kimi-antonelli-and-george-russell-set-for-mercedes-talks-over-las-vegas-gp-qualifying-woes/10876456/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "George Russell and Kimi Antonelli will discuss the fallout from Formula 1’s Las Vegas Grand Prix qualifying “offline” following confusion over team orders and track position. Traffic played a significant role in qualifying on Frid",
+     "source": "Autosport",
+     "image": "https://cdn-1.motorsport.com/images/amp/YWKAVQOY/s6/andrea-kimi-antonelli-mercedes.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 2 h",
+     "ts": 1795259119.0,
+     "teams": [
       "mercedes"
      ],
      "own": true
     },
     {
-     "title": "Lewis Hamilton plans \"GTA VI\" session after Vegas FP2: \"I'm like a big kid\"",
-     "url": "https://www.motorsport.com/f1/news/lewis-hamilton-plans-gta-vi-session-after-vegas-fp2-im-like-a-big-kid/10875895/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Lewis Hamilton finished sixth in a slippery second practice for the Las Vegas Grand Prix, before what he had promised fans would be an early night at his hotel with the newly released Grand Theft Auto VI. The seven-time world cham",
+     "title": "Kimi Antonelli and George Russell set for Mercedes talks over Las Vegas GP qualifying woes",
+     "url": "https://www.motorsport.com/f1/news/kimi-antonelli-and-george-russell-to-discuss-traffic-woes-in-las-vegas-gp-qualifying/10876431/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "George Russell and Kimi Antonelli will discuss the fallout from Formula 1’s Las Vegas Grand Prix qualifying “offline” following confusion over team orders and track position. Traffic played a significant role in qualifying on Frid",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/0rVPkN70/s6/lewis-hamilton-ferrari-a10875895-b708-2.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 16 h",
-     "ts": 1795156625.0,
+     "image": "https://cdn-1.motorsport.com/images/amp/YWKAVQOY/s6/andrea-kimi-antonelli-mercedes.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 2 h",
+     "ts": 1795258975.0,
      "teams": [
       "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Max Verstappen reveals mysterious Red Bull issue that cannot be fixed in Las Vegas",
+     "url": "https://www.motorsport.com/f1/news/max-verstappen-reveals-mysterious-red-bull-issue-that-cannot-be-fixed-in-las-vegas/10876399/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Thanks to Kimi Antonelli's grid penalty, Max Verstappen will start Formula 1's Las Vegas Grand Prix from pole position, but that is not necessarily a reason for the Dutchman to be satisfied. Yes, Red Bull has made significant prog",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/6DGgOAVY/s6/max-verstappen-red-bull-racing.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 4 h",
+     "ts": 1795251126.0,
+     "teams": [
+      "mercedes",
+      "red_bull"
      ],
      "own": true
     }
@@ -19366,30 +19854,61 @@
    ],
    "news": [
     {
-     "title": "Ferrari anticipates major F1 ‘reset’ after rain hits Las Vegas",
-     "url": "https://www.motorsportweek.com/2026/11/20/ferrari-las-vegas-f1/",
-     "desc": "Ferrari has predicts the Formula 1 grid will ‘reset’ ahead of Friday’s sessions at the Las Vegas Grand Prix, with improved weather conditions expected for qualifying. The first two practice sessions – which take place on Thursday ",
+     "title": "Charles Leclerc lambasts Ferrari ‘mistakes’ that caused F1 Las Vegas GP qualifying nightmare",
+     "url": "https://www.motorsportweek.com/2026/11/21/charles-leclerc-lambasts-ferrari-mistakes-that-caused-f1-las-vegas-qualifying/",
+     "desc": "Charles Leclerc has lambasted Ferrari for 'a lot of mistakes' on Friday night during qualifying at the F1 Las Vegas GP, as he admitted 'frustration' is beginning to build up on his side of the garage. The post Charles Leclerc lamb",
      "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Charles-Leclerc-Ferrari-Vegas-300x169.webp",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 3 h",
-     "ts": 1795205700.0,
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Charles-Leclerc-F1-Las-Vegas-GP.webp",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 2 h",
+     "ts": 1795257452.0,
      "teams": [
       "ferrari"
      ],
      "own": true
     },
     {
-     "title": "Lewis Hamilton shares fresh update on Ferrari contract situation: \"No need to think about it\"",
-     "url": "https://www.crash.net/f1/news/1110273/1/lewis-hamilton-shares-fresh-update-ferrari-contract-situation-no-need-think-about",
-     "desc": "Lewis Hamilton provides a fresh update on his Ferrari F1 contract situation.",
+     "title": "Max Verstappen shares theory on Ferrari's lack of top speed in F1 2026",
+     "url": "https://www.motorsport.com/f1/news/max-verstappen-shares-theory-on-ferraris-lack-of-top-speed-in-f1-2026/10876424/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Although Max Verstappen was not entirely satisfied with his second-fastest time in qualifying for the Formula 1 Las Vegas Grand Prix – pointing to a mysterious issue with the RB22 – a glance at Ferrari shows that things could have",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/0mXykW56/s6/charles-leclerc-ferrari.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 2 h",
+     "ts": 1795257070.0,
+     "teams": [
+      "ferrari",
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Charles Leclerc “very angry” as Ferrari's biggest weakness exposed in worst qualifying of F1 2026 at Las Vegas GP",
+     "url": "https://www.crash.net/f1/news/1110522/1/charles-leclerc-very-angry-ferraris-biggest-weakness-exposed-worst-qualifying-f1",
+     "desc": "Charles Leclerc was left \"very angry\" with Ferrari's double Q2 elimination in Las Vegas.",
      "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-10/xpb_1444055_hires.jpg?width=1200",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 14 h",
-     "ts": 1795164158.0,
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455498_hires.jpg?width=1200",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 4 h",
+     "ts": 1795250771.0,
+     "teams": [
+      "ferrari"
+     ],
+     "own": true
+    },
+    {
+     "title": "“We lost one second down the straight” – Charles Leclerc upset with Ferrari’s “crazy” Las Vegas deficiency",
+     "url": "https://www.motorsport.com/f1/news/we-lost-one-second-down-the-straight-charles-leclerc-upset-with-ferraris-crazy-las-vegas-deficiency/10876355/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Charles Leclerc is “very disappointed” with Ferrari’s performance at Formula 1’s Las Vegas Grand Prix as both cars were eliminated in Q2. Leclerc and team-mate Lewis Hamilton were fourth and eighth in FP3 - the only dry-weather fr",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/68VwBJD2/s6/charles-leclerc-ferrari.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 5 h",
+     "ts": 1795247413.0,
      "teams": [
       "ferrari",
       "mercedes"
@@ -19397,32 +19916,15 @@
      "own": true
     },
     {
-     "title": "Lando Norris: “A hell of a lot of money” riding on McLaren’s fight for third",
-     "url": "https://www.motorsport.com/f1/news/lando-norris-a-hell-of-a-lot-of-money-riding-on-mclarens-fight-for-third/10875499/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "With Mercedes having already sealed the 2026 constructors' championship and Ferrari sitting clear in second, McLaren's remaining focus across Las Vegas, Qatar, and Abu Dhabi comes down to one battle: overturning a 17-point deficit",
+     "title": "Lewis Hamilton reveals Ferrari F1 car damage after Las Vegas Q2 exit",
+     "url": "https://www.motorsport.com/f1/news/floor-damage-deployment-down-to-hamiltons-las-vegas-q2-exit/10876295/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Lewis Hamilton put Ferrari's Q2 exit in qualifying for the Las Vegas Grand Prix down to energy deployment and floor damage, as the seven-time champion felt he'd rallied from difficulties with overall tyre grip. The Briton struggle",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/68VwLvB2/s6/lando-norris-mclaren-a10875499-b706-2.jpg",
-     "date": "2026-11-19",
-     "date_human": "19 nov",
-     "age": "hace 1 d",
-     "ts": 1795089002.0,
-     "teams": [
-      "ferrari",
-      "mercedes",
-      "mclaren"
-     ],
-     "own": true
-    },
-    {
-     "title": "Hamilton insists there are no \"trust\" problems at Ferrari",
-     "url": "https://www.autosport.com/f1/news/lewis-hamilton-insists-there-are-no-trust-problems-at-ferrari/10875609/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-     "desc": "Lewis Hamilton has insisted there are zero “trust” problems at Ferrari despite him overruling strategic calls becoming a repeated occurrence across recent Formula 1 grands prix. The seven-time world champion has ignored calls to p",
-     "source": "Autosport",
-     "image": "https://cdn-1.motorsport.com/images/amp/68VwM4l2/s6/lewis-hamilton-ferrari.jpg",
-     "date": "2026-11-19",
-     "date_human": "19 nov",
-     "age": "hace 1 d",
-     "ts": 1795088942.0,
+     "image": "https://cdn-1.motorsport.com/images/amp/0JXR7JyY/s6/lewis-hamilton-ferrari-2.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 6 h",
+     "ts": 1795243671.0,
      "teams": [
       "ferrari",
       "mercedes"
@@ -19430,34 +19932,18 @@
      "own": true
     },
     {
-     "title": "Lewis Hamilton addresses speculation around Ferrari \"trust\" issues",
-     "url": "https://www.motorsport.com/f1/news/lewis-hamilton-insists-there-are-no-trust-problems-at-ferrari/10875582/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Lewis Hamilton has insisted there are zero “trust” problems at Ferrari despite him overruling strategic calls becoming a repeated occurrence across recent Formula 1 grands prix. The seven-time world champion has ignored calls to p",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/68VwM4l2/s6/lewis-hamilton-ferrari.jpg",
-     "date": "2026-11-19",
-     "date_human": "19 nov",
-     "age": "hace 1 d",
-     "ts": 1795088919.0,
+     "title": "Lewis Hamilton reveals Ferrari floor damage and engine issues dogged him Las Vegas GP qualifying",
+     "url": "https://www.crash.net/f1/news/1110519/1/lewis-hamilton-reveals-ferrari-floor-damage-and-engine-issues-dogged-him-las",
+     "desc": "Lewis Hamilton reveals several issues affected his Ferrari in Las Vegas qualifying.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455577_hires.jpg?width=1200",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 6 h",
+     "ts": 1795243276.0,
      "teams": [
       "ferrari",
       "mercedes"
-     ],
-     "own": true
-    },
-    {
-     "title": "Rafael Camara torn between his F2 title bid and more F1 races with Haas",
-     "url": "https://www.motorsport.com/f1/news/rafael-camara-could-finish-the-2026-season-in-both-f1-and-f2/10875556/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Rafael Camara is torn between completing his title-contending Formula 2 campaign and seeing out the 2026 season at Haas in Formula 1. The Ferrari protege is the reigning F3 champion and leads the F2 standings as a rookie with Invi",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/YBVj1BzY/s6/rafael-camara-haas-f1-team.jpg",
-     "date": "2026-11-19",
-     "date_human": "19 nov",
-     "age": "hace 1 d",
-     "ts": 1795082024.0,
-     "teams": [
-      "ferrari",
-      "haas"
      ],
      "own": true
     }
@@ -19519,93 +20005,96 @@
    ],
    "news": [
     {
-     "title": "Video: Verstappen avoids welcome reception for drivers in Las Vegas paddock | Brief",
-     "url": "https://www.racefans.net/2026/11/20/video-verstappen-avoids-welcome-reception-for-drivers-in-las-vegas-paddock/",
-     "desc": "Verstappen swerves Las Vegas welcome reception for drivers",
-     "source": "RaceFans",
-     "image": null,
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 5 h",
-     "ts": 1795197857.0,
-     "teams": [
-      "red_bull"
-     ],
-     "own": true
-    },
-    {
-     "title": "Max Verstappen reveals reason for reluctant F1 Las Vegas GP practice appearance",
-     "url": "https://www.motorsportweek.com/2026/11/20/max-verstappen-reveals-reason-for-reluctant-las-vegas-practice/",
-     "desc": "Max Verstappen opted to spend the majority of the second Free Practice session for the F1 Las Vegas GP in his Red Bull garage. The post Max Verstappen reveals reason for reluctant F1 Las Vegas GP practice appearance appeared first",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-1-300x169.webp",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 6 h",
-     "ts": 1795194000.0,
-     "teams": [
-      "red_bull"
-     ],
-     "own": true
-    },
-    {
-     "title": "Max Verstappen: “I really thought that we would not win a race this year”",
-     "url": "https://www.motorsport.com/f1/news/max-verstappen-i-really-thought-that-we-would-not-win-a-race-this-year/10875990/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Heading into the Las Vegas Grand Prix on a run of eight consecutive podiums, Max Verstappen looks every bit the force who dominated Formula 1 earlier this decade. Back in March, however, the four-time world champion was braced for",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/YXyKX156/s6/max-verstappen-red-bull-racing-a10875990-b707-2.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 10 h",
-     "ts": 1795178624.0,
-     "teams": [
-      "red_bull"
-     ],
-     "own": true
-    },
-    {
-     "title": "\"Same as Brazil\" – Red Bull \"trying to understand\" the root cause of Verstappen's complaints",
-     "url": "https://www.autosport.com/f1/news/same-as-brazil-red-bull-trying-to-understand-the-root-cause-of-verstappens-complaints/10875945/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-     "desc": "After Thursday's practice sessions in Las Vegas, Red Bull – like all Formula 1 teams – has been left with very few answers. Isack Hadjar eventually finished fourth on the timesheets, but that means very little given that no more r",
-     "source": "Autosport",
-     "image": "https://cdn-1.motorsport.com/images/amp/0arEG1p2/s6/max-verstappen-red-bull-racing-2.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 15 h",
-     "ts": 1795162375.0,
-     "teams": [
-      "red_bull",
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "\"Same as Brazil\" – Red Bull \"trying to understand\" the root cause of Max Verstappen's complaints",
-     "url": "https://www.motorsport.com/f1/news/same-as-brazil-red-bull-trying-to-understand-the-root-cause-of-max-verstappens-complaints/10875939/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "After Thursday's practice sessions in Las Vegas, Red Bull – like all Formula 1 teams – has been left with very few answers. Isack Hadjar eventually finished fourth on the timesheets, but that means very little given that no more r",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6x7LrbjY/s6/max-verstappen-red-bull-racing.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 15 h",
-     "ts": 1795161043.0,
-     "teams": [
-      "red_bull",
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "Max Verstappen’s curious lack of Las Vegas GP practice running explained",
-     "url": "https://www.crash.net/f1/news/1110271/1/max-verstappens-curious-lack-las-vegas-gp-practice-running-explained",
-     "desc": "Max Verstappen's lack of running in Las Vegas Grand Prix practice has been explained.",
+     "title": "George Russell warned “you don’t want to make an enemy” of Max Verstappen",
+     "url": "https://www.crash.net/f1/news/1110568/1/george-russell-warned-you-dont-want-make-enemy-max-verstappen",
+     "desc": "Jacques Villeneuve issues warning to George Russell after Max Verstappen clash in Las Vegas.",
      "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1454551_hires.jpg?width=1200",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 16 h",
-     "ts": 1795158785.0,
+     "image": "https://www.crash.net/sites/default/files/2026-11/si202611210072.jpg?width=1200",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 1 h",
+     "ts": 1795262067.0,
      "teams": [
+      "mercedes",
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Toto Wolff predicts ‘big cinema’ for Max Verstappen v George Russell after Las Vegas GP needle",
+     "url": "https://www.crash.net/f1/news/1110556/1/toto-wolff-predicts-big-cinema-max-verstappen-v-george-russell-after-las-vegas-gp",
+     "desc": "Toto Wolff is expecting fireworks between Max Verstappen and George Russell at the start in Las Vegas.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455454_hires.jpg?width=1200",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 1 h",
+     "ts": 1795260285.0,
+     "teams": [
+      "mercedes",
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Max Verstappen’s alarming admission about secret Red Bull F1 car issue: “We can’t fix it”",
+     "url": "https://www.crash.net/f1/news/1110540/1/max-verstappens-alarming-admission-about-secret-red-bull-f1-car-issue-we-cant-fix",
+     "desc": "Max Verstappen remains tight-lipped about a sensitive Red Bull car issue he is dealing with.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455480_hires.jpg?width=1200",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 2 h",
+     "ts": 1795257579.0,
+     "teams": [
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Max Verstappen shares theory on Ferrari's lack of top speed in F1 2026",
+     "url": "https://www.motorsport.com/f1/news/max-verstappen-shares-theory-on-ferraris-lack-of-top-speed-in-f1-2026/10876424/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Although Max Verstappen was not entirely satisfied with his second-fastest time in qualifying for the Formula 1 Las Vegas Grand Prix – pointing to a mysterious issue with the RB22 – a glance at Ferrari shows that things could have",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/0mXykW56/s6/charles-leclerc-ferrari.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 2 h",
+     "ts": 1795257070.0,
+     "teams": [
+      "ferrari",
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Isack Hadjar says outsmarted Red Bull “looked a bit stupid” in Las Vegas GP qualifying",
+     "url": "https://www.crash.net/f1/news/1110525/1/isack-hadjar-says-outsmarted-red-bull-looked-bit-stupid-las-vegas-gp-qualifying",
+     "desc": "Isack Hadjar says Red Bull were outsmarted in Las Vegas qualifying.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455594_hires.jpg?width=1200",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 3 h",
+     "ts": 1795254832.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Max Verstappen reveals mysterious Red Bull issue that cannot be fixed in Las Vegas",
+     "url": "https://www.motorsport.com/f1/news/max-verstappen-reveals-mysterious-red-bull-issue-that-cannot-be-fixed-in-las-vegas/10876399/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Thanks to Kimi Antonelli's grid penalty, Max Verstappen will start Formula 1's Las Vegas Grand Prix from pole position, but that is not necessarily a reason for the Dutchman to be satisfied. Yes, Red Bull has made significant prog",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/6DGgOAVY/s6/max-verstappen-red-bull-racing.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 4 h",
+     "ts": 1795251126.0,
+     "teams": [
+      "mercedes",
       "red_bull"
      ],
      "own": true
@@ -19658,94 +20147,92 @@
    ],
    "news": [
     {
-     "title": "Oscar Piastri breaks silence over Mark Webber split",
-     "url": "https://www.motorsportweek.com/2026/11/20/oscar-piastri-breaks-silence-over-mark-webber-split/",
-     "desc": "Oscar Piastri has broken his silence over his decision to split from long-time Formula 1 manager Mark Webber ahead of the Las Vegas GP. The post Oscar Piastri breaks silence over Mark Webber split appeared first on Motorsport Week",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Oscar-Piastri-F1-Las-Vegas-GP.webp",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 10 h",
-     "ts": 1795179600.0,
-     "teams": [
-      "mclaren"
-     ],
-     "own": true
-    },
-    {
-     "title": "How the F1 2026 regulations neutered Oscar Piastri's \"real strength\"",
-     "url": "https://www.motorsport.com/f1/news/how-the-f1-2026-regulations-neutered-oscar-piastris-real-strength/10875907/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "McLaren boss Zak Brown reckons Oscar Piastri’s struggles in the 2026 Formula 1 season stem from high-speed corners being his strength - but the new cars require a different technique. F1 introduced its latest regulation overhaul t",
+     "title": "How McLaren tried to mitigate its Las Vegas F1 top speed deficit",
+     "url": "https://www.motorsport.com/f1/news/how-mclaren-tried-to-mitigate-its-las-vegas-f1-top-speed-deficit/10876451/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Despite what was a respectable result on a circuit that accentuated the MCL40's flaws without rewarding its virtues, Lando Norris was not best pleased with how Friday at the Las Vegas Grand Prix weekend. “We're just shocking on th",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/0qgKkE4Y/s6/oscar-piastri-mclaren.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 11 h",
-     "ts": 1795174203.0,
+     "image": "https://cdn-1.motorsport.com/images/amp/0arEGwP2/s6/oscar-piastri-mclaren-lando-no.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 1 h",
+     "ts": 1795261262.0,
      "teams": [
       "mclaren"
      ],
      "own": true
     },
     {
-     "title": "Piastri needed to reduce his speed through F1’s quickest corners – Brown | Formula 1",
-     "url": "https://www.racefans.net/2026/11/20/piastri-needed-to-curb-his-speed-through-quick-corners-brown/",
-     "desc": "Oscar Piastri's struggles in 2026 stem from him taking too much speed through high-speed corners, according to McLaren CEO Zak Brown.",
+     "title": "On This Day: McLaren hire Zak Brown to lead team after ousting Ron Dennis | Brief",
+     "url": "https://www.racefans.net/2026/11/21/on-this-day-zak-brown-takes-charge-at-struggling-mclaren/",
+     "desc": "Zak Brown takes over at McLaren: \"It was a pretty grim place\"",
      "source": "RaceFans",
      "image": null,
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 11 h",
-     "ts": 1795174180.0,
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 2 h",
+     "ts": 1795258632.0,
      "teams": [
       "mclaren"
      ],
      "own": true
     },
     {
-     "title": "What Flavio Briatore takes from McLaren after Fernando Alonso \"disaster\"",
-     "url": "https://www.motorsport.com/f1/news/what-flavio-briatore-takes-from-mclaren-after-fernando-alonso-disaster/10875964/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Disappointment, infighting, and a revolving door of senior personnel have characterised Alpine's ‘lost decade' after Renault acquired the Enstone-based team at the end of 2015. Current boss Flavio Briatore says Alpine can take som",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6lmAlV80/s6/flavio-briatore-alpine.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 12 h",
-     "ts": 1795171502.0,
+     "title": "Lando Norris blasts McLaren’s “awful” flaw amid plastic bag drama in Las Vegas GP qualifying",
+     "url": "https://www.crash.net/f1/news/1110523/1/lando-norris-blasts-mclarens-awful-flaw-amid-plastic-bag-drama-las-vegas-gp",
+     "desc": "Lando Norris rued McLaren's biggest weakness after Las Vegas qualifying.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455545_hires.jpg?width=1200",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 3 h",
+     "ts": 1795252541.0,
      "teams": [
-      "mclaren",
-      "aston_martin",
-      "alpine"
+      "mclaren"
      ],
      "own": true
     },
     {
-     "title": "George Russell impressed by \"exceptionally fast\" McLaren as rain delays Lando Norris' floor test",
-     "url": "https://www.motorsport.com/f1/news/george-russell-impressed-by-exceptionally-fast-mclaren-as-rain-delays-lando-norris-floor-test/10875966/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "George Russell came out of nowhere to set the fastest time in the closing stages of the second Formula 1 practice session in Las Vegas, although Alpine driver Pierre Gasly almost caused a major surprise by beating him. The Frenchm",
+     "title": "Lando Norris frustrated by McLaren's \"shocking\" top speed at Las Vegas GP qualifying",
+     "url": "https://www.motorsport.com/f1/news/lando-norris-frustrated-by-mclarens-shocking-top-speed-at-las-vegas-gp-qualifying/10876362/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Lando Norris lamented McLaren’s “shocking” straightline speed after missing out on pole at the Formula 1 Las Vegas Grand Prix. The 2025 world champion was fourth fastest on Friday night in Nevada and 0.351s off pacesetter Kimi Ant",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/2dEolNeY/s6/lando-norris-mclaren.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 13 h",
-     "ts": 1795167074.0,
+     "image": "https://cdn-1.motorsport.com/images/amp/2wlKznbY/s6/lando-norris-mclaren.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 4 h",
+     "ts": 1795249724.0,
+     "teams": [
+      "mclaren"
+     ],
+     "own": true
+    },
+    {
+     "title": "Lando Norris brands McLaren “awful in the straight” despite third on Las Vegas GP grid",
+     "url": "https://www.motorsport.com/f1/news/lando-norris-slams-mclaren-as-awful-in-the-straight-despite-third-on-las-vegas-gp-grid/10876306/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Lando Norris will launch from third on the grid for the 2026 Las Vegas Grand Prix after setting a 1m34.244s in Q3 - just 0.093 seconds shy of inherited polesitter Max Verstappen and 0.020s behind Mercedes’ George Russell. On paper",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/2wlKznbY/s6/lando-norris-mclaren-a10876306-b706-2.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 6 h",
+     "ts": 1795245024.0,
      "teams": [
       "mercedes",
-      "mclaren",
-      "alpine"
+      "red_bull",
+      "mclaren"
      ],
      "own": true
     },
     {
-     "title": "Why McLaren is selling its 2027 F1 car before it even races",
-     "url": "https://www.crash.net/f1/news/1110272/1/why-mclaren-selling-its-f1-2027-car-it-even-races",
-     "desc": "McLaren explains its thinking behind selling its 2027 F1 car before it even races.",
-     "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1454374_hires.jpg?width=1200",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 15 h",
-     "ts": 1795162399.0,
+     "title": "Norris fears passing will be impossible due to “insane” straight-line speed deficit | Formula 1",
+     "url": "https://www.racefans.net/2026/11/21/norris-fears-passing-will-be-impossible-due-to-insane-straight-line-speed-deficit/",
+     "desc": "Lando Norris doubts he will be able to gain many places in the Las Vegas Grand Prix due to his lack of straight-line speed.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 6 h",
+     "ts": 1795244210.0,
      "teams": [
       "mclaren"
      ],
@@ -19809,6 +20296,55 @@
    ],
    "news": [
     {
+     "title": "Isack Hadjar says outsmarted Red Bull “looked a bit stupid” in Las Vegas GP qualifying",
+     "url": "https://www.crash.net/f1/news/1110525/1/isack-hadjar-says-outsmarted-red-bull-looked-bit-stupid-las-vegas-gp-qualifying",
+     "desc": "Isack Hadjar says Red Bull were outsmarted in Las Vegas qualifying.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455594_hires.jpg?width=1200",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 3 h",
+     "ts": 1795254832.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Isack Hadjar: Red Bull \"looked a bit stupid\" in Vegas qualifying tow game",
+     "url": "https://www.motorsport.com/f1/news/isack-hadjar-red-bull-looked-a-bit-stupid-in-vegas-qualifying-tow-game/10876319/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Isack Hadjar has admitted that Red Bull \"looked a bit stupid\" in what became a tow battle at the end of Las Vegas Grand Prix qualifying. He says it \"doesn't really matter\" where he starts on Saturday night. Hadjar set the fifth-fa",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/2wlKzrKY/s6/isack-hadjar-red-bull-racing-a10876319-b707-2.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 6 h",
+     "ts": 1795242985.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "2026 F1 Las Vegas Grand Prix starting grid",
+     "url": "https://www.motorsport.com/f1/news/2026-f1-las-vegas-grand-prix-starting-grid/10876250/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "2 George Russell(Mercedes) 1 Max Verstappen(Red Bull) 4 Isack Hadjar(Red Bull) 3 Lando ... Keep reading",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/6DGgOAVY/s6/max-verstappen-red-bull-racing.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 7 h",
+     "ts": 1795239161.0,
+     "teams": [
+      "mercedes",
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
      "title": "Liam Lawson mocks reality star after claiming he could beat F1 driver in a race",
      "url": "https://www.crash.net/f1/news/1110290/1/liam-lawson-mocks-reality-star-after-claiming-he-could-beat-f1-driver-race",
      "desc": "Liam Lawson shoots down reality star Jamie Laing's claim he could beat F1 driver in a go-kart race.",
@@ -19816,7 +20352,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/si202611200051.jpg?width=1200",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 12 h",
+     "age": "hace 1 d",
      "ts": 1795171103.0,
      "teams": [
       "rb"
@@ -19831,7 +20367,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0arEG1p2/s6/max-verstappen-red-bull-racing-2.jpg",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 15 h",
+     "age": "hace 1 d",
      "ts": 1795162375.0,
      "teams": [
       "red_bull",
@@ -19847,56 +20383,10 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6x7LrbjY/s6/max-verstappen-red-bull-racing.jpg",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 15 h",
+     "age": "hace 1 d",
      "ts": 1795161043.0,
      "teams": [
       "red_bull",
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "Isack Hadjar: \"I realised why Max is a four-time world champion\"",
-     "url": "https://www.motorsport.com/f1/news/isack-hadjar-i-realised-why-max-is-a-four-time-world-champion/10875884/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Isack Hadjar says his first season as Max Verstappen's team-mate at Red Bull has opened his eyes to why the Dutchman is a four-time Formula 1 world champion. Hadjar moved up from Racing Bulls for his 2026 campaign, taking one of t",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/2wlKzrKY/s6/isack-hadjar-red-bull-racing-a10875884-b707-2.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 16 h",
-     "ts": 1795155522.0,
-     "teams": [
-      "red_bull",
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "F1 Las Vegas GP: Rain ruins FP1 running",
-     "url": "https://www.motorsport.com/f1/news/f1-las-vegas-gp-rain-washes-out-fp1/10875778/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "\"If we're on a track like Vegas and it rains, honestly, I think we're in trouble,\" Racing Bulls driver Liam Lawson predicted after sampling this year's rain tyres in Brazil. His comments reflected the general mood in the paddock, ",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6grQkG7Y/s6/isack-hadjar-red-bull-racing-3.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 21 h",
-     "ts": 1795139166.0,
-     "teams": [
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "F1 Las Vegas GP: Rain drowns out FP1",
-     "url": "https://www.autosport.com/f1/news/f1-las-vegas-gp-fp1-report/10875770/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-     "desc": "\"If we're on a track like Vegas and it rains, honestly, I think we're in trouble,\" Racing Bulls driver Liam Lawson predicted after sampling this year's rain tyres in Brazil. His comments reflected the general mood in the paddock a",
-     "source": "Autosport",
-     "image": "https://cdn-1.motorsport.com/images/amp/6DGgOo9Y/s6/george-russell-mercedes-2.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 21 h",
-     "ts": 1795138985.0,
-     "teams": [
       "rb"
      ],
      "own": true
@@ -19949,6 +20439,23 @@
    ],
    "news": [
     {
+     "title": "Verstappen warned over Russell incident, cleared over Colapinto incident in practice | Formula 1",
+     "url": "https://www.racefans.net/2026/11/21/verstappen-warned-over-russell-incident-cleared-over-colapinto-incident-in-practice/",
+     "desc": "The stewards have given Max Verstappen an official warning for his incident with George Russell at turn 14 during final practice.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 8 h",
+     "ts": 1795234649.0,
+     "teams": [
+      "mercedes",
+      "red_bull",
+      "alpine"
+     ],
+     "own": true
+    },
+    {
      "title": "Alpine suddenly releases Paul Aron from F1 reserve driver role",
      "url": "https://www.crash.net/f1/news/1110300/1/alpine-suddenly-releases-paul-aron-f1-reserve-driver-role",
      "desc": "Alpine has released Paul Aron from his F1 reserve driver role.",
@@ -19956,7 +20463,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1441321_hires.jpg?width=1200",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 12 h",
+     "age": "hace 1 d",
      "ts": 1795172149.0,
      "teams": [
       "alpine"
@@ -19971,7 +20478,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6lmAlV80/s6/flavio-briatore-alpine.jpg",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 12 h",
+     "age": "hace 1 d",
      "ts": 1795171502.0,
      "teams": [
       "mclaren",
@@ -19988,7 +20495,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2dEolNeY/s6/lando-norris-mclaren.jpg",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 13 h",
+     "age": "hace 1 d",
      "ts": 1795167074.0,
      "teams": [
       "mercedes",
@@ -20005,7 +20512,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2eZxkN1Y/s6/george-russell-mercedes-2.jpg",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 17 h",
+     "age": "hace 1 d",
      "ts": 1795152173.0,
      "teams": [
       "mercedes",
@@ -20021,26 +20528,10 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YE9EbBMY/s6/george-russell-mercedes-2.jpg",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 18 h",
+     "age": "hace 1 d",
      "ts": 1795151728.0,
      "teams": [
       "mercedes",
-      "alpine"
-     ],
-     "own": true
-    },
-    {
-     "title": "\"Tenemos al mejor Alonso\"",
-     "url": "https://as.com/motor/2022/05/28/formula_1/1653715741_756073.html#?ref=rss&format=simple&link=link",
-     "desc": "Pat Fry, director técnico de Alpine: \"Fernando está relajado, es sensible con el coche y va rápido\".",
-     "source": "AS Motor",
-     "image": "https://as00.epimg.net/motor/imagenes/2022/05/28/formula_1/1653715741_756073_1653715897_miniatura_normal.jpg",
-     "date": "2022-05-28",
-     "date_human": "28 may",
-     "age": "hace 1637 d",
-     "ts": 1653717364.0,
-     "teams": [
-      "aston_martin",
       "alpine"
      ],
      "own": true
@@ -20120,7 +20611,7 @@
      "image": null,
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 13 h",
+     "age": "hace 1 d",
      "ts": 1795167862.0,
      "teams": [
       "haas"
@@ -20135,39 +20626,8 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1454298_hires.jpg?width=1200",
      "date": "2026-11-19",
      "date_human": "19 nov",
-     "age": "hace 23 h",
+     "age": "hace 1 d",
      "ts": 1795132458.0,
-     "teams": [
-      "haas"
-     ],
-     "own": true
-    },
-    {
-     "title": "Rafael Camara torn between his F2 title bid and more F1 races with Haas",
-     "url": "https://www.motorsport.com/f1/news/rafael-camara-could-finish-the-2026-season-in-both-f1-and-f2/10875556/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Rafael Camara is torn between completing his title-contending Formula 2 campaign and seeing out the 2026 season at Haas in Formula 1. The Ferrari protege is the reigning F3 champion and leads the F2 standings as a rookie with Invi",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/YBVj1BzY/s6/rafael-camara-haas-f1-team.jpg",
-     "date": "2026-11-19",
-     "date_human": "19 nov",
-     "age": "hace 1 d",
-     "ts": 1795082024.0,
-     "teams": [
-      "ferrari",
-      "haas"
-     ],
-     "own": true
-    },
-    {
-     "title": "People in the team are asking why my 2027 deal hasn’t been announced – Bearman | Formula 1",
-     "url": "https://www.racefans.net/2026/11/19/people-in-the-team-are-asking-why-my-2027-deal-hasnt-been-announced-bearman/",
-     "desc": "Oliver Bearman is \"disappointed\" Haas has not yet officially confirmed he will drive for them again in 2027.",
-     "source": "RaceFans",
-     "image": null,
-     "date": "2026-11-19",
-     "date_human": "19 nov",
-     "age": "hace 1 d",
-     "ts": 1795079735.0,
      "teams": [
       "haas"
      ],
@@ -20181,7 +20641,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1451092_hires.jpg?width=1200",
      "date": "2026-11-19",
      "date_human": "19 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1795066014.0,
      "teams": [
       "ferrari",
@@ -20190,19 +20650,50 @@
      "own": true
     },
     {
-     "title": "\"Disappointed\" and \"no excuses\" – Oliver Bearman frustrated by lack of 2027 F1 contract",
-     "url": "https://www.motorsport.com/f1/news/oliver-bearman-disappointed-and-frustrated-by-2027-f1-contract-delay-no-excuses/10875398/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Following confirmation that Liam Lawson and Valtteri Bottas will remain on the grid, only one seat formally remains vacant for the 2027 Formula 1 season. It is the Haas seat currently occupied by Oliver Bearman. There is virtually",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6grQwlGY/s6/oliver-bearman-haas-f1-team.jpg",
-     "date": "2026-11-19",
-     "date_human": "19 nov",
-     "age": "hace 1 d",
-     "ts": 1795060965.0,
+     "title": "Haas sticks with Camara for Las Vegas GP, Hirakawa in for FP1",
+     "url": "https://www.autosport.com/f1/news/haas-sticks-with-rafael-camara-for-las-vegas-ryo-hirakawa-in-for-fp1/10874781/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Rafael Camara will race again for Haas at Formula 1's upcoming Las Vegas Grand Prix, as Ryo Hirakawa takes Ollie Bearman's seat for the opening practice session. Both Hirakawa and Camara have now raced for the team following the d",
+     "source": "Autosport",
+     "image": "https://cdn-1.motorsport.com/images/amp/YWKAR5KY/s6/rafael-camara-haas-f1-team.jpg",
+     "date": "2026-11-16",
+     "date_human": "16 nov",
+     "age": "hace 5 d",
+     "ts": 1794822750.0,
      "teams": [
+      "haas"
+     ],
+     "own": true
+    },
+    {
+     "title": "Leclerc penalised for Lawson clash; Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
+     "url": "https://www.autosport.com/f1/news/leclerc-penalised-for-lawson-clash-antonelli-and-oliver-bearman-also-punished-after-f1-brazilian-gp/10873166/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Charles Leclerc was handed a five-second penalty after the Formula 1 Brazilian Grand Prix for his clash with Liam Lawson, dropping the Ferrari driver down to eighth place in the final results. The Monegasque was battling the Racin",
+     "source": "Autosport",
+     "image": "https://cdn-1.motorsport.com/images/amp/0Zq8VdL6/s6/charles-leclerc-ferrari-arvid-.jpg",
+     "date": "2026-11-08",
+     "date_human": "8 nov",
+     "age": "hace 12 d",
+     "ts": 1794175171.0,
+     "teams": [
+      "ferrari",
+      "mercedes",
       "haas",
-      "rb",
-      "cadillac"
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "A ver quién paga esto",
+     "url": "https://as.com/motor/2022/06/01/formula_1/1654095693_988974.html#?ref=rss&format=simple&link=link",
+     "desc": "El segundo accidente grande de Mick Schumacher en siete grandes premios, una losa para las cuentas de Haas en la Fórmula 1 del techo de gasto.",
+     "source": "AS Motor",
+     "image": "https://as00.epimg.net/motor/imagenes/2022/06/01/formula_1/1654095693_988974_1654095806_miniatura_normal.jpg",
+     "date": "2022-06-02",
+     "date_human": "2 jun",
+     "age": "hace 1633 d",
+     "ts": 1654145680.0,
+     "teams": [
+      "haas"
      ],
      "own": true
     }
@@ -20243,44 +20734,49 @@
    "prev": [],
    "news": [
     {
-     "title": "Taylor Barnard has lucky escape after Fusion GEN4 car explodes",
-     "url": "https://www.motorsportweek.com/2026/11/20/taylor-barnard-lucky-escape-car-explodes/",
-     "desc": "Taylor Barnard was lucky to escape unharmed after his Fusion GEN4 car exploded on the final day of Formula E testing in Jarama. The post Taylor Barnard has lucky escape after Fusion GEN4 car explodes appeared first on Motorsport W",
+     "title": "Charles Leclerc lambasts Ferrari ‘mistakes’ that caused F1 Las Vegas GP qualifying nightmare",
+     "url": "https://www.motorsportweek.com/2026/11/21/charles-leclerc-lambasts-ferrari-mistakes-that-caused-f1-las-vegas-qualifying/",
+     "desc": "Charles Leclerc has lambasted Ferrari for 'a lot of mistakes' on Friday night during qualifying at the F1 Las Vegas GP, as he admitted 'frustration' is beginning to build up on his side of the garage. The post Charles Leclerc lamb",
      "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Taylor-Barnard-Jarama.webp",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 4 h",
-     "ts": 1795198728.0,
-     "teams": [],
-     "own": false
-    },
-    {
-     "title": "Max Verstappen reveals reason for reluctant F1 Las Vegas GP practice appearance",
-     "url": "https://www.motorsportweek.com/2026/11/20/max-verstappen-reveals-reason-for-reluctant-las-vegas-practice/",
-     "desc": "Max Verstappen opted to spend the majority of the second Free Practice session for the F1 Las Vegas GP in his Red Bull garage. The post Max Verstappen reveals reason for reluctant F1 Las Vegas GP practice appearance appeared first",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Max-Verstappen-F1-1-300x169.webp",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 6 h",
-     "ts": 1795194000.0,
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Charles-Leclerc-F1-Las-Vegas-GP.webp",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 2 h",
+     "ts": 1795257452.0,
      "teams": [
-      "red_bull"
+      "ferrari"
      ],
      "own": false
     },
     {
-     "title": "Alex Marquez tops MotoGP Practice in Portugal as Jorge Martin scrapes into Q2",
-     "url": "https://www.motorsportweek.com/2026/11/20/alex-marquez-tops-motogp-practice-in-portugal-as-jorge-martin-scrapes-into-q2/",
-     "desc": "Alex Marquez beats Fabio Di Giannantonio and Marco Bezzecchi, while Jorge Martin endures visible arm discomfort to claim the final direct Q2 spot. The post Alex Marquez tops MotoGP Practice in Portugal as Jorge Martin scrapes into",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/55663964726_0d471ee86a_o-300x169.jpg",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 7 h",
-     "ts": 1795191015.0,
-     "teams": [],
+     "title": "Isack Hadjar says outsmarted Red Bull “looked a bit stupid” in Las Vegas GP qualifying",
+     "url": "https://www.crash.net/f1/news/1110525/1/isack-hadjar-says-outsmarted-red-bull-looked-bit-stupid-las-vegas-gp-qualifying",
+     "desc": "Isack Hadjar says Red Bull were outsmarted in Las Vegas qualifying.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455594_hires.jpg?width=1200",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 3 h",
+     "ts": 1795254832.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": false
+    },
+    {
+     "title": "Fernando Alonso: Honda lacks so much power that rivals take extra margin behind us",
+     "url": "https://www.motorsport.com/f1/news/fernando-alonso-honda-lacks-so-much-power-that-rivals-take-extra-margin-behind-us/10876414/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Fernando Alonso says Honda’s power deficit is so dire that other cars are taking extra margin around the Aston Martins at Formula 1’s Las Vegas Grand Prix. The Nevadan street circuit was expected to expose the Japanese power unit’",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/2y7Q8pK6/s6/fernando-alonso-aston-martin-r.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 3 h",
+     "ts": 1795254219.0,
+     "teams": [
+      "aston_martin"
+     ],
      "own": false
     }
    ],
@@ -20331,21 +20827,6 @@
    ],
    "news": [
     {
-     "title": "Sainz won’t tolerate “being a test driver on grand prix weekends” for long | Formula 1",
-     "url": "https://www.racefans.net/2026/11/19/sainz-wont-tolerate-being-a-test-driver-on-grand-prix-weekends-for-long/",
-     "desc": "Carlos Sainz Jnr said this has been his first season where even a perfect performance is unlikely to result in a points finish.",
-     "source": "RaceFans",
-     "image": null,
-     "date": "2026-11-19",
-     "date_human": "19 nov",
-     "age": "hace 1 d",
-     "ts": 1795070151.0,
-     "teams": [
-      "williams"
-     ],
-     "own": true
-    },
-    {
      "title": "Horarios F1 libres y clasificación del GP de Brasil: a qué hora es y dónde ver hoy en TV la 'qualy' de Sainz y Alonso",
      "url": "https://www.marca.com/motor/formula1/gp-brasil/2026/11/07/horarios-f1-libres-clasificacion-gp-brasil-hora-ver-hoy-tv-qualy-sainz-alonso.html",
      "desc": "El Campeón del Mundo sigue dominando&nbsp; Leer",
@@ -20353,7 +20834,7 @@
      "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/07/17940107358835.png",
      "date": "2026-11-07",
      "date_human": "7 nov",
-     "age": "hace 13 d",
+     "age": "hace 14 d",
      "ts": 1794037169.0,
      "teams": [
       "aston_martin",
@@ -20369,7 +20850,7 @@
      "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/07/17940107358835.png",
      "date": "2026-11-07",
      "date_human": "7 nov",
-     "age": "hace 13 d",
+     "age": "hace 14 d",
      "ts": 1794010742.0,
      "teams": [
       "aston_martin",
@@ -20417,8 +20898,25 @@
      "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/05/17938895862354.jpg",
      "date": "2026-11-06",
      "date_human": "6 nov",
-     "age": "hace 14 d",
+     "age": "hace 15 d",
      "ts": 1793950649.0,
+     "teams": [
+      "mercedes",
+      "aston_martin",
+      "williams"
+     ],
+     "own": true
+    },
+    {
+     "title": "Horarios del GP de Brasil de Fórmula 1: fechas y dónde ver en TV a Fernando Alonso y Carlos Sainz en Sao Paulo",
+     "url": "https://www.marca.com/motor/formula1/gp-brasil/2026/11/05/horarios-gp-brasil-formula-1-fechas-ver-tv-fernando-alonso-carlos-sainz-sao-paulo.html",
+     "desc": "Kimi Antonelli estrena título en Sao Paulo&nbsp; Leer",
+     "source": "Marca Motor",
+     "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/02/17936010226818.png",
+     "date": "2026-11-05",
+     "date_human": "5 nov",
+     "age": "hace 15 d",
+     "ts": 1793915605.0,
      "teams": [
       "mercedes",
       "aston_martin",
@@ -20474,6 +20972,21 @@
    ],
    "news": [
     {
+     "title": "Fernando Alonso: Honda lacks so much power that rivals take extra margin behind us",
+     "url": "https://www.motorsport.com/f1/news/fernando-alonso-honda-lacks-so-much-power-that-rivals-take-extra-margin-behind-us/10876414/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Fernando Alonso says Honda’s power deficit is so dire that other cars are taking extra margin around the Aston Martins at Formula 1’s Las Vegas Grand Prix. The Nevadan street circuit was expected to expose the Japanese power unit’",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/2y7Q8pK6/s6/fernando-alonso-aston-martin-r.jpg",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 3 h",
+     "ts": 1795254219.0,
+     "teams": [
+      "aston_martin"
+     ],
+     "own": true
+    },
+    {
      "title": "Fernando Alonso returns to Dakar: Why his first rally-raid experience was a shock to the system",
      "url": "https://www.motorsport.com/dakar/news/fernando-alonso-returns-to-dakar-why-his-first-rally-raid-experience-was-a-shock-to-the-system/10875881/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "While Fernando Alonso reiterated in Las Vegas that, in his view, Formula 1 has thrown away 16 years of pure racing before the return of V8 engines in 2030, the Spaniard continues to seek those pure challenges outside the pinnacle ",
@@ -20481,7 +20994,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin.jpg",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 11 h",
+     "age": "hace 1 d",
      "ts": 1795176903.0,
      "teams": [
       "aston_martin"
@@ -20496,27 +21009,12 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6lmAlV80/s6/flavio-briatore-alpine.jpg",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 12 h",
+     "age": "hace 1 d",
      "ts": 1795171502.0,
      "teams": [
       "mclaren",
       "aston_martin",
       "alpine"
-     ],
-     "own": true
-    },
-    {
-     "title": "Honda reveals key F1 power unit change for 2027",
-     "url": "https://www.motorsport.com/f1/news/honda-reveals-key-f1-power-unit-change-for-2027/10875520/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Immediately after the Sao Paulo Grand Prix, Honda was still unable to fully explain Lance Stroll's DNF. The Canadian was forced to retire for the 14th time, equalling the all-time record for the most retirements in a single Formul",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/0R7Bbbo2/s6/fernando-alonso-aston-martin-r-2.jpg",
-     "date": "2026-11-19",
-     "date_human": "19 nov",
-     "age": "hace 1 d",
-     "ts": 1795075188.0,
-     "teams": [
-      "aston_martin"
      ],
      "own": true
     },
@@ -20528,7 +21026,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2jEAyEN0/s6/lance-stroll-aston-martin-raci-3.jpg",
      "date": "2026-11-19",
      "date_human": "19 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1795075059.0,
      "teams": [
       "aston_martin"
@@ -20543,7 +21041,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1454204_hires.jpg?width=1200",
      "date": "2026-11-19",
      "date_human": "19 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1795068093.0,
      "teams": [
       "aston_martin"
@@ -20558,7 +21056,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/63QaODg2/s6/fernando-alonso-aston-martin-r-2.jpg",
      "date": "2026-11-19",
      "date_human": "19 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1795060425.0,
      "teams": [
       "aston_martin"
@@ -20602,15 +21100,15 @@
    "prev": [],
    "news": [
     {
-     "title": "What’s next for Colton Herta after losing out on Cadillac F1 seat?",
-     "url": "https://www.motorsportweek.com/2026/11/20/whats-next-for-colton-herta-after-losing-out-on-cadillac-f1-seat/",
-     "desc": "Following their announcement of Valtteri Bottas for the 2027 Formula 1 season, Cadillac has offered Colton Herta a reserve driver role for next year. The post What&#8217;s next for Colton Herta after losing out on Cadillac F1 seat",
+     "title": "Cadillac to push back their engine debut as F1 plans for V8 return",
+     "url": "https://www.motorsportweek.com/2026/11/21/cadillac-push-back-engine-f1-v8-return/",
+     "desc": "Despite Cadillac being set to become a Formula 1 engine manufacturer in 2029, news of the V8's return has the team pushing back its plans. The post Cadillac to push back their engine debut as F1 plans for V8 return appeared first ",
      "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Colton-Herta-F1-300x169.webp",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 7 h",
-     "ts": 1795190400.0,
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Bottas-Las-Vegas-300x169.webp",
+     "date": "2026-11-21",
+     "date_human": "21 nov",
+     "age": "hace 4 h",
+     "ts": 1795251600.0,
      "teams": [
       "cadillac"
      ],
@@ -20624,7 +21122,7 @@
      "image": null,
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 12 h",
+     "age": "hace 1 d",
      "ts": 1795170786.0,
      "teams": [
       "cadillac"
@@ -20639,7 +21137,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/cadillacf1team_18715_hires.jpg?width=1200",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 16 h",
+     "age": "hace 1 d",
      "ts": 1795157454.0,
      "teams": [
       "cadillac"
@@ -20654,7 +21152,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0kZXkpy6/s6/sergio-perez-cadillac-racing.jpg",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 19 h",
+     "age": "hace 1 d",
      "ts": 1795147335.0,
      "teams": [
       "cadillac"
@@ -20669,7 +21167,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2jEAkpP0/s6/valtteri-bottas-cadillac-2.jpg",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 19 h",
+     "age": "hace 1 d",
      "ts": 1795147314.0,
      "teams": [
       "cadillac"
@@ -20677,15 +21175,15 @@
      "own": true
     },
     {
-     "title": "Formula 1 teams set no lap times in wet first practice at Las Vegas | Formula 1",
-     "url": "https://www.racefans.net/2026/11/20/formula-1-teams-set-no-lap-times-set-in-wet-first-practice-at-las-vegas/",
-     "desc": "Sergio Perez headed first practice for Cadillac but no drivers set any lap times on the soaked Las Vegas Strip Circuit.",
-     "source": "RaceFans",
-     "image": null,
+     "title": "2026 F1 Las Vegas Grand Prix: Sergio Perez tops washed-out FP1",
+     "url": "https://www.crash.net/f1/news/1110236/1/2026-f1-las-vegas-grand-prix-sergio-perez-tops-washed-out-fp1",
+     "desc": "Sergio Perez was classified at the top of the FP1 session at the 2026 F1 Las Vegas Grand Prix.",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1454578_hires.jpg?width=1200",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 21 h",
-     "ts": 1795140289.0,
+     "age": "hace 1 d",
+     "ts": 1795139548.0,
      "teams": [
       "cadillac"
      ],
@@ -21276,196 +21774,210 @@
  ],
  "news": [
   {
-   "title": "IndyCar tests at Kansas Speedway with eye towards possible 2027 return",
-   "url": "https://www.motorsportweek.com/2026/11/20/indycar-tests-at-kansas-speedway-with-eye-towards-possible-2027-return/",
-   "desc": "Two IndyCar drivers turned laps at Kansas Superspeedway on Friday, completing a Firestone tire test on the high-speed oval. Pato O’Ward and Will Power each worked on a test program meant to evaluate which tire compounds and aerody",
+   "title": "Marco Bezzecchi breaks lap record to claim Portuguese MotoGP pole position",
+   "url": "https://www.motorsportweek.com/2026/11/21/marco-bezzecchi-breaks-lap-record-to-claim-portuguese-motogp-pole-position/",
+   "desc": "Marco Bezzecchi kept his slim hopes of the 2026 MotoGP title alive by claiming pole position at Portimao ahead of champion-elect Marc Marquez. The post Marco Bezzecchi breaks lap record to claim Portuguese MotoGP pole position app",
    "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/2026-11_08-300x169.jpg",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/POR_LG9_1485-1-1-300x169.webp",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
    "age": "hace 1 h",
-   "ts": 1795214931.0,
+   "ts": 1795262892.0,
    "teams": []
   },
   {
-   "title": "Ferrari anticipates major F1 ‘reset’ after rain hits Las Vegas",
-   "url": "https://www.motorsportweek.com/2026/11/20/ferrari-las-vegas-f1/",
-   "desc": "Ferrari has predicts the Formula 1 grid will ‘reset’ ahead of Friday’s sessions at the Las Vegas Grand Prix, with improved weather conditions expected for qualifying. The first two practice sessions – which take place on Thursday ",
+   "title": "Lewis Hamilton laments Las Vegas F1 qualifying: ‘We were nowhere’",
+   "url": "https://www.motorsportweek.com/2026/11/21/lewis-hamilton-laments-las-vegas-f1-qualifying/",
+   "desc": "Lewis Hamilton has lamented his qualifying performance at the F1 Las Vegas GP, after struggles for pace and straight-line speed saw the seven-time world champion eliminated in Q2. The post Lewis Hamilton laments Las Vegas F1 quali",
    "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Charles-Leclerc-Ferrari-Vegas-300x169.webp",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Lewis-Hamilton-F1-Las-Vegas-GP-300x169.webp",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
+   "age": "hace 1 h",
+   "ts": 1795262400.0,
+   "teams": [
+    "mercedes"
+   ]
+  },
+  {
+   "title": "George Russell warned “you don’t want to make an enemy” of Max Verstappen",
+   "url": "https://www.crash.net/f1/news/1110568/1/george-russell-warned-you-dont-want-make-enemy-max-verstappen",
+   "desc": "Jacques Villeneuve issues warning to George Russell after Max Verstappen clash in Las Vegas.",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/si202611210072.jpg?width=1200",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
+   "age": "hace 1 h",
+   "ts": 1795262067.0,
+   "teams": [
+    "mercedes",
+    "red_bull"
+   ]
+  },
+  {
+   "title": "Pirelli’s F1 tyres still can’t cope with Losail: Maximum stint lengths imposed again | Formula 1",
+   "url": "https://www.racefans.net/2026/11/21/pirellis-f1-tyres-still-cant-cope-with-losail-maximum-stint-lengths-imposed-again/",
+   "desc": "For the third time in five years, Pirelli is imposing maximum lengths on stints in the Qatar Grand Prix due to concerns over tyre failures.",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-21",
+   "date_human": "21 nov",
+   "age": "hace 1 h",
+   "ts": 1795261821.0,
+   "teams": []
+  },
+  {
+   "title": "How McLaren tried to mitigate its Las Vegas F1 top speed deficit",
+   "url": "https://www.motorsport.com/f1/news/how-mclaren-tried-to-mitigate-its-las-vegas-f1-top-speed-deficit/10876451/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Despite what was a respectable result on a circuit that accentuated the MCL40's flaws without rewarding its virtues, Lando Norris was not best pleased with how Friday at the Las Vegas Grand Prix weekend. “We're just shocking on th",
+   "source": "Motorsport.com",
+   "image": "https://cdn-1.motorsport.com/images/amp/0arEGwP2/s6/oscar-piastri-mclaren-lando-no.jpg",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
+   "age": "hace 1 h",
+   "ts": 1795261262.0,
+   "teams": [
+    "mclaren"
+   ]
+  },
+  {
+   "title": "Toto Wolff predicts ‘big cinema’ for Max Verstappen v George Russell after Las Vegas GP needle",
+   "url": "https://www.crash.net/f1/news/1110556/1/toto-wolff-predicts-big-cinema-max-verstappen-v-george-russell-after-las-vegas-gp",
+   "desc": "Toto Wolff is expecting fireworks between Max Verstappen and George Russell at the start in Las Vegas.",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455454_hires.jpg?width=1200",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
+   "age": "hace 1 h",
+   "ts": 1795260285.0,
+   "teams": [
+    "mercedes",
+    "red_bull"
+   ]
+  },
+  {
+   "title": "Antonelli and Russell set for Mercedes talks over Las Vegas GP qualifying mix-up",
+   "url": "https://www.autosport.com/f1/news/kimi-antonelli-and-george-russell-set-for-mercedes-talks-over-las-vegas-gp-qualifying-woes/10876456/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "George Russell and Kimi Antonelli will discuss the fallout from Formula 1’s Las Vegas Grand Prix qualifying “offline” following confusion over team orders and track position. Traffic played a significant role in qualifying on Frid",
+   "source": "Autosport",
+   "image": "https://cdn-1.motorsport.com/images/amp/YWKAVQOY/s6/andrea-kimi-antonelli-mercedes.jpg",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
+   "age": "hace 2 h",
+   "ts": 1795259119.0,
+   "teams": [
+    "mercedes"
+   ]
+  },
+  {
+   "title": "Kimi Antonelli and George Russell set for Mercedes talks over Las Vegas GP qualifying woes",
+   "url": "https://www.motorsport.com/f1/news/kimi-antonelli-and-george-russell-to-discuss-traffic-woes-in-las-vegas-gp-qualifying/10876431/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "George Russell and Kimi Antonelli will discuss the fallout from Formula 1’s Las Vegas Grand Prix qualifying “offline” following confusion over team orders and track position. Traffic played a significant role in qualifying on Frid",
+   "source": "Motorsport.com",
+   "image": "https://cdn-1.motorsport.com/images/amp/YWKAVQOY/s6/andrea-kimi-antonelli-mercedes.jpg",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
+   "age": "hace 2 h",
+   "ts": 1795258975.0,
+   "teams": [
+    "mercedes"
+   ]
+  },
+  {
+   "title": "On This Day: McLaren hire Zak Brown to lead team after ousting Ron Dennis | Brief",
+   "url": "https://www.racefans.net/2026/11/21/on-this-day-zak-brown-takes-charge-at-struggling-mclaren/",
+   "desc": "Zak Brown takes over at McLaren: \"It was a pretty grim place\"",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-21",
+   "date_human": "21 nov",
+   "age": "hace 2 h",
+   "ts": 1795258632.0,
+   "teams": [
+    "mclaren"
+   ]
+  },
+  {
+   "title": "Alex Marquez tops rain-affected final Portuguese MotoGP practice",
+   "url": "https://www.motorsportweek.com/2026/11/21/alex-marquez-tops-rain-affected-final-portuguese-motogp-practice/",
+   "desc": "Alex Marquez topped a tentative final practice session for the MotoGP Portuguese Grand Prix that was impacted by further rain. The post Alex Marquez tops rain-affected final Portuguese MotoGP practice appeared first on Motorsport ",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/SI202611201083-1-300x169.webp",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
+   "age": "hace 2 h",
+   "ts": 1795258600.0,
+   "teams": []
+  },
+  {
+   "title": "Max Verstappen’s alarming admission about secret Red Bull F1 car issue: “We can’t fix it”",
+   "url": "https://www.crash.net/f1/news/1110540/1/max-verstappens-alarming-admission-about-secret-red-bull-f1-car-issue-we-cant-fix",
+   "desc": "Max Verstappen remains tight-lipped about a sensitive Red Bull car issue he is dealing with.",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455480_hires.jpg?width=1200",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
+   "age": "hace 2 h",
+   "ts": 1795257579.0,
+   "teams": [
+    "red_bull"
+   ]
+  },
+  {
+   "title": "Max Verstappen shares theory on Ferrari's lack of top speed in F1 2026",
+   "url": "https://www.motorsport.com/f1/news/max-verstappen-shares-theory-on-ferraris-lack-of-top-speed-in-f1-2026/10876424/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Although Max Verstappen was not entirely satisfied with his second-fastest time in qualifying for the Formula 1 Las Vegas Grand Prix – pointing to a mysterious issue with the RB22 – a glance at Ferrari shows that things could have",
+   "source": "Motorsport.com",
+   "image": "https://cdn-1.motorsport.com/images/amp/0mXykW56/s6/charles-leclerc-ferrari.jpg",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
+   "age": "hace 2 h",
+   "ts": 1795257070.0,
+   "teams": [
+    "ferrari",
+    "red_bull"
+   ]
+  },
+  {
+   "title": "Drivers expect Monza-style race at Las Vegas with “extreme” slipstream | Formula 1",
+   "url": "https://www.racefans.net/2026/11/21/drivers-expect-extreme-slipstream-to-create-monza-style-race-at-las-vegas/",
+   "desc": "The powerful slipstream effect at the Las Vegas Strip Circuit will shape this weekend's race, say drivers.",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-21",
+   "date_human": "21 nov",
    "age": "hace 3 h",
-   "ts": 1795205700.0,
-   "teams": [
-    "ferrari"
-   ]
-  },
-  {
-   "title": "FIA issues major announcement on V8 F1 return",
-   "url": "https://www.motorsportweek.com/2026/11/20/fia-issues-major-announcement-on-v8-f1-return/",
-   "desc": "The FIA has confirmed that a 'unanimous agreement' has been reached with all F1 teams for the sport to return to V8 engines for the 2030 season. The post FIA issues major announcement on V8 F1 return appeared first on Motorsport W",
-   "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/F1-FIA-paddock-300x169.webp",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
-   "age": "hace 4 h",
-   "ts": 1795202057.0,
+   "ts": 1795253016.0,
    "teams": []
   },
   {
-   "title": "F1 set for V8 return from 2030",
-   "url": "https://www.autosport.com/f1/news/f1-set-for-v8-return-from-2030/10875119/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-   "desc": "Formula 1 has moved closer to a return to V8 engines from the 2030 season as the FIA announced that a unanimous agreement has been reached between the governing body, F1 management and the power unit manufacturers. F1 has long wor",
+   "title": "Verstappen reveals mysterious Red Bull F1 car issue that cannot be fixed in Las Vegas",
+   "url": "https://www.autosport.com/f1/news/verstappen-reveals-mysterious-red-bull-f1-car-issue-that-cannot-be-fixed-in-las-vegas/10876404/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "Thanks to Kimi Antonelli 's grid penalty, Max Verstappen will start Formula 1's Las Vegas Grand Prix from pole position, but that is not necessarily a reason for the Dutch driver to be satisfied. Yes, Red Bull has made significant",
    "source": "Autosport",
-   "image": "https://cdn-1.motorsport.com/images/amp/YWKAgeVY/s6/charles-leclerc-ferrari-lewis--2.jpg",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
+   "image": "https://cdn-1.motorsport.com/images/amp/0LderEP0/s6/max-verstappen-red-bull-racing-2.jpg",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
    "age": "hace 4 h",
-   "ts": 1795201320.0,
-   "teams": []
-  },
-  {
-   "title": "FIA, F1 and teams unanimously agree to drop current power units after 2029 | Formula 1",
-   "url": "https://www.racefans.net/2026/11/20/fia-f1-and-teams-unanimously-agree-to-drop-current-power-units-after-2029/",
-   "desc": "The FIA has confirmed plans to introduce new V8 hybrid turbo power unit regulations to Formula 1 in 2030.",
-   "source": "RaceFans",
-   "image": null,
-   "date": "2026-11-20",
-   "date_human": "20 nov",
-   "age": "hace 4 h",
-   "ts": 1795201196.0,
-   "teams": []
-  },
-  {
-   "title": "Unanimous agreement for F1 V8 engine return plan reached",
-   "url": "https://www.crash.net/f1/news/1110159/1/key-agreement-reached-f1s-poised-return-v8-engines",
-   "desc": "F1 is set to return to V8 engines from 2030 after a breakthrough agreement was reached.",
-   "source": "Crash.net",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1452623_hires.jpg?width=1200",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
-   "age": "hace 4 h",
-   "ts": 1795201035.0,
-   "teams": []
-  },
-  {
-   "title": "Formula 1 set for V8 turbo return in 2030",
-   "url": "https://www.motorsport.com/f1/news/f1-set-for-v8-turbo-move-by-2030-season/10875113/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Formula 1 has moved closer to a return to V8 engines from the 2030 season as the FIA announced that a unanimous agreement has been reached between the governing body, F1 management and the power unit manufacturers. F1 has long wor",
-   "source": "Motorsport.com",
-   "image": "https://cdn-1.motorsport.com/images/amp/24QerjAY/s6/start-action-3.jpg",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
-   "age": "hace 4 h",
-   "ts": 1795200935.0,
-   "teams": []
-  },
-  {
-   "title": "Video: Verstappen avoids welcome reception for drivers in Las Vegas paddock | Brief",
-   "url": "https://www.racefans.net/2026/11/20/video-verstappen-avoids-welcome-reception-for-drivers-in-las-vegas-paddock/",
-   "desc": "Verstappen swerves Las Vegas welcome reception for drivers",
-   "source": "RaceFans",
-   "image": null,
-   "date": "2026-11-20",
-   "date_human": "20 nov",
-   "age": "hace 5 h",
-   "ts": 1795197857.0,
+   "ts": 1795251126.0,
    "teams": [
+    "mercedes",
     "red_bull"
    ]
   },
   {
-   "title": "Social Media: Fire halts final day of Formula E testing | Brief",
-   "url": "https://www.racefans.net/2026/11/20/social-media-fire-halts-final-day-of-formula-e-testing/",
-   "desc": "Barnard unhurt as fire ends Formula E 'Gen4' test at Jarama",
-   "source": "RaceFans",
-   "image": null,
-   "date": "2026-11-20",
-   "date_human": "20 nov",
-   "age": "hace 5 h",
-   "ts": 1795197165.0,
-   "teams": []
-  },
-  {
-   "title": "How to watch 2026 F1 Las Vegas GP today: Free live stream details and start time",
-   "url": "https://www.crash.net/f1/news/1110385/1/how-watch-2026-f1-las-vegas-gp-today-free-live-stream-details-and-start-time",
-   "desc": "All the details on this weekends race in Nevada and how to watch the Las Vegas Grand Prix for free. This article contains affiliate links. If you buy through them, we may earn a commission at no extra cost to you",
-   "source": "Crash.net",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1454834_hires.jpg?width=1200",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
+   "title": "Verstappen responds to Russell after Las Vegas GP practice clash over 'gentleman's agreement'",
+   "url": "https://www.autosport.com/f1/news/verstappen-responds-to-russell-after-las-vegas-gp-practice-clash-over-gentlemans-agreement/10876337/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "During the final practice session for the Formula 1 Las Vegas Grand Prix, Max Verstappen and George Russell crossed paths once again. The Dutchman overtook the Mercedes driver, but then slowed down in front of him and, according t",
+   "source": "Autosport",
+   "image": "https://cdn-1.motorsport.com/images/amp/0Zq8OJb6/s6/andrea-kimi-antonelli-mercedes-2.jpg",
+   "date": "2026-11-21",
+   "date_human": "21 nov",
    "age": "hace 6 h",
-   "ts": 1795191866.0,
-   "teams": []
-  },
-  {
-   "title": "Max Verstappen: “I really thought that we would not win a race this year”",
-   "url": "https://www.motorsport.com/f1/news/max-verstappen-i-really-thought-that-we-would-not-win-a-race-this-year/10875990/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Heading into the Las Vegas Grand Prix on a run of eight consecutive podiums, Max Verstappen looks every bit the force who dominated Formula 1 earlier this decade. Back in March, however, the four-time world champion was braced for",
-   "source": "Motorsport.com",
-   "image": "https://cdn-1.motorsport.com/images/amp/YXyKX156/s6/max-verstappen-red-bull-racing-a10875990-b707-2.jpg",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
-   "age": "hace 10 h",
-   "ts": 1795178624.0,
+   "ts": 1795244712.0,
    "teams": [
+    "mercedes",
     "red_bull"
-   ]
-  },
-  {
-   "title": "Fernando Alonso returns to Dakar: Why his first rally-raid experience was a shock to the system",
-   "url": "https://www.motorsport.com/dakar/news/fernando-alonso-returns-to-dakar-why-his-first-rally-raid-experience-was-a-shock-to-the-system/10875881/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "While Fernando Alonso reiterated in Las Vegas that, in his view, Formula 1 has thrown away 16 years of pure racing before the return of V8 engines in 2030, the Spaniard continues to seek those pure challenges outside the pinnacle ",
-   "source": "Motorsport.com",
-   "image": "https://cdn-1.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin.jpg",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
-   "age": "hace 11 h",
-   "ts": 1795176903.0,
-   "teams": [
-    "aston_martin"
-   ]
-  },
-  {
-   "title": "Alpine suddenly releases Paul Aron from F1 reserve driver role",
-   "url": "https://www.crash.net/f1/news/1110300/1/alpine-suddenly-releases-paul-aron-f1-reserve-driver-role",
-   "desc": "Alpine has released Paul Aron from his F1 reserve driver role.",
-   "source": "Crash.net",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1441321_hires.jpg?width=1200",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
-   "age": "hace 12 h",
-   "ts": 1795172149.0,
-   "teams": [
-    "alpine"
-   ]
-  },
-  {
-   "title": "Pirelli reintroduces stint limit for F1 Qatar GP",
-   "url": "https://www.autosport.com/f1/news/pirelli-reintroduces-stint-limit-for-f1-qatar-gp/10875958/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-   "desc": "Formula 1 teams will again have to follow a prescribed stint limit for each car at the Qatar Grand Prix to protect the Pirelli tyres around the high-degradation track. Drivers must complete no more than 27 laps per stint at Lusail",
-   "source": "Autosport",
-   "image": "https://cdn-1.motorsport.com/images/amp/6DGqG9JY/s6/lando-norris-mclaren-oscar-pia-2.jpg",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
-   "age": "hace 14 h",
-   "ts": 1795162871.0,
-   "teams": []
-  },
-  {
-   "title": "\"Same as Brazil\" – Red Bull \"trying to understand\" the root cause of Verstappen's complaints",
-   "url": "https://www.autosport.com/f1/news/same-as-brazil-red-bull-trying-to-understand-the-root-cause-of-verstappens-complaints/10875945/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-   "desc": "After Thursday's practice sessions in Las Vegas, Red Bull – like all Formula 1 teams – has been left with very few answers. Isack Hadjar eventually finished fourth on the timesheets, but that means very little given that no more r",
-   "source": "Autosport",
-   "image": "https://cdn-1.motorsport.com/images/amp/0arEG1p2/s6/max-verstappen-red-bull-racing-2.jpg",
-   "date": "2026-11-20",
-   "date_human": "20 nov",
-   "age": "hace 15 h",
-   "ts": 1795162375.0,
-   "teams": [
-    "red_bull",
-    "rb"
    ]
   },
   {
@@ -21476,10 +21988,10 @@
    "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/06/17939920025742.jpg",
    "date": "2026-11-07",
    "date_human": "7 nov",
-   "age": "hace 13 d",
+   "age": "hace 14 d",
    "ts": 1794037328.0,
    "teams": []
   }
  ],
- "news_pool": 303
+ "news_pool": 330
 }
