@@ -3113,7 +3113,7 @@
    }
   }
  ],
- "generated": "2026-11-24T03:34:03+00:00",
+ "generated": "2026-11-24T15:40:01+00:00",
  "round": 21,
  "total_races": 23,
  "rounds_done": 21,
@@ -19854,32 +19854,31 @@
    ],
    "news": [
     {
-     "title": "On This Day: McLaren appoint rookie Hamilton as Alonso’s team mate for 2007 | Brief",
-     "url": "https://www.racefans.net/2026/11/24/on-this-day-hamilton-joins-mclaren/",
-     "desc": "McLaren hand Hamilton his Formula 1 debut alongside Alonso",
-     "source": "RaceFans",
-     "image": null,
+     "title": "Lewis Hamilton makes telling statement over Ferrari No 1 status",
+     "url": "https://www.motorsportweek.com/2026/11/24/lewis-hamilton-makes-telling-statement-over-ferrari-no-1-status/",
+     "desc": "Lewis Hamilton has maintained that he has never asked to become Ferrari's number one driver, despite implying that more support from the team could have helped him take on Kimi Antonelli for the 2026 F1 world championship. The pos",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Lewis-Hamilton-F1-Las-Vegas-GP-3-300x169.webp",
      "date": "2026-11-24",
      "date_human": "24 nov",
-     "age": "hace 3 h",
-     "ts": 1795478460.0,
+     "age": "hace 1 h",
+     "ts": 1795528800.0,
      "teams": [
-      "mercedes",
-      "mclaren",
-      "aston_martin"
+      "ferrari",
+      "mercedes"
      ],
      "own": true
     },
     {
-     "title": "Guenther Steiner expects Ferrari board to react after Lewis Hamilton-Charles Leclerc clash",
-     "url": "https://www.motorsport.com/f1/news/guenther-steiner-expects-ferrari-board-to-react-after-lewis-hamilton-charles-leclerc-clash/10877259/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Former Haas Formula 1 team principal Guenther Steiner believes Ferrari will make changes after Lewis Hamilton and Charles Leclerc clashed again at the Las Vegas Grand Prix. Leclerc spun Hamilton around while the pair fought over s",
+     "title": "F1 pundit calls for real consequences at Ferrari: \"I'd chuck Ollie Bearman in for a race\"",
+     "url": "https://www.motorsport.com/f1/news/chuck-bearman-in-for-a-race-james-hinchcliffe-calls-for-real-consequences-after-ferraris-latest-mel/10877438/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "After Charles Leclerc and Lewis Hamilton collided for the second time in three races during the 2026 Las Vegas Grand Prix, the paddock debate quickly moved past who misjudged Turn 7 and onto a harder question: how can Ferrari actu",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6DGgbp7Y/s6/charles-leclerc-ferrari-lewis-a10877259-b704-2.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 8 h",
-     "ts": 1795460403.0,
+     "image": "https://cdn-1.motorsport.com/images/amp/6DGgbp7Y/s6/charles-leclerc-ferrari-lewis-a10877438-b704-2.jpg",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 2 h",
+     "ts": 1795525203.0,
      "teams": [
       "ferrari",
       "mercedes",
@@ -19888,30 +19887,15 @@
      "own": true
     },
     {
-     "title": "Toto Wolff: Las Vegas was “Indy 500, NASCAR and Formula 1 mixed”",
-     "url": "https://www.motorsport.com/f1/news/toto-wolff-las-vegas-was-indy-500-and-nascar-and-formula-1-mixed/10877232/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Even after watching both Mercedes drivers slip off the podium in the final three laps, team principal Toto Wolff left the 2026 Las Vegas Grand Prix thrilled by the spectacle. While critics questioned whether Formula 1’s 2026 energ",
+     "title": "Juan Pablo Montoya explains how Red Bull outsmarted Mercedes at F1 Las Vegas GP",
+     "url": "https://www.motorsport.com/f1/news/juan-pablo-montoya-explains-how-red-bulls-deployment-trap-outsmarted-mercedes-in-las-vegas/10877399/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Mercedes brought the fastest single-lap package to the Las Vegas Strip - newly crowned 2026 world champion Kimi Antonelli topped qualifying before a five-place engine penalty dropped him to sixth, while George Russell lined up alo",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/0arEdzP2/s6/toto-wolff-mercedes-a10877232-b705-2.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 9 h",
-     "ts": 1795457417.0,
-     "teams": [
-      "mercedes"
-     ],
-     "own": true
-    },
-    {
-     "title": "Russell says he’d worked out how to beat Verstappen to the finishing line | Formula 1",
-     "url": "https://www.racefans.net/2026/11/23/russell-says-hed-worked-out-how-to-beat-verstappen-to-the-finishing-line/",
-     "desc": "George Russell says he'd found a better energy deployment strategy to beat Max Verstappen to the finishing than his team mate.",
-     "source": "RaceFans",
-     "image": null,
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 10 h",
-     "ts": 1795453360.0,
+     "image": "https://cdn-1.motorsport.com/images/amp/2dEolPnY/s6/max-verstappen-red-bull-racing-a10877399-b707-2.jpg",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 2 h",
+     "ts": 1795523339.0,
      "teams": [
       "mercedes",
       "red_bull"
@@ -19919,31 +19903,48 @@
      "own": true
     },
     {
-     "title": "Stewards right to blame Leclerc for collision with Hamilton, says Vasseur | Formula 1",
-     "url": "https://www.racefans.net/2026/11/23/stewards-right-to-blame-leclerc-for-collision-with-hamilton-says-vasseur/",
-     "desc": "Ferrari team principal Frederic Vasseur said they gave Charles Leclerc a message five corners before his collision with Lewis Hamilton.",
-     "source": "RaceFans",
-     "image": null,
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 11 h",
-     "ts": 1795450811.0,
+     "title": "George Russell urged to 'shut up' in brutal Max Verstappen warning",
+     "url": "https://www.crash.net/f1/news/1110861/1/george-russell-urged-shut-brutal-max-verstappen-warning",
+     "desc": "George Russell has been warned against engaging in a psychological battle with Max Verstappen following their latest dispute",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1454561_hires.jpg?width=1200",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 3 h",
+     "ts": 1795519800.0,
      "teams": [
-      "ferrari",
-      "mercedes"
+      "mercedes",
+      "red_bull"
      ],
      "own": true
     },
     {
-     "title": "Lewis Hamilton-endorsed Mercedes junior wins F4 World Cup in Macau",
-     "url": "https://www.crash.net/f1/news/1110849/1/lewis-hamilton-endorsed-mercedes-junior-wins-f4-world-cup-macau",
-     "desc": "Kenzo Craigie, who was previously named by Lewis Hamilton as a driver for his dream F1 team, has claimed the FIA F4 World Cup in Macau",
-     "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-11/macau20gp_fia_2026_aw-311174-1.jpg?width=1200",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 11 h",
-     "ts": 1795450200.0,
+     "title": "George Russell warned ‘Max will beat the s**t out of you’ as feud intensifies",
+     "url": "https://www.motorsportweek.com/2026/11/24/george-russell-warned-as-feud-intensifies/",
+     "desc": "Former Haas F1 Team Principal Guenther Steiner has warned George Russell that Max Verstappen will 'will beat the s***t out of you' after their feud resumed at the Las Vegas GP. The post George Russell warned &#8216;Max will beat t",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/George-Russell-F1-Las-Vegas-GP-4.webp",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 3 h",
+     "ts": 1795519800.0,
+     "teams": [
+      "mercedes",
+      "red_bull",
+      "haas"
+     ],
+     "own": true
+    },
+    {
+     "title": "Mercedes faces engine supply headache over proposed F1 2030 regulations",
+     "url": "https://www.motorsportweek.com/2026/11/24/mercedes-faces-engine-headache-2030-regulations/",
+     "desc": "Several Formula 1 teams on the grid could face having to find new engines for 2030 if proposed changes to customer team regulations by the FIA are passed. The post Mercedes faces engine supply headache over proposed F1 2030 regula",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/F1-Las-Vegas-GP-5.webp",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 4 h",
+     "ts": 1795516200.0,
      "teams": [
       "mercedes"
      ],
@@ -19997,6 +19998,70 @@
    ],
    "news": [
     {
+     "title": "Lewis Hamilton makes telling statement over Ferrari No 1 status",
+     "url": "https://www.motorsportweek.com/2026/11/24/lewis-hamilton-makes-telling-statement-over-ferrari-no-1-status/",
+     "desc": "Lewis Hamilton has maintained that he has never asked to become Ferrari's number one driver, despite implying that more support from the team could have helped him take on Kimi Antonelli for the 2026 F1 world championship. The pos",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Lewis-Hamilton-F1-Las-Vegas-GP-3-300x169.webp",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 1 h",
+     "ts": 1795528800.0,
+     "teams": [
+      "ferrari",
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "F1 pundit calls for real consequences at Ferrari: \"I'd chuck Ollie Bearman in for a race\"",
+     "url": "https://www.motorsport.com/f1/news/chuck-bearman-in-for-a-race-james-hinchcliffe-calls-for-real-consequences-after-ferraris-latest-mel/10877438/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "After Charles Leclerc and Lewis Hamilton collided for the second time in three races during the 2026 Las Vegas Grand Prix, the paddock debate quickly moved past who misjudged Turn 7 and onto a harder question: how can Ferrari actu",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/6DGgbp7Y/s6/charles-leclerc-ferrari-lewis-a10877438-b704-2.jpg",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 2 h",
+     "ts": 1795525203.0,
+     "teams": [
+      "ferrari",
+      "mercedes",
+      "haas"
+     ],
+     "own": true
+    },
+    {
+     "title": "Guenther Steiner calls for radical Charles Leclerc demotion threat after Ferrari clashes",
+     "url": "https://www.crash.net/f1/news/1110855/1/guenther-steiner-calls-radical-charles-leclerc-demotion-threat-after-ferrari",
+     "desc": "Guenther Steiner has proposed a radical solution to Ferrari's growing rivalry between Lewis Hamilton and Charles Leclerc",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1456271_hires_0.jpg?width=1200",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 5 h",
+     "ts": 1795513500.0,
+     "teams": [
+      "ferrari",
+      "mercedes"
+     ],
+     "own": true
+    },
+    {
+     "title": "Ferrari lambasted as ‘utterly wrong’ over handling of ‘delicate’ driver situation",
+     "url": "https://www.motorsportweek.com/2026/11/24/ferrari-lambasted-over-handing-delicate-driver-situation/",
+     "desc": "Ferrari has been lambasted by former F1 driver Christian Danner for its handling of its rapidly deteriorating driver situation. The post Ferrari lambasted as &#8216;utterly wrong&#8217; over handling of &#8216;delicate&#8217; driv",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Lewis-Hamilton-Charles-Leclerc-F1-Hungarian-GP.webp",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 5 h",
+     "ts": 1795512600.0,
+     "teams": [
+      "ferrari"
+     ],
+     "own": true
+    },
+    {
      "title": "Guenther Steiner expects Ferrari board to react after Lewis Hamilton-Charles Leclerc clash",
      "url": "https://www.motorsport.com/f1/news/guenther-steiner-expects-ferrari-board-to-react-after-lewis-hamilton-charles-leclerc-clash/10877259/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Former Haas Formula 1 team principal Guenther Steiner believes Ferrari will make changes after Lewis Hamilton and Charles Leclerc clashed again at the Las Vegas Grand Prix. Leclerc spun Hamilton around while the pair fought over s",
@@ -20004,7 +20069,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6DGgbp7Y/s6/charles-leclerc-ferrari-lewis-a10877259-b704-2.jpg",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 8 h",
+     "age": "hace 20 h",
      "ts": 1795460403.0,
      "teams": [
       "ferrari",
@@ -20021,72 +20086,8 @@
      "image": null,
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 11 h",
+     "age": "hace 23 h",
      "ts": 1795450811.0,
-     "teams": [
-      "ferrari",
-      "mercedes"
-     ],
-     "own": true
-    },
-    {
-     "title": "Lewis Hamilton addresses Ferrari number one debate after Charles Leclerc collision",
-     "url": "https://www.crash.net/f1/news/1110846/1/lewis-hamilton-addresses-ferrari-number-one-debate-after-charles-leclerc",
-     "desc": "Lewis Hamilton has addressed the debate surrounding Ferrari's number one driver following another collision with Charles Leclerc",
-     "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1451080_hires.jpg?width=1200",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 12 h",
-     "ts": 1795446900.0,
-     "teams": [
-      "ferrari",
-      "mercedes"
-     ],
-     "own": true
-    },
-    {
-     "title": "How Martin Brundle predicted Ferrari Las Vegas GP nightmare clash",
-     "url": "https://www.motorsportweek.com/2026/11/23/how-martin-brundle-predicted-ferrari-las-vegas-clash/",
-     "desc": "Sky Sports pundit Martin Brundle predicted the Ferrari driver clash at the F1 Las Vegas GP following Lewis Hamilton and Charles Leclerc's contact in Mexico City. The post How Martin Brundle predicted Ferrari Las Vegas GP nightmare",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Lewis-Hamilton-Charles-Leclerc-F1-Mexico-City-GP.webp",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 12 h",
-     "ts": 1795446000.0,
-     "teams": [
-      "ferrari",
-      "mercedes"
-     ],
-     "own": true
-    },
-    {
-     "title": "Lewis Hamilton: Ferrari’s top-speed deficit was “brutal” at F1 Las Vegas GP",
-     "url": "https://www.motorsport.com/f1/news/lewis-hamilton-ferraris-top-speed-deficit-was-brutal-at-f1-las-vegas-gp/10876908/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Ferrari Formula 1 driver Lewis Hamilton says the SF-26’s top-speed deficit was exposed as even more “brutal” than he expected on Las Vegas’ long straights. Hamilton and Charles Leclerc were both eliminated in Q2 and finished the r",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6VyK51VY/s6/lewis-hamilton-ferrari.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 13 h",
-     "ts": 1795442613.0,
-     "teams": [
-      "ferrari",
-      "mercedes"
-     ],
-     "own": true
-    },
-    {
-     "title": "Why Ferrari believes written rules won't help manage Charles Leclerc and Lewis Hamilton",
-     "url": "https://www.motorsport.com/f1/news/why-ferrari-believes-written-rules-wont-help-manage-charles-leclerc-and-lewis-hamilton/10877145/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "The post-race media session with Frederic Vasseur was, in several respects, almost a carbon copy of the conversation in Mexico City. On both occasions, the discussion with the written press took place in a small, almost cosy room ",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/YN7vBdV6/s6/frederic-vasseur-ferrari.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 15 h",
-     "ts": 1795436149.0,
      "teams": [
       "ferrari",
       "mercedes"
@@ -20151,96 +20152,98 @@
    ],
    "news": [
     {
-     "title": "Max Verstappen jokes last time he won a race like F1 Las Vegas GP it was \"Mario Kart\"",
-     "url": "https://www.motorsport.com/f1/news/max-verstappen-the-last-time-i-won-a-race-like-las-vegas-was-on-mario-kart/10877295/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Four-time Formula 1 champion Max Verstappen says the last time he won a race like the Las Vegas Grand Prix was when he was playing Mario Kart. The Red Bull driver converted pole position into his 75th grand prix win, and his third",
+     "title": "Juan Pablo Montoya explains how Red Bull outsmarted Mercedes at F1 Las Vegas GP",
+     "url": "https://www.motorsport.com/f1/news/juan-pablo-montoya-explains-how-red-bulls-deployment-trap-outsmarted-mercedes-in-las-vegas/10877399/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Mercedes brought the fastest single-lap package to the Las Vegas Strip - newly crowned 2026 world champion Kimi Antonelli topped qualifying before a five-place engine penalty dropped him to sixth, while George Russell lined up alo",
      "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/0mXykV56/s6/max-verstappen-red-bull-racing-a10877295-b707-2.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 7 h",
-     "ts": 1795464003.0,
-     "teams": [
-      "red_bull"
-     ],
-     "own": true
-    },
-    {
-     "title": "Laurent Mekies: Keeping his emotions in check is giving Isack Hadjar “lap time”",
-     "url": "https://www.motorsport.com/f1/news/laurent-mekies-keeping-his-emotions-in-check-is-giving-isack-hadjar-lap-time/10877211/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Isack Hadjar left the 2026 Las Vegas Grand Prix empty-handed after a Lap 26 front wing failure and a post-race 10-second safety car penalty relegated him to 15th, yet Red Bull team principal Laurent Mekies saw something far more e",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/2wlKzrKY/s6/isack-hadjar-red-bull-racing-a10877211-b707-2.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 7 h",
-     "ts": 1795462202.0,
-     "teams": [
-      "red_bull",
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "Max Verstappen’s deadpan reaction to winning F1’s Overtake of the Month award",
-     "url": "https://www.motorsport.com/f1/news/max-verstappens-deadpan-reaction-to-winning-f1s-overtake-of-the-month-award/10877217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Max Verstappen has never been one for forced showmanship, and Formula 1’s Las Vegas Grand Prix Fan Forum offered another reminder. Appearing on stage in Red Bull’s tan Las Vegas teamwear alongside team-mate Isack Hadjar and Haas d",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/0mXykV56/s6/max-verstappen-red-bull-racing-a10877217-b707-2.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 9 h",
-     "ts": 1795456303.0,
-     "teams": [
-      "red_bull",
-      "haas",
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "Max Verstappen considering 2027 Daytona 24 Hours entry",
-     "url": "https://www.autosport.com/f1/news/max-verstappen-reveals-he-is-considering-2027-daytona-24-hours-entry/10877159/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-     "desc": "Ahead of the Formula 1 Las Vegas Grand Prix, Max Verstappen first paid a visit to Daytona. The Dutchman said he was primarily there to film content with Red Bull, but the visit also raises the question of whether he is seriously c",
-     "source": "Autosport",
-     "image": "https://cdn-1.motorsport.com/images/amp/6VyKxMwY/s6/max-verstappen-red-bull-racing.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 9 h",
-     "ts": 1795455793.0,
-     "teams": [
-      "red_bull"
-     ],
-     "own": true
-    },
-    {
-     "title": "Max Verstappen reveals he is considering 2027 Daytona 24 Hours entry",
-     "url": "https://www.motorsport.com/f1/news/max-verstappen-reveals-he-is-considering-2027-daytona-24-hours-entry/10877155/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Ahead of the Formula 1 Las Vegas Grand Prix, Max Verstappen first paid a visit to Daytona. The Dutchman said he was primarily there to film content with Red Bull, but the visit also raises the question of whether he is seriously c",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6VyKxMwY/s6/max-verstappen-red-bull-racing.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 9 h",
-     "ts": 1795455745.0,
-     "teams": [
-      "red_bull"
-     ],
-     "own": true
-    },
-    {
-     "title": "Russell says he’d worked out how to beat Verstappen to the finishing line | Formula 1",
-     "url": "https://www.racefans.net/2026/11/23/russell-says-hed-worked-out-how-to-beat-verstappen-to-the-finishing-line/",
-     "desc": "George Russell says he'd found a better energy deployment strategy to beat Max Verstappen to the finishing than his team mate.",
-     "source": "RaceFans",
-     "image": null,
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 10 h",
-     "ts": 1795453360.0,
+     "image": "https://cdn-1.motorsport.com/images/amp/2dEolPnY/s6/max-verstappen-red-bull-racing-a10877399-b707-2.jpg",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 2 h",
+     "ts": 1795523339.0,
      "teams": [
       "mercedes",
       "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Max Verstappen eyeing debut in major US race in January",
+     "url": "https://www.crash.net/f1/news/1110863/1/max-verstappen-eyeing-debut-major-us-race-january",
+     "desc": "Max Verstappen has confirmed that he is exploring the possibility of competing in one of the world's most prestigious endurance races during the F1 winter break",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1456221_hires.jpg?width=1200",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 3 h",
+     "ts": 1795522500.0,
+     "teams": [
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "George Russell urged to 'shut up' in brutal Max Verstappen warning",
+     "url": "https://www.crash.net/f1/news/1110861/1/george-russell-urged-shut-brutal-max-verstappen-warning",
+     "desc": "George Russell has been warned against engaging in a psychological battle with Max Verstappen following their latest dispute",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1454561_hires.jpg?width=1200",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 3 h",
+     "ts": 1795519800.0,
+     "teams": [
+      "mercedes",
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "George Russell warned ‘Max will beat the s**t out of you’ as feud intensifies",
+     "url": "https://www.motorsportweek.com/2026/11/24/george-russell-warned-as-feud-intensifies/",
+     "desc": "Former Haas F1 Team Principal Guenther Steiner has warned George Russell that Max Verstappen will 'will beat the s***t out of you' after their feud resumed at the Las Vegas GP. The post George Russell warned &#8216;Max will beat t",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/George-Russell-F1-Las-Vegas-GP-4.webp",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 3 h",
+     "ts": 1795519800.0,
+     "teams": [
+      "mercedes",
+      "red_bull",
+      "haas"
+     ],
+     "own": true
+    },
+    {
+     "title": "George Russell accused of being 'all mouth and no trousers' amid Max Verstappen feud",
+     "url": "https://www.crash.net/f1/news/1110857/1/george-russell-accused-being-all-mouth-and-no-trousers-amid-max-verstappen-feud",
+     "desc": "George Russell has been urged to back up his criticism of Max Verstappen with his performances on track following their latest clash",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455671_hires.jpg?width=1200",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 5 h",
+     "ts": 1795515300.0,
+     "teams": [
+      "mercedes",
+      "red_bull"
+     ],
+     "own": true
+    },
+    {
+     "title": "Isack Hadjar frustrated – What really happened on Red Bull's team radio in Las Vegas",
+     "url": "https://www.motorsport.com/f1/news/isack-hadjar-frustrated-what-really-happened-on-red-bulls-team-radio-in-las-vegas/10877375/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Isack Hadjar started Formula 1’s Las Vegas Grand Prix from fourth on the grid, and by lap four he had already found himself running second, right behind Red Bull team-mate Max Verstappen. And given that the grand prix had turned i",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/0qgKkjkY/s6/isack-hadjar-red-bull-racing.jpg",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 5 h",
+     "ts": 1795514657.0,
+     "teams": [
+      "red_bull",
+      "rb"
      ],
      "own": true
     }
@@ -20292,6 +20295,21 @@
    ],
    "news": [
     {
+     "title": "McLaren reveal surprising stance on Oscar Piastri’s foul-mouthed radio message",
+     "url": "https://www.crash.net/f1/news/1110858/1/mclaren-reveal-surprising-stance-oscar-piastris-foul-mouthed-radio-message",
+     "desc": "McLaren team principal Andrea Stella has addressed Oscar Piastri's frustrated response to a reminder of the team's rules of engagement",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455625_hires.jpg?width=1200",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 4 h",
+     "ts": 1795517100.0,
+     "teams": [
+      "mclaren"
+     ],
+     "own": true
+    },
+    {
      "title": "On This Day: McLaren appoint rookie Hamilton as Alonso’s team mate for 2007 | Brief",
      "url": "https://www.racefans.net/2026/11/24/on-this-day-hamilton-joins-mclaren/",
      "desc": "McLaren hand Hamilton his Formula 1 debut alongside Alonso",
@@ -20299,7 +20317,7 @@
      "image": null,
      "date": "2026-11-24",
      "date_human": "24 nov",
-     "age": "hace 3 h",
+     "age": "hace 15 h",
      "ts": 1795478460.0,
      "teams": [
       "mercedes",
@@ -20316,7 +20334,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YK15z410/s6/lando-norris-mclaren-a10877274-b706-2.jpg",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 10 h",
+     "age": "hace 22 h",
      "ts": 1795453443.0,
      "teams": [
       "mclaren"
@@ -20331,7 +20349,7 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Oscar-Piasrtri-Lando-Norris-F1-Las-Vegas-GP-1.webp",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 13 h",
+     "age": "hace 1 d",
      "ts": 1795442400.0,
      "teams": [
       "mclaren"
@@ -20346,7 +20364,7 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455545_hires_0.jpg?width=1200",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 15 h",
+     "age": "hace 1 d",
      "ts": 1795434300.0,
      "teams": [
       "mclaren"
@@ -20365,21 +20383,6 @@
      "ts": 1795370478.0,
      "teams": [
       "red_bull",
-      "mclaren"
-     ],
-     "own": true
-    },
-    {
-     "title": "“Some overtakes weren’t overtakes”: Norris queries claim of ‘352 passes’ in Las Vegas | Formula 1",
-     "url": "https://www.racefans.net/2026/11/22/some-overtakes-werent-overtakes-norris-queries-claim-of-352-passes-in-las-vegas/",
-     "desc": "The Las Vegas Grand Prix featured 352 overtaking moves according to Formula 1 but drivers queried how real the racing was.",
-     "source": "RaceFans",
-     "image": null,
-     "date": "2026-11-22",
-     "date_human": "22 nov",
-     "age": "hace 1 d",
-     "ts": 1795349325.0,
-     "teams": [
       "mclaren"
      ],
      "own": true
@@ -20442,6 +20445,53 @@
    ],
    "news": [
     {
+     "title": "‘Maybe I’m delusional but I genuinely feel like a podium was possible’ – Lindblad | Formula 1",
+     "url": "https://www.racefans.net/2026/11/24/maybe-im-delusional-but-i-genuinely-feel-like-a-podium-was-possible-lindblad/",
+     "desc": "Arvid Lindblad says he and Racing Bulls still don't understand the \"very abnormal\" cause of the spin which put him out of the Las Vegas Grand Prix.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 4 h",
+     "ts": 1795518646.0,
+     "teams": [
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Isack Hadjar frustrated – What really happened on Red Bull's team radio in Las Vegas",
+     "url": "https://www.motorsport.com/f1/news/isack-hadjar-frustrated-what-really-happened-on-red-bulls-team-radio-in-las-vegas/10877375/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Isack Hadjar started Formula 1’s Las Vegas Grand Prix from fourth on the grid, and by lap four he had already found himself running second, right behind Red Bull team-mate Max Verstappen. And given that the grand prix had turned i",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/0qgKkjkY/s6/isack-hadjar-red-bull-racing.jpg",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 5 h",
+     "ts": 1795514657.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Was Hadjar helping himself or Verstappen when he collected a penalty in the pits? | Formula 1",
+     "url": "https://www.racefans.net/2026/11/24/was-hadjar-helping-himself-or-verstappen-when-he-collected-a-penalty-in-the-pits/",
+     "desc": "The stewards penalised Isack Hadjar for driving \"slowly for tactical reasons\" behind the Safety Car. What was Red Bull trying to achieve?",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 8 h",
+     "ts": 1795504503.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
      "title": "Laurent Mekies: Keeping his emotions in check is giving Isack Hadjar “lap time”",
      "url": "https://www.motorsport.com/f1/news/laurent-mekies-keeping-his-emotions-in-check-is-giving-isack-hadjar-lap-time/10877211/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Isack Hadjar left the 2026 Las Vegas Grand Prix empty-handed after a Lap 26 front wing failure and a post-race 10-second safety car penalty relegated him to 15th, yet Red Bull team principal Laurent Mekies saw something far more e",
@@ -20449,7 +20499,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2wlKzrKY/s6/isack-hadjar-red-bull-racing-a10877211-b707-2.jpg",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 7 h",
+     "age": "hace 19 h",
      "ts": 1795462202.0,
      "teams": [
       "red_bull",
@@ -20465,7 +20515,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0mXykV56/s6/max-verstappen-red-bull-racing-a10877217-b707-2.jpg",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 9 h",
+     "age": "hace 21 h",
      "ts": 1795456303.0,
      "teams": [
       "red_bull",
@@ -20482,58 +20532,10 @@
      "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Liam-Lawson-F1-2-300x169.webp",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 11 h",
+     "age": "hace 23 h",
      "ts": 1795449600.0,
      "teams": [
       "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "Hadjar asked Red Bull to tell Verstappen “stop defending” as they were losing time | Formula 1",
-     "url": "https://www.racefans.net/2026/11/23/hadjar-asked-red-bull-to-tell-verstappen-stop-defending-as-they-were-losing-time/",
-     "desc": "In unheard radio messages, Isack Hadjar warned Red Bull they were costing themselves time because he wasn't allowed to pass Max Verstappen.",
-     "source": "RaceFans",
-     "image": null,
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 14 h",
-     "ts": 1795437159.0,
-     "teams": [
-      "red_bull",
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "Isack Hadjar punished by FIA over deliberate Las Vegas safety car tactic",
-     "url": "https://www.crash.net/f1/news/1110751/1/isack-hadjar-punished-fia-over-deliberate-las-vegas-safety-car-tactic",
-     "desc": "Isack Hadjar has been handed a 10-second time penalty for deliberately slowing under safety car conditions",
-     "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455049_hires.jpg?width=1200",
-     "date": "2026-11-22",
-     "date_human": "22 nov",
-     "age": "hace 1 d",
-     "ts": 1795341000.0,
-     "teams": [
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "Hadjar penalised after backing up Russell in Las Vegas GP, Perez given grid drop for Qatar GP",
-     "url": "https://www.autosport.com/f1/news/hadjar-penalised-after-backing-up-russell-in-las-vegas-gp-perez-given-grid-drop-for-qatar-gp/10876867/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-     "desc": "Isack Hadjar has received a 10-second penalty for driving unnecessarily slowly in Formula 1’s Las Vegas Grand Prix – the result of his actions under the safety car. The race was neutralised on lap 19 when Sergio Perez and Rafael C",
-     "source": "Autosport",
-     "image": "https://cdn-1.motorsport.com/images/amp/6b8Zy8v2/s6/george-russell-mercedes-pierre-2.jpg",
-     "date": "2026-11-22",
-     "date_human": "22 nov",
-     "age": "hace 1 d",
-     "ts": 1795338706.0,
-     "teams": [
-      "mercedes",
-      "rb",
-      "cadillac"
      ],
      "own": true
     }
@@ -20585,15 +20587,15 @@
    ],
    "news": [
     {
-     "title": "Alpine suddenly releases Paul Aron from F1 reserve driver role",
-     "url": "https://www.crash.net/f1/news/1110300/1/alpine-suddenly-releases-paul-aron-f1-reserve-driver-role",
-     "desc": "Alpine has released Paul Aron from his F1 reserve driver role.",
-     "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1441321_hires.jpg?width=1200",
-     "date": "2026-11-20",
-     "date_human": "20 nov",
-     "age": "hace 3 d",
-     "ts": 1795172149.0,
+     "title": "‘I’d rather blow up the f***ing engine’: Gasly’s fury over cooling problems | Formula 1",
+     "url": "https://www.racefans.net/2026/11/24/video-id-rather-blow-up-the-fing-engine-gaslys-fury-over-cooling-problems/",
+     "desc": "Alpine's overheating problems made Pierre Gasly lose his cool after dozens of radio messages telling him to manage rising power unit temperatures.",
+     "source": "RaceFans",
+     "image": null,
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 5 h",
+     "ts": 1795515229.0,
      "teams": [
       "alpine"
      ],
@@ -20607,7 +20609,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YE9EbBMY/s6/george-russell-mercedes-2.jpg",
      "date": "2026-11-20",
      "date_human": "20 nov",
-     "age": "hace 3 d",
+     "age": "hace 4 d",
      "ts": 1795151728.0,
      "teams": [
       "mercedes",
@@ -20623,7 +20625,7 @@
      "image": "https://as00.epimg.net/motor/imagenes/2022/05/28/formula_1/1653715741_756073_1653715897_miniatura_normal.jpg",
      "date": "2022-05-28",
      "date_human": "28 may",
-     "age": "hace 1640 d",
+     "age": "hace 1641 d",
      "ts": 1653717364.0,
      "teams": [
       "aston_martin",
@@ -20639,7 +20641,7 @@
      "image": "https://as00.epimg.net/motor/imagenes/2022/05/27/formula_1/1653657144_400730_1653657236_miniatura_normal.jpg",
      "date": "2022-05-27",
      "date_human": "27 may",
-     "age": "hace 1641 d",
+     "age": "hace 1642 d",
      "ts": 1653657423.0,
      "teams": [
       "red_bull",
@@ -20658,7 +20660,7 @@
      "image": "https://as00.epimg.net/motor/imagenes/2022/05/24/formula_1/1653383371_192575_1653383480_miniatura_normal.jpg",
      "date": "2022-05-25",
      "date_human": "25 may",
-     "age": "hace 1643 d",
+     "age": "hace 1644 d",
      "ts": 1653456822.0,
      "teams": [
       "aston_martin",
@@ -20674,7 +20676,7 @@
      "image": "https://as00.epimg.net/motor/imagenes/2022/05/20/formula_1/1653067769_546318_1653069177_miniatura_normal.jpg",
      "date": "2022-05-21",
      "date_human": "21 may",
-     "age": "hace 1647 d",
+     "age": "hace 1648 d",
      "ts": 1653116159.0,
      "teams": [
       "red_bull",
@@ -20751,6 +20753,40 @@
    ],
    "news": [
     {
+     "title": "F1 pundit calls for real consequences at Ferrari: \"I'd chuck Ollie Bearman in for a race\"",
+     "url": "https://www.motorsport.com/f1/news/chuck-bearman-in-for-a-race-james-hinchcliffe-calls-for-real-consequences-after-ferraris-latest-mel/10877438/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "After Charles Leclerc and Lewis Hamilton collided for the second time in three races during the 2026 Las Vegas Grand Prix, the paddock debate quickly moved past who misjudged Turn 7 and onto a harder question: how can Ferrari actu",
+     "source": "Motorsport.com",
+     "image": "https://cdn-1.motorsport.com/images/amp/6DGgbp7Y/s6/charles-leclerc-ferrari-lewis-a10877438-b704-2.jpg",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 2 h",
+     "ts": 1795525203.0,
+     "teams": [
+      "ferrari",
+      "mercedes",
+      "haas"
+     ],
+     "own": true
+    },
+    {
+     "title": "George Russell warned ‘Max will beat the s**t out of you’ as feud intensifies",
+     "url": "https://www.motorsportweek.com/2026/11/24/george-russell-warned-as-feud-intensifies/",
+     "desc": "Former Haas F1 Team Principal Guenther Steiner has warned George Russell that Max Verstappen will 'will beat the s***t out of you' after their feud resumed at the Las Vegas GP. The post George Russell warned &#8216;Max will beat t",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/George-Russell-F1-Las-Vegas-GP-4.webp",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 3 h",
+     "ts": 1795519800.0,
+     "teams": [
+      "mercedes",
+      "red_bull",
+      "haas"
+     ],
+     "own": true
+    },
+    {
      "title": "Guenther Steiner expects Ferrari board to react after Lewis Hamilton-Charles Leclerc clash",
      "url": "https://www.motorsport.com/f1/news/guenther-steiner-expects-ferrari-board-to-react-after-lewis-hamilton-charles-leclerc-clash/10877259/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Former Haas Formula 1 team principal Guenther Steiner believes Ferrari will make changes after Lewis Hamilton and Charles Leclerc clashed again at the Las Vegas Grand Prix. Leclerc spun Hamilton around while the pair fought over s",
@@ -20758,7 +20794,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6DGgbp7Y/s6/charles-leclerc-ferrari-lewis-a10877259-b704-2.jpg",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 8 h",
+     "age": "hace 20 h",
      "ts": 1795460403.0,
      "teams": [
       "ferrari",
@@ -20775,7 +20811,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0mXykV56/s6/max-verstappen-red-bull-racing-a10877217-b707-2.jpg",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 9 h",
+     "age": "hace 21 h",
      "ts": 1795456303.0,
      "teams": [
       "red_bull",
@@ -20792,7 +20828,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6x7ZeD4Y/s6/oscar-piastri-mclaren-2.jpg",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 11 h",
+     "age": "hace 23 h",
      "ts": 1795450174.0,
      "teams": [
       "haas"
@@ -20807,40 +20843,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YMXbMRL2/s6/andrea-kimi-antonelli-mercedes-3.jpg",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 11 h",
+     "age": "hace 23 h",
      "ts": 1795448807.0,
-     "teams": [
-      "haas"
-     ],
-     "own": true
-    },
-    {
-     "title": "Guenther Steiner warns George Russell: Do not \"poke the bear\" Max Verstappen",
-     "url": "https://www.motorsport.com/f1/news/guenther-steiner-warns-george-russell-do-not-poke-the-bear-max-verstappen/10877209/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Former Haas Formula 1 team principal Guenther Steiner has urged Mercedes driver George Russell not to \"poke the bear\" with Max Verstappen, after their war of words at the Las Vegas Grand Prix. Russell hit out at Verstappen after t",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/6AlvydGY/s6/max-verstappen-red-bull-racing-a10877209-b705-2.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 14 h",
-     "ts": 1795439760.0,
-     "teams": [
-      "mercedes",
-      "red_bull",
-      "haas"
-     ],
-     "own": true
-    },
-    {
-     "title": "Haas announce Rafael Camara decision for remaining 2026 F1 races",
-     "url": "https://www.crash.net/f1/news/1110830/1/haas-announce-rafael-camara-decision-remaining-2026-f1-races",
-     "desc": "Haas have confirmed their plans for Rafael Camara for the final two races of the 2026 F1 season",
-     "source": "Crash.net",
-     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1454269_hires.jpg?width=1200",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 17 h",
-     "ts": 1795428300.0,
      "teams": [
       "haas"
      ],
@@ -20883,6 +20887,21 @@
    "prev": [],
    "news": [
     {
+     "title": "F1's 'cultural relevance' beats its US motorsport competition",
+     "url": "https://www.the-race.com/business/f1-cultural-relevance-beats-us-competition-nascar-indycar/",
+     "desc": "F1 might have a smaller audience in the US than NASCAR and IndyCar, but Will Buxton feels it has a unique spot in the country's sporting landscape",
+     "source": "The Race",
+     "image": "https://storage.ghost.io/c/dd/af/ddafbd99-2ccd-468c-b622-4b3cccf80b49/content/images/2026/11/XPB_1456135_HiRes.jpg",
+     "date": "",
+     "date_human": "",
+     "age": "",
+     "ts": 0,
+     "teams": [
+      "audi"
+     ],
+     "own": true
+    },
+    {
      "title": "Cadillac and Audi join Hot Wheels' expanding F1 collection",
      "url": "https://www.the-race.com/extra/cadillac-and-audi-hot-wheels-expandied-f1-collection/",
      "desc": "Hot Wheels will complete its 2026 F1 grid in 1:64 scale for the first time, with Cadillac and Audi joining the collection",
@@ -20899,34 +20918,18 @@
      "own": true
     },
     {
-     "title": "Toto Wolff: Las Vegas was “Indy 500, NASCAR and Formula 1 mixed”",
-     "url": "https://www.motorsport.com/f1/news/toto-wolff-las-vegas-was-indy-500-and-nascar-and-formula-1-mixed/10877232/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Even after watching both Mercedes drivers slip off the podium in the final three laps, team principal Toto Wolff left the 2026 Las Vegas Grand Prix thrilled by the spectacle. While critics questioned whether Formula 1’s 2026 energ",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/0arEdzP2/s6/toto-wolff-mercedes-a10877232-b705-2.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 9 h",
-     "ts": 1795457417.0,
+     "title": "George Russell urged to 'shut up' in brutal Max Verstappen warning",
+     "url": "https://www.crash.net/f1/news/1110861/1/george-russell-urged-shut-brutal-max-verstappen-warning",
+     "desc": "George Russell has been warned against engaging in a psychological battle with Max Verstappen following their latest dispute",
+     "source": "Crash.net",
+     "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1454561_hires.jpg?width=1200",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 3 h",
+     "ts": 1795519800.0,
      "teams": [
-      "mercedes"
-     ],
-     "own": false
-    },
-    {
-     "title": "Max Verstappen’s deadpan reaction to winning F1’s Overtake of the Month award",
-     "url": "https://www.motorsport.com/f1/news/max-verstappens-deadpan-reaction-to-winning-f1s-overtake-of-the-month-award/10877217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-     "desc": "Max Verstappen has never been one for forced showmanship, and Formula 1’s Las Vegas Grand Prix Fan Forum offered another reminder. Appearing on stage in Red Bull’s tan Las Vegas teamwear alongside team-mate Isack Hadjar and Haas d",
-     "source": "Motorsport.com",
-     "image": "https://cdn-1.motorsport.com/images/amp/0mXykV56/s6/max-verstappen-red-bull-racing-a10877217-b707-2.jpg",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 9 h",
-     "ts": 1795456303.0,
-     "teams": [
-      "red_bull",
-      "haas",
-      "rb"
+      "mercedes",
+      "red_bull"
      ],
      "own": false
     }
@@ -20985,7 +20988,7 @@
      "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/07/17940107358835.png",
      "date": "2026-11-07",
      "date_human": "7 nov",
-     "age": "hace 16 d",
+     "age": "hace 17 d",
      "ts": 1794037169.0,
      "teams": [
       "aston_martin",
@@ -21049,7 +21052,7 @@
      "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/05/17938895862354.jpg",
      "date": "2026-11-06",
      "date_human": "6 nov",
-     "age": "hace 17 d",
+     "age": "hace 18 d",
      "ts": 1793950649.0,
      "teams": [
       "mercedes",
@@ -21123,6 +21126,21 @@
    ],
    "news": [
     {
+     "title": "“I don’t know”: Stroll unsure Honda can close two-second straight-line gap",
+     "url": "https://www.motorsportweek.com/2026/11/24/i-dont-know-stroll-unsure-honda-can-close-two-second-straight-line-gap/",
+     "desc": "Lance Stroll is asking Honda for more horsepower, admitting to a rather eye-opening two-second deficit in straight-line performance following a lacklustre F1 Las Vegas GP. The post &#8220;I don&#8217;t know&#8221;: Stroll unsure H",
+     "source": "Motorsport Week",
+     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Lance-Stroll-F1-Aston-Martin-300x169.webp",
+     "date": "2026-11-24",
+     "date_human": "24 nov",
+     "age": "hace 2 h",
+     "ts": 1795525200.0,
+     "teams": [
+      "aston_martin"
+     ],
+     "own": true
+    },
+    {
      "title": "On This Day: McLaren appoint rookie Hamilton as Alonso’s team mate for 2007 | Brief",
      "url": "https://www.racefans.net/2026/11/24/on-this-day-hamilton-joins-mclaren/",
      "desc": "McLaren hand Hamilton his Formula 1 debut alongside Alonso",
@@ -21130,7 +21148,7 @@
      "image": null,
      "date": "2026-11-24",
      "date_human": "24 nov",
-     "age": "hace 3 h",
+     "age": "hace 15 h",
      "ts": 1795478460.0,
      "teams": [
       "mercedes",
@@ -21147,7 +21165,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2jEAyEN0/s6/lance-stroll-aston-martin-raci-3.jpg",
      "date": "2026-11-19",
      "date_human": "19 nov",
-     "age": "hace 4 d",
+     "age": "hace 5 d",
      "ts": 1795075059.0,
      "teams": [
       "aston_martin"
@@ -21162,7 +21180,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/63QaODg2/s6/fernando-alonso-aston-martin-r-2.jpg",
      "date": "2026-11-19",
      "date_human": "19 nov",
-     "age": "hace 4 d",
+     "age": "hace 5 d",
      "ts": 1795060425.0,
      "teams": [
       "aston_martin"
@@ -21177,7 +21195,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6n7bvPO0/s6/fernando-alonso-aston-martin-3.jpg",
      "date": "2026-11-17",
      "date_human": "17 nov",
-     "age": "hace 6 d",
+     "age": "hace 7 d",
      "ts": 1794906118.0,
      "teams": [
       "aston_martin"
@@ -21192,26 +21210,11 @@
      "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/07/17940107358835.png",
      "date": "2026-11-07",
      "date_human": "7 nov",
-     "age": "hace 16 d",
+     "age": "hace 17 d",
      "ts": 1794037169.0,
      "teams": [
       "aston_martin",
       "williams"
-     ],
-     "own": true
-    },
-    {
-     "title": "Honda, de nuevo, amarga a Alonso: \"Para el resto es muy fácil\"",
-     "url": "https://www.marca.com/motor/formula1/gp-brasil/2026/11/07/honda-nuevo-amarga-alonso-resto-facil.html",
-     "desc": "El asturiano ve a un Aston Martin más competente, pero la falta de potencia vuelve a alterar la capacidad de obtener un buen resultado&nbsp; Leer",
-     "source": "Marca Motor",
-     "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/07/17940314283271.png",
-     "date": "2026-11-07",
-     "date_human": "7 nov",
-     "age": "hace 16 d",
-     "ts": 1794031431.0,
-     "teams": [
-      "aston_martin"
      ],
      "own": true
     }
@@ -21252,21 +21255,6 @@
    "prev": [],
    "news": [
     {
-     "title": "Colton Herta leaves Hitech by mutual agreement in latest F1 career blow",
-     "url": "https://www.motorsportweek.com/2026/11/23/colton-herta-leaves-hitech-by-mutual-agreement-in-latest-f1-career-blow/",
-     "desc": "Colton Herta will exit Hitech for the final two races of the Formula 2 season by mutual agreement as the failure to secure the Cadillac F1 seat for 2027 begins to have consequences. The post Colton Herta leaves Hitech by mutual ag",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/08/XPB_1428632_HiRes-1-300x169.webp",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 14 h",
-     "ts": 1795438800.0,
-     "teams": [
-      "cadillac"
-     ],
-     "own": true
-    },
-    {
      "title": "Herta pulls out of final Formula 2 races in Qatar and Abu Dhabi | Formula 2",
      "url": "https://www.racefans.net/2026/11/23/herta-pulls-out-of-final-formula-2-races-in-qatar-and-abu-dhabi/",
      "desc": "Colton Herta will not take part in the final two Formula 2 rounds in the Middle East after missing his chance to gain a Cadillac Formula 1 drive.",
@@ -21274,23 +21262,8 @@
      "image": null,
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 17 h",
+     "age": "hace 1 d",
      "ts": 1795428139.0,
-     "teams": [
-      "cadillac"
-     ],
-     "own": true
-    },
-    {
-     "title": "“He didn’t see me”: Perez gets five-place Qatar grid drop for Las Vegas clash",
-     "url": "https://www.motorsportweek.com/2026/11/23/he-didnt-see-me-perez-gets-five-place-qatar-grid-drop-for-las-vegas-clash/",
-     "desc": "FIA stewards have confirmed that Sergio Perez will take a five-place grid penalty at the F1 Qatar GP next weekend. The post &#8220;He didn&#8217;t see me&#8221;: Perez gets five-place Qatar grid drop for Las Vegas clash appeared f",
-     "source": "Motorsport Week",
-     "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Sergio-Perez-Cadillac--300x169.webp",
-     "date": "2026-11-23",
-     "date_human": "23 nov",
-     "age": "hace 18 h",
-     "ts": 1795424441.0,
      "teams": [
       "cadillac"
      ],
@@ -21304,7 +21277,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6b8Zy8v2/s6/george-russell-mercedes-pierre-2.jpg",
      "date": "2026-11-22",
      "date_human": "22 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1795338706.0,
      "teams": [
       "mercedes",
@@ -21321,7 +21294,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/27No8MO0/s6/isack-hadjar-red-bull-racing.jpg",
      "date": "2026-11-22",
      "date_human": "22 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1795337993.0,
      "teams": [
       "mercedes",
@@ -21338,8 +21311,38 @@
      "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455743_hires.jpg?width=1200",
      "date": "2026-11-22",
      "date_human": "22 nov",
-     "age": "hace 1 d",
+     "age": "hace 2 d",
      "ts": 1795336742.0,
+     "teams": [
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Cadillac ditches plan to produce own V6 hybrid engine ahead of F1’s V8 push",
+     "url": "https://www.autosport.com/f1/news/cadillac-ditches-plan-to-produce-own-v6-hybrid-engine-ahead-of-f1s-v8-push/10875807/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Cadillac is set to delay the introduction of its in-house Formula 1 power unit by a year to 2030. The American squad's initial plan was to compete in the championship with its own General Motors power unit for the first time in 20",
+     "source": "Autosport",
+     "image": "https://cdn-1.motorsport.com/images/amp/2jEAkpP0/s6/valtteri-bottas-cadillac-2.jpg",
+     "date": "2026-11-20",
+     "date_human": "20 nov",
+     "age": "hace 4 d",
+     "ts": 1795147314.0,
+     "teams": [
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "Cadillac retaining Bottas for F1 2027 is the logical move",
+     "url": "https://www.autosport.com/f1/news/cadillac-retaining-bottas-for-f1-2027-is-the-logical-move/10875337/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "The longest-running contract saga of the Formula 1 season is now at an end. Not that it has been blockbuster material, since it revolves around a team struggling to lift itself from the back of the grid. Still, the easy option for",
+     "source": "Autosport",
+     "image": "https://cdn-1.motorsport.com/images/amp/2eZgEAjY/s6/valtteri-bottas-cadillac-racin-3.jpg",
+     "date": "2026-11-18",
+     "date_human": "18 nov",
+     "age": "hace 5 d",
+     "ts": 1795032095.0,
      "teams": [
       "cadillac"
      ],
@@ -21930,65 +21933,173 @@
  ],
  "news": [
   {
-   "title": "On This Day: McLaren appoint rookie Hamilton as Alonso’s team mate for 2007 | Brief",
-   "url": "https://www.racefans.net/2026/11/24/on-this-day-hamilton-joins-mclaren/",
-   "desc": "McLaren hand Hamilton his Formula 1 debut alongside Alonso",
-   "source": "RaceFans",
-   "image": null,
+   "title": "Motorsport UK announces new Chair as David Richards steps down",
+   "url": "https://www.crash.net/f1/news/1110868/1/motorsport-uk-announces-new-chair-david-richards-steps-down",
+   "desc": "MSUK has announced a new Chair to replace David Richards",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-09/xpb_1424310_hires.jpg?width=1200",
    "date": "2026-11-24",
    "date_human": "24 nov",
-   "age": "hace 3 h",
-   "ts": 1795478460.0,
+   "age": "hace 1 h",
+   "ts": 1795533200.0,
+   "teams": []
+  },
+  {
+   "title": "Lewis Hamilton makes telling statement over Ferrari No 1 status",
+   "url": "https://www.motorsportweek.com/2026/11/24/lewis-hamilton-makes-telling-statement-over-ferrari-no-1-status/",
+   "desc": "Lewis Hamilton has maintained that he has never asked to become Ferrari's number one driver, despite implying that more support from the team could have helped him take on Kimi Antonelli for the 2026 F1 world championship. The pos",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Lewis-Hamilton-F1-Las-Vegas-GP-3-300x169.webp",
+   "date": "2026-11-24",
+   "date_human": "24 nov",
+   "age": "hace 1 h",
+   "ts": 1795528800.0,
    "teams": [
+    "ferrari",
+    "mercedes"
+   ]
+  },
+  {
+   "title": "F1 pundit calls for real consequences at Ferrari: \"I'd chuck Ollie Bearman in for a race\"",
+   "url": "https://www.motorsport.com/f1/news/chuck-bearman-in-for-a-race-james-hinchcliffe-calls-for-real-consequences-after-ferraris-latest-mel/10877438/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "After Charles Leclerc and Lewis Hamilton collided for the second time in three races during the 2026 Las Vegas Grand Prix, the paddock debate quickly moved past who misjudged Turn 7 and onto a harder question: how can Ferrari actu",
+   "source": "Motorsport.com",
+   "image": "https://cdn-1.motorsport.com/images/amp/6DGgbp7Y/s6/charles-leclerc-ferrari-lewis-a10877438-b704-2.jpg",
+   "date": "2026-11-24",
+   "date_human": "24 nov",
+   "age": "hace 2 h",
+   "ts": 1795525203.0,
+   "teams": [
+    "ferrari",
     "mercedes",
-    "mclaren",
+    "haas"
+   ]
+  },
+  {
+   "title": "Toto Wolff issues defiant defence of F1 regs and Las Vegas GP as he addresses criticism",
+   "url": "https://www.crash.net/f1/news/1110865/1/toto-wolff-issues-defiant-defence-f1-regs-and-las-vegas-gp-he-addresses-criticism",
+   "desc": "Toto Wolff has likened the Las Vegas Grand Prix to a combination of NASCAR, the Indianapolis 500 and Formula 1 as he urged critics to remain open-minded",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1455648_hires.jpg?width=1200",
+   "date": "2026-11-24",
+   "date_human": "24 nov",
+   "age": "hace 2 h",
+   "ts": 1795525200.0,
+   "teams": []
+  },
+  {
+   "title": "“I don’t know”: Stroll unsure Honda can close two-second straight-line gap",
+   "url": "https://www.motorsportweek.com/2026/11/24/i-dont-know-stroll-unsure-honda-can-close-two-second-straight-line-gap/",
+   "desc": "Lance Stroll is asking Honda for more horsepower, admitting to a rather eye-opening two-second deficit in straight-line performance following a lacklustre F1 Las Vegas GP. The post &#8220;I don&#8217;t know&#8221;: Stroll unsure H",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Lance-Stroll-F1-Aston-Martin-300x169.webp",
+   "date": "2026-11-24",
+   "date_human": "24 nov",
+   "age": "hace 2 h",
+   "ts": 1795525200.0,
+   "teams": [
     "aston_martin"
    ]
   },
   {
-   "title": "Max Verstappen jokes last time he won a race like F1 Las Vegas GP it was \"Mario Kart\"",
-   "url": "https://www.motorsport.com/f1/news/max-verstappen-the-last-time-i-won-a-race-like-las-vegas-was-on-mario-kart/10877295/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Four-time Formula 1 champion Max Verstappen says the last time he won a race like the Las Vegas Grand Prix was when he was playing Mario Kart. The Red Bull driver converted pole position into his 75th grand prix win, and his third",
+   "title": "Juan Pablo Montoya explains how Red Bull outsmarted Mercedes at F1 Las Vegas GP",
+   "url": "https://www.motorsport.com/f1/news/juan-pablo-montoya-explains-how-red-bulls-deployment-trap-outsmarted-mercedes-in-las-vegas/10877399/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Mercedes brought the fastest single-lap package to the Las Vegas Strip - newly crowned 2026 world champion Kimi Antonelli topped qualifying before a five-place engine penalty dropped him to sixth, while George Russell lined up alo",
    "source": "Motorsport.com",
-   "image": "https://cdn-1.motorsport.com/images/amp/0mXykV56/s6/max-verstappen-red-bull-racing-a10877295-b707-2.jpg",
-   "date": "2026-11-23",
-   "date_human": "23 nov",
-   "age": "hace 7 h",
-   "ts": 1795464003.0,
+   "image": "https://cdn-1.motorsport.com/images/amp/2dEolPnY/s6/max-verstappen-red-bull-racing-a10877399-b707-2.jpg",
+   "date": "2026-11-24",
+   "date_human": "24 nov",
+   "age": "hace 2 h",
+   "ts": 1795523339.0,
+   "teams": [
+    "mercedes",
+    "red_bull"
+   ]
+  },
+  {
+   "title": "Max Verstappen eyeing debut in major US race in January",
+   "url": "https://www.crash.net/f1/news/1110863/1/max-verstappen-eyeing-debut-major-us-race-january",
+   "desc": "Max Verstappen has confirmed that he is exploring the possibility of competing in one of the world's most prestigious endurance races during the F1 winter break",
+   "source": "Crash.net",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1456221_hires.jpg?width=1200",
+   "date": "2026-11-24",
+   "date_human": "24 nov",
+   "age": "hace 3 h",
+   "ts": 1795522500.0,
    "teams": [
     "red_bull"
    ]
   },
   {
-   "title": "Laurent Mekies: Keeping his emotions in check is giving Isack Hadjar “lap time”",
-   "url": "https://www.motorsport.com/f1/news/laurent-mekies-keeping-his-emotions-in-check-is-giving-isack-hadjar-lap-time/10877211/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Isack Hadjar left the 2026 Las Vegas Grand Prix empty-handed after a Lap 26 front wing failure and a post-race 10-second safety car penalty relegated him to 15th, yet Red Bull team principal Laurent Mekies saw something far more e",
+   "title": "George Russell warned ‘Max will beat the s**t out of you’ as feud intensifies",
+   "url": "https://www.motorsportweek.com/2026/11/24/george-russell-warned-as-feud-intensifies/",
+   "desc": "Former Haas F1 Team Principal Guenther Steiner has warned George Russell that Max Verstappen will 'will beat the s***t out of you' after their feud resumed at the Las Vegas GP. The post George Russell warned &#8216;Max will beat t",
+   "source": "Motorsport Week",
+   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/George-Russell-F1-Las-Vegas-GP-4.webp",
+   "date": "2026-11-24",
+   "date_human": "24 nov",
+   "age": "hace 3 h",
+   "ts": 1795519800.0,
+   "teams": [
+    "mercedes",
+    "red_bull",
+    "haas"
+   ]
+  },
+  {
+   "title": "‘Maybe I’m delusional but I genuinely feel like a podium was possible’ – Lindblad | Formula 1",
+   "url": "https://www.racefans.net/2026/11/24/maybe-im-delusional-but-i-genuinely-feel-like-a-podium-was-possible-lindblad/",
+   "desc": "Arvid Lindblad says he and Racing Bulls still don't understand the \"very abnormal\" cause of the spin which put him out of the Las Vegas Grand Prix.",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-24",
+   "date_human": "24 nov",
+   "age": "hace 4 h",
+   "ts": 1795518646.0,
+   "teams": [
+    "rb"
+   ]
+  },
+  {
+   "title": "‘I’d rather blow up the f***ing engine’: Gasly’s fury over cooling problems | Formula 1",
+   "url": "https://www.racefans.net/2026/11/24/video-id-rather-blow-up-the-fing-engine-gaslys-fury-over-cooling-problems/",
+   "desc": "Alpine's overheating problems made Pierre Gasly lose his cool after dozens of radio messages telling him to manage rising power unit temperatures.",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-24",
+   "date_human": "24 nov",
+   "age": "hace 5 h",
+   "ts": 1795515229.0,
+   "teams": [
+    "alpine"
+   ]
+  },
+  {
+   "title": "Isack Hadjar frustrated – What really happened on Red Bull's team radio in Las Vegas",
+   "url": "https://www.motorsport.com/f1/news/isack-hadjar-frustrated-what-really-happened-on-red-bulls-team-radio-in-las-vegas/10877375/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Isack Hadjar started Formula 1’s Las Vegas Grand Prix from fourth on the grid, and by lap four he had already found himself running second, right behind Red Bull team-mate Max Verstappen. And given that the grand prix had turned i",
    "source": "Motorsport.com",
-   "image": "https://cdn-1.motorsport.com/images/amp/2wlKzrKY/s6/isack-hadjar-red-bull-racing-a10877211-b707-2.jpg",
-   "date": "2026-11-23",
-   "date_human": "23 nov",
-   "age": "hace 7 h",
-   "ts": 1795462202.0,
+   "image": "https://cdn-1.motorsport.com/images/amp/0qgKkjkY/s6/isack-hadjar-red-bull-racing.jpg",
+   "date": "2026-11-24",
+   "date_human": "24 nov",
+   "age": "hace 5 h",
+   "ts": 1795514657.0,
    "teams": [
     "red_bull",
     "rb"
    ]
   },
   {
-   "title": "Guenther Steiner expects Ferrari board to react after Lewis Hamilton-Charles Leclerc clash",
-   "url": "https://www.motorsport.com/f1/news/guenther-steiner-expects-ferrari-board-to-react-after-lewis-hamilton-charles-leclerc-clash/10877259/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Former Haas Formula 1 team principal Guenther Steiner believes Ferrari will make changes after Lewis Hamilton and Charles Leclerc clashed again at the Las Vegas Grand Prix. Leclerc spun Hamilton around while the pair fought over s",
-   "source": "Motorsport.com",
-   "image": "https://cdn-1.motorsport.com/images/amp/6DGgbp7Y/s6/charles-leclerc-ferrari-lewis-a10877259-b704-2.jpg",
-   "date": "2026-11-23",
-   "date_human": "23 nov",
-   "age": "hace 8 h",
-   "ts": 1795460403.0,
-   "teams": [
-    "ferrari",
-    "mercedes",
-    "haas"
-   ]
+   "title": "Featured Comment: Herta deserves credit for trying to make the switch from IndyCar | Brief",
+   "url": "https://www.racefans.net/2026/11/24/featured-comment-herta-deserves-credit-for-trying-to-make-the-switch-from-indycar/",
+   "desc": "Herta's brave F1 gamble was a risk worth taking",
+   "source": "RaceFans",
+   "image": null,
+   "date": "2026-11-24",
+   "date_human": "24 nov",
+   "age": "hace 6 h",
+   "ts": 1795512355.0,
+   "teams": []
   },
   {
    "title": "Max Verstappen considering 2027 Daytona 24 Hours entry",
@@ -21998,66 +22109,10 @@
    "image": "https://cdn-1.motorsport.com/images/amp/6VyKxMwY/s6/max-verstappen-red-bull-racing.jpg",
    "date": "2026-11-23",
    "date_human": "23 nov",
-   "age": "hace 9 h",
+   "age": "hace 21 h",
    "ts": 1795455793.0,
    "teams": [
     "red_bull"
-   ]
-  },
-  {
-   "title": "Russell says he’d worked out how to beat Verstappen to the finishing line | Formula 1",
-   "url": "https://www.racefans.net/2026/11/23/russell-says-hed-worked-out-how-to-beat-verstappen-to-the-finishing-line/",
-   "desc": "George Russell says he'd found a better energy deployment strategy to beat Max Verstappen to the finishing than his team mate.",
-   "source": "RaceFans",
-   "image": null,
-   "date": "2026-11-23",
-   "date_human": "23 nov",
-   "age": "hace 10 h",
-   "ts": 1795453360.0,
-   "teams": [
-    "mercedes",
-    "red_bull"
-   ]
-  },
-  {
-   "title": "The FIA wins two wars for F1 – now it must win the peace",
-   "url": "https://www.motorsportweek.com/2026/11/23/the-fia-wins-two-wars-for-f1-now-it-must-win-the-peace/",
-   "desc": "It was fitting that over the weekend of the F1 Las Vegas GP, the FIA played two ace cards. The post The FIA wins two wars for F1 &#8211; now it must win the peace appeared first on Motorsport Week .",
-   "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/George-Russell-Max-Verstappen-F1-Las-Vegas-GP.webp",
-   "date": "2026-11-23",
-   "date_human": "23 nov",
-   "age": "hace 10 h",
-   "ts": 1795453200.0,
-   "teams": []
-  },
-  {
-   "title": "Stewards right to blame Leclerc for collision with Hamilton, says Vasseur | Formula 1",
-   "url": "https://www.racefans.net/2026/11/23/stewards-right-to-blame-leclerc-for-collision-with-hamilton-says-vasseur/",
-   "desc": "Ferrari team principal Frederic Vasseur said they gave Charles Leclerc a message five corners before his collision with Lewis Hamilton.",
-   "source": "RaceFans",
-   "image": null,
-   "date": "2026-11-23",
-   "date_human": "23 nov",
-   "age": "hace 11 h",
-   "ts": 1795450811.0,
-   "teams": [
-    "ferrari",
-    "mercedes"
-   ]
-  },
-  {
-   "title": "Lewis Hamilton-endorsed Mercedes junior wins F4 World Cup in Macau",
-   "url": "https://www.crash.net/f1/news/1110849/1/lewis-hamilton-endorsed-mercedes-junior-wins-f4-world-cup-macau",
-   "desc": "Kenzo Craigie, who was previously named by Lewis Hamilton as a driver for his dream F1 team, has claimed the FIA F4 World Cup in Macau",
-   "source": "Crash.net",
-   "image": "https://www.crash.net/sites/default/files/2026-11/macau20gp_fia_2026_aw-311174-1.jpg?width=1200",
-   "date": "2026-11-23",
-   "date_human": "23 nov",
-   "age": "hace 11 h",
-   "ts": 1795450200.0,
-   "teams": [
-    "mercedes"
    ]
   },
   {
@@ -22068,51 +22123,10 @@
    "image": "https://cdn-1.motorsport.com/images/amp/6x7ZeD4Y/s6/oscar-piastri-mclaren-2.jpg",
    "date": "2026-11-23",
    "date_human": "23 nov",
-   "age": "hace 11 h",
+   "age": "hace 23 h",
    "ts": 1795450174.0,
    "teams": [
     "haas"
-   ]
-  },
-  {
-   "title": "Liam Lawson rues F1 Las Vegas GP double whammy",
-   "url": "https://www.motorsportweek.com/2026/11/23/liam-lawson-rues-f1-las-vegas-gp-double-whammy/",
-   "desc": "Liam Lawson was forced to start a lap down and despite the Safety Car couldn't make the most of his outing at the F1 Las Vegas GP. The post Liam Lawson rues F1 Las Vegas GP double whammy appeared first on Motorsport Week .",
-   "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/Liam-Lawson-F1-2-300x169.webp",
-   "date": "2026-11-23",
-   "date_human": "23 nov",
-   "age": "hace 11 h",
-   "ts": 1795449600.0,
-   "teams": [
-    "rb"
-   ]
-  },
-  {
-   "title": "Stellantis makes major announcement on motorsport future",
-   "url": "https://www.motorsportweek.com/2026/11/23/stellantis-wec-formula-e-announcement/",
-   "desc": "Stellantis is to wind down factory-level participation in two major FIA series, ending its WEC programme after the 2026 season and its Formula E involvement after Season 13. The post Stellantis makes major announcement on motorspo",
-   "source": "Motorsport Week",
-   "image": "https://www.motorsportweek.com/wp-content/uploads/2026/11/stellantis-1-300x169.webp",
-   "date": "2026-11-23",
-   "date_human": "23 nov",
-   "age": "hace 11 h",
-   "ts": 1795448083.0,
-   "teams": []
-  },
-  {
-   "title": "Lewis Hamilton addresses Ferrari number one debate after Charles Leclerc collision",
-   "url": "https://www.crash.net/f1/news/1110846/1/lewis-hamilton-addresses-ferrari-number-one-debate-after-charles-leclerc",
-   "desc": "Lewis Hamilton has addressed the debate surrounding Ferrari's number one driver following another collision with Charles Leclerc",
-   "source": "Crash.net",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1451080_hires.jpg?width=1200",
-   "date": "2026-11-23",
-   "date_human": "23 nov",
-   "age": "hace 12 h",
-   "ts": 1795446900.0,
-   "teams": [
-    "ferrari",
-    "mercedes"
    ]
   },
   {
@@ -22123,20 +22137,8 @@
    "image": "https://cdn-1.motorsport.com/images/amp/01QNEJe0/s6/lando-norris-mclaren-andrea-ki.jpg",
    "date": "2026-11-23",
    "date_human": "23 nov",
-   "age": "hace 13 h",
+   "age": "hace 1 d",
    "ts": 1795441476.0,
-   "teams": []
-  },
-  {
-   "title": "Colton Herta suffers fresh F1 setback after losing Formula 2 seat",
-   "url": "https://www.crash.net/f1/news/1110843/1/colton-herta-suffers-fresh-f1-setback-after-losing-formula-2-seat",
-   "desc": "Colton Herta's Formula 1 ambitions have suffered another blow after his Formula 2 campaign came to an early end",
-   "source": "Crash.net",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1448162_hires.jpg?width=1200",
-   "date": "2026-11-23",
-   "date_human": "23 nov",
-   "age": "hace 14 h",
-   "ts": 1795439700.0,
    "teams": []
   },
   {
@@ -22147,7 +22149,7 @@
    "image": "https://objetos.estaticos-marca.com/assets/multimedia/imagenes/2026/11/06/17939920025742.jpg",
    "date": "2026-11-07",
    "date_human": "7 nov",
-   "age": "hace 16 d",
+   "age": "hace 17 d",
    "ts": 1794037328.0,
    "teams": []
   }
