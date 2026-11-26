@@ -3113,7 +3113,7 @@
    }
   }
  ],
- "generated": "2026-11-26T21:07:40+00:00",
+ "generated": "2026-11-26T21:29:19+00:00",
  "round": 21,
  "total_races": 23,
  "rounds_done": 21,
@@ -19863,7 +19863,7 @@
      "date": "2026-11-26",
      "date_human": "26 nov",
      "age": "hace 1 h",
-     "ts": 1795720565.0,
+     "ts": 1795724165.0,
      "teams": [
       "mercedes",
       "red_bull"
@@ -19880,7 +19880,7 @@
      "date": "2026-11-26",
      "date_human": "26 nov",
      "age": "hace 2 h",
-     "ts": 1795717126.0,
+     "ts": 1795720726.0,
      "teams": [
       "mercedes"
      ],
@@ -19895,8 +19895,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0qgKvGBY/s6/max-verstappen-red-bull-racing.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 3 h",
-     "ts": 1795716261.0,
+     "age": "hace 2 h",
+     "ts": 1795719861.0,
      "teams": [
       "mercedes",
       "red_bull"
@@ -19913,7 +19913,7 @@
      "date": "2026-11-26",
      "date_human": "26 nov",
      "age": "hace 3 h",
-     "ts": 1795713239.0,
+     "ts": 1795716839.0,
      "teams": [
       "mercedes"
      ],
@@ -19929,7 +19929,7 @@
      "date": "2026-11-26",
      "date_human": "26 nov",
      "age": "hace 4 h",
-     "ts": 1795710058.0,
+     "ts": 1795713658.0,
      "teams": [
       "ferrari",
       "mercedes"
@@ -19945,8 +19945,8 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
-     "ts": 1795706869.0,
+     "age": "hace 4 h",
+     "ts": 1795710469.0,
      "teams": [
       "ferrari",
       "mercedes",
@@ -20012,7 +20012,7 @@
      "date": "2026-11-26",
      "date_human": "26 nov",
      "age": "hace 4 h",
-     "ts": 1795710058.0,
+     "ts": 1795713658.0,
      "teams": [
       "ferrari",
       "mercedes"
@@ -20028,8 +20028,8 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
-     "ts": 1795706869.0,
+     "age": "hace 4 h",
+     "ts": 1795710469.0,
      "teams": [
       "ferrari",
       "mercedes",
@@ -20048,7 +20048,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795627538.0,
+     "ts": 1795631138.0,
      "teams": [
       "ferrari",
       "alpine",
@@ -20066,7 +20066,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795620280.0,
+     "ts": 1795623880.0,
      "teams": [
       "ferrari",
       "alpine",
@@ -20084,7 +20084,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795619012.0,
+     "ts": 1795622612.0,
      "teams": [
       "ferrari",
       "mclaren",
@@ -20102,7 +20102,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795602390.0,
+     "ts": 1795605990.0,
      "teams": [
       "ferrari"
      ],
@@ -20165,7 +20165,7 @@
      "date": "2026-11-26",
      "date_human": "26 nov",
      "age": "hace 1 h",
-     "ts": 1795720565.0,
+     "ts": 1795724165.0,
      "teams": [
       "mercedes",
       "red_bull"
@@ -20181,8 +20181,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0qgKvGBY/s6/max-verstappen-red-bull-racing.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 3 h",
-     "ts": 1795716261.0,
+     "age": "hace 2 h",
+     "ts": 1795719861.0,
      "teams": [
       "mercedes",
       "red_bull"
@@ -20198,8 +20198,8 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
-     "ts": 1795706869.0,
+     "age": "hace 4 h",
+     "ts": 1795710469.0,
      "teams": [
       "ferrari",
       "mercedes",
@@ -20217,8 +20217,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6zoDj4P0/s6/lando-norris-mclaren.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 6 h",
-     "ts": 1795705113.0,
+     "age": "hace 5 h",
+     "ts": 1795708713.0,
      "teams": [
       "mercedes",
       "red_bull",
@@ -20235,8 +20235,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YP74dAG2/s6/george-russell-mercedes-5.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 6 h",
-     "ts": 1795703317.0,
+     "age": "hace 5 h",
+     "ts": 1795706917.0,
      "teams": [
       "mercedes",
       "red_bull"
@@ -20253,7 +20253,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795606820.0,
+     "ts": 1795610420.0,
      "teams": [
       "red_bull"
      ],
@@ -20315,8 +20315,8 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
-     "ts": 1795706869.0,
+     "age": "hace 4 h",
+     "ts": 1795710469.0,
      "teams": [
       "ferrari",
       "mercedes",
@@ -20334,8 +20334,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6zoDj4P0/s6/lando-norris-mclaren.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 6 h",
-     "ts": 1795705113.0,
+     "age": "hace 5 h",
+     "ts": 1795708713.0,
      "teams": [
       "mercedes",
       "red_bull",
@@ -20353,7 +20353,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795623280.0,
+     "ts": 1795626880.0,
      "teams": [
       "mclaren"
      ],
@@ -20369,7 +20369,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795619012.0,
+     "ts": 1795622612.0,
      "teams": [
       "ferrari",
       "mclaren",
@@ -20387,7 +20387,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795610813.0,
+     "ts": 1795614413.0,
      "teams": [
       "mclaren",
       "alpine"
@@ -20404,7 +20404,7 @@
      "date": "2026-11-21",
      "date_human": "21 nov",
      "age": "hace 5 d",
-     "ts": 1795232853.0,
+     "ts": 1795236453.0,
      "teams": [
       "mercedes",
       "red_bull",
@@ -20471,7 +20471,7 @@
      "date": "2026-11-24",
      "date_human": "24 nov",
      "age": "hace 2 d",
-     "ts": 1795502628.0,
+     "ts": 1795506228.0,
      "teams": [
       "red_bull",
       "rb"
@@ -20487,8 +20487,8 @@
      "image": null,
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 6 h",
-     "ts": 1795705431.0,
+     "age": "hace 5 h",
+     "ts": 1795709031.0,
      "teams": [
       "red_bull",
       "rb"
@@ -20505,7 +20505,7 @@
      "date": "2026-11-24",
      "date_human": "24 nov",
      "age": "hace 2 d",
-     "ts": 1795515046.0,
+     "ts": 1795518646.0,
      "teams": [
       "rb"
      ],
@@ -20521,7 +20521,7 @@
      "date": "2026-11-24",
      "date_human": "24 nov",
      "age": "hace 2 d",
-     "ts": 1795511057.0,
+     "ts": 1795514657.0,
      "teams": [
       "red_bull",
       "rb"
@@ -20538,7 +20538,7 @@
      "date": "2026-11-24",
      "date_human": "24 nov",
      "age": "hace 2 d",
-     "ts": 1795500903.0,
+     "ts": 1795504503.0,
      "teams": [
       "red_bull",
       "rb"
@@ -20555,7 +20555,7 @@
      "date": "2026-11-23",
      "date_human": "23 nov",
      "age": "hace 3 d",
-     "ts": 1795458602.0,
+     "ts": 1795462202.0,
      "teams": [
       "red_bull",
       "rb"
@@ -20619,7 +20619,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795627538.0,
+     "ts": 1795631138.0,
      "teams": [
       "ferrari",
       "alpine",
@@ -20637,7 +20637,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795620280.0,
+     "ts": 1795623880.0,
      "teams": [
       "ferrari",
       "alpine",
@@ -20655,7 +20655,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795619012.0,
+     "ts": 1795622612.0,
      "teams": [
       "ferrari",
       "mclaren",
@@ -20673,7 +20673,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795610813.0,
+     "ts": 1795614413.0,
      "teams": [
       "mclaren",
       "alpine"
@@ -20690,7 +20690,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795599467.0,
+     "ts": 1795603067.0,
      "teams": [
       "alpine"
      ],
@@ -20706,7 +20706,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795621337.0,
+     "ts": 1795624937.0,
      "teams": [
       "alpine",
       "williams"
@@ -20769,8 +20769,8 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/26/6b0809cd2fce3.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 10 h",
-     "ts": 1795689171.0,
+     "age": "hace 9 h",
+     "ts": 1795692771.0,
      "teams": [
       "haas"
      ],
@@ -20785,8 +20785,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YXyKMzx6/s6/oliver-bearman-haas.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 13 h",
-     "ts": 1795680068.0,
+     "age": "hace 12 h",
+     "ts": 1795683668.0,
      "teams": [
       "haas"
      ],
@@ -20802,7 +20802,7 @@
      "date": "2026-11-24",
      "date_human": "24 nov",
      "age": "hace 2 d",
-     "ts": 1795516545.0,
+     "ts": 1795520145.0,
      "teams": [
       "haas"
      ],
@@ -20818,7 +20818,7 @@
      "date": "2026-11-24",
      "date_human": "24 nov",
      "age": "hace 2 d",
-     "ts": 1795506063.0,
+     "ts": 1795509663.0,
      "teams": [
       "haas"
      ],
@@ -20834,7 +20834,7 @@
      "date": "2026-11-23",
      "date_human": "23 nov",
      "age": "hace 3 d",
-     "ts": 1795448216.0,
+     "ts": 1795451816.0,
      "teams": [
       "ferrari",
       "haas"
@@ -20851,7 +20851,7 @@
      "date": "2026-11-26",
      "date_human": "26 nov",
      "age": "hace 9 h",
-     "ts": 1795691617.0,
+     "ts": 1795695217.0,
      "teams": [
       "haas"
      ],
@@ -20902,8 +20902,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6zoDj4P0/s6/lando-norris-mclaren.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 6 h",
-     "ts": 1795705113.0,
+     "age": "hace 5 h",
+     "ts": 1795708713.0,
      "teams": [
       "mercedes",
       "red_bull",
@@ -20920,8 +20920,8 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/06/04/6a21b669cf5e8.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 6 h",
-     "ts": 1795703707.0,
+     "age": "hace 5 h",
+     "ts": 1795707307.0,
      "teams": [
       "aston_martin"
      ],
@@ -20936,8 +20936,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YP74dAG2/s6/george-russell-mercedes-5.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 6 h",
-     "ts": 1795703317.0,
+     "age": "hace 5 h",
+     "ts": 1795706917.0,
      "teams": [
       "mercedes",
       "red_bull"
@@ -21000,8 +21000,8 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/07/6aefaaa3573f1.r_d.1229-993-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 2 h",
-     "ts": 1795719527.0,
+     "age": "hace 1 h",
+     "ts": 1795723127.0,
      "teams": [
       "williams"
      ],
@@ -21016,8 +21016,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YN7vwlW6/s6/carlos-sainz-williams.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
-     "ts": 1795708571.0,
+     "age": "hace 4 h",
+     "ts": 1795712171.0,
      "teams": [
       "williams"
      ],
@@ -21033,7 +21033,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795627538.0,
+     "ts": 1795631138.0,
      "teams": [
       "ferrari",
       "alpine",
@@ -21051,7 +21051,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795620280.0,
+     "ts": 1795623880.0,
      "teams": [
       "ferrari",
       "alpine",
@@ -21069,7 +21069,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795604780.0,
+     "ts": 1795608380.0,
      "teams": [
       "williams"
      ],
@@ -21085,7 +21085,7 @@
      "date": "2026-11-22",
      "date_human": "22 nov",
      "age": "hace 4 d",
-     "ts": 1795340416.0,
+     "ts": 1795344016.0,
      "teams": [
       "williams"
      ],
@@ -21147,8 +21147,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YE9Er8MY/s6/lance-stroll-aston-martin-raci.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
-     "ts": 1795711891.0,
+     "age": "hace 3 h",
+     "ts": 1795715491.0,
      "teams": [
       "aston_martin"
      ],
@@ -21163,8 +21163,8 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/06/04/6a21b669cf5e8.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 6 h",
-     "ts": 1795703707.0,
+     "age": "hace 5 h",
+     "ts": 1795707307.0,
      "teams": [
       "aston_martin"
      ],
@@ -21179,8 +21179,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2QedlxA2/s6/fernando-alonso-aston-martin-r.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 8 h",
-     "ts": 1795697957.0,
+     "age": "hace 7 h",
+     "ts": 1795701557.0,
      "teams": [
       "aston_martin"
      ],
@@ -21195,8 +21195,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YK15zBk0/s6/fernando-alonso-aston-martin-r.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 8 h",
-     "ts": 1795696018.0,
+     "age": "hace 7 h",
+     "ts": 1795699618.0,
      "teams": [
       "aston_martin"
      ],
@@ -21212,7 +21212,7 @@
      "date": "2026-11-26",
      "date_human": "26 nov",
      "age": "hace 8 h",
-     "ts": 1795694855.0,
+     "ts": 1795698455.0,
      "teams": [
       "aston_martin"
      ],
@@ -21227,8 +21227,8 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2Qe8nGO2/s6/fernando-alonso-aston-martin-r.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 11 h",
-     "ts": 1795686416.0,
+     "age": "hace 10 h",
+     "ts": 1795690016.0,
      "teams": [
       "aston_martin"
      ],
@@ -21280,7 +21280,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795624890.0,
+     "ts": 1795628490.0,
      "teams": [
       "aston_martin",
       "cadillac"
@@ -21297,7 +21297,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795593376.0,
+     "ts": 1795596976.0,
      "teams": [
       "cadillac"
      ],
@@ -21313,7 +21313,7 @@
      "date": "2026-11-23",
      "date_human": "23 nov",
      "age": "hace 3 d",
-     "ts": 1795461797.0,
+     "ts": 1795465397.0,
      "teams": [
       "aston_martin",
       "cadillac"
@@ -21330,7 +21330,7 @@
      "date": "2026-11-25",
      "date_human": "25 nov",
      "age": "hace 1 d",
-     "ts": 1795597200.0,
+     "ts": 1795600800.0,
      "teams": [
       "cadillac"
      ],
@@ -21346,7 +21346,7 @@
      "date": "2026-11-24",
      "date_human": "24 nov",
      "age": "hace 2 d",
-     "ts": 1795539595.0,
+     "ts": 1795543195.0,
      "teams": [
       "cadillac"
      ],
@@ -21362,7 +21362,7 @@
      "date": "2026-11-24",
      "date_human": "24 nov",
      "age": "hace 2 d",
-     "ts": 1795539423.0,
+     "ts": 1795543023.0,
      "teams": [
       "cadillac"
      ],
@@ -22034,7 +22034,7 @@
    "date": "2026-11-26",
    "date_human": "26 nov",
    "age": "hace 1 h",
-   "ts": 1795720565.0,
+   "ts": 1795724165.0,
    "teams": [
     "mercedes",
     "red_bull"
@@ -22049,8 +22049,8 @@
    "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/07/6aefaaa3573f1.r_d.1229-993-0.jpeg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 2 h",
-   "ts": 1795719527.0,
+   "age": "hace 1 h",
+   "ts": 1795723127.0,
    "teams": [
     "williams"
    ]
@@ -22065,7 +22065,7 @@
    "date": "2026-11-26",
    "date_human": "26 nov",
    "age": "hace 2 h",
-   "ts": 1795717126.0,
+   "ts": 1795720726.0,
    "teams": [
     "mercedes"
    ]
@@ -22079,8 +22079,8 @@
    "image": "https://cdn-1.motorsport.com/images/amp/0qgKvGBY/s6/max-verstappen-red-bull-racing.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 3 h",
-   "ts": 1795716261.0,
+   "age": "hace 2 h",
+   "ts": 1795719861.0,
    "teams": [
     "mercedes",
     "red_bull"
@@ -22096,7 +22096,7 @@
    "date": "2026-11-26",
    "date_human": "26 nov",
    "age": "hace 3 h",
-   "ts": 1795713239.0,
+   "ts": 1795716839.0,
    "teams": [
     "mercedes"
    ]
@@ -22110,8 +22110,8 @@
    "image": "https://cdn-1.motorsport.com/images/amp/YE9Er8MY/s6/lance-stroll-aston-martin-raci.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 4 h",
-   "ts": 1795711891.0,
+   "age": "hace 3 h",
+   "ts": 1795715491.0,
    "teams": [
     "aston_martin"
    ]
@@ -22126,7 +22126,7 @@
    "date": "2026-11-26",
    "date_human": "26 nov",
    "age": "hace 4 h",
-   "ts": 1795710058.0,
+   "ts": 1795713658.0,
    "teams": [
     "ferrari",
     "mercedes"
@@ -22141,8 +22141,8 @@
    "image": "https://cdn-1.motorsport.com/images/amp/YN7vwlW6/s6/carlos-sainz-williams.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 5 h",
-   "ts": 1795708571.0,
+   "age": "hace 4 h",
+   "ts": 1795712171.0,
    "teams": [
     "williams"
    ]
@@ -22156,8 +22156,8 @@
    "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 5 h",
-   "ts": 1795706869.0,
+   "age": "hace 4 h",
+   "ts": 1795710469.0,
    "teams": [
     "ferrari",
     "mercedes",
@@ -22175,9 +22175,24 @@
    "date": "2026-11-26",
    "date_human": "26 nov",
    "age": "hace 5 h",
-   "ts": 1795706600.0,
+   "ts": 1795710200.0,
    "teams": [
     "mercedes"
+   ]
+  },
+  {
+   "title": "Leclerc denies claim he has a ‘number one’ clause in his Ferrari contract | Formula 1",
+   "url": "https://www.racefans.net/2026/11/26/leclerc-denies-claim-he-has-a-number-one-clause-in-his-ferrari-contract/",
+   "desc": "Charles Leclerc has denied he has a clause in his contract guaranteeing him number one status at Ferrari, after a report claiming he did was widely shared on social media.",
+   "source": "RaceFans",
+   "lang": "en",
+   "image": null,
+   "date": "2026-11-26",
+   "date_human": "26 nov",
+   "age": "hace 1 h",
+   "ts": 1795727679.0,
+   "teams": [
+    "ferrari"
    ]
   },
   {
@@ -22190,7 +22205,7 @@
    "date": "2026-11-26",
    "date_human": "26 nov",
    "age": "hace 1 h",
-   "ts": 1795723011.0,
+   "ts": 1795726611.0,
    "teams": [
     "mercedes",
     "red_bull"
@@ -22205,8 +22220,8 @@
    "image": "https://cdn-1.motorsport.com/images/amp/YP74Zm42/s6/max-verstappen-red-bull-racing-2.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 2 h",
-   "ts": 1795719777.0,
+   "age": "hace 1 h",
+   "ts": 1795723377.0,
    "teams": [
     "red_bull"
    ]
@@ -22220,8 +22235,8 @@
    "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1456640_hires.jpg?width=1200",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 2 h",
-   "ts": 1795719613.0,
+   "age": "hace 1 h",
+   "ts": 1795723213.0,
    "teams": [
     "red_bull"
    ]
@@ -22235,8 +22250,8 @@
    "image": "https://cdn-1.motorsport.com/images/amp/YBVj7QzY/s6/max-verstappen-red-bull-racing.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 2 h",
-   "ts": 1795719334.0,
+   "age": "hace 1 h",
+   "ts": 1795722934.0,
    "teams": [
     "red_bull"
    ]
@@ -22251,24 +22266,11 @@
    "date": "2026-11-26",
    "date_human": "26 nov",
    "age": "hace 2 h",
-   "ts": 1795716750.0,
-   "teams": []
-  },
-  {
-   "title": "Christian Horner seals move with £52m purchase of Pride and Prejudice mansion",
-   "url": "https://www.crash.net/f1/news/1110927/1/christian-horner-seals-move-ps52m-purchase-pride-and-prejudice-mansion",
-   "desc": "Christian Horner and wife Geri have bought a new luxury home.",
-   "source": "Crash.net",
-   "lang": "en",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1339838_hires.jpg?width=1200",
-   "date": "2026-11-26",
-   "date_human": "26 nov",
-   "age": "hace 3 h",
-   "ts": 1795715977.0,
+   "ts": 1795720350.0,
    "teams": []
   }
  ],
- "news_pool": 306,
+ "news_pool": 277,
  "history": [
   {
    "year": 2025,
