@@ -794,6 +794,16 @@ TEAM_WIKI = {
 }
 
 # ---------------------------------------------------------------------- imágenes
+def wiki_ref(title: str) -> str:
+    """Título listo para la URL de la API.
+
+    La API de Jolpica ya devuelve algunos títulos codificados (Nico_H%C3%BClkenberg);
+    volver a codificarlos daba 404 y esos pilotos se quedaban sin foto ni bio.
+    """
+    t = (title or "").replace(" ", "_")
+    return t if "%" in t else quote(t)
+
+
 def driver_photo(wiki_title: str, did: str) -> str | None:
     dest = ASSETS / "drivers" / f"{did}.jpg"
     if SKIP_IMAGES:
@@ -802,7 +812,7 @@ def driver_photo(wiki_title: str, did: str) -> str | None:
         return f"assets/drivers/{did}.jpg"
     try:
         data = get_json(
-            "https://en.wikipedia.org/api/rest_v1/page/summary/" + quote(wiki_title.replace(" ", "_"))
+            "https://en.wikipedia.org/api/rest_v1/page/summary/" + wiki_ref(wiki_title)
         )
         src = (data.get("thumbnail") or {}).get("source")
         if src and not usable_image(src):
@@ -810,7 +820,7 @@ def driver_photo(wiki_title: str, did: str) -> str | None:
         if not src:
             # sin miniatura válida en el resumen: se busca en la lista de medios de la página
             media = get_json(
-                "https://en.wikipedia.org/api/rest_v1/page/media-list/" + quote(title.replace(" ", "_"))
+                "https://en.wikipedia.org/api/rest_v1/page/media-list/" + wiki_ref(wiki_title)
             )
             for item in media.get("items", []):
                 if item.get("type") != "image" or not item.get("srcset"):
@@ -862,7 +872,7 @@ def driver_bio(wiki_title: str) -> str:
     for host in ("es.wikipedia.org", "en.wikipedia.org"):
         try:
             data = get_json(
-                f"https://{host}/api/rest_v1/page/summary/" + quote(wiki_title.replace(" ", "_"))
+                f"https://{host}/api/rest_v1/page/summary/" + wiki_ref(wiki_title)
             )
             ext = (data.get("extract") or "").strip()
             if len(ext) > 60:
@@ -944,7 +954,7 @@ def wiki_image(title: str, slug_name: str, folder: str, width: int = 500) -> str
     time.sleep(1.1)  # cortesía con la API de Wikipedia
     try:
         data = get_json(
-            "https://en.wikipedia.org/api/rest_v1/page/summary/" + quote(title.replace(" ", "_"))
+            "https://en.wikipedia.org/api/rest_v1/page/summary/" + wiki_ref(title)
         )
         src = (data.get("thumbnail") or {}).get("source")
         if src and not usable_image(src):
@@ -952,7 +962,7 @@ def wiki_image(title: str, slug_name: str, folder: str, width: int = 500) -> str
         if not src:
             # sin miniatura válida en el resumen: se busca en la lista de medios de la página
             media = get_json(
-                "https://en.wikipedia.org/api/rest_v1/page/media-list/" + quote(title.replace(" ", "_"))
+                "https://en.wikipedia.org/api/rest_v1/page/media-list/" + wiki_ref(title)
             )
             for item in media.get("items", []):
                 if item.get("type") != "image" or not item.get("srcset"):
@@ -983,7 +993,7 @@ def wiki_image(title: str, slug_name: str, folder: str, width: int = 500) -> str
 def wiki_extract(title: str, limit: int = 420) -> str:
     for host in ("es.wikipedia.org", "en.wikipedia.org"):
         try:
-            data = get_json(f"https://{host}/api/rest_v1/page/summary/" + quote(title.replace(" ", "_")))
+            data = get_json(f"https://{host}/api/rest_v1/page/summary/" + wiki_ref(title))
             ext = (data.get("extract") or "").strip()
             if len(ext) > 60:
                 if len(ext) > limit:
