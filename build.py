@@ -373,7 +373,7 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
             next_circuit=next_circuit, upcoming_circuits=upcoming_circuits,
             site_title="Pitlane — Fórmula 1",
             site_desc="Datos, historia y actualidad de la Fórmula 1.",
-            current="/" + rel.replace("index.html", ""),
+            current="/" + rel.replace("index.html", "").replace(".html", ""),
             generated_human=generated, news_sources=sources,
             font_query=FONTS[ctx.pop("font", "base")],
             img_url=asset_url,
@@ -616,6 +616,18 @@ def optimize_assets() -> dict:
     }
 
 
+def clean_urls() -> None:
+    """Enlaces y canonical a la URL final: Vercel sirve /historico, no /historico.html."""
+    for f in OUT.rglob("*.html"):
+        h = f.read_text(encoding="utf-8")
+        h2 = re.sub(r'href="([^"?#]*?)/index\.html"', r'href="\1/"', h)
+        h2 = re.sub(r'href="(\.\./)?index\.html"', r'href="\1"', h2)
+        h2 = re.sub(r'href="(https://pitlane-ruddy\.vercel\.app/[^"]*?)\.html"', r'href="\1"', h2)
+        h2 = re.sub(r'href="([^":]+?)\.html((?:#[^"]*)?)"', r'href="\1\2"', h2)
+        if h2 != h:
+            f.write_text(h2, encoding="utf-8")
+
+
 def write_ics(site: dict) -> None:
     """Calendario .ics con todas las sesiones, para suscribirse o importar."""
     from datetime import datetime, timedelta, timezone
@@ -659,15 +671,15 @@ def write_static(site: dict) -> None:
         '<path d="M14 48V16h9l11 19V16h9v32h-9L23 29v19z" fill="#ff5a1f"/></svg>',
         encoding="utf-8")
 
-    urls = ["", "escuderias/", "pilotos/", "circuitos/", "resultados/", "calendario.html", "clasificacion.html",
-            "estadisticas.html", "comparador.html", "buscador.html",
-            "noticias.html", "metodologia.html", "historico.html"]
+    urls = ["", "escuderias/", "pilotos/", "circuitos/", "resultados/", "calendario", "clasificacion",
+            "estadisticas", "comparador", "buscador",
+            "noticias", "metodologia", "historico"]
     for t in site["teams"]:
         t.setdefault("slug", t["id"].replace("_", "-"))
-    urls += [f"escuderias/{t['slug']}.html" for t in site["teams"]]
-    urls += [f"pilotos/{d['id']}.html" for d in site["drivers"]]
-    urls += [f"circuitos/{c['id']}.html" for c in site.get("circuits", [])]
-    urls += [f"resultados/{r['circuit_id']}.html" for r in site["calendar"] if r.get("results")]
+    urls += [f"escuderias/{t['slug']}" for t in site["teams"]]
+    urls += [f"pilotos/{d['id']}" for d in site["drivers"]]
+    urls += [f"circuitos/{c['id']}" for c in site.get("circuits", [])]
+    urls += [f"resultados/{r['circuit_id']}" for r in site["calendar"] if r.get("results")]
     body = "".join(
         f"<url><loc>https://pitlane-ruddy.vercel.app/{u}</loc>"
         f"<lastmod>{site['generated'][:10]}</lastmod></url>" for u in urls)
@@ -709,6 +721,8 @@ def write_static(site: dict) -> None:
         '<atom:link href="https://pitlane-ruddy.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>'
         + "".join(items) + "</channel></rss>")
     (OUT / "feed.xml").write_text(feed, encoding="utf-8")
+
+    clean_urls()
 
     # contacto de seguridad y metadatos del proyecto
     wk = OUT / ".well-known"
