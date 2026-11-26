@@ -375,6 +375,8 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
             site_desc="Datos, historia y actualidad de la Fórmula 1.",
             current="/" + rel.replace("index.html", "").replace(".html", ""),
             generated_human=generated, news_sources=sources,
+            fingerprint=__import__("hashlib").sha1(
+                (site["generated"] + rel).encode()).hexdigest()[:12],
             font_query=FONTS[ctx.pop("font", "base")],
             img_url=asset_url,
             asset_css=asset_versions["css"], asset_js=asset_versions["js"],
@@ -734,6 +736,17 @@ def write_static(site: dict) -> None:
         "Canonical: https://pitlane-ruddy.vercel.app/.well-known/security.txt\n"
         "Policy: https://github.com/Francis585/pitlane/security/policy\n",
         encoding="utf-8")
+
+    (OUT / "licencia.txt").write_text(
+        "PITLANE — demo original de Francisco Hernández Martín (Salamanca, España).\n"
+        "Copyright (c) 2026. Todos los derechos reservados.\n\n"
+        "El diseño, el código, los textos y la selección de datos de este sitio son obra\n"
+        "de su autor y se publican como muestra de portafolio. Se permite enlazar y citar\n"
+        "con atribución visible; no se autoriza su copia, replica o presentación como\n"
+        "propia, total ni parcial, sin permiso escrito.\n\n"
+        "Datos deportivos: Jolpica F1 API. Fotografías: Wikimedia Commons y prensa citada\n"
+        "en cada pieza. Marcas y nombres de equipos pertenecen a sus titulares.\n\n"
+        "Contacto: github.com/Francis585\n", encoding="utf-8")
 
     (OUT / "robots.txt").write_text(
         "User-agent: *\nAllow: /\nSitemap: https://pitlane-ruddy.vercel.app/sitemap.xml\n", encoding="utf-8")

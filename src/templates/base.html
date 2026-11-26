@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-autor="Francisco Hernández Martín" data-demo="Pitlane">
+<!-- Pitlane · demo original de Francisco Hernández Martín (Salamanca) · © 2026
+     Código, textos y diseño propios. Copia o réplica no autorizada.
+     Huella de esta página: {{ fingerprint }} -->
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}{{ site_title }}{% endblock %}</title>
 <meta name="description" content="{% block desc %}{{ site_desc }}{% endblock %}">
 <meta name="theme-color" content="#07080a">
+<meta name="author" content="Francisco Hernández Martín">
+<meta name="copyright" content="© 2026 Francisco Hernández Martín. Demo propia; no autorizada su copia.">
+<link rel="author" href="https://github.com/Francis585">
 <meta property="og:title" content="{% block ogtitle %}{{ site_title }}{% endblock %}">
 <meta property="og:description" content="{% block ogdesc %}{{ site_desc }}{% endblock %}">
 <meta property="og:type" content="website">
@@ -152,8 +159,18 @@
       <span>Temporada {{ site.season }} · datos actualizados el {{ generated_human }}</span>
       <span>Datos: Jolpica F1 API · Fotos: Wikimedia Commons · Titulares: {{ news_sources }}</span>
     </div>
+    <div class="foot-legal">
+      © 2026 Francisco Hernández Martín · Demo propia. El código, los textos y el diseño son de su autor:
+      se permite enlazar y citar con atribución, no copiar ni presentar como propio.
+      <a href="{{ root }}licencia.txt">Licencia</a>
+    </div>
   </div>
 </footer>
+
+<div class="fh-mark" role="note" aria-label="Contenido original de Francisco Hernández">
+  <span class="fh-mark-dot" aria-hidden="true"></span>
+  <b>© 2026 <span class="fh-long">Francisco Hernández</span><span class="fh-short">FH</span></b><i>Pitlane · demo</i>
+</div>
 
 <script src="{{ root }}assets/app.js?v={{ asset_js }}" defer></script>
 </body>

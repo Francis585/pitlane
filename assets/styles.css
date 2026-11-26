@@ -1838,3 +1838,56 @@ html[data-theme="light"] .nav-links a span { color: #8a919c; }
 /* entrada de secciones: arrancaba casi invisible (0) y en móvil se veía "roto" al cargar */
 .js [data-reveal] { opacity: .42; transform: translateY(18px);
   transition: opacity .5s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1); }
+
+/* ==========================================================================
+   MARCA DE AUTORÍA — sello en esquina, marca de agua en fotos, pie legal
+   ========================================================================== */
+.fh-mark {
+  position: fixed; right: 14px; bottom: 14px; z-index: 80;
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 6px 10px 6px 8px; border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--fg) 14%, transparent);
+  background: color-mix(in srgb, #07080a 74%, transparent);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  font-family: var(--font-mono); font-size: .5rem; letter-spacing: .1em;
+  text-transform: uppercase; color: color-mix(in srgb, var(--fg) 64%, transparent);
+  pointer-events: none; user-select: none;
+}
+.fh-mark b { font-weight: 600; letter-spacing: .08em; }
+.fh-mark i { font-style: normal; opacity: .55; letter-spacing: .12em; }
+.fh-mark-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand, #ff5a1f); flex: 0 0 auto; }
+@media (max-width: 720px) {
+  .fh-mark { right: 8px; bottom: 8px; font-size: .44rem; padding: 5px 8px 5px 7px; gap: 6px; }
+  .fh-mark i { display: none; }
+}
+
+/* marca de agua tenue sobre las fotos: se ve al mirar, no molesta al leer */
+.hero-scrim::after,
+.mosaic-item::after,
+.moment::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 2;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc0MjAnIGhlaWdodD0nMjYwJz48ZyBmaWxsPScjZmZmZmZmJyBmaWxsLW9wYWNpdHk9Jy41NScgZm9udC1mYW1pbHk9J21vbm9zcGFjZScgZm9udC1zaXplPScyNicgbGV0dGVyLXNwYWNpbmc9JzYnPjx0ZXh0IHg9JzEwJyB5PSc3MCcgdHJhbnNmb3JtPSdyb3RhdGUoLTI0IDEwIDcwKSc+UElUTEFORSDCqSBGSDwvdGV4dD48dGV4dCB4PScyMTUnIHk9JzIwNScgdHJhbnNmb3JtPSdyb3RhdGUoLTI0IDIxNSAyMDUpJz5QSVRMQU5FIMKpIEZIPC90ZXh0PjwvZz48L3N2Zz4=");
+  background-repeat: repeat; background-size: 420px 260px;
+  opacity: .09;
+}
+
+/* pie legal con el copyright del autor */
+.foot-legal {
+  margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line);
+  font-size: .72rem; line-height: 1.6; color: var(--dim-2); max-width: 92ch;
+}
+.foot-legal a { color: var(--dim); text-decoration: underline; text-underline-offset: 2px; }
+.foot-legal a:hover { color: var(--fg); }
+
+/* la marca de agua del hero se queda en la mitad de la foto, sin cruzar el titular */
+.hero-scrim::after { inset: 0 0 0 42%; }
+@media (max-width: 900px) { .hero-scrim::after { inset: 0 0 0 12%; } }
+
+/* en pantallas pequeñas el sello se acorta para no salirse */
+.fh-short { display: none; }
+@media (max-width: 720px) {
+  .fh-long { display: none; }
+  .fh-short { display: inline; }
+  .fh-mark { max-width: calc(100vw - 24px); white-space: nowrap; }
+  .hero-scrim::after, .mosaic-item::after, .moment::after { opacity: .08; }
+}
