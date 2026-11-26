@@ -764,7 +764,7 @@ def optimize_assets() -> dict:
         shutil.rmtree(OUT / "assets")
     shutil.copytree(ASSETS, OUT / "assets")
 
-    limits = {"teams": 1600, "circuits": 1300, "drivers": 800}
+    limits = {"teams": 1600, "circuits": 1300, "drivers": 1000}
     saved = 0
     if Image:
         for img in (OUT / "assets").rglob("*.jpg"):

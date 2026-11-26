@@ -822,9 +822,10 @@ def driver_photo(wiki_title: str, did: str) -> str | None:
                 break
         if not src:
             return None
-        # Wikimedia solo sirve una lista cerrada de anchos (250/330/500/960/1280).
+        # Wikimedia solo sirve una lista cerrada de anchos. Se pide el mayor
+        # disponible: 500 px se veía blando en la cabecera de la ficha.
         no_q = src.split("?")[0]
-        candidates = [re.sub(r"/\d+px-", f"/{w}px-", no_q) for w in (500, 330, 250)] + [no_q]
+        candidates = [re.sub(r"/\d+px-", f"/{w}px-", no_q) for w in (960, 800, 640, 500, 330)] + [no_q]
         dest.parent.mkdir(parents=True, exist_ok=True)
         for cand in candidates:
             try:
