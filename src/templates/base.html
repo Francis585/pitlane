@@ -39,7 +39,7 @@
 {% block vars %}{% endblock %}
 </style>
 
-{% if team is defined and tm is defined %}
+{% if team and tm %}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SportsTeam","name":{{ tm.full|tojson }},"alternateName":{{ tm.display|tojson }},
  "sport":"Formula 1","memberOf":{"@type":"SportsOrganization","name":"FIA Formula One World Championship"},

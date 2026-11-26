@@ -3113,7 +3113,7 @@
    }
   }
  ],
- "generated": "2026-11-26T19:11:18+00:00",
+ "generated": "2026-11-26T20:16:07+00:00",
  "round": 21,
  "total_races": 23,
  "rounds_done": 21,
@@ -19842,17 +19842,34 @@
    ],
    "prev": [
     {
-     "season": 2024,
-     "pos": 4,
-     "points": 468
-    },
-    {
      "season": 2025,
      "pos": 2,
      "points": 469
+    },
+    {
+     "season": 2024,
+     "pos": 4,
+     "points": 468
     }
    ],
    "news": [
+    {
+     "title": "George Russell no le da importancia a las palabras de Verstappen: \"Me parecieron bastante graciosos algunos de los comentarios tras la carrera\"",
+     "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255974/george-russell-no-le-da-importancia-palabras-verstappen-me-parecieron-graciosos-comentarios-carrera.html",
+     "desc": "En Las Vegas, George Russell y Max Verstappen protagonizaron un nuevo roce durante los terceros entrenamientos libres, luego de que el piloto británico se cerrara sobre el neerlandés y estuviera cerca de causar una colisión. Lejos",
+     "source": "Mundo Deportivo",
+     "lang": "es",
+     "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/02/6ae913c25b101.r_d.1419-875-0.jpeg",
+     "date": "2026-11-26",
+     "date_human": "26 nov",
+     "age": "hace 1 h",
+     "ts": 1795720565.0,
+     "teams": [
+      "mercedes",
+      "red_bull"
+     ],
+     "own": true
+    },
     {
      "title": "Lewis Hamilton: \"Ya dije lo que tenía que decir y mi opinión no ha cambiado\"",
      "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255951/lewis-hamilton-dije-tenia-decir-mi-opinion-no-cambiado.html",
@@ -19878,7 +19895,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0qgKvGBY/s6/max-verstappen-red-bull-racing.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 1 h",
+     "age": "hace 2 h",
      "ts": 1795716261.0,
      "teams": [
       "mercedes",
@@ -19895,7 +19912,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b0863feabec8.r_d.933-599-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 1 h",
+     "age": "hace 3 h",
      "ts": 1795713239.0,
      "teams": [
       "mercedes"
@@ -19911,7 +19928,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0mXyxxk6/s6/lewis-hamilton-ferrari-2.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 2 h",
+     "age": "hace 3 h",
      "ts": 1795710058.0,
      "teams": [
       "ferrari",
@@ -19928,29 +19945,13 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 3 h",
+     "age": "hace 4 h",
      "ts": 1795706869.0,
      "teams": [
       "ferrari",
       "mercedes",
       "red_bull",
       "mclaren"
-     ],
-     "own": true
-    },
-    {
-     "title": "Leclerc, sincero: \"Las cosas con Hamilton ahora no funcionan, hay que encontrar una solución\"",
-     "url": "https://es.motorsport.com/f1/news/leclerc-sincero-hamilton-solucion-ferrari-2027/10877942/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=es",
-     "desc": "Era de esperar que Charles Leclerc fuera el gran protagonista de la rueda de prensa de la FIA celebrada el jueves en Losail. El toque con Lewis Hamilton en el Gran Premio de Las Vegas ha reavivado un debate que lleva ya varias sem",
-     "source": "Motorsport.com ES",
-     "lang": "es",
-     "image": "https://cdn-1.motorsport.com/images/amp/6n7b33g0/s6/charles-leclerc-ferrari.jpg",
-     "date": "2026-11-26",
-     "date_human": "26 nov",
-     "age": "hace 3 h",
-     "ts": 1795706600.0,
-     "teams": [
-      "mercedes"
      ],
      "own": true
     }
@@ -19990,14 +19991,14 @@
    ],
    "prev": [
     {
-     "season": 2024,
-     "pos": 2,
-     "points": 652
-    },
-    {
      "season": 2025,
      "pos": 4,
      "points": 398
+    },
+    {
+     "season": 2024,
+     "pos": 2,
+     "points": 652
     }
    ],
    "news": [
@@ -20010,7 +20011,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0mXyxxk6/s6/lewis-hamilton-ferrari-2.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 2 h",
+     "age": "hace 3 h",
      "ts": 1795710058.0,
      "teams": [
       "ferrari",
@@ -20027,7 +20028,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 3 h",
+     "age": "hace 4 h",
      "ts": 1795706869.0,
      "teams": [
       "ferrari",
@@ -20139,31 +20140,38 @@
      "pos": 8,
      "points": 122,
      "wins": 0
-    },
-    {
-     "id": "lawson",
-     "name": "Liam Lawson",
-     "last": "Lawson",
-     "code": "LAW",
-     "num": "30",
-     "pos": 9,
-     "points": 89,
-     "wins": 0
     }
    ],
    "prev": [
     {
-     "season": 2024,
-     "pos": 3,
-     "points": 589
-    },
-    {
      "season": 2025,
      "pos": 3,
      "points": 451
+    },
+    {
+     "season": 2024,
+     "pos": 3,
+     "points": 589
     }
    ],
    "news": [
+    {
+     "title": "George Russell no le da importancia a las palabras de Verstappen: \"Me parecieron bastante graciosos algunos de los comentarios tras la carrera\"",
+     "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255974/george-russell-no-le-da-importancia-palabras-verstappen-me-parecieron-graciosos-comentarios-carrera.html",
+     "desc": "En Las Vegas, George Russell y Max Verstappen protagonizaron un nuevo roce durante los terceros entrenamientos libres, luego de que el piloto británico se cerrara sobre el neerlandés y estuviera cerca de causar una colisión. Lejos",
+     "source": "Mundo Deportivo",
+     "lang": "es",
+     "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/02/6ae913c25b101.r_d.1419-875-0.jpeg",
+     "date": "2026-11-26",
+     "date_human": "26 nov",
+     "age": "hace 1 h",
+     "ts": 1795720565.0,
+     "teams": [
+      "mercedes",
+      "red_bull"
+     ],
+     "own": true
+    },
     {
      "title": "Verstappen reclama una F1 más pura y zanja su polémica con Russell",
      "url": "https://es.motorsport.com/f1/news/verstappen-reclama-una-f1-mas-pura-y-zanja-su-polemica-con-russell/10878026/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=es",
@@ -20173,7 +20181,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0qgKvGBY/s6/max-verstappen-red-bull-racing.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 1 h",
+     "age": "hace 2 h",
      "ts": 1795716261.0,
      "teams": [
       "mercedes",
@@ -20190,7 +20198,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 3 h",
+     "age": "hace 4 h",
      "ts": 1795706869.0,
      "teams": [
       "ferrari",
@@ -20209,7 +20217,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6zoDj4P0/s6/lando-norris-mclaren.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 5 h",
      "ts": 1795705113.0,
      "teams": [
       "mercedes",
@@ -20227,7 +20235,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YP74dAG2/s6/george-russell-mercedes-5.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 5 h",
      "ts": 1795703317.0,
      "teams": [
       "mercedes",
@@ -20248,23 +20256,6 @@
      "ts": 1795606820.0,
      "teams": [
       "red_bull"
-     ],
-     "own": true
-    },
-    {
-     "title": "Qué quería demostrar Hadjar a Red Bull F1 en Las Vegas y qué pasó con la radio",
-     "url": "https://es.motorsport.com/f1/news/hadjar-red-bull-vegas-radio/10877297/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=es",
-     "desc": "Isack Hadjar había salido cuarto en el Gran Premio de Las Vegas y, ya en la cuarta vuelta, se colocó por primera vez en segunda posición, justo detrás de su compañero de equipo Max Verstappen. Y como la carrera era lo que era, es ",
-     "source": "Motorsport.com ES",
-     "lang": "es",
-     "image": "https://cdn-1.motorsport.com/images/amp/J0r47QqY/s6/hadjar-frustriert-das-war-wirklich-am-red-bull-funk-in-las-vegas-los-26112309.jpg",
-     "date": "2026-11-24",
-     "date_human": "24 nov",
-     "age": "hace 2 d",
-     "ts": 1795502628.0,
-     "teams": [
-      "red_bull",
-      "rb"
      ],
      "own": true
     }
@@ -20304,14 +20295,14 @@
    ],
    "prev": [
     {
-     "season": 2024,
-     "pos": 1,
-     "points": 666
-    },
-    {
      "season": 2025,
      "pos": 1,
      "points": 833
+    },
+    {
+     "season": 2024,
+     "pos": 1,
+     "points": 666
     }
    ],
    "news": [
@@ -20324,7 +20315,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 3 h",
+     "age": "hace 4 h",
      "ts": 1795706869.0,
      "teams": [
       "ferrari",
@@ -20343,7 +20334,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6zoDj4P0/s6/lando-norris-mclaren.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 5 h",
      "ts": 1795705113.0,
      "teams": [
       "mercedes",
@@ -20455,28 +20446,18 @@
      "pos": 11,
      "points": 38,
      "wins": 0
-    },
-    {
-     "id": "tsunoda",
-     "name": "Yuki Tsunoda",
-     "last": "Tsunoda",
-     "code": "TSU",
-     "num": "22",
-     "pos": 20,
-     "points": 1,
-     "wins": 0
     }
    ],
    "prev": [
     {
-     "season": 2024,
-     "pos": 8,
-     "points": 46
-    },
-    {
      "season": 2025,
      "pos": 6,
      "points": 92
+    },
+    {
+     "season": 2024,
+     "pos": 8,
+     "points": 46
     }
    ],
    "news": [
@@ -20506,7 +20487,7 @@
      "image": null,
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 5 h",
      "ts": 1795705431.0,
      "teams": [
       "red_bull",
@@ -20617,14 +20598,14 @@
    ],
    "prev": [
     {
-     "season": 2024,
-     "pos": 6,
-     "points": 65
-    },
-    {
      "season": 2025,
      "pos": 10,
      "points": 22
+    },
+    {
+     "season": 2024,
+     "pos": 6,
+     "points": 65
     }
    ],
    "news": [
@@ -20756,26 +20737,6 @@
      "wins": 0
     },
     {
-     "id": "ocon",
-     "name": "Esteban Ocon",
-     "last": "Ocon",
-     "code": "OCO",
-     "num": "31",
-     "pos": 17,
-     "points": 7,
-     "wins": 0
-    },
-    {
-     "id": "ryo_hirakawa",
-     "name": "Ryo Hirakawa",
-     "last": "Hirakawa",
-     "code": "HIR",
-     "num": "50",
-     "pos": 21,
-     "points": 1,
-     "wins": 0
-    },
-    {
      "id": "rafael_camara",
      "name": "Rafael Camara",
      "last": "Camara",
@@ -20788,14 +20749,14 @@
    ],
    "prev": [
     {
-     "season": 2024,
-     "pos": 7,
-     "points": 58
-    },
-    {
      "season": 2025,
      "pos": 8,
      "points": 79
+    },
+    {
+     "season": 2024,
+     "pos": 7,
+     "points": 58
     }
    ],
    "news": [
@@ -20808,7 +20769,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/26/6b0809cd2fce3.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 8 h",
+     "age": "hace 9 h",
      "ts": 1795689171.0,
      "teams": [
       "haas"
@@ -20824,7 +20785,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YXyKMzx6/s6/oliver-bearman-haas.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 11 h",
+     "age": "hace 12 h",
      "ts": 1795680068.0,
      "teams": [
       "haas"
@@ -20889,7 +20850,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2GdKBmOY/s6/rafael-camara-haas-f1-team-lan-3.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 7 h",
+     "age": "hace 9 h",
      "ts": 1795691617.0,
      "teams": [
       "haas"
@@ -20941,12 +20902,28 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6zoDj4P0/s6/lando-norris-mclaren.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 5 h",
      "ts": 1795705113.0,
      "teams": [
       "mercedes",
       "red_bull",
       "mclaren"
+     ],
+     "own": false
+    },
+    {
+     "title": "Orihara, jefe de pista de Honda en F1: \"No hemos detectado ningún problema\"",
+     "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255857/shintaro-orihara-jefe-pista-honda-no-hemos-detectado-problema-volveremos-comprobarlo-probablemente-ano-rendimiento-motor-no-suficiente-dar-satisfaccion-confianza-piloto-quiza-tengan-sensacion-rendimiento-no-bueno.html",
+     "desc": "Nuevo expediente X en Honda. Fernando Alonso aseguró durante el Gran Premio de Las Vegas del fin de semana pasado, y también tras bajarse del coche, que su motor estaba sufriendo algún problema porque renía peor de lo esperado en ",
+     "source": "Mundo Deportivo",
+     "lang": "es",
+     "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/06/04/6a21b669cf5e8.jpeg",
+     "date": "2026-11-26",
+     "date_human": "26 nov",
+     "age": "hace 5 h",
+     "ts": 1795703707.0,
+     "teams": [
+      "aston_martin"
      ],
      "own": false
     },
@@ -20959,27 +20936,11 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YP74dAG2/s6/george-russell-mercedes-5.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 5 h",
      "ts": 1795703317.0,
      "teams": [
       "mercedes",
       "red_bull"
-     ],
-     "own": false
-    },
-    {
-     "title": "Antonelli tiene un objetivo claro para Qatar: \"Será clave clasificar bien\"",
-     "url": "https://es.motorsport.com/f1/news/declaraciones-antonelli-jueves-qatar-2026/10877892/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=es",
-     "desc": "Aún no se ha superado del todo la decepción de Las Vegas. Andrea Kimi Antonelli tenía en mente un final de temporada especial: alcanzar las doce victorias, el mismo número que luce en su monoplaza. Un objetivo que se esfumó el pas",
-     "source": "Motorsport.com ES",
-     "lang": "es",
-     "image": "https://cdn-1.motorsport.com/images/amp/01QNx9v0/s6/andrea-kimi-antonelli-mercedes.jpg",
-     "date": "2026-11-26",
-     "date_human": "26 nov",
-     "age": "hace 5 h",
-     "ts": 1795701441.0,
-     "teams": [
-      "mercedes"
      ],
      "own": false
     }
@@ -21019,14 +20980,14 @@
    ],
    "prev": [
     {
-     "season": 2024,
-     "pos": 9,
-     "points": 17
-    },
-    {
      "season": 2025,
      "pos": 5,
      "points": 137
+    },
+    {
+     "season": 2024,
+     "pos": 9,
+     "points": 17
     }
    ],
    "news": [
@@ -21055,7 +21016,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YN7vwlW6/s6/carlos-sainz-williams.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 3 h",
+     "age": "hace 4 h",
      "ts": 1795708571.0,
      "teams": [
       "williams"
@@ -21166,14 +21127,14 @@
    ],
    "prev": [
     {
-     "season": 2024,
-     "pos": 5,
-     "points": 94
-    },
-    {
      "season": 2025,
      "pos": 7,
      "points": 89
+    },
+    {
+     "season": 2024,
+     "pos": 5,
+     "points": 94
     }
    ],
    "news": [
@@ -21186,7 +21147,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YE9Er8MY/s6/lance-stroll-aston-martin-raci.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 2 h",
+     "age": "hace 3 h",
      "ts": 1795711891.0,
      "teams": [
       "aston_martin"
@@ -21202,7 +21163,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/06/04/6a21b669cf5e8.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 5 h",
      "ts": 1795703707.0,
      "teams": [
       "aston_martin"
@@ -21218,7 +21179,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2QedlxA2/s6/fernando-alonso-aston-martin-r.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 6 h",
+     "age": "hace 7 h",
      "ts": 1795697957.0,
      "teams": [
       "aston_martin"
@@ -21234,7 +21195,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YK15zBk0/s6/fernando-alonso-aston-martin-r.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 6 h",
+     "age": "hace 7 h",
      "ts": 1795696018.0,
      "teams": [
       "aston_martin"
@@ -21250,7 +21211,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/17/6afc29521f0da.r_d.1522-921-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 7 h",
+     "age": "hace 8 h",
      "ts": 1795694855.0,
      "teams": [
       "aston_martin"
@@ -21266,7 +21227,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2Qe8nGO2/s6/fernando-alonso-aston-martin-r.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 9 h",
+     "age": "hace 10 h",
      "ts": 1795686416.0,
      "teams": [
       "aston_martin"
@@ -21351,7 +21312,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/22/6b02b2ec34f1e.jpeg",
      "date": "2026-11-23",
      "date_human": "23 nov",
-     "age": "hace 2 d",
+     "age": "hace 3 d",
      "ts": 1795461797.0,
      "teams": [
       "aston_martin",
@@ -21434,6 +21395,8 @@
     "name": "Mercedes",
     "pos": 1
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Andrea Kimi Antonelli (italiano, 20 años) pilota para Mercedes en la temporada 2026. Es líder del mundial con 402 puntos y suma 9 victorias.",
    "photo": "assets/drivers/antonelli.jpg"
   },
@@ -21457,6 +21420,8 @@
     "name": "Red Bull",
     "pos": 3
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Max Verstappen (neerlandés, 29 años) pilota para Red Bull en la temporada 2026. Es segundo del mundial con 304 puntos y suma 4 victorias.",
    "photo": "assets/drivers/max_verstappen.jpg"
   },
@@ -21480,6 +21445,8 @@
     "name": "Ferrari",
     "pos": 2
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Lewis Hamilton (británico, 41 años) pilota para Ferrari en la temporada 2026. Es tercero del mundial con 267 puntos y ha logrado una victoria.",
    "photo": "assets/drivers/hamilton.jpg"
   },
@@ -21503,6 +21470,8 @@
     "name": "Mercedes",
     "pos": 1
    },
+   "seat": true,
+   "last_team": null,
    "bio": "George Russell (británico, 28 años) pilota para Mercedes en la temporada 2026. Es cuarto del mundial con 264 puntos y suma 3 victorias.",
    "photo": "assets/drivers/russell.jpg"
   },
@@ -21526,6 +21495,8 @@
     "name": "McLaren",
     "pos": 4
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Lando Norris (británico, 27 años) pilota para McLaren en la temporada 2026. Es quinto del mundial con 264 puntos y suma 3 victorias.",
    "photo": "assets/drivers/norris.jpg"
   },
@@ -21549,6 +21520,8 @@
     "name": "Ferrari",
     "pos": 2
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Charles Leclerc (monegasco, 29 años) pilota para Ferrari en la temporada 2026. Es 6º del mundial con 250 puntos y ha logrado una victoria.",
    "photo": "assets/drivers/leclerc.jpg"
   },
@@ -21572,6 +21545,8 @@
     "name": "McLaren",
     "pos": 4
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Oscar Piastri (australiano, 25 años) pilota para McLaren en la temporada 2026. Es 7º del mundial con 167 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/piastri.jpg"
   },
@@ -21595,6 +21570,8 @@
     "name": "Red Bull",
     "pos": 3
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Isack Hadjar (francés, 22 años) pilota para Red Bull en la temporada 2026. Es 8º del mundial con 122 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/hadjar.jpg"
   },
@@ -21618,6 +21595,8 @@
     "name": "RB F1 Team",
     "pos": 5
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Liam Lawson (neozelandés, 24 años) pilota para RB F1 Team en la temporada 2026. Es 9º del mundial con 89 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/lawson.jpg"
   },
@@ -21641,6 +21620,8 @@
     "name": "Alpine F1 Team",
     "pos": 6
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Pierre Gasly (francés, 30 años) pilota para Alpine F1 Team en la temporada 2026. Es 10º del mundial con 52 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/gasly.jpg"
   },
@@ -21664,6 +21645,8 @@
     "name": "RB F1 Team",
     "pos": 5
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Arvid Lindblad (británico, 19 años) pilota para RB F1 Team en la temporada 2026. Es 11º del mundial con 38 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/arvid_lindblad.jpg"
   },
@@ -21687,6 +21670,8 @@
     "name": "Alpine F1 Team",
     "pos": 6
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Franco Colapinto (argentino, 23 años) pilota para Alpine F1 Team en la temporada 2026. Es 12º del mundial con 35 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/colapinto.jpg"
   },
@@ -21710,6 +21695,8 @@
     "name": "Haas F1 Team",
     "pos": 7
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Oliver Bearman (británico, 21 años) pilota para Haas F1 Team en la temporada 2026. Es 13º del mundial con 23 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/bearman.jpg"
   },
@@ -21733,6 +21720,8 @@
     "name": "Audi",
     "pos": 8
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Gabriel Bortoleto (brasileño, 22 años) pilota para Audi en la temporada 2026. Es 14º del mundial con 14 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/bortoleto.jpg"
   },
@@ -21756,6 +21745,8 @@
     "name": "Audi",
     "pos": 8
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Nico Hülkenberg (alemán, 39 años) pilota para Audi en la temporada 2026. Es 15º del mundial con 14 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/hulkenberg.jpg"
   },
@@ -21779,6 +21770,8 @@
     "name": "Williams",
     "pos": 9
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Carlos Sainz (español, 32 años) pilota para Williams en la temporada 2026. Es 16º del mundial con 11 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/sainz.jpg"
   },
@@ -21797,12 +21790,13 @@
    "pos": 17,
    "points": 7,
    "wins": 0,
-   "team": {
+   "team": null,
+   "seat": false,
+   "last_team": {
     "id": "haas",
-    "name": "Haas F1 Team",
-    "pos": 7
+    "name": "Haas F1 Team"
    },
-   "bio": "Esteban Ocon (francés, 30 años) pilota para Haas F1 Team en la temporada 2026. Es 17º del mundial con 7 puntos y todavía no ha ganado una carrera este año.",
+   "bio": "Esteban Ocon (francés, 30 años) pilota para la Fórmula 1 en la temporada 2026. Es 17º del mundial con 7 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/ocon.jpg"
   },
   {
@@ -21825,6 +21819,8 @@
     "name": "Aston Martin",
     "pos": 10
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Fernando Alonso (español, 45 años) pilota para Aston Martin en la temporada 2026. Es 18º del mundial con 7 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/alonso.jpg"
   },
@@ -21848,6 +21844,8 @@
     "name": "Williams",
     "pos": 9
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Alexander Albon (tailandés, 30 años) pilota para Williams en la temporada 2026. Es 19º del mundial con 5 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/albon.jpg"
   },
@@ -21866,12 +21864,13 @@
    "pos": 20,
    "points": 1,
    "wins": 0,
-   "team": {
+   "team": null,
+   "seat": false,
+   "last_team": {
     "id": "rb",
-    "name": "RB F1 Team",
-    "pos": 5
+    "name": "RB F1 Team"
    },
-   "bio": "Yuki Tsunoda (japonés, 26 años) pilota para RB F1 Team en la temporada 2026. Es 20º del mundial con 1 puntos y todavía no ha ganado una carrera este año.",
+   "bio": "Yuki Tsunoda (japonés, 26 años) pilota para la Fórmula 1 en la temporada 2026. Es 20º del mundial con 1 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/tsunoda.jpg"
   },
   {
@@ -21889,12 +21888,13 @@
    "pos": 21,
    "points": 1,
    "wins": 0,
-   "team": {
+   "team": null,
+   "seat": false,
+   "last_team": {
     "id": "haas",
-    "name": "Haas F1 Team",
-    "pos": 7
+    "name": "Haas F1 Team"
    },
-   "bio": "Ryo Hirakawa (japonés, 32 años) pilota para Haas F1 Team en la temporada 2026. Es 21º del mundial con 1 puntos y todavía no ha ganado una carrera este año.",
+   "bio": "Ryo Hirakawa (japonés, 32 años) pilota para la Fórmula 1 en la temporada 2026. Es 21º del mundial con 1 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/ryo_hirakawa.jpg"
   },
   {
@@ -21917,6 +21917,8 @@
     "name": "Aston Martin",
     "pos": 10
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Lance Stroll (canadiense, 28 años) pilota para Aston Martin en la temporada 2026. Es 22º del mundial con 0 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/stroll.jpg"
   },
@@ -21940,6 +21942,8 @@
     "name": "Cadillac F1 Team",
     "pos": 11
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Valtteri Bottas (finlandés, 37 años) pilota para Cadillac F1 Team en la temporada 2026. Es 23º del mundial con 0 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/bottas.jpg"
   },
@@ -21963,6 +21967,8 @@
     "name": "Cadillac F1 Team",
     "pos": 11
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Sergio Pérez (mexicano, 36 años) pilota para Cadillac F1 Team en la temporada 2026. Es 24º del mundial con 0 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/perez.jpg"
   },
@@ -21986,11 +21992,29 @@
     "name": "Haas F1 Team",
     "pos": 7
    },
+   "seat": true,
+   "last_team": null,
    "bio": "Rafael Camara (brasileño, 21 años) pilota para Haas F1 Team en la temporada 2026. Es 25º del mundial con 0 puntos y todavía no ha ganado una carrera este año.",
    "photo": "assets/drivers/rafael_camara.jpg"
   }
  ],
  "news": [
+  {
+   "title": "George Russell no le da importancia a las palabras de Verstappen: \"Me parecieron bastante graciosos algunos de los comentarios tras la carrera\"",
+   "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255974/george-russell-no-le-da-importancia-palabras-verstappen-me-parecieron-graciosos-comentarios-carrera.html",
+   "desc": "En Las Vegas, George Russell y Max Verstappen protagonizaron un nuevo roce durante los terceros entrenamientos libres, luego de que el piloto británico se cerrara sobre el neerlandés y estuviera cerca de causar una colisión. Lejos",
+   "source": "Mundo Deportivo",
+   "lang": "es",
+   "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/02/6ae913c25b101.r_d.1419-875-0.jpeg",
+   "date": "2026-11-26",
+   "date_human": "26 nov",
+   "age": "hace 1 h",
+   "ts": 1795720565.0,
+   "teams": [
+    "mercedes",
+    "red_bull"
+   ]
+  },
   {
    "title": "Sainz y el plan de evacuación en Qatar: \"Nos lo han contado en una reunión\"",
    "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255961/sainz-plan-evacuacion-qatar-han-contado-reunion.html",
@@ -22030,7 +22054,7 @@
    "image": "https://cdn-1.motorsport.com/images/amp/0qgKvGBY/s6/max-verstappen-red-bull-racing.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 1 h",
+   "age": "hace 2 h",
    "ts": 1795716261.0,
    "teams": [
     "mercedes",
@@ -22046,7 +22070,7 @@
    "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b0863feabec8.r_d.933-599-0.jpeg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 1 h",
+   "age": "hace 3 h",
    "ts": 1795713239.0,
    "teams": [
     "mercedes"
@@ -22061,7 +22085,7 @@
    "image": "https://cdn-1.motorsport.com/images/amp/YE9Er8MY/s6/lance-stroll-aston-martin-raci.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 2 h",
+   "age": "hace 3 h",
    "ts": 1795711891.0,
    "teams": [
     "aston_martin"
@@ -22076,7 +22100,7 @@
    "image": "https://cdn-1.motorsport.com/images/amp/0mXyxxk6/s6/lewis-hamilton-ferrari-2.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 2 h",
+   "age": "hace 3 h",
    "ts": 1795710058.0,
    "teams": [
     "ferrari",
@@ -22092,7 +22116,7 @@
    "image": "https://cdn-1.motorsport.com/images/amp/YN7vwlW6/s6/carlos-sainz-williams.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 3 h",
+   "age": "hace 4 h",
    "ts": 1795708571.0,
    "teams": [
     "williams"
@@ -22107,7 +22131,7 @@
    "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 3 h",
+   "age": "hace 4 h",
    "ts": 1795706869.0,
    "teams": [
     "ferrari",
@@ -22125,26 +22149,69 @@
    "image": "https://cdn-1.motorsport.com/images/amp/6n7b33g0/s6/charles-leclerc-ferrari.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 3 h",
+   "age": "hace 4 h",
    "ts": 1795706600.0,
    "teams": [
     "mercedes"
    ]
   },
   {
-   "title": "Orihara, jefe de pista de Honda en F1: \"No hemos detectado ningún problema\"",
-   "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255857/shintaro-orihara-jefe-pista-honda-no-hemos-detectado-problema-volveremos-comprobarlo-probablemente-ano-rendimiento-motor-no-suficiente-dar-satisfaccion-confianza-piloto-quiza-tengan-sensacion-rendimiento-no-bueno.html",
-   "desc": "Nuevo expediente X en Honda. Fernando Alonso aseguró durante el Gran Premio de Las Vegas del fin de semana pasado, y también tras bajarse del coche, que su motor estaba sufriendo algún problema porque renía peor de lo esperado en ",
-   "source": "Mundo Deportivo",
-   "lang": "es",
-   "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/06/04/6a21b669cf5e8.jpeg",
+   "title": "Verstappen to work with new race engineer Tom Hart again at Qatar GP",
+   "url": "https://www.autosport.com/f1/news/verstappen-to-work-with-new-race-engineer-tom-hart-again-at-qatar-gp/10878044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "Max Verstappen will be without his regular right-hand man Gianpiero Lambiase this weekend at the Lusail International Circuit. Red Bull had already opted for a rotation system for the latter part of this Formula 1 season, primaril",
+   "source": "Autosport",
+   "lang": "en",
+   "image": "https://cdn-1.motorsport.com/images/amp/YP74Zm42/s6/max-verstappen-red-bull-racing-2.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 4 h",
-   "ts": 1795703707.0,
+   "age": "hace 1 h",
+   "ts": 1795719777.0,
    "teams": [
-    "aston_martin"
+    "red_bull"
    ]
+  },
+  {
+   "title": "Max Verstappen faces unexpected Red Bull absence at Qatar GP after late change of plan",
+   "url": "https://www.crash.net/f1/news/1110928/1/max-verstappen-faces-unexpected-red-bull-absence-qatar-gp-after-late-change-plan",
+   "desc": "Max Verstappen will be without a key member of his Red Bull F1 team in Qatar.",
+   "source": "Crash.net",
+   "lang": "en",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1456640_hires.jpg?width=1200",
+   "date": "2026-11-26",
+   "date_human": "26 nov",
+   "age": "hace 1 h",
+   "ts": 1795719613.0,
+   "teams": [
+    "red_bull"
+   ]
+  },
+  {
+   "title": "Max Verstappen without Gianpiero Lambiase at Qatar GP as Tom Hart steps in",
+   "url": "https://www.motorsport.com/f1/news/max-verstappen-without-gianpiero-lambiase-at-qatar-gp-as-tom-hart-steps-in/10878042/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Max Verstappen will be without his regular right-hand man Gianpiero Lambiase this weekend at the Lusail International Circuit. Red Bull had already opted for a rotation system for the latter part of this Formula 1 season, primaril",
+   "source": "Motorsport.com",
+   "lang": "en",
+   "image": "https://cdn-1.motorsport.com/images/amp/YBVj7QzY/s6/max-verstappen-red-bull-racing.jpg",
+   "date": "2026-11-26",
+   "date_human": "26 nov",
+   "age": "hace 1 h",
+   "ts": 1795719334.0,
+   "teams": [
+    "red_bull"
+   ]
+  },
+  {
+   "title": "Spotlight: Ford reveals the GT41 Hypercar it will race in WEC | Brief",
+   "url": "https://www.racefans.net/2026/11/26/spotlight-ford-reveals-the-gt41-hypercar-it-will-race-in-wec/",
+   "desc": "Ford reveals GT41 Hypercar for 2027 WEC season",
+   "source": "RaceFans",
+   "lang": "en",
+   "image": null,
+   "date": "2026-11-26",
+   "date_human": "26 nov",
+   "age": "hace 2 h",
+   "ts": 1795716750.0,
+   "teams": []
   },
   {
    "title": "Why Max Verstappen has ruled out Indy 500 entry",
@@ -22155,7 +22222,7 @@
    "image": "https://cdn-1.motorsport.com/images/amp/68VwB9x2/s6/max-verstappen-red-bull-racing-a10878029-b707-2.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 1 h",
+   "age": "hace 2 h",
    "ts": 1795716320.0,
    "teams": [
     "red_bull"
@@ -22170,76 +22237,12 @@
    "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1339838_hires.jpg?width=1200",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 1 h",
+   "age": "hace 2 h",
    "ts": 1795715977.0,
    "teams": []
-  },
-  {
-   "title": "Lewis Hamilton confirms \"positive\" talks with Charles Leclerc after Las Vegas clash",
-   "url": "https://www.motorsport.com/f1/news/lewis-hamilton-confirms-positive-talks-with-charles-leclerc-after-las-vegas-clash/10878021/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Seven-time Formula 1 champion Lewis Hamilton says Ferrari's talks since the Las Vegas Grand Prix have been \"positive\", and believes he and his team-mate Charles Leclerc can move forward together after their latest clash. Leclerc s",
-   "source": "Motorsport.com",
-   "lang": "en",
-   "image": "https://cdn-1.motorsport.com/images/amp/0mXyxxk6/s6/lewis-hamilton-ferrari-a10878021-b704-2.jpg",
-   "date": "2026-11-26",
-   "date_human": "26 nov",
-   "age": "hace 1 h",
-   "ts": 1795714963.0,
-   "teams": [
-    "ferrari",
-    "mercedes"
-   ]
-  },
-  {
-   "title": "Lewis Hamilton answers biggest question about Ferrari rules after Charles Leclerc clash",
-   "url": "https://www.crash.net/f1/news/1110924/1/lewis-hamilton-answers-biggest-question-about-ferrari-rules-after-charles-leclerc",
-   "desc": "Lewis Hamilton reveals key aspect of Ferrari's rules of engagement after his latest clash with Charles Leclerc.",
-   "source": "Crash.net",
-   "lang": "en",
-   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1456409_hires.jpg?width=1200",
-   "date": "2026-11-26",
-   "date_human": "26 nov",
-   "age": "hace 2 h",
-   "ts": 1795711321.0,
-   "teams": [
-    "ferrari",
-    "mercedes"
-   ]
-  },
-  {
-   "title": "Hamilton convinced Ferrari will \"figure it out\" following Leclerc skirmish",
-   "url": "https://www.autosport.com/f1/news/hamilton-convinced-ferrari-will-figure-it-out/10877979/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-   "desc": "Ferrari driver Lewis Hamilton says he is confident that he and team-mate Charles Leclerc will \"figure it out\" following their latest on-track skirmish at last week's Las Vegas Grand Prix. A fortnight on from a costly on-track inci",
-   "source": "Autosport",
-   "lang": "en",
-   "image": "https://cdn-1.motorsport.com/images/amp/2wlKzmeY/s6/charles-leclerc-ferrari-lewis--2.jpg",
-   "date": "2026-11-26",
-   "date_human": "26 nov",
-   "age": "hace 3 h",
-   "ts": 1795709237.0,
-   "teams": [
-    "ferrari",
-    "mercedes"
-   ]
-  },
-  {
-   "title": "Leclerc furious with integrity being questioned after Hamilton clashes",
-   "url": "https://www.autosport.com/f1/news/leclerc-furious-with-integrity-being-questioned-after-hamilton-clashes/10877960/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-   "desc": "Charles Leclerc was left furious by those ‘questioning his integrity and love for Ferrari’ after yet another clash with Formula 1 team-mate Lewis Hamilton - having urged to find a “solution”. The Ferrari pair have been at loggerhe",
-   "source": "Autosport",
-   "lang": "en",
-   "image": "https://cdn-1.motorsport.com/images/amp/63QaDqb2/s6/lewis-hamilton-ferrari-charles-2.jpg",
-   "date": "2026-11-26",
-   "date_human": "26 nov",
-   "age": "hace 3 h",
-   "ts": 1795706789.0,
-   "teams": [
-    "ferrari",
-    "mercedes"
-   ]
   }
  ],
- "news_pool": 305,
+ "news_pool": 306,
  "history": [
   {
    "year": 2025,

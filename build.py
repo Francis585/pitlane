@@ -140,7 +140,7 @@ def season_stats(site: dict) -> dict:
     for d in site["drivers"]:
         if d["id"] in drivers:
             drivers[d["id"]]["points"] = d["points"]
-            drivers[d["id"]]["team_id"] = d.get("team", {}).get("id", "")
+            drivers[d["id"]]["team_id"] = (d.get("team") or {}).get("id", "")
     for t in site["teams"]:
         if t["id"] in teams:
             teams[t["id"]]["points"] = t["points"]
@@ -644,7 +644,7 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
         st = next((x for x in stats["drivers"] if x["name"] == d["full"]), None)
         cmp_rows.append({
             "id": d["id"], "name": d["full"], "short": d["last"], "code": d.get("code", ""),
-            "team": d.get("team", {}).get("name", ""), "brand": brand_of(d.get("team", {}).get("id", "")),
+            "team": (d.get("team") or {}).get("name", ""), "brand": brand_of((d.get("team") or {}).get("id", "")),
             "pos": d["pos"], "points": d["points"], "wins": st["wins"] if st else 0,
             "podiums": st["podiums"] if st else 0, "poles": st["poles"] if st else 0,
             "fl": st["fl"] if st else 0, "dnf": st["dnf"] if st else 0,
@@ -934,7 +934,7 @@ def write_static(site: dict) -> None:
 
     (OUT / "licencia.txt").write_text(
         "PITLANE — demo original de Francisco Hernández Martín (Salamanca, España).\n"
-        "Copyright (c) 2026. Todos los derechos reservados.\n\n"
+        f"Copyright (c) {date.today().year}. Todos los derechos reservados.\n\n"
         "El diseño, el código, los textos y la selección de datos de este sitio son obra\n"
         "de su autor y se publican como muestra de portafolio. Se permite enlazar y citar\n"
         "con atribución visible; no se autoriza su copia, replica o presentación como\n"

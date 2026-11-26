@@ -148,8 +148,10 @@ def get(url: str, timeout: int = 45, retries: int = 4) -> bytes:
 
 
 def get_json(url: str) -> dict:
-    if "wikipedia.org" in url:
-        time.sleep(0.9)
+    # Wikipedia y Commons comparten límite de peticiones; sin esta pausa
+    # devuelven 429 y las fotos se quedan sin actualizar.
+    if "wikipedia.org" in url or "wikimedia.org" in url:
+        time.sleep(1.2)
     return json.loads(get(url).decode("utf-8"))
 
 
@@ -490,7 +492,20 @@ def team_head_to_head(drivers: list, team_id: str) -> list:
     return rows
 
 
-def build_teams(api: dict, calendar: list) -> list:
+def current_seats(calendar: list) -> dict:
+    """Asiento actual de cada piloto: manda la última carrera disputada.
+
+    Sin esto, un piloto que dejó el equipo hace semanas seguía apareciendo en
+    la plantilla porque la clasificación del mundial acumula todos los equipos
+    con los que ha corrido en la temporada.
+    """
+    done = [c for c in calendar if c.get("done") and c.get("results")]
+    if not done:
+        return {}
+    return {r["driver_id"]: r["team_id"] for r in done[-1]["results"]}
+
+
+def build_teams(api: dict, calendar: list, seats: dict | None = None) -> list:
     cons = api["teams"]["ConstructorStandings"]
     drivers = api["drivers"]["DriverStandings"]
     out = []
@@ -498,9 +513,15 @@ def build_teams(api: dict, calendar: list) -> list:
         cid = c["Constructor"]["constructorId"]
         roster = []
         for d in drivers:
-            ids = [x["constructorId"] for x in d["Constructors"]]
-            if cid in ids:
-                roster.append({
+            did = d["Driver"]["driverId"]
+            if seats:
+                if seats.get(did) != cid:
+                    continue
+            else:
+                ids = [x["constructorId"] for x in d["Constructors"]]
+                if cid not in ids:
+                    continue
+            roster.append({
                     "id": d["Driver"]["driverId"],
                     "name": f"{d['Driver']['givenName']} {d['Driver']['familyName']}",
                     "last": d["Driver"]["familyName"],
@@ -523,10 +544,12 @@ def build_teams(api: dict, calendar: list) -> list:
     return out
 
 
-def prev_seasons(team_ids: list, years=(2024, 2025)) -> dict:
+def prev_seasons(team_ids: list, years: tuple | None = None) -> dict:
     """Posición y puntos de cada escudería en las dos temporadas anteriores."""
     out = {tid: [] for tid in team_ids}
-    for y in years:
+    # las dos temporadas anteriores se calculan solas: al cambiar de año, la
+    # comparación se desplaza sin tocar código
+    for y in (years or (SEASON - 1, SEASON - 2)):
         try:
             d = get_json(f"{API}/{y}/constructorstandings.json?limit=100")
             rows = d["MRData"]["StandingsTable"]["StandingsLists"][0]["ConstructorStandings"]
@@ -574,16 +597,20 @@ def championship_state(teams: list, drivers: list, rounds_done: int, total_races
     return out
 
 
-def build_drivers(api: dict, teams: list) -> list:
+def build_drivers(api: dict, teams: list, seats: dict | None = None) -> list:
     team_of = {}
     for t in teams:
         for d in t["drivers"]:
             team_of[d["id"]] = t
+    seat_of = seats or {}
     out = []
     for d in api["drivers"]["DriverStandings"]:
         drv = d["Driver"]
         did = drv["driverId"]
         t = team_of.get(did)
+        # equipo anterior: el último con el que corrió según la clasificación
+        last_cid = (d.get("Constructors") or [{}])[-1].get("constructorId")
+        last_team = next((x for x in teams if x["id"] == last_cid), None)
         dob = date.fromisoformat(drv["dateOfBirth"])
         today = date.today()
         age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
@@ -603,6 +630,9 @@ def build_drivers(api: dict, teams: list) -> list:
             "points": int(float(d["points"])),
             "wins": int(d["wins"]),
             "team": {"id": t["id"], "name": t["name"], "pos": t["pos"]} if t else None,
+            "seat": bool(seat_of.get(did)) if seat_of else True,
+            "last_team": ({"id": last_team["id"], "name": last_team["name"]}
+                          if last_team and not t else None),
         })
     return out
 
@@ -1409,11 +1439,12 @@ def _run() -> None:
     attach_qualifying(calendar, api["qualifying"])
     attach_qualifying(calendar, api["sprint"])
     keep_previous_rounds(calendar)
-    teams = build_teams(api, calendar)
+    seats = current_seats(calendar)
+    teams = build_teams(api, calendar, seats)
     hist = prev_seasons([t["id"] for t in teams])
     for t in teams:
         t["prev"] = hist.get(t["id"], [])
-    drivers = build_drivers(api, teams)
+    drivers = build_drivers(api, teams, seats)
 
     stats = {}
     overrides = {"rafael_camara": "Rafael Camara"}

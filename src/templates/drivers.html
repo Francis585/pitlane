@@ -58,7 +58,7 @@
           <td style="padding:9px 8px"><a href="{{ root }}pilotos/{{ d.id }}.html">{{ d.full }}</a></td>
           <td style="padding:9px 8px">
             <span style="display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:8px;background:{{ t.brand if t else '#666' }}"></span>
-            <span class="dim">{{ d.team.name if d.team else '—' }}</span>
+            <span class="dim">{{ d.team.name if d.team else 'Sin asiento' }}</span>
           </td>
           <td class="mono" style="padding:9px 8px;text-align:right">{{ d.wins }}</td>
           <td class="mono" style="padding:9px 8px;text-align:right">{{ d.points }}</td>

@@ -43,7 +43,7 @@
     </div>
     <div class="dcard-meta">
       <h3>{{ d.full }}</h3>
-      <div class="team">{% if d.team %}{{ d.team.name }}{% endif %}</div>
+      <div class="team">{% if d.team %}{{ d.team.name }}{% else %}Sin asiento{% endif %}</div>
       <div class="dcard-foot">
         <span><b>{{ d.points }}</b> pts</span>
         <span>{{ d.wins }} {{ 'victoria' if d.wins == 1 else 'victorias' }}</span>

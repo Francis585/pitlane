@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}{{ d.full }} — Fórmula 1 {{ site.season }} | Pitlane{% endblock %}
-{% block desc %}{{ d.full }}, {{ d.team.name if d.team else 'Fórmula 1' }}: {{ d.points }} puntos y P{{ d.pos }} en el mundial {{ site.season }}. Resultados carrera a carrera, duelo con su compañero e historial.{% endblock %}
+{% block desc %}{{ d.full }}, {{ d.team.name if d.team else 'sin asiento' }}: {{ d.points }} puntos y P{{ d.pos }} en el mundial {{ site.season }}. Resultados carrera a carrera, duelo con su compañero e historial.{% endblock %}
 {% block vars %}
 :root{--brand:{{ tm.brand if tm else '#ff5a1f' }};}
 {% endblock %}
@@ -13,7 +13,7 @@
     <span class="dhero-flag">{{ flag_tag(flag_code(d.nationality), "flag-img", 26, 18) | safe }} {{ d.nationality }}</span>
   </div>
   <div class="dhero-body">
-    <div class="eyebrow">{{ d.team.name if d.team else 'Fórmula 1' }} · Temporada {{ site.season }}</div>
+    <div class="eyebrow">{{ d.team.name if d.team else 'Sin asiento' }} · Temporada {{ site.season }}</div>
     <h1>{{ d.first }}<br>{{ d.last }}</h1>
     {% if site.champions and site.champions.drivers.decided and site.champions.drivers.id == d.id %}
     <div class="champ-badge">★ Campeón del mundo {{ site.season }}</div>
