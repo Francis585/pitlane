@@ -118,7 +118,7 @@
     reveals.forEach((el) => el.classList.add('is-in'));
   }
   // red de seguridad: nunca dejar contenido oculto
-  setTimeout(() => reveals.forEach((el) => el.classList.add('is-in')), 2500);
+  setTimeout(() => reveals.forEach((el) => el.classList.add('is-in')), 1200);
 
   // parallax suave del hero (desactivado en móvil o con movimiento reducido)
   const media = document.querySelector('.hero-media');

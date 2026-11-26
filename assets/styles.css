@@ -1834,3 +1834,7 @@ html[data-theme="light"] .nav-links a span { color: #8a919c; }
 /* franja de campeones: el pie de cada año necesitaba algo más de contraste */
 .champ-cell em { color: var(--dim); font-size: .54rem; line-height: 1.5; }
 .champ-cell span { margin-top: 6px; }
+
+/* entrada de secciones: arrancaba casi invisible (0) y en móvil se veía "roto" al cargar */
+.js [data-reveal] { opacity: .42; transform: translateY(18px);
+  transition: opacity .5s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1); }
