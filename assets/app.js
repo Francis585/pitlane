@@ -294,4 +294,18 @@
     let t; input.addEventListener('input', () => { clearTimeout(t); t = setTimeout(draw, 90); });
     draw();
   }
+  // ------- pista de scroll en el menú cuando no caben todos los enlaces -------
+  const navLinks = document.querySelector('.nav-links');
+  if (navLinks) {
+    const sync = () => {
+      const over = navLinks.scrollWidth - navLinks.clientWidth > 4;
+      navLinks.classList.toggle('is-scrollable', over);
+      navLinks.classList.toggle('at-end', over && navLinks.scrollLeft + navLinks.clientWidth >= navLinks.scrollWidth - 4);
+    };
+    navLinks.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    sync();
+  }
+
+
 })();

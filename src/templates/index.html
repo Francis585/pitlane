@@ -124,6 +124,34 @@
 
 {% endif %}
 
+{% if site.history %}
+<hr class="rule">
+
+<section class="sec" data-reveal>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Histórico · {{ site.history|length }} temporadas</div>
+        <h2>Quién ganó antes</h2>
+        <p>Los campeones de la última década, con su margen sobre el segundo. Cada año abre su
+           clasificación completa.</p>
+      </div>
+      <a class="sec-link" href="{{ root }}historico.html">Ver todo el histórico →</a>
+    </div>
+    <div class="champ-strip">
+      {% for h in site.history[:6] %}
+      {% set tm = meta.get(h.champion.team_id) %}
+      <a class="champ-cell" href="{{ root }}historico.html#{{ h.year }}">
+        <b>{{ h.year }}</b>
+        <span>{{ h.champion.name }}</span>
+        <em>{{ tm.display if tm else h.champion.team }} · +{{ h.gap|round|int }} pts</em>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <hr class="rule">
 
 <section class="sec" data-reveal>
@@ -182,7 +210,7 @@
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <span class="sec-num">05 — EL PADDOCK</span>
+        <span class="sec-num">04 — EL PADDOCK</span>
         <h2>El mundial, en imágenes</h2>
         <p>Coches, caras y escenarios. Todo lo que hay en esta página sale de datos e imágenes públicas
            y se regenera en cada carrera.</p>
@@ -207,7 +235,7 @@
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <span class="sec-num">06 — PRENSA</span><div class="eyebrow">Desde el paddock</div>
+        <span class="sec-num">05 — PRENSA</span><div class="eyebrow">Desde el paddock</div>
         <h2>Últimas noticias</h2>
         <p>Titulares de los medios especializados, recolectados automáticamente en cada publicación.</p>
       </div>

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Histórico del mundial de F1 — campeones de la última década | Pitlane{% endblock %}
+{% block desc %}Todos los campeones del mundial de Fórmula 1 de la última década: piloto, escudería, puntos, victorias y clasificación completa de cada temporada.{% endblock %}
+{% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
+
+{% block content %}
+<section class="sec" style="padding-bottom:18px">
+  <div class="wrap">
+    <div class="eyebrow">{{ site.history|length }} temporadas · datos oficiales</div>
+    <h1 class="page-title" style="font-size:clamp(2.6rem,7vw,5rem);text-transform:uppercase;margin:12px 0 14px">Histórico</h1>
+    <p class="dim" style="max-width:62ch">Cada campeonato cerrado, con el campeón de pilotos, el de constructores y la
+       clasificación completa. Sirve para comparar cómo ha cambiado la parrilla año a año.</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="years">
+      {% for h in site.history %}
+      {% set tm = meta.get(h.champion.team_id) %}
+      <article class="year" id="{{ h.year }}" style="--c:{{ tm.brand if tm else '#ff5a1f' }}">
+        <header class="year-top">
+          <span class="year-num">{{ h.year }}</span>
+          <span class="year-races">{{ h.races }} carreras</span>
+        </header>
+        <h2 class="year-champ">{{ h.champion.name }}</h2>
+        <p class="year-team">
+          <span class="year-dot"></span>{{ tm.display if tm else h.champion.team }}
+          {% if h.constructor_champion %}<span class="year-sep">·</span>
+          <span class="year-constr">Constructores: {{ h.constructor_champion.name }}</span>{% endif %}
+        </p>
+        <div class="year-stats">
+          <div><b>{{ h.champion.points|round|int }}</b><span>puntos</span></div>
+          <div><b>{{ h.champion.wins }}</b><span>victorias</span></div>
+          <div><b>+{{ h.gap|round|int }}</b><span>al segundo</span></div>
+        </div>
+        <details class="year-more">
+          <summary>Ver la clasificación de {{ h.year }}</summary>
+          <div class="year-tables">
+            <table class="res-table">
+              <thead><tr><th>#</th><th>Piloto</th><th>Equipo</th><th class="num">V</th><th class="num">Pts</th></tr></thead>
+              <tbody>
+                {% for d in h.drivers[:10] %}
+                <tr class="{{ 'is-champ' if d.pos == 1 }}">
+                  <td class="num mono">{{ d.pos }}</td>
+                  <td>{{ d.name }}</td>
+                  <td class="dim">{{ d.team }}</td>
+                  <td class="num mono">{{ d.wins }}</td>
+                  <td class="num mono">{{ d.points|round|int }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+            <table class="res-table year-constr-table">
+              <thead><tr><th>#</th><th>Escudería</th><th class="num">Pts</th></tr></thead>
+              <tbody>
+                {% for c in h.constructors[:6] %}
+                <tr class="{{ 'is-champ' if c.pos == 1 }}">
+                  <td class="num mono">{{ c.pos }}</td>
+                  <td>{{ c.name }}</td>
+                  <td class="num mono">{{ c.points|round|int }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="src-note" style="margin-top:22px">Fuente: Jolpica F1 API · actualizado el {{ generated_human }}.</p>
+  </div>
+</section>
+{% endblock %}

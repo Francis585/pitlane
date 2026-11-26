@@ -950,17 +950,25 @@ def wiki_extract(title: str, limit: int = 420) -> str:
 
 
 # ------------------------------------------------------------------------ noticias
+# (medio, url, idioma, filtrar solo F1)  lo que esta en espanol va primero en portada
 FEEDS = [
-    ("The Race", "https://www.the-race.com/feed/"),
-    ("Motorsport.com", "https://www.motorsport.com/rss/f1/news/"),
-    ("Autosport", "https://www.autosport.com/rss/f1/news/"),
-    ("Crash.net", "https://www.crash.net/rss/f1"),
-    ("ESPN F1", "https://www.espn.com/espn/rss/f1/news"),
-    ("RaceFans", "https://www.racefans.net/feed/"),
-    ("Motorsport Week", "https://www.motorsportweek.com/feed/"),
-    ("AS Motor", "https://as.com/rss/motor/formula_1.xml"),
-    ("Marca Motor", "https://e00-marca.uecdn.es/rss/motor.xml"),
+    ("Motorsport.com ES", "https://es.motorsport.com/rss/f1/news/", "es", False),
+    ("Mundo Deportivo", "https://www.mundodeportivo.com/rss/motor", "es", True),
+    ("The Race", "https://www.the-race.com/feed/", "en", False),
+    ("Motorsport.com", "https://www.motorsport.com/rss/f1/news/", "en", False),
+    ("Autosport", "https://www.autosport.com/rss/f1/news/", "en", False),
+    ("Crash.net", "https://www.crash.net/rss/f1", "en", False),
+    ("ESPN F1", "https://www.espn.com/espn/rss/f1/news", "en", False),
+    ("RaceFans", "https://www.racefans.net/feed/", "en", False),
 ]
+
+# Mundo Deportivo mezcla motor: solo entra lo que habla de F1.
+OTHER_SERIES = re.compile(r"motogp|moto2|moto3|superbike|\bf2\b|\bf3\b|dakar|wrc|formula e|indycar", re.I)
+F1_WORDS = re.compile(
+    r"\bf1\b|f[oó]rmula 1|gran premio|verstappen|hamilton|leclerc|norris|piastri|"
+    r"russell|antonelli|alonso|sainz|stroll|gasly|ocon|albon|tsunoda|lawson|hadjar|bearman|"
+    r"hulkenberg|bortoleto|bottas|perez|colapinto|ferrari|mercedes|red bull|mclaren|aston martin|"
+    r"alpine|haas|williams|sauber|audi|cadillac|fia|liberty", re.I)
 
 # Alias que identifican cada escudería en un titular (minúsculas, sin acentos).
 ALIASES = {
@@ -984,9 +992,135 @@ def tag_teams(item: dict) -> list:
     return hits
 
 
+def keep_previous_rounds(calendar: list) -> None:
+    """Si una ronda ya tenia resultados y la API no los devuelve hoy, se conservan.
+
+    Jolpica limita peticiones: en una pasada pueden fallar varias rondas y sin esto
+    el sitio perderia clasificaciones y resultados de carreras ya disputadas.
+    """
+    path = DATA / "site.json"
+    try:
+        prev = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return
+    if prev.get("season") != SEASON:
+        return
+    old_rounds = {int(r["round"]): r for r in prev.get("calendar", [])}
+    filled = 0
+    for race in calendar:
+        old = old_rounds.get(int(race["round"]))
+        if not old:
+            continue
+        for key in ("results", "qualifying", "sprint", "finished", "sessions"):
+            if not race.get(key) and old.get(key):
+                race[key] = old[key]
+                filled += 1
+        if old.get("winner") and not race.get("winner"):
+            race["winner"] = old["winner"]
+        if old.get("podium") and not race.get("podium"):
+            race["podium"] = old["podium"]
+    if filled:
+        print(f"[data] conservadas {filled} tablas de rondas anteriores")
+
+
+def parse_feed_date(pub: str):
+    """Fecha de un item RSS: RFC 822 con o sin zona horaria."""
+    if not pub:
+        return None
+    for fmt in ("%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S",
+                "%d %b %Y %H:%M:%S %z", "%d %b %Y %H:%M:%S"):
+        try:
+            dt = datetime.strptime(pub.strip()[:31], fmt)
+            return dt.replace(tzinfo=None)
+        except Exception:
+            continue
+    return None
+
+
+def fetch_history(seasons: int = 12) -> list:
+    """Campeonatos anteriores, pilotos y constructores, desde Jolpica."""
+    # lo ya descargado se conserva: si la API falla un dia, no se pierde ni un año
+    prev = {}
+    try:
+        existing = json.loads((DATA / "site.json").read_text(encoding="utf-8"))
+        prev = {h["year"]: h for h in existing.get("history", []) if h.get("drivers")}
+    except Exception:
+        pass
+    out = []
+    for year in range(SEASON - 1, SEASON - 1 - seasons, -1):
+        if year in prev:
+            out.append(prev[year])
+            continue
+        row = {"year": year, "drivers": [], "constructors": [], "races": 0}
+        time.sleep(0.5)
+        lists = []
+        for attempt in range(3):
+            try:
+                d = get_json(f"{API}/{year}/driverStandings.json?limit=40")
+                lists = d["MRData"]["StandingsTable"]["StandingsLists"]
+            except Exception:
+                lists = []
+            if lists:
+                break
+            time.sleep(1.2)
+        if not lists:
+            continue
+        try:
+            for e in lists[0]["DriverStandings"]:
+                cs = e.get("Constructors") or [{}]
+                c = cs[0]
+                pos = str(e.get("position") or "").strip()
+                row["drivers"].append({
+                    "pos": int(pos) if pos.isdigit() else None,
+                    "name": e["Driver"]["givenName"] + " " + e["Driver"]["familyName"],
+                    "last": e["Driver"]["familyName"],
+                    "code": e["Driver"].get("code") or "",
+                    "team": c.get("name", ""),
+                    "team_id": c.get("constructorId", ""),
+                    "points": float(e.get("points") or 0),
+                    "wins": int(e.get("wins") or 0),
+                })
+        except Exception:
+            continue
+        # años antiguos traen pilotos sin puesto numerico: se ordenan por puntos
+        if any(d["pos"] is None for d in row["drivers"]):
+            row["drivers"].sort(key=lambda d: (d["pos"] is None, -(d["points"]), d["name"]))
+            for i, d in enumerate(row["drivers"], 1):
+                d["pos"] = i
+        try:
+            c = get_json(f"{API}/{year}/constructorStandings.json?limit=20")
+            cl = c["MRData"]["StandingsTable"]["StandingsLists"]
+            if cl:
+                for e in cl[0]["ConstructorStandings"]:
+                    row["constructors"].append({
+                        "pos": int(e["position"]),
+                        "name": e["Constructor"]["name"],
+                        "id": e["Constructor"]["constructorId"],
+                        "points": float(e["points"]),
+                        "wins": int(e["wins"]),
+                    })
+        except Exception:
+            pass
+        if not row["drivers"]:
+            continue
+        try:
+            races = get_json(f"{API}/{year}.json?limit=1")
+            row["races"] = int(races["MRData"]["total"])
+        except Exception:
+            pass
+        ch = row["drivers"][0]
+        row["champion"] = {"name": ch["name"], "last": ch["last"], "team": ch["team"],
+                           "team_id": ch["team_id"], "points": ch["points"], "wins": ch["wins"]}
+        row["constructor_champion"] = row["constructors"][0] if row["constructors"] else None
+        row["gap"] = round(row["drivers"][0]["points"] - row["drivers"][1]["points"], 1) if len(row["drivers"]) > 1 else 0
+        out.append(row)
+        time.sleep(0.2)
+    return out
+
+
 def fetch_news(limit: int = 16) -> list:
     items, seen = [], set()
-    for source, url in FEEDS:
+    for source, url, lang, f1_only in FEEDS:
         try:
             raw = get(url, timeout=25)
         except Exception:
@@ -999,6 +1133,9 @@ def fetch_news(limit: int = 16) -> list:
             title = (it.findtext("title") or "").strip()
             link = (it.findtext("link") or "").strip()
             if not title or not link or link in seen:
+                continue
+            if f1_only and (not F1_WORDS.search(title) or
+                            (OTHER_SERIES.search(title) and not re.search(r"\bf1\b|f[oó]rmula 1", title, re.I))):
                 continue
             seen.add(link)
             desc = re.sub(r"<[^>]+>", " ", it.findtext("description") or "")
@@ -1015,18 +1152,17 @@ def fetch_news(limit: int = 16) -> list:
                 m = re.search(r'<img[^>]+src="([^"]+)"', it.findtext("description") or "")
                 img = m.group(1) if m else None
             pub = (it.findtext("pubDate") or "").strip()
-            dt = None
-            for fmt in ("%a, %d %b %Y %H:%M:%S", "%a, %d %b %Y %H:%M:%S %z"):
-                try:
-                    dt = datetime.strptime(pub[:len(pub.rstrip())][:31].strip(), fmt)
-                    break
-                except Exception:
-                    continue
+            dt = parse_feed_date(pub)
+            # fuera lo viejo: lo de hace mas de 45 dias no es actualidad
+            if dt and (datetime.now() - dt).days > 45:
+                continue
+
             entry = {
                 "title": title,
                 "url": link,
                 "desc": desc,
                 "source": source,
+                "lang": lang,
                 "image": img,
                 "date": dt.date().isoformat() if dt else "",
                 "date_human": f"{dt.day} {MONTHS[dt.month - 1]}" if dt else "",
@@ -1036,12 +1172,14 @@ def fetch_news(limit: int = 16) -> list:
             }
             entry["teams"] = tag_teams(entry)
             items.append(entry)
-    items.sort(key=lambda x: -x["ts"])
+    items.sort(key=lambda x: (x["lang"] != "es", -x["ts"]))
     # Máximo 3 titulares por fuente en la portada, para no depender de un solo medio.
+    # Cupo por medio: mas holgura para los que escriben en espanol.
     per_source, front = {}, []
     for it in items:
+        cap = 5 if it["lang"] == "es" else 2
         n = per_source.get(it["source"], 0)
-        if n < 3:
+        if n < cap:
             front.append(it)
             per_source[it["source"]] = n + 1
         if len(front) >= limit:
@@ -1072,6 +1210,7 @@ def _run() -> None:
     attach_results(calendar, api["results"])
     attach_qualifying(calendar, api["qualifying"])
     attach_qualifying(calendar, api["sprint"])
+    keep_previous_rounds(calendar)
     teams = build_teams(api, calendar)
     hist = prev_seasons([t["id"] for t in teams])
     for t in teams:
@@ -1127,6 +1266,7 @@ def _run() -> None:
         "drivers": drivers,
         "news": front_news,
         "news_pool": len(all_news),
+        "history": fetch_history(),
     }
     if site["next_race"]:
         site["next_race"]["days_until"] = (

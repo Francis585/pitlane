@@ -214,6 +214,12 @@ def load_site() -> dict:
     return json.loads((SRC / "data" / "site.json").read_text(encoding="utf-8"))
 
 
+def _xml(text: str) -> str:
+    """Escapa texto para XML/RSS."""
+    return (str(text).replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
 def human_date(iso: str) -> str:
     dt = datetime.fromisoformat(iso)
     return f"{dt.day} de {MONTHS_ES[dt.month - 1]} de {dt.year}"
@@ -471,6 +477,7 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
     write("calendario.html", "calendar.html", "")
     write("clasificacion.html", "standings.html", "")
     write("noticias.html", "news.html", "")
+    write("historico.html", "historico.html", "")
     write("metodologia.html", "method.html", "")
     write("404.html", "404.html", "")
     return pages
@@ -654,7 +661,7 @@ def write_static(site: dict) -> None:
 
     urls = ["", "escuderias/", "pilotos/", "circuitos/", "resultados/", "calendario.html", "clasificacion.html",
             "estadisticas.html", "comparador.html", "buscador.html",
-            "noticias.html", "metodologia.html"]
+            "noticias.html", "metodologia.html", "historico.html"]
     for t in site["teams"]:
         t.setdefault("slug", t["id"].replace("_", "-"))
     urls += [f"escuderias/{t['slug']}.html" for t in site["teams"]]
@@ -670,6 +677,39 @@ def write_static(site: dict) -> None:
         '<?xml version="1.0" encoding="UTF-8"?>'
         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{body}</urlset>',
         encoding="utf-8")
+    # feed RSS de titulares (lectores de feeds, agregadores)
+    from email.utils import format_datetime as _fmt_dt
+    items = []
+    for n in site["news"]:
+        pub = ""
+        try:
+            from datetime import datetime as _dt
+            pub = _fmt_dt(_dt.fromisoformat(n["date"] + "T09:00:00"))
+        except Exception:
+            pass
+        desc = (n.get("desc") or "").replace("&", "&amp;").replace("<", "&lt;")
+        items.append(
+            "<item>"
+            f"<title>{_xml(n['title'])}</title>"
+            f"<link>{_xml(n['url'])}</link>"
+            f"<guid isPermaLink=\"true\">{_xml(n['url'])}</guid>"
+            f"<source url=\"\">{_xml(n['source'])}</source>"
+            f"<pubDate>{pub}</pubDate>"
+            f"<description>{desc}</description>"
+            "</item>")
+    feed = (
+        '<?xml version="1.0" encoding="UTF-8"?>'
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">'
+        "<channel>"
+        "<title>Pitlane — Fórmula 1</title>"
+        "<link>https://pitlane-ruddy.vercel.app/</link>"
+        "<description>Titulares de Fórmula 1 recogidos automáticamente.</description>"
+        "<language>es</language>"
+        "<lastBuildDate>" + _fmt_dt(__import__("datetime").datetime.now()) + "</lastBuildDate>"
+        '<atom:link href="https://pitlane-ruddy.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>'
+        + "".join(items) + "</channel></rss>")
+    (OUT / "feed.xml").write_text(feed, encoding="utf-8")
+
     # contacto de seguridad y metadatos del proyecto
     wk = OUT / ".well-known"
     wk.mkdir(parents=True, exist_ok=True)
