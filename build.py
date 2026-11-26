@@ -285,6 +285,8 @@ def srcset_for(url: str) -> str:
     """Lista de candidatos para el atributo srcset."""
     if not url:
         return ""
+    if url.startswith("http"):
+        return url
     base = url.rsplit(".", 1)[0]
     return f"{base}-sm.webp 480w, {base}-md.webp 900w, {url} 1600w"
 
@@ -460,6 +462,8 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
 
     def asset_url(p):
         """URL pública del asset, en WebP si está disponible."""
+        if str(p).startswith("http"):
+            return str(p)
         rel = str(p).lstrip("/")
         webp = OUT / rel.replace(".jpg", ".webp")
         if rel.lower().endswith(".jpg") and webp.exists():
@@ -975,6 +979,11 @@ def _main() -> None:
     if "--fetch" in sys.argv:
         subprocess.run([sys.executable, str(ROOT / "scripts" / "fetch_data.py")], check=True)
     site = load_site()
+    # las fotos de prensa que citan al piloto mandan sobre el retrato de
+    # Wikipedia: son de la temporada en curso y se renuevan con cada noticia
+    for _d in site["drivers"]:
+        if _d.get("press_photo"):
+            _d["photo"] = _d["press_photo"]
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)

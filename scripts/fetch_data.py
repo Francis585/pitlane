@@ -1346,6 +1346,26 @@ def fetch_history(seasons: int = 12) -> list:
     return out
 
 
+def press_photo_for(driver: dict, news: list) -> str | None:
+    """Foto de prensa reciente que cita al piloto en su nombre de fichero.
+
+    Wikimedia no siempre tiene una foto buena del piloto en la temporada en
+    curso; las noticias que ya se descargan sí traen fotos de la última
+    carrera. Solo se acepta si el nombre del fichero y el titular coinciden
+    con el piloto, para no poner la cara de otro.
+    """
+    last = _norm(driver.get("last") or driver.get("full") or "")
+    if not last:
+        return None
+    for n in news:
+        img = (n.get("image") or "").strip()
+        if not img.startswith("http"):
+            continue
+        if last in _norm(img.rsplit("/", 1)[-1]) and last in _norm(n.get("title", "")):
+            return img
+    return None
+
+
 def fetch_news(limit: int = 16) -> list:
     items, seen = [], set()
     for source, url, lang, f1_only in FEEDS:
@@ -1460,6 +1480,8 @@ def _run() -> None:
         upcoming[0]["is_next"] = True
 
     all_news, front_news = fetch_news()
+    for d in drivers:
+        d["press_photo"] = press_photo_for(d, all_news)
     for t in teams:
         mine = [dict(n, own=True) for n in all_news if t["id"] in n["teams"]][:6]
         if len(mine) < 3:

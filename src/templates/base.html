@@ -52,7 +52,7 @@
 {"@context":"https://schema.org","@type":"Person","name":{{ d.full|tojson }},"jobTitle":"Piloto de Fórmula 1",
  "nationality":{{ d.nationality|tojson }},"url":"https://pitlane-ruddy.vercel.app/pilotos/{{ d.id }}",
  "affiliation":{"@type":"SportsTeam","name":{{ (d.team.name if d.team else 'Fórmula 1')|tojson }}}
- {% if d.photo %},"image":"https://pitlane-ruddy.vercel.app{{ img_url(d.photo) }}"{% endif %}}
+ {% if d.photo %}{% set _ph = img_url(d.photo) %},"image":"{{ _ph if _ph.startswith('http') else 'https://pitlane-ruddy.vercel.app' + _ph }}"{% endif %}}
 </script>
 {% elif c is defined %}
 <script type="application/ld+json">
