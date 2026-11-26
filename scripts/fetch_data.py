@@ -28,6 +28,32 @@ SKIP_IMAGES = os.environ.get("PITLANE_SKIP_IMAGES") == "1"  # modo rápido: solo
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
 ASSETS = ROOT / "assets"
+
+# URL de origen de la última foto descargada por ficha. Permite actualizar una
+# imagen en cuanto cambia en la fuente (foto nueva de temporada) sin volver a
+# bajarla en cada build cuando sigue siendo la misma.
+SOURCE_FILE = DATA / "image_sources.json"
+
+
+def _load_sources() -> dict:
+    try:
+        return json.loads(SOURCE_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+SOURCE_CACHE: dict = _load_sources()
+
+
+def save_sources() -> None:
+    try:
+        DATA.mkdir(parents=True, exist_ok=True)
+        SOURCE_FILE.write_text(
+            json.dumps(SOURCE_CACHE, ensure_ascii=False, indent=1, sort_keys=True),
+            encoding="utf-8",
+        )
+    except Exception as exc:
+        print(f"[sources] no se pudo guardar: {exc}")
 def detect_season() -> int:
     """Temporada activa sin intervención: el año en curso si ya hay calendario,
     el anterior en pretemporada o si la API aún no lo publica."""
@@ -639,7 +665,10 @@ def circuit_photo(c: dict) -> str | None:
                 f"{c['locality']} circuit aerial"]
     if best_from_queries(commands, dest):
         return f"assets/circuits/{slug}.jpg"
-    return wiki_best_photo([c["wiki"], f"{c['locality']}"], slug, "circuits")
+    got = wiki_best_photo([c["wiki"], f"{c['locality']}"], slug, "circuits")
+    if got:
+        return got
+    return f"assets/circuits/{slug}.jpg" if dest.exists() else None
 
 
 TEAM_CAR_FILES = {
@@ -667,7 +696,14 @@ def pinned_car_photo(slug_name: str) -> str | None:
     name = TEAM_CAR_FILES.get(slug_name)
     if not name:
         return None
+    # la lista está revisada para una temporada concreta: cuando cambia el año
+    # se ignora y se busca la foto nueva por búsqueda automática
+    if str(SEASON) not in name:
+        return None
     dest = ASSETS / "teams" / f"{slug_name}-car.jpg"
+    stamp = f"{SEASON}|{name}"
+    if SOURCE_CACHE.get(f"team:{slug_name}") == stamp and dest.exists() and dest.stat().st_size > 12000:
+        return f"assets/teams/{slug_name}-car.jpg"
     url = "https://commons.wikimedia.org/wiki/Special:FilePath/" + q(name, safe="") + "?width=1600"
     probe = dest.with_suffix(".tmp.jpg")
     try:
@@ -677,6 +713,7 @@ def pinned_car_photo(slug_name: str) -> str | None:
         probe.write_bytes(img)
         if is_photo(probe) and brightness(probe) >= 42:
             probe.replace(dest)
+            SOURCE_CACHE[f"team:{slug_name}"] = stamp
             return f"assets/teams/{slug_name}-car.jpg"
     except Exception:
         pass
@@ -697,7 +734,8 @@ def team_car_photo(t: dict, display: str) -> str | None:
     queries = [f"{display} {SEASON} Grand Prix", f"{display} Formula One {SEASON}"]
     if best_from_queries(queries, dest):
         return f"assets/teams/{slug}-car.jpg"
-    return None
+    # si la red falla, mejor la foto antigua que ninguna
+    return f"assets/teams/{slug}-car.jpg" if dest.exists() else None
 
 def commons_car_photo(team_name: str, slug_name: str) -> str | None:
     """Busca en Wikimedia Commons una foto del coche del equipo y se queda con la mejor."""
@@ -804,12 +842,107 @@ def wiki_ref(title: str) -> str:
     return t if "%" in t else quote(t)
 
 
-def driver_photo(wiki_title: str, did: str) -> str | None:
+def _norm(s: str) -> str:
+    return unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower()
+
+
+def commons_driver_url(full_name: str) -> tuple[str, str] | None:
+    """Foto de pista del piloto en la temporada en curso.
+
+    El retrato que Wikipedia pone de portada suele ser de estudio, de gala o
+    incluso de un acto político. Se busca antes una foto de Gran Premio con el
+    piloto en el título y solo si no hay ninguna se cae al retrato.
+    """
+    from urllib.parse import quote as q
+    surname = _norm(full_name.split()[-1]) if full_name else ""
+    if not surname:
+        return None
+    cands: list[tuple[int, str]] = []
+    for query in (f"{full_name} {SEASON} Grand Prix", f"{full_name} Formula One {SEASON}"):
+        url = ("https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search"
+               f"&gsrsearch={q('filetype:bitmap ' + query)}&gsrlimit=20&gsrnamespace=6"
+               "&prop=imageinfo&iiprop=url|size&iiurlwidth=1200")
+        try:
+            data = get_json(url)
+        except Exception:
+            continue
+        for pg in ((data.get("query") or {}).get("pages") or {}).values():
+            ii = (pg.get("imageinfo") or [{}])[0]
+            w, h = ii.get("width", 0), ii.get("height", 0)
+            if not w or not h or w < 800 or h < 800:
+                continue
+            if not (0.5 <= w / h <= 2.2):     # ni panorámicas ni tiras
+                continue
+            title = _norm(pg.get("title") or "")
+            if surname not in title:
+                continue
+            if any(k in title for k in ("map", "layout", "logo", "safety", "medical", "flag_of",
+                                        "helmet", "kart", "raptor", "rally", "truck", "statue",
+                                        "wax", "mural", "graffiti", "signing", "autograph")):
+                continue
+            u = ii.get("thumburl") or ii.get("url")
+            if not (u and usable_image(u)):
+                continue
+            # prioridad: al piloto de cuerpo entero (paddock, Melbourne Walk,
+            # retrato) antes que a un coche con él dentro, que en la ficha
+            # parecía una foto del monoplaza y no del piloto
+            score = 0
+            if "melbourne walk" in title:
+                score += 6
+            elif "paddock" in title:
+                score += 5
+            elif "portrait" in title or "headshot" in title:
+                score += 4
+            if "cropped" in title:
+                score += 2
+            if 0.6 <= w / h <= 1.05:
+                score += 2
+            # "Hamilton Italian Grand Prix 2026" empieza por el apellido: suele
+            # ser el piloto; "2026 X GP - Ferrari - Hamilton - Qualifying" es el coche
+            if title.startswith(surname):
+                score += 4
+            if "f1 car" in title:
+                score -= 5
+            if "gp - " in title:
+                score -= 2
+            cands.append((score, u, title))
+    if not cands:
+        return None
+    cands.sort(key=lambda x: -x[0])
+    return cands[0][1]
+
+
+def _driver_visible(title: str) -> bool:
+    """¿La foto enseña al piloto y no solo su coche?
+
+    En Commons hay muchas fotos de "2026 X GP - Equipo - Piloto - Clasificación"
+    que son el monoplaza en pista. En una ficha de piloto eso confunde, así que
+    solo se aceptan las que se toman en el paddock o el paseo de llegada.
+    """
+    return any(k in title for k in ("melbourne walk", "paddock", "portrait",
+                                    "headshot", "fan zone", "walk"))
+
+
+def driver_photo(wiki_title: str, did: str, full_name: str | None = None) -> str | None:
     dest = ASSETS / "drivers" / f"{did}.jpg"
     if SKIP_IMAGES:
         return f"assets/drivers/{did}.jpg" if dest.exists() else None
-    if fresh(dest):
-        return f"assets/drivers/{did}.jpg"
+    # 1) foto de pista de la temporada en curso, pero solo si se ve al piloto
+    gp = commons_driver_url(full_name) if full_name else None
+    gp_src = gp[0] if gp and _driver_visible(gp[1]) else None
+    if gp_src:
+        if SOURCE_CACHE.get(f"driver:{did}") == gp_src and fresh(dest):
+            return f"assets/drivers/{did}.jpg"
+        try:
+            img = get(gp_src, timeout=60)
+            if len(img) > 20000:
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_bytes(img)
+                SOURCE_CACHE[f"driver:{did}"] = gp_src
+                return f"assets/drivers/{did}.jpg"
+        except Exception:
+            pass
+    # 2) retrato de Wikipedia (con control de cambio de fuente)
     try:
         data = get_json(
             "https://en.wikipedia.org/api/rest_v1/page/summary/" + wiki_ref(wiki_title)
@@ -831,7 +964,13 @@ def driver_photo(wiki_title: str, did: str) -> str | None:
                 src = "https:" + cand if cand.startswith("//") else cand
                 break
         if not src:
-            return None
+            return f"assets/drivers/{did}.jpg" if dest.exists() else None
+        # Se compara la URL de origen con la última usada: si Wikipedia no ha
+        # cambiado la foto, no se vuelve a descargar; si la ha cambiado (foto
+        # nueva de temporada), se sustituye al momento aunque el fichero sea
+        # reciente. Así el retrato se actualiza cuando de verdad cambia.
+        if SOURCE_CACHE.get(f"driver:{did}") == src and fresh(dest):
+            return f"assets/drivers/{did}.jpg"
         # Wikimedia solo sirve una lista cerrada de anchos. Se pide el mayor
         # disponible: 500 px se veía blando en la cabecera de la ficha.
         no_q = src.split("?")[0]
@@ -844,10 +983,12 @@ def driver_photo(wiki_title: str, did: str) -> str | None:
                 continue
             if len(img) > 6000:
                 dest.write_bytes(img)
+                SOURCE_CACHE[f"driver:{did}"] = src
                 return f"assets/drivers/{did}.jpg"
-        return None
+        return f"assets/drivers/{did}.jpg" if dest.exists() else None
     except Exception:
-        return None
+        # si la red falla, nunca dejar la ficha sin la foto que ya había
+        return f"assets/drivers/{did}.jpg" if dest.exists() else None
 
 
 def driver_blurb(d: dict) -> str:
@@ -1277,8 +1418,9 @@ def _run() -> None:
     stats = {}
     overrides = {"rafael_camara": "Rafael Camara"}
     for d in drivers:
-        wiki = overrides.get(d["id"], d["wiki"])
-        stats[d["id"]] = {"bio": driver_blurb(d), "photo": driver_photo(wiki, d["id"])}
+        wiki = overrides.get(d["id"]) or d.get("wiki") or d.get("full") or ""
+        stats[d["id"]] = {"bio": driver_blurb(d),
+                          "photo": driver_photo(wiki, d["id"], d.get("full"))}
         d.update(stats[d["id"]])
 
     done = [c for c in calendar if c["done"]]
@@ -1331,6 +1473,7 @@ def _run() -> None:
         ).days
 
     DATA.mkdir(parents=True, exist_ok=True)
+    save_sources()
     (DATA / "site.json").write_text(json.dumps(site, ensure_ascii=False, indent=1), encoding="utf-8")
     print(
         f"[data] {SEASON}: {len(calendar)} carreras · {len(teams)} equipos · "
