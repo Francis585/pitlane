@@ -642,12 +642,58 @@ def circuit_photo(c: dict) -> str | None:
     return wiki_best_photo([c["wiki"], f"{c['locality']}"], slug, "circuits")
 
 
+TEAM_CAR_FILES = {
+    "ferrari": "2026 Bahrain GP - Ferrari - Lewis Hamilton - Qualifying.jpg",
+    "mercedes": "2026 Chinese GP - Mercedes - George Russell - Qualifying.jpg",
+    "red_bull": "2026 Bahrain GP - Red Bull - Isack Hadjar - Race.jpg",
+    "mclaren": "2026 Bahrain GP - McLaren - Oscar Piastri - FP1.jpg",
+    "aston_martin": "2026 Bahrain GP - Aston Martin - Fernando Alonso - FP2.jpg",
+    "alpine": "2026 Chinese GP - Alpine - Pierre Gasly - Qualifying.jpg",
+    "haas": "2026 Bahrain GP - Haas - Esteban Ocon - Race.jpg",
+    "audi": "2026 Chinese GP - Audi - Nico Hulkenberg - Qualifying.jpg",
+    "williams": "2026 Chinese GP - Williams - Alex Albon - Qualifying.jpg",
+    "rb": "2026 Chinese GP - Racing Bulls - Arvid Lindblad - Qualifying.jpg",
+    "cadillac": "2026 Chinese GP - Cadillac - Sergio Perez - FP1.jpg",
+}
+
+
+def pinned_car_photo(slug_name: str) -> str | None:
+    """Coche de equipo desde un fichero concreto de Commons, ya revisado a ojo.
+
+    Evita que la búsqueda automática elija museos, coches históricos o primeros
+    planos de patrocinadores. Si el fichero desaparece, se cae a la búsqueda.
+    """
+    from urllib.parse import quote as q
+    name = TEAM_CAR_FILES.get(slug_name)
+    if not name:
+        return None
+    dest = ASSETS / "teams" / f"{slug_name}-car.jpg"
+    url = "https://commons.wikimedia.org/wiki/Special:FilePath/" + q(name, safe="") + "?width=1600"
+    probe = dest.with_suffix(".tmp.jpg")
+    try:
+        img = get(url, timeout=90)
+        if len(img) < 15000:
+            return None
+        probe.write_bytes(img)
+        if is_photo(probe) and brightness(probe) >= 42:
+            probe.replace(dest)
+            return f"assets/teams/{slug_name}-car.jpg"
+    except Exception:
+        pass
+    finally:
+        probe.unlink(missing_ok=True)
+    return None
+
+
 def team_car_photo(t: dict, display: str) -> str | None:
     """Monoplaza en pista, con la temporada en curso."""
     slug = t["id"]
     dest = ASSETS / "teams" / f"{slug}-car.jpg"
     if fresh(dest, 12000) and is_photo(dest) and brightness(dest) >= 42:
         return f"assets/teams/{slug}-car.jpg"
+    pinned = pinned_car_photo(slug)
+    if pinned:
+        return pinned
     queries = [f"{display} {SEASON} Grand Prix", f"{display} Formula One {SEASON}"]
     if best_from_queries(queries, dest):
         return f"assets/teams/{slug}-car.jpg"

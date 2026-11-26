@@ -16,6 +16,20 @@
 
 <section class="sec" style="padding-top:0">
   <div class="wrap">
+    <div class="grid-tools">
+      <div class="tool-group" role="group" aria-label="Ordenar pilotos">
+        <span class="mono">Ordenar</span>
+        <button class="chip-btn is-on" data-sort="pos" type="button">Mundial</button>
+        <button class="chip-btn" data-sort="wins" type="button">Victorias</button>
+        <button class="chip-btn" data-sort="pts" type="button">Puntos</button>
+        <button class="chip-btn" data-sort="age" type="button">Más jóvenes</button>
+        <button class="chip-btn" data-sort="name" type="button">Nombre</button>
+      </div>
+      <label class="tool-search">
+        <span class="mono">Filtrar</span>
+        <input type="search" data-driver-filter placeholder="Nombre o escudería…" aria-label="Filtrar pilotos">
+      </label>
+    </div>
     {{ m.driver_cards(drivers, root, meta, drivers|length) }}
   </div>
 </section>

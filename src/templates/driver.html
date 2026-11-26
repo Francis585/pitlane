@@ -1,50 +1,195 @@
 {% extends "base.html" %}
 {% block title %}{{ d.full }} — Fórmula 1 {{ site.season }} | Pitlane{% endblock %}
-{% block desc %}{{ d.full }}, {{ d.team.name if d.team else 'Fórmula 1' }}: {{ d.points }} puntos y P{{ d.pos }} en el mundial {{ site.season }}.{% endblock %}
+{% block desc %}{{ d.full }}, {{ d.team.name if d.team else 'Fórmula 1' }}: {{ d.points }} puntos y P{{ d.pos }} en el mundial {{ site.season }}. Resultados carrera a carrera, duelo con su compañero e historial.{% endblock %}
 {% block vars %}
 :root{--brand:{{ tm.brand if tm else '#ff5a1f' }};}
 {% endblock %}
 
 {% block content %}
-<header class="driver-hero wrap" style="border:0">
-  <div class="dh-img">
-    {% if d.photo %}{{ pic(img_url(d.photo), d.full, "(max-width:760px) 100vw, 44vw", priority=True) | safe }}{% endif %}
+<header class="dhero wrap">
+  <div class="dhero-media">
+    {% if d.photo %}{{ pic(img_url(d.photo), d.full, "(max-width:860px) 100vw, 40vw", priority=True) | safe }}{% endif %}
+    <span class="dhero-num">{{ d.num or d.code }}</span>
+    <span class="dhero-flag">{{ flag_tag(flag_code(d.nationality), "flag-img", 26, 18) | safe }} {{ d.nationality }}</span>
   </div>
-  <div class="dh-txt">
-    <div class="eyebrow">{{ flag_tag(flag_code(d.nationality)) | safe }} {{ d.team.name if d.team else 'Fórmula 1' }} · Temporada {{ site.season }}</div>
-    <div class="driver-num" style="margin-top:6px">{{ d.num or d.code }}</div>
+  <div class="dhero-body">
+    <div class="eyebrow">{{ d.team.name if d.team else 'Fórmula 1' }} · Temporada {{ site.season }}</div>
     <h1>{{ d.first }}<br>{{ d.last }}</h1>
     {% if site.champions and site.champions.drivers.decided and site.champions.drivers.id == d.id %}
     <div class="champ-badge">★ Campeón del mundo {{ site.season }}</div>
     {% endif %}
-    <div class="mono" style="display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;color:var(--dim)">
-      <span>P{{ d.pos }} del mundial</span>
-      <span>{{ d.points }} puntos</span>
-      <span>{{ d.wins }} victorias</span>
-      <span>{{ d.age }} años</span>
+    <p class="dhero-sub">{{ d.bio }}</p>
+    <div class="dhero-quick">
+      <span><b>P{{ d.pos }}</b> del mundial</span>
+      <span><b>{{ d.points }}</b> puntos</span>
+      <span><b>{{ d.wins }}</b> victorias</span>
+      <span><b>{{ d.age }}</b> años</span>
     </div>
-    {% if d.bio %}
-    <p class="driver-bio">{{ d.bio }}</p>
-    {% endif %}
     {% if d.team %}
-    <a class="btn" style="margin-top:22px" href="{{ root }}escuderias/{{ d.team.slug }}.html">
+    <a class="btn" style="margin-top:24px" href="{{ root }}escuderias/{{ d.team.slug }}.html">
       Ver {{ d.team.name }} →
     </a>
     {% endif %}
   </div>
 </header>
 
-<section class="sec">
+<section class="sec" style="padding-top:clamp(26px,3vw,44px)">
   <div class="wrap">
-    <div class="team-stats" style="border-top:1px solid var(--line)">
+    <div class="team-stats" style="border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
       <div><b>{{ d.points }}</b><span>Puntos {{ site.season }}</span></div>
-      <div><b>{{ d.wins }}</b><span>Victorias</span></div>
-      <div><b>P{{ d.pos }}</b><span>Posición</span></div>
-      <div><b>{{ d.num or '—' }}</b><span>Dorsal</span></div>
-      <div><b>{{ d.dob[2:4] }}</b><span>Año de nacimiento</span></div>
+      <div><b>{{ form.podiums }}</b><span>Podios</span></div>
+      <div><b>{{ form.poles }}</b><span>Poles</span></div>
+      <div><b>{{ form.fls }}</b><span>Vueltas rápidas</span></div>
+      <div><b>{{ form.dnfs }}</b><span>Abandonos</span></div>
+      <div><b>{% if form.best %}P{{ form.best }}{% else %}—{% endif %}</b><span>Mejor resultado</span></div>
+      <div><b>{{ form.avg }}</b><span>Posición media</span></div>
     </div>
   </div>
 </section>
+
+{% if form.races %}
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Temporada {{ site.season }}</div>
+        <h2>Carrera a carrera</h2>
+        <p>Posición de salida, resultado y puntos en cada gran premio disputado.</p>
+      </div>
+      <a class="sec-link" href="{{ root }}resultados/index.html">Todos los resultados →</a>
+    </div>
+
+    <div class="form-chart" aria-hidden="true">
+      {% set maxpos = 20 %}
+      {% for r in form.races %}
+      <div class="fc-col" title="{{ r.gp }} · P{{ r.pos or '—' }}">
+        <span class="fc-bar{% if not r.finished %} is-dnf{% endif %}"
+              style="height:{{ (100 - ((r.pos or maxpos) / maxpos * 100))|round(0) }}%;background:{{ tm.brand if tm else 'var(--brand)' }}"></span>
+        <small>{{ r.round }}</small>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="table-scroll">
+      <table class="dlog">
+        <thead>
+          <tr>
+            <th class="mono">R</th>
+            <th class="mono">Gran premio</th>
+            <th class="mono">Fecha</th>
+            <th class="mono" style="text-align:right">Clas.</th>
+            <th class="mono" style="text-align:right">Salida</th>
+            <th class="mono" style="text-align:right">Final</th>
+            <th class="mono" style="text-align:right">Pts</th>
+            <th class="mono">Estado</th>
+            <th class="mono" style="text-align:right">V. rápida</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in form.races %}
+          <tr>
+            <td class="mono dim-2">{{ r.round }}</td>
+            <td><a href="{{ root }}resultados/{{ r.circuit_id }}.html">{{ r.gp }}</a></td>
+            <td class="mono dim-2">{{ r.date_human }}</td>
+            <td class="mono" style="text-align:right">{% if r.quali %}P{{ r.quali }}{% else %}—{% endif %}</td>
+            <td class="mono" style="text-align:right">{{ r.grid if r.grid is not none else '—' }}</td>
+            <td class="mono" style="text-align:right"><b>{% if r.finished %}P{{ r.pos }}{% else %}—{% endif %}</b></td>
+            <td class="mono" style="text-align:right">{{ r.points }}</td>
+            <td class="mono {% if not r.finished %}dnf{% endif %}">{{ r.status_es }}</td>
+            <td class="mono" style="text-align:right">{% if r.fl %}★ {{ r.fastest }}{% elif r.fastest %}{{ r.fastest }}{% else %}—{% endif %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if mate and record %}
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Duelo en el garaje</div>
+        <h2>{{ d.last }} contra {{ mate.last }}</h2>
+        <p>Quién acaba delante en carrera y en clasificación, con los dos coches del equipo.</p>
+      </div>
+      <a class="sec-link" href="{{ root }}pilotos/{{ mate.id }}.html">Ficha de {{ mate.last }} →</a>
+    </div>
+    <div class="duel">
+      <div class="duel-side">
+        <b>{{ d.last }}</b><span>{{ d.points }} pts · P{{ d.pos }}</span>
+      </div>
+      <div class="duel-mid">
+        <div class="duel-row">
+          <span class="dv">{{ record.races_ahead }}</span>
+          <span class="dl">Carreras por delante</span>
+          <span class="dv">{{ record.races_behind }}</span>
+        </div>
+        <div class="duel-row">
+          <span class="dv">{{ record.quali_ahead }}</span>
+          <span class="dl">Clasificaciones ganadas</span>
+          <span class="dv">{{ record.quali_behind }}</span>
+        </div>
+        <div class="duel-row">
+          <span class="dv">{{ record.points }}</span>
+          <span class="dl">Diferencia de puntos</span>
+          <span class="dv">—</span>
+        </div>
+      </div>
+      <div class="duel-side duel-side--r">
+        <b>{{ mate.last }}</b><span>{{ mate.points }} pts · P{{ mate.pos }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if career.rows|length > 1 %}
+<section class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Historial</div>
+        <h2>Sus temporadas</h2>
+        <p>{{ career.years }} temporadas documentadas en el histórico del sitio, de {{ career.rows[-1].season }} a {{ site.season }}.</p>
+      </div>
+      <a class="sec-link" href="{{ root }}historico.html">Histórico completo →</a>
+    </div>
+    <div class="career-stats">
+      <div><b>{{ career.years }}</b><span>Temporadas</span></div>
+      <div><b>{{ career.titles|length }}</b><span>Títulos</span></div>
+      <div><b>{{ career.wins }}</b><span>Victorias</span></div>
+      <div><b>{{ career.rows|sum(attribute='points')|round|int }}</b><span>Puntos sumados</span></div>
+    </div>
+    <div class="table-scroll">
+      <table class="dlog">
+        <thead>
+          <tr>
+            <th class="mono">Año</th>
+            <th class="mono">Equipo</th>
+            <th class="mono" style="text-align:right">Posición</th>
+            <th class="mono" style="text-align:right">Victorias</th>
+            <th class="mono" style="text-align:right">Puntos</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in career.rows %}
+          <tr{% if r.current %} class="is-current"{% endif %}>
+            <td class="mono"><a href="{{ root }}historico.html#{{ r.season }}">{{ r.season }}</a>{% if r.current %} · en curso{% endif %}</td>
+            <td>{{ r.team or '—' }}</td>
+            <td class="mono" style="text-align:right">P{{ r.pos or '—' }}</td>
+            <td class="mono" style="text-align:right">{{ r.wins or 0 }}</td>
+            <td class="mono" style="text-align:right">{{ r.points|round|int if r.points is not none else '—' }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endif %}
 
 {% if teammates %}
 <section class="sec" style="border-top:1px solid var(--line)">
@@ -78,13 +223,15 @@
     <div class="sec-head">
       <div><div class="eyebrow">Sobre él</div><h2>Datos personales</h2></div>
     </div>
-    <div class="heritage" style="max-width:640px">
+    <div class="heritage" style="max-width:680px">
       <div class="mono" style="display:grid;gap:10px;color:var(--dim-2)">
-        <div style="display:flex;justify-content:space-between"><span>Nombre completo</span><span style="color:var(--fg)">{{ d.full }}</span></div>
-        <div style="display:flex;justify-content:space-between"><span>País</span><span style="color:var(--fg)">{{ flag_tag(flag_code(d.nationality)) | safe }} {{ d.nationality }}</span></div>
-        <div style="display:flex;justify-content:space-between"><span>Nacimiento</span><span style="color:var(--fg)">{{ d.dob }}</span></div>
-        <div style="display:flex;justify-content:space-between"><span>Código FIA</span><span style="color:var(--fg)">{{ d.code }}</span></div>
-        <div style="display:flex;justify-content:space-between"><span>Equipo {{ site.season }}</span><span style="color:var(--fg)">{{ d.team.name if d.team else '—' }}</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px"><span>Nombre completo</span><span style="color:var(--fg);text-align:right">{{ d.full }}</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px"><span>País</span><span style="color:var(--fg)">{{ flag_tag(flag_code(d.nationality)) | safe }} {{ d.nationality }}</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px"><span>Nacimiento</span><span style="color:var(--fg)">{{ d.dob }}</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px"><span>Edad</span><span style="color:var(--fg)">{{ d.age }} años</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px"><span>Código FIA</span><span style="color:var(--fg)">{{ d.code }}</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px"><span>Dorsal</span><span style="color:var(--fg)">{{ d.num or '—' }}</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px"><span>Equipo {{ site.season }}</span><span style="color:var(--fg)">{{ d.team.name if d.team else '—' }}</span></div>
       </div>
     </div>
   </div>

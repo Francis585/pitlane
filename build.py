@@ -153,6 +153,134 @@ def season_stats(site: dict) -> dict:
             "races": len([r for r in site["calendar"] if r.get("results")])}
 
 
+def status_es(status: str) -> str:
+    """Traduce el estado de la API a algo legible en una tabla."""
+    s = str(status)
+    if s.startswith("Finished"):
+        return "Meta"
+    if s.startswith("+"):  # "+1 Lap"
+        return s.replace("+", "+").replace("Lap", "vuelta").replace("Laps", "vueltas")
+    if s.startswith("Lapped"):
+        return "+1 vuelta"
+    table = {"Retired": "Abandono", "Did not start": "No salió", "Did not qualify": "Sin clasificar",
+             "Disqualified": "Descalificado", "Accident": "Accidente", "Collision": "Colisión",
+             "Engine": "Motor", "Gearbox": "Cambio", "Brakes": "Frenos", "Suspension": "Suspensión",
+             "Spun off": "Trompo", "Withdrew": "Retirado", "Not classified": "Sin clasificar"}
+    if s in table:
+        return table[s]
+    return s if s else "—"
+
+
+def driver_season(d: dict, site: dict) -> dict:
+    """Registro carrera a carrera del piloto en la temporada en curso."""
+    races = []
+    for r in sorted(site["calendar"], key=lambda x: x["round"]):
+        row = next((x for x in (r.get("results") or []) if x["driver_id"] == d["id"]), None)
+        if not row:
+            continue
+        q = next((x for x in (r.get("qualifying") or []) if x["driver_id"] == d["id"]), None)
+        finished = str(row["status"]).startswith(("Finished", "+", "Lapped"))
+        races.append({
+            "round": r["round"], "gp": r["name"], "gp_short": r["name"].replace("GP de ", "").replace("GP del ", ""),
+            "circuit_id": r["circuit_id"], "circuit": r["circuit"],
+            "date_human": r["date_human"], "pos": row["pos_num"], "pos_str": row["pos"],
+            "grid": row.get("grid"), "points": row.get("points") or 0,
+            "status": row.get("status", ""), "status_es": status_es(row.get("status", "")),
+            "finished": finished, "laps": row.get("laps"), "time": row.get("time", ""),
+            "fastest": row.get("fastest", ""), "fl": str(row.get("fastest_rank")) == "1",
+            "quali": q.get("pos") if q else None,
+            "q3": q.get("q3", "") if q else "",
+        })
+
+    podiums = sum(1 for x in races if x["pos"] and x["pos"] <= 3)
+    wins = sum(1 for x in races if x["pos"] == 1)
+    poles = sum(1 for x in races if str(x["quali"]) == "1")
+    fls = sum(1 for x in races if x["fl"])
+    dnfs = sum(1 for x in races if not x["finished"])
+    best = min((x["pos"] for x in races if x["pos"]), default=None)
+    avg = round(sum(x["pos"] for x in races if x["pos"]) / max(1, len([x for x in races if x["pos"]])), 1)
+    gained = sum((x["grid"] or 0) - x["pos"] for x in races if x["pos"] and x["grid"])
+    return {"races": races, "podiums": podiums, "wins": wins, "poles": poles, "fls": fls,
+            "dnfs": dnfs, "best": best, "avg": avg, "gained": gained,
+            "points": sum(x["points"] for x in races)}
+
+
+def driver_career(d: dict, site: dict) -> dict:
+    """Temporadas del piloto dentro del histórico guardado (12 años) + la actual."""
+    last = str(d.get("last") or "").lower()
+    rows = []
+    for h in sorted(site.get("history") or [], key=lambda x: -x["year"]):
+        if h["year"] == site["season"]:
+            continue
+        row = next((x for x in h["drivers"] if str(x.get("last", "")).lower() == last), None)
+        if not row:
+            continue
+        rows.append({"season": h["year"], "team": row["team"], "team_id": row.get("team_id", ""),
+                     "pos": row.get("pos"), "points": row.get("points"), "wins": row.get("wins", 0)})
+    rows.insert(0, {"season": site["season"], "team": (d.get("team") or {}).get("name", ""),
+                    "team_id": (d.get("team") or {}).get("id", ""), "pos": d["pos"],
+                    "points": d["points"], "wins": d["wins"], "current": True})
+    titles = [r["season"] for r in rows if r.get("pos") == 1]
+    return {"rows": rows, "titles": titles,
+            "wins": sum(int(r.get("wins") or 0) for r in rows),
+            "years": len(rows)}
+
+
+def rival_record(d: dict, rival: dict, site: dict) -> dict:
+    """Duelo directo con el compañero: carreras y clasificaciones."""
+    races_ahead = races_behind = quali_ahead = quali_behind = 0
+    for r in site["calendar"]:
+        rows = {x["driver_id"]: x for x in (r.get("results") or [])}
+        a, b = rows.get(d["id"]), rows.get(rival["id"])
+        if a and b and a["pos_num"] and b["pos_num"]:
+            if a["pos_num"] < b["pos_num"]:
+                races_ahead += 1
+            else:
+                races_behind += 1
+        q = {x["driver_id"]: x for x in (r.get("qualifying") or [])}
+        qa, qb = q.get(d["id"]), q.get(rival["id"])
+        if qa and qb:
+            try:
+                if int(qa["pos"]) < int(qb["pos"]):
+                    quali_ahead += 1
+                else:
+                    quali_behind += 1
+            except (TypeError, ValueError):
+                pass
+    return {"races_ahead": races_ahead, "races_behind": races_behind,
+            "quali_ahead": quali_ahead, "quali_behind": quali_behind,
+            "points": d["points"] - rival["points"]}
+
+
+def current_history_row(site: dict) -> dict:
+    """La temporada en curso como una fila más del histórico."""
+    drivers = [{"pos": d["pos"], "name": d["full"], "last": d["last"], "code": d.get("code", ""),
+                "team": (d.get("team") or {}).get("name", ""),
+                "team_id": (d.get("team") or {}).get("id", ""),
+                "points": float(d["points"]), "wins": d["wins"]}
+               for d in sorted(site["drivers"], key=lambda x: x["pos"])]
+    cons = [{"pos": t["pos"], "name": t["name"], "id": t["id"],
+             "points": float(t["points"]), "wins": t["wins"]}
+            for t in sorted(site["teams"], key=lambda x: x["pos"])]
+    champ = drivers[0] if drivers else None
+    gap = round(drivers[0]["points"] - drivers[1]["points"], 1) if len(drivers) > 1 else 0
+    return {"year": site["season"], "drivers": drivers, "constructors": cons,
+            "races": site.get("total_races", len(site["calendar"])),
+            "champion": champ, "constructor_champion": cons[0] if cons else None,
+            "gap": gap, "current": True,
+            "round": site.get("round", 0)}
+
+
+def team_previous(tid: str, site: dict) -> list:
+    """Clasificación de la escudería en las últimas temporadas del histórico."""
+    rows = []
+    for h in sorted(site.get("history") or [], key=lambda x: -x["year"])[:6]:
+        row = next((x for x in h.get("constructors") or [] if x.get("id") == tid), None)
+        if row:
+            rows.append({"season": h["year"], "pos": row["pos"], "points": row["points"]})
+    return rows
+
+
 def srcset_for(url: str) -> str:
     """Lista de candidatos para el atributo srcset."""
     if not url:
@@ -255,7 +383,11 @@ def race_week(site: dict) -> dict:
 
 
 def build_moments(site: dict) -> list:
-    """Últimas carreras con resultado: ganador, podio y foto del circuito."""
+    """Últimas carreras con resultado: ganador, podio y foto del circuito.
+
+    Se queda con las cuatro victorias más recientes de pilotos distintos para que
+    ninguna tarjeta repita la foto de otra.
+    """
     photos = {c["round"]: c for c in site["circuits"]}
     out = []
     for race in site["calendar"]:
@@ -270,18 +402,44 @@ def build_moments(site: dict) -> list:
                               if tm["id"] == race.get("winner_team")), None),
             "podium": race["podium"],
         })
-    return out[-4:][::-1]
+    picked, winners = [], set()
+    for mo in reversed(out):
+        if mo["winner"] in winners:
+            continue
+        winners.add(mo["winner"])
+        picked.append(mo)
+        if len(picked) == 4:
+            break
+    return picked
 
 
 def build_meta(site: dict) -> dict:
-    """Ficha visual de cada escudería: curada si existe, generada si es nueva."""
+    """Ficha visual de cada escudería: curada si existe, generada si es nueva.
+
+    El palmarés se completa solo con la temporada en curso: si el equipo gana el
+    título, el año entra en `title_years` y en la cronología sin tocar el código.
+    """
     complete_meta = {}
     for i, t in enumerate(site["teams"]):
         base = dict(TEAMS.get(t["id"]) or auto_meta(t, i))
         base["brand"] = base.get("brand") or AUTO_COLORS[i % len(AUTO_COLORS)][0]
         base["brand2"] = base.get("brand2") or AUTO_COLORS[i % len(AUTO_COLORS)][1]
+        base["timeline"] = list(base.get("timeline") or [])
+        base["title_years"] = base.get("title_years") or ""
+        base["titles"] = int(base.get("titles") or 0)
         complete_meta[t["id"]] = base
 
+    champ = (site.get("champions") or {}).get("constructors") or {}
+    if champ.get("decided") and champ.get("id") in complete_meta:
+        m = complete_meta[champ["id"]]
+        season = str(site["season"])
+        if season not in m["title_years"]:
+            m["titles"] += 1
+            m["title_years"] = (m["title_years"] + " · " if m["title_years"] else "") + season
+            m["timeline"].append((season, f"Campeón de constructores",
+                                  f"{m['display']} cierra el título con {champ['points']} puntos, "
+                                  f"{champ['gap']} de ventaja sobre {champ['rival']}."))
+            m["season_title"] = True
     return complete_meta
 
 
@@ -318,6 +476,10 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
 
     teams_by_id = {t["id"]: t for t in site["teams"]}
     drivers_by_id = {d["id"]: d for d in site["drivers"]}
+    # la temporada en curso entra en el histórico como una fila más (marcada como actual)
+    if not any(h.get("current") and h["year"] == site["season"] for h in site.get("history") or []):
+        site["history"] = [current_history_row(site)] + [h for h in site.get("history") or []
+                                                         if h["year"] != site["season"]]
     generated = human_date(site["generated"][:10])
     gp = race_week(site)
     moments = build_moments(site)
@@ -327,16 +489,44 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
 
     # portada: carrusel de imágenes variadas (coches, circuitos y pilotos)
     meta_all = {t["id"]: (TEAMS.get(t["id"]) or auto_meta(t, i)) for i, t in enumerate(site["teams"])}
-    slides = []
-    for t in site["teams"]:
-        if t.get("car"):
-            slides.append({"src": t["car"], "alt": meta_all[t["id"]]["display"],
-                           "label": meta_all[t["id"]]["display"], "kind": "car"})
-    for c in site["circuits"][:6]:
-        if c.get("photo"):
-            slides.append({"src": c["photo"], "alt": c["name"], "label": c["name"], "kind": "circuit"})
+    day = date.today().toordinal()
+
+    def rotate(items: list, k: int) -> list:
+        if not items:
+            return items
+        k %= len(items)
+        return items[k:] + items[:k]
+
+    # cada momento usa una imagen distinta: coche del ganador y, si se repite,
+    # la foto del circuito. Así no hay dos tarjetas con la misma foto.
+    used_moment = set()
+    for mo in moments:
+        pick = None
+        for cand in (mo.get("team_car"), mo.get("photo")):
+            if cand and cand not in used_moment:
+                pick = cand
+                break
+        mo["img"] = pick or mo.get("team_car") or mo.get("photo")
+        used_moment.add(mo["img"])
+
+    cars = [{"src": t["car"], "alt": meta_all[t["id"]]["display"],
+             "label": meta_all[t["id"]]["display"], "kind": "car",
+             "sub": f"P{t['pos']} · {t['points']} pts"}
+            for t in site["teams"] if t.get("car")]
+    circs = [{"src": c["photo"], "alt": c["name"], "label": c["name"], "kind": "circuit",
+              "sub": f"{c.get('locality', '')} · {c.get('country_es', '')}".strip(" ·")}
+             for c in site["circuits"] if c.get("photo")]
+    faces = [{"src": d["photo"], "alt": d["full"], "label": d["full"], "kind": "driver",
+              "sub": (d.get("team") or {}).get("name", "")} for d in site["drivers"] if d.get("photo")]
+
+    def by_src(items: list, src: str) -> list:
+        return [x for x in items if x["src"] == src]
+
+    champ_id = ((site.get("champions") or {}).get("drivers") or {}).get("id")
+    hero_seed = [x for x in rotate(cars, day) if x["src"] not in used_moment]
+
     seen, hero_slides = set(), []
-    for sl in slides:
+    for sl in hero_seed:
         if sl["src"] in seen:
             continue
         seen.add(sl["src"])
@@ -344,22 +534,28 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
         if len(hero_slides) >= 6:
             break
 
-    # mosaico de imágenes del paddock
-    gallery = []
-    for t in site["teams"][:4]:
-        lead = next((d for d in site["drivers"]
-                     if d["team"] and d["team"]["id"] == t["id"] and d.get("photo")), None)
-        if lead:
-            gallery.append({"src": lead["photo"], "alt": lead["full"],
-                            "label": lead["full"], "sub": meta_all[t["id"]]["display"]})
-    for c in site["circuits"][8:12]:
-        if c.get("photo"):
-            gallery.append({"src": c["photo"], "alt": c["name"], "label": c["name"],
-                            "sub": c["locality"]})
-    for t in site["teams"][4:8]:
-        if t.get("car"):
-            gallery.append({"src": t["car"], "alt": meta_all[t["id"]]["display"],
-                            "label": meta_all[t["id"]]["display"], "sub": f"P{t['pos']} · {t['points']} pts"})
+    # mosaico: piezas distintas de las que ya salen en el carrusel y en las fichas
+    used_top = {d["photo"] for d in site["drivers"][:10] if d.get("photo")}
+    hero_srcs = {s["src"] for s in hero_slides}
+    pool_faces = [x for x in rotate(faces, day + 2) if x["src"] not in used_top and x["src"] not in hero_srcs]
+    pool_cars = [x for x in rotate(cars, day + 1) if x["src"] not in hero_srcs and x["src"] not in used_moment]
+    pool = pool_cars + pool_faces
+
+    gallery, used = [], set()
+    for i in range(8):
+        if not pool:
+            break
+        first = next((x for x in pool if x["src"] not in used), None)
+        if not first:
+            break
+        used.add(first["src"])
+        alts = [first]
+        for cand in rotate(pool, i * 3 + day):
+            if len(alts) >= 3:
+                break
+            if cand["src"] not in used:
+                alts.append(cand)
+        gallery.append({**first, "alts": alts})
     sources = " · ".join(sorted({n["source"] for n in site["news"]})) or "medios especializados"
     pages = 0
 
@@ -394,6 +590,8 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
     write("index.html", "index.html", "")
 
     # ------------------------------------------------------------ escuderías
+    for t in site["teams"]:
+        t["prev"] = team_previous(t["id"], site)
     ranked = sorted(site["teams"], key=lambda t: t["pos"])
     write("escuderias/index.html", "teams.html", "../", teams=ranked)
 
@@ -414,11 +612,17 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
     # --------------------------------------------------------------- pilotos
     write("pilotos/index.html", "drivers.html", "../", drivers=site["drivers"])
     for d in site["drivers"]:
+        mates = [x for x in site["drivers"]
+                 if d["team"] and x["team"] and x["team"]["id"] == d["team"]["id"] and x["id"] != d["id"]]
+        mate = mates[0] if mates else None
         write(f"pilotos/{d['id']}.html", "driver.html", "../", d=d,
               tm=TEAMS.get(d["team"]["id"]) if d["team"] else None,
               team=teams_by_id.get(d["team"]["id"]) if d["team"] else None,
-              teammates=[x for x in site["drivers"]
-                         if d["team"] and x["team"] and x["team"]["id"] == d["team"]["id"] and x["id"] != d["id"]],
+              mates=mates, mate=mate,
+              form=driver_season(d, site),
+              career=driver_career(d, site),
+              record=rival_record(d, mate, site) if mate else None,
+              teammates=mates,
               font=TEAMS.get(d["team"]["id"], {}).get("layout", "base") if d["team"] else "base")
 
     # ------------------------------------------------------------ estáticas

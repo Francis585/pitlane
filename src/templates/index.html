@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% import "_macros.html" as m %}
 {% block title %}Pitlane — Fórmula 1 {{ site.season }}: escuderías, pilotos y clasificación{% endblock %}
-{% block desc %}Datos, historia y actualidad de la Fórmula 1 {{ site.season }}. Las once escuderías, 22 pilotos, calendario completo y clasificación actualizada.{% endblock %}
+{% block desc %}Datos, historia y actualidad de la Fórmula 1 {{ site.season }}. Las {{ site.teams|length }} escuderías, {{ site.drivers|length }} pilotos, calendario completo y clasificación actualizada.{% endblock %}
 {% block head %}{% if hero_slides %}<link rel="preload" as="image" href="{{ img_url(hero_slides[0].src) }}" fetchpriority="high">{% endif %}{% endblock %}
 {% block vars %}:root{--brand:#ff5a1f;}{% endblock %}
 
@@ -80,7 +80,7 @@
       {% for mo in moments %}
       {% set tm = meta.get(mo.team) %}
       <a class="moment" href="{{ root }}circuitos/{{ mo.circuit_id }}.html">
-        {% set mimg = mo.team_car or mo.photo %}
+        {% set mimg = mo.img or mo.photo or mo.team_car %}
         {% if mimg %}{{ pic(img_url(mimg), mo.winner ~ " · " ~ mo.gp, "(max-width:760px) 92vw, 420px") | safe }}{% endif %}
         <div class="moment-body">
           <span class="moment-tag" style="--tag:{{ tm.brand if tm else '#444' }}">{{ mo.gp }} · R{{ mo.round }}</span>
@@ -218,9 +218,15 @@
       <a class="sec-link" href="{{ root }}circuitos/index.html">Ver circuitos →</a>
     </div>
     <div class="mosaic">
-      {% for g in gallery[:7] %}
-      <figure class="mosaic-item m{{ loop.index }}">
-        {{ pic(img_url(g.src), g.alt, "(max-width:760px) 92vw, 32vw") | safe }}
+      {% for g in gallery[:8] %}
+      <figure class="mosaic-item m{{ loop.index }}" data-rotate>
+        {% for a in g.alts %}
+        <img class="mosaic-img{% if loop.first %} is-on{% endif %}"
+             src="{{ img_url(a.src) }}" srcset="{{ srcset_for(img_url(a.src)) }}"
+             sizes="(max-width:760px) 92vw, 32vw"
+             alt="{{ a.alt }}" {% if loop.first %}loading="eager"{% else %}loading="lazy"{% endif %}
+             data-label="{{ a.label }}" data-sub="{{ a.sub }}">
+        {% endfor %}
         <figcaption><b>{{ g.label }}</b><span>{{ g.sub }}</span></figcaption>
       </figure>
       {% endfor %}

@@ -28,22 +28,25 @@
 {% endmacro %}
 
 {% macro driver_cards(rows, root, meta, limit=8) %}
-<div class="drivers-grid">
+<div class="drivers-grid" data-driver-grid>
   {% for d in rows[:limit] %}
   {% set t = meta.get(d.team.id) if d.team else None %}
-  <a class="dcard" href="{{ root }}pilotos/{{ d.id }}.html">
+  <a class="dcard" href="{{ root }}pilotos/{{ d.id }}.html"
+     data-name="{{ d.last|lower }}" data-pts="{{ d.points }}" data-wins="{{ d.wins }}"
+     data-age="{{ d.age }}" data-team="{{ d.team.id if d.team else '' }}">
     <div class="dcard-img">
       {% if t %}<span class="stripe" style="background:{{ t.brand }}"></span>{% endif %}
       {% if d.photo %}{{ pic(img_url(d.photo), d.full, "(max-width:760px) 46vw, 260px") | safe }}
       {% else %}<span class="ph">{{ d.code }}</span>{% endif %}
       <span class="dcard-num">{{ d.num }}</span>
+      <span class="dcard-pos">P{{ d.pos }}</span>
     </div>
     <div class="dcard-meta">
       <h3>{{ d.full }}</h3>
       <div class="team">{% if d.team %}{{ d.team.name }}{% endif %}</div>
       <div class="dcard-foot">
-        <span>P{{ d.pos }}</span>
         <span><b>{{ d.points }}</b> pts</span>
+        <span>{{ d.wins }} {{ 'victoria' if d.wins == 1 else 'victorias' }}</span>
       </div>
     </div>
   </a>

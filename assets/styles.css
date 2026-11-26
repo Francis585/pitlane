@@ -1891,3 +1891,328 @@ html[data-theme="light"] .nav-links a span { color: #8a919c; }
   .fh-mark { max-width: calc(100vw - 24px); white-space: nowrap; }
   .hero-scrim::after, .mosaic-item::after, .moment::after { opacity: .08; }
 }
+
+/* ==========================================================================
+   RONDA 2 — fichas de piloto completas, mosaico rotatorio y tema claro real
+   ========================================================================== */
+
+/* --------------------------------------------------------- ficha de piloto */
+.dhero {
+  display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+  gap: clamp(20px, 4vw, 56px); align-items: center;
+  padding-block: clamp(26px, 4vw, 54px);
+}
+.dhero-media {
+  position: relative; border-radius: 10px; overflow: hidden;
+  aspect-ratio: 4/5; max-height: 560px; background: var(--panel);
+  border: 1px solid var(--line);
+}
+.dhero-media img { width: 100%; height: 100%; object-fit: cover; object-position: top center;
+  filter: saturate(1.02) contrast(1.03); transition: transform .9s cubic-bezier(.22,1,.36,1); }
+.dhero-media:hover img { transform: scale(1.03); }
+.dhero-media::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, transparent 55%, rgba(6,7,10,.55) 100%);
+}
+.dhero-num {
+  position: absolute; left: 14px; bottom: 4px; z-index: 2;
+  font-family: var(--font-display); font-variation-settings: normal;
+  font-size: clamp(3rem, 7vw, 5.4rem); font-weight: 800; line-height: .8;
+  color: transparent; -webkit-text-stroke: 1.4px rgba(255,255,255,.55);
+  letter-spacing: -.02em;
+}
+.dhero-flag {
+  position: absolute; left: 16px; top: 14px; z-index: 2;
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-mono); font-size: .6rem; letter-spacing: .16em; text-transform: uppercase;
+  background: rgba(8,10,14,.72); border: 1px solid rgba(255,255,255,.16);
+  color: #f2f4f7; padding: 6px 10px; border-radius: 4px; backdrop-filter: blur(6px);
+}
+.dhero-body h1 { font-size: clamp(2.6rem, 6.4vw, 6rem); text-transform: uppercase; letter-spacing: -.02em; }
+.dhero-sub { margin: 18px 0 0; color: var(--dim); font-size: clamp(.94rem, 1.1vw, 1.04rem); max-width: 54ch; }
+.dhero-quick { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 20px;
+  font-family: var(--font-mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--dim-2); }
+.dhero-quick b { color: var(--fg); font-size: .92rem; letter-spacing: 0; }
+@media (max-width: 860px) {
+  .dhero { grid-template-columns: 1fr; }
+  .dhero-media { aspect-ratio: 3/2; max-height: 420px; }
+  .dhero-media img { object-position: 50% 22%; }
+}
+
+/* gráfico de forma: una columna por carrera */
+.form-chart {
+  display: flex; align-items: flex-end; gap: 4px; height: 132px;
+  margin: 0 0 26px; padding: 12px 4px 0;
+  border-bottom: 1px solid var(--line-2);
+}
+.fc-col { flex: 1; display: flex; flex-direction: column; justify-content: flex-end;
+  align-items: center; gap: 6px; min-width: 0; }
+.fc-bar { display: block; width: 100%; max-width: 26px; border-radius: 3px 3px 0 0;
+  opacity: .9; transition: opacity .2s, transform .3s; transform-origin: bottom; }
+.fc-col:hover .fc-bar { opacity: 1; transform: scaleY(1.04); }
+.fc-bar.is-dnf { background: repeating-linear-gradient(45deg, #6b7280 0 4px, #3f4550 4px 8px) !important; }
+.fc-col small { font-family: var(--font-mono); font-size: .52rem; color: var(--dim-2); }
+
+/* tablas de la ficha */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.dlog { width: 100%; border-collapse: collapse; font-size: .84rem; min-width: 620px; }
+.dlog th { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line-2);
+  color: var(--dim-2); font-size: .58rem; letter-spacing: .14em; }
+.dlog td { padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.dlog tbody tr { transition: background .16s; }
+.dlog tbody tr:hover { background: var(--hover); }
+.dlog td.dnf { color: #ff7a6a; }
+html[data-theme="light"] .dlog td.dnf { color: #b3261e; }
+.dlog tr.is-current { background: color-mix(in srgb, var(--brand) 10%, transparent); }
+.dlog tr.is-current td { font-weight: 600; }
+.dlog a { border-bottom: 1px solid transparent; }
+.dlog a:hover { border-color: var(--brand); color: var(--brand); }
+
+/* duelo con el compañero */
+.duel { display: grid; grid-template-columns: minmax(120px, 1fr) minmax(0, 2.2fr) minmax(120px, 1fr);
+  gap: 18px; align-items: center; border: 1px solid var(--line); border-radius: 10px;
+  padding: clamp(16px, 2.4vw, 28px); background: var(--panel); }
+.duel-side { border-left: 3px solid var(--brand); padding-left: 12px; display: grid; gap: 4px; }
+.duel-side b { font-family: var(--font-display); font-size: clamp(1.2rem, 2.2vw, 1.7rem); text-transform: uppercase; }
+.duel-side span { font-family: var(--font-mono); font-size: .58rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--dim-2); }
+.duel-side--r { border-left: 0; border-right: 3px solid var(--brand); padding-left: 0;
+  padding-right: 12px; text-align: right; }
+.duel-mid { display: grid; gap: 0; }
+.duel-row { display: grid; grid-template-columns: 64px 1fr 64px; align-items: center;
+  gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.duel-row:last-child { border-bottom: 0; }
+.duel-row .dv { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; }
+.duel-row .dv:last-child { text-align: right; }
+.duel-row .dl { font-family: var(--font-mono); font-size: .6rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--dim-2); text-align: center; }
+@media (max-width: 760px) {
+  .duel { grid-template-columns: 1fr; }
+  .duel-side, .duel-side--r { border: 0; padding: 0; text-align: left; }
+  .duel-side--r { text-align: right; }
+}
+
+.career-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  border-block: 1px solid var(--line); margin-bottom: 26px; }
+.career-stats div { padding: 18px 4px; border-right: 1px solid var(--line); }
+.career-stats div:last-child { border-right: 0; }
+.career-stats b { display: block; font-family: var(--font-display); font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+  font-weight: 800; line-height: 1; }
+.career-stats span { font-family: var(--font-mono); font-size: .58rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--dim-2); }
+
+/* ------------------------------------------------- lista de pilotos */
+.grid-tools { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px;
+  flex-wrap: wrap; margin-bottom: 22px; }
+.tool-group { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.tool-group .mono { color: var(--dim-2); margin-right: 6px; }
+.chip-btn { font-family: var(--font-mono); font-size: .6rem; letter-spacing: .12em; text-transform: uppercase;
+  padding: 7px 11px; border-radius: 999px; border: 1px solid var(--line-2); background: transparent;
+  color: var(--dim); cursor: pointer; transition: .18s; }
+.chip-btn:hover { color: var(--fg); border-color: var(--brand); }
+.chip-btn.is-on { background: var(--brand); border-color: var(--brand); color: #0b0d11; font-weight: 700; }
+.tool-search { display: flex; align-items: center; gap: 10px; }
+.tool-search .mono { color: var(--dim-2); }
+.tool-search input { width: min(260px, 60vw); padding: 9px 12px; border-radius: 999px;
+  border: 1px solid var(--line-2); background: var(--card); color: var(--fg); font: inherit; font-size: .82rem; }
+.tool-search input:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+.dcard-pos { position: absolute; right: 10px; top: 10px; z-index: 2;
+  font-family: var(--font-mono); font-size: .64rem; letter-spacing: .1em;
+  padding: 4px 8px; border-radius: 4px; background: rgba(8,10,14,.72);
+  border: 1px solid rgba(255,255,255,.2); color: #f2f4f7; }
+.dcard[hidden] { display: none; }
+
+/* ------------------------------------------------- mosaico que rota */
+.mosaic-item > img { position: absolute; inset: 0; }
+.mosaic-img { opacity: 0; transition: opacity 1s ease, transform .8s cubic-bezier(.22,1,.36,1); }
+.mosaic-img.is-on { opacity: 1; }
+.mosaic-item figcaption { z-index: 2; }
+@media (prefers-reduced-motion: reduce) {
+  .mosaic-img { transition: none; }
+}
+
+/* ------------------------------------------------- transiciones finas */
+a, button, .chip-btn, .btn, .dcard, .tile, .ncard, .circ-card, .moment, .bar {
+  transition-property: color, background-color, border-color, transform, box-shadow, opacity;
+  transition-duration: .22s;
+}
+.btn:hover { box-shadow: 0 8px 24px rgba(0,0,0,.18); }
+.btn-solid:hover { box-shadow: 0 10px 28px color-mix(in srgb, var(--brand) 35%, transparent); }
+:where(a, button, input, [tabindex]):focus-visible {
+  outline: 2px solid var(--brand); outline-offset: 3px; border-radius: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important; scroll-behavior: auto !important; }
+}
+
+/* ==========================================================================
+   TEMA CLARO — papel editorial, no una plantilla "al revés"
+   ========================================================================== */
+html[data-theme="light"] {
+  --deep: #f2f1ec;
+  --card: #ffffff;
+  --panel: #ffffff;
+  --panel-2: #f7f6f1;
+  --surface: #ffffff;
+  --hover: rgba(17, 19, 24, .055);
+  --bg: #f2f1ec;
+  --bg-2: #ffffff;
+  --ink: #111318;
+  --fg: #111318;
+  --dim: #4f5661;
+  --dim-2: #6d7480;
+  --line: rgba(17, 19, 24, .12);
+  --line-2: rgba(17, 19, 24, .22);
+  color-scheme: light;
+  background: var(--bg);
+}
+html[data-theme="light"] body { background: var(--bg); color: var(--fg); }
+html[data-theme="light"] .nav { background: rgba(255,255,255,.92); backdrop-filter: blur(10px);
+  border-bottom-color: var(--line-2); }
+html[data-theme="light"] .nav-links a { color: #3d434e; }
+html[data-theme="light"] .nav-links a:hover,
+html[data-theme="light"] .nav-links a[aria-current="page"] { color: #0d0f13; background: rgba(17,19,24,.06); }
+html[data-theme="light"] .logo b { color: #e2541f; }
+html[data-theme="light"] .gp-ribbon { background: #fff; color: var(--fg); }
+html[data-theme="light"] .marquee { background: #fff; }
+
+/* el hero sigue siendo una foto: velo oscuro y texto claro, sin banda negra */
+html[data-theme="light"] .hero,
+html[data-theme="light"] .hero * { color: #fff; }
+html[data-theme="light"] .hero-scrim {
+  background:
+    linear-gradient(90deg, rgba(9,11,15,.95) 2%, rgba(9,11,15,.86) 34%, rgba(9,11,15,.42) 62%, rgba(9,11,15,.08) 100%),
+    linear-gradient(180deg, rgba(9,11,15,.55) 0%, rgba(9,11,15,0) 30%, rgba(9,11,15,.30) 74%, rgba(9,11,15,.72) 100%);
+}
+html[data-theme="light"] .hero::after, html[data-theme="light"] .hero .hero-sub { color: rgba(255,255,255,.9); }
+html[data-theme="light"] .hero-sub { color: rgba(255,255,255,.9); }
+html[data-theme="light"] .hero .btn-ghost { border-color: rgba(255,255,255,.4); color: #fff; }
+html[data-theme="light"] .hero-band { border-top-color: rgba(255,255,255,.22); }
+html[data-theme="light"] .hero-band > div { border-right-color: rgba(255,255,255,.16); }
+html[data-theme="light"] .hero-band span { color: rgba(255,255,255,.65); }
+html[data-theme="light"] .gp-card { background: rgba(10,12,16,.82); border-color: rgba(255,255,255,.18); color: #fff; }
+
+/* tarjetas de equipo: siguen siendo oscuras (identidad de marca) */
+html[data-theme="light"] .tile { border-color: rgba(17,19,24,.14); }
+html[data-theme="light"] .tile::before {
+  background: linear-gradient(150deg, var(--c1) 0%, color-mix(in srgb, var(--c1) 42%, #0f1218) 58%, #0f1218 100%);
+  opacity: .94;
+}
+html[data-theme="light"] .tile h3, html[data-theme="light"] .tile .tfoot { color: #fff; }
+
+/* tarjetas de piloto: el pie va sobre la foto, así que conserva el velo */
+html[data-theme="light"] .dcard { background: #fff; }
+html[data-theme="light"] .dcard-img::after {
+  background: linear-gradient(180deg, transparent 42%, rgba(6,7,10,.78) 100%);
+}
+html[data-theme="light"] .dcard-meta h3 { color: #fff; }
+html[data-theme="light"] .dcard-meta .team { color: rgba(255,255,255,.72); }
+html[data-theme="light"] .dcard-foot { color: rgba(255,255,255,.8); border-top-color: rgba(255,255,255,.22); }
+html[data-theme="light"] .dcard-foot b { color: #fff; }
+html[data-theme="light"] .dcard-meta { margin-top: -44px; }
+
+/* noticias, circuitos y momentos: texto sobre foto */
+html[data-theme="light"] .ncard { background: #fff; }
+html[data-theme="light"] .ncard-img { background: #e8e6e0; }
+html[data-theme="light"] .moment, html[data-theme="light"] .circ-card { background: #0d1015; }
+html[data-theme="light"] .moment h3, html[data-theme="light"] .moment p,
+html[data-theme="light"] .moment .podium-mini span, html[data-theme="light"] .moment-tag { color: #fff; }
+html[data-theme="light"] .mosaic-item figcaption { background: linear-gradient(180deg, transparent, rgba(5,6,9,.92)); }
+html[data-theme="light"] .mosaic-item figcaption b { color: #fff; }
+
+/* tablas, barras y cifras */
+html[data-theme="light"] .bar:hover { background: rgba(17,19,24,.05); }
+html[data-theme="light"] .bar .track { background: rgba(17,19,24,.10); }
+html[data-theme="light"] .team-stats div { border-right-color: var(--line); }
+html[data-theme="light"] .champ { color: #fff; }
+html[data-theme="light"] .statement { background: #111318; }
+html[data-theme="light"] .foot { background: #eae8e2; border-top-color: var(--line-2); }
+html[data-theme="light"] .foot p, html[data-theme="light"] .foot-bot, html[data-theme="light"] .foot-links a { color: #545a64; }
+html[data-theme="light"] .heritage, html[data-theme="light"] .duel { background: #fff; }
+html[data-theme="light"] .title-chip { color: #3d434e; }
+html[data-theme="light"] .read-bar { background: #e2541f; }
+html[data-theme="light"] .fh-mark { background: rgba(255,255,255,.92); border-color: rgba(17,19,24,.18); color: #22252b; }
+html[data-theme="light"] .fh-mark i { color: #6d7480; }
+
+/* buscador, comparador y estadísticas */
+html[data-theme="light"] .search-item:hover,
+html[data-theme="light"] .stats-table tbody tr:hover { background: rgba(17,19,24,.05); }
+html[data-theme="light"] .cmp-select { background: #fff; color: var(--fg); }
+html[data-theme="light"] .cmp-track { background: rgba(17,19,24,.08); }
+html[data-theme="light"] .h2h-row { background: #fff; }
+
+/* rejilla del mosaico: siete piezas caben en tres filas */
+.mosaic { grid-template-rows: 210px 160px 160px; }
+.mosaic-item.m5 { grid-column: span 2; }
+.mosaic-item.m7 { grid-column: span 1; }
+@media (max-width: 900px) {
+  .mosaic { grid-template-rows: 190px 140px 140px 140px; }
+  .mosaic-item.m1 { grid-column: span 2; grid-row: span 1; }
+  .mosaic-item.m2, .mosaic-item.m4, .mosaic-item.m5 { grid-column: span 1; }
+}
+@media (max-width: 560px) {
+  .mosaic { grid-template-columns: 1fr; grid-template-rows: repeat(7, 170px); }
+  .mosaic-item { grid-column: span 1 !important; grid-row: span 1 !important; }
+}
+html[data-theme="light"] .tile .tfoot span,
+html[data-theme="light"] .race-week .tile .tfoot span { color: rgba(255,255,255,.86) !important; }
+html[data-theme="light"] .tile .tfoot b { color: #fff; }
+
+/* el mosaico pasa a galería de retratos 4×2: sin recortes de caras */
+.mosaic { grid-template-columns: repeat(4, 1fr); grid-template-rows: none; gap: 12px; }
+.mosaic-item { aspect-ratio: 3/4; }
+.mosaic-item.m1, .mosaic-item.m2, .mosaic-item.m4, .mosaic-item.m5, .mosaic-item.m7 { grid-column: span 1; grid-row: span 1; }
+.mosaic-item img { object-position: center 22%; }
+@media (max-width: 760px) {
+  .mosaic { grid-template-columns: repeat(2, 1fr); grid-template-rows: none; }
+  .mosaic-item { grid-column: span 1 !important; grid-row: span 1 !important; aspect-ratio: 3/4; }
+}
+
+/* el crossfade debe ganar a la regla global de imágenes del tema claro */
+.mosaic-item .mosaic-img { opacity: 0; }
+.mosaic-item .mosaic-img.is-on { opacity: 1; }
+html[data-theme="light"] .mosaic-item .mosaic-img:not(.is-on) { opacity: 0; }
+html[data-theme="light"] .mosaic-item .mosaic-img.is-on { opacity: 1; }
+
+/* altura definida para que las barras del gráfico de forma se dibujen */
+.form-chart { box-sizing: border-box; }
+.fc-col { height: 100%; }
+.fc-bar { min-height: 3px; }
+
+/* en claro, las tarjetas de piloto conservan el pie oscuro de la foto */
+html[data-theme="light"] .dcard { background: #10141a; border-color: rgba(17,19,24,.16); }
+html[data-theme="light"] .dcard-meta { margin-top: -34px; }
+
+/* el menú nunca empuja el botón de tema fuera de la pantalla */
+.nav-in { flex-wrap: nowrap; gap: clamp(8px, 1.2vw, 18px); }
+.nav-links { min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.nav-links::-webkit-scrollbar { display: none; }
+.icon-btn, .theme-toggle { flex: none; }
+
+/* momentos: dos columnas para que el coche se vea entero */
+.moments { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.moment { min-height: 300px; }
+.moment img { object-position: center 58%; }
+@media (max-width: 720px) {
+  .moments { grid-template-columns: 1fr; }
+  .moment { min-height: 240px; }
+}
+
+/* las fichas de escudería mantienen su escenario oscuro en ambos temas */
+html[data-theme="light"] body[class*="t-"] {
+  --deep: #06070a; --card: #0a0b0f; --panel: #101319; --panel-2: #151922;
+  --bg: #06070a; --bg-2: #0b0d12; --surface: #0a0b0f;
+  --ink: #f2f4f7; --fg: #f2f4f7; --dim: #949aa5; --dim-2: #6b727d;
+  --line: rgba(255,255,255,.10); --line-2: rgba(255,255,255,.18);
+  --hover: rgba(255,255,255,.06);
+  background: #06070a; color: #f2f4f7;
+}
+html[data-theme="light"] body[class*="t-"] .heritage,
+html[data-theme="light"] body[class*="t-"] .ncard,
+html[data-theme="light"] body[class*="t-"] .duel,
+html[data-theme="light"] body[class*="t-"] .h2h-row,
+html[data-theme="light"] body[class*="t-"] .team-facts > div { background: #101319; }
+html[data-theme="light"] body[class*="t-"] .ncard-img { background: #0d0f13; }
+html[data-theme="light"] body[class*="t-"] .foot { background: #06070a; }
+html[data-theme="light"] body[class*="t-"] .title-chip { color: #b9c0ca; }

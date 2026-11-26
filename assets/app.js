@@ -294,7 +294,60 @@
     let t; input.addEventListener('input', () => { clearTimeout(t); t = setTimeout(draw, 90); });
     draw();
   }
-  // ------- pista de scroll en el menú cuando no caben todos los enlaces -------
+  // ------- mosaico: las fotos rotan solas cada pocos segundos -------
+  const mosaics = [...document.querySelectorAll('[data-rotate]')];
+  if (mosaics.length) {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    mosaics.forEach((fig, k) => {
+      const imgs = [...fig.querySelectorAll('.mosaic-img')];
+      const capB = fig.querySelector('figcaption b');
+      const capS = fig.querySelector('figcaption span');
+      if (imgs.length < 2 || reduceMotion) return;
+      let i = 0, visible = true;
+      const paint = () => {
+        imgs.forEach((im, j) => im.classList.toggle('is-on', j === i));
+        if (capB) capB.textContent = imgs[i].dataset.label || capB.textContent;
+        if (capS) capS.textContent = imgs[i].dataset.sub || '';
+      };
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver((es) => es.forEach((e) => { visible = e.isIntersecting; }),
+          { threshold: 0.1 }).observe(fig);
+      }
+      setInterval(() => {
+        if (!visible || document.hidden) return;
+        i = (i + 1) % imgs.length;
+        paint();
+      }, 6500 + k * 900);
+    });
+  }
+
+  // ------- lista de pilotos: ordenar y filtrar sin recargar -------
+  const grid = document.querySelector('[data-driver-grid]');
+  if (grid) {
+    const cards = [...grid.children];
+    const order = new Map(cards.map((c, i) => [c, i]));
+    const box = document.querySelector('[data-driver-filter]');
+    const strip = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const plain = new Map(cards.map((c) => [c, strip(c.textContent + ' ' + c.dataset.team)]));
+
+    const apply = (key) => {
+      let list = [...cards];
+      if (key === 'name') list.sort((a, b) => a.dataset.name.localeCompare(b.dataset.name));
+      else if (key === 'pos') list.sort((a, b) => order.get(a) - order.get(b));
+      else if (key === 'age') list.sort((a, b) => Number(a.dataset.age) - Number(b.dataset.age));
+      else list.sort((a, b) => Number(b.dataset[key]) - Number(a.dataset[key]));
+      list.forEach((c) => grid.appendChild(c));
+    };
+    $$('[data-sort]').forEach((btn) => btn.addEventListener('click', () => {
+      $$('[data-sort]').forEach((b) => b.classList.toggle('is-on', b === btn));
+      apply(btn.dataset.sort);
+    }));
+    if (box) box.addEventListener('input', () => {
+      const q = strip(box.value.trim());
+      cards.forEach((c) => { c.hidden = q && !plain.get(c).includes(q); });
+    });
+  }
+
   const navLinks = document.querySelector('.nav-links');
   if (navLinks) {
     const sync = () => {
