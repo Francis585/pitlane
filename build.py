@@ -541,20 +541,11 @@ def render_all(site: dict, asset_versions: dict, complete_meta: dict) -> int:
     pool_cars = [x for x in rotate(cars, day + 1) if x["src"] not in hero_srcs and x["src"] not in used_moment]
     pool = pool_cars + pool_faces
 
-    gallery, used = [], set()
-    for i in range(8):
-        if not pool:
-            break
-        first = next((x for x in pool if x["src"] not in used), None)
-        if not first:
-            break
-        used.add(first["src"])
-        alts = [first]
-        for cand in rotate(pool, i * 3 + day):
-            if len(alts) >= 3:
-                break
-            if cand["src"] not in used:
-                alts.append(cand)
+    gallery = []
+    firsts = pool[:8]
+    rest = pool[8:]
+    for i, first in enumerate(firsts):
+        alts = [first] + rest[i::max(1, len(firsts))][:2]
         gallery.append({**first, "alts": alts})
     sources = " · ".join(sorted({n["source"] for n in site["news"]})) or "medios especializados"
     pages = 0
