@@ -3113,7 +3113,7 @@
    }
   }
  ],
- "generated": "2026-11-26T21:29:19+00:00",
+ "generated": "2026-11-27T01:18:14+00:00",
  "round": 21,
  "total_races": 23,
  "rounds_done": 21,
@@ -18975,7 +18975,7 @@
      "time_utc": "16:00"
     }
    ],
-   "days_until": 3
+   "days_until": 2
   },
   {
    "round": 23,
@@ -19117,7 +19117,7 @@
     "time_utc": "16:00"
    }
   ],
-  "days_until": 3
+  "days_until": 2
  },
  "last_round": {
   "round": 21,
@@ -19854,7 +19854,7 @@
    ],
    "news": [
     {
-     "title": "George Russell no le da importancia a las palabras de Verstappen: \"Me parecieron bastante graciosos algunos de los comentarios tras la carrera\"",
+     "title": "George Russell no le da importancia a las palabras de Verstappen",
      "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255974/george-russell-no-le-da-importancia-palabras-verstappen-me-parecieron-graciosos-comentarios-carrera.html",
      "desc": "En Las Vegas, George Russell y Max Verstappen protagonizaron un nuevo roce durante los terceros entrenamientos libres, luego de que el piloto británico se cerrara sobre el neerlandés y estuviera cerca de causar una colisión. Lejos",
      "source": "Mundo Deportivo",
@@ -19862,7 +19862,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/02/6ae913c25b101.r_d.1419-875-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 1 h",
+     "age": "hace 4 h",
      "ts": 1795724165.0,
      "teams": [
       "mercedes",
@@ -19879,7 +19879,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b0872d447159.r_d.875-619-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 2 h",
+     "age": "hace 5 h",
      "ts": 1795720726.0,
      "teams": [
       "mercedes"
@@ -19895,7 +19895,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0qgKvGBY/s6/max-verstappen-red-bull-racing.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 2 h",
+     "age": "hace 6 h",
      "ts": 1795719861.0,
      "teams": [
       "mercedes",
@@ -19912,7 +19912,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b0863feabec8.r_d.933-599-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 3 h",
+     "age": "hace 7 h",
      "ts": 1795716839.0,
      "teams": [
       "mercedes"
@@ -19928,7 +19928,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0mXyxxk6/s6/lewis-hamilton-ferrari-2.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 7 h",
      "ts": 1795713658.0,
      "teams": [
       "ferrari",
@@ -19945,7 +19945,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 8 h",
      "ts": 1795710469.0,
      "teams": [
       "ferrari",
@@ -20011,7 +20011,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0mXyxxk6/s6/lewis-hamilton-ferrari-2.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 7 h",
      "ts": 1795713658.0,
      "teams": [
       "ferrari",
@@ -20028,7 +20028,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 8 h",
      "ts": 1795710469.0,
      "teams": [
       "ferrari",
@@ -20156,7 +20156,7 @@
    ],
    "news": [
     {
-     "title": "George Russell no le da importancia a las palabras de Verstappen: \"Me parecieron bastante graciosos algunos de los comentarios tras la carrera\"",
+     "title": "George Russell no le da importancia a las palabras de Verstappen",
      "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255974/george-russell-no-le-da-importancia-palabras-verstappen-me-parecieron-graciosos-comentarios-carrera.html",
      "desc": "En Las Vegas, George Russell y Max Verstappen protagonizaron un nuevo roce durante los terceros entrenamientos libres, luego de que el piloto británico se cerrara sobre el neerlandés y estuviera cerca de causar una colisión. Lejos",
      "source": "Mundo Deportivo",
@@ -20164,7 +20164,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/02/6ae913c25b101.r_d.1419-875-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 1 h",
+     "age": "hace 4 h",
      "ts": 1795724165.0,
      "teams": [
       "mercedes",
@@ -20181,7 +20181,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/0qgKvGBY/s6/max-verstappen-red-bull-racing.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 2 h",
+     "age": "hace 6 h",
      "ts": 1795719861.0,
      "teams": [
       "mercedes",
@@ -20198,7 +20198,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 8 h",
      "ts": 1795710469.0,
      "teams": [
       "ferrari",
@@ -20217,7 +20217,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6zoDj4P0/s6/lando-norris-mclaren.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
+     "age": "hace 9 h",
      "ts": 1795708713.0,
      "teams": [
       "mercedes",
@@ -20235,7 +20235,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YP74dAG2/s6/george-russell-mercedes-5.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
+     "age": "hace 9 h",
      "ts": 1795706917.0,
      "teams": [
       "mercedes",
@@ -20315,7 +20315,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 8 h",
      "ts": 1795710469.0,
      "teams": [
       "ferrari",
@@ -20334,7 +20334,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6zoDj4P0/s6/lando-norris-mclaren.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
+     "age": "hace 9 h",
      "ts": 1795708713.0,
      "teams": [
       "mercedes",
@@ -20479,39 +20479,6 @@
      "own": true
     },
     {
-     "title": "Hadjar says unfortunate timing caused his front wing to “explode” in Las Vegas | Formula 1",
-     "url": "https://www.racefans.net/2026/11/26/hadjar-says-unfortunate-timing-caused-his-front-wing-to-explode-in-las-vegas/",
-     "desc": "Isack Hadjar says Red Bull are reinforcing their front wing design after his failed in Las Vegas when he switched out of Straight Mode.",
-     "source": "RaceFans",
-     "lang": "en",
-     "image": null,
-     "date": "2026-11-26",
-     "date_human": "26 nov",
-     "age": "hace 5 h",
-     "ts": 1795709031.0,
-     "teams": [
-      "red_bull",
-      "rb"
-     ],
-     "own": true
-    },
-    {
-     "title": "‘Maybe I’m delusional but I genuinely feel like a podium was possible’ – Lindblad | Formula 1",
-     "url": "https://www.racefans.net/2026/11/24/maybe-im-delusional-but-i-genuinely-feel-like-a-podium-was-possible-lindblad/",
-     "desc": "Arvid Lindblad says he and Racing Bulls still don't understand the \"very abnormal\" cause of the spin which put him out of the Las Vegas Grand Prix.",
-     "source": "RaceFans",
-     "lang": "en",
-     "image": null,
-     "date": "2026-11-24",
-     "date_human": "24 nov",
-     "age": "hace 2 d",
-     "ts": 1795518646.0,
-     "teams": [
-      "rb"
-     ],
-     "own": true
-    },
-    {
      "title": "Isack Hadjar frustrated – What really happened on Red Bull's team radio in Las Vegas",
      "url": "https://www.motorsport.com/f1/news/isack-hadjar-frustrated-what-really-happened-on-red-bulls-team-radio-in-las-vegas/10877375/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Isack Hadjar started Formula 1’s Las Vegas Grand Prix from fourth on the grid, and by lap four he had already found himself running second, right behind Red Bull team-mate Max Verstappen. And given that the grand prix had turned i",
@@ -20529,23 +20496,6 @@
      "own": true
     },
     {
-     "title": "Was Hadjar helping himself or Verstappen when he collected a penalty in the pits? | Formula 1",
-     "url": "https://www.racefans.net/2026/11/24/was-hadjar-helping-himself-or-verstappen-when-he-collected-a-penalty-in-the-pits/",
-     "desc": "The stewards penalised Isack Hadjar for driving \"slowly for tactical reasons\" behind the Safety Car. What was Red Bull trying to achieve?",
-     "source": "RaceFans",
-     "lang": "en",
-     "image": null,
-     "date": "2026-11-24",
-     "date_human": "24 nov",
-     "age": "hace 2 d",
-     "ts": 1795504503.0,
-     "teams": [
-      "red_bull",
-      "rb"
-     ],
-     "own": true
-    },
-    {
      "title": "Laurent Mekies: Keeping his emotions in check is giving Isack Hadjar “lap time”",
      "url": "https://www.motorsport.com/f1/news/laurent-mekies-keeping-his-emotions-in-check-is-giving-isack-hadjar-lap-time/10877211/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
      "desc": "Isack Hadjar left the 2026 Las Vegas Grand Prix empty-handed after a Lap 26 front wing failure and a post-race 10-second safety car penalty relegated him to 15th, yet Red Bull team principal Laurent Mekies saw something far more e",
@@ -20556,6 +20506,59 @@
      "date_human": "23 nov",
      "age": "hace 3 d",
      "ts": 1795462202.0,
+     "teams": [
+      "red_bull",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Max Verstappen’s deadpan reaction to winning F1’s Overtake of the Month award",
+     "url": "https://www.motorsport.com/f1/news/max-verstappens-deadpan-reaction-to-winning-f1s-overtake-of-the-month-award/10877217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+     "desc": "Max Verstappen has never been one for forced showmanship, and Formula 1’s Las Vegas Grand Prix Fan Forum offered another reminder. Appearing on stage in Red Bull’s tan Las Vegas teamwear alongside team-mate Isack Hadjar and Haas d",
+     "source": "Motorsport.com",
+     "lang": "en",
+     "image": "https://cdn-1.motorsport.com/images/amp/0mXykV56/s6/max-verstappen-red-bull-racing-a10877217-b707-2.jpg",
+     "date": "2026-11-23",
+     "date_human": "23 nov",
+     "age": "hace 3 d",
+     "ts": 1795456303.0,
+     "teams": [
+      "red_bull",
+      "haas",
+      "rb"
+     ],
+     "own": true
+    },
+    {
+     "title": "Hadjar penalised after backing up Russell in Las Vegas GP, Perez given grid drop for Qatar GP",
+     "url": "https://www.autosport.com/f1/news/hadjar-penalised-after-backing-up-russell-in-las-vegas-gp-perez-given-grid-drop-for-qatar-gp/10876867/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "Isack Hadjar has received a 10-second penalty for driving unnecessarily slowly in Formula 1’s Las Vegas Grand Prix – the result of his actions under the safety car. The race was neutralised on lap 19 when Sergio Perez and Rafael C",
+     "source": "Autosport",
+     "lang": "en",
+     "image": "https://cdn-1.motorsport.com/images/amp/6b8Zy8v2/s6/george-russell-mercedes-pierre-2.jpg",
+     "date": "2026-11-22",
+     "date_human": "22 nov",
+     "age": "hace 4 d",
+     "ts": 1795338706.0,
+     "teams": [
+      "mercedes",
+      "rb",
+      "cadillac"
+     ],
+     "own": true
+    },
+    {
+     "title": "\"Same as Brazil\" – Red Bull \"trying to understand\" the root cause of Verstappen's complaints",
+     "url": "https://www.autosport.com/f1/news/same-as-brazil-red-bull-trying-to-understand-the-root-cause-of-verstappens-complaints/10875945/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+     "desc": "After Thursday's practice sessions in Las Vegas, Red Bull – like all Formula 1 teams – has been left with very few answers. Isack Hadjar eventually finished fourth on the timesheets, but that means very little given that no more r",
+     "source": "Autosport",
+     "lang": "en",
+     "image": "https://cdn-1.motorsport.com/images/amp/0arEG1p2/s6/max-verstappen-red-bull-racing-2.jpg",
+     "date": "2026-11-20",
+     "date_human": "20 nov",
+     "age": "hace 6 d",
+     "ts": 1795162375.0,
      "teams": [
       "red_bull",
       "rb"
@@ -20769,7 +20772,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/26/6b0809cd2fce3.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 9 h",
+     "age": "hace 13 h",
      "ts": 1795692771.0,
      "teams": [
       "haas"
@@ -20785,7 +20788,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YXyKMzx6/s6/oliver-bearman-haas.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 12 h",
+     "age": "hace 16 h",
      "ts": 1795683668.0,
      "teams": [
       "haas"
@@ -20850,7 +20853,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2GdKBmOY/s6/rafael-camara-haas-f1-team-lan-3.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 9 h",
+     "age": "hace 13 h",
      "ts": 1795695217.0,
      "teams": [
       "haas"
@@ -20902,7 +20905,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/6zoDj4P0/s6/lando-norris-mclaren.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
+     "age": "hace 9 h",
      "ts": 1795708713.0,
      "teams": [
       "mercedes",
@@ -20912,7 +20915,7 @@
      "own": false
     },
     {
-     "title": "Orihara, jefe de pista de Honda en F1: \"No hemos detectado ningún problema\"",
+     "title": "Shintaro Orihara, jefe de pista de Honda en F1: \"No hemos detectado ningún problema, pero volveremos a comprobarlo. Probablemente, este año el rendimiento del motor no es suficiente para dar satisfacción o confianza al piloto y, por eso, quizá tengan la s",
      "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255857/shintaro-orihara-jefe-pista-honda-no-hemos-detectado-problema-volveremos-comprobarlo-probablemente-ano-rendimiento-motor-no-suficiente-dar-satisfaccion-confianza-piloto-quiza-tengan-sensacion-rendimiento-no-bueno.html",
      "desc": "Nuevo expediente X en Honda. Fernando Alonso aseguró durante el Gran Premio de Las Vegas del fin de semana pasado, y también tras bajarse del coche, que su motor estaba sufriendo algún problema porque renía peor de lo esperado en ",
      "source": "Mundo Deportivo",
@@ -20920,7 +20923,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/06/04/6a21b669cf5e8.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
+     "age": "hace 9 h",
      "ts": 1795707307.0,
      "teams": [
       "aston_martin"
@@ -20936,7 +20939,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YP74dAG2/s6/george-russell-mercedes-5.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
+     "age": "hace 9 h",
      "ts": 1795706917.0,
      "teams": [
       "mercedes",
@@ -21000,7 +21003,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/07/6aefaaa3573f1.r_d.1229-993-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 1 h",
+     "age": "hace 5 h",
      "ts": 1795723127.0,
      "teams": [
       "williams"
@@ -21016,7 +21019,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YN7vwlW6/s6/carlos-sainz-williams.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 4 h",
+     "age": "hace 8 h",
      "ts": 1795712171.0,
      "teams": [
       "williams"
@@ -21147,7 +21150,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YE9Er8MY/s6/lance-stroll-aston-martin-raci.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 3 h",
+     "age": "hace 7 h",
      "ts": 1795715491.0,
      "teams": [
       "aston_martin"
@@ -21155,7 +21158,7 @@
      "own": true
     },
     {
-     "title": "Orihara, jefe de pista de Honda en F1: \"No hemos detectado ningún problema\"",
+     "title": "Shintaro Orihara, jefe de pista de Honda en F1: \"No hemos detectado ningún problema, pero volveremos a comprobarlo. Probablemente, este año el rendimiento del motor no es suficiente para dar satisfacción o confianza al piloto y, por eso, quizá tengan la s",
      "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255857/shintaro-orihara-jefe-pista-honda-no-hemos-detectado-problema-volveremos-comprobarlo-probablemente-ano-rendimiento-motor-no-suficiente-dar-satisfaccion-confianza-piloto-quiza-tengan-sensacion-rendimiento-no-bueno.html",
      "desc": "Nuevo expediente X en Honda. Fernando Alonso aseguró durante el Gran Premio de Las Vegas del fin de semana pasado, y también tras bajarse del coche, que su motor estaba sufriendo algún problema porque renía peor de lo esperado en ",
      "source": "Mundo Deportivo",
@@ -21163,7 +21166,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/06/04/6a21b669cf5e8.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 5 h",
+     "age": "hace 9 h",
      "ts": 1795707307.0,
      "teams": [
       "aston_martin"
@@ -21179,7 +21182,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2QedlxA2/s6/fernando-alonso-aston-martin-r.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 7 h",
+     "age": "hace 11 h",
      "ts": 1795701557.0,
      "teams": [
       "aston_martin"
@@ -21195,7 +21198,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/YK15zBk0/s6/fernando-alonso-aston-martin-r.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 7 h",
+     "age": "hace 11 h",
      "ts": 1795699618.0,
      "teams": [
       "aston_martin"
@@ -21211,7 +21214,7 @@
      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/17/6afc29521f0da.r_d.1522-921-0.jpeg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 8 h",
+     "age": "hace 12 h",
      "ts": 1795698455.0,
      "teams": [
       "aston_martin"
@@ -21227,7 +21230,7 @@
      "image": "https://cdn-1.motorsport.com/images/amp/2Qe8nGO2/s6/fernando-alonso-aston-martin-r.jpg",
      "date": "2026-11-26",
      "date_human": "26 nov",
-     "age": "hace 10 h",
+     "age": "hace 14 h",
      "ts": 1795690016.0,
      "teams": [
       "aston_martin"
@@ -22025,7 +22028,7 @@
  ],
  "news": [
   {
-   "title": "George Russell no le da importancia a las palabras de Verstappen: \"Me parecieron bastante graciosos algunos de los comentarios tras la carrera\"",
+   "title": "George Russell no le da importancia a las palabras de Verstappen",
    "url": "https://www.mundodeportivo.com/motor/f1/20261126/1004255974/george-russell-no-le-da-importancia-palabras-verstappen-me-parecieron-graciosos-comentarios-carrera.html",
    "desc": "En Las Vegas, George Russell y Max Verstappen protagonizaron un nuevo roce durante los terceros entrenamientos libres, luego de que el piloto británico se cerrara sobre el neerlandés y estuviera cerca de causar una colisión. Lejos",
    "source": "Mundo Deportivo",
@@ -22033,7 +22036,7 @@
    "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/02/6ae913c25b101.r_d.1419-875-0.jpeg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 1 h",
+   "age": "hace 4 h",
    "ts": 1795724165.0,
    "teams": [
     "mercedes",
@@ -22049,7 +22052,7 @@
    "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/07/6aefaaa3573f1.r_d.1229-993-0.jpeg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 1 h",
+   "age": "hace 5 h",
    "ts": 1795723127.0,
    "teams": [
     "williams"
@@ -22064,7 +22067,7 @@
    "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b0872d447159.r_d.875-619-0.jpeg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 2 h",
+   "age": "hace 5 h",
    "ts": 1795720726.0,
    "teams": [
     "mercedes"
@@ -22079,7 +22082,7 @@
    "image": "https://cdn-1.motorsport.com/images/amp/0qgKvGBY/s6/max-verstappen-red-bull-racing.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 2 h",
+   "age": "hace 6 h",
    "ts": 1795719861.0,
    "teams": [
     "mercedes",
@@ -22095,7 +22098,7 @@
    "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b0863feabec8.r_d.933-599-0.jpeg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 3 h",
+   "age": "hace 7 h",
    "ts": 1795716839.0,
    "teams": [
     "mercedes"
@@ -22110,7 +22113,7 @@
    "image": "https://cdn-1.motorsport.com/images/amp/YE9Er8MY/s6/lance-stroll-aston-martin-raci.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 3 h",
+   "age": "hace 7 h",
    "ts": 1795715491.0,
    "teams": [
     "aston_martin"
@@ -22125,7 +22128,7 @@
    "image": "https://cdn-1.motorsport.com/images/amp/0mXyxxk6/s6/lewis-hamilton-ferrari-2.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 4 h",
+   "age": "hace 7 h",
    "ts": 1795713658.0,
    "teams": [
     "ferrari",
@@ -22141,7 +22144,7 @@
    "image": "https://cdn-1.motorsport.com/images/amp/YN7vwlW6/s6/carlos-sainz-williams.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 4 h",
+   "age": "hace 8 h",
    "ts": 1795712171.0,
    "teams": [
     "williams"
@@ -22156,7 +22159,7 @@
    "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/26/6b084d41cd250.r_d.1643-608-0.jpeg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 4 h",
+   "age": "hace 8 h",
    "ts": 1795710469.0,
    "teams": [
     "ferrari",
@@ -22174,41 +22177,41 @@
    "image": "https://cdn-1.motorsport.com/images/amp/6n7b33g0/s6/charles-leclerc-ferrari.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 5 h",
+   "age": "hace 8 h",
    "ts": 1795710200.0,
    "teams": [
     "mercedes"
    ]
   },
   {
-   "title": "Leclerc denies claim he has a ‘number one’ clause in his Ferrari contract | Formula 1",
-   "url": "https://www.racefans.net/2026/11/26/leclerc-denies-claim-he-has-a-number-one-clause-in-his-ferrari-contract/",
-   "desc": "Charles Leclerc has denied he has a clause in his contract guaranteeing him number one status at Ferrari, after a report claiming he did was widely shared on social media.",
-   "source": "RaceFans",
+   "title": "Mercedes boss Toto Wolff reveals why rival F1 teams never try to hire him",
+   "url": "https://www.motorsport.com/f1/news/mercedes-boss-toto-wolff-reveals-why-rival-f1-teams-never-try-to-hire-him/10874986/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "Toto Wolff has just added to his legendary resume by securing Mercedes' return to the top of Formula 1 in 2026, officially tying former McLaren boss Ron Dennis with a record 17 world championship titles across drivers' and constru",
+   "source": "Motorsport.com",
    "lang": "en",
-   "image": null,
-   "date": "2026-11-26",
-   "date_human": "26 nov",
+   "image": "https://cdn-1.motorsport.com/images/amp/0kZX99D6/s6/toto-wolff-mercedes-a10874986-b705-2.jpg",
+   "date": "2026-11-27",
+   "date_human": "27 nov",
    "age": "hace 1 h",
-   "ts": 1795727679.0,
+   "ts": 1795739404.0,
    "teams": [
-    "ferrari"
+    "mercedes",
+    "mclaren"
    ]
   },
   {
-   "title": "Kimi Antonelli teases Nordschleife race with Max Verstappen, but there is one condition",
-   "url": "https://www.motorsport.com/f1/news/kimi-antonelli-teases-nordschleife-race-with-max-verstappen-but-there-is-one-condition/10878047/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "2026 Formula 1 champion Kimi Antonelli says he would love to race alongside four-time champion Max Verstappen at the Nordschleife, but admits he would first have to win the support of Mercedes team principal Toto Wolff. Verstappen",
+   "title": "Toto Wolff responds to Kimi Antonelli salary questions after F1 title success",
+   "url": "https://www.motorsport.com/f1/news/toto-wolff-says-the-world-champion-should-be-rewarded-after-bild-puts-antonellis-pay-at-about-46-mi/10874830/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
+   "desc": "When a Formula 1 team elevates a teenager from Formula 2 directly into a top-tier factory seat, the initial contract is rarely structured like a blockbuster superstar deal. But when that kid wins the drivers' world championship in",
    "source": "Motorsport.com",
    "lang": "en",
-   "image": "https://cdn-1.motorsport.com/images/amp/6zoDNx70/s6/kimi-antonelli-mercedes-max-ve-a10878047-b708-2.jpg",
+   "image": "https://cdn-1.motorsport.com/images/amp/6DGg4yGY/s6/andrea-kimi-antonelli-mercedes-a10874830-b705-2.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 1 h",
-   "ts": 1795726611.0,
+   "age": "hace 2 h",
+   "ts": 1795734002.0,
    "teams": [
-    "mercedes",
-    "red_bull"
+    "mercedes"
    ]
   },
   {
@@ -22220,7 +22223,7 @@
    "image": "https://cdn-1.motorsport.com/images/amp/YP74Zm42/s6/max-verstappen-red-bull-racing-2.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 1 h",
+   "age": "hace 5 h",
    "ts": 1795723377.0,
    "teams": [
     "red_bull"
@@ -22235,42 +22238,43 @@
    "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1456640_hires.jpg?width=1200",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 1 h",
+   "age": "hace 5 h",
    "ts": 1795723213.0,
    "teams": [
     "red_bull"
    ]
   },
   {
-   "title": "Max Verstappen without Gianpiero Lambiase at Qatar GP as Tom Hart steps in",
-   "url": "https://www.motorsport.com/f1/news/max-verstappen-without-gianpiero-lambiase-at-qatar-gp-as-tom-hart-steps-in/10878042/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=www",
-   "desc": "Max Verstappen will be without his regular right-hand man Gianpiero Lambiase this weekend at the Lusail International Circuit. Red Bull had already opted for a rotation system for the latter part of this Formula 1 season, primaril",
-   "source": "Motorsport.com",
+   "title": "Christian Horner seals move with £52m purchase of Pride and Prejudice mansion",
+   "url": "https://www.crash.net/f1/news/1110927/1/christian-horner-seals-move-ps52m-purchase-pride-and-prejudice-mansion",
+   "desc": "Christian Horner and wife Geri have bought a new luxury home.",
+   "source": "Crash.net",
    "lang": "en",
-   "image": "https://cdn-1.motorsport.com/images/amp/YBVj7QzY/s6/max-verstappen-red-bull-racing.jpg",
+   "image": "https://www.crash.net/sites/default/files/2026-11/xpb_1339838_hires.jpg?width=1200",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 1 h",
-   "ts": 1795722934.0,
-   "teams": [
-    "red_bull"
-   ]
+   "age": "hace 6 h",
+   "ts": 1795719577.0,
+   "teams": []
   },
   {
-   "title": "Spotlight: Ford reveals the GT41 Hypercar it will race in WEC | Brief",
-   "url": "https://www.racefans.net/2026/11/26/spotlight-ford-reveals-the-gt41-hypercar-it-will-race-in-wec/",
-   "desc": "Ford reveals GT41 Hypercar for 2027 WEC season",
-   "source": "RaceFans",
+   "title": "Hamilton convinced Ferrari will \"figure it out\" following Leclerc skirmish",
+   "url": "https://www.autosport.com/f1/news/hamilton-convinced-ferrari-will-figure-it-out/10877979/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+   "desc": "Ferrari driver Lewis Hamilton says he is confident that he and team-mate Charles Leclerc will \"figure it out\" following their latest on-track skirmish at last week's Las Vegas Grand Prix. A fortnight on from a costly on-track inci",
+   "source": "Autosport",
    "lang": "en",
-   "image": null,
+   "image": "https://cdn-1.motorsport.com/images/amp/2wlKzmeY/s6/charles-leclerc-ferrari-lewis--2.jpg",
    "date": "2026-11-26",
    "date_human": "26 nov",
-   "age": "hace 2 h",
-   "ts": 1795720350.0,
-   "teams": []
+   "age": "hace 8 h",
+   "ts": 1795712837.0,
+   "teams": [
+    "ferrari",
+    "mercedes"
+   ]
   }
  ],
- "news_pool": 277,
+ "news_pool": 286,
  "history": [
   {
    "year": 2025,
